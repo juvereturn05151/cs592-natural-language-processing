@@ -16,31 +16,26 @@ Features required by the assignment:
 The 4 methods are placeholders; plug in real implementations later.
 """
 
-
 from dataclasses import dataclass
 from typing import Callable, Dict, List, Protocol, Tuple
 import tkinter as tk
 from tkinter import ttk
 
 
-# -----------------------------
-# Data model
-# -----------------------------
+# data model
 @dataclass(frozen=True)
 class SearchResult:
     """One ranked item shown in the UI."""
     title: str
     score: float
-    details: str = ""  # optional: snippet, matched keywords, etc.
+    details: str = ""
 
 
-# -----------------------------
-# Extractor interface (plug-in later)
-# -----------------------------
+# extractor interface (plug-in later)
 class KeywordMethod(Protocol):
     """
     A method takes a query string and returns ranked results.
-    You can later adapt this to call your TFIDF/RAKE/other code.
+    TODO: adapt this to call your TFIDF/RAKE/other code.
     """
     def run(self, query: str) -> List[SearchResult]:
         ...
@@ -48,8 +43,7 @@ class KeywordMethod(Protocol):
 
 class PlaceholderMethod:
     """
-    Dummy method for now.
-    Replace the run() body later with your real keyword extraction + search.
+    TODO: Replace the run() body later with your real keyword extraction + search.
     """
     def __init__(self, name: str):
         self.name = name
@@ -77,9 +71,7 @@ class PlaceholderMethod:
         return results
 
 
-# -----------------------------
-# Controller / App class (the “class that supports the UI”)
-# -----------------------------
+# controller / App class (the “class that supports the UI”)
 class KeywordSearchApp:
     def __init__(self, methods: Dict[str, KeywordMethod]):
         if not methods:
