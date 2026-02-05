@@ -1,133 +1,168 @@
 """
 File Name:    TokenizerHelper.py
 Author(s):    Ju-ve Chankasemporn
-Copyright:    (c) 2025 DigiPen Institute of Technology. All rights reserved.
+Description:  Text processing and tokenization utilities for NLP methods
 """
 
 import nltk
 import re
 import string
-from nltk.tokenize import WordPunctTokenizer
-from nltk.corpus import stopwords
-from nltk import pos_tag
-from nltk.stem import PorterStemmer, LancasterStemmer, SnowballStemmer, WordNetLemmatizer
+from typing import List, Dict, Tuple
+from dataclasses import dataclass
+import src.NLP_Globals as Globals
+
+@dataclass
+class TokenizedDocument:
+    """Container for tokenized document data."""
+    name: str
+    tokens: List[str]
+    term_frequencies: Dict[str, float]
+    raw_counts: Dict[str, int]
+    text: str = ""
 
 
 class TokenizerHelper:
-    # Regex: remove common punctuation-like characters (kept close to your original)
-    _CLEAN_RE = re.compile(r"[\'—_“”\"\,\?.’‘\-\)\(:!\&]")
+    """Helper class for text processing and tokenization."""
 
     def __init__(self):
-        # (Optional) If you run this on a machine that might not have NLTK data,
-        # uncomment these downloads (or run them once elsewhere).
-        # nltk.download("punkt")
-        # nltk.download("stopwords")
-        # nltk.download("averaged_perceptron_tagger")
-        # nltk.download("wordnet")
+        # Ensure required NLTK data is available
+        self._ensure_nltk_data()
 
-        self.wp = WordPunctTokenizer()
+    def _ensure_nltk_data(self) -> None:
+        """Download required NLTK data if not present."""
+        try:
+            nltk.data.find('tokenizers/punkt')
+        except LookupError:
+            nltk.download('punkt')
 
-        # stemmers / lemmatizer
-        self.ps = PorterStemmer()
-        self.ls = LancasterStemmer()
-        self.sb = SnowballStemmer("english")
-        self.wl = WordNetLemmatizer()
+        try:
+            nltk.data.find('taggers/averaged_perceptron_tagger')
+        except LookupError:
+            nltk.download('averaged_perceptron_tagger')
 
-        # stopwords
-        self.stopWordList = set(stopwords.words("english"))
-
-    def _clean_token(self, word: str) -> str:
-        """Lowercase + strip punctuation artifacts used by this assignment."""
-        return self._CLEAN_RE.sub("", word).strip()
-
-    def getTokensSplit(self, item):
-        textBlock = item.text
-        return textBlock.split()
-
-    def getTokens_NLTK_Tokenize(self, item):
-        textBlock = item.text.lower()
-        return nltk.tokenize.word_tokenize(textBlock)
-
-    def getTokens_NLTK_PunktTokenize(self, item):
-        textBlock = item.text.lower()
-
-        tokenlist = []
-        for word in self.wp.tokenize(textBlock):
-            if word in self.stopWordList:
-                continue
-            if word in string.punctuation:
-                continue
-
-            cleaned = self._clean_token(word)
-            if cleaned == "":
-                continue
-
-            tokenlist.append(cleaned)
-
-        return tokenlist
-
-    def _penn_to_wordnet_pos(self, penn_tag: str):
-        """Map Penn Treebank POS tags to WordNet POS tags for better lemmatization."""
-        if penn_tag.startswith("J"):
-            return "a"  # adjective
-        if penn_tag.startswith("V"):
-            return "v"  # verb
-        if penn_tag.startswith("N"):
-            return "n"  # noun
-        if penn_tag.startswith("R"):
-            return "r"  # adverb
-        return "n"      # default to noun
-
-    def getTokens_NLTK_Stemmer(self, item, choice):
+    def tokenize_text(self, text: str) -> List[str]:
         """
-        choice:
-        0 = Porter Stemmer
-        1 = Lancaster Stemmer
-        2 = WordNet Lemmatizer (with POS mapping)
-        3 = Snowball Stemmer
+        Tokenize text into cleaned, filtered tokens.
+
+        Args:
+            text: Input text string
+
+        Returns:
+            List of processed tokens
         """
-        # Tokenize first (already lowercased + stopwords removed)
-        tokens = self.getTokens_NLTK_PunktTokenize(item)
+        if not text or not text.strip():
+            return []
 
-        # POS tag tokens
-        tagged = pos_tag(tokens)
+        # Convert to lowercase and tokenize
+        token_list = []
+        for word in nltk.WordPunctTokenizer().tokenize(text.lower()):
+            cleaned = re.sub(Globals.REGEX_CLEANER, "", word)
+            if cleaned and cleaned not in Globals.STOP_WORDS and cleaned not in string.punctuation:
+                token_list.append(cleaned)
 
-        stemWordList = []
-        validTagList = {"NN", "NNP", "NNPS", "NNS", "CD", "FW", "JJ", "JJR", "JJS"}
+        return token_list
 
-        for token, tag in tagged:
-            # token should already be cleaned, but keep it safe
-            if token == "" or token in string.punctuation or token in self.stopWordList:
-                continue
+    def pos_tag_and_filter(self, tokens: List[str]) -> List[str]:
+        """
+        Apply POS tagging and filter tokens based on valid tags.
 
-            if tag not in validTagList:
-                continue
+        Args:
+            tokens: List of token strings
 
-            if choice == 0:
-                out = self.ps.stem(token)
-            elif choice == 1:
-                out = self.ls.stem(token)
-            elif choice == 2:
-                wn_pos = self._penn_to_wordnet_pos(tag)
-                out = self.wl.lemmatize(token, pos=wn_pos)
-            elif choice == 3:
-                out = self.sb.stem(token)
-            else:
-                raise ValueError("choice must be 0 (Porter), 1 (Lancaster), 2 (Lemma), or 3 (Snowball)")
+        Returns:
+            List of filtered tokens
+        """
+        if not tokens:
+            return []
 
-            if out != "":
-                stemWordList.append(out)
+        # POS tagging
+        pos_tags = nltk.pos_tag(tokens)
 
-        return stemWordList
+        # Filter by valid POS tags
+        filtered_tokens = [
+            token for token, tag in pos_tags
+            if tag in Globals.VALID_TAGS and token not in Globals.STOP_WORDS
+        ]
 
-    def buildWordMap(self, documentTokens):
-        wordMap = {}
-        for word in documentTokens:
-            wordMap[word] = wordMap.get(word, 0) + 1
-        return wordMap
+        return filtered_tokens
 
-    def printSortedMap(self, inputMap):
-        dummyList = [[value, key] for key, value in inputMap.items()]
-        dummyList.sort(reverse=True)
-        print(dummyList)
-        return dummyList
+    def process_text(self, text: str, doc_name: str = "") -> TokenizedDocument:
+        """
+        Process text through full tokenization pipeline.
+
+        Args:
+            text: Input text
+            doc_name: Optional document name
+
+        Returns:
+            TokenizedDocument object
+        """
+        # Tokenize
+        tokens = self.tokenize_text(text)
+
+        # POS tag and filter
+        filtered_tokens = self.pos_tag_and_filter(tokens)
+
+        # Calculate frequencies
+        token_counts = {}
+        for token in filtered_tokens:
+            token_counts[token] = token_counts.get(token, 0) + 1
+
+        # Calculate normalized frequencies
+        total_tokens = len(filtered_tokens)
+        term_frequencies = {}
+        for token, count in token_counts.items():
+            term_frequencies[token] = count / total_tokens if total_tokens > 0 else 0
+
+        return TokenizedDocument(
+            name=doc_name,
+            tokens=filtered_tokens,
+            term_frequencies=term_frequencies,
+            raw_counts=token_counts,
+            text=text
+        )
+
+    def process_query(self, query: str) -> List[str]:
+        """
+        Process a search query into relevant terms.
+
+        Args:
+            query: Search query string
+
+        Returns:
+            List of processed query terms
+        """
+        if not query or not query.strip():
+            return []
+
+        # Tokenize the query
+        tokens = self.tokenize_text(query)
+
+        # Filter using POS tags
+        filtered_tokens = self.pos_tag_and_filter(tokens)
+
+        return filtered_tokens
+
+    def calculate_tfidf_scores(
+        self,
+        doc_frequencies: Dict[str, float],
+        idf_values: Dict[str, float],
+        scale_factor: float = 100.0
+    ) -> Dict[str, float]:
+        """
+        Calculate TF-IDF scores for document terms.
+
+        Args:
+            doc_frequencies: Term frequencies in document
+            idf_values: IDF values for terms
+            scale_factor: Scaling factor for scores
+
+        Returns:
+            Dictionary of term -> TF-IDF score
+        """
+        scores = {}
+        for term, tf in doc_frequencies.items():
+            idf = idf_values.get(term, 0)
+            scores[term] = tf * idf * scale_factor
+
+        return scores

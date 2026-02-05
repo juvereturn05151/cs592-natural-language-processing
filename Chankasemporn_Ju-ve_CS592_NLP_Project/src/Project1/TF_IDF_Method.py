@@ -6,15 +6,33 @@ Copyright:    (c) 2025 DigiPen Institute of Technology. All rights reserved.
 
 from dataclasses import dataclass
 from typing import Dict, List, Tuple
-import nltk
-import re
-import string
 import xml.etree.ElementTree as ET
 from collections import defaultdict
 import math
 from pathlib import Path
 import src.NLP_Globals as Globals
 from .KeywordMethod import SearchResult, KeywordMethod
+from src.TokenizerHelper import TokenizerHelper, TokenizedDocument  # Import the helper
+
+def create_tfidf_method() -> KeywordMethod:
+    """Factory function to create and initialize TF-IDF method."""
+    # Use the exact path
+    data_dir = Globals.get_default_data_dir()
+
+    tfidf = TfIdfMethod(
+        name="TF-IDF (Document Search)",
+        data_dir=data_dir  # Pass the exact path
+    )
+
+    # Pre-load documents
+    try:
+        tfidf.load_documents()
+    except Exception as e:
+        print(f"Warning: Could not load documents: {e}")
+        print(f"Data directory being used: {data_dir}")
+        print("TF-IDF will load documents on first search.")
+
+    return tfidf
 
 @dataclass
 class DocumentData:
@@ -22,6 +40,7 @@ class DocumentData:
     path: str
     term_frequencies: Dict[str, float]
     raw_counts: Dict[str, int]
+    tokenized_doc: TokenizedDocument  # Add reference to tokenized document
 
 
 class TfIdfMethod:
@@ -37,6 +56,7 @@ class TfIdfMethod:
         self.idf_cache: Dict[str, float] = {}  # term -> IDF value
         self.doc_names: List[str] = []
         self._is_loaded = False
+        self.tokenizer = TokenizerHelper()  # Initialize helper
 
 
 
@@ -60,24 +80,22 @@ class TfIdfMethod:
 
         for file_path in text_files:
             try:
-                # Extract normalized frequencies
-                tf_data = self._extract_normalized_frequency(str(file_path))
+                # Extract text from file (XML or plain text)
+                text = self._extract_text_from_file(str(file_path))
 
-                # Convert to DocumentData
-                term_freq = {}
-                raw_counts = {}
-                for term, (count, freq) in tf_data.items():
-                    term_freq[term] = freq
-                    raw_counts[term] = count
+                # Process text using TokenizerHelper
+                tokenized_doc = self.tokenizer.process_text(text, file_path.name)
 
+                # Create DocumentData
                 doc_data = DocumentData(
                     path=str(file_path),
-                    term_frequencies=term_freq,
-                    raw_counts=raw_counts
+                    term_frequencies=tokenized_doc.term_frequencies,
+                    raw_counts=tokenized_doc.raw_counts,
+                    tokenized_doc=tokenized_doc
                 )
 
                 self.documents.append(doc_data)
-                self.corpus_data[file_path.name] = term_freq
+                self.corpus_data[file_path.name] = tokenized_doc.term_frequencies
                 self.doc_names.append(file_path.name)
 
             except Exception as e:
@@ -88,70 +106,32 @@ class TfIdfMethod:
         self._is_loaded = True
         print(f"Loaded {len(self.documents)} documents successfully.")
 
-    def _extract_normalized_frequency(self, file_path: str) -> Dict[str, Tuple[int, float]]:
+    def _extract_text_from_file(self, file_path: str) -> str:
         """
-        Extract and normalize term frequencies from a single document.
-        Returns dict: term -> (count, normalized_frequency)
+        Extract text content from file (XML or plain text).
         """
         try:
+            # Try parsing as XML first
             tree = ET.parse(file_path)
+            root = tree.getroot()
+
+            body_node = root.find('Body')
+            if body_node is not None:
+                # Extract text from XML structure
+                text_parts = []
+                item_list = body_node.findall('.//Item')
+                for item in item_list:
+                    if item.text:
+                        text_parts.append(item.text)
+                return " ".join(text_parts)
+            else:
+                # Fallback: extract all text content
+                return ET.tostring(root, method='text', encoding='unicode')
+
         except ET.ParseError:
-            # If it's a plain text file, not XML
+            # If it's a plain text file
             with open(file_path, 'r', encoding='utf-8') as f:
-                text = f.read()
-            return self._process_text(text, Path(file_path).name)
-
-        root = tree.getroot()
-        big_string = ""
-
-        body_node = root.find('Body')
-        if body_node is not None:
-            item_list = body_node.findall('.//Item')
-            for item in item_list:
-                text = item.text
-                if text is None:
-                    continue
-                big_string += text + " "
-        else:
-            # Fallback: use all text content
-            big_string = ET.tostring(root, method='text', encoding='unicode')
-
-        return self._process_text(big_string, Path(file_path).name)
-
-    def _process_text(self, text: str, doc_name: str) -> Dict[str, Tuple[int, float]]:
-        """Process raw text into token frequencies."""
-        if not text:
-            return {}
-
-        # Tokenize
-        token_list = []
-        for word in nltk.WordPunctTokenizer().tokenize(text.lower()):
-            cleaned = re.sub(Globals.REGEX_CLEANER, "", word)
-            if cleaned and cleaned not in Globals.STOP_WORDS and cleaned not in string.punctuation:
-                token_list.append(cleaned)
-
-        # POS Tagging and filtering
-        if token_list:
-            pos_tags = nltk.pos_tag(token_list)
-            filtered_tokens = [
-                token for token, tag in pos_tags
-                if tag in Globals.VALID_TAGS and token not in Globals.STOP_WORDS
-            ]
-        else:
-            filtered_tokens = []
-
-        # Count frequencies
-        token_counts = {}
-        for token in filtered_tokens:
-            token_counts[token] = token_counts.get(token, 0) + 1
-
-        # Normalize
-        total_tokens = len(filtered_tokens)
-        normalized = {}
-        for token, count in token_counts.items():
-            normalized[token] = (count, count / total_tokens if total_tokens > 0 else 0)
-
-        return normalized
+                return f.read()
 
     def _calculate_idf(self) -> None:
         """Calculate IDF for all terms in the corpus."""
@@ -183,8 +163,8 @@ class TfIdfMethod:
         if not self._is_loaded:
             self.load_documents()
 
-        # Process query into terms
-        query_terms = self._process_query(query)
+        # Process query using TokenizerHelper
+        query_terms = self.tokenizer.process_query(query)
         if not query_terms:
             return []
 
@@ -209,27 +189,6 @@ class TfIdfMethod:
         # Sort by score (highest first) and return top K
         scores.sort(key=lambda x: x[1], reverse=True)
         return scores[:top_k]
-
-    def _process_query(self, query: str) -> List[str]:
-        """Process query string into relevant terms."""
-        if not query.strip():
-            return []
-
-        # Same processing as documents
-        token_list = []
-        for word in nltk.WordPunctTokenizer().tokenize(query.lower()):
-            cleaned = re.sub(Globals.REGEX_CLEANER, "", word)
-            if cleaned and cleaned not in Globals.STOP_WORDS and cleaned not in string.punctuation:
-                token_list.append(cleaned)
-
-        if token_list:
-            pos_tags = nltk.pos_tag(token_list)
-            filtered_tokens = [
-                token for token, tag in pos_tags
-                if tag in Globals.VALID_TAGS and token not in Globals.STOP_WORDS
-            ]
-            return filtered_tokens
-        return []
 
     def extract_keywords(self, doc_name: str, top_k: int = 10) -> List[Tuple[str, float]]:
         """
@@ -306,50 +265,32 @@ class TfIdfMethod:
         Alternative mode: treat query as document and extract keywords from it.
         """
         # Process the query as if it were a document
-        query_terms = self._process_query(query)
-        if not query_terms:
+        tokenized_query = self.tokenizer.process_text(query, "query")
+
+        if not tokenized_query.tokens:
             return []
 
-        # Simple TF calculation for query
-        term_counts = {}
-        for term in query_terms:
-            term_counts[term] = term_counts.get(term, 0) + 1
+        # Calculate TF-IDF scores for query terms
+        scores = {}
+        total_terms = len(tokenized_query.tokens)
 
-        total_terms = len(query_terms)
-        results = []
-        for term, count in term_counts.items():
+        for term, count in tokenized_query.raw_counts.items():
             tf = count / total_terms if total_terms > 0 else 0
             idf = self.idf_cache.get(term, 1.0)  # Default IDF if term not in corpus
             tfidf = tf * idf * 100
+            scores[term] = tfidf
+
+        # Convert to SearchResult objects
+        results = []
+        for term, tfidf in sorted(scores.items(), key=lambda x: x[1], reverse=True)[:10]:
+            count = tokenized_query.raw_counts[term]
+            tf = count / total_terms
 
             results.append(SearchResult(
                 title=f"Keyword: '{term}'",
                 score=tfidf,
-                details=f"TF: {tf:.4f}, IDF: {idf:.4f}, TF-IDF: {tfidf:.4f}\n"
-                        f"Appears in {count} of {total_terms} query terms."
+                details=f"TF: {tf:.4f}, IDF: {self.idf_cache.get(term, 1.0):.4f}, "
+                        f"TF-IDF: {tfidf:.4f}\n"
+                        f"Appears {count} times in query."
             ))
 
-        # Sort by TF-IDF score
-        results.sort(key=lambda r: r.score, reverse=True)
-        return results[:10]  # Return top 10 keywords
-
-
-def create_tfidf_method() -> KeywordMethod:
-    """Factory function to create and initialize TF-IDF method."""
-    # Use the exact path
-    data_dir = r"E:\DigiPenMasterCourse\Semester4_2026\cs592_NLP\cs592-natural-language-processing\Chankasemporn_Ju-ve_CS592_NLP_Project\data\train"
-
-    tfidf = TfIdfMethod(
-        name="TF-IDF (Document Search)",
-        data_dir=data_dir  # Pass the exact path
-    )
-
-    # Pre-load documents
-    try:
-        tfidf.load_documents()
-    except Exception as e:
-        print(f"Warning: Could not load documents: {e}")
-        print(f"Data directory being used: {data_dir}")
-        print("TF-IDF will load documents on first search.")
-
-    return tfidf
