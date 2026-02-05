@@ -4,7 +4,6 @@ Author(s):    Ju-ve Chankasemporn
 Copyright:    (c) 2025 DigiPen Institute of Technology. All rights reserved.
 """
 
-import os
 from dataclasses import dataclass
 from typing import Dict, List, Tuple
 import nltk
@@ -32,49 +31,14 @@ class TfIdfMethod:
 
     def __init__(self, name: str = "TF-IDF", data_dir: str = None):
         self.name = name
-        self.data_dir = data_dir or self._get_default_data_dir()
+        self.data_dir = data_dir or Globals.get_default_data_dir()
         self.documents: List[DocumentData] = []
         self.corpus_data: Dict[str, Dict[str, float]] = {}  # doc_name -> {term: tf}
         self.idf_cache: Dict[str, float] = {}  # term -> IDF value
         self.doc_names: List[str] = []
         self._is_loaded = False
 
-    def _get_default_data_dir(self) -> str:
-        """Get default data directory."""
-        # Get the project root by going up from the current file
-        current_file = Path(__file__).resolve()
 
-        # Go up from TF_IDF_Method.py: Project1 -> src -> project_root
-        project_root = current_file.parent.parent.parent
-
-        # Construct the correct data directory path
-        data_dir = project_root / 'data' / 'train'
-
-        # Debug: print the path for verification
-        print(f"Looking for data in: {data_dir}")
-
-        if not data_dir.exists():
-            # Try alternative: look relative to current working directory
-            alt_data_dir = Path.cwd() / 'data' / 'train'
-            if alt_data_dir.exists():
-                return str(alt_data_dir)
-
-            # Create a list of possible locations to help debugging
-            possible_locations = [
-                project_root / 'data' / 'train',
-                Path.cwd() / 'data' / 'train',
-                Path.cwd().parent / 'data' / 'train',  # One level up
-                Path.home() / 'data' / 'train',  # Home directory
-            ]
-
-            print("Tried these locations:")
-            for loc in possible_locations:
-                print(f"  - {loc} (exists: {loc.exists()})")
-
-            # Return the expected path anyway (it will show a clear error on load)
-            return str(data_dir)
-
-        return str(data_dir)
 
     def load_documents(self, file_pattern: str = "*.txt") -> None:
         """
