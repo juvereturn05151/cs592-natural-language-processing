@@ -6,6 +6,7 @@ Copyright:    (c) 2025 DigiPen Institute of Technology. All rights reserved.
 
 import keyword_ui
 from src.Project1.TF_IDF_Method import create_tfidf_method
+from src.Project1.RakeMethod import create_rake_method
 from src.Project1.DocumentProcessor import DocumentProcessor
 import src.NLP_Globals as Globals
 
@@ -22,7 +23,7 @@ def main():
 
     methods: keyword_ui.Dict[str, keyword_ui.KeywordMethod] = {
         "TFIDF": create_tfidf_method(processor),
-        "RAKE (placeholder)": keyword_ui.PlaceholderMethod("RAKE"),
+        "RAKE": create_rake_method(),
         "Team Method #1 (placeholder)": keyword_ui.PlaceholderMethod("Team1"),
         "Team Method #2 (placeholder)": keyword_ui.PlaceholderMethod("Team2"),
     }

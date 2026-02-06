@@ -26,14 +26,10 @@ class TokenizedDocument:
 class TokenizerHelper:
     """Helper class for text processing and tokenization."""
 
-    def __init__(self, use_stemming: bool = True):
-        """
-        Initialize TokenizerHelper.
-
-        Args:
-            use_stemming: Whether to apply stemming (default: True)
-        """
+    def __init__(self, use_stemming: bool = True, use_pos_tagging: bool = True, remove_stopwords: bool = True):
         self.use_stemming = use_stemming
+        self.use_pos_tagging = use_pos_tagging
+        self.remove_stopwords = remove_stopwords
         self._ensure_nltk_data()
         self._initialize_stemmer()
 
@@ -62,25 +58,23 @@ class TokenizerHelper:
             self.use_stemming = False
 
     def tokenize_text(self, text: str) -> List[str]:
-        """
-        Tokenize text into cleaned, filtered tokens.
-        Args:
-            text: Input text string
-
-        Returns:
-            List of processed tokens
-        """
+        """Modified to respect remove_stopwords flag."""
         if not text or not text.strip():
             return []
 
-        # Convert to lowercase and tokenize
-        token_list = []
-        for word in nltk.WordPunctTokenizer().tokenize(text.lower()):
-            cleaned = re.sub(Globals.REGEX_CLEANER, "", word)
-            if cleaned and cleaned not in Globals.STOP_WORDS and cleaned not in string.punctuation:
-                token_list.append(cleaned)
+        raw_tokens = nltk.wordpunct_tokenize(text.lower())
 
-        return token_list
+        tokens = []
+        for token in raw_tokens:
+            cleaned = re.sub(Globals.REGEX_CLEANER, "", token)
+            # ONLY filter if remove_stopwords is True
+            if cleaned and cleaned not in string.punctuation:
+                if self.remove_stopwords:
+                    if cleaned not in Globals.STOP_WORDS:
+                        tokens.append(cleaned)
+                else:
+                    tokens.append(cleaned)  # Keep ALL words, including stop words
+        return tokens
 
     def pos_tag_and_filter(self, tokens: List[str]) -> List[str]:
         """

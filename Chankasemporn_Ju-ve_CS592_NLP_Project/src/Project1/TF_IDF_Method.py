@@ -7,7 +7,6 @@ Copyright:    (c) 2025 DigiPen Institute of Technology. All rights reserved.
 from typing import Dict, List, Tuple
 import math
 from .KeywordMethod import SearchResult, KeywordMethod
-import src.NLP_Globals as Globals
 from .DocumentProcessor import DocumentProcessor
 
 
