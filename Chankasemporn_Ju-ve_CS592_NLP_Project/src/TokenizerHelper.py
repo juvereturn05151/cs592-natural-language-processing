@@ -219,27 +219,3 @@ class TokenizerHelper:
                 matching_tokens.append(token)
 
         return matching_tokens
-
-    def calculate_tfidf_scores(
-        self,
-        doc_frequencies: Dict[str, float],
-        idf_values: Dict[str, float],
-        scale_factor: float = 100.0
-    ) -> Dict[str, float]:
-        """
-        Calculate TF-IDF scores for document terms.
-
-        Args:
-            doc_frequencies: Term frequencies in document
-            idf_values: IDF values for terms
-            scale_factor: Scaling factor for scores
-
-        Returns:
-            Dictionary of term -> TF-IDF score
-        """
-        scores = {}
-        for term, tf in doc_frequencies.items():
-            idf = idf_values.get(term, 0)
-            scores[term] = tf * idf * scale_factor
-
-        return scores

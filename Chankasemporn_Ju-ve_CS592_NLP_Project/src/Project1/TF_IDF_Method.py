@@ -8,24 +8,17 @@ from typing import Dict, List, Tuple
 import math
 from .KeywordMethod import SearchResult, KeywordMethod
 import src.NLP_Globals as Globals
-from .DocumentProcessor import DocumentProcessor, DocumentData
+from .DocumentProcessor import DocumentProcessor
 
 
-def create_tfidf_method() -> KeywordMethod:
+def create_tfidf_method(processor: DocumentProcessor = None) -> KeywordMethod:
     """Factory function to create and initialize TF-IDF method."""
-    data_dir = Globals.get_default_data_dir()
-
     tfidf = TfIdfMethod(
         name="TF-IDF (Document Search)",
-        data_dir=data_dir
+        processor=processor
     )
 
-    try:
-        tfidf.load_documents()
-    except Exception as e:
-        print(f"Warning: Could not load documents: {e}")
-        print(f"Data directory being used: {data_dir}")
-        print("TF-IDF will load documents on first search.")
+    tfidf.preprocess()
 
     return tfidf
 
@@ -36,21 +29,19 @@ class TfIdfMethod:
     Uses DocumentProcessor for document handling.
     """
 
-    def __init__(self, name: str = "TF-IDF", data_dir: str = None):
+    def __init__(self, name: str = "TF-IDF", processor: DocumentProcessor = None):
         self.name = name
-        self.data_dir = data_dir or Globals.get_default_data_dir()
-        self.processor = DocumentProcessor()
+        self.processor = processor
         self.idf_cache: Dict[str, float] = {}
         self._is_loaded = False
 
-    def load_documents(self, file_pattern: str = "*.txt") -> None:
+    def preprocess(self) -> None:
         """
         Load and process all documents using DocumentProcessor.
         """
         if self._is_loaded:
             return
 
-        self.processor.load_from_directory(self.data_dir, file_pattern)
         self._calculate_idf()
         self._is_loaded = True
 
