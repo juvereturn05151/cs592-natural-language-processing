@@ -16,7 +16,6 @@ from src.TokenizerHelper import TokenizerHelper, TokenizedDocument  # Import the
 
 def create_tfidf_method() -> KeywordMethod:
     """Factory function to create and initialize TF-IDF method."""
-    # Use the exact path
     data_dir = Globals.get_default_data_dir()
 
     tfidf = TfIdfMethod(
@@ -24,7 +23,6 @@ def create_tfidf_method() -> KeywordMethod:
         data_dir=data_dir  # Pass the exact path
     )
 
-    # Pre-load documents
     try:
         tfidf.load_documents()
     except Exception as e:
@@ -71,7 +69,7 @@ class TfIdfMethod:
         if not data_path.exists():
             raise FileNotFoundError(f"Data directory not found: {self.data_dir}")
 
-        # Find all text files
+        #find all text files
         text_files = list(data_path.glob(file_pattern))
         if not text_files:
             raise FileNotFoundError(f"No text files found in {self.data_dir}")
@@ -80,7 +78,6 @@ class TfIdfMethod:
 
         for file_path in text_files:
             try:
-                # Extract text from file (XML or plain text)
                 text = self._extract_text_from_file(str(file_path))
 
                 # Process text using TokenizerHelper
