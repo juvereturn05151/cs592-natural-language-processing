@@ -18,28 +18,11 @@ def create_rake_method(processor: DocumentProcessor = None) -> KeywordMethod:
       so RAKE and TF-IDF operate on the same document corpus.
     """
 
-    # If caller didn't provide a processor, create one with RAKE-safe tokenizer settings.
-    if processor is None:
-        rake_tokenizer = TokenizerHelper.TokenizerHelper(
-            use_stemming=False,
-            use_pos_tagging=False,
-            remove_stopwords=False,  # CRITICAL for RAKE
-        )
-        processor = DocumentProcessor(tokenizer=rake_tokenizer)
-    else:
-        # Best effort: ensure processor.tokenizer doesn't remove stopwords
-        # (If your TokenizerHelper has this attribute; safe-guarded.)
-        tok = getattr(processor, "tokenizer", None)
-        if tok is not None and hasattr(tok, "remove_stopwords"):
-            tok.remove_stopwords = False
-        if tok is not None and hasattr(tok, "use_stemming"):
-            tok.use_stemming = False
-
     rake = RakeMethod(
         name="RAKE (Keyword Extraction / Document Search)",
         processor=processor
     )
-    processor.load_from_directory(Globals.get_default_data_dir(), "*.txt")
+
     rake.preprocess()
     return rake
 
@@ -74,7 +57,7 @@ class RakeMethod(KeywordMethod):
             return
 
         for doc in self.processor.documents:
-            raw_text = self._get_raw_text(doc)
+            raw_text = doc.text
             phrases = self._generate_candidate_phrases(raw_text)
             phrase_scores, word_scores = self._calculate_rake_scores(phrases)
 
@@ -92,6 +75,7 @@ class RakeMethod(KeywordMethod):
     def extract_keywords(self, doc_name: str, top_k: int = 10) -> List[Tuple[str, float]]:
         if not self._is_loaded:
             self.preprocess()
+
         scores = self._doc_phrase_scores.get(doc_name, {})
         return sorted(scores.items(), key=lambda x: x[1], reverse=True)[:top_k]
 
@@ -187,25 +171,6 @@ class RakeMethod(KeywordMethod):
         return out
 
     # ---------- RAKE internals ----------
-
-    def _get_raw_text(self, doc) -> str:
-        """
-        RAKE must use raw/original text. Prefer tokenized_doc.text only if it is raw text.
-        Otherwise, read from file path.
-        """
-        # If your TokenizedDocument.text is truly the original file text, this is OK:
-        text = getattr(getattr(doc, "tokenized_doc", None), "text", None)
-        if isinstance(text, str) and text.strip():
-            return text
-
-        # Otherwise, read from disk
-        try:
-            with open(doc.path, "r", encoding="utf-8", errors="ignore") as f:
-                return f.read()
-        except Exception:
-            # last resort: reconstruct from tokens (not ideal)
-            tokens = getattr(getattr(doc, "tokenized_doc", None), "tokens", [])
-            return " ".join(tokens) if tokens else ""
 
     def _split_into_sentences(self, text: str) -> List[str]:
         # Slightly more robust than splitting on .!? only
