@@ -6,7 +6,6 @@ from typing import Dict, List, Tuple, Set, Optional
 from .KeywordMethod import SearchResult, KeywordMethod
 from .DocumentProcessor import DocumentProcessor
 import src.NLP_Globals as Globals
-import src.TokenizerHelper as TokenizerHelper
 
 def create_rake_method(processor: DocumentProcessor = None) -> KeywordMethod:
     """

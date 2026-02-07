@@ -4,11 +4,81 @@ Author(s):    Ju-ve Chankasemporn
 Copyright:    (c) 2025 DigiPen Institute of Technology. All rights reserved.
 """
 
-from typing import Dict, List, Set
+from typing import Dict, List, Set, Optional, Tuple
 import xml.etree.ElementTree as ET
 from collections import defaultdict
 from pathlib import Path
+import time
+
 from src.TokenizerHelper import TokenizerHelper, DocumentData
+
+# ---------------------------
+# Multiprocessing helpers
+# ---------------------------
+# NOTE: These must be TOP-LEVEL functions (not methods) so Pool can pickle them.
+
+_WORKER_TOKENIZER: Optional[TokenizerHelper] = None
+
+
+def _init_worker_tokenizer(use_stemming: bool, use_pos_tagging: bool, remove_stopwords: bool) -> None:
+    """
+    Initializer runs once per worker process.
+    Creates a TokenizerHelper inside that process (prevents pickling issues).
+    """
+    global _WORKER_TOKENIZER
+    _WORKER_TOKENIZER = TokenizerHelper(
+        use_stemming=use_stemming,
+        use_pos_tagging=use_pos_tagging,
+        remove_stopwords=remove_stopwords
+    )
+
+
+def _extract_text_from_file_worker(file_path: str) -> str:
+    """
+    Same logic as DocumentProcessor._extract_text_from_file but top-level.
+    """
+    try:
+        tree = ET.parse(file_path)
+        root = tree.getroot()
+
+        body_node = root.find('Body')
+        if body_node is not None:
+            text_parts = []
+            item_list = body_node.findall('.//Item')
+            for item in item_list:
+                if item.text:
+                    text_parts.append(item.text)
+            return " ".join(text_parts)
+        else:
+            return ET.tostring(root, method='text', encoding='unicode')
+
+    except ET.ParseError:
+        # Plain text fallback
+        with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
+            return f.read()
+
+
+def _process_one_file(file_path_str: str) -> Tuple[Optional[DocumentData], Optional[str]]:
+    """
+    Worker job:
+      - extract raw text
+      - tokenize/process into DocumentData
+      - return (doc_data, error_message)
+    """
+    global _WORKER_TOKENIZER
+    try:
+        if _WORKER_TOKENIZER is None:
+            return None, "Worker tokenizer not initialized. Did Pool initializer run?"
+
+        p = Path(file_path_str)
+        text = _extract_text_from_file_worker(file_path_str)
+
+        doc_data = _WORKER_TOKENIZER.process_text(text, p)
+        return doc_data, None
+
+    except Exception as e:
+        return None, f"{type(e).__name__}: {e}"
+
 
 class DocumentProcessor:
     """
@@ -24,16 +94,15 @@ class DocumentProcessor:
 
     def _extract_text_from_file(self, file_path: str) -> str:
         """
-        return raw text from file
+        Return raw text from file.
+        Tries XML <Body><Item> first; else uses XML text flattening; else plain text.
         """
         try:
-            # Try parsing as XML first
             tree = ET.parse(file_path)
             root = tree.getroot()
 
             body_node = root.find('Body')
             if body_node is not None:
-                # Extract text from XML structure
                 text_parts = []
                 item_list = body_node.findall('.//Item')
                 for item in item_list:
@@ -41,17 +110,22 @@ class DocumentProcessor:
                         text_parts.append(item.text)
                 return " ".join(text_parts)
             else:
-                # Fallback: extract all text content
                 return ET.tostring(root, method='text', encoding='unicode')
 
         except ET.ParseError:
-            # If it's a plain text file
-            with open(file_path, 'r', encoding='utf-8') as f:
+            with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
                 return f.read()
 
-    def load_from_directory(self, data_dir: str, file_pattern: str = "*.txt") -> None:
+    def load_from_directory(
+        self,
+        data_dir: str,
+        file_pattern: str = "*.txt",
+        parallel: bool = False,
+        num_workers: Optional[int] = None,
+        chunksize: int = 4
+    ) -> None:
         """
-        load and process all documents in the data directory.
+        Load and process all documents in the data directory.
         """
         if self._is_loaded:
             return
@@ -62,53 +136,85 @@ class DocumentProcessor:
 
         text_files = list(data_path.glob(file_pattern))
         if not text_files:
-            raise FileNotFoundError(f"No text files found in {data_dir}")
+            raise FileNotFoundError(f"No files found in {data_dir} matching '{file_pattern}'")
 
-        print(f"Loading {len(text_files)} documents...")
+        print(f"Loading {len(text_files)} documents... (parallel={parallel})")
 
-        for file_path in text_files:
-            try:
-                # Extract text
-                text = self._extract_text_from_file(str(file_path))
+        start_time = time.perf_counter()  # <-- ADDED
 
-                # Process text
-                doc_data = self.tokenizer.process_text(text, file_path)
+        # Clear state (in case this object is reused)
+        self.documents.clear()
+        self.doc_names.clear()
+        self.corpus_terms.clear()
+
+        if parallel:
+            from multiprocessing import Pool, cpu_count
+
+            file_paths = [str(p) for p in text_files]
+
+            if num_workers is None:
+                num_workers = min(cpu_count(), max(1, len(file_paths)))
+
+            use_stemming = bool(getattr(self.tokenizer, "use_stemming", True))
+            use_pos_tagging = bool(getattr(self.tokenizer, "use_pos_tagging", True))
+            remove_stopwords = bool(getattr(self.tokenizer, "remove_stopwords", True))
+
+            with Pool(
+                processes=num_workers,
+                initializer=_init_worker_tokenizer,
+                initargs=(use_stemming, use_pos_tagging, remove_stopwords),
+            ) as pool:
+                results = pool.map(_process_one_file, file_paths, chunksize=chunksize)
+
+            error_count = 0
+            for (doc_data, err), file_path in zip(results, text_files):
+                if err is not None or doc_data is None:
+                    error_count += 1
+                    print(f"Error processing {file_path.name}: {err}")
+                    continue
 
                 self.documents.append(doc_data)
-                self.doc_names.append(file_path.name)
+                self.doc_names.append(doc_data.filename)
                 self.corpus_terms.update(doc_data.unique_terms)
 
-            except Exception as e:
-                print(f"Error processing {file_path.name}: {e}")
+        else:
+            error_count = 0
+            for file_path in text_files:
+                try:
+                    text = self._extract_text_from_file(str(file_path))
+                    doc_data = self.tokenizer.process_text(text, file_path)
+
+                    self.documents.append(doc_data)
+                    self.doc_names.append(file_path.name)
+                    self.corpus_terms.update(doc_data.unique_terms)
+
+                except Exception as e:
+                    error_count += 1
+                    print(f"Error processing {file_path.name}: {type(e).__name__}: {e}")
 
         self._is_loaded = True
-        print(f"Loaded {len(self.documents)} documents successfully.")
+
+        elapsed = time.perf_counter() - start_time  # <-- ADDED
+        print(
+            f"Loaded {len(self.documents)} documents successfully "
+            f"(parallel={parallel}) | Errors: {error_count} | "
+            f"Time: {elapsed:.3f}s"
+        )
 
     def get_document_term_frequencies(self) -> Dict[str, Dict[str, float]]:
-        """
-        Return dictionary of {doc_name: {term: tf}} for all loaded documents.
-        """
         return {doc.filename: doc.term_frequencies for doc in self.documents}
 
     def get_document_frequencies(self) -> Dict[str, int]:
-        """
-        Calculate document frequency (DF) for all terms in corpus.
-        Returns: term -> number of documents containing the term
-        """
         doc_freq = defaultdict(int)
-
         for doc in self.documents:
             for term in doc.unique_terms:
                 doc_freq[term] += 1
-
         return dict(doc_freq)
 
     def get_document_by_name(self, doc_name: str) -> DocumentData:
-        #retrieve a document by its filename.
         for doc in self.documents:
             if doc.filename == doc_name:
                 return doc
-
         raise ValueError(f"Document '{doc_name}' not found")
 
     @property
