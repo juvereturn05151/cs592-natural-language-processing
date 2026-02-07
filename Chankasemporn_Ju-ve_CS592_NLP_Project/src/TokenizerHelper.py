@@ -27,9 +27,11 @@ class TokenizerHelper:
     """Helper class for text processing and tokenization."""
 
     def __init__(self, use_stemming: bool = True, use_pos_tagging: bool = True, remove_stopwords: bool = True):
+        #we define these attributes because some data sets might be better
         self.use_stemming = use_stemming
         self.use_pos_tagging = use_pos_tagging
         self.remove_stopwords = remove_stopwords
+
         self._ensure_nltk_data()
         self._initialize_stemmer()
 
@@ -46,16 +48,17 @@ class TokenizerHelper:
             nltk.download('averaged_perceptron_tagger')
 
     def _initialize_stemmer(self) -> None:
-        """Initialize the Porter Stemmer."""
-        try:
-            # Try to import PorterStemmer
-            from nltk.stem import PorterStemmer
-            self.stemmer = PorterStemmer() if self.use_stemming else None
-        except ImportError:
-            # Fallback if NLTK stemmer not available
-            print("Warning: NLTK PorterStemmer not available. Stemming disabled.")
-            self.stemmer = None
-            self.use_stemming = False
+        if self.use_stemming:
+            """Initialize the Porter Stemmer."""
+            try:
+                # Try to import PorterStemmer
+                from nltk.stem import PorterStemmer
+                self.stemmer = PorterStemmer() if self.use_stemming else None
+            except ImportError:
+                # Fallback if NLTK stemmer not available
+                print("Warning: NLTK PorterStemmer not available. Stemming disabled.")
+                self.stemmer = None
+                self.use_stemming = False
 
     def tokenize_text(self, text: str) -> List[str]:
         """Modified to respect remove_stopwords flag."""
@@ -66,14 +69,17 @@ class TokenizerHelper:
 
         tokens = []
         for token in raw_tokens:
+            #we remove the punctuation here
             cleaned = re.sub(Globals.REGEX_CLEANER, "", token)
-            # ONLY filter if remove_stopwords is True
+
+            #only filter if remove_stopwords is True
             if cleaned and cleaned not in string.punctuation:
                 if self.remove_stopwords:
                     if cleaned not in Globals.STOP_WORDS:
                         tokens.append(cleaned)
                 else:
-                    tokens.append(cleaned)  # Keep ALL words, including stop words
+                    #keep ALL words, including stop words
+                    tokens.append(cleaned)
         return tokens
 
     def pos_tag_and_filter(self, tokens: List[str]) -> List[str]:
@@ -126,29 +132,30 @@ class TokenizerHelper:
         Returns:
             TokenizedDocument object
         """
-        # Determine if stemming should be used
+        #determine if stemming should be used
         should_stem = use_stemming if use_stemming is not None else self.use_stemming
 
-        # Tokenize
+        #tokenize
         tokens = self.tokenize_text(text)
 
-        # POS tag and filter
+        #POS tag and filter
         filtered_tokens = self.pos_tag_and_filter(tokens)
 
-        # Apply stemming if requested
+        #apply stemming if requested
         stemmed_tokens = []
-        working_tokens = filtered_tokens.copy()  # Copy for frequency calculations
+        #copy for frequency calculations
+        working_tokens = filtered_tokens.copy()
 
         if should_stem and self.stemmer:
             stemmed_tokens = self.apply_stemming(filtered_tokens)
             working_tokens = stemmed_tokens  # Use stemmed tokens for frequency calculations
 
-        # Calculate frequencies based on stemmed or original tokens
+        #calculate frequencies based on stemmed or original tokens
         token_counts = {}
         for token in working_tokens:
             token_counts[token] = token_counts.get(token, 0) + 1
 
-        # Calculate normalized frequencies
+        #calculate normalized frequencies
         total_tokens = len(working_tokens)
         term_frequencies = {}
         for token, count in token_counts.items():
@@ -156,8 +163,10 @@ class TokenizerHelper:
 
         return TokenizedDocument(
             name=doc_name,
-            tokens=filtered_tokens,  # Original filtered tokens
-            stemmed_tokens=stemmed_tokens if should_stem else [],  # Stemmed tokens if used
+            # Original filtered tokens
+            tokens=filtered_tokens,
+            # Stemmed tokens if used
+            stemmed_tokens=stemmed_tokens if should_stem else [],
             term_frequencies=term_frequencies,
             raw_counts=token_counts,
             text=text,
