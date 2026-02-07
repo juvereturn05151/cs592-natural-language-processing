@@ -4,11 +4,12 @@ Author(s):    Ju-ve Chankasemporn
 Copyright:    (c) 2025 DigiPen Institute of Technology. All rights reserved.
 """
 
-from typing import Dict, List, Tuple, Set, Optional
+from typing import Dict, List, Tuple, Set, Optional, Any
 from collections import defaultdict
 import math
 import re
 import string
+import os
 
 from .KeywordMethod import SearchResult, KeywordMethod
 from .DocumentProcessor import DocumentProcessor
@@ -48,7 +49,7 @@ class YakeMethod(KeywordMethod):
     def preprocess(self) -> None:
         for doc in self.processor.documents:
             text = doc.text
-            kw_scores = self._extract_yake_keywords(text, top_k=200)  # keep more for searching
+            kw_scores, dbg = self._extract_yake_keywords(text, top_k=200)
             self._doc_kw_scores[doc.filename] = kw_scores
             self._doc_kw_set[doc.filename] = set(kw_scores.keys())
 
@@ -56,6 +57,14 @@ class YakeMethod(KeywordMethod):
             for kw in kw_scores.keys():
                 ws.update(kw.split())
             self._doc_word_set[doc.filename] = ws
+
+            self._write_yake_debug(
+                out_path=f"output/yake/yake_debug_{doc.filename}.txt",
+                candidate_ngrams=dbg["candidate_ngrams"],
+                phrase_scores=dbg["phrase_scores"],
+                word_scores=dbg["word_scores"],
+                title=f"YAKE Debug Output (doc={doc.filename})",
+            )
 
     def run(self, query: str) -> List[SearchResult]:
         if not query or not query.strip():
@@ -164,12 +173,18 @@ class YakeMethod(KeywordMethod):
                 out.append(ng)
         return out
 
-    def _extract_yake_keywords(self, text: str, top_k: int = 20, max_n: int = 3) -> Dict[str, float]:
+    def _extract_yake_keywords(
+            self,
+            text: str,
+            top_k: int = 20,
+            max_n: int = 3
+    ) -> Tuple[Dict[str, float], Dict[str, Any]]:
         """
         A simplified YAKE-like scorer using:
           - term frequency
           - positional bias (earlier is better)
           - context diversity (how many different neighbors it sees)
+
         Score: lower is better.
         """
         sentences = self._split_into_sentences(text)
@@ -185,7 +200,7 @@ class YakeMethod(KeywordMethod):
                 pos += 1
 
         if not tokens_all:
-            return {}
+            return {}, {"candidate_ngrams": [], "phrase_scores": {}, "word_scores": {}}
 
         # word frequency
         wf: Dict[str, int] = defaultdict(int)
@@ -197,73 +212,109 @@ class YakeMethod(KeywordMethod):
         right_neighbors: Dict[str, Set[str]] = defaultdict(set)
         for i, t in enumerate(tokens_all):
             if i > 0:
-                left_neighbors[t].add(tokens_all[i-1])
+                left_neighbors[t].add(tokens_all[i - 1])
             if i < len(tokens_all) - 1:
-                right_neighbors[t].add(tokens_all[i+1])
+                right_neighbors[t].add(tokens_all[i + 1])
 
-        # word-level features
-        # - freq term: higher freq => lower score
-        # - pos term: earlier occurrence => lower score
-        # - diversity term: more unique neighbors => lower score
+        # word-level features -> lower is better
         word_score: Dict[str, float] = {}
-
         total_len = max(len(tokens_all), 1)
+
         for w, f in wf.items():
             first_pos = token_positions[w][0] if token_positions[w] else total_len
             pos_norm = (first_pos + 1) / total_len  # [0..1], smaller = earlier
 
-            div = len(left_neighbors[w]) + len(right_neighbors[w])  # 0..large
-            # Convert to a score where lower is better:
-            #   base = (pos_norm) * (1 / (1+log(1+f))) * (1 / (1+div))
+            div = len(left_neighbors[w]) + len(right_neighbors[w])
             freq_term = 1.0 / (1.0 + math.log(1.0 + f))
             div_term = 1.0 / (1.0 + div)
 
             word_score[w] = pos_norm * freq_term * div_term
 
         # candidate ngrams + scoring
-        ngrams = self._generate_ngrams(tokens_all, max_n=max_n)
+        candidate_ngrams = self._generate_ngrams(tokens_all, max_n=max_n)
 
-        # keep unique, but track minimal score if duplicates
-        cand_scores: Dict[str, float] = {}
-
-        for ng in ngrams:
-            parts = ng.split()
-            if not parts:
-                continue
-
-            # ngram frequency
-            # (cheap approximate count using string map would be expensive;
-            #  we do a small rolling count using a dict)
-            # Instead: accumulate counts in a first pass:
-            # We'll do it properly with a separate pass below.
-            pass
-
-        # Count ngram frequency efficiently
         ng_freq: Dict[str, int] = defaultdict(int)
-        for ng in ngrams:
+        for ng in candidate_ngrams:
             ng_freq[ng] += 1
 
+        phrase_scores: Dict[str, float] = {}
         for ng, f in ng_freq.items():
             parts = ng.split()
             if not parts:
                 continue
 
-            # combine word scores (lower better) + ngram length bonus + freq bonus
-            # lower score => better keyword
             ws = sum(word_score.get(w, 1.0) for w in parts) / len(parts)
 
-            # favor longer phrases a bit (YAKE often returns multiword)
             length_bonus = 1.0 / (1.0 + (len(parts) - 1) * 0.5)
-
-            # favor repeated ngrams
             freq_bonus = 1.0 / (1.0 + math.log(1.0 + f))
 
             yake_like = ws * length_bonus * freq_bonus
 
-            # keep best (lowest)
-            if (ng not in cand_scores) or (yake_like < cand_scores[ng]):
-                cand_scores[ng] = yake_like
+            if (ng not in phrase_scores) or (yake_like < phrase_scores[ng]):
+                phrase_scores[ng] = yake_like
 
-        # return top_k best (lowest) as dict
-        best = sorted(cand_scores.items(), key=lambda x: x[1])[:top_k]
-        return {k: v for k, v in best}
+        best = sorted(phrase_scores.items(), key=lambda x: x[1])[:top_k]
+        kw_scores = {k: v for k, v in best}
+
+        debug = {
+            "candidate_ngrams": candidate_ngrams,
+            "phrase_scores": phrase_scores,
+            "word_scores": word_score,
+        }
+        return kw_scores, debug
+
+    def _write_yake_debug(
+            self,
+            out_path: str,
+            candidate_ngrams: List[str],
+            phrase_scores: Dict[str, float],  # keyword/ngram -> yake score (lower is better)
+            word_scores: Dict[str, float],  # word -> yake-ish score (lower is better)
+            title: str = "YAKE Debug Output",
+            max_items: int = 5000,
+    ) -> None:
+        """
+        Writes a YAKE debug text report:
+          - candidate_ngrams (in original order)
+          - word_scores (sorted ASC: best -> worst) because YAKE is lower-is-better
+          - phrase_scores (sorted ASC: best -> worst)
+        """
+        parent = os.path.dirname(out_path)
+        if parent:
+            os.makedirs(parent, exist_ok=True)
+
+        def _best_sorted(d: Dict[str, float]) -> List[Tuple[str, float]]:
+            # YAKE: lower score = better
+            return sorted(d.items(), key=lambda x: x[1])[:max_items]
+
+        with open(out_path, "w", encoding="utf-8") as f:
+            f.write(f"{title}\n")
+            f.write(f"Candidate ngrams: {len(candidate_ngrams)}\n")
+            f.write(f"Unique words: {len(word_scores)}\n")
+            f.write(f"Unique phrases/ngrams: {len(phrase_scores)}\n")
+            f.write("NOTE: YAKE scores are lower-is-better.\n")
+            f.write("\n" + "=" * 80 + "\n\n")
+
+            # 1) Candidate n-grams (original order)
+            f.write("[CANDIDATE_NGRAMS]\n")
+            for i, ng in enumerate(candidate_ngrams[:max_items], start=1):
+                f.write(f"{i:05d}. {ng}\n")
+            if len(candidate_ngrams) > max_items:
+                f.write(f"... truncated (showing first {max_items})\n")
+
+            f.write("\n" + "=" * 80 + "\n\n")
+
+            # 2) Word scores (sorted best -> worst)
+            f.write("[WORD_SCORES] (sorted low -> high, best -> worst)\n")
+            for w, s in _best_sorted(word_scores):
+                f.write(f"{s:10.6f}\t{w}\n")
+            if len(word_scores) > max_items:
+                f.write(f"... truncated (showing best {max_items})\n")
+
+            f.write("\n" + "=" * 80 + "\n\n")
+
+            # 3) Phrase/ngram scores (sorted best -> worst)
+            f.write("[PHRASE_SCORES] (sorted low -> high, best -> worst)\n")
+            for p, s in _best_sorted(phrase_scores):
+                f.write(f"{s:10.6f}\t{p}\n")
+            if len(phrase_scores) > max_items:
+                f.write(f"... truncated (showing best {max_items})\n")
