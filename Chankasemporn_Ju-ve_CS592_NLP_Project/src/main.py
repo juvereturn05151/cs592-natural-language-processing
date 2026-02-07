@@ -8,6 +8,7 @@ import keyword_ui
 from src.Project1.TF_IDF_Method import create_tfidf_method
 from src.Project1.Rake_Method import create_rake_method
 from src.Project1.Yake_Method import create_yake_method
+from src.Project1.BM25_Method import create_bm25_method
 from src.Project1.DocumentProcessor import DocumentProcessor
 import src.NLP_Globals as Globals
 
@@ -24,9 +25,9 @@ def main():
 
     methods: keyword_ui.Dict[str, keyword_ui.KeywordMethod] = {
         "TFIDF": create_tfidf_method(processor),
+        "BM25": create_bm25_method(processor),
         "RAKE": create_rake_method(processor),
         "YAKE": create_yake_method(processor),
-        "Team Method #2 (placeholder)": keyword_ui.PlaceholderMethod("Team2"),
     }
 
     app = keyword_ui.KeywordSearchApp(methods)
