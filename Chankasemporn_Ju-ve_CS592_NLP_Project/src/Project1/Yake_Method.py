@@ -113,7 +113,7 @@ class YakeMethod(KeywordMethod):
                 key=lambda x: x[1]  # lower YAKE score first (better)
             )[:5]
 
-            matched_str = ", ".join([f"'{kw}' (yake={s:.4f})" for kw, s in matched_sorted]) or "No exact keyword match"
+            matched_str = ", ".join([f"'{kw}' (yake={s:.9f})" for kw, s in matched_sorted]) or "No exact keyword match"
             results.append((doc_name, total, matched_str))
 
         results.sort(key=lambda x: x[1], reverse=True)
