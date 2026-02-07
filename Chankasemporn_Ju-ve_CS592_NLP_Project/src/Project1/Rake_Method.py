@@ -1,3 +1,8 @@
+"""
+File Name:    Rake_Method.py
+Author(s):    Ju-ve Chankasemporn
+Copyright:    (c) 2025 DigiPen Institute of Technology. All rights reserved.
+"""
 import re
 import string
 import os

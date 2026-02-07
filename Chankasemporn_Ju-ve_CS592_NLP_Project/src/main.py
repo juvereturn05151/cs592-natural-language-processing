@@ -6,7 +6,7 @@ Copyright:    (c) 2025 DigiPen Institute of Technology. All rights reserved.
 
 import keyword_ui
 from src.Project1.TF_IDF_Method import create_tfidf_method
-from src.Project1.RakeMethod import create_rake_method
+from src.Project1.Rake_Method import create_rake_method
 from src.Project1.DocumentProcessor import DocumentProcessor
 import src.NLP_Globals as Globals
 
