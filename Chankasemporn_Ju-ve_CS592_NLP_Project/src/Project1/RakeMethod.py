@@ -1,5 +1,6 @@
 import re
 import string
+import os
 from collections import defaultdict
 from typing import Dict, List, Tuple, Set, Optional
 
@@ -8,15 +9,6 @@ from .DocumentProcessor import DocumentProcessor
 import src.NLP_Globals as Globals
 
 def create_rake_method(processor: DocumentProcessor = None) -> KeywordMethod:
-    """
-    Factory function to create and initialize RAKE method.
-
-    Important:
-    - RAKE needs stopwords to split phrases => tokenizer should NOT remove stopwords.
-    - We should reuse the same DocumentProcessor that main.py already loaded,
-      so RAKE and TF-IDF operate on the same document corpus.
-    """
-
     rake = RakeMethod(
         name="RAKE (Keyword Extraction / Document Search)",
         processor=processor
@@ -35,7 +27,6 @@ class RakeMethod(KeywordMethod):
     def __init__(self, name: str = "RAKE", processor: Optional[DocumentProcessor] = None):
         super().__init__(name=name)
         self.processor = processor or DocumentProcessor()
-        self._is_loaded = False
 
         self.stopwords: Set[str] = set(w.lower() for w in Globals.STOP_WORDS)
         self.punct: Set[str] = set(string.punctuation)
@@ -49,12 +40,6 @@ class RakeMethod(KeywordMethod):
     # ---------- Public API ----------
 
     def preprocess(self) -> None:
-        if self._is_loaded:
-            return
-        if not self.processor.documents:
-            self._is_loaded = True
-            return
-
         for doc in self.processor.documents:
             raw_text = doc.text
             phrases = self._generate_candidate_phrases(raw_text)
@@ -69,11 +54,16 @@ class RakeMethod(KeywordMethod):
                 word_set.update(p.split())
             self._doc_word_set[doc.filename] = word_set
 
-        self._is_loaded = True
+            self._write_rake_debug(
+                out_path=f"output/rake/rake_debug_{doc.filename}.txt",
+                candidate_phrases=phrases,
+                phrase_scores=phrase_scores,
+                word_scores=word_scores,
+                title=f"RAKE Debug Output (doc={doc.filename})"
+            )
+
 
     def extract_keywords(self, doc_name: str, top_k: int = 10) -> List[Tuple[str, float]]:
-        if not self._is_loaded:
-            self.preprocess()
 
         scores = self._doc_phrase_scores.get(doc_name, {})
         return sorted(scores.items(), key=lambda x: x[1], reverse=True)[:top_k]
@@ -84,18 +74,7 @@ class RakeMethod(KeywordMethod):
         return sorted(phrase_scores.items(), key=lambda x: x[1], reverse=True)[:top_k]
 
     def run(self, query: str) -> List[SearchResult]:
-        """
-        Rank documents for a query using RAKE phrase/word overlap.
-        """
-        if not self._is_loaded:
-            try:
-                self.preprocess()
-            except Exception as e:
-                return [SearchResult(
-                    title=f"Error initializing RAKE: {e}",
-                    score=0.0,
-                    details="Please check DocumentProcessor configuration."
-                )]
+        """Rank documents for a query using RAKE phrase/word overlap."""
 
         if not query or not query.strip():
             return [SearchResult(title="Empty query", score=0.0, details="Please type a query.")]
@@ -246,3 +225,58 @@ class RakeMethod(KeywordMethod):
                 phrase_scores[phrase] = score
 
         return phrase_scores, word_scores
+
+    def _write_rake_debug(
+            self,
+            out_path: str,
+            candidate_phrases: List[str],
+            phrase_scores: Dict[str, float],
+            word_scores: Dict[str, float],
+            title: str = "RAKE Debug Output",
+            max_items: int = 5000,  # safety cap for huge docs
+    ) -> None:
+        """
+        Writes a text report:
+          - candidate_phrases (in original order)
+          - word_scores (sorted desc)
+          - phrase_scores (sorted desc)
+        """
+        # Ensure folder exists if user passed something like "debug/file.txt"
+        parent = os.path.dirname(out_path)
+        if parent:
+            os.makedirs(parent, exist_ok=True)
+
+        def _top_sorted(d: Dict[str, float]) -> List[Tuple[str, float]]:
+            return sorted(d.items(), key=lambda x: x[1], reverse=True)[:max_items]
+
+        with open(out_path, "w", encoding="utf-8") as f:
+            f.write(f"{title}\n")
+            f.write(f"Candidate phrases: {len(candidate_phrases)}\n")
+            f.write(f"Unique words: {len(word_scores)}\n")
+            f.write(f"Unique phrases: {len(phrase_scores)}\n")
+            f.write("\n" + "=" * 80 + "\n\n")
+
+            # 1) Candidate phrases (original order)
+            f.write("[CANDIDATE_PHRASES]\n")
+            for i, p in enumerate(candidate_phrases[:max_items], start=1):
+                f.write(f"{i:05d}. {p}\n")
+            if len(candidate_phrases) > max_items:
+                f.write(f"... truncated (showing first {max_items})\n")
+
+            f.write("\n" + "=" * 80 + "\n\n")
+
+            # 2) Word scores (sorted)
+            f.write("[WORD_SCORES] (sorted high -> low)\n")
+            for w, s in _top_sorted(word_scores):
+                f.write(f"{s:10.6f}\t{w}\n")
+            if len(word_scores) > max_items:
+                f.write(f"... truncated (showing top {max_items})\n")
+
+            f.write("\n" + "=" * 80 + "\n\n")
+
+            # 3) Phrase scores (sorted)
+            f.write("[PHRASE_SCORES] (sorted high -> low)\n")
+            for p, s in _top_sorted(phrase_scores):
+                f.write(f"{s:10.6f}\t{p}\n")
+            if len(phrase_scores) > max_items:
+                f.write(f"... truncated (showing top {max_items})\n")
