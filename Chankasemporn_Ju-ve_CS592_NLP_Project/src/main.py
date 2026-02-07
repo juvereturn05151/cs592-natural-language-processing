@@ -23,7 +23,7 @@ def main():
 
     methods: keyword_ui.Dict[str, keyword_ui.KeywordMethod] = {
         "TFIDF": create_tfidf_method(processor),
-        "RAKE": create_rake_method(),
+        "RAKE": keyword_ui.PlaceholderMethod("Rake"),#create_rake_method(),
         "Team Method #1 (placeholder)": keyword_ui.PlaceholderMethod("Team1"),
         "Team Method #2 (placeholder)": keyword_ui.PlaceholderMethod("Team2"),
     }

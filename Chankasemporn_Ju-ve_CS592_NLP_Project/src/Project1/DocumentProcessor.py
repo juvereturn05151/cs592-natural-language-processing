@@ -9,18 +9,8 @@ from typing import Dict, List, Set
 import xml.etree.ElementTree as ET
 from collections import defaultdict
 from pathlib import Path
-from src.TokenizerHelper import TokenizerHelper, TokenizedDocument
+from src.TokenizerHelper import TokenizerHelper, DocumentData
 
-
-@dataclass
-class DocumentData:
-    """Stores processed document data"""
-    path: str
-    filename: str
-    term_frequencies: Dict[str, float]
-    raw_counts: Dict[str, int]
-    tokenized_doc: TokenizedDocument
-    unique_terms: Set[str]
 
 
 class DocumentProcessor:
@@ -58,24 +48,11 @@ class DocumentProcessor:
                 text = self._extract_text_from_file(str(file_path))
 
                 # Process text
-                tokenized_doc = self.tokenizer.process_text(text, file_path.name)
+                tokenized_doc = self.tokenizer.process_text(text, file_path)
 
-                # Get unique terms
-                unique_terms = set(tokenized_doc.raw_counts.keys())
-
-                # Create DocumentData
-                doc_data = DocumentData(
-                    path=str(file_path),
-                    filename=file_path.name,
-                    term_frequencies=tokenized_doc.term_frequencies,
-                    raw_counts=tokenized_doc.raw_counts,
-                    tokenized_doc=tokenized_doc,
-                    unique_terms=unique_terms
-                )
-
-                self.documents.append(doc_data)
+                self.documents.append(tokenized_doc)
                 self.doc_names.append(file_path.name)
-                self.corpus_terms.update(unique_terms)
+                self.corpus_terms.update(tokenized_doc.unique_terms)
 
             except Exception as e:
                 print(f"Error processing {file_path.name}: {e}")

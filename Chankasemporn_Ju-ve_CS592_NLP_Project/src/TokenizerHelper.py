@@ -7,18 +7,21 @@ Description:  Text processing and tokenization utilities for NLP methods
 import nltk
 import re
 import string
-from typing import List, Dict, Tuple
+from typing import List, Dict, Set
 from dataclasses import dataclass
 import src.NLP_Globals as Globals
+from pathlib import Path
 
 @dataclass
-class TokenizedDocument:
+class DocumentData:
     """Container for tokenized document data."""
-    name: str
+    filename: str
+    path: str
     tokens: List[str]
     stemmed_tokens: List[str]  # Added stemmed tokens
     term_frequencies: Dict[str, float]
     raw_counts: Dict[str, int]
+    unique_terms: Set[str]
     text: str = ""
     use_stemming: bool = False  # Track if stemming was used
 
@@ -120,17 +123,17 @@ class TokenizerHelper:
 
         return [self.stemmer.stem(token) for token in tokens]
 
-    def process_text(self, text: str, doc_name: str = "", use_stemming: bool = None) -> TokenizedDocument:
+    def process_text(self, text: str, file_path,use_stemming: bool = None) -> DocumentData:
         """
         Process text through full tokenization pipeline with optional stemming.
 
         Args:
             text: Input text
-            doc_name: Optional document name
+            file_path: File Path
             use_stemming: Override instance setting for stemming (default: None = use instance setting)
 
         Returns:
-            TokenizedDocument object
+            DocumentData object
         """
         #determine if stemming should be used
         should_stem = use_stemming if use_stemming is not None else self.use_stemming
@@ -161,14 +164,18 @@ class TokenizerHelper:
         for token, count in token_counts.items():
             term_frequencies[token] = count / total_tokens if total_tokens > 0 else 0
 
-        return TokenizedDocument(
-            name=doc_name,
+        unique_terms = set(token_counts.keys())
+
+        return DocumentData(
+            filename=file_path.name,
+            path = str(file_path),
             # Original filtered tokens
             tokens=filtered_tokens,
             # Stemmed tokens if used
             stemmed_tokens=stemmed_tokens if should_stem else [],
             term_frequencies=term_frequencies,
             raw_counts=token_counts,
+            unique_terms = unique_terms,
             text=text,
             use_stemming=should_stem
         )
