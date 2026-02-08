@@ -12,7 +12,7 @@ from typing import Iterable, Optional
 STOP_WORDS = set(nltk.corpus.stopwords.words('english'))
 VALID_TAGS = ['NN', 'NNP', 'NNPS', 'NNS', 'CD', 'FW', 'JJ', 'JJR', 'JJS']
 REGEX_CLEANER = re.compile(r"['—_\“\”\"\”’‘\-)\:!\&]")
-
+REGEX_NONWORD = re.compile(r"[^\w]+")
 
 def _find_repo_root(start: Path, markers: Iterable[str] = ("pyproject.toml", ".git", "requirements.txt")) -> Path:
     """Walk upward from `start` until we find a directory that looks like the repo root. Falls back to `start` if nothing found.

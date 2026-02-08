@@ -10,6 +10,7 @@ import math
 import re
 import string
 import os
+import time  # ✅ added
 
 from .KeywordMethod import SearchResult, KeywordMethod
 from .DocumentProcessor import DocumentProcessor
@@ -52,6 +53,17 @@ class YakeMethod(KeywordMethod):
     # ---------------- Public API ----------------
 
     def preprocess(self) -> None:
+        start = time.perf_counter()
+
+        # Clear caches so re-preprocess doesn't keep stale docs
+        self._doc_kw_scores.clear()
+        self._doc_all_phrase_scores.clear()
+        self._doc_phrase_set.clear()
+        self._doc_word_set.clear()
+
+        docs_processed = 0
+        total_candidates = 0  # total candidate ngrams across docs (debug metric)
+
         for doc in self.processor.documents:
             text = doc.raw_text
 
@@ -59,10 +71,8 @@ class YakeMethod(KeywordMethod):
             # dbg["phrase_scores"]: ALL candidate ngrams for search
             kw_scores, dbg = self._extract_yake_keywords(text, top_k=200)
 
-            # Keep top-k only for extract_keywords()
             self._doc_kw_scores[doc.filename] = kw_scores
 
-            # For SEARCH, cache ALL candidate phrase scores + sets
             all_phrase_scores = dbg["phrase_scores"]
             self._doc_all_phrase_scores[doc.filename] = all_phrase_scores
             self._doc_phrase_set[doc.filename] = set(all_phrase_scores.keys())
@@ -72,16 +82,18 @@ class YakeMethod(KeywordMethod):
                 ws.update(ng.split())
             self._doc_word_set[doc.filename] = ws
 
-            # Debug file (optional)
-            #self._write_yake_debug(
-            #    out_path=f"output/yake/yake_debug_{doc.filename}.txt",
-            #    candidate_ngrams=dbg["candidate_ngrams"],
-            #    phrase_scores=dbg["phrase_scores"],
-            #    word_scores=dbg["word_scores"],
-            #    title=f"YAKE Debug Output (doc={doc.filename})",
-            #)
+            docs_processed += 1
+            total_candidates += len(dbg.get("candidate_ngrams", []))
+
+        elapsed = time.perf_counter() - start
+        print(
+            f"[YAKE] Preprocess | docs={docs_processed} | "
+            f"total_candidates={total_candidates} | time={elapsed:.4f}s"
+        )
 
     def run(self, query: str) -> List[SearchResult]:
+        start = time.perf_counter()
+
         if not query or not query.strip():
             return [SearchResult(title="Empty query", score=0.0, details="Please type a query.")]
 
@@ -97,6 +109,7 @@ class YakeMethod(KeywordMethod):
             query_word_set.update(p.split())
 
         results: List[Tuple[str, float, str]] = []
+        docs_scored = 0
 
         for doc in self.processor.documents:
             doc_name = doc.filename
@@ -108,15 +121,15 @@ class YakeMethod(KeywordMethod):
             if not doc_phrase_scores:
                 continue
 
+            docs_scored += 1
             overlap = query_phrase_set.intersection(doc_phrases)
 
             # ---- scoring ----
             # YAKE lower-is-better. Convert to a stable higher-is-better score.
-            # Use -log(score) instead of 1/score to avoid huge explosions.
             kw_score = 0.0
             for kw in overlap:
                 s = doc_phrase_scores.get(kw, 1.0)
-                kw_score += -math.log(s + 1e-12)  # stable, higher is better
+                kw_score += -math.log(s + 1e-12)
 
             # Word overlap bonus (helps when phrases differ but single words match)
             word_overlap = query_word_set.intersection(doc_words)
@@ -146,13 +159,19 @@ class YakeMethod(KeywordMethod):
             ))
 
         if not out:
-            # Fallback: show all docs (like your other methods)
             for doc in self.processor.documents:
                 out.append(SearchResult(
                     title=doc.filename,
                     score=0.0,
                     details=f"No YAKE keyword overlap with query.\nPath: {doc.path}"
                 ))
+
+        elapsed = time.perf_counter() - start
+        print(
+            f"[YAKE] Run | query_len={len(query.split())} | "
+            f"docs_scored={docs_scored} | hits={len(results)} | "
+            f"time={elapsed:.4f}s"
+        )
 
         return out
 
@@ -273,7 +292,7 @@ class YakeMethod(KeywordMethod):
 
         debug = {
             "candidate_ngrams": candidate_ngrams,
-            "phrase_scores": phrase_scores,  # ALL candidates (use this for search)
+            "phrase_scores": phrase_scores,
             "word_scores": word_score,
         }
         return kw_scores, debug

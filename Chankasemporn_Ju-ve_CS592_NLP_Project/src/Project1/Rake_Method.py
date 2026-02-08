@@ -6,12 +6,14 @@ Copyright:    (c) 2025 DigiPen Institute of Technology. All rights reserved.
 import re
 import string
 import os
+import time
 from collections import defaultdict
 from typing import Dict, List, Tuple, Set, Optional
 
 from .KeywordMethod import SearchResult, KeywordMethod
 from .DocumentProcessor import DocumentProcessor
 import src.NLP_Globals as Globals
+
 
 def create_rake_method(processor: DocumentProcessor = None) -> KeywordMethod:
     rake = RakeMethod(
@@ -22,13 +24,24 @@ def create_rake_method(processor: DocumentProcessor = None) -> KeywordMethod:
     rake.preprocess()
     return rake
 
+
 class RakeMethod(KeywordMethod):
     def __init__(self, name: str = "RAKE", processor: Optional[DocumentProcessor] = None):
         super().__init__(name=name)
         self.processor = processor or DocumentProcessor()
 
-        self.stopwords: Set[str] = set(w.lower() for w in Globals.STOP_WORDS)
+        # STOP_WORDS from NLTK are already lowercase, so no need to lower() again
+        self.stopwords: Set[str] = Globals.STOP_WORDS
+
+        # Kept for compatibility, but we won't rely on per-token strip anymore
         self.punct: Set[str] = set(string.punctuation)
+
+        # Use precompiled regex from Globals where possible
+        self._regex_cleaner = Globals.REGEX_CLEANER
+
+        # Extra compiled regex (fallback) for removing remaining non-word chars
+        # If you add REGEX_NONWORD in NLP_Globals.py, we'll automatically use it.
+        self._regex_nonword = getattr(Globals, "REGEX_NONWORD", re.compile(r"[^\w]+"))
 
         # Caches
         self._doc_phrase_scores: Dict[str, Dict[str, float]] = {}  # doc -> phrase->score
@@ -39,6 +52,17 @@ class RakeMethod(KeywordMethod):
     # ---------- Public API ----------
 
     def preprocess(self) -> None:
+        start = time.perf_counter()
+
+        # Clear caches so re-preprocess doesn't keep stale docs
+        self._doc_phrase_scores.clear()
+        self._doc_word_scores.clear()
+        self._doc_phrase_set.clear()
+        self._doc_word_set.clear()
+
+        docs_processed = 0
+        total_phrases = 0
+
         for doc in self.processor.documents:
             raw_text = doc.raw_text
             phrases = self._generate_candidate_phrases(raw_text)
@@ -48,22 +72,22 @@ class RakeMethod(KeywordMethod):
             self._doc_word_scores[doc.filename] = word_scores
             self._doc_phrase_set[doc.filename] = set(phrase_scores.keys())
 
-            word_set = set()
+            # Build doc word set from unique phrases
+            word_set: Set[str] = set()
             for p in phrase_scores.keys():
                 word_set.update(p.split())
             self._doc_word_set[doc.filename] = word_set
 
-            #self._write_rake_debug(
-            #    out_path=f"output/rake/rake_debug_{doc.filename}.txt",
-            #    candidate_phrases=phrases,
-            #    phrase_scores=phrase_scores,
-            #    word_scores=word_scores,
-            #    title=f"RAKE Debug Output (doc={doc.filename})"
-            #)
+            docs_processed += 1
+            total_phrases += len(phrases)
 
+        elapsed = time.perf_counter() - start
+        print(
+            f"[RAKE] Preprocess | docs={docs_processed} | "
+            f"total_phrases={total_phrases} | time={elapsed:.4f}s"
+        )
 
     def extract_keywords(self, doc_name: str, top_k: int = 10) -> List[Tuple[str, float]]:
-
         scores = self._doc_phrase_scores.get(doc_name, {})
         return sorted(scores.items(), key=lambda x: x[1], reverse=True)[:top_k]
 
@@ -74,6 +98,7 @@ class RakeMethod(KeywordMethod):
 
     def run(self, query: str) -> List[SearchResult]:
         """Rank documents for a query using RAKE phrase/word overlap."""
+        start = time.perf_counter()
 
         if not query or not query.strip():
             return [SearchResult(title="Empty query", score=0.0, details="Please type a query.")]
@@ -84,11 +109,12 @@ class RakeMethod(KeywordMethod):
         query_phrase_set = set(query_phrases)
 
         # Also build a query word set for partial matching
-        query_word_set = set()
+        query_word_set: Set[str] = set()
         for p in query_phrases:
             query_word_set.update(p.split())
 
         results: List[Tuple[str, float, str]] = []
+        docs_scored = 0
 
         for doc in self.processor.documents:
             doc_name = doc.filename
@@ -99,13 +125,15 @@ class RakeMethod(KeywordMethod):
             if not doc_phrase_scores:
                 continue
 
+            docs_scored += 1
+
             # Phrase overlap weighted by document phrase scores
             phrase_overlap = query_phrase_set.intersection(doc_phrases)
             phrase_score = sum(doc_phrase_scores[p] for p in phrase_overlap)
 
             # Word overlap bonus (helps when phrases differ but words match)
             word_overlap = query_word_set.intersection(doc_words)
-            word_bonus = len(word_overlap) * 0.25  # small, to avoid overpowering phrase matches
+            word_bonus = len(word_overlap) * 0.25
 
             total = phrase_score + word_bonus
             if total <= 0:
@@ -145,6 +173,13 @@ class RakeMethod(KeywordMethod):
                     )
                 ))
 
+        elapsed = time.perf_counter() - start
+        print(
+            f"[RAKE] Run | query_len={len(query.split())} | "
+            f"docs_scored={docs_scored} | hits={len(results)} | "
+            f"time={elapsed:.4f}s"
+        )
+
         return out
 
     # ---------- RAKE internals ----------
@@ -154,18 +189,23 @@ class RakeMethod(KeywordMethod):
         return [s.strip() for s in re.split(r'[\n.!?]+', text) if s.strip()]
 
     def _generate_candidate_phrases(self, text: str) -> List[str]:
+        """
+        Faster candidate phrase generation:
+        - Do punctuation cleaning ONCE per sentence using Globals.REGEX_CLEANER (compiled)
+        - Avoid per-token strip() + re.sub() work where possible
+        """
         sentences = self._split_into_sentences(text)
         candidates: List[str] = []
 
         for sentence in sentences:
-            words = sentence.lower().split()
-            phrase: List[str] = []
+            # One regex pass per sentence instead of per token
+            cleaned = self._regex_cleaner.sub(" ", sentence.lower())
+            words = cleaned.split()
 
+            phrase: List[str] = []
             for w in words:
-                # Remove punctuation around the word
-                w = w.strip(string.punctuation)
-                # Remove non-word characters inside (keeps letters/numbers/_)
-                w = re.sub(r"[^\w]+", "", w)
+                # Remove any remaining non-word chars quickly (compiled)
+                w = self._regex_nonword.sub("", w)
 
                 if (not w) or (w in self.stopwords):
                     if phrase:
@@ -178,7 +218,7 @@ class RakeMethod(KeywordMethod):
                 candidates.append(" ".join(phrase))
 
         # Filter candidates
-        filtered = []
+        filtered: List[str] = []
         for p in candidates:
             toks = p.split()
             if 1 <= len(toks) <= 4 and len(p) > 1:
@@ -240,7 +280,6 @@ class RakeMethod(KeywordMethod):
           - word_scores (sorted desc)
           - phrase_scores (sorted desc)
         """
-        # Ensure folder exists if user passed something like "debug/file.txt"
         parent = os.path.dirname(out_path)
         if parent:
             os.makedirs(parent, exist_ok=True)
@@ -255,7 +294,6 @@ class RakeMethod(KeywordMethod):
             f.write(f"Unique phrases: {len(phrase_scores)}\n")
             f.write("\n" + "=" * 80 + "\n\n")
 
-            # 1) Candidate phrases (original order)
             f.write("[CANDIDATE_PHRASES]\n")
             for i, p in enumerate(candidate_phrases[:max_items], start=1):
                 f.write(f"{i:05d}. {p}\n")
@@ -264,7 +302,6 @@ class RakeMethod(KeywordMethod):
 
             f.write("\n" + "=" * 80 + "\n\n")
 
-            # 2) Word scores (sorted)
             f.write("[WORD_SCORES] (sorted high -> low)\n")
             for w, s in _top_sorted(word_scores):
                 f.write(f"{s:10.6f}\t{w}\n")
@@ -273,7 +310,6 @@ class RakeMethod(KeywordMethod):
 
             f.write("\n" + "=" * 80 + "\n\n")
 
-            # 3) Phrase scores (sorted)
             f.write("[PHRASE_SCORES] (sorted high -> low)\n")
             for p, s in _top_sorted(phrase_scores):
                 f.write(f"{s:10.6f}\t{p}\n")
