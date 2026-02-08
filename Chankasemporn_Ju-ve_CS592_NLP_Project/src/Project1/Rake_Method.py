@@ -46,7 +46,7 @@ class RakeMethod(KeywordMethod):
 
     def preprocess(self) -> None:
         for doc in self.processor.documents:
-            raw_text = doc.text
+            raw_text = doc.raw_text
             phrases = self._generate_candidate_phrases(raw_text)
             phrase_scores, word_scores = self._calculate_rake_scores(phrases)
 

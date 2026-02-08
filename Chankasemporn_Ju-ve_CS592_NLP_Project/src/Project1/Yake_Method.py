@@ -53,7 +53,7 @@ class YakeMethod(KeywordMethod):
 
     def preprocess(self) -> None:
         for doc in self.processor.documents:
-            text = doc.text
+            text = doc.raw_text
 
             # kw_scores: top-k best ngrams for keyword extraction
             # dbg["phrase_scores"]: ALL candidate ngrams for search

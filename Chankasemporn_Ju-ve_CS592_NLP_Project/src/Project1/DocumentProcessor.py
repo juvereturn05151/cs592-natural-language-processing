@@ -34,9 +34,7 @@ def _init_worker_tokenizer(use_stemming: bool, use_pos_tagging: bool, remove_sto
 
 
 def _extract_text_from_file_worker(file_path: str) -> str:
-    """
-    Same logic as DocumentProcessor._extract_text_from_file but top-level.
-    """
+    """Same logic as DocumentProcessor._extract_text_from_file but top-level."""
     try:
         tree = ET.parse(file_path)
         root = tree.getroot()
@@ -53,7 +51,7 @@ def _extract_text_from_file_worker(file_path: str) -> str:
             return ET.tostring(root, method='text', encoding='unicode')
 
     except ET.ParseError:
-        # Plain text fallback
+        #plain text fallback
         with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
             return f.read()
 
@@ -81,9 +79,7 @@ def _process_one_file(file_path_str: str) -> Tuple[Optional[DocumentData], Optio
 
 
 class DocumentProcessor:
-    """
-    Handles document loading, processing, and text extraction.
-    """
+    """Handles document loading, processing, and text extraction."""
 
     def __init__(self, tokenizer: TokenizerHelper = None):
         self.tokenizer = tokenizer or TokenizerHelper()
@@ -93,10 +89,7 @@ class DocumentProcessor:
         self._is_loaded = False
 
     def _extract_text_from_file(self, file_path: str) -> str:
-        """
-        Return raw text from file.
-        Tries XML <Body><Item> first; else uses XML text flattening; else plain text.
-        """
+        """ Return raw text from file. Tries XML <Body><Item> first; else uses XML text flattening; else plain text."""
         try:
             tree = ET.parse(file_path)
             root = tree.getroot()
@@ -116,17 +109,8 @@ class DocumentProcessor:
             with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
                 return f.read()
 
-    def load_from_directory(
-        self,
-        data_dir: str,
-        file_pattern: str = "*.txt",
-        parallel: bool = False,
-        num_workers: Optional[int] = None,
-        chunksize: int = 4
-    ) -> None:
-        """
-        Load and process all documents in the data directory.
-        """
+    def load_from_directory(self,data_dir: str,file_pattern: str = "*.txt",parallel: bool = False,num_workers: Optional[int] = None, chunksize: int = 4) -> None:
+        """Load and process all documents in the data directory."""
         if self._is_loaded:
             return
 
