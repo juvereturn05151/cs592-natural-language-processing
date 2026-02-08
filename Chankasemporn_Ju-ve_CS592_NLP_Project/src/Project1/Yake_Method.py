@@ -73,13 +73,13 @@ class YakeMethod(KeywordMethod):
             self._doc_word_set[doc.filename] = ws
 
             # Debug file (optional)
-            self._write_yake_debug(
-                out_path=f"output/yake/yake_debug_{doc.filename}.txt",
-                candidate_ngrams=dbg["candidate_ngrams"],
-                phrase_scores=dbg["phrase_scores"],
-                word_scores=dbg["word_scores"],
-                title=f"YAKE Debug Output (doc={doc.filename})",
-            )
+            #self._write_yake_debug(
+            #    out_path=f"output/yake/yake_debug_{doc.filename}.txt",
+            #    candidate_ngrams=dbg["candidate_ngrams"],
+            #    phrase_scores=dbg["phrase_scores"],
+            #    word_scores=dbg["word_scores"],
+            #    title=f"YAKE Debug Output (doc={doc.filename})",
+            #)
 
     def run(self, query: str) -> List[SearchResult]:
         if not query or not query.strip():

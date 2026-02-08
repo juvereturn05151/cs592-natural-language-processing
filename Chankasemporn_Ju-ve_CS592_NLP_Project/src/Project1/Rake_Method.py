@@ -59,13 +59,13 @@ class RakeMethod(KeywordMethod):
                 word_set.update(p.split())
             self._doc_word_set[doc.filename] = word_set
 
-            self._write_rake_debug(
-                out_path=f"output/rake/rake_debug_{doc.filename}.txt",
-                candidate_phrases=phrases,
-                phrase_scores=phrase_scores,
-                word_scores=word_scores,
-                title=f"RAKE Debug Output (doc={doc.filename})"
-            )
+            #self._write_rake_debug(
+            #    out_path=f"output/rake/rake_debug_{doc.filename}.txt",
+            #    candidate_phrases=phrases,
+            #    phrase_scores=phrase_scores,
+            #    word_scores=word_scores,
+            #    title=f"RAKE Debug Output (doc={doc.filename})"
+            #)
 
 
     def extract_keywords(self, doc_name: str, top_k: int = 10) -> List[Tuple[str, float]]:
