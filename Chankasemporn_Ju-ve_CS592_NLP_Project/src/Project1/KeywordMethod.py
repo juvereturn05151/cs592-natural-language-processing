@@ -5,7 +5,7 @@ Copyright:    (c) 2025 DigiPen Institute of Technology. All rights reserved.
 """
 
 from dataclasses import dataclass
-from typing import Callable, Dict, List, Protocol, Tuple
+from typing import List, Protocol
 
 # data model
 @dataclass(frozen=True)
@@ -17,10 +17,6 @@ class SearchResult:
 
 # extractor interface (plug-in later)
 class KeywordMethod(Protocol):
-    """
-    A method takes a query string and returns ranked results.
-    TODO: adapt this to call your TFIDF/RAKE/other code.
-    """
+    """A method takes a query string and returns ranked results."""
     def run(self, query: str) -> List[SearchResult]:
         ...
-

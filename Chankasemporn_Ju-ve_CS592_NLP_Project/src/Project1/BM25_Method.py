@@ -29,12 +29,7 @@ class BM25Method(KeywordMethod):
     - extract_keywords(doc_name): returns top terms by BM25-ish term contribution
     """
 
-    def __init__(
-        self,
-        name: str = "BM25",
-        processor: Optional[DocumentProcessor] = None,
-        k1: float = 1.5,
-        b: float = 0.75,
+    def __init__(self, name: str = "BM25", processor: Optional[DocumentProcessor] = None, k1: float = 1.5, b: float = 0.75,
         use_plus_idf: bool = True,  # more stable if df ~ N
     ):
         super().__init__(name=name)
@@ -46,7 +41,8 @@ class BM25Method(KeywordMethod):
 
         self.idf_cache: Dict[str, float] = {}
         self.avg_doc_len: float = 0.0
-        self.doc_len: Dict[str, int] = {}  # doc filename -> length in tokens
+        # doc filename -> length in tokens
+        self.doc_len: Dict[str, int] = {}
 
     # ---------------- Public API ----------------
 
