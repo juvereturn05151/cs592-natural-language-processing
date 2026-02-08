@@ -17,7 +17,7 @@ def main():
     processor = DocumentProcessor()
 
     try:
-        processor.load_from_directory(data_dir, "*.txt", parallel=True)
+        processor.load_all_files(data_dir, "*.txt", parallel=True)
     except Exception as e:
         print(f"Warning: Could not load documents: {e}")
         print(f"Data directory being used: {data_dir}")

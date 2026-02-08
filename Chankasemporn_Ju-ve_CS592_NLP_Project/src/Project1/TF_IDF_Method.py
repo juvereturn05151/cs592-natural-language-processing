@@ -9,7 +9,6 @@ import math
 from .KeywordMethod import SearchResult, KeywordMethod
 from .DocumentProcessor import DocumentProcessor
 
-
 def create_tfidf_method(processor: DocumentProcessor = None) -> KeywordMethod:
     """Factory function to create and initialize TF-IDF method."""
     tfidf = TfIdfMethod(
@@ -23,19 +22,16 @@ def create_tfidf_method(processor: DocumentProcessor = None) -> KeywordMethod:
 
 
 class TfIdfMethod:
-    """
-    TF-IDF implementation for keyword extraction and document search. Uses DocumentProcessor for document handling.
-    """
+    """TF-IDF implementation for keyword extraction and document search. Uses DocumentProcessor for document handling."""
 
     def __init__(self, name: str = "TF-IDF", processor: DocumentProcessor = None):
         self.name = name
         self.processor = processor
+        #calculate inverse document frequency for each term
         self.idf_cache: Dict[str, float] = {}
 
     def run(self, query: str) -> List[SearchResult]:
-        """
-        Implementation of the KeywordMethod protocol. Searches documents and returns ranked results.
-        """
+        """Implementation of the KeywordMethod protocol. Searches documents and returns ranked results."""
 
         #search for documents relevant to query
         tf_idf_per_document_results = self.get_tf_idf_per_document(query, top_k=10)
@@ -69,9 +65,9 @@ class TfIdfMethod:
 
     def _calculate_idf(self) -> None:
         """Calculate IDF for all terms in the corpus."""
-        N = self.processor.document_count
+        number_of_document = self.processor.document_count
 
-        if N == 0:
+        if number_of_document == 0:
             return
 
         doc_freq = self.processor.get_document_frequencies()
@@ -79,7 +75,7 @@ class TfIdfMethod:
         #get document containing term t
         #calculate IDF for each term
         for term, df in doc_freq.items():
-            self.idf_cache[term] = math.log((N + 1) / (df + 1)) + 1
+            self.idf_cache[term] = math.log((number_of_document + 1) / (df + 1)) + 1
 
     def _calculate_tfidf(self, term: str, doc_tf: float) -> float:
         """Calculate TF-IDF score for a term in a document."""
@@ -139,4 +135,3 @@ class TfIdfMethod:
         #sort by TF-IDF score (highest first)
         term_scores.sort(key=lambda x: x[1], reverse=True)
         return term_scores[:top_k]
-

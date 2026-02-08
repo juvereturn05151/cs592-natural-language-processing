@@ -49,7 +49,7 @@ def _extract_text_from_file(file_path: str) -> str:
             return f.read()
 
 
-def _process_one_file(file_path_str: str) -> Tuple[Optional[DocumentData], Optional[str]]:
+def _process_single_file(file_path_str: str) -> Tuple[Optional[DocumentData], Optional[str]]:
     """
     Worker job:
       - extract raw text
@@ -80,7 +80,7 @@ class DocumentProcessor:
         self.corpus_terms: Set[str] = set()
         self._is_loaded = False
 
-    def load_from_directory(self,data_dir: str,file_pattern: str = "*.txt",parallel: bool = False,num_workers: Optional[int] = None, chunk_size: int = 4) -> None:
+    def load_all_files(self,data_dir: str,file_pattern: str = "*.txt",parallel: bool = False,num_workers: Optional[int] = None, chunk_size: int = 4) -> None:
         """Load and process all documents in the data directory."""
         if self._is_loaded:
             return
@@ -119,7 +119,7 @@ class DocumentProcessor:
                 initializer=_init_worker_tokenizer,
                 initargs=(use_stemming, use_pos_tagging, remove_stopwords),
             ) as pool:
-                results = pool.map(_process_one_file, file_paths, chunksize=chunk_size)
+                results = pool.map(_process_single_file, file_paths, chunksize=chunk_size)
 
             error_count = 0
             for (doc_data, err), file_path in zip(results, text_files):
@@ -156,9 +156,9 @@ class DocumentProcessor:
             f"Time: {elapsed:.3f}s"
         )
 
+    #use at keyword ui when loading a single file
     def load_one_file(self, file_path: str) -> DocumentData:
         """load and process ONE file and append it to the current corpus.
-
         - does NOT require calling load_from_directory again.
         - Updates: documents, doc_names, corpus_terms
         - if a document with the same filename already exists, it replaces it.
