@@ -3,7 +3,7 @@ File Name:    BM25_Method.py
 Author(s):    Ju-ve Chankasemporn
 Copyright:    (c) 2025 DigiPen Institute of Technology. All rights reserved.
 """
-
+import time
 from typing import Dict, List, Tuple, Optional
 import math
 
@@ -48,7 +48,10 @@ class BM25Method(KeywordMethod):
 
     def preprocess(self) -> None:
         """Compute IDF + average document length."""
+        start = time.perf_counter()
         self._calculate_idf_and_lengths()
+        elapsed = time.perf_counter() - start
+        print(f"[BM25] Preprocess completed in {elapsed:.4f} seconds")
 
     def _calculate_idf_and_lengths(self) -> None:
         self.idf.clear()
@@ -81,6 +84,7 @@ class BM25Method(KeywordMethod):
 
     def run(self, query: str) -> List[SearchResult]:
         """Rank documents for a query using BM25."""
+        start = time.perf_counter()
         bm25_results = self.get_bm25_per_document(query, top_k=10)
 
         results: List[SearchResult] = []
@@ -97,6 +101,11 @@ class BM25Method(KeywordMethod):
 
         if not results and query.strip():
             print("No results found.")
+        elapsed = time.perf_counter() - start
+        print(
+            f"[BM25] Run | query_len={len(query.split())} | "
+            f"time={elapsed:.4f}s"
+        )
 
         return results
 
@@ -125,8 +134,6 @@ class BM25Method(KeywordMethod):
         scores.sort(key=lambda x: x[1], reverse=True)
         return scores[:top_k]
 
-
-
     def _bm25_term_score(self, term: str, tf: float, dl: int) -> float:
         """BM25 term contribution: idf(t) * ( tf*(k1+1) / ( tf + k1*(1 - b + b*(dl/avgdl)) ) )"""
         idf = self.idf.get(term, 0.0)
@@ -134,7 +141,7 @@ class BM25Method(KeywordMethod):
             return 0.0
 
         if self.avg_doc_len <= 0.0:
-            return idf  # degenerate fallback
+            return idf
 
         denominator = tf + self.k1 * (1.0 - self.b + self.b * (dl / self.avg_doc_len))
         if denominator <= 0:
@@ -143,12 +150,19 @@ class BM25Method(KeywordMethod):
         return idf * (tf * (self.k1 + 1.0) / denominator)
 
     def _on_document_changed(self, doc_data, action: str) -> None:
+        start = time.perf_counter()
+
         if action == "added":
             self._incremental_add(doc_data)
         elif action == "replaced":
             self._incremental_replace(doc_data)
         else:
             self.preprocess()
+        elapsed = time.perf_counter() - start
+        print(
+            f"[BM25] Document {action}: {doc_data.filename} | "
+            f"time = {elapsed:.4f}s"
+        )
 
     def _incremental_add(self, doc_data) -> None:
         filename = doc_data.filename

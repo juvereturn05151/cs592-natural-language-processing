@@ -20,7 +20,6 @@ def create_tfidf_method(processor: DocumentProcessor = None) -> KeywordMethod:
 
     return tfidf
 
-
 class TfIdfMethod:
     """TF-IDF implementation for keyword extraction and document search. Uses DocumentProcessor for document handling."""
 
@@ -106,7 +105,6 @@ class TfIdfMethod:
         elapsed = time.perf_counter() - start
         print(
             f"[TF-IDF] Run | query_len={len(query.split())} | "
-            f"docs_scored={len(tf_idf_per_document_results)} | "
             f"time={elapsed:.4f}s"
         )
 
