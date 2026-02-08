@@ -25,11 +25,15 @@ def create_yake_method(processor: DocumentProcessor = None) -> KeywordMethod:
     yake.preprocess()
     return yake
 
+
 class YakeMethod(KeywordMethod):
     """
     YAKE-ish implementation:
-      - preprocess(): extract YAKE keywords for each document and cache them
-      - run(query): rank documents by overlap with YAKE keywords from query
+      - preprocess(): extract YAKE phrases for each document and cache them
+      - run(query): rank documents by overlap with YAKE phrases from query
+    Notes:
+      - YAKE scores are lower-is-better.
+      - For SEARCH, we must match against ALL candidate phrases, not only top_k.
     """
 
     def __init__(self, name: str = "YAKE", processor: Optional[DocumentProcessor] = None):
@@ -40,24 +44,35 @@ class YakeMethod(KeywordMethod):
         self.punct: Set[str] = set(string.punctuation)
 
         # caches
-        self._doc_kw_scores: Dict[str, Dict[str, float]] = {}   # doc -> keyword -> score (lower is better in YAKE)
-        self._doc_kw_set: Dict[str, Set[str]] = {}              # doc -> set(keywords)
-        self._doc_word_set: Dict[str, Set[str]] = {}            # doc -> set(words appearing in keywords)
+        self._doc_kw_scores: Dict[str, Dict[str, float]] = {}         # doc -> top-k keyword -> score (for extraction)
+        self._doc_all_phrase_scores: Dict[str, Dict[str, float]] = {} # doc -> ALL candidate ngram -> score (for search)
+        self._doc_phrase_set: Dict[str, Set[str]] = {}                # doc -> set(ALL candidate ngrams)
+        self._doc_word_set: Dict[str, Set[str]] = {}                  # doc -> set(words appearing in candidate ngrams)
 
     # ---------------- Public API ----------------
 
     def preprocess(self) -> None:
         for doc in self.processor.documents:
             text = doc.text
-            kw_scores, dbg = self._extract_yake_keywords(text, top_k=200)
-            self._doc_kw_scores[doc.filename] = kw_scores
-            self._doc_kw_set[doc.filename] = set(kw_scores.keys())
 
-            ws = set()
-            for kw in kw_scores.keys():
-                ws.update(kw.split())
+            # kw_scores: top-k best ngrams for keyword extraction
+            # dbg["phrase_scores"]: ALL candidate ngrams for search
+            kw_scores, dbg = self._extract_yake_keywords(text, top_k=200)
+
+            # Keep top-k only for extract_keywords()
+            self._doc_kw_scores[doc.filename] = kw_scores
+
+            # For SEARCH, cache ALL candidate phrase scores + sets
+            all_phrase_scores = dbg["phrase_scores"]
+            self._doc_all_phrase_scores[doc.filename] = all_phrase_scores
+            self._doc_phrase_set[doc.filename] = set(all_phrase_scores.keys())
+
+            ws: Set[str] = set()
+            for ng in all_phrase_scores.keys():
+                ws.update(ng.split())
             self._doc_word_set[doc.filename] = ws
 
+            # Debug file (optional)
             self._write_yake_debug(
                 out_path=f"output/yake/yake_debug_{doc.filename}.txt",
                 candidate_ngrams=dbg["candidate_ngrams"],
@@ -70,50 +85,53 @@ class YakeMethod(KeywordMethod):
         if not query or not query.strip():
             return [SearchResult(title="Empty query", score=0.0, details="Please type a query.")]
 
-        # YAKE keywords from the query
-        query_kw_scores = self._extract_yake_keywords(query, top_k=30)
-        query_kws = list(query_kw_scores.keys())
-        query_kw_set = set(query_kws)
+        # IMPORTANT: _extract_yake_keywords returns (kw_scores, debug_dict)
+        # For SEARCH matching, use ALL query candidates, not only top-k.
+        _, qdbg = self._extract_yake_keywords(query, top_k=200)
+        query_phrase_scores_all: Dict[str, float] = qdbg["phrase_scores"]
+        query_phrase_set = set(query_phrase_scores_all.keys())
 
-        query_word_set = set()
-        for kw in query_kws:
-            query_word_set.update(kw.split())
+        # Also build query word set
+        query_word_set: Set[str] = set()
+        for p in query_phrase_set:
+            query_word_set.update(p.split())
 
         results: List[Tuple[str, float, str]] = []
 
         for doc in self.processor.documents:
             doc_name = doc.filename
-            doc_kw_scores = self._doc_kw_scores.get(doc_name, {})
-            doc_kw_set = self._doc_kw_set.get(doc_name, set())
-            doc_word_set = self._doc_word_set.get(doc_name, set())
 
-            if not doc_kw_scores:
+            doc_phrase_scores = self._doc_all_phrase_scores.get(doc_name, {})
+            doc_phrases = self._doc_phrase_set.get(doc_name, set())
+            doc_words = self._doc_word_set.get(doc_name, set())
+
+            if not doc_phrase_scores:
                 continue
 
-            overlap = query_kw_set.intersection(doc_kw_set)
+            overlap = query_phrase_set.intersection(doc_phrases)
 
-            # YAKE scores are "lower is better". Convert to "higher is better" contribution.
-            # contribution(kw) = 1 / (epsilon + yake_score)
-            eps = 1e-9
+            # ---- scoring ----
+            # YAKE lower-is-better. Convert to a stable higher-is-better score.
+            # Use -log(score) instead of 1/score to avoid huge explosions.
             kw_score = 0.0
             for kw in overlap:
-                kw_score += 1.0 / (eps + doc_kw_scores.get(kw, 1.0))
+                s = doc_phrase_scores.get(kw, 1.0)
+                kw_score += -math.log(s + 1e-12)  # stable, higher is better
 
-            # Word overlap bonus (small)
-            word_overlap = query_word_set.intersection(doc_word_set)
+            # Word overlap bonus (helps when phrases differ but single words match)
+            word_overlap = query_word_set.intersection(doc_words)
             word_bonus = len(word_overlap) * 0.10
 
             total = kw_score + word_bonus
             if total <= 0:
                 continue
 
-            # explanation: top matched keywords by contribution
             matched_sorted = sorted(
-                [(kw, doc_kw_scores.get(kw, 1.0)) for kw in overlap],
+                [(kw, doc_phrase_scores.get(kw, 1.0)) for kw in overlap],
                 key=lambda x: x[1]  # lower YAKE score first (better)
             )[:5]
 
-            matched_str = ", ".join([f"'{kw}' (yake={s:.9f})" for kw, s in matched_sorted]) or "No exact keyword match"
+            matched_str = ", ".join([f"'{kw}' (yake={s:.3e})" for kw, s in matched_sorted]) or "No exact keyword match"
             results.append((doc_name, total, matched_str))
 
         results.sort(key=lambda x: x[1], reverse=True)
@@ -128,6 +146,7 @@ class YakeMethod(KeywordMethod):
             ))
 
         if not out:
+            # Fallback: show all docs (like your other methods)
             for doc in self.processor.documents:
                 out.append(SearchResult(
                     title=doc.filename,
@@ -139,7 +158,8 @@ class YakeMethod(KeywordMethod):
 
     def extract_keywords(self, doc_name: str, top_k: int = 10) -> List[Tuple[str, float]]:
         """
-        Returns (keyword, yake_score) sorted by YAKE score ascending (lower is better).
+        Returns (keyword/ngram, yake_score) sorted by YAKE score ascending (lower is better).
+        This uses the cached top-k extraction list (not all candidates).
         """
         scores = self._doc_kw_scores.get(doc_name, {})
         items = sorted(scores.items(), key=lambda x: x[1])
@@ -159,8 +179,6 @@ class YakeMethod(KeywordMethod):
                 continue
             if w in self.stopwords:
                 continue
-            # filter out pure numbers (optional)
-            # if w.isdigit(): continue
             words.append(w)
         return words
 
@@ -169,23 +187,24 @@ class YakeMethod(KeywordMethod):
         L = len(tokens)
         for n in range(1, max_n + 1):
             for i in range(0, L - n + 1):
-                ng = " ".join(tokens[i:i+n])
-                out.append(ng)
+                out.append(" ".join(tokens[i:i + n]))
         return out
 
     def _extract_yake_keywords(
-            self,
-            text: str,
-            top_k: int = 20,
-            max_n: int = 3
+        self,
+        text: str,
+        top_k: int = 20,
+        max_n: int = 3
     ) -> Tuple[Dict[str, float], Dict[str, Any]]:
         """
-        A simplified YAKE-like scorer using:
+        Simplified YAKE-like scorer using:
           - term frequency
           - positional bias (earlier is better)
           - context diversity (how many different neighbors it sees)
-
         Score: lower is better.
+        Returns:
+          - kw_scores: top_k best ngrams (dict)
+          - debug: includes ALL phrase_scores (for search) and candidate_ngrams list
         """
         sentences = self._split_into_sentences(text)
         tokens_all: List[str] = []
@@ -202,12 +221,10 @@ class YakeMethod(KeywordMethod):
         if not tokens_all:
             return {}, {"candidate_ngrams": [], "phrase_scores": {}, "word_scores": {}}
 
-        # word frequency
         wf: Dict[str, int] = defaultdict(int)
         for t in tokens_all:
             wf[t] += 1
 
-        # neighbor diversity (unique left/right neighbors)
         left_neighbors: Dict[str, Set[str]] = defaultdict(set)
         right_neighbors: Dict[str, Set[str]] = defaultdict(set)
         for i, t in enumerate(tokens_all):
@@ -216,7 +233,6 @@ class YakeMethod(KeywordMethod):
             if i < len(tokens_all) - 1:
                 right_neighbors[t].add(tokens_all[i + 1])
 
-        # word-level features -> lower is better
         word_score: Dict[str, float] = {}
         total_len = max(len(tokens_all), 1)
 
@@ -230,7 +246,6 @@ class YakeMethod(KeywordMethod):
 
             word_score[w] = pos_norm * freq_term * div_term
 
-        # candidate ngrams + scoring
         candidate_ngrams = self._generate_ngrams(tokens_all, max_n=max_n)
 
         ng_freq: Dict[str, int] = defaultdict(int)
@@ -258,33 +273,26 @@ class YakeMethod(KeywordMethod):
 
         debug = {
             "candidate_ngrams": candidate_ngrams,
-            "phrase_scores": phrase_scores,
+            "phrase_scores": phrase_scores,  # ALL candidates (use this for search)
             "word_scores": word_score,
         }
         return kw_scores, debug
 
     def _write_yake_debug(
-            self,
-            out_path: str,
-            candidate_ngrams: List[str],
-            phrase_scores: Dict[str, float],  # keyword/ngram -> yake score (lower is better)
-            word_scores: Dict[str, float],  # word -> yake-ish score (lower is better)
-            title: str = "YAKE Debug Output",
-            max_items: int = 5000,
+        self,
+        out_path: str,
+        candidate_ngrams: List[str],
+        phrase_scores: Dict[str, float],
+        word_scores: Dict[str, float],
+        title: str = "YAKE Debug Output",
+        max_items: int = 5000,
     ) -> None:
-        """
-        Writes a YAKE debug text report:
-          - candidate_ngrams (in original order)
-          - word_scores (sorted ASC: best -> worst) because YAKE is lower-is-better
-          - phrase_scores (sorted ASC: best -> worst)
-        """
         parent = os.path.dirname(out_path)
         if parent:
             os.makedirs(parent, exist_ok=True)
 
         def _best_sorted(d: Dict[str, float]) -> List[Tuple[str, float]]:
-            # YAKE: lower score = better
-            return sorted(d.items(), key=lambda x: x[1])[:max_items]
+            return sorted(d.items(), key=lambda x: x[1])[:max_items]  # lower is better
 
         with open(out_path, "w", encoding="utf-8") as f:
             f.write(f"{title}\n")
@@ -294,7 +302,6 @@ class YakeMethod(KeywordMethod):
             f.write("NOTE: YAKE scores are lower-is-better.\n")
             f.write("\n" + "=" * 80 + "\n\n")
 
-            # 1) Candidate n-grams (original order)
             f.write("[CANDIDATE_NGRAMS]\n")
             for i, ng in enumerate(candidate_ngrams[:max_items], start=1):
                 f.write(f"{i:05d}. {ng}\n")
@@ -303,18 +310,16 @@ class YakeMethod(KeywordMethod):
 
             f.write("\n" + "=" * 80 + "\n\n")
 
-            # 2) Word scores (sorted best -> worst)
             f.write("[WORD_SCORES] (sorted low -> high, best -> worst)\n")
             for w, s in _best_sorted(word_scores):
-                f.write(f"{s:10.6f}\t{w}\n")
+                f.write(f"{s:12.6e}\t{w}\n")
             if len(word_scores) > max_items:
                 f.write(f"... truncated (showing best {max_items})\n")
 
             f.write("\n" + "=" * 80 + "\n\n")
 
-            # 3) Phrase/ngram scores (sorted best -> worst)
             f.write("[PHRASE_SCORES] (sorted low -> high, best -> worst)\n")
             for p, s in _best_sorted(phrase_scores):
-                f.write(f"{s:10.6f}\t{p}\n")
+                f.write(f"{s:12.6e}\t{p}\n")
             if len(phrase_scores) > max_items:
                 f.write(f"... truncated (showing best {max_items})\n")
