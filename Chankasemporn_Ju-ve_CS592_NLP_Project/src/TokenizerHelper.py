@@ -10,21 +10,19 @@ import string
 from typing import List, Dict, Set
 from dataclasses import dataclass
 import src.NLP_Globals as Globals
-from pathlib import Path
 
 @dataclass
 class DocumentData:
-    """Container for tokenized document data."""
+    """Container for document data."""
     filename: str
     path: str
+    raw_text: str
+    # filtered tokens if tokens have valid tags and not a stopwords
     tokens: List[str]
-    stemmed_tokens: List[str]  # Added stemmed tokens
-    term_frequencies: Dict[str, float]
+    stemmed_tokens: List[str]
     raw_counts: Dict[str, int]
+    term_frequencies: Dict[str, float]
     unique_terms: Set[str]
-    text: str = ""
-    use_stemming: bool = False  # Track if stemming was used
-
 
 class TokenizerHelper:
     """Helper class for text processing and tokenization."""
@@ -54,7 +52,7 @@ class TokenizerHelper:
         if self.use_stemming:
             """Initialize the Porter Stemmer."""
             try:
-                # Try to import PorterStemmer
+                # try to import PorterStemmer
                 from nltk.stem import PorterStemmer
                 self.stemmer = PorterStemmer() if self.use_stemming else None
             except ImportError:
@@ -86,14 +84,7 @@ class TokenizerHelper:
         return tokens
 
     def pos_tag_and_filter(self, tokens: List[str]) -> List[str]:
-        """
-        Apply POS tagging and filter tokens based on valid tags.
-        Args:
-            tokens: List of token strings
-
-        Returns:
-            List of filtered tokens
-        """
+        """Apply POS tagging and filter tokens based on valid tags."""
         if not tokens:
             return []
 
@@ -109,33 +100,15 @@ class TokenizerHelper:
         return filtered_tokens
 
     def apply_stemming(self, tokens: List[str]) -> List[str]:
-        """
-        Apply Porter stemming to tokens.
-
-        Args:
-            tokens: List of tokens to stem
-
-        Returns:
-            List of stemmed tokens
-        """
+        """Apply Porter stemming to tokens."""
         if not tokens or not self.stemmer:
             return tokens
 
         return [self.stemmer.stem(token) for token in tokens]
 
     def process_text(self, text: str, file_path,use_stemming: bool = None) -> DocumentData:
-        """
-        Process text through full tokenization pipeline with optional stemming.
-
-        Args:
-            text: Input text
-            file_path: File Path
-            use_stemming: Override instance setting for stemming (default: None = use instance setting)
-
-        Returns:
-            DocumentData object
-        """
-        #determine if stemming should be used
+        """Process text through full tokenization pipeline with optional stemming."""
+        # determine if stemming should be used
         should_stem = use_stemming if use_stemming is not None else self.use_stemming
 
         #tokenize
@@ -151,7 +124,8 @@ class TokenizerHelper:
 
         if should_stem and self.stemmer:
             stemmed_tokens = self.apply_stemming(filtered_tokens)
-            working_tokens = stemmed_tokens  # Use stemmed tokens for frequency calculations
+            #use stemmed tokens for frequency calculations
+            working_tokens = stemmed_tokens
 
         #calculate frequencies based on stemmed or original tokens
         token_counts = {}
@@ -169,6 +143,7 @@ class TokenizerHelper:
         return DocumentData(
             filename=file_path.name,
             path = str(file_path),
+            raw_text=text,
             # Original filtered tokens
             tokens=filtered_tokens,
             # Stemmed tokens if used
@@ -176,21 +151,10 @@ class TokenizerHelper:
             term_frequencies=term_frequencies,
             raw_counts=token_counts,
             unique_terms = unique_terms,
-            text=text,
-            use_stemming=should_stem
         )
 
     def process_query(self, query: str, use_stemming: bool = None) -> List[str]:
-        """
-        Process a search query into relevant terms with optional stemming.
-
-        Args:
-            query: Search query string
-            use_stemming: Override instance setting for stemming
-
-        Returns:
-            List of processed query terms
-        """
+        """ Process a search query into relevant terms with optional stemming."""
         if not query or not query.strip():
             return []
 
@@ -208,24 +172,3 @@ class TokenizerHelper:
             filtered_tokens = self.apply_stemming(filtered_tokens)
 
         return filtered_tokens
-
-    def get_original_from_stemmed(self, stemmed_token: str, original_tokens: List[str]) -> List[str]:
-        """
-        Find original token(s) that map to a stemmed token.
-
-        Args:
-            stemmed_token: A stemmed token
-            original_tokens: List of original tokens
-
-        Returns:
-            List of original tokens that stem to the given stemmed token
-        """
-        if not self.stemmer or not original_tokens:
-            return []
-
-        matching_tokens = []
-        for token in original_tokens:
-            if self.stemmer.stem(token) == stemmed_token:
-                matching_tokens.append(token)
-
-        return matching_tokens
