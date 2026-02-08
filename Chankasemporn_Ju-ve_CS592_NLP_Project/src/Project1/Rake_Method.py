@@ -23,12 +23,6 @@ def create_rake_method(processor: DocumentProcessor = None) -> KeywordMethod:
     return rake
 
 class RakeMethod(KeywordMethod):
-    """
-    RAKE-based document ranking.
-    - preprocess(): extracts RAKE phrases for each document and caches them
-    - run(query): ranks documents for the query (NOT keyword extraction mode)
-    """
-
     def __init__(self, name: str = "RAKE", processor: Optional[DocumentProcessor] = None):
         super().__init__(name=name)
         self.processor = processor or DocumentProcessor()
