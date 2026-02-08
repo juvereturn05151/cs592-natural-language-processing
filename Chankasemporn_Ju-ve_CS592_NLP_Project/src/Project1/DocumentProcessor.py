@@ -4,7 +4,7 @@ Author(s):    Ju-ve Chankasemporn
 Copyright:    (c) 2025 DigiPen Institute of Technology. All rights reserved.
 """
 
-from typing import Dict, List, Set, Optional, Tuple
+from typing import Dict, List, Set, Optional, Tuple, Callable
 import xml.etree.ElementTree as ET
 from collections import defaultdict
 from pathlib import Path
@@ -79,6 +79,8 @@ class DocumentProcessor:
         self.doc_names: List[str] = []
         self.corpus_terms: Set[str] = set()
         self._is_loaded = False
+
+        self._on_document_added: List[Callable[[DocumentData, str], None]] = []
 
     def load_all_files(self,data_dir: str,file_pattern: str = "*.txt",parallel: bool = False,num_workers: Optional[int] = None, chunk_size: int = 4) -> None:
         """Load and process all documents in the data directory."""
@@ -158,20 +160,13 @@ class DocumentProcessor:
 
     #use at keyword ui when loading a single file
     def load_one_file(self, file_path: str) -> DocumentData:
-        """load and process ONE file and append it to the current corpus.
-        - does NOT require calling load_from_directory again.
-        - Updates: documents, doc_names, corpus_terms
-        - if a document with the same filename already exists, it replaces it.
-        """
         p = Path(file_path)
         if not p.exists():
             raise FileNotFoundError(f"File not found: {file_path}")
 
-        #extract + tokenize/process
         text = _extract_text_from_file(str(p))
         doc_data = self.tokenizer.process_text(text, p)
 
-        #replace if already present (same filename)
         existing_idx = None
         for i, d in enumerate(self.documents):
             if d.filename == doc_data.filename:
@@ -181,17 +176,22 @@ class DocumentProcessor:
         if existing_idx is not None:
             self.documents[existing_idx] = doc_data
             self.doc_names[existing_idx] = doc_data.filename
+            action = "replaced"
         else:
             self.documents.append(doc_data)
             self.doc_names.append(doc_data.filename)
+            action = "added"
 
-        #rebuild corpus_terms safely (simple + correct)
+        #rebuild corpus_terms (correct)
         self.corpus_terms.clear()
         for d in self.documents:
             self.corpus_terms.update(d.unique_terms)
 
-        #mark as loaded (meaning: we have some docs)
         self._is_loaded = True
+
+        #emit BOTH doc_data + action
+        self._emit_document_added(doc_data, action)
+
         return doc_data
 
     def get_document_term_frequencies(self) -> Dict[str, Dict[str, float]]:
@@ -209,6 +209,14 @@ class DocumentProcessor:
             if doc.filename == doc_name:
                 return doc
         raise ValueError(f"Document '{doc_name}' not found")
+
+    def add_document_added_listener(self, fn: Callable[[DocumentData, str], None]) -> None:
+        """fn(doc_data, action) where action is 'added' or 'replaced'."""
+        self._on_document_added.append(fn)
+
+    def _emit_document_added(self, doc_data: DocumentData, action: str) -> None:
+        for fn in self._on_document_added:
+            fn(doc_data, action)
 
     @property
     def document_count(self) -> int:

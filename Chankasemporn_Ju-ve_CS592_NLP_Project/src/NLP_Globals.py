@@ -15,9 +15,7 @@ REGEX_CLEANER = re.compile(r"['—_\“\”\"\”’‘\-)\:!\&]")
 
 
 def _find_repo_root(start: Path, markers: Iterable[str] = ("pyproject.toml", ".git", "requirements.txt")) -> Path:
-    """
-    Walk upward from `start` until we find a directory that looks like the repo root.
-    Falls back to `start` if nothing found.
+    """Walk upward from `start` until we find a directory that looks like the repo root. Falls back to `start` if nothing found.
     """
     start = start.resolve()
     for p in (start, *start.parents):
@@ -32,15 +30,7 @@ def _first_existing_dir(candidates: Iterable[Path]) -> Optional[Path]:
     return None
 
 def get_default_data_dir(verbose: bool = True) -> str:
-    """
-    Find the dataset directory `data/train` robustly.
-
-    Priority:
-      1) Environment override (CS592_DATA_DIR or DATA_DIR)
-      2) Relative to this file by searching upward for repo markers
-      3) Common variants including the student folder name
-      4) Relative to current working directory
-    """
+    """Find the dataset directory `data/train` robustly."""
     # 0) Optional overrides (nice for grading scripts / different machines)
     import os
     for env_key in ("CS592_DATA_DIR", "DATA_DIR"):

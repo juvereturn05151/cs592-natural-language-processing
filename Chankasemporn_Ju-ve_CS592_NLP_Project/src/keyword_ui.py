@@ -12,41 +12,13 @@ Required (assignment):
 (b) User selects 1 of 4 methods
 (c) User clicks a button
 (d) App displays ranked results (highest score first)
-
-Added:
-- RIGHT PANEL:
-  - Shows CURRENT LOADED FILES from your shared DocumentProcessor
-  - Button: "Add files..." to browse and load new .txt files into the processor
-  - File preview panel
-- Assumption:
-  - You pass the SAME DocumentProcessor instance to all methods
-  - Each method has a .processor attribute pointing to that shared instance
-    (true for your TFIDF/BM25/RAKE/YAKE code)
 """
 
-from dataclasses import dataclass
-from typing import Dict, List, Protocol, Optional
+from typing import Dict, List
 import os
 import tkinter as tk
 from tkinter import ttk, filedialog
-
-
-# ---------------- Data model ----------------
-
-@dataclass(frozen=True)
-class SearchResult:
-    """One ranked item shown in the UI."""
-    title: str
-    score: float
-    details: str = ""
-
-
-# ---------------- Method interface ----------------
-
-class KeywordMethod(Protocol):
-    def run(self, query: str) -> List[SearchResult]:
-        ...
-
+from src.Project1.KeywordMethod import SearchResult, KeywordMethod
 
 # ---------------- App ----------------
 
@@ -62,7 +34,7 @@ class KeywordSearchApp:
 
         # Tk setup
         self.root = tk.Tk()
-        self.root.title("Keyword Search")
+        self.root.title("Assignment 1 – Keyword Extrac on ")
 
         # Vars
         self.query_var = tk.StringVar(value="")
@@ -208,8 +180,7 @@ class KeywordSearchApp:
         r = self._last_results[idx]
         self._set_details(f"Title: {r.title}\nScore: {r.score:.6f}\n\n{r.details}")
 
-        # Auto-select matching filename on the right if present
-        # (your methods typically use doc filename as SearchResult.title)
+        #auto-select matching filename on the right if present
         self._try_select_loaded_file_by_name(r.title)
 
     def _set_details(self, text: str) -> None:
@@ -304,15 +275,7 @@ class KeywordSearchApp:
     # ---------------- Add files ----------------
 
     def _add_files_dialog(self) -> None:
-        """
-        Browse and add new files to the shared DocumentProcessor.
-
-        Works with the drop-in DocumentProcessor incremental APIs:
-          - processor.load_files(file_paths, parallel=False/True)  [preferred]
-          - processor.load_one_file(file_path)                    [fallback]
-
-        If neither exists, falls back to load_from_directory.
-        """
+        """Browse and add new files to the shared DocumentProcessor."""
         if self.processor is None:
             self.status_var.set("Cannot add files: no shared DocumentProcessor found.")
             return
@@ -327,16 +290,7 @@ class KeywordSearchApp:
         added = 0
         errors: List[str] = []
 
-        # 1) Preferred: incremental batch API (from the drop-in)
-        if hasattr(self.processor, "load_files"):
-            try:
-                # DocumentProcessor.load_files returns count (in our drop-in)
-                added = int(self.processor.load_files(list(paths), parallel=False))  # type: ignore
-            except Exception as e:
-                errors.append(f"load_files failed: {type(e).__name__}: {e}")
-
-        # 2) Fallback: incremental single-file API (from the drop-in)
-        elif hasattr(self.processor, "load_one_file"):
+        if hasattr(self.processor, "load_one_file"):
             for p in paths:
                 try:
                     self.processor.load_one_file(p)  # type: ignore
@@ -344,23 +298,6 @@ class KeywordSearchApp:
                 except Exception as e:
                     errors.append(f"{os.path.basename(p)}: {type(e).__name__}: {e}")
 
-        # 3) Back-compat: your older APIs (if they exist in some version)
-        elif hasattr(self.processor, "load_from_files"):
-            try:
-                self.processor.load_from_files(list(paths), parallel=False)  # type: ignore
-                added = len(paths)
-            except Exception as e:
-                errors.append(f"load_from_files failed: {type(e).__name__}: {e}")
-
-        elif hasattr(self.processor, "add_file"):
-            for p in paths:
-                try:
-                    self.processor.add_file(p)  # type: ignore
-                    added += 1
-                except Exception as e:
-                    errors.append(f"{os.path.basename(p)}: {type(e).__name__}: {e}")
-
-        # 4) Last resort: directory load (may load extra txt files)
         else:
             try:
                 dirs = sorted(set(os.path.dirname(p) for p in paths))
