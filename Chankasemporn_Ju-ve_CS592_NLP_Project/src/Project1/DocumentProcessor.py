@@ -201,6 +201,118 @@ class DocumentProcessor:
             f"Time: {elapsed:.3f}s"
         )
 
+    # ---------------------------
+    # Incremental loading (DROP-IN)
+    # ---------------------------
+
+    def load_one_file(self, file_path: str) -> DocumentData:
+        """
+        Load and process ONE file and append it to the current corpus.
+
+        - Does NOT require calling load_from_directory again.
+        - Updates: documents, doc_names, corpus_terms
+        - If a document with the same filename already exists, it replaces it.
+        """
+        p = Path(file_path)
+        if not p.exists():
+            raise FileNotFoundError(f"File not found: {file_path}")
+
+        # Extract + tokenize/process
+        text = self._extract_text_from_file(str(p))
+        doc_data = self.tokenizer.process_text(text, p)
+
+        # Replace if already present (same filename)
+        existing_idx = None
+        for i, d in enumerate(self.documents):
+            if d.filename == doc_data.filename:
+                existing_idx = i
+                break
+
+        if existing_idx is not None:
+            self.documents[existing_idx] = doc_data
+            self.doc_names[existing_idx] = doc_data.filename
+        else:
+            self.documents.append(doc_data)
+            self.doc_names.append(doc_data.filename)
+
+        # Rebuild corpus_terms safely (simple + correct)
+        self.corpus_terms.clear()
+        for d in self.documents:
+            self.corpus_terms.update(d.unique_terms)
+
+        # Mark as loaded (meaning: we have some docs)
+        self._is_loaded = True
+        return doc_data
+
+    def load_files(self, file_paths: List[str], parallel: bool = False) -> int:
+        """
+        Load and process MANY files incrementally.
+
+        Returns number of successfully added/updated docs.
+
+        Note: parallel=True is supported but optional; for small batches, parallel=False is fine.
+        """
+        if not file_paths:
+            return 0
+
+        # Simple sequential (most robust)
+        if not parallel:
+            ok = 0
+            for fp in file_paths:
+                try:
+                    self.load_one_file(fp)
+                    ok += 1
+                except Exception as e:
+                    print(f"[load_files] Error processing {fp}: {type(e).__name__}: {e}")
+            return ok
+
+        # Optional parallel version (uses your existing worker helpers)
+        from multiprocessing import Pool, cpu_count
+
+        paths = [str(Path(p)) for p in file_paths]
+        use_stemming = bool(getattr(self.tokenizer, "use_stemming", True))
+        use_pos_tagging = bool(getattr(self.tokenizer, "use_pos_tagging", True))
+        remove_stopwords = bool(getattr(self.tokenizer, "remove_stopwords", True))
+
+        num_workers = min(cpu_count(), max(1, len(paths)))
+        with Pool(
+            processes=num_workers,
+            initializer=_init_worker_tokenizer,
+            initargs=(use_stemming, use_pos_tagging, remove_stopwords),
+        ) as pool:
+            results = pool.map(_process_one_file, paths, chunksize=4)
+
+        ok = 0
+        for (doc_data, err), fp in zip(results, paths):
+            if err is not None or doc_data is None:
+                print(f"[load_files] Error processing {fp}: {err}")
+                continue
+
+            # Insert/replace by filename
+            existing_idx = None
+            for i, d in enumerate(self.documents):
+                if d.filename == doc_data.filename:
+                    existing_idx = i
+                    break
+
+            if existing_idx is not None:
+                self.documents[existing_idx] = doc_data
+                self.doc_names[existing_idx] = doc_data.filename
+            else:
+                self.documents.append(doc_data)
+                self.doc_names.append(doc_data.filename)
+
+            ok += 1
+
+        # Rebuild corpus_terms safely
+        self.corpus_terms.clear()
+        for d in self.documents:
+            self.corpus_terms.update(d.unique_terms)
+
+        self._is_loaded = True
+        return ok
+
+
     def get_document_term_frequencies(self) -> Dict[str, Dict[str, float]]:
         return {doc.filename: doc.term_frequencies for doc in self.documents}
 
