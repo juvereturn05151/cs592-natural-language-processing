@@ -10,7 +10,6 @@ import math
 from .KeywordMethod import SearchResult, KeywordMethod
 from .DocumentProcessor import DocumentProcessor
 
-
 def create_bm25_method(processor: DocumentProcessor = None) -> KeywordMethod:
     """Factory function to create and initialize BM25 method."""
     bm25 = BM25Method(
@@ -20,34 +19,32 @@ def create_bm25_method(processor: DocumentProcessor = None) -> KeywordMethod:
     bm25.preprocess()
     return bm25
 
-
 class BM25Method(KeywordMethod):
-    """
-    BM25 implementation for document search + keyword extraction.
-    - preprocess(): computes document frequencies, IDF, avg doc length
-    - run(query): ranks documents by BM25 score
-    - extract_keywords(doc_name): returns top terms by BM25-ish term contribution
-    """
 
-    def __init__(self, name: str = "BM25", processor: Optional[DocumentProcessor] = None, k1: float = 1.5, b: float = 0.75,
-        use_plus_idf: bool = True,  # more stable if df ~ N
-    ):
+    def __init__(self, name: str = "BM25", processor: Optional[DocumentProcessor] = None, k1: float = 1.5, b: float = 0.75):
         super().__init__(name=name)
         self.processor = processor or DocumentProcessor()
 
         self.k1 = float(k1)
         self.b = float(b)
-        self.use_plus_idf = bool(use_plus_idf)
 
+        # ---- BM25 state ----
         self.idf_cache: Dict[str, float] = {}
+
+        self._df: Dict[str, int] = {}
+        self._doc_terms: Dict[str, set] = {}
+
+        self._N: int = 0
+        self._total_len: int = 0
         self.avg_doc_len: float = 0.0
-        # doc filename -> length in tokens
+
         self.doc_len: Dict[str, int] = {}
 
-    # ---------------- Public API ----------------
+        if self.processor is not None:
+            self.processor.add_document_added_listener(self._on_document_changed)
 
     def preprocess(self) -> None:
-        """Compute IDF cache + average document length."""
+        """Compute IDF + average document length."""
         self._calculate_idf_and_lengths()
 
     def run(self, query: str) -> List[SearchResult]:
@@ -72,9 +69,7 @@ class BM25Method(KeywordMethod):
         return results
 
     def get_bm25_per_document(self, query: str, top_k: int = 10) -> List[Tuple[str, float]]:
-        """
-        Returns list of (document_name, bm25_score) sorted by relevance.
-        """
+        """Returns list of (document_name, bm25_score) sorted by relevance."""
         query_terms = self.processor.tokenizer.process_query(query)
         if not query_terms:
             return []
@@ -92,21 +87,130 @@ class BM25Method(KeywordMethod):
                     continue
                 score += self._bm25_term_score(term=term, tf=tf, dl=dl)
 
-            # Optional: normalize by query length (matches your TF-IDF style)
-            if query_terms:
-                score /= len(query_terms)
-
             if score > 0:
                 scores.append((doc.filename, score))
 
         scores.sort(key=lambda x: x[1], reverse=True)
         return scores[:top_k]
 
+    def _calculate_idf_and_lengths(self) -> None:
+        self.idf_cache.clear()
+        self._df.clear()
+        self._doc_terms.clear()
+        self.doc_len.clear()
+
+        self._N = self.processor.document_count
+        if self._N == 0:
+            self.avg_doc_len = 0.0
+            self._total_len = 0
+            return
+
+        doc_freq = self.processor.get_document_frequencies()
+        self._df.update(doc_freq)
+
+        self._total_len = 0
+        for doc in self.processor.documents:
+            dl = int(sum(doc.term_frequencies.values()))
+            self.doc_len[doc.filename] = dl
+            self._total_len += dl
+            self._doc_terms[doc.filename] = set(doc.unique_terms)
+
+        self.avg_doc_len = self._total_len / max(self._N, 1)
+
+        for term, df in self._df.items():
+            self.idf_cache[term] = math.log(
+                1.0 + (self._N - df + 0.5) / (df + 0.5)
+            )
+
+    def _bm25_term_score(self, term: str, tf: float, dl: int) -> float:
+        """BM25 term contribution: idf(t) * ( tf*(k1+1) / ( tf + k1*(1 - b + b*(dl/avgdl)) ) )"""
+        idf = self.idf_cache.get(term, 0.0)
+        if idf <= 0.0:
+            return 0.0
+
+        if self.avg_doc_len <= 0.0:
+            return idf  # degenerate fallback
+
+        denom = tf + self.k1 * (1.0 - self.b + self.b * (dl / self.avg_doc_len))
+        if denom <= 0:
+            return 0.0
+
+        return idf * (tf * (self.k1 + 1.0) / denom)
+
+    def _on_document_changed(self, doc_data, action: str) -> None:
+        if action == "added":
+            self._incremental_add(doc_data)
+        elif action == "replaced":
+            self._incremental_replace(doc_data)
+        else:
+            self.preprocess()
+
+    def _incremental_add(self, doc_data) -> None:
+        filename = doc_data.filename
+
+        if filename in self._doc_terms:
+            self._incremental_replace(doc_data)
+            return
+
+        new_terms = set(doc_data.unique_terms)
+        dl = int(sum(doc_data.term_frequencies.values()))
+
+        self._N += 1
+        self._total_len += dl
+
+        self.doc_len[filename] = dl
+        self._doc_terms[filename] = new_terms
+
+        for term in new_terms:
+            self._df[term] = self._df.get(term, 0) + 1
+
+        self.avg_doc_len = self._total_len / max(self._N, 1)
+
+        self._recompute_idf_for_terms(new_terms)
+
+    def _incremental_replace(self, doc_data) -> None:
+        filename = doc_data.filename
+
+        old_terms = self._doc_terms.get(filename)
+        if old_terms is None:
+            self.preprocess()
+            return
+
+        old_dl = self.doc_len.get(filename, 0)
+
+        new_terms = set(doc_data.unique_terms)
+        new_dl = int(sum(doc_data.term_frequencies.values()))
+
+        # update total length
+        self._total_len += (new_dl - old_dl)
+
+        self.doc_len[filename] = new_dl
+        self._doc_terms[filename] = new_terms
+
+        for term in old_terms:
+            self._df[term] -= 1
+
+        for term in new_terms:
+            self._df[term] = self._df.get(term, 0) + 1
+
+        self.avg_doc_len = self._total_len / max(self._N, 1)
+
+        changed_terms = old_terms.union(new_terms)
+        self._recompute_idf_for_terms(changed_terms)
+
+    def _recompute_idf_for_terms(self, terms: set) -> None:
+        for term in terms:
+            df = self._df.get(term, 0)
+            if df <= 0:
+                self._df.pop(term, None)
+                self.idf_cache.pop(term, None)
+            else:
+                self.idf_cache[term] = math.log(
+                    1.0 + (self._N - df + 0.5) / (df + 0.5)
+                )
+
     def extract_keywords(self, doc_name: str, top_k: int = 10) -> List[Tuple[str, float]]:
-        """
-        Extract top keywords from a specific document using BM25-like term contributions.
-        Returns list of (term, bm25_term_score) sorted by score.
-        """
+        """Extract top keywords from a specific document using BM25-like term contributions. Returns list of (term, bm25_term_score) sorted by score."""
         try:
             doc = self.processor.get_document_by_name(doc_name)
         except ValueError:
@@ -124,58 +228,3 @@ class BM25Method(KeywordMethod):
 
         term_scores.sort(key=lambda x: x[1], reverse=True)
         return term_scores[:top_k]
-
-    # ---------------- Internals ----------------
-
-    def _calculate_idf_and_lengths(self) -> None:
-        N = self.processor.document_count
-        if N == 0:
-            self.avg_doc_len = 0.0
-            self.idf_cache = {}
-            self.doc_len = {}
-            return
-
-        # Use the same DF function you already have for TF-IDF
-        doc_freq = self.processor.get_document_frequencies()  # term -> df
-
-        # doc lengths: sum of term frequencies (works if term_frequencies are counts)
-        total_len = 0
-        self.doc_len = {}
-        for doc in self.processor.documents:
-            dl = int(sum(doc.term_frequencies.values()))
-            self.doc_len[doc.filename] = dl
-            total_len += dl
-
-        self.avg_doc_len = (total_len / max(N, 1)) if total_len > 0 else 0.0
-
-        # BM25 IDF
-        # Standard: log( (N - df + 0.5) / (df + 0.5) )
-        # "plus" variant: log(1 + (N - df + 0.5)/(df + 0.5)) keeps it positive
-        self.idf_cache = {}
-        for term, df in doc_freq.items():
-            if self.use_plus_idf:
-                self.idf_cache[term] = math.log(
-                    1.0 + (N - df + 0.5) / (df + 0.5)
-                )
-            else:
-                self.idf_cache[term] = math.log(
-                    (N - df + 0.5) / (df + 0.5)
-                )
-
-    def _bm25_term_score(self, term: str, tf: float, dl: int) -> float:
-        """
-        BM25 term contribution:
-          idf(t) * ( tf*(k1+1) / ( tf + k1*(1 - b + b*(dl/avgdl)) ) )
-        """
-        idf = self.idf_cache.get(term, 0.0)
-        if idf <= 0.0:
-            return 0.0
-
-        if self.avg_doc_len <= 0.0:
-            return idf  # degenerate fallback
-
-        denom = tf + self.k1 * (1.0 - self.b + self.b * (dl / self.avg_doc_len))
-        if denom <= 0:
-            return 0.0
-
-        return idf * (tf * (self.k1 + 1.0) / denom)
