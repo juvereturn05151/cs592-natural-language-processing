@@ -29,22 +29,22 @@ class RakeMethod(KeywordMethod):
         self.name = name
         self.processor = processor or DocumentProcessor()
 
-        #STOP_WORDS from NLTK are already lowercase, so no need to lower() again
+        # STOP_WORDS from NLTK are already lowercase, so no need to lower() again
         self.stopwords: Set[str] = Globals.STOP_WORDS
 
-        #use precompiled regex from Globals where possible
+        # use precompiled regex from Globals where possible
         self._regex_cleaner = Globals.REGEX_CLEANER
 
-        #extra compiled regex (fallback) for removing remaining non-word chars
+        # extra compiled regex (fallback) for removing remaining non-word chars
         self._regex_nonword = Globals.REGEX_NONWORD
 
-        #doc -> phrase->score
+        # doc -> phrase->score
         self._doc_phrase_scores: Dict[str, Dict[str, float]] = {}
-        #doc -> word->score
+        # doc -> word->score
         self._doc_word_scores: Dict[str, Dict[str, float]] = {}
-        #doc -> set(phrases)
+        # doc -> set(phrases)
         self._doc_phrase_set: Dict[str, Set[str]] = {}
-        #doc -> set(words in phrases)
+        # doc -> set(words in phrases)
         self._doc_word_set: Dict[str, Set[str]] = {}
 
         if self.processor is not None:
@@ -71,7 +71,7 @@ class RakeMethod(KeywordMethod):
             self._doc_word_scores[doc.filename] = word_scores
             self._doc_phrase_set[doc.filename] = set(phrase_scores.keys())
 
-            #build doc word set from unique phrases
+            # build doc word set from unique phrases
             word_set: Set[str] = set()
             for p in phrase_scores.keys():
                 word_set.update(p.split())
@@ -172,23 +172,30 @@ class RakeMethod(KeywordMethod):
         return phrase_scores, word_scores
 
     def run(self, query: str) -> List[SearchResult]:
-        """Rank documents for a query using RAKE phrase/word overlap."""
+        """Rank documents for a query using RAKE phrase/word overlap + show matched phrases."""
         start = time.perf_counter()
 
         if not query or not query.strip():
             return [SearchResult(title="Empty query", score=0.0, details="Please type a query.")]
 
-        # Extract RAKE phrases from the query itself
+        # Extract RAKE phrases from the query itself (used for exact phrase overlap)
         query_phrases_scored = self.extract_keywords_from_text(query, top_k=30)
         query_phrases = [p for p, _ in query_phrases_scored]
         query_phrase_set = set(query_phrases)
 
-        # Also build a query word set for partial matching
+        # Query words (used for partial matching + "contains any query words" phrase listing)
         query_word_set: Set[str] = set()
         for p in query_phrases:
             query_word_set.update(p.split())
 
-        results: List[Tuple[str, float, str]] = []
+        # Also include raw query tokens (so single-word queries still work well)
+        cleaned_q = self._regex_cleaner.sub(" ", query.lower())
+        cleaned_q = self._regex_nonword.sub(" ", cleaned_q)
+        query_word_set.update([w for w in cleaned_q.split() if w and w not in self.stopwords])
+
+        # Store extra info per result so we can print it later
+        # doc_name, total, exact_matched_phrases, contains_word_phrases, word_overlap
+        results: List[Tuple[str, float, List[Tuple[str, float]], List[Tuple[str, float]], Set[str]]] = []
         docs_scored = 0
 
         for doc in self.processor.documents:
@@ -202,11 +209,11 @@ class RakeMethod(KeywordMethod):
 
             docs_scored += 1
 
-            # Phrase overlap weighted by document phrase scores
+            # 1) Exact phrase overlap (query phrase exists in doc phrase set)
             phrase_overlap = query_phrase_set.intersection(doc_phrases)
             phrase_score = sum(doc_phrase_scores[p] for p in phrase_overlap)
 
-            # Word overlap bonus (helps when phrases differ but words match)
+            # 2) Word overlap bonus
             word_overlap = query_word_set.intersection(doc_words)
             word_bonus = len(word_overlap) * 0.10
 
@@ -214,33 +221,58 @@ class RakeMethod(KeywordMethod):
             if total <= 0:
                 continue
 
-            # Make a short explanation (top matched phrases)
-            matched_phrases_sorted = sorted(
+            # For printing: exact matched phrases (highest score first)
+            exact_matched_phrases = sorted(
                 [(p, doc_phrase_scores[p]) for p in phrase_overlap],
                 key=lambda x: x[1],
                 reverse=True
             )[:5]
-            matched_str = ", ".join([f"'{p}' ({s:.2f})" for p, s in matched_phrases_sorted]) or "No exact phrase match"
 
-            results.append((doc_name, total, matched_str))
+            # For printing: phrases that contain ANY query word (even if phrase != query phrase)
+            # Example: query words {"apple","tree"} matches phrase "old apple orchard"
+            contains_word_phrases: List[Tuple[str, float]] = []
+            if query_word_set:
+                for p, s in doc_phrase_scores.items():
+                    words_in_p = set(p.split())
+                    if words_in_p.intersection(query_word_set):
+                        contains_word_phrases.append((p, s))
+
+                contains_word_phrases.sort(key=lambda x: x[1], reverse=True)
+                contains_word_phrases = contains_word_phrases[:10]
+
+            results.append((doc_name, total, exact_matched_phrases, contains_word_phrases, word_overlap))
 
         # Sort and format SearchResult
         results.sort(key=lambda x: x[1], reverse=True)
 
         out: List[SearchResult] = []
-        for doc_name, score, matched_str in results[:10]:
+        for doc_name, score, exact_matched_phrases, contains_word_phrases, word_overlap in results[:10]:
             doc_obj = self.processor.get_document_by_name(doc_name)
 
-            # Top 10 phrases in this document (overall RAKE phrases, not just matched ones)
+            # Keep your existing "Top phrases" (overall best RAKE phrases)
             doc_phrase_scores = self._doc_phrase_scores.get(doc_name, {})
             top_phrases = sorted(doc_phrase_scores.items(), key=lambda x: x[1], reverse=True)[:10]
             top_phrases_str = ", ".join([f"'{p}' ({s:.2f})" for p, s in top_phrases]) or "N/A"
+
+            exact_matched_str = (
+                ", ".join([f"'{p}' ({s:.2f})" for p, s in exact_matched_phrases])
+                if exact_matched_phrases else "No exact phrase match"
+            )
+
+            contains_word_str = (
+                ", ".join([f"'{p}' ({s:.2f})" for p, s in contains_word_phrases])
+                if contains_word_phrases else "No phrases containing query words"
+            )
+
+            word_overlap_str = ", ".join(sorted(word_overlap)) if word_overlap else "None"
 
             out.append(SearchResult(
                 title=doc_name,
                 score=float(score),
                 details=(
-                    f"Matched: {matched_str}\n"
+                    f"Exact matched phrases: {exact_matched_str}\n"
+                    f"Phrases containing any query word: {contains_word_str}\n"
+                    f"Matched words: {word_overlap_str}\n"
                     f"Top phrases: {top_phrases_str}\n"
                     f"Path: {doc_obj.path if doc_obj else 'N/A'}\n"
                     f"Note: score = phrase score + word_bonus"
@@ -256,9 +288,15 @@ class RakeMethod(KeywordMethod):
 
         return out
 
-
-
-    def _write_rake_debug(self, out_path: str, candidate_phrases: List[str],phrase_scores: Dict[str, float], word_scores: Dict[str, float],title: str = "RAKE Debug Output",max_items: int = 5000,  ) -> None:
+    def _write_rake_debug(
+        self,
+        out_path: str,
+        candidate_phrases: List[str],
+        phrase_scores: Dict[str, float],
+        word_scores: Dict[str, float],
+        title: str = "RAKE Debug Output",
+        max_items: int = 5000,
+    ) -> None:
         """
         Writes a text report:
           - candidate_phrases (in original order)
