@@ -78,33 +78,67 @@ class TfIdfMethod:
         """Implementation of the KeywordMethod protocol. Searches documents and returns ranked results."""
         start = time.perf_counter()
 
-        # search for documents relevant to query
+        if not query or not query.strip():
+            return [SearchResult(title="Empty query", score=0.0, details="Please type a query.")]
+
+        # Tokenize query ONCE (this must match what scoring uses)
+        query_terms = self.processor.tokenizer.process_query(query)
+        if not query_terms:
+            return [SearchResult(title="Empty query", score=0.0, details="No valid query terms after tokenization.")]
+
+        # Search for documents relevant to query
         tf_idf_per_document_results = self.get_tf_idf_per_document(query, top_k=10)
 
-        # convert to SearchResult objects
-        results = []
+        results: List[SearchResult] = []
         for i, (doc_name, score) in enumerate(tf_idf_per_document_results, 1):
-            # extract top keywords for this document
+            # Extract top keywords for this document
             keywords = self.extract_keywords(doc_name, top_k=5)
             keyword_str = ", ".join([term for term, _ in keywords])
 
-            # find document for path
+            # Find document for path + length + counts
             doc = self.processor.get_document_by_name(doc_name)
+
+            # Document length (prefer tokens; fallback to text split)
+            if hasattr(doc, "tokens") and doc.tokens is not None:
+                doc_len = len(doc.tokens)
+            elif hasattr(doc, "stemmed_tokens") and doc.stemmed_tokens is not None:
+                doc_len = len(doc.stemmed_tokens)
+            else:
+                doc_len = len(doc.text.split()) if getattr(doc, "text", "") else 0
+
+            # Query word COUNTS in this document (e.g., "holm × 37")
+            # Prefer raw_counts if available; else approximate from term_frequencies * doc_len
+            counts_parts = []
+            for term in query_terms:
+                if hasattr(doc, "raw_counts") and isinstance(doc.raw_counts, dict):
+                    c = int(doc.raw_counts.get(term, 0))
+                else:
+                    # term_frequencies looks like normalized TF; approximate count using doc_len
+                    c = int(round(float(doc.term_frequencies.get(term, 0.0)) * float(doc_len)))
+
+                if c > 0:
+                    counts_parts.append(f"{term} × {c}")
+
+            query_counts_str = ", ".join(counts_parts) if counts_parts else "None"
 
             result = SearchResult(
                 title=f"{doc_name} (Score: {score:.4f})",
                 score=score,
-                details=f"Top keywords: {keyword_str}\nPath: {doc.path}"
+                details=(
+                    f"Top keywords: {keyword_str}\n"
+                    f"Document length: {doc_len} tokens\n"
+                    f"Query word counts: {query_counts_str}\n"
+                    f"Path: {doc.path}"
+                )
             )
             results.append(result)
 
-        # If no results, provide some feedback
         if not results and query.strip():
             print("No results found.")
 
         elapsed = time.perf_counter() - start
         print(
-            f"[TF-IDF] Run | query_len={len(query.split())} | "
+            f"[TF-IDF] Run | query_len={len(query_terms)} | "
             f"time={elapsed:.4f}s"
         )
 

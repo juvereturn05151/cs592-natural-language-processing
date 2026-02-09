@@ -208,7 +208,7 @@ class RakeMethod(KeywordMethod):
 
             # Word overlap bonus (helps when phrases differ but words match)
             word_overlap = query_word_set.intersection(doc_words)
-            word_bonus = len(word_overlap) * 0.25
+            word_bonus = len(word_overlap) * 0.10
 
             total = phrase_score + word_bonus
             if total <= 0:
