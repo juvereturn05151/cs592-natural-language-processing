@@ -4,7 +4,6 @@ Author(s):    Ju-ve Chankasemporn
 Copyright:    (c) 2025 DigiPen Institute of Technology. All rights reserved.
 """
 import re
-import string
 import os
 import time
 from collections import defaultdict
@@ -27,29 +26,26 @@ def create_rake_method(processor: DocumentProcessor = None) -> KeywordMethod:
 
 class RakeMethod(KeywordMethod):
     def __init__(self, name: str = "RAKE", processor: Optional[DocumentProcessor] = None):
-        super().__init__(name=name)
+        self.name = name
         self.processor = processor or DocumentProcessor()
 
-        # STOP_WORDS from NLTK are already lowercase, so no need to lower() again
+        #STOP_WORDS from NLTK are already lowercase, so no need to lower() again
         self.stopwords: Set[str] = Globals.STOP_WORDS
 
-        # Kept for compatibility, but we won't rely on per-token strip anymore
-        self.punct: Set[str] = set(string.punctuation)
-
-        # Use precompiled regex from Globals where possible
+        #use precompiled regex from Globals where possible
         self._regex_cleaner = Globals.REGEX_CLEANER
 
-        # Extra compiled regex (fallback) for removing remaining non-word chars
-        # If you add REGEX_NONWORD in NLP_Globals.py, we'll automatically use it.
-        self._regex_nonword = getattr(Globals, "REGEX_NONWORD", re.compile(r"[^\w]+"))
+        #extra compiled regex (fallback) for removing remaining non-word chars
+        self._regex_nonword = Globals.REGEX_NONWORD
 
-        # Caches
-        self._doc_phrase_scores: Dict[str, Dict[str, float]] = {}  # doc -> phrase->score
-        self._doc_word_scores: Dict[str, Dict[str, float]] = {}    # doc -> word->score (optional)
-        self._doc_phrase_set: Dict[str, Set[str]] = {}             # doc -> set(phrases)
-        self._doc_word_set: Dict[str, Set[str]] = {}               # doc -> set(words in phrases)
-
-    # ---------- Public API ----------
+        #doc -> phrase->score
+        self._doc_phrase_scores: Dict[str, Dict[str, float]] = {}
+        #doc -> word->score
+        self._doc_word_scores: Dict[str, Dict[str, float]] = {}
+        #doc -> set(phrases)
+        self._doc_phrase_set: Dict[str, Set[str]] = {}
+        #doc -> set(words in phrases)
+        self._doc_word_set: Dict[str, Set[str]] = {}
 
     def preprocess(self) -> None:
         start = time.perf_counter()
@@ -72,7 +68,7 @@ class RakeMethod(KeywordMethod):
             self._doc_word_scores[doc.filename] = word_scores
             self._doc_phrase_set[doc.filename] = set(phrase_scores.keys())
 
-            # Build doc word set from unique phrases
+            #build doc word set from unique phrases
             word_set: Set[str] = set()
             for p in phrase_scores.keys():
                 word_set.update(p.split())
@@ -87,6 +83,43 @@ class RakeMethod(KeywordMethod):
             f"total_phrases={total_phrases} | time={elapsed:.4f}s"
         )
 
+    def _split_into_sentences(self, text: str) -> List[str]:
+        # Slightly more robust than splitting on .!? only
+        return [s.strip() for s in re.split(r'[\n.!?]+', text) if s.strip()]
+
+    def _generate_candidate_phrases(self, text: str) -> List[str]:
+        sentences = self._split_into_sentences(text)
+        candidates: List[str] = []
+
+        for sentence in sentences:
+            # One regex pass per sentence instead of per token
+            cleaned = self._regex_cleaner.sub(" ", sentence.lower())
+            words = cleaned.split()
+
+            phrase: List[str] = []
+            for w in words:
+                # Remove any remaining non-word chars quickly (compiled)
+                w = self._regex_nonword.sub("", w)
+
+                if (not w) or (w in self.stopwords):
+                    if phrase:
+                        candidates.append(" ".join(phrase))
+                        phrase = []
+                else:
+                    phrase.append(w)
+
+            if phrase:
+                candidates.append(" ".join(phrase))
+
+        # Filter candidates
+        filtered: List[str] = []
+        for p in candidates:
+            tokens = p.split()
+            if 1 <= len(tokens) <= 4 and len(p) > 1:
+                filtered.append(p)
+
+        return filtered
+
     def extract_keywords(self, doc_name: str, top_k: int = 10) -> List[Tuple[str, float]]:
         scores = self._doc_phrase_scores.get(doc_name, {})
         return sorted(scores.items(), key=lambda x: x[1], reverse=True)[:top_k]
@@ -95,6 +128,45 @@ class RakeMethod(KeywordMethod):
         phrases = self._generate_candidate_phrases(text)
         phrase_scores, _ = self._calculate_rake_scores(phrases)
         return sorted(phrase_scores.items(), key=lambda x: x[1], reverse=True)[:top_k]
+
+    def _calculate_rake_scores(self, candidate_phrases: List[str]) -> Tuple[Dict[str, float], Dict[str, float]]:
+        """
+        RAKE:
+          - word_freq[word] += 1
+          - word_degree[word] += (len(phrase)-1)
+          - then word_degree[word] += word_freq[word]
+          - word_score = word_degree / word_freq
+          - phrase_score = sum(word_score[word] for word in phrase)
+        """
+        word_freq = defaultdict(int)
+        word_degree = defaultdict(int)
+
+        for phrase in candidate_phrases:
+            words = phrase.split()
+            if not words:
+                continue
+            L = len(words)
+            for w in words:
+                word_freq[w] += 1
+                word_degree[w] += (L - 1)
+
+        for w in word_freq:
+            word_degree[w] += word_freq[w]
+
+        word_scores: Dict[str, float] = {}
+        for w in word_freq:
+            word_scores[w] = word_degree[w] / max(word_freq[w], 1)
+
+        phrase_scores: Dict[str, float] = {}
+        for phrase in candidate_phrases:
+            score = 0.0
+            for w in phrase.split():
+                score += word_scores.get(w, 0.0)
+            # keep the max score if phrase repeats
+            if phrase not in phrase_scores or score > phrase_scores[phrase]:
+                phrase_scores[phrase] = score
+
+        return phrase_scores, word_scores
 
     def run(self, query: str) -> List[SearchResult]:
         """Rank documents for a query using RAKE phrase/word overlap."""
@@ -155,23 +227,22 @@ class RakeMethod(KeywordMethod):
         out: List[SearchResult] = []
         for doc_name, score, matched_str in results[:10]:
             doc_obj = self.processor.get_document_by_name(doc_name)
+
+            # Top 10 phrases in this document (overall RAKE phrases, not just matched ones)
+            doc_phrase_scores = self._doc_phrase_scores.get(doc_name, {})
+            top_phrases = sorted(doc_phrase_scores.items(), key=lambda x: x[1], reverse=True)[:10]
+            top_phrases_str = ", ".join([f"'{p}' ({s:.2f})" for p, s in top_phrases]) or "N/A"
+
             out.append(SearchResult(
                 title=doc_name,
                 score=float(score),
-                details=f"Matched: {matched_str}\nPath: {doc_obj.path if doc_obj else 'N/A'}"
+                details=(
+                    f"Matched: {matched_str}\n"
+                    f"Top phrases: {top_phrases_str}\n"
+                    f"Path: {doc_obj.path if doc_obj else 'N/A'}\n"
+                    f"Note: score = phrase score + word_bonus"
+                ),
             ))
-
-        if not out:
-            # Fallback: show all available documents
-            for doc in self.processor.documents:
-                out.append(SearchResult(
-                    title=doc.filename,
-                    score=0.0,
-                    details=(
-                        "No RAKE keyword overlap with query.\n"
-                        f"Path: {doc.path}"
-                    )
-                ))
 
         elapsed = time.perf_counter() - start
         print(
@@ -182,98 +253,9 @@ class RakeMethod(KeywordMethod):
 
         return out
 
-    # ---------- RAKE internals ----------
 
-    def _split_into_sentences(self, text: str) -> List[str]:
-        # Slightly more robust than splitting on .!? only
-        return [s.strip() for s in re.split(r'[\n.!?]+', text) if s.strip()]
 
-    def _generate_candidate_phrases(self, text: str) -> List[str]:
-        """
-        Faster candidate phrase generation:
-        - Do punctuation cleaning ONCE per sentence using Globals.REGEX_CLEANER (compiled)
-        - Avoid per-token strip() + re.sub() work where possible
-        """
-        sentences = self._split_into_sentences(text)
-        candidates: List[str] = []
-
-        for sentence in sentences:
-            # One regex pass per sentence instead of per token
-            cleaned = self._regex_cleaner.sub(" ", sentence.lower())
-            words = cleaned.split()
-
-            phrase: List[str] = []
-            for w in words:
-                # Remove any remaining non-word chars quickly (compiled)
-                w = self._regex_nonword.sub("", w)
-
-                if (not w) or (w in self.stopwords):
-                    if phrase:
-                        candidates.append(" ".join(phrase))
-                        phrase = []
-                else:
-                    phrase.append(w)
-
-            if phrase:
-                candidates.append(" ".join(phrase))
-
-        # Filter candidates
-        filtered: List[str] = []
-        for p in candidates:
-            toks = p.split()
-            if 1 <= len(toks) <= 4 and len(p) > 1:
-                filtered.append(p)
-
-        return filtered
-
-    def _calculate_rake_scores(self, candidate_phrases: List[str]) -> Tuple[Dict[str, float], Dict[str, float]]:
-        """
-        Standard-ish RAKE:
-          - word_freq[word] += 1
-          - word_degree[word] += (len(phrase)-1)
-          - then word_degree[word] += word_freq[word]
-          - word_score = word_degree / word_freq
-          - phrase_score = sum(word_score[word] for word in phrase)
-        """
-        word_freq = defaultdict(int)
-        word_degree = defaultdict(int)
-
-        for phrase in candidate_phrases:
-            words = phrase.split()
-            if not words:
-                continue
-            L = len(words)
-            for w in words:
-                word_freq[w] += 1
-                word_degree[w] += (L - 1)
-
-        for w in word_freq:
-            word_degree[w] += word_freq[w]
-
-        word_scores: Dict[str, float] = {}
-        for w in word_freq:
-            word_scores[w] = word_degree[w] / max(word_freq[w], 1)
-
-        phrase_scores: Dict[str, float] = {}
-        for phrase in candidate_phrases:
-            score = 0.0
-            for w in phrase.split():
-                score += word_scores.get(w, 0.0)
-            # keep the max score if phrase repeats
-            if phrase not in phrase_scores or score > phrase_scores[phrase]:
-                phrase_scores[phrase] = score
-
-        return phrase_scores, word_scores
-
-    def _write_rake_debug(
-            self,
-            out_path: str,
-            candidate_phrases: List[str],
-            phrase_scores: Dict[str, float],
-            word_scores: Dict[str, float],
-            title: str = "RAKE Debug Output",
-            max_items: int = 5000,  # safety cap for huge docs
-    ) -> None:
+    def _write_rake_debug(self, out_path: str, candidate_phrases: List[str],phrase_scores: Dict[str, float], word_scores: Dict[str, float],title: str = "RAKE Debug Output",max_items: int = 5000,  ) -> None:
         """
         Writes a text report:
           - candidate_phrases (in original order)
