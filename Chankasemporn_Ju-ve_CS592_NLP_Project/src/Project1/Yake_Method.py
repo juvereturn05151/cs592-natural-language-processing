@@ -17,6 +17,7 @@ from .KeywordMethod import SearchResult, KeywordMethod
 from .DocumentProcessor import DocumentProcessor
 import src.NLP_Globals as Globals
 
+
 def create_yake_method(processor: DocumentProcessor = None) -> KeywordMethod:
     """Factory function to create and initialize YAKE method."""
     yake = YakeMethod(
@@ -35,13 +36,13 @@ class YakeMethod(KeywordMethod):
         self.stopwords: Set[str] = Globals.STOP_WORDS
         self._regex_nonword = Globals.REGEX_NONWORD
 
-        #doc -> top-k keyword -> score (for extraction)
+        # doc -> top-k keyword -> score (for extraction)
         self._doc_kw_scores: Dict[str, Dict[str, float]] = {}
-        #doc -> ALL candidate ngram -> score (for search)
+        # doc -> ALL candidate ngram -> score (for search)
         self._doc_all_phrase_scores: Dict[str, Dict[str, float]] = {}
-        #doc -> set(ALL candidate ngrams)
+        # doc -> set(ALL candidate ngrams)
         self._doc_phrase_set: Dict[str, Set[str]] = {}
-        #doc -> set(words appearing in candidate ngrams)
+        # doc -> set(words appearing in candidate ngrams)
         self._doc_word_set: Dict[str, Set[str]] = {}
 
         if self.processor is not None and hasattr(self.processor, "add_document_added_listener"):
@@ -86,7 +87,18 @@ class YakeMethod(KeywordMethod):
         for p in query_phrase_set:
             query_word_set.update(p.split())
 
-        results: List[Tuple[str, float, str]] = []
+        # Also include raw query tokens so single-word queries still work well.
+        # (Keeps behavior consistent with your RAKE change request.)
+        raw_q_words = []
+        for w in query.lower().split():
+            w = self._regex_nonword.sub("", w)
+            if w and (w not in self.stopwords):
+                raw_q_words.append(w)
+        query_word_set.update(raw_q_words)
+
+        # Store extra info so we can print "phrases containing any query word"
+        # doc_name, total_score, matched_exact_str, contains_word_phrases, word_overlap
+        results: List[Tuple[str, float, str, List[Tuple[str, float]], Set[str]]] = []
         docs_scored = 0
 
         for doc in self.processor.documents:
@@ -122,9 +134,19 @@ class YakeMethod(KeywordMethod):
                 # lower YAKE score first (better)
                 key=lambda x: x[1]
             )[:5]
-
             matched_str = ", ".join([f"'{kw}' (yake={s:.3e})" for kw, s in matched_sorted]) or "No exact keyword match"
-            results.append((doc_name, total, matched_str))
+
+            # NEW: phrases that contain ANY query word (phrase != query phrase is ok)
+            # We'll show best phrases by YAKE score (lower is better).
+            contains_word_phrases: List[Tuple[str, float]] = []
+            if query_word_set:
+                for p, s in doc_phrase_scores.items():
+                    if set(p.split()).intersection(query_word_set):
+                        contains_word_phrases.append((p, s))
+                contains_word_phrases.sort(key=lambda x: x[1])  # best first (lowest YAKE)
+                contains_word_phrases = contains_word_phrases[:10]
+
+            results.append((doc_name, total, matched_str, contains_word_phrases, word_overlap))
 
         results.sort(key=lambda x: x[1], reverse=True)
 
@@ -167,13 +189,20 @@ class YakeMethod(KeywordMethod):
             return counts
 
         out: List[SearchResult] = []
-        for doc_name, score, matched_str in results[:10]:
+        for doc_name, score, matched_str, contains_word_phrases, word_overlap in results[:10]:
             doc_obj = self.processor.get_document_by_name(doc_name)
 
             # Top 10 phrases overall in this document (best = lowest YAKE score)
             doc_phrase_scores = self._doc_all_phrase_scores.get(doc_name, {})
             top_phrases = sorted(doc_phrase_scores.items(), key=lambda x: x[1])[:10]
             top_phrases_str = ", ".join([f"'{p}' ({s:.3e})" for p, s in top_phrases]) or "N/A"
+
+            contains_word_str = (
+                ", ".join([f"'{p}' ({s:.3e})" for p, s in contains_word_phrases])
+                if contains_word_phrases else "No phrases containing query words"
+            )
+
+            word_overlap_str = ", ".join(sorted(word_overlap)) if word_overlap else "None"
 
             # Document length
             doc_len = _doc_token_len(doc_obj)
@@ -190,6 +219,8 @@ class YakeMethod(KeywordMethod):
                 score=float(score),
                 details=(
                     f"Matched: {matched_str}\n"
+                    f"Phrases containing any query word: {contains_word_str}\n"
+                    f"Matched words: {word_overlap_str}\n"
                     f"Top phrases: {top_phrases_str}\n"
                     f"Document length: {doc_len} tokens\n"
                     f"Query word counts: {query_counts_str}\n"
@@ -208,11 +239,26 @@ class YakeMethod(KeywordMethod):
                 present.sort(key=lambda x: x[1], reverse=True)
                 query_counts_str = ", ".join([f"{w} × {c}" for w, c in present[:10]]) or "None"
 
+                # Also show phrases containing query words even if score==0
+                doc_phrase_scores = self._doc_all_phrase_scores.get(doc.filename, {})
+                contains_word_phrases: List[Tuple[str, float]] = []
+                if query_word_set and doc_phrase_scores:
+                    for p, s in doc_phrase_scores.items():
+                        if set(p.split()).intersection(query_word_set):
+                            contains_word_phrases.append((p, s))
+                    contains_word_phrases.sort(key=lambda x: x[1])
+                    contains_word_phrases = contains_word_phrases[:10]
+                contains_word_str = (
+                    ", ".join([f"'{p}' ({s:.3e})" for p, s in contains_word_phrases])
+                    if contains_word_phrases else "No phrases containing query words"
+                )
+
                 out.append(SearchResult(
                     title=doc.filename,
                     score=0.0,
                     details=(
                         f"No YAKE keyword overlap with query.\n"
+                        f"Phrases containing any query word: {contains_word_str}\n"
                         f"Document length: {doc_len} tokens\n"
                         f"Query word counts: {query_counts_str}\n"
                         f"Path: {doc.path}"
@@ -228,11 +274,10 @@ class YakeMethod(KeywordMethod):
         return out
 
     def extract_keywords(self, doc_name: str, top_k: int = 10) -> List[Tuple[str, float]]:
-        """Returns (keyword/ngram, yake_score) sorted by YAKE score ascending (lower is better).This uses the cached top-k extraction list (not all candidates)."""
+        """Returns (keyword/ngram, yake_score) sorted by YAKE score ascending (lower is better). This uses the cached top-k extraction list (not all candidates)."""
         scores = self._doc_kw_scores.get(doc_name, {})
         items = sorted(scores.items(), key=lambda x: x[1])
         return items[:top_k]
-
 
     def _split_into_sentences(self, text: str) -> List[str]:
         return [s.strip() for s in Globals.SENT_SPLIT.split(text) if s.strip()]
@@ -254,7 +299,7 @@ class YakeMethod(KeywordMethod):
         return out
 
     def _count_ngrams(self, tokens: List[str], max_n: int = 3) -> Dict[str, int]:
-        """Count ngrams directly (avoids building a huge candidate list).Returns: ngram -> frequency"""
+        """Count ngrams directly (avoids building a huge candidate list). Returns: ngram -> frequency"""
         ng_freq: Dict[str, int] = defaultdict(int)
         L = len(tokens)
         for n in range(1, max_n + 1):
@@ -263,7 +308,7 @@ class YakeMethod(KeywordMethod):
                 ng_freq[ng] += 1
         return ng_freq
 
-    def _extract_yake_keywords(self,text: str, top_k: int = 20,max_n: int = 3) -> Tuple[Dict[str, float], Dict[str, Any]]:
+    def _extract_yake_keywords(self, text: str, top_k: int = 20, max_n: int = 3) -> Tuple[Dict[str, float], Dict[str, Any]]:
         """
         Simplified YAKE-like scorer using:
           - term frequency
@@ -273,7 +318,7 @@ class YakeMethod(KeywordMethod):
         """
         sentences = self._split_into_sentences(text)
 
-        #build a flat token list, plus first positions and frequency in one pass.
+        # build a flat token list, plus first positions and frequency in one pass.
         tokens_all: List[str] = []
         word_frequency: Dict[str, int] = defaultdict(int)
         first_pos: Dict[str, int] = {}
