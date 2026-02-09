@@ -47,6 +47,9 @@ class RakeMethod(KeywordMethod):
         #doc -> set(words in phrases)
         self._doc_word_set: Dict[str, Set[str]] = {}
 
+        if self.processor is not None:
+            self.processor.add_document_added_listener(self._on_document_changed)
+
     def preprocess(self) -> None:
         start = time.perf_counter()
 
@@ -297,3 +300,33 @@ class RakeMethod(KeywordMethod):
                 f.write(f"{s:10.6f}\t{p}\n")
             if len(phrase_scores) > max_items:
                 f.write(f"... truncated (showing top {max_items})\n")
+
+    def _on_document_changed(self, doc_data, action: str) -> None:
+        start = time.perf_counter()
+
+        if action == "added":
+            self._incremental_add(doc_data)
+        else:
+            self.preprocess()
+
+        elapsed = time.perf_counter() - start
+        print(
+            f"[RAKE] Document {action}: {doc_data.filename} | "
+            f"time = {elapsed:.4f}s"
+        )
+
+    def _incremental_add(self, doc):
+        doc_name = doc.filename
+        raw_text = getattr(doc, "raw_text", "") or ""
+
+        phrases = self._generate_candidate_phrases(raw_text)
+        phrase_scores, word_scores = self._calculate_rake_scores(phrases)
+
+        self._doc_phrase_scores[doc_name] = phrase_scores
+        self._doc_word_scores[doc_name] = word_scores
+        self._doc_phrase_set[doc_name] = set(phrase_scores.keys())
+
+        word_set: Set[str] = set()
+        for p in phrase_scores.keys():
+            word_set.update(p.split())
+        self._doc_word_set[doc_name] = word_set
