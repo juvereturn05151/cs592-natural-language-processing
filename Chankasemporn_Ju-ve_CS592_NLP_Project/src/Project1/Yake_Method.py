@@ -299,7 +299,7 @@ class YakeMethod(KeywordMethod):
         return out
 
     def _count_ngrams(self, tokens: List[str], max_n: int = 3) -> Dict[str, int]:
-        """Count ngrams directly (avoids building a huge candidate list). Returns: ngram -> frequency"""
+        """Count ngrams (Making the candidate more details). Returns: ngram -> frequency"""
         ng_freq: Dict[str, int] = defaultdict(int)
         L = len(tokens)
         for n in range(1, max_n + 1):
@@ -352,13 +352,16 @@ class YakeMethod(KeywordMethod):
             fp = first_pos.get(w, total_len)
             pos_norm = (fp + 1) / total_len  # smaller = earlier
 
+            #how many different words appear next to w in the document
             div = len(neighbors.get(w, set()))
+            #log to prevent over-penalizing medium frequent words
             freq_term = 1.0 / (1.0 + math.log(1.0 + f))
+            #good keywords appear in specific contexts, generic words appear next to everything
             div_term = 1.0 / (1.0 + div)
 
             word_score[w] = pos_norm * freq_term * div_term
 
-        # Ngram frequencies (fast, no big list)
+        # Ngram frequencies
         ng_freq = self._count_ngrams(tokens_all, max_n=max_n)
 
         # Phrase scores (lower is better)
