@@ -96,8 +96,13 @@ def summarize(df):
         print("DataFrame is empty.")
         return
 
+    # Show all rows/columns (no truncation)
+    pd.set_option("display.max_rows", None)
+    pd.set_option("display.max_columns", None)
+    pd.set_option("display.width", None)
+
     print("\n=== Label Distribution ===")
     print(df["label"].value_counts())
 
-    print("\n=== Sample Rows ===")
-    print(df.head(20))
+    print("\n=== All Entities ===")
+    print(df)
