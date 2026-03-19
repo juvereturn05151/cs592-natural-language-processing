@@ -1,15 +1,16 @@
 from __future__ import annotations
 
-import argparse
 import random
 import re
 from pathlib import Path
 from typing import Dict, List, Tuple
 import html
 import xml.etree.ElementTree as ET
+
 import pandas as pd
 import spacy
 from spacy.training.example import Example
+
 
 def load_shakespeare_test_text(data_dir="../../data/train"):
     data_path = Path(data_dir)
@@ -36,172 +37,463 @@ def load_shakespeare_test_text(data_dir="../../data/train"):
 
     return "\n".join(texts)
 
+
 # --------------------------------------------------
 # Manual curated TRAIN_DATA only
 # --------------------------------------------------
+def make_example(text, entities):
+    """
+    entities: list of (substring, label)
+    returns: (text, {"entities": [(start, end, label), ...]})
+    """
+    spans = []
+    used = []
+
+    for substring, label in entities:
+        search_start = 0
+        found = False
+
+        while True:
+            start = text.find(substring, search_start)
+            if start == -1:
+                break
+
+            end = start + len(substring)
+
+            # accept only if it does not overlap an existing span
+            overlaps = False
+            for s, e, _ in used:
+                if not (end <= s or start >= e):
+                    overlaps = True
+                    break
+
+            if not overlaps:
+                spans.append((start, end, label))
+                used.append((start, end, label))
+                found = True
+                break
+
+            search_start = start + 1
+
+        if not found:
+            raise ValueError(f"Substring '{substring}' not found without overlap in: {text}")
+
+    return (text, {"entities": spans})
+
+
 TRAIN_DATA = [
-    ("Macbeth spoke with Banquo in Scotland.", {
-        "entities": [(0, 7, "PERSON"), (19, 25, "PERSON"), (29, 37, "GPE")]
-    }),
-    ("Lady Macbeth entered the castle.", {
-        "entities": [(0, 13, "PERSON")]
-    }),
-    ("Macduff came from Fife.", {
-        "entities": [(0, 7, "PERSON"), (18, 22, "GPE")]
-    }),
-    ("The army marched toward Birnam.", {
-        "entities": [(24, 30, "GPE")]
-    }),
-    ("Romeo loved Juliet in Verona.", {
-        "entities": [(0, 5, "PERSON"), (12, 18, "PERSON"), (22, 28, "GPE")]
-    }),
-    ("Paris wished to marry Juliet.", {
-        "entities": [(0, 5, "PERSON"), (21, 27, "PERSON")]
-    }),
-    ("Claudio and Hero arrived in Messina.", {
-        "entities": [(0, 7, "PERSON"), (12, 16, "PERSON"), (28, 35, "GPE")]
-    }),
-    ("Beatrice argued with Benedick.", {
-        "entities": [(0, 8, "PERSON"), (21, 29, "PERSON")]
-    }),
-    ("Helena followed Demetrius to Athens.", {
-        "entities": [(0, 6, "PERSON"), (16, 26, "PERSON"), (30, 36, "GPE")]
-    }),
-    ("Theseus spoke with Titania and Oberon.", {
-        "entities": [(0, 7, "PERSON"), (19, 26, "PERSON"), (31, 37, "PERSON")]
-    }),
-    ("The Messenger warned Macbeth.", {
-        "entities": [(4, 13, "ROLE"), (21, 28, "PERSON")]
-    }),
-    ("A Servant opened the gate for Duncan.", {
-        "entities": [(2, 9, "ROLE"), (31, 37, "PERSON")]
-    }),
-    ("An Attendant followed the King.", {
-        "entities": [(3, 13, "ROLE")]
-    }),
-    ("The Gentlewoman waited nearby.", {
-        "entities": [(4, 15, "ROLE")]
-    }),
-    ("Friar Francis helped Hero.", {
-        "entities": [(0, 13, "TITLE_PERSON"), (21, 25, "PERSON")]
-    }),
-    ("King Duncan thanked Macbeth.", {
-        "entities": [(0, 12, "TITLE_PERSON"), (21, 28, "PERSON")]
-    }),
-    ("Prince Malcolm returned to Scotland.", {
-        "entities": [(0, 14, "TITLE_PERSON"), (27, 35, "GPE")]
-    }),
-    ("First Witch greeted Macbeth.", {
-        "entities": [(0, 11, "ROLE"), (20, 27, "PERSON")]
-    }),
-    ("Second Witch spoke to Banquo.", {
-        "entities": [(0, 12, "ROLE"), (22, 28, "PERSON")]
-    }),
-    ("Third Witch vanished suddenly.", {
-        "entities": [(0, 11, "ROLE")]
-    }),
-    ("Macbeth met King Duncan at Inverness.", {
-        "entities": [(0, 7, "PERSON"), (12, 23, "TITLE_PERSON"), (27, 37, "GPE")]
-    }),
-    ("Banquo and Fleance rode toward Forres.", {
-        "entities": [(0, 6, "PERSON"), (11, 18, "PERSON"), (31, 37, "GPE")]
-    }),
-    ("Lady Macbeth plotted in Scotland.", {
-        "entities": [(0, 13, "PERSON"), (25, 33, "GPE")]
-    }),
-    ("Macduff opposed Macbeth in England.", {
-        "entities": [(0, 7, "PERSON"), (16, 23, "PERSON"), (27, 34, "GPE")]
-    }),
-    ("Duncan appointed Macbeth as Thane of Cawdor.", {
-        "entities": [(0, 6, "PERSON"), (17, 24, "PERSON"), (28, 43, "TITLE_PERSON")]
-    }),
-    ("Romeo met Mercutio in Verona.", {
-        "entities": [(0, 5, "PERSON"), (10, 19, "PERSON"), (23, 29, "GPE")]
-    }),
-    ("Juliet spoke to Nurse in Verona.", {
-        "entities": [(0, 6, "PERSON"), (16, 21, "ROLE"), (25, 31, "GPE")]
-    }),
-    ("Tybalt challenged Romeo in Verona.", {
-        "entities": [(0, 6, "PERSON"), (17, 22, "PERSON"), (26, 32, "GPE")]
-    }),
-    ("Paris visited Juliet at Capulet house.", {
-        "entities": [(0, 5, "PERSON"), (14, 20, "PERSON")]
-    }),
-    ("Friar Laurence helped Romeo escape.", {
-        "entities": [(0, 14, "TITLE_PERSON"), (22, 27, "PERSON")]
-    }),
-    ("Claudio loved Hero in Messina.", {
-        "entities": [(0, 7, "PERSON"), (14, 18, "PERSON"), (22, 29, "GPE")]
-    }),
-    ("Don Pedro spoke with Benedick.", {
-        "entities": [(0, 9, "TITLE_PERSON"), (21, 29, "PERSON")]
-    }),
-    ("Don John deceived Claudio in Messina.", {
-        "entities": [(0, 8, "TITLE_PERSON"), (18, 25, "PERSON"), (29, 36, "GPE")]
-    }),
-    ("Beatrice argued with Hero and Ursula.", {
-        "entities": [(0, 8, "PERSON"), (21, 25, "PERSON"), (30, 36, "PERSON")]
-    }),
-    ("Leonato welcomed guests to Messina.", {
-        "entities": [(0, 7, "PERSON"), (28, 35, "GPE")]
-    }),
-    ("Theseus ruled Athens with Hippolyta.", {
-        "entities": [(0, 7, "PERSON"), (14, 20, "GPE"), (26, 36, "PERSON")]
-    }),
-    ("Oberon and Titania argued in the forest.", {
-        "entities": [(0, 6, "PERSON"), (11, 18, "PERSON")]
-    }),
-    ("Puck served Oberon faithfully.", {
-        "entities": [(0, 4, "PERSON"), (12, 18, "PERSON")]
-    }),
-    ("Hermia loved Lysander in Athens.", {
-        "entities": [(0, 6, "PERSON"), (13, 21, "PERSON"), (25, 31, "GPE")]
-    }),
-    ("Demetrius pursued Helena in Athens.", {
-        "entities": [(0, 10, "PERSON"), (20, 26, "PERSON"), (30, 36, "GPE")]
-    }),
-    ("A Soldier guarded the castle.", {
-        "entities": [(2, 9, "ROLE")]
-    }),
-    ("The Porter opened the gate.", {
-        "entities": [(4, 10, "ROLE")]
-    }),
-    ("A Messenger brought news to Macbeth.", {
-        "entities": [(2, 11, "ROLE"), (31, 38, "PERSON")]
-    }),
-    ("An Officer followed King Duncan.", {
-        "entities": [(3, 10, "ROLE"), (19, 30, "TITLE_PERSON")]
-    }),
-    ("The Doctor treated Lady Macbeth.", {
-        "entities": [(4, 10, "ROLE"), (19, 32, "PERSON")]
-    }),
-    ("Thou shalt not pass unnoticed.", {"entities": []}),
-    ("Come hither and listen well.", {"entities": []}),
-    ("Exit Macbeth.", {"entities": [(5, 12, "PERSON")]}),  # but not Exit
-    ("Exeunt all but Macbeth.", {"entities": [(15, 22, "PERSON")]}),  # but not Exeunt
-    ("Messenger spoke to Macbeth.", {"entities": [(0, 9, "ROLE"), (19, 26, "PERSON")]}),
-    ("Nurse comforted Juliet.", {"entities": [(0, 5, "ROLE"), (16, 22, "PERSON")]}),
-    ("Paris wished to marry Juliet.", {"entities": [(0, 5, "PERSON"), (21, 27, "PERSON")]}),
-    ("Hermia loved Lysander.", {"entities": [(0, 6, "PERSON"), (13, 21, "PERSON")]}),
-    ("Claudio arrived in Messina.", {"entities": [(0, 7, "PERSON"), (19, 26, "GPE")]}),
+    # =========================
+    # MACBETH
+    # =========================
+    make_example("Macbeth spoke with Banquo in Scotland.", [
+        ("Macbeth", "PERSON"),
+        ("Banquo", "PERSON"),
+        ("Scotland", "GPE"),
+    ]),
+    make_example("Lady Macbeth read the letter at Inverness.", [
+        ("Lady Macbeth", "PERSON"),
+        ("Inverness", "GPE"),
+    ]),
+    make_example("Macduff traveled from Fife to England.", [
+        ("Macduff", "PERSON"),
+        ("Fife", "GPE"),
+        ("England", "GPE"),
+    ]),
+    make_example("King Duncan praised Macbeth at Forres.", [
+        ("King Duncan", "PERSON"),
+        ("Macbeth", "PERSON"),
+        ("Forres", "GPE"),
+    ]),
+    make_example("Prince Malcolm returned to Scotland with Macduff.", [
+        ("Prince Malcolm", "PERSON"),
+        ("Scotland", "GPE"),
+        ("Macduff", "PERSON"),
+    ]),
+    make_example("Banquo and Fleance rode toward Forres.", [
+        ("Banquo", "PERSON"),
+        ("Fleance", "PERSON"),
+        ("Forres", "GPE"),
+    ]),
+    make_example("The Messenger warned Macbeth of approaching soldiers.", [
+        ("Messenger", "OCC"),
+        ("Macbeth", "PERSON"),
+    ]),
+    make_example("A Servant opened the gate for Duncan.", [
+        ("Servant", "OCC"),
+        ("Duncan", "PERSON"),
+    ]),
+    make_example("The Porter laughed at Inverness.", [
+        ("Porter", "OCC"),
+        ("Inverness", "GPE"),
+    ]),
+    make_example("The Doctor treated Lady Macbeth.", [
+        ("Doctor", "OCC"),
+        ("Lady Macbeth", "PERSON"),
+    ]),
+    make_example("The Gentlewoman watched Lady Macbeth sleepwalk.", [
+        ("Gentlewoman", "OCC"),
+        ("Lady Macbeth", "PERSON"),
+    ]),
+    make_example("First Witch greeted Macbeth on the heath.", [
+        ("First Witch", "OCC"),
+        ("Macbeth", "PERSON"),
+    ]),
+    make_example("Second Witch spoke to Banquo.", [
+        ("Second Witch", "OCC"),
+        ("Banquo", "PERSON"),
+    ]),
+    make_example("Third Witch vanished before Macbeth arrived.", [
+        ("Third Witch", "OCC"),
+        ("Macbeth", "PERSON"),
+    ]),
+    make_example("Ross met Macduff in Scotland.", [
+        ("Ross", "PERSON"),
+        ("Macduff", "PERSON"),
+        ("Scotland", "GPE"),
+    ]),
+    make_example("Lady Macduff stayed in Fife with her son.", [
+        ("Lady Macduff", "PERSON"),
+        ("Fife", "GPE"),
+        ("son", "REL"),
+    ]),
+    make_example("Lady Macbeth is the wife of Macbeth.", [
+        ("Lady Macbeth", "PERSON"),
+        ("wife", "REL"),
+        ("Macbeth", "PERSON"),
+    ]),
+    make_example("Banquo is the father of Fleance.", [
+        ("Banquo", "PERSON"),
+        ("father", "REL"),
+        ("Fleance", "PERSON"),
+    ]),
+    make_example("Macduff is the husband of Lady Macduff.", [
+        ("Macduff", "PERSON"),
+        ("husband", "REL"),
+        ("Lady Macduff", "PERSON"),
+    ]),
+    make_example("Malcolm is the son of Duncan.", [
+        ("Malcolm", "PERSON"),
+        ("son", "REL"),
+        ("Duncan", "PERSON"),
+    ]),
+
+    # =========================
+    # ROMEO AND JULIET
+    # =========================
+    make_example("Romeo loved Juliet in Verona.", [
+        ("Romeo", "PERSON"),
+        ("Juliet", "PERSON"),
+        ("Verona", "GPE"),
+    ]),
+    make_example("Paris wished to marry Juliet.", [
+        ("Paris", "PERSON"),
+        ("Juliet", "PERSON"),
+    ]),
+    make_example("Mercutio joked with Romeo in Verona.", [
+        ("Mercutio", "PERSON"),
+        ("Romeo", "PERSON"),
+        ("Verona", "GPE"),
+    ]),
+    make_example("Tybalt challenged Romeo before the Capulet house.", [
+        ("Tybalt", "PERSON"),
+        ("Romeo", "PERSON"),
+        ("Capulet", "PERSON"),
+    ]),
+    make_example("Friar Laurence helped Romeo escape.", [
+        ("Friar Laurence", "PERSON"),
+        ("Romeo", "PERSON"),
+    ]),
+    make_example("Nurse comforted Juliet in Verona.", [
+        ("Nurse", "OCC"),
+        ("Juliet", "PERSON"),
+        ("Verona", "GPE"),
+    ]),
+    make_example("Benvolio searched for Romeo in Verona.", [
+        ("Benvolio", "PERSON"),
+        ("Romeo", "PERSON"),
+        ("Verona", "GPE"),
+    ]),
+    make_example("Lord Capulet arranged a feast in Verona.", [
+        ("Lord Capulet", "PERSON"),
+        ("Verona", "GPE"),
+    ]),
+    make_example("Lady Capulet spoke with Juliet.", [
+        ("Lady Capulet", "PERSON"),
+        ("Juliet", "PERSON"),
+    ]),
+    make_example("Prince Escalus judged the families in Verona.", [
+        ("Prince Escalus", "PERSON"),
+        ("Verona", "GPE"),
+    ]),
+    make_example("The Apothecary sold poison to Romeo.", [
+        ("Apothecary", "OCC"),
+        ("Romeo", "PERSON"),
+    ]),
+    make_example("Balthasar brought news to Romeo.", [
+        ("Balthasar", "PERSON"),
+        ("Romeo", "PERSON"),
+    ]),
+    make_example("Juliet trusted Friar Laurence.", [
+        ("Juliet", "PERSON"),
+        ("Friar Laurence", "PERSON"),
+    ]),
+    make_example("Sampson argued in Verona.", [
+        ("Sampson", "PERSON"),
+        ("Verona", "GPE"),
+    ]),
+    make_example("Gregory served the Capulet household in Verona.", [
+        ("Gregory", "PERSON"),
+        ("Capulet", "PERSON"),
+        ("Verona", "GPE"),
+    ]),
+    make_example("Rosaline was admired by Romeo.", [
+        ("Rosaline", "PERSON"),
+        ("Romeo", "PERSON"),
+    ]),
+    make_example("Romeo is the son of Montague.", [
+        ("Romeo", "PERSON"),
+        ("son", "REL"),
+        ("Montague", "PERSON"),
+    ]),
+    make_example("Juliet is the daughter of Capulet.", [
+        ("Juliet", "PERSON"),
+        ("daughter", "REL"),
+        ("Capulet", "PERSON"),
+    ]),
+    make_example("Romeo is the lover of Juliet.", [
+        ("Romeo", "PERSON"),
+        ("lover", "REL"),
+        ("Juliet", "PERSON"),
+    ]),
+    make_example("Mercutio is the friend of Romeo.", [
+        ("Mercutio", "PERSON"),
+        ("friend", "REL"),
+        ("Romeo", "PERSON"),
+    ]),
+    make_example("Capulet and Montague are enemies in Verona.", [
+        ("Capulet", "PERSON"),
+        ("Montague", "PERSON"),
+        ("enemies", "REL"),
+        ("Verona", "GPE"),
+    ]),
+
+    # =========================
+    # A MIDSUMMER NIGHT'S DREAM
+    # =========================
+    make_example("Hermia loved Lysander in Athens.", [
+        ("Hermia", "PERSON"),
+        ("Lysander", "PERSON"),
+        ("Athens", "GPE"),
+    ]),
+    make_example("Demetrius pursued Helena in Athens.", [
+        ("Demetrius", "PERSON"),
+        ("Helena", "PERSON"),
+        ("Athens", "GPE"),
+    ]),
+    make_example("Theseus ruled Athens with Hippolyta.", [
+        ("Theseus", "PERSON"),
+        ("Athens", "GPE"),
+        ("Hippolyta", "PERSON"),
+    ]),
+    make_example("Oberon argued with Titania in the forest.", [
+        ("Oberon", "PERSON"),
+        ("Titania", "PERSON"),
+    ]),
+    make_example("Puck served Oberon faithfully.", [
+        ("Puck", "PERSON"),
+        ("Oberon", "PERSON"),
+    ]),
+    make_example("Bottom rehearsed with Quince near Athens.", [
+        ("Bottom", "PERSON"),
+        ("Quince", "PERSON"),
+        ("Athens", "GPE"),
+    ]),
+    make_example("Flute joined Snout and Snug in the play.", [
+        ("Flute", "PERSON"),
+        ("Snout", "PERSON"),
+        ("Snug", "PERSON"),
+    ]),
+    make_example("Egeus complained to Theseus in Athens.", [
+        ("Egeus", "PERSON"),
+        ("Theseus", "PERSON"),
+        ("Athens", "GPE"),
+    ]),
+    make_example("Philostrate prepared the entertainment for Theseus.", [
+        ("Philostrate", "PERSON"),
+        ("Theseus", "PERSON"),
+    ]),
+    make_example("Robin Goodfellow misled the lovers in the forest.", [
+        ("Robin Goodfellow", "PERSON"),
+    ]),
+    make_example("Mustardseed attended Titania.", [
+        ("Mustardseed", "PERSON"),
+        ("Titania", "PERSON"),
+    ]),
+    make_example("Cobweb followed Titania through the wood.", [
+        ("Cobweb", "PERSON"),
+        ("Titania", "PERSON"),
+    ]),
+    make_example("Peaseblossom greeted Bottom politely.", [
+        ("Peaseblossom", "PERSON"),
+        ("Bottom", "PERSON"),
+    ]),
+    make_example("Moth served Titania beside Bottom.", [
+        ("Moth", "PERSON"),
+        ("Titania", "PERSON"),
+        ("Bottom", "PERSON"),
+    ]),
+    make_example("Lysander quarreled with Demetrius in Athens.", [
+        ("Lysander", "PERSON"),
+        ("Demetrius", "PERSON"),
+        ("Athens", "GPE"),
+    ]),
+    make_example("Helena followed Demetrius into the forest.", [
+        ("Helena", "PERSON"),
+        ("Demetrius", "PERSON"),
+    ]),
+    make_example("Hermia is the friend of Helena.", [
+        ("Hermia", "PERSON"),
+        ("friend", "REL"),
+        ("Helena", "PERSON"),
+    ]),
+
+    # =========================
+    # MUCH ADO ABOUT NOTHING
+    # =========================
+    make_example("Claudio loved Hero in Messina.", [
+        ("Claudio", "PERSON"),
+        ("Hero", "PERSON"),
+        ("Messina", "GPE"),
+    ]),
+    make_example("Beatrice argued with Benedick in Messina.", [
+        ("Beatrice", "PERSON"),
+        ("Benedick", "PERSON"),
+        ("Messina", "GPE"),
+    ]),
+    make_example("Don Pedro spoke with Claudio.", [
+        ("Don Pedro", "PERSON"),
+        ("Claudio", "PERSON"),
+    ]),
+    make_example("Don John deceived Claudio in Messina.", [
+        ("Don John", "PERSON"),
+        ("Claudio", "PERSON"),
+        ("Messina", "GPE"),
+    ]),
+    make_example("Leonato welcomed Don Pedro to Messina.", [
+        ("Leonato", "PERSON"),
+        ("Don Pedro", "PERSON"),
+        ("Messina", "GPE"),
+    ]),
+    make_example("Friar Francis helped Hero.", [
+        ("Friar Francis", "PERSON"),
+        ("Hero", "PERSON"),
+    ]),
+    make_example("Ursula spoke with Hero in the garden.", [
+        ("Ursula", "PERSON"),
+        ("Hero", "PERSON"),
+    ]),
+    make_example("Margaret laughed with Beatrice.", [
+        ("Margaret", "PERSON"),
+        ("Beatrice", "PERSON"),
+    ]),
+    make_example("Borachio confessed the scheme to Conrade.", [
+        ("Borachio", "PERSON"),
+        ("Conrade", "PERSON"),
+    ]),
+    make_example("Dogberry questioned Borachio in Messina.", [
+        ("Dogberry", "PERSON"),
+        ("Borachio", "PERSON"),
+        ("Messina", "GPE"),
+    ]),
+    make_example("Verges assisted Dogberry.", [
+        ("Verges", "PERSON"),
+        ("Dogberry", "PERSON"),
+    ]),
+    make_example("The Watch arrested Borachio.", [
+        ("Watch", "OCC"),
+        ("Borachio", "PERSON"),
+    ]),
+    make_example("A Sexton recorded the testimony.", [
+        ("Sexton", "OCC"),
+    ]),
+    make_example("Antonio supported Leonato in Messina.", [
+        ("Antonio", "PERSON"),
+        ("Leonato", "PERSON"),
+        ("Messina", "GPE"),
+    ]),
+    make_example("Benedick challenged Claudio after the wedding.", [
+        ("Benedick", "PERSON"),
+        ("Claudio", "PERSON"),
+    ]),
+    make_example("Hero fainted before Leonato and Beatrice.", [
+        ("Hero", "PERSON"),
+        ("Leonato", "PERSON"),
+        ("Beatrice", "PERSON"),
+    ]),
+    make_example("Hero is the daughter of Leonato.", [
+        ("Hero", "PERSON"),
+        ("daughter", "REL"),
+        ("Leonato", "PERSON"),
+    ]),
+    make_example("Beatrice is the niece of Leonato.", [
+        ("Beatrice", "PERSON"),
+        ("niece", "REL"),
+        ("Leonato", "PERSON"),
+    ]),
+    make_example("Benedick is the friend of Claudio.", [
+        ("Benedick", "PERSON"),
+        ("friend", "REL"),
+        ("Claudio", "PERSON"),
+    ]),
+
+    # =========================
+    # GENERAL / CROSS-PLAY / NEGATIVES
+    # =========================
+    make_example("Exit Macbeth.", [
+        ("Macbeth", "PERSON"),
+    ]),
+    make_example("Exeunt all but Benedick.", [
+        ("Benedick", "PERSON"),
+    ]),
+    make_example("Enter Romeo and Juliet.", [
+        ("Romeo", "PERSON"),
+        ("Juliet", "PERSON"),
+    ]),
+    make_example("Exit pursued by a bear.", []),
+    make_example("Exeunt all but one.", []),
+    make_example("Come hither and listen well.", []),
+    make_example("Thou shalt not pass unnoticed.", []),
+    make_example("Yea, I shall go with thee.", []),
+    make_example("Farewell, good sir, until tomorrow.", []),
+    make_example("The moon shone brightly above the trees.", []),
+    make_example("Music sounded within.", []),
+    make_example("A bell rang in the distance.", []),
 ]
+
 
 # --------------------------------------------------
 # Expected entities / step 2 / step 3
 # --------------------------------------------------
 def build_expected_entities() -> Dict[str, str]:
     return {
+        # =========================
+        # MACBETH
+        # =========================
         "Macbeth": "PERSON",
         "Lady Macbeth": "PERSON",
         "Banquo": "PERSON",
         "Duncan": "PERSON",
+        "King Duncan": "PERSON",
         "Malcolm": "PERSON",
+        "Prince Malcolm": "PERSON",
         "Donalbain": "PERSON",
         "Macduff": "PERSON",
+        "Lady Macduff": "PERSON",
         "Ross": "PERSON",
         "Lennox": "PERSON",
         "Siward": "PERSON",
         "Young Siward": "PERSON",
+        "Fleance": "PERSON",
         "Scotland": "GPE",
         "England": "GPE",
         "Fife": "GPE",
@@ -209,27 +501,39 @@ def build_expected_entities() -> Dict[str, str]:
         "Scone": "GPE",
         "Birnam": "GPE",
         "Glamis": "GPE",
+        "Inverness": "GPE",
+
+        # =========================
+        # ROMEO AND JULIET
+        # =========================
         "Romeo": "PERSON",
         "Juliet": "PERSON",
         "Capulet": "PERSON",
+        "Lord Capulet": "PERSON",
+        "Lady Capulet": "PERSON",
         "Montague": "PERSON",
         "Paris": "PERSON",
         "Mercutio": "PERSON",
         "Benvolio": "PERSON",
         "Tybalt": "PERSON",
-        "Nurse": "ROLE",
-        "Friar": "ROLE",
-        "Friar Lawrence": "TITLE_PERSON",
-        "Friar Laurence": "TITLE_PERSON",
+        "Friar Lawrence": "PERSON",
+        "Friar Laurence": "PERSON",
+        "Prince Escalus": "PERSON",
         "Verona": "GPE",
         "Mantua": "GPE",
         "Peter": "PERSON",
         "Balthasar": "PERSON",
         "Rosaline": "PERSON",
+        "Sampson": "PERSON",
+        "Gregory": "PERSON",
+
+        # =========================
+        # MUCH ADO ABOUT NOTHING
+        # =========================
         "Benedick": "PERSON",
         "Beatrice": "PERSON",
-        "Don Pedro": "TITLE_PERSON",
-        "Don John": "TITLE_PERSON",
+        "Don Pedro": "PERSON",
+        "Don John": "PERSON",
         "Pedro": "PERSON",
         "John": "PERSON",
         "Claudio": "PERSON",
@@ -240,10 +544,14 @@ def build_expected_entities() -> Dict[str, str]:
         "Conrade": "PERSON",
         "Borachio": "PERSON",
         "Ursula": "PERSON",
-        "Friar Francis": "TITLE_PERSON",
+        "Friar Francis": "PERSON",
         "Messina": "GPE",
         "Dogberry": "PERSON",
         "Verges": "PERSON",
+
+        # =========================
+        # A MIDSUMMER NIGHT'S DREAM
+        # =========================
         "Lysander": "PERSON",
         "Demetrius": "PERSON",
         "Hermia": "PERSON",
@@ -256,25 +564,66 @@ def build_expected_entities() -> Dict[str, str]:
         "Robin Goodfellow": "PERSON",
         "Quince": "PERSON",
         "Peter Quince": "PERSON",
+        "Bottom": "PERSON",
+        "Flute": "PERSON",
+        "Snout": "PERSON",
+        "Snug": "PERSON",
+        "Philostrate": "PERSON",
+        "Egeus": "PERSON",
         "Pyramus": "PERSON",
+        "Mustardseed": "PERSON",
+        "Cobweb": "PERSON",
+        "Peaseblossom": "PERSON",
+        "Moth": "PERSON",
         "Athens": "GPE",
         "Cupid": "PERSON",
-        "Messenger": "ROLE",
-        "Servant": "ROLE",
-        "Attendant": "ROLE",
-        "Attendants": "ROLE",
-        "Gentlewoman": "ROLE",
-        "Musician": "ROLE",
-        "First Witch": "ROLE",
-        "Second Witch": "ROLE",
-        "Third Witch": "ROLE",
-        "Witch": "ROLE",
-        "Witches": "ROLE",
-        "Murderer": "ROLE",
-        "Murderers": "ROLE",
-        "First Murderer": "ROLE",
-        "Second Murderer": "ROLE",
-        "Third Murderer": "ROLE",
+
+        # =========================
+        # OCCUPATIONS / ROLES
+        # =========================
+        "Friar": "OCC",
+        "Nurse": "OCC",
+        "Messenger": "OCC",
+        "Servant": "OCC",
+        "Porter": "OCC",
+        "Doctor": "OCC",
+        "Apothecary": "OCC",
+        "Watch": "OCC",
+        "Sexton": "OCC",
+        "Attendant": "OCC",
+        "Attendants": "OCC",
+        "Gentlewoman": "OCC",
+        "Musician": "OCC",
+        "First Witch": "OCC",
+        "Second Witch": "OCC",
+        "Third Witch": "OCC",
+        "Witch": "OCC",
+        "Witches": "OCC",
+        "Murderer": "OCC",
+        "Murderers": "OCC",
+        "First Murderer": "OCC",
+        "Second Murderer": "OCC",
+        "Third Murderer": "OCC",
+
+        # =========================
+        # RELATION WORDS
+        # =========================
+        "father": "REL",
+        "mother": "REL",
+        "son": "REL",
+        "daughter": "REL",
+        "brother": "REL",
+        "sister": "REL",
+        "husband": "REL",
+        "wife": "REL",
+        "friend": "REL",
+        "lover": "REL",
+        "niece": "REL",
+        "nephew": "REL",
+        "uncle": "REL",
+        "aunt": "REL",
+        "enemy": "REL",
+        "enemies": "REL",
     }
 
 
@@ -294,10 +643,12 @@ def load_entity_frequency_csv(csv_path: str) -> pd.DataFrame:
 def find_mislabeled_entities(freq_df: pd.DataFrame, expected_entities: Dict[str, str]) -> pd.DataFrame:
     expected_norm = {normalize_entity_for_lookup(k): v for k, v in expected_entities.items()}
     rows = []
+
     for _, row in freq_df.iterrows():
         entity = row["entity"]
         predicted = row["label"]
         key = normalize_entity_for_lookup(entity)
+
         if key in expected_norm and predicted != expected_norm[key]:
             rows.append({
                 "entity": entity,
@@ -305,6 +656,7 @@ def find_mislabeled_entities(freq_df: pd.DataFrame, expected_entities: Dict[str,
                 "expected_label": expected_norm[key],
                 "count": int(row["count"]),
             })
+
     out = pd.DataFrame(rows)
     return out.sort_values(["count", "entity"], ascending=[False, True]).reset_index(drop=True) if not out.empty else out
 
@@ -312,6 +664,7 @@ def find_mislabeled_entities(freq_df: pd.DataFrame, expected_entities: Dict[str,
 def find_missing_entities(freq_df: pd.DataFrame, expected_entities: Dict[str, str]) -> pd.DataFrame:
     found = {normalize_entity_for_lookup(x) for x in freq_df["entity"].astype(str).tolist()}
     rows = []
+
     for entity, expected_label in expected_entities.items():
         if normalize_entity_for_lookup(entity) not in found:
             rows.append({
@@ -319,6 +672,7 @@ def find_missing_entities(freq_df: pd.DataFrame, expected_entities: Dict[str, st
                 "expected_label": expected_label,
                 "issue": "Missing from baseline output",
             })
+
     out = pd.DataFrame(rows)
     return out.sort_values(["expected_label", "entity"]).reset_index(drop=True) if not out.empty else out
 
@@ -326,19 +680,23 @@ def find_missing_entities(freq_df: pd.DataFrame, expected_entities: Dict[str, st
 def find_no_good_default_label_entities(freq_df: pd.DataFrame, expected_entities: Dict[str, str]) -> pd.DataFrame:
     expected_norm = {normalize_entity_for_lookup(k): v for k, v in expected_entities.items()}
     rows = []
+
     for _, row in freq_df.iterrows():
         entity = row["entity"]
         intended = expected_norm.get(normalize_entity_for_lookup(entity))
-        if intended in {"ROLE", "TITLE_PERSON"}:
+
+        if intended in {"OCC", "REL"}:
             rows.append({
                 "entity": entity,
                 "predicted_label": row["label"],
                 "intended_label": intended,
                 "count": int(row["count"]),
-                "reason": "Default spaCy labels do not capture theatrical role/title meaning well.",
+                "reason": "Default spaCy labels do not capture occupation/title/relationship meaning well.",
             })
+
     out = pd.DataFrame(rows)
     return out.sort_values(["count", "entity"], ascending=[False, True]).reset_index(drop=True) if not out.empty else out
+
 
 # --------------------------------------------------
 # Fine-tuning
@@ -346,6 +704,7 @@ def find_no_good_default_label_entities(freq_df: pd.DataFrame, expected_entities
 def add_entity_ruler(nlp, entity_labels: Dict[str, str]):
     if "entity_ruler" in nlp.pipe_names:
         nlp.remove_pipe("entity_ruler")
+
     ruler = nlp.add_pipe("entity_ruler", before="ner", config={"overwrite_ents": False})
     patterns = [{"label": label, "pattern": entity} for entity, label in entity_labels.items()]
     ruler.add_patterns(patterns)
@@ -381,19 +740,24 @@ def fine_tune_shakespeare_ner(
     for _, annotations in train_data:
         for _, _, label in annotations["entities"]:
             all_labels.add(label)
+
     for label in sorted(all_labels):
         ner.add_label(label)
 
     other_pipes = [pipe for pipe in nlp.pipe_names if pipe not in {"ner", "entity_ruler"}]
+
     with nlp.disable_pipes(*other_pipes):
         optimizer = nlp.resume_training()
+
         for i in range(n_iter):
             random.shuffle(train_data)
             losses = {}
             examples = []
+
             for text, annotations in train_data:
                 doc = nlp.make_doc(text)
                 examples.append(Example.from_dict(doc, annotations))
+
             nlp.update(examples, sgd=optimizer, drop=dropout, losses=losses)
             print(f"Iteration {i + 1}/{n_iter} - Losses: {losses}")
 
@@ -402,36 +766,50 @@ def fine_tune_shakespeare_ner(
     print(f"Saved fine-tuned model to {Path(output_dir).resolve()}")
     return nlp
 
+
 # --------------------------------------------------
 # Custom pronoun / coreference resolution
 # --------------------------------------------------
 MALE_NAMES = {
-    "macbeth", "banquo", "duncan", "malcolm", "donalbain", "macduff",
-    "ross", "lennox", "siward", "romeo", "claudio", "benedick",
-    "leonato", "antonio", "theseus", "oberon", "lysander", "demetrius",
-    "paris", "mercutio", "benvolio", "tybalt", "dogberry", "verges",
-    "puck", "pyramus", "peter", "balthasar",
+    "macbeth", "banquo", "duncan", "king duncan", "malcolm", "prince malcolm",
+    "donalbain", "macduff", "ross", "lennox", "siward", "young siward",
+    "romeo", "claudio", "benedick", "leonato", "antonio", "theseus",
+    "oberon", "lysander", "demetrius", "paris", "mercutio", "benvolio",
+    "tybalt", "dogberry", "verges", "puck", "pyramus", "peter", "balthasar",
+    "capulet", "montague", "don pedro", "don john", "egeus", "borachio",
+    "conrade", "quince", "peter quince", "bottom", "snug", "snout", "flute",
+    "sampson", "gregory", "fleance",
 }
+
 FEMALE_NAMES = {
-    "lady macbeth", "juliet", "hero", "beatrice", "helena", "hermia",
-    "titania", "hippolyta", "ophelia", "gertrude", "margaret", "ursula", "nurse",
+    "lady macbeth", "lady macduff", "juliet", "hero", "beatrice", "helena",
+    "hermia", "titania", "hippolyta", "ophelia", "gertrude", "margaret",
+    "ursula", "rosaline", "mustardseed", "cobweb", "peaseblossom", "moth",
 }
-NEUTRAL_ROLE_NAMES = {
+
+NEUTRAL_OCC_NAMES = {
     "messenger", "servant", "attendant", "attendants", "gentlewoman",
-    "musician", "witch", "witness", "murderer", "murderers",
+    "musician", "witch", "witches", "witness", "murderer", "murderers",
+    "first witch", "second witch", "third witch", "first murderer",
+    "second murderer", "third murderer", "doctor", "porter", "watch",
+    "sexton", "apothecary", "nurse", "friar",
 }
 
 
 def classify_entity_gender_or_number(ent_text: str, ent_label: str) -> str:
     t = ent_text.strip().casefold()
+
     if t in MALE_NAMES:
         return "male"
     if t in FEMALE_NAMES:
         return "female"
-    if t in NEUTRAL_ROLE_NAMES:
+    if t in NEUTRAL_OCC_NAMES:
         return "neutral"
     if ent_label == "GPE":
         return "neutral"
+    if ent_label == "REL":
+        return "neutral"
+
     return "unknown"
 
 
@@ -444,8 +822,12 @@ def resolve_pronouns_custom(doc, memory_window_sentences: int = 5) -> pd.DataFra
     plural_pronouns = {"they", "them", "their", "theirs"}
     location_pronouns = {"there"}
 
+    tracked_labels = {"PERSON", "OCC",  "GPE", "REL"}
+    person_like_labels = {"PERSON", "OCC"}
+
     for sent_index, sent in enumerate(doc.sents):
-        sent_entities = [ent for ent in sent.ents if ent.label_ in {"PERSON", "ROLE", "TITLE_PERSON", "GPE"}]
+        sent_entities = [ent for ent in sent.ents if ent.label_ in tracked_labels]
+
         for ent in sent_entities:
             entity_memory.append({
                 "text": ent.text,
@@ -454,7 +836,10 @@ def resolve_pronouns_custom(doc, memory_window_sentences: int = 5) -> pd.DataFra
                 "sent_index": sent_index,
             })
 
-        entity_memory = [m for m in entity_memory if sent_index - m["sent_index"] < memory_window_sentences]
+        entity_memory = [
+            m for m in entity_memory
+            if sent_index - m["sent_index"] < memory_window_sentences
+        ]
 
         for token in sent:
             tok = token.text.lower()
@@ -468,22 +853,26 @@ def resolve_pronouns_custom(doc, memory_window_sentences: int = 5) -> pd.DataFra
                         antecedent = ent["text"]
                         rationale = "Most recent male-compatible entity in rolling memory."
                         break
+
             elif tok in singular_pronouns_female:
                 for ent in candidates:
                     if ent["class"] == "female":
                         antecedent = ent["text"]
                         rationale = "Most recent female-compatible entity in rolling memory."
                         break
+
             elif tok in plural_pronouns:
                 recent_people = []
                 for ent in candidates:
-                    if ent["label"] in {"PERSON", "ROLE", "TITLE_PERSON"} and ent["text"] not in recent_people:
+                    if ent["label"] in person_like_labels and ent["text"] not in recent_people:
                         recent_people.append(ent["text"])
                     if len(recent_people) == 2:
                         break
+
                 if len(recent_people) == 2:
                     antecedent = " and ".join(reversed(recent_people))
                     rationale = "Two most recent person-like entities in rolling memory."
+
             elif tok in location_pronouns:
                 for ent in candidates:
                     if ent["label"] == "GPE":
@@ -501,10 +890,15 @@ def resolve_pronouns_custom(doc, memory_window_sentences: int = 5) -> pd.DataFra
 
     return pd.DataFrame(resolved)
 
+
 # --------------------------------------------------
 # Step 5 final export
 # --------------------------------------------------
-def export_final_entity_table(text: str, model_path: str = "shakespeare_ner_model", output_csv: str = "final_entities.csv") -> pd.DataFrame:
+def export_final_entity_table(
+    text: str,
+    model_path: str = "shakespeare_ner_model",
+    output_csv: str = "final_entities.csv"
+) -> pd.DataFrame:
     nlp = spacy.load(model_path)
     doc = nlp(text)
 
@@ -540,52 +934,3 @@ def save_dataframe(df: pd.DataFrame, output_path: str):
     Path(output_path).parent.mkdir(parents=True, exist_ok=True)
     df.to_csv(output_path, index=False, encoding="utf-8")
     print(f"Saved: {Path(output_path).resolve()}")
-
-# --------------------------------------------------
-# End-to-end pipeline
-# --------------------------------------------------
-def run_pipeline(
-    baseline_csv: str,
-    output_dir: str,
-    base_model: str = "en_core_web_md",
-    n_iter: int = 20,
-):
-    output_dir_path = Path(output_dir)
-    output_dir_path.mkdir(parents=True, exist_ok=True)
-
-    expected_entities = build_expected_entities()
-    freq_df = load_entity_frequency_csv(baseline_csv)
-
-    mislabeled_df = find_mislabeled_entities(freq_df, expected_entities)
-    missing_df = find_missing_entities(freq_df, expected_entities)
-    no_default_df = find_no_good_default_label_entities(freq_df, expected_entities)
-
-    save_dataframe(mislabeled_df, str(output_dir_path / "step2_mislabeled_entities.csv"))
-    save_dataframe(missing_df, str(output_dir_path / "step3_missing_entities.csv"))
-    save_dataframe(no_default_df, str(output_dir_path / "step3_no_good_default_label_entities.csv"))
-
-    model_dir = str(output_dir_path / "shakespeare_ner_model")
-    fine_tune_shakespeare_ner(
-        train_data=TRAIN_DATA,
-        output_dir=model_dir,
-        base_model=base_model,
-        n_iter=n_iter,
-        entity_labels=expected_entities,
-    )
-
-    print("Pipeline complete.")
-    print(f"Artifacts saved under: {output_dir_path.resolve()}")
-    return {
-        "mislabeled_df": mislabeled_df,
-        "missing_df": missing_df,
-        "no_default_df": no_default_df,
-    }
-
-
-def parse_args():
-    parser = argparse.ArgumentParser(description="Fine-tune Shakespeare NER and export report tables.")
-    parser.add_argument("--baseline_csv", type=str, default="shakespeare_entities.csv", help="CSV containing baseline entity, label, count.")
-    parser.add_argument("--output_dir", type=str, default="ner_outputs", help="Directory to save outputs.")
-    parser.add_argument("--base_model", type=str, default="en_core_web_md", help="spaCy base model to fine-tune.")
-    parser.add_argument("--n_iter", type=int, default=20, help="Number of fine-tuning iterations.")
-    return parser.parse_args()

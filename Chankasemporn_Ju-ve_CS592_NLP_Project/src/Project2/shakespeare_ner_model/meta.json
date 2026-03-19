@@ -127,8 +127,9 @@
     ],
     "entity_ruler":[
       "GPE",
+      "OCC",
       "PERSON",
-      "ROLE",
+      "REL",
       "TITLE_PERSON"
     ],
     "ner":[
@@ -142,13 +143,14 @@
       "LOC",
       "MONEY",
       "NORP",
+      "OCC",
       "ORDINAL",
       "ORG",
       "PERCENT",
       "PERSON",
       "PRODUCT",
       "QUANTITY",
-      "ROLE",
+      "REL",
       "TIME",
       "TITLE_PERSON",
       "WORK_OF_ART"

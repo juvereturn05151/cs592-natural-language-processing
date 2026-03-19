@@ -5,10 +5,12 @@
 {"label":"PERSON","pattern":"Malcolm"}
 {"label":"PERSON","pattern":"Donalbain"}
 {"label":"PERSON","pattern":"Macduff"}
+{"label":"PERSON","pattern":"Lady Macduff"}
 {"label":"PERSON","pattern":"Ross"}
 {"label":"PERSON","pattern":"Lennox"}
 {"label":"PERSON","pattern":"Siward"}
 {"label":"PERSON","pattern":"Young Siward"}
+{"label":"PERSON","pattern":"Fleance"}
 {"label":"PERSON","pattern":"Romeo"}
 {"label":"PERSON","pattern":"Juliet"}
 {"label":"PERSON","pattern":"Capulet"}
@@ -20,6 +22,8 @@
 {"label":"PERSON","pattern":"Peter"}
 {"label":"PERSON","pattern":"Balthasar"}
 {"label":"PERSON","pattern":"Rosaline"}
+{"label":"PERSON","pattern":"Sampson"}
+{"label":"PERSON","pattern":"Gregory"}
 {"label":"PERSON","pattern":"Benedick"}
 {"label":"PERSON","pattern":"Beatrice"}
 {"label":"PERSON","pattern":"Pedro"}
@@ -46,8 +50,28 @@
 {"label":"PERSON","pattern":"Robin Goodfellow"}
 {"label":"PERSON","pattern":"Quince"}
 {"label":"PERSON","pattern":"Peter Quince"}
+{"label":"PERSON","pattern":"Bottom"}
+{"label":"PERSON","pattern":"Flute"}
+{"label":"PERSON","pattern":"Snout"}
+{"label":"PERSON","pattern":"Snug"}
+{"label":"PERSON","pattern":"Philostrate"}
+{"label":"PERSON","pattern":"Egeus"}
 {"label":"PERSON","pattern":"Pyramus"}
+{"label":"PERSON","pattern":"Mustardseed"}
+{"label":"PERSON","pattern":"Cobweb"}
+{"label":"PERSON","pattern":"Peaseblossom"}
+{"label":"PERSON","pattern":"Moth"}
 {"label":"PERSON","pattern":"Cupid"}
+{"label":"TITLE_PERSON","pattern":"King Duncan"}
+{"label":"TITLE_PERSON","pattern":"Prince Malcolm"}
+{"label":"TITLE_PERSON","pattern":"Lord Capulet"}
+{"label":"TITLE_PERSON","pattern":"Lady Capulet"}
+{"label":"TITLE_PERSON","pattern":"Friar Lawrence"}
+{"label":"TITLE_PERSON","pattern":"Friar Laurence"}
+{"label":"TITLE_PERSON","pattern":"Prince Escalus"}
+{"label":"TITLE_PERSON","pattern":"Don Pedro"}
+{"label":"TITLE_PERSON","pattern":"Don John"}
+{"label":"TITLE_PERSON","pattern":"Friar Francis"}
 {"label":"GPE","pattern":"Scotland"}
 {"label":"GPE","pattern":"England"}
 {"label":"GPE","pattern":"Fife"}
@@ -55,30 +79,47 @@
 {"label":"GPE","pattern":"Scone"}
 {"label":"GPE","pattern":"Birnam"}
 {"label":"GPE","pattern":"Glamis"}
+{"label":"GPE","pattern":"Inverness"}
 {"label":"GPE","pattern":"Verona"}
 {"label":"GPE","pattern":"Mantua"}
 {"label":"GPE","pattern":"Messina"}
 {"label":"GPE","pattern":"Athens"}
-{"label":"ROLE","pattern":"Nurse"}
-{"label":"ROLE","pattern":"Friar"}
-{"label":"ROLE","pattern":"Messenger"}
-{"label":"ROLE","pattern":"Servant"}
-{"label":"ROLE","pattern":"Attendant"}
-{"label":"ROLE","pattern":"Attendants"}
-{"label":"ROLE","pattern":"Gentlewoman"}
-{"label":"ROLE","pattern":"Musician"}
-{"label":"ROLE","pattern":"First Witch"}
-{"label":"ROLE","pattern":"Second Witch"}
-{"label":"ROLE","pattern":"Third Witch"}
-{"label":"ROLE","pattern":"Witch"}
-{"label":"ROLE","pattern":"Witches"}
-{"label":"ROLE","pattern":"Murderer"}
-{"label":"ROLE","pattern":"Murderers"}
-{"label":"ROLE","pattern":"First Murderer"}
-{"label":"ROLE","pattern":"Second Murderer"}
-{"label":"ROLE","pattern":"Third Murderer"}
-{"label":"TITLE_PERSON","pattern":"Friar Lawrence"}
-{"label":"TITLE_PERSON","pattern":"Friar Laurence"}
-{"label":"TITLE_PERSON","pattern":"Don Pedro"}
-{"label":"TITLE_PERSON","pattern":"Don John"}
-{"label":"TITLE_PERSON","pattern":"Friar Francis"}
+{"label":"OCC","pattern":"Friar"}
+{"label":"OCC","pattern":"Nurse"}
+{"label":"OCC","pattern":"Messenger"}
+{"label":"OCC","pattern":"Servant"}
+{"label":"OCC","pattern":"Porter"}
+{"label":"OCC","pattern":"Doctor"}
+{"label":"OCC","pattern":"Apothecary"}
+{"label":"OCC","pattern":"Watch"}
+{"label":"OCC","pattern":"Sexton"}
+{"label":"OCC","pattern":"Attendant"}
+{"label":"OCC","pattern":"Attendants"}
+{"label":"OCC","pattern":"Gentlewoman"}
+{"label":"OCC","pattern":"Musician"}
+{"label":"OCC","pattern":"First Witch"}
+{"label":"OCC","pattern":"Second Witch"}
+{"label":"OCC","pattern":"Third Witch"}
+{"label":"OCC","pattern":"Witch"}
+{"label":"OCC","pattern":"Witches"}
+{"label":"OCC","pattern":"Murderer"}
+{"label":"OCC","pattern":"Murderers"}
+{"label":"OCC","pattern":"First Murderer"}
+{"label":"OCC","pattern":"Second Murderer"}
+{"label":"OCC","pattern":"Third Murderer"}
+{"label":"REL","pattern":"father"}
+{"label":"REL","pattern":"mother"}
+{"label":"REL","pattern":"son"}
+{"label":"REL","pattern":"daughter"}
+{"label":"REL","pattern":"brother"}
+{"label":"REL","pattern":"sister"}
+{"label":"REL","pattern":"husband"}
+{"label":"REL","pattern":"wife"}
+{"label":"REL","pattern":"friend"}
+{"label":"REL","pattern":"lover"}
+{"label":"REL","pattern":"niece"}
+{"label":"REL","pattern":"nephew"}
+{"label":"REL","pattern":"uncle"}
+{"label":"REL","pattern":"aunt"}
+{"label":"REL","pattern":"enemy"}
+{"label":"REL","pattern":"enemies"}
