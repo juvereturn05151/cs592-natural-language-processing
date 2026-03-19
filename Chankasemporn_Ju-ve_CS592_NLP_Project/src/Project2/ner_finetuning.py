@@ -1,81 +1,80 @@
 from __future__ import annotations
 
 import argparse
-import html
 import random
 import re
-import xml.etree.ElementTree as ET
 from pathlib import Path
 from typing import Dict, List, Tuple
 
 import pandas as pd
 import spacy
-from spacy.pipeline import EntityRuler
 from spacy.training.example import Example
 
 # --------------------------------------------------
-# Step 4B toy examples from the writeup
+# Manual curated TRAIN_DATA only
 # --------------------------------------------------
 TRAIN_DATA = [
     ("Macbeth spoke with Banquo in Scotland.", {
         "entities": [(0, 7, "PERSON"), (19, 25, "PERSON"), (29, 37, "GPE")]
     }),
-    ("Romeo loves Juliet in Verona.", {
+    ("Lady Macbeth entered the castle.", {
+        "entities": [(0, 13, "PERSON")]
+    }),
+    ("Macduff came from Fife.", {
+        "entities": [(0, 7, "PERSON"), (18, 22, "GPE")]
+    }),
+    ("The army marched toward Birnam.", {
+        "entities": [(24, 30, "GPE")]
+    }),
+    ("Romeo loved Juliet in Verona.", {
         "entities": [(0, 5, "PERSON"), (12, 18, "PERSON"), (22, 28, "GPE")]
+    }),
+    ("Paris wished to marry Juliet.", {
+        "entities": [(0, 5, "PERSON"), (21, 27, "PERSON")]
     }),
     ("Claudio and Hero arrived in Messina.", {
         "entities": [(0, 7, "PERSON"), (12, 16, "PERSON"), (28, 35, "GPE")]
     }),
+    ("Beatrice argued with Benedick.", {
+        "entities": [(0, 8, "PERSON"), (21, 29, "PERSON")]
+    }),
+    ("Helena followed Demetrius to Athens.", {
+        "entities": [(0, 6, "PERSON"), (16, 26, "PERSON"), (30, 36, "GPE")]
+    }),
+    ("Theseus spoke with Titania and Oberon.", {
+        "entities": [(0, 7, "PERSON"), (19, 26, "PERSON"), (31, 37, "PERSON")]
+    }),
     ("The Messenger warned Macbeth.", {
         "entities": [(4, 13, "ROLE"), (21, 28, "PERSON")]
+    }),
+    ("A Servant opened the gate for Duncan.", {
+        "entities": [(2, 9, "ROLE"), (31, 37, "PERSON")]
+    }),
+    ("An Attendant followed the King.", {
+        "entities": [(3, 13, "ROLE")]
+    }),
+    ("The Gentlewoman waited nearby.", {
+        "entities": [(4, 15, "ROLE")]
     }),
     ("Friar Francis helped Hero.", {
         "entities": [(0, 13, "TITLE_PERSON"), (21, 25, "PERSON")]
     }),
-    ("Forres is in Scotland.", {
-        "entities": [(0, 6, "GPE"), (13, 21, "GPE")]
+    ("King Duncan thanked Macbeth.", {
+        "entities": [(0, 12, "TITLE_PERSON"), (21, 28, "PERSON")]
+    }),
+    ("Prince Malcolm returned to Scotland.", {
+        "entities": [(0, 14, "TITLE_PERSON"), (27, 35, "GPE")]
+    }),
+    ("First Witch greeted Macbeth.", {
+        "entities": [(0, 11, "ROLE"), (20, 27, "PERSON")]
+    }),
+    ("Second Witch spoke to Banquo.", {
+        "entities": [(0, 12, "ROLE"), (22, 28, "PERSON")]
+    }),
+    ("Third Witch vanished suddenly.", {
+        "entities": [(0, 11, "ROLE")]
     }),
 ]
-
-
-# --------------------------------------------------
-# Corpus loading
-# --------------------------------------------------
-def load_shakespeare_files(data_dir: str = "data/train") -> List[Path]:
-    data_path = Path(data_dir)
-    if not data_path.exists():
-        raise FileNotFoundError(f"Directory does not exist: {data_path.resolve()}")
-
-    return sorted([
-        path for path in data_path.rglob("*.txt")
-        if "shakespeare" in path.name.lower()
-    ])
-
-
-def extract_body_text(path: Path) -> str:
-    raw_text = path.read_text(encoding="utf-8", errors="ignore")
-    raw_text = html.unescape(raw_text)
-
-    try:
-        root = ET.fromstring(raw_text)
-        body = root.find("Body")
-        if body is None:
-            return ""
-        body_text = " ".join(body.itertext())
-        body_text = re.sub(r"\s+", " ", body_text).strip()
-        return body_text
-    except ET.ParseError:
-        return ""
-
-
-def load_corpus_text(data_dir: str = "data/train") -> str:
-    parts: List[str] = []
-    for path in load_shakespeare_files(data_dir):
-        text = extract_body_text(path)
-        if text:
-            parts.append(text)
-    return "\n".join(parts)
-
 
 # --------------------------------------------------
 # Expected entities / step 2 / step 3
@@ -231,90 +230,8 @@ def find_no_good_default_label_entities(freq_df: pd.DataFrame, expected_entities
     out = pd.DataFrame(rows)
     return out.sort_values(["count", "entity"], ascending=[False, True]).reset_index(drop=True) if not out.empty else out
 
-
 # --------------------------------------------------
-# Step 4C weak supervision
-# --------------------------------------------------
-def build_training_examples_from_text(
-    text: str,
-    entity_labels: Dict[str, str],
-    window_size: int = 300,
-    max_examples_per_entity: int | None = 50,
-) -> List[Tuple[str, Dict[str, List[Tuple[int, int, str]]]]]:
-    examples = []
-    for entity, label in entity_labels.items():
-        pattern = re.compile(rf"\b{re.escape(entity)}\b", flags=re.IGNORECASE)
-        count = 0
-        for match in pattern.finditer(text):
-            start, end = match.start(), match.end()
-            window_start = max(0, start - window_size // 2)
-            window_end = min(len(text), end + window_size // 2)
-            snippet = text[window_start:window_end]
-            local_start = start - window_start
-            local_end = end - window_start
-            examples.append((snippet, {"entities": [(local_start, local_end, label)]}))
-            count += 1
-            if max_examples_per_entity is not None and count >= max_examples_per_entity:
-                break
-    return examples
-
-
-def sentence_split(text: str) -> List[str]:
-    return [p.strip() for p in re.split(r"(?<=[\.\!\?])\s+", text) if p.strip()]
-
-
-def build_training_examples_from_corpus(
-    text: str,
-    entity_labels: Dict[str, str],
-    min_entities_per_example: int = 1,
-    max_examples: int | None = 3000,
-) -> List[Tuple[str, Dict[str, List[Tuple[int, int, str]]]]]:
-    sentences = sentence_split(text)
-    sorted_entities = sorted(entity_labels.items(), key=lambda x: len(x[0]), reverse=True)
-    examples = []
-
-    for sent in sentences:
-        spans = []
-        occupied = []
-        for entity, label in sorted_entities:
-            pattern = re.compile(rf"\b{re.escape(entity)}\b", flags=re.IGNORECASE)
-            for match in pattern.finditer(sent):
-                start, end = match.start(), match.end()
-                overlap = any(not (end <= s or start >= e) for s, e in occupied)
-                if overlap:
-                    continue
-                spans.append((start, end, label))
-                occupied.append((start, end))
-        if len(spans) >= min_entities_per_example:
-            spans.sort(key=lambda x: x[0])
-            examples.append((sent, {"entities": spans}))
-
-    if max_examples is not None:
-        examples = examples[:max_examples]
-    return examples
-
-
-def combine_training_examples(
-    toy_examples: List[Tuple[str, Dict[str, List[Tuple[int, int, str]]]]],
-    weak_examples: List[Tuple[str, Dict[str, List[Tuple[int, int, str]]]]],
-    max_total: int | None = 4000,
-) -> List[Tuple[str, Dict[str, List[Tuple[int, int, str]]]]]:
-    combined = toy_examples + weak_examples
-    # Deduplicate by exact text + entity tuple list.
-    seen = set()
-    unique = []
-    for text, ann in combined:
-        key = (text, tuple(ann["entities"]))
-        if key not in seen:
-            seen.add(key)
-            unique.append((text, ann))
-    if max_total is not None:
-        unique = unique[:max_total]
-    return unique
-
-
-# --------------------------------------------------
-# Step 4B fine-tuning
+# Fine-tuning
 # --------------------------------------------------
 def add_entity_ruler(nlp, entity_labels: Dict[str, str]):
     if "entity_ruler" in nlp.pipe_names:
@@ -375,9 +292,8 @@ def fine_tune_shakespeare_ner(
     print(f"Saved fine-tuned model to {Path(output_dir).resolve()}")
     return nlp
 
-
 # --------------------------------------------------
-# Step 4D custom pronoun / coreference resolution
+# Custom pronoun / coreference resolution
 # --------------------------------------------------
 MALE_NAMES = {
     "macbeth", "banquo", "duncan", "malcolm", "donalbain", "macduff",
@@ -475,7 +391,6 @@ def resolve_pronouns_custom(doc, memory_window_sentences: int = 5) -> pd.DataFra
 
     return pd.DataFrame(resolved)
 
-
 # --------------------------------------------------
 # Step 5 final export
 # --------------------------------------------------
@@ -516,12 +431,10 @@ def save_dataframe(df: pd.DataFrame, output_path: str):
     df.to_csv(output_path, index=False, encoding="utf-8")
     print(f"Saved: {Path(output_path).resolve()}")
 
-
 # --------------------------------------------------
 # End-to-end pipeline
 # --------------------------------------------------
 def run_pipeline(
-    data_dir: str,
     baseline_csv: str,
     output_dir: str,
     base_model: str = "en_core_web_md",
@@ -541,32 +454,14 @@ def run_pipeline(
     save_dataframe(missing_df, str(output_dir_path / "step3_missing_entities.csv"))
     save_dataframe(no_default_df, str(output_dir_path / "step3_no_good_default_label_entities.csv"))
 
-    corpus_text = load_corpus_text(data_dir)
-    weak_examples = build_training_examples_from_corpus(corpus_text, expected_entities)
-    training_data = combine_training_examples(TRAIN_DATA, weak_examples)
-
-    print(f"Generated {len(weak_examples)} weakly supervised examples.")
-    print(f"Using {len(training_data)} total training examples after combining with toy TRAIN_DATA.")
-
     model_dir = str(output_dir_path / "shakespeare_ner_model")
     fine_tune_shakespeare_ner(
-        train_data=training_data,
+        train_data=TRAIN_DATA,
         output_dir=model_dir,
         base_model=base_model,
         n_iter=n_iter,
         entity_labels=expected_entities,
     )
-
-    final_entities_df = export_final_entity_table(
-        text=corpus_text,
-        model_path=model_dir,
-        output_csv=str(output_dir_path / "final_entities_table.csv"),
-    )
-
-    nlp_ft = spacy.load(model_dir)
-    sample_doc = nlp_ft(corpus_text[:10000])
-    coref_df = resolve_pronouns_custom(sample_doc)
-    save_dataframe(coref_df, str(output_dir_path / "coreference_examples.csv"))
 
     print("Pipeline complete.")
     print(f"Artifacts saved under: {output_dir_path.resolve()}")
@@ -574,27 +469,13 @@ def run_pipeline(
         "mislabeled_df": mislabeled_df,
         "missing_df": missing_df,
         "no_default_df": no_default_df,
-        "final_entities_df": final_entities_df,
-        "coref_df": coref_df,
     }
 
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Fine-tune Shakespeare NER and export report tables.")
-    parser.add_argument("--data_dir", type=str, default="data/train", help="Directory containing Shakespeare XML-like .txt files.")
     parser.add_argument("--baseline_csv", type=str, default="shakespeare_entities.csv", help="CSV containing baseline entity, label, count.")
     parser.add_argument("--output_dir", type=str, default="ner_outputs", help="Directory to save outputs.")
     parser.add_argument("--base_model", type=str, default="en_core_web_md", help="spaCy base model to fine-tune.")
     parser.add_argument("--n_iter", type=int, default=20, help="Number of fine-tuning iterations.")
     return parser.parse_args()
-
-
-if __name__ == "__main__":
-    args = parse_args()
-    run_pipeline(
-        data_dir=args.data_dir,
-        baseline_csv=args.baseline_csv,
-        output_dir=args.output_dir,
-        base_model=args.base_model,
-        n_iter=args.n_iter,
-    )

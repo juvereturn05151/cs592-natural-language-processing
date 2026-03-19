@@ -127,7 +127,9 @@
     ],
     "entity_ruler":[
       "GPE",
-      "PERSON"
+      "PERSON",
+      "ROLE",
+      "TITLE_PERSON"
     ],
     "ner":[
       "CARDINAL",

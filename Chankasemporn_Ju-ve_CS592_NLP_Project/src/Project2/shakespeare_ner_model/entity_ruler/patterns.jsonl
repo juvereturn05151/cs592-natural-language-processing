@@ -8,6 +8,7 @@
 {"label":"PERSON","pattern":"Ross"}
 {"label":"PERSON","pattern":"Lennox"}
 {"label":"PERSON","pattern":"Siward"}
+{"label":"PERSON","pattern":"Young Siward"}
 {"label":"PERSON","pattern":"Romeo"}
 {"label":"PERSON","pattern":"Juliet"}
 {"label":"PERSON","pattern":"Capulet"}
@@ -16,41 +17,33 @@
 {"label":"PERSON","pattern":"Mercutio"}
 {"label":"PERSON","pattern":"Benvolio"}
 {"label":"PERSON","pattern":"Tybalt"}
-{"label":"PERSON","pattern":"Nurse"}
-{"label":"PERSON","pattern":"Friar"}
-{"label":"PERSON","pattern":"Lawrence"}
 {"label":"PERSON","pattern":"Peter"}
 {"label":"PERSON","pattern":"Balthasar"}
 {"label":"PERSON","pattern":"Rosaline"}
 {"label":"PERSON","pattern":"Benedick"}
-{"label":"PERSON","pattern":"BENEDICK"}
 {"label":"PERSON","pattern":"Beatrice"}
-{"label":"PERSON","pattern":"Don Pedro"}
-{"label":"PERSON","pattern":"Don John"}
 {"label":"PERSON","pattern":"Pedro"}
-{"label":"PERSON","pattern":"DON"}
-{"label":"PERSON","pattern":"JOHN"}
+{"label":"PERSON","pattern":"John"}
 {"label":"PERSON","pattern":"Claudio"}
-{"label":"PERSON","pattern":"CLAUDIO"}
 {"label":"PERSON","pattern":"Hero"}
-{"label":"PERSON","pattern":"HERO"}
 {"label":"PERSON","pattern":"Leonato"}
 {"label":"PERSON","pattern":"Antonio"}
 {"label":"PERSON","pattern":"Margaret"}
-{"label":"PERSON","pattern":"MARGARET"}
 {"label":"PERSON","pattern":"Conrade"}
 {"label":"PERSON","pattern":"Borachio"}
 {"label":"PERSON","pattern":"Ursula"}
-{"label":"PERSON","pattern":"Friar Francis"}
+{"label":"PERSON","pattern":"Dogberry"}
+{"label":"PERSON","pattern":"Verges"}
 {"label":"PERSON","pattern":"Lysander"}
 {"label":"PERSON","pattern":"Demetrius"}
 {"label":"PERSON","pattern":"Hermia"}
 {"label":"PERSON","pattern":"Helena"}
 {"label":"PERSON","pattern":"Theseus"}
-{"label":"PERSON","pattern":"THESEUS"}
+{"label":"PERSON","pattern":"Hippolyta"}
 {"label":"PERSON","pattern":"Oberon"}
 {"label":"PERSON","pattern":"Titania"}
 {"label":"PERSON","pattern":"Puck"}
+{"label":"PERSON","pattern":"Robin Goodfellow"}
 {"label":"PERSON","pattern":"Quince"}
 {"label":"PERSON","pattern":"Peter Quince"}
 {"label":"PERSON","pattern":"Pyramus"}
@@ -66,3 +59,26 @@
 {"label":"GPE","pattern":"Mantua"}
 {"label":"GPE","pattern":"Messina"}
 {"label":"GPE","pattern":"Athens"}
+{"label":"ROLE","pattern":"Nurse"}
+{"label":"ROLE","pattern":"Friar"}
+{"label":"ROLE","pattern":"Messenger"}
+{"label":"ROLE","pattern":"Servant"}
+{"label":"ROLE","pattern":"Attendant"}
+{"label":"ROLE","pattern":"Attendants"}
+{"label":"ROLE","pattern":"Gentlewoman"}
+{"label":"ROLE","pattern":"Musician"}
+{"label":"ROLE","pattern":"First Witch"}
+{"label":"ROLE","pattern":"Second Witch"}
+{"label":"ROLE","pattern":"Third Witch"}
+{"label":"ROLE","pattern":"Witch"}
+{"label":"ROLE","pattern":"Witches"}
+{"label":"ROLE","pattern":"Murderer"}
+{"label":"ROLE","pattern":"Murderers"}
+{"label":"ROLE","pattern":"First Murderer"}
+{"label":"ROLE","pattern":"Second Murderer"}
+{"label":"ROLE","pattern":"Third Murderer"}
+{"label":"TITLE_PERSON","pattern":"Friar Lawrence"}
+{"label":"TITLE_PERSON","pattern":"Friar Laurence"}
+{"label":"TITLE_PERSON","pattern":"Don Pedro"}
+{"label":"TITLE_PERSON","pattern":"Don John"}
+{"label":"TITLE_PERSON","pattern":"Friar Francis"}
