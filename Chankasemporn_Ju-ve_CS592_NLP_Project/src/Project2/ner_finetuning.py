@@ -99,8 +99,8 @@ TRAIN_DATA = [
     }),
     ("Third Witch vanished suddenly.", {
         "entities": [(0, 11, "ROLE")]
-    })
-("Macbeth met King Duncan at Inverness.", {
+    }),
+    ("Macbeth met King Duncan at Inverness.", {
         "entities": [(0, 7, "PERSON"), (12, 23, "TITLE_PERSON"), (27, 37, "GPE")]
     }),
     ("Banquo and Fleance rode toward Forres.", {
@@ -175,6 +175,15 @@ TRAIN_DATA = [
     ("The Doctor treated Lady Macbeth.", {
         "entities": [(4, 10, "ROLE"), (19, 32, "PERSON")]
     }),
+    ("Thou shalt not pass unnoticed.", {"entities": []}),
+    ("Come hither and listen well.", {"entities": []}),
+    ("Exit Macbeth.", {"entities": [(5, 12, "PERSON")]}),  # but not Exit
+    ("Exeunt all but Macbeth.", {"entities": [(15, 22, "PERSON")]}),  # but not Exeunt
+    ("Messenger spoke to Macbeth.", {"entities": [(0, 9, "ROLE"), (19, 26, "PERSON")]}),
+    ("Nurse comforted Juliet.", {"entities": [(0, 5, "ROLE"), (16, 22, "PERSON")]}),
+    ("Paris wished to marry Juliet.", {"entities": [(0, 5, "PERSON"), (21, 27, "PERSON")]}),
+    ("Hermia loved Lysander.", {"entities": [(0, 6, "PERSON"), (13, 21, "PERSON")]}),
+    ("Claudio arrived in Messina.", {"entities": [(0, 7, "PERSON"), (19, 26, "GPE")]}),
 ]
 
 # --------------------------------------------------
