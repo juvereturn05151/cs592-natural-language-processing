@@ -109,3 +109,21 @@ def summarize(df):
 
     print("\n=== Entities with Frequency ===")
     print(freq_df.to_string(index=False))
+
+def save_entity_frequencies_to_csv(df, output_path="entity_frequencies.csv"):
+    if df.empty:
+        print("DataFrame is empty. Nothing to save.")
+        return
+
+    # Compute frequency
+    freq_df = (
+        df.groupby(["entity", "label"])
+        .size()
+        .reset_index(name="count")
+        .sort_values(by="count", ascending=False)
+    )
+
+    # Save to CSV
+    freq_df.to_csv(output_path, index=False, encoding="utf-8")
+
+    print(f"Saved entity frequencies to: {output_path}")
