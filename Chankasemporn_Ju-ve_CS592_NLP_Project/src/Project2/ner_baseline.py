@@ -5,10 +5,8 @@ import xml.etree.ElementTree as ET
 import html
 import re
 
+
 def load_shakespeare_files(data_dir="data/train"):
-    """
-    Load only Shakespeare .txt files from the given directory.
-    """
     data_path = Path(data_dir)
 
     print(f"Looking in: {data_path.resolve()}")
@@ -30,13 +28,7 @@ def load_shakespeare_files(data_dir="data/train"):
 
 
 def extract_body_text(path):
-    """
-    Extract only the text inside the <Body> tag from the XML-like Shakespeare file.
-    This avoids reading Title/Author metadata such as 'William Shakespeare'.
-    """
     raw_text = path.read_text(encoding="utf-8", errors="ignore")
-
-    # Decode HTML entities like &#8217;
     raw_text = html.unescape(raw_text)
 
     try:
@@ -47,10 +39,7 @@ def extract_body_text(path):
             print(f"Warning: No <Body> found in {path.name}")
             return ""
 
-        # Collect all text from inside <Body>
         body_text = " ".join(body.itertext())
-
-        # Clean extra whitespace
         body_text = re.sub(r"\s+", " ", body_text).strip()
         return body_text
 
@@ -79,15 +68,24 @@ def run_baseline_ner(data_dir="data/train"):
         doc = nlp(text)
 
         for ent in doc.ents:
+            entity_text = ent.text.strip()
+
+            # Skip filenames like macbeth.txt
+            if re.fullmatch(r"[\w\-]+\.(txt|xml|csv|json)", entity_text.lower()):
+                continue
+
+            # Skip path-like strings
+            if "/" in entity_text or "\\" in entity_text:
+                continue
+
             rows.append({
-                "file": path.name,
-                "entity": ent.text,
+                "entity": entity_text,
                 "label": ent.label_,
                 "start": ent.start_char,
                 "end": ent.end_char,
             })
 
-    df = pd.DataFrame(rows, columns=["file", "entity", "label", "start", "end"])
+    df = pd.DataFrame(rows, columns=["entity", "label", "start", "end"])
     return df
 
 
@@ -96,7 +94,6 @@ def summarize(df):
         print("DataFrame is empty.")
         return
 
-    # Show all rows/columns (no truncation)
     pd.set_option("display.max_rows", None)
     pd.set_option("display.max_columns", None)
     pd.set_option("display.width", None)
@@ -104,5 +101,5 @@ def summarize(df):
     print("\n=== Label Distribution ===")
     print(df["label"].value_counts())
 
-    print("\n=== All Entities ===")
-    print(df)
+    print("\n=== All Entities and Labels ===")
+    print(df[["entity", "label"]].to_string(index=False))
