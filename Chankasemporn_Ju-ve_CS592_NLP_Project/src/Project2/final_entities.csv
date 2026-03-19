@@ -1,14 +1,1639 @@
 entity,label,frequency
-Messina,GPE,1
-Scotland,GPE,1
-Verona,GPE,1
-Banquo,PERSON,1
-Claudio,PERSON,1
-Hero,PERSON,2
-Juliet,PERSON,1
-Lady Macbeth,PERSON,1
-Macbeth,PERSON,3
-Romeo,PERSON,1
-First Witch,ROLE,1
-Messenger,ROLE,1
-Friar Francis,TITLE_PERSON,1
+Five,CARDINAL,1
+One,CARDINAL,2
+Three,CARDINAL,2
+Two,CARDINAL,10
+a hundred thousand,CARDINAL,1
+eight,CARDINAL,3
+five,CARDINAL,2
+half a dozen,CARDINAL,1
+nine,CARDINAL,4
+one,CARDINAL,1
+seven,CARDINAL,1
+some half a dozen,CARDINAL,1
+ten,CARDINAL,3
+ten thousand,CARDINAL,2
+thirty-one,CARDINAL,1
+three,CARDINAL,4
+twelve,CARDINAL,1
+twenty,CARDINAL,4
+twenty hundred thousand,CARDINAL,1
+two,CARDINAL,27
+Days,DATE,1
+February,DATE,1
+Four days,DATE,1
+January,DATE,1
+March,DATE,1
+Monday,DATE,3
+SECOND,DATE,3
+Some five and twenty years,DATE,1
+Sundays,DATE,1
+Three and three,DATE,1
+Thursday,DATE,11
+Tomorrow,DATE,6
+Tuesday,DATE,2
+Wednesday,DATE,3
+a month,DATE,2
+a thousand years,DATE,1
+day,DATE,1
+eight and eight,DATE,1
+eleven years,DATE,2
+four happy days,DATE,1
+fourteen,DATE,2
+fourteen years,DATE,1
+mo days,DATE,1
+morrow,DATE,1
+odd days,DATE,1
+summer,DATE,2
+summer first,DATE,1
+the last of December,DATE,1
+the least a month,DATE,1
+the middle summer’s spring,DATE,1
+the roughest day,DATE,1
+thirty years,DATE,1
+this a quarter,DATE,1
+this day,DATE,4
+this good day,DATE,1
+this many hundred years,DATE,1
+this twelvemonth,DATE,1
+today,DATE,2
+tomorrow,DATE,9
+twelve year old,DATE,1
+two years ago,DATE,1
+working days,DATE,1
+the Great Cham’s,EVENT,1
+the Fairy Queen,FAC,1
+Arragon,GPE,1
+Athenian,GPE,1
+Athens,GPE,20
+Beguil’d,GPE,1
+Betroth’d,GPE,1
+Birnam,GPE,10
+CLAUDIO,GPE,55
+"Claudio,—whose",GPE,1
+Cold,GPE,1
+Counties,GPE,1
+County,GPE,8
+County Anselmo,GPE,1
+Crete,GPE,2
+Cumberland,GPE,1
+East,GPE,1
+Echo,GPE,1
+England,GPE,8
+Enter Citizens,GPE,1
+Ethiope,GPE,1
+Exit,GPE,2
+Fife,GPE,4
+Glamis,GPE,8
+HERMIA,GPE,44
+HERO,GPE,2
+Heigh,GPE,2
+India,GPE,1
+Industrious,GPE,1
+Inverness,GPE,1
+Ireland,GPE,2
+Italy,GPE,4
+Mantua,GPE,13
+Messina,GPE,9
+Milan,GPE,1
+NURSE,GPE,3
+New,GPE,3
+Northumberland,GPE,1
+Norway,GPE,2
+Norways,GPE,1
+PARIS,GPE,18
+PRINCE,GPE,3
+Padua,GPE,1
+Quail,GPE,1
+SON,GPE,1
+Saint Colme’s,GPE,1
+Scone,GPE,3
+Scotland,GPE,11
+Seacoal,GPE,1
+Sparta,GPE,2
+Thane,GPE,1
+The County,GPE,1
+Thessaly,GPE,1
+Tiberio,GPE,1
+Venice,GPE,1
+Verona,GPE,12
+ambuscados,GPE,1
+beachèd,GPE,1
+beguil’d,GPE,1
+benedictus,GPE,1
+betroth’d,GPE,1
+captivity.—Hail,GPE,1
+cheveril,GPE,1
+confirm’d,GPE,1
+dale,GPE,2
+endite,GPE,1
+fairyland,GPE,2
+in’t,GPE,1
+jester,GPE,2
+kerns,GPE,3
+leavy,GPE,1
+live.—O,GPE,1
+masterdom,GPE,1
+quondam,GPE,1
+sev’n,GPE,1
+shrewishness,GPE,1
+suborn’d,GPE,1
+the County,GPE,1
+the County’s,GPE,1
+thou,GPE,3
+unfirm,GPE,1
+villainies,GPE,1
+Asia,LOC,1
+the Western Isles,LOC,1
+Five shillings,MONEY,1
+forty ducats,MONEY,1
+Fife.—Dismiss,NORP,1
+marr’d,NORP,1
+first,ORDINAL,5
+th,ORDINAL,3
+Army,ORG,1
+Is’t,ORG,1
+SON,ORG,1
+STARVELING,ORG,2
+course.—What,ORG,1
+"night,—I",ORG,1
+so:—but,ORG,1
+unaccustom’d,ORG,1
+ANGUS,PERSON,4
+APOTHECARY,PERSON,1
+Acheron,PERSON,1
+Adam,PERSON,3
+Adieu,PERSON,4
+Adversity,PERSON,1
+Aegles,PERSON,1
+Ah,PERSON,3
+Alack,PERSON,9
+Alarum,PERSON,2
+Alarums,PERSON,5
+Aleppo,PERSON,1
+All,PERSON,1
+Alla,PERSON,1
+Alone,PERSON,1
+Always,PERSON,1
+Amazon,PERSON,1
+Ancient,PERSON,1
+Angelica,PERSON,1
+Angus,PERSON,7
+Anoint,PERSON,1
+Anon,PERSON,9
+Anthony,PERSON,2
+Antiopa,PERSON,1
+Antonio,PERSON,9
+Antony,PERSON,1
+Apollo,PERSON,1
+Appear,PERSON,1
+Approach,PERSON,1
+Arabia,PERSON,1
+Ariadne,PERSON,1
+Aroint,PERSON,1
+Arragon,PERSON,1
+Art,PERSON,1
+Ascend,PERSON,1
+Athenian,PERSON,3
+Augurs,PERSON,1
+Aurora,PERSON,2
+Avaunt,PERSON,1
+Awake,PERSON,2
+Away,PERSON,1
+BALTHASAR,PERSON,4
+BANQUO,PERSON,32
+BEATRICE,PERSON,5
+BENEDICK,PERSON,134
+BENVOLIO,PERSON,63
+BORACHIO,PERSON,38
+BOTH,PERSON,1
+BOTTOM,PERSON,37
+BOY,PERSON,2
+Bacchanals,PERSON,1
+Balm,PERSON,1
+Balthasar,PERSON,12
+Banish’d,PERSON,1
+Banquo,PERSON,40
+Bear,PERSON,2
+Bearing,PERSON,2
+Beatrice,PERSON,52
+Beauteous,PERSON,1
+Beauty,PERSON,1
+Becomes,PERSON,1
+Bedabbled,PERSON,1
+Beetles,PERSON,1
+Beg,PERSON,2
+Begot,PERSON,1
+Being,PERSON,1
+Bel,PERSON,1
+Belike,PERSON,1
+Bellona,PERSON,1
+Belonging,PERSON,1
+Belzebub,PERSON,1
+Benedicite,PERSON,1
+Benedick,PERSON,67
+Benedictus,PERSON,1
+Benvolio,PERSON,15
+Bergomask,PERSON,2
+Beshrew,PERSON,3
+Bestride,PERSON,1
+Beware,PERSON,2
+Bid,PERSON,1
+Bless,PERSON,1
+Blessing,PERSON,1
+Bliss,PERSON,1
+Blood,PERSON,1
+Bloody,PERSON,1
+Bondage,PERSON,1
+Bootless,PERSON,1
+Borachio,PERSON,12
+Bottom,PERSON,11
+Bounty,PERSON,1
+Boy,PERSON,1
+Brags,PERSON,1
+Brandish’d,PERSON,1
+Breaking,PERSON,1
+Brief,PERSON,2
+Buttress,PERSON,1
+CAITHNESS,PERSON,3
+CAPULET,PERSON,90
+CHORUS,PERSON,4
+CLAUDIO,PERSON,70
+COBWEB,PERSON,4
+CONRADE,PERSON,1
+COUSIN,PERSON,2
+Cadmus,PERSON,1
+Caesar,PERSON,1
+Caithness,PERSON,2
+Capel,PERSON,1
+Capulet,PERSON,40
+Cast,PERSON,1
+Cawdor,PERSON,1
+Centaurs,PERSON,1
+Change,PERSON,1
+Charm,PERSON,1
+Cheerly,PERSON,1
+Chequering,PERSON,1
+Chid,PERSON,1
+Child,PERSON,2
+Church,PERSON,3
+Churl,PERSON,1
+Citizens,PERSON,1
+Claudio,PERSON,73
+Cleopatra,PERSON,1
+Clowns,PERSON,1
+Clubs,PERSON,1
+Cobweb,PERSON,3
+Colmekill,PERSON,1
+Come,PERSON,40
+Compell’d,PERSON,1
+Conceit,PERSON,1
+Confirm’d,PERSON,1
+Confound,PERSON,1
+Conrade,PERSON,8
+Consort,PERSON,1
+Consume,PERSON,1
+Contempt,PERSON,2
+Cophetua,PERSON,1
+Corin,PERSON,1
+Count,PERSON,7
+Courtesy,PERSON,1
+Cousin,PERSON,1
+Cousins,PERSON,4
+Coward,PERSON,1
+Creep,PERSON,1
+Creeps,PERSON,1
+Crook,PERSON,1
+Crowns,PERSON,1
+Crystal,PERSON,1
+Cupid,PERSON,22
+Curbing,PERSON,1
+Curses,PERSON,1
+Curs’d,PERSON,1
+Cynthia,PERSON,1
+DEMETRIUS,PERSON,48
+DOGBERRY,PERSON,22
+DON,PERSON,160
+DONALBAIN,PERSON,3
+DUNCAN,PERSON,18
+Damnèd,PERSON,1
+Dance,PERSON,4
+Daphne,PERSON,1
+Dapples,PERSON,1
+Daughter,PERSON,1
+Day,PERSON,1
+Dead,PERSON,2
+Death,PERSON,7
+Decking,PERSON,1
+Delay,PERSON,1
+Demetrius,PERSON,52
+Descends,PERSON,4
+Deserve,PERSON,1
+Desire,PERSON,1
+Despair,PERSON,1
+Despisèd,PERSON,1
+Despis’d,PERSON,1
+Destroying,PERSON,1
+Devoutly,PERSON,1
+Dian,PERSON,3
+Diana,PERSON,1
+Dido,PERSON,1
+Dies,PERSON,6
+Digressing,PERSON,1
+Direness,PERSON,1
+Disdain,PERSON,1
+Disguising,PERSON,1
+Dismay’d,PERSON,1
+Disparage,PERSON,1
+Displant,PERSON,1
+Distinguishes,PERSON,1
+Dogberry,PERSON,7
+Donalbain,PERSON,10
+Dost,PERSON,9
+Doth,PERSON,10
+Dove,PERSON,1
+Drawing,PERSON,2
+Drawn,PERSON,1
+Draws,PERSON,1
+Drinks,PERSON,1
+Duchess,PERSON,1
+Duff,PERSON,1
+Duke,PERSON,6
+Duncan,PERSON,19
+Dunsinane,PERSON,6
+Durst,PERSON,1
+EGEUS,PERSON,7
+Easter,PERSON,1
+Edward,PERSON,1
+Egeus,PERSON,8
+Egypt,PERSON,1
+Else,PERSON,1
+Enrings,PERSON,1
+Environed,PERSON,1
+Epitaph,PERSON,1
+Ercles,PERSON,2
+Ere,PERSON,5
+Err,PERSON,1
+Ethiop,PERSON,1
+Ethiope,PERSON,1
+Europa,PERSON,1
+Evermore,PERSON,2
+Exeunt,PERSON,28
+Exit,PERSON,67
+Exit First,PERSON,1
+FLEANCE,PERSON,2
+FRIAR,PERSON,16
+Fain,PERSON,1
+Faintness,PERSON,1
+Fair,PERSON,4
+Fairies,PERSON,5
+Fairy,PERSON,1
+Faith,PERSON,9
+Fall,PERSON,1
+Falls,PERSON,2
+Fann’d,PERSON,1
+Farewell,PERSON,19
+Fashion’d,PERSON,1
+Fates,PERSON,1
+Father’d,PERSON,1
+Fetter,PERSON,1
+Fie,PERSON,3
+Finding,PERSON,1
+Fine,PERSON,1
+Fire,PERSON,3
+Fleance,PERSON,11
+Florentine,PERSON,1
+Flourish,PERSON,5
+Flower,PERSON,2
+Flute,PERSON,5
+Fly,PERSON,1
+Flying,PERSON,1
+Forsook,PERSON,1
+Forswear,PERSON,1
+Free,PERSON,1
+Friends,PERSON,1
+Friendship,PERSON,1
+Furies,PERSON,1
+GENTLEWOMAN,PERSON,11
+GREGORY,PERSON,15
+Gall,PERSON,1
+Gallants,PERSON,1
+Gallop,PERSON,1
+Geese,PERSON,1
+Gentles,PERSON,1
+Ghost,PERSON,2
+Glance,PERSON,1
+Goblin,PERSON,1
+God,PERSON,15
+Golden,PERSON,1
+Goodman,PERSON,1
+Gorgon,PERSON,1
+Gorg’d,PERSON,1
+Grace,PERSON,16
+Graves,PERSON,1
+Graymalkin,PERSON,1
+Graze,PERSON,1
+Great,PERSON,1
+Greater,PERSON,1
+Gregory,PERSON,3
+Griefs,PERSON,1
+Groan,PERSON,1
+HECATE,PERSON,1
+HERMIA,PERSON,4
+HERO,PERSON,42
+Ha,PERSON,6
+Hadst,PERSON,1
+Hail,PERSON,3
+Hang,PERSON,3
+Hanging,PERSON,1
+Happily,PERSON,1
+Happiness,PERSON,1
+Hark,PERSON,4
+Hark!—Who,PERSON,1
+Harpier,PERSON,1
+Hast,PERSON,6
+Hath,PERSON,6
+Hautboys,PERSON,3
+Heavens,PERSON,1
+Heavily,PERSON,2
+Hecate,PERSON,4
+Hector,PERSON,1
+Helen,PERSON,9
+Helena,PERSON,35
+Hell,PERSON,1
+Help,PERSON,3
+Henceforward,PERSON,2
+Hercules,PERSON,6
+Hermia,PERSON,53
+Hero,PERSON,75
+Hie,PERSON,8
+Hippolyta,PERSON,10
+Hist,PERSON,1
+Ho,PERSON,3
+Hobgoblin,PERSON,1
+Hood,PERSON,1
+Hop,PERSON,1
+Horns,PERSON,2
+Hover,PERSON,1
+Humh,PERSON,1
+I.,PERSON,5
+Ill,PERSON,1
+Immoderately,PERSON,1
+Implor’d,PERSON,1
+Is’t,PERSON,3
+I’faith,PERSON,1
+JOHN,PERSON,45
+JULIET,PERSON,118
+Jack,PERSON,3
+Jacks,PERSON,2
+Jesu,PERSON,2
+Jew,PERSON,1
+Jill,PERSON,1
+John,PERSON,13
+Jove,PERSON,4
+Joy,PERSON,1
+Jule,PERSON,3
+Juliet,PERSON,60
+Keeps,PERSON,1
+Killing,PERSON,1
+Knacks,PERSON,1
+Knight,PERSON,1
+Knowing,PERSON,1
+LADY,PERSON,34
+LEONATO,PERSON,114
+LORD,PERSON,3
+LORDS,PERSON,3
+LYSANDER,PERSON,37
+Lady,PERSON,13
+Lady Macbeth,PERSON,12
+Lamentings,PERSON,1
+Lammas,PERSON,1
+Laugh,PERSON,1
+Laura,PERSON,1
+Lawrence,PERSON,4
+Lays,PERSON,1
+Leander,PERSON,1
+Lechery,PERSON,1
+Lennox,PERSON,12
+Lent,PERSON,2
+Leonato,PERSON,46
+Lest,PERSON,4
+Letting,PERSON,1
+Liar,PERSON,1
+Lies,PERSON,2
+Life,PERSON,1
+Lightning,PERSON,1
+Limander,PERSON,1
+Lion,PERSON,7
+Liver,PERSON,1
+Livia,PERSON,1
+Lizard,PERSON,1
+Lo,PERSON,3
+Long,PERSON,1
+Lord,PERSON,2
+Lords,PERSON,4
+Love,PERSON,13
+Lovers,PERSON,2
+Loves,PERSON,1
+Lower,PERSON,1
+Loyal,PERSON,1
+Lucio,PERSON,1
+Lulla,PERSON,1
+Lull’d,PERSON,1
+Luxurious,PERSON,1
+Lysander,PERSON,53
+MACBETH,PERSON,142
+MACDUFF,PERSON,78
+MALCOLM,PERSON,40
+MAN,PERSON,4
+MARGARET,PERSON,25
+MENTEITH,PERSON,5
+MERCUTIO,PERSON,62
+MESSENGER,PERSON,23
+MONTAGUE,PERSON,10
+MOON,PERSON,1
+MOONSHINE,PERSON,2
+MOTH,PERSON,1
+MURDERER,PERSON,3
+MUSICIAN,PERSON,4
+MUSTARDSEED,PERSON,4
+Mab,PERSON,2
+Macbeth,PERSON,61
+Macdonwald,PERSON,1
+Macduff,PERSON,29
+Madam,PERSON,13
+Madman,PERSON,1
+Maintain’d,PERSON,1
+Makes,PERSON,1
+Malcolm,PERSON,18
+Malice,PERSON,1
+Man,PERSON,1
+Margaret,PERSON,23
+Mark,PERSON,2
+Marry,PERSON,29
+Mass,PERSON,2
+Master,PERSON,1
+May,PERSON,14
+Meet,PERSON,1
+Meeting,PERSON,1
+Meg,PERSON,2
+Melted,PERSON,2
+Men,PERSON,1
+Menteith,PERSON,2
+Mercutio,PERSON,25
+Mercy,PERSON,1
+Met,PERSON,1
+Might,PERSON,3
+Mine,PERSON,3
+Miscarried,PERSON,1
+Mislead,PERSON,1
+Misprising,PERSON,1
+Misshapen,PERSON,2
+Mist,PERSON,1
+Montague,PERSON,29
+Montagues,PERSON,3
+Moon,PERSON,4
+Moonshine,PERSON,7
+Moral,PERSON,1
+More,PERSON,1
+Moth,PERSON,2
+Music,PERSON,5
+Musicians,PERSON,3
+Must,PERSON,2
+Mustardseed,PERSON,2
+Myself,PERSON,4
+NURSE,PERSON,85
+Nature,PERSON,4
+Nay,PERSON,2
+Nedar,PERSON,2
+Neighing,PERSON,1
+Nell,PERSON,1
+Neptune,PERSON,3
+Never,PERSON,8
+New,PERSON,1
+Newts,PERSON,1
+Ne’er,PERSON,1
+Niece,PERSON,1
+Night,PERSON,1
+Nightly,PERSON,2
+Nimbly,PERSON,1
+Ninny,PERSON,3
+Ninus,PERSON,2
+Nod,PERSON,1
+Norweyan,PERSON,1
+Nose,PERSON,1
+Notes,PERSON,1
+Nothing,PERSON,1
+Nurse!—Sweet,PERSON,1
+O,PERSON,1
+OBERON,PERSON,29
+Oberon,PERSON,16
+Obey,PERSON,1
+Odours,PERSON,1
+Old,PERSON,1
+Others,PERSON,2
+Ourself,PERSON,1
+Outrun,PERSON,1
+PAGE,PERSON,1
+PARIS,PERSON,5
+PEASEBLOSSOM,PERSON,4
+PEDRO,PERSON,134
+PETER,PERSON,13
+PHILOSTRATE,PERSON,6
+PORTER,PERSON,2
+PRINCE,PERSON,9
+PUCK,PERSON,33
+PYRAMUS,PERSON,12
+Paddock,PERSON,1
+Page,PERSON,2
+Painted,PERSON,1
+Pale,PERSON,2
+Pard,PERSON,1
+Pardon,PERSON,4
+Paris,PERSON,36
+Pat,PERSON,1
+Patch,PERSON,1
+Peace,PERSON,6
+Peaseblossom,PERSON,6
+Peradventure,PERSON,1
+Perform,PERSON,1
+Persever,PERSON,1
+Pertains,PERSON,1
+Peter,PERSON,16
+Peter Quince,PERSON,8
+Petrarch,PERSON,1
+Petruchio,PERSON,1
+Phaeton,PERSON,1
+Pharaoh,PERSON,1
+Phibbus,PERSON,1
+Philemon,PERSON,1
+Phillida,PERSON,1
+Philomel,PERSON,2
+Philostrate,PERSON,5
+Phoebe,PERSON,1
+Phoebus,PERSON,2
+Pierc’d,PERSON,1
+Piteous,PERSON,1
+Play’d,PERSON,1
+Please’t,PERSON,1
+Pluck,PERSON,1
+Point,PERSON,1
+Poison,PERSON,2
+Potpan,PERSON,2
+Praising,PERSON,1
+Pray,PERSON,2
+Prester,PERSON,1
+Prick,PERSON,1
+Prince,PERSON,8
+Princes,PERSON,1
+Procrus,PERSON,2
+Producing,PERSON,1
+Profaners,PERSON,1
+Profit,PERSON,1
+Prologue,PERSON,1
+Proportion’d,PERSON,1
+Proud,PERSON,2
+Puck,PERSON,17
+Puppet,PERSON,1
+Pyramus,PERSON,47
+QUINCE,PERSON,38
+Quarrels,PERSON,1
+Queen,PERSON,1
+Quench’d,PERSON,1
+Question,PERSON,1
+Quince,PERSON,4
+ROMEO,PERSON,161
+ROSS,PERSON,39
+Rather,PERSON,1
+Raze,PERSON,1
+Reads,PERSON,1
+Ready,PERSON,3
+Reason,PERSON,1
+Rebellious,PERSON,1
+Reigns,PERSON,1
+Relent,PERSON,1
+Remnants,PERSON,1
+Repentance,PERSON,1
+Retires,PERSON,2
+Retorts,PERSON,1
+Retreat,PERSON,1
+Returning,PERSON,1
+Return’d,PERSON,1
+Revenges,PERSON,1
+Revive,PERSON,1
+Revolts,PERSON,1
+Rich,PERSON,1
+Riddling,PERSON,1
+Ring,PERSON,2
+Rising,PERSON,1
+Robin,PERSON,3
+Robin Goodfellow,PERSON,1
+Romeo,PERSON,147
+Rosaline,PERSON,10
+Ross,PERSON,14
+Round,PERSON,1
+SECOND,PERSON,12
+SERVANT,PERSON,1
+SEXTON,PERSON,3
+SEYTON,PERSON,5
+SIWARD,PERSON,15
+SNOUT,PERSON,5
+SOLDIER,PERSON,3
+SON,PERSON,5
+Said,PERSON,1
+Sailing,PERSON,1
+Sampson,PERSON,1
+Saturn,PERSON,1
+Savagely,PERSON,1
+Scambling,PERSON,1
+Scarf,PERSON,1
+Scotland.—O,PERSON,1
+Seal’d,PERSON,1
+Search,PERSON,1
+Sennet,PERSON,1
+Sexton,PERSON,2
+Seyton,PERSON,6
+Shafalus,PERSON,1
+Shakes,PERSON,1
+Shall,PERSON,23
+Sharp,PERSON,1
+Shine,PERSON,1
+Shipwracking,PERSON,1
+Shot,PERSON,1
+Shoughs,PERSON,1
+Show,PERSON,1
+Show’d,PERSON,1
+Sigh,PERSON,1
+Sin,PERSON,1
+Sinel,PERSON,1
+Sing,PERSON,2
+Sings,PERSON,3
+Sirrah,PERSON,5
+Sister,PERSON,1
+Sisters,PERSON,2
+Siward,PERSON,11
+Skim,PERSON,1
+Sleeps,PERSON,2
+Sliver’d,PERSON,1
+Snout,PERSON,3
+Snug,PERSON,3
+Soft,PERSON,3
+Soldiers,PERSON,4
+Song,PERSON,2
+Sound,PERSON,1
+Spakest,PERSON,1
+Spanish,PERSON,1
+Spare,PERSON,1
+Speak,PERSON,1
+Spiteful,PERSON,1
+Squeezes,PERSON,1
+Stands,PERSON,1
+Starveling,PERSON,4
+Staying,PERSON,1
+Steal,PERSON,2
+Steep’d,PERSON,1
+Stir,PERSON,1
+Stones,PERSON,1
+Straining,PERSON,1
+Strange,PERSON,3
+Striding,PERSON,1
+Strong,PERSON,1
+Such,PERSON,1
+Sudden,PERSON,1
+Supper,PERSON,1
+Sups,PERSON,1
+Susan,PERSON,2
+Sweet,PERSON,10
+Sweetheart,PERSON,1
+Sweno,PERSON,1
+Swift,PERSON,1
+Swifter,PERSON,3
+Swits,PERSON,1
+THESEUS,PERSON,48
+THISBE,PERSON,1
+TITANIA,PERSON,23
+TYBALT,PERSON,12
+Takes,PERSON,3
+Talk,PERSON,1
+Tarquin,PERSON,1
+Tarry,PERSON,3
+Tartar,PERSON,3
+Taurus,PERSON,1
+Tell,PERSON,1
+Tempering,PERSON,1
+Th,PERSON,3
+Thane,PERSON,9
+Thanes,PERSON,1
+Thebes,PERSON,1
+Thence,PERSON,1
+These,PERSON,1
+Theseus,PERSON,14
+Thine,PERSON,2
+Thing,PERSON,1
+Thisne,PERSON,1
+Thorny,PERSON,1
+Thou,PERSON,68
+Thou’rt,PERSON,1
+Threatens,PERSON,1
+Threescore,PERSON,1
+Thrice,PERSON,3
+Thriftless,PERSON,1
+Throttle,PERSON,1
+Thunder,PERSON,7
+Thy,PERSON,15
+Till,PERSON,6
+Time,PERSON,5
+Titan,PERSON,1
+Titania,PERSON,17
+Toad,PERSON,1
+Together,PERSON,1
+Tomorrow,PERSON,1
+Tongue,PERSON,3
+Took,PERSON,2
+Torch,PERSON,1
+Towards,PERSON,1
+Train,PERSON,5
+Transparent,PERSON,1
+Treason,PERSON,1
+Trip,PERSON,1
+Troilus,PERSON,1
+Trojan,PERSON,1
+Troop,PERSON,1
+Troth,PERSON,3
+Truly,PERSON,4
+Trust,PERSON,1
+Turk,PERSON,1
+Turn,PERSON,1
+Turns,PERSON,2
+Turn’d,PERSON,1
+Tush,PERSON,5
+Tut,PERSON,4
+Twixt,PERSON,1
+Tybalt,PERSON,61
+Tybalts,PERSON,1
+Uncle,PERSON,2
+Uneven,PERSON,1
+Unfold,PERSON,1
+Unmannerly,PERSON,1
+Unreal,PERSON,1
+Unseemly,PERSON,1
+Unspeak,PERSON,1
+Unto,PERSON,6
+Unwieldy,PERSON,1
+Ursula,PERSON,12
+Utruvio,PERSON,1
+VERGES,PERSON,4
+Valentine,PERSON,1
+Valentio,PERSON,1
+Valour,PERSON,1
+Venus,PERSON,5
+Verges,PERSON,9
+Villain,PERSON,2
+Virtue,PERSON,1
+Vulcan,PERSON,1
+WATCH,PERSON,1
+Wake,PERSON,1
+Waking,PERSON,1
+Wall,PERSON,9
+Wanton,PERSON,1
+War,PERSON,2
+Warm,PERSON,1
+Was’t,PERSON,2
+Weaving,PERSON,1
+Wedded,PERSON,1
+Weed,PERSON,1
+Weep,PERSON,1
+Wert,PERSON,1
+Whate’er,PERSON,2
+Whereat,PERSON,1
+Whereto,PERSON,1
+Whether,PERSON,1
+Which,PERSON,4
+Whipp’d,PERSON,1
+Whisper,PERSON,1
+Whistle,PERSON,1
+Whiter,PERSON,1
+Whither,PERSON,8
+Whose,PERSON,5
+Wife,PERSON,1
+Will,PERSON,2
+Wilt,PERSON,8
+Wings,PERSON,1
+Wink,PERSON,1
+Wisdom,PERSON,1
+Wishes,PERSON,1
+Witchcraft,PERSON,1
+Withdraw,PERSON,1
+Without,PERSON,1
+Woe,PERSON,1
+Worm,PERSON,1
+Wrack’d,PERSON,1
+Ye,PERSON,2
+Yea,PERSON,29
+Yond,PERSON,1
+Yonder,PERSON,2
+You,PERSON,1
+Young,PERSON,2
+Younger,PERSON,1
+Yours,PERSON,2
+abound’st,PERSON,1
+"ado,—a",PERSON,1
+again.—Pull’t,PERSON,1
+alack,PERSON,1
+all?—O,PERSON,1
+amazèd,PERSON,1
+atomies,PERSON,1
+awak’d,PERSON,4
+ay,PERSON,4
+bane,PERSON,1
+barky,PERSON,1
+beldams,PERSON,1
+bellman,PERSON,1
+belov’d,PERSON,1
+benedictus,PERSON,1
+benison,PERSON,1
+berhyme,PERSON,1
+beshrew,PERSON,4
+blood.—What,PERSON,1
+bloody,PERSON,1
+braggart,PERSON,2
+braggarts,PERSON,1
+brainsickly,PERSON,1
+brush’d,PERSON,1
+bud,PERSON,1
+buds,PERSON,1
+bush,PERSON,4
+call’d,PERSON,1
+cankerblossom,PERSON,1
+carol,PERSON,1
+chanc’d,PERSON,1
+cherubin,PERSON,1
+chestnuts,PERSON,1
+choler,PERSON,2
+chuck,PERSON,1
+compos’d,PERSON,2
+cool’d,PERSON,1
+counsell’d,PERSON,1
+"cousin,—with",PERSON,1
+coz,PERSON,1
+daffed,PERSON,1
+deceiv’d,PERSON,1
+decerns,PERSON,1
+defil’d,PERSON,2
+deliver’d,PERSON,1
+den,PERSON,1
+despatch.—If,PERSON,1
+diseas’d,PERSON,1
+disseat,PERSON,1
+doff,PERSON,1
+doth,PERSON,15
+drowse,PERSON,1
+dun,PERSON,2
+empoison,PERSON,1
+enforc’d,PERSON,1
+enough.—Come,PERSON,1
+espy,PERSON,1
+fawn,PERSON,1
+fed,PERSON,1
+fie,PERSON,6
+finish’d,PERSON,1
+forc’d,PERSON,2
+friar,PERSON,1
+gallowglasses,PERSON,1
+garlick,PERSON,1
+gash’d,PERSON,1
+gauds,PERSON,1
+goddess,PERSON,1
+goodman,PERSON,1
+gore,PERSON,2
+greatness,PERSON,1
+grey,PERSON,1
+grunt,PERSON,1
+hazel,PERSON,1
+"herbs,—grace",PERSON,1
+hill,PERSON,1
+his.—What,PERSON,1
+ho,PERSON,11
+holp,PERSON,3
+howlet,PERSON,1
+inclin’d,PERSON,1
+is’t,PERSON,5
+kill’d,PERSON,1
+knell,PERSON,3
+knitteth,PERSON,1
+knock!—Who,PERSON,1
+knoll’d,PERSON,1
+light!—For,PERSON,1
+likest,PERSON,1
+loathèd,PERSON,1
+loggerhead.—Good,PERSON,1
+look’d,PERSON,4
+lov’d,PERSON,5
+lulla,PERSON,3
+maid,PERSON,5
+mar,PERSON,4
+marchpane,PERSON,1
+martyr’d,PERSON,1
+masque,PERSON,1
+matron,PERSON,1
+me.—Enough,PERSON,1
+med’cines,PERSON,1
+merriments,PERSON,1
+merry,PERSON,2
+mistemper’d,PERSON,1
+monsieur,PERSON,1
+moon,PERSON,1
+mov’d,PERSON,1
+mummy,PERSON,1
+nam’d,PERSON,1
+neeze,PERSON,1
+niece,PERSON,6
+nonny,PERSON,2
+nosegays,PERSON,1
+now?—well,PERSON,1
+number’d,PERSON,1
+nymph,PERSON,2
+oes,PERSON,1
+off’rings,PERSON,1
+overbold,PERSON,1
+paragon,PERSON,1
+pilgrim,PERSON,1
+purchaseth,PERSON,1
+rebuk’d,PERSON,1
+roar’d,PERSON,1
+roof’d,PERSON,1
+rooky,PERSON,1
+rushy brook,PERSON,1
+saint,PERSON,1
+saluteth,PERSON,1
+senna,PERSON,1
+"shortened,—for",PERSON,1
+silenc’d,PERSON,1
+sirrah,PERSON,2
+sun,PERSON,1
+temp’rance,PERSON,1
+thine,PERSON,1
+thou,PERSON,1
+troths,PERSON,1
+unaccustom’d,PERSON,1
+unhallow’d,PERSON,1
+utterance!—Who,PERSON,1
+varlet,PERSON,1
+was’t,PERSON,2
+were’t,PERSON,1
+wither’d,PERSON,2
+wolf,PERSON,2
+nine-men’s,QUANTITY,1
+ten mile,QUANTITY,1
+three-foot,QUANTITY,1
+Abram,ROLE,1
+Acquaint,ROLE,2
+Adder,ROLE,1
+Advise,ROLE,1
+Affliction,ROLE,1
+Am,ROLE,4
+Amen,ROLE,4
+Antipodes,ROLE,2
+Asleep,ROLE,1
+Ate,ROLE,1
+Athenian,ROLE,12
+Attendant,ROLE,1
+Attendants,ROLE,14
+Away,ROLE,1
+Ay,ROLE,8
+Beats,ROLE,1
+Beauty,ROLE,1
+Being,ROLE,13
+Beteem,ROLE,1
+Black,ROLE,1
+Blind,ROLE,1
+Blister’d,ROLE,1
+Bottom,ROLE,1
+Boy,ROLE,2
+Brother,ROLE,3
+By’r,ROLE,1
+By’r Lady,ROLE,1
+Call’d,ROLE,1
+Cancel,ROLE,1
+Canker’d,ROLE,1
+Canst,ROLE,1
+Capels,ROLE,1
+Captain,ROLE,1
+Capulets,ROLE,5
+Carthage,ROLE,1
+Cats,ROLE,1
+Cawdor,ROLE,18
+Certain,ROLE,1
+Child,ROLE,1
+Christendom,ROLE,1
+Christian,ROLE,2
+Churchyard,ROLE,1
+Citizens,ROLE,1
+Clamour’d,ROLE,1
+Cobweb,ROLE,1
+Come,ROLE,9
+Comfort,ROLE,1
+Confounds,ROLE,1
+Consent,ROLE,1
+Count,ROLE,7
+Cry,ROLE,1
+Deformed,ROLE,1
+Devil,ROLE,1
+Devilish,ROLE,1
+Devotion,ROLE,1
+Direct,ROLE,1
+Disdain,ROLE,2
+Disloyal,ROLE,1
+Dispatch,ROLE,1
+Doctor,ROLE,2
+Doth,ROLE,1
+Doubly,ROLE,1
+Down,ROLE,3
+Dream,ROLE,1
+Drums,ROLE,1
+Duchess,ROLE,2
+Duke,ROLE,6
+Dutchman,ROLE,1
+Earth-,ROLE,1
+English,ROLE,6
+Enter,ROLE,3
+Enter Chorus,ROLE,1
+Europa,ROLE,1
+Examine,ROLE,1
+Exeunt,ROLE,76
+Exit,ROLE,20
+Eye,ROLE,1
+Eyes,ROLE,2
+FIRST CITIZEN,ROLE,3
+FIRST FAIRY,ROLE,2
+FIRST MURDERER,ROLE,15
+FIRST MUSICIAN,ROLE,10
+FIRST SERVANT,ROLE,4
+FIRST WATCH,ROLE,12
+FIRST WITCH,ROLE,23
+FLUTE,ROLE,5
+FRIAR,ROLE,1
+FRIAR LAWRENCE,ROLE,40
+Fair,ROLE,2
+Fairies,ROLE,1
+Fairy,ROLE,1
+Famine,ROLE,1
+Fate,ROLE,1
+Fates,ROLE,1
+Father,ROLE,2
+Fears,ROLE,1
+Feather,ROLE,1
+Fillet,ROLE,1
+Finger,ROLE,1
+First rehearse,ROLE,1
+"First,",ROLE,6
+Flute,ROLE,1
+Forbid,ROLE,2
+Fore,ROLE,2
+Fortune,ROLE,7
+Foul,ROLE,2
+French,ROLE,5
+Frenchman,ROLE,1
+Friar,ROLE,26
+Gentle,ROLE,1
+Gentlewoman,ROLE,1
+Gentlewomen,ROLE,1
+German,ROLE,1
+Ghost,ROLE,2
+God,ROLE,77
+Golgotha,ROLE,1
+Grapples,ROLE,1
+Great,ROLE,2
+Great Dunsinane,ROLE,1
+Grows,ROLE,1
+Guests,ROLE,1
+Hail,ROLE,2
+Hand,ROLE,1
+Hath,ROLE,1
+Head,ROLE,1
+Heart,ROLE,1
+Heaven,ROLE,2
+Hence,ROLE,7
+Hiems,ROLE,1
+Highness,ROLE,9
+Highness Command,ROLE,1
+Himself,ROLE,1
+Hit,ROLE,1
+Holding,ROLE,1
+Honest,ROLE,1
+Hours,ROLE,1
+Howe’er,ROLE,1
+Hymen,ROLE,1
+Hyrcan,ROLE,1
+Indian,ROLE,2
+Indian air,ROLE,1
+Intended,ROLE,1
+Jack,ROLE,1
+Jew,ROLE,2
+Kisses,ROLE,1
+LORD,ROLE,1
+Ladies,ROLE,1
+Lady,ROLE,1
+Led,ROLE,1
+Lifts,ROLE,1
+Light,ROLE,1
+Lion,ROLE,2
+Little,ROLE,1
+Live,ROLE,1
+Lives,ROLE,1
+Lord,ROLE,13
+Lords,ROLE,1
+Lordship,ROLE,1
+Love,ROLE,1
+Lover,ROLE,1
+Lovers,ROLE,2
+Lucentio,ROLE,1
+Macbeth:—marry,ROLE,1
+Majesty,ROLE,4
+Makes,ROLE,1
+Maskers,ROLE,1
+Masters,ROLE,8
+Meaning,ROLE,1
+Measure,ROLE,1
+Meet,ROLE,1
+Men,ROLE,1
+Merciful,ROLE,1
+Merry,ROLE,1
+Messenger,ROLE,8
+Methought,ROLE,1
+Midnight,ROLE,1
+Mistress,ROLE,1
+Monsieur,ROLE,3
+Montagues,ROLE,2
+Moon,ROLE,1
+Moves,ROLE,1
+Muffle,ROLE,1
+Murder,ROLE,2
+Murderer,ROLE,2
+Murderers,ROLE,5
+Murder’d,ROLE,1
+Muses,ROLE,1
+Musicians,ROLE,2
+Nature,ROLE,4
+Never,ROLE,2
+Night,ROLE,1
+Noise,ROLE,1
+Norweyan,ROLE,2
+Nothing,ROLE,2
+Nurse,ROLE,52
+Officers,ROLE,1
+Old,ROLE,1
+One,ROLE,1
+PRINCE,ROLE,4
+Page,ROLE,1
+Partizans,ROLE,1
+Passion,ROLE,1
+Peer’d,ROLE,1
+Perchance,ROLE,1
+Perigenia,ROLE,1
+Physic,ROLE,1
+Porter,ROLE,1
+Posters,ROLE,1
+Pray,ROLE,1
+Prince,ROLE,65
+Proceeding,ROLE,1
+Prologue,ROLE,1
+Pronounce,ROLE,1
+Pr’ythee,ROLE,1
+Pygmies,ROLE,1
+Queen,ROLE,4
+Read,ROLE,1
+Record,ROLE,1
+Remove,ROLE,1
+Roman,ROLE,1
+Russian,ROLE,1
+SECOND WATCH,ROLE,6
+SECOND WITCH,ROLE,1
+SEXTON,ROLE,3
+SNUG Masters,ROLE,1
+Saint,ROLE,3
+Saucy,ROLE,1
+Scarcely,ROLE,1
+Scaring,ROLE,1
+Scornful,ROLE,1
+Servant,ROLE,14
+Servants,ROLE,4
+Shafalus,ROLE,1
+Shall,ROLE,10
+Shame,ROLE,1
+Should,ROLE,1
+Shut,ROLE,1
+Shuts,ROLE,1
+Signior,ROLE,9
+Silence,ROLE,1
+Sisters,ROLE,2
+Sleep,ROLE,9
+Slow,ROLE,1
+Snug,ROLE,1
+Son,ROLE,2
+Soundly,ROLE,1
+Sovereign,ROLE,1
+Spaniard,ROLE,1
+Spartan,ROLE,1
+Speak,ROLE,1
+Speakest,ROLE,1
+Speaking,ROLE,1
+Stand,ROLE,1
+Stands,ROLE,1
+Stars,ROLE,1
+Stepp’d,ROLE,1
+Sticks,ROLE,1
+Strike,ROLE,2
+Sweet,ROLE,5
+Swelter’d,ROLE,1
+THIRD WATCH,ROLE,1
+THIRD WITCH,ROLE,13
+Tartar,ROLE,1
+Tempt,ROLE,1
+Than,ROLE,3
+Thane,ROLE,9
+Therefore,ROLE,1
+Thessalian,ROLE,1
+Thou,ROLE,23
+Thracian,ROLE,1
+Thy,ROLE,1
+Tickle,ROLE,1
+Tide,ROLE,1
+Ties,ROLE,1
+Tiger,ROLE,1
+Told,ROLE,1
+Tongue,ROLE,1
+Tonight,ROLE,4
+Train,ROLE,2
+Turk,ROLE,1
+Twas,ROLE,2
+Twixt,ROLE,1
+Unfix,ROLE,1
+Unknown,ROLE,1
+Venus,ROLE,1
+Watch,ROLE,8
+Weeds,ROLE,1
+Weird,ROLE,1
+Whereto,ROLE,1
+Wherever,ROLE,1
+Whispers,ROLE,1
+Whole,ROLE,1
+Whom,ROLE,5
+Wife,ROLE,3
+Witch,ROLE,1
+Witches,ROLE,6
+Wives,ROLE,1
+Worthy,ROLE,1
+Writ,ROLE,1
+Yea,ROLE,2
+You,ROLE,3
+Young,ROLE,2
+are.—You,ROLE,1
+arm’d,ROLE,5
+bier,ROLE,1
+bove,ROLE,1
+buds,ROLE,1
+bush,ROLE,1
+call’d,ROLE,1
+comfort,ROLE,2
+commit’st,ROLE,1
+conjur’d,ROLE,1
+dew,ROLE,1
+discovery,ROLE,1
+dishonour’d,ROLE,1
+dost,ROLE,1
+doth,ROLE,17
+doth reign,ROLE,1
+enanmour’d,ROLE,1
+eyes.—Now,ROLE,1
+first And,ROLE,1
+first I,ROLE,1
+first and,ROLE,1
+first battle,ROLE,1
+first cock,ROLE,1
+first cries,ROLE,1
+first did,ROLE,1
+first fall,ROLE,1
+first house,ROLE,1
+first i,ROLE,1
+first is,ROLE,1
+first possessed,ROLE,1
+first tell,ROLE,1
+first they,ROLE,1
+first view,ROLE,1
+"first,",ROLE,1
+first.,ROLE,1
+first:,ROLE,1
+fleer,ROLE,1
+ghost.—Thou,ROLE,1
+gleek,ROLE,1
+griffin,ROLE,1
+halfpence,ROLE,1
+hawk’d,ROLE,1
+hearts!—You,ROLE,1
+hurlyburly,ROLE,1
+infold,ROLE,1
+interchainèd,ROLE,1
+levell’d,ROLE,1
+limbeck,ROLE,1
+look’st,ROLE,1
+lord.—Light,ROLE,1
+maid,ROLE,3
+"man,—as",ROLE,1
+med’cine,ROLE,1
+mew’d,ROLE,3
+midnight,ROLE,3
+minister’d,ROLE,1
+mir’d,ROLE,1
+misgraffèd,ROLE,1
+mistaketh,ROLE,1
+moonlight,ROLE,4
+peevish,ROLE,1
+perjur’d,ROLE,2
+quean,ROLE,1
+rul’d,ROLE,2
+sacrific’d,ROLE,1
+second cause,ROLE,1
+second chamber,ROLE,1
+second cock,ROLE,2
+second course,ROLE,1
+second cup,ROLE,1
+second grief,ROLE,1
+second marriage,ROLE,1
+second match,ROLE,1
+second meeting,ROLE,1
+sexton,ROLE,1
+shoemaker,ROLE,1
+sixth and,ROLE,2
+sixth of,ROLE,1
+sluttish hairs,ROLE,1
+smok’d,ROLE,1
+swearers,ROLE,2
+th,ROLE,1
+third,ROLE,3
+third part,ROLE,1
+"thirdly,",ROLE,2
+thou,ROLE,21
+thou hold’st,ROLE,1
+th’,ROLE,4
+tonight,ROLE,1
+two,ROLE,1
+uncover’d,ROLE,1
+undivulg’d,ROLE,1
+unrough youths,ROLE,1
+utter’d,ROLE,1
+"wean’d,—I",ROLE,1
+wert,ROLE,1
+whipt,ROLE,1
+wind.—I,ROLE,1
+wish’d,ROLE,1
+wrong’st,ROLE,1
+yet!—A,ROLE,1
+Monday night,TIME,1
+Tomorrow night,TIME,1
+early tomorrow,TIME,1
+forty minutes,TIME,1
+half an hour,TIME,1
+hours,TIME,1
+last night,TIME,2
+midnight,TIME,1
+next morning,TIME,1
+noon,TIME,1
+seven-night,TIME,1
+ten nights,TIME,2
+this hour,TIME,1
+this three hours,TIME,1
+three-hours,TIME,1
+tomorrow night,TIME,2
+tonight,TIME,13
+two and forty hours,TIME,1
+two nights,TIME,1
+wolvish-ravening,TIME,1
+Acheron Meet,TITLE_PERSON,1
+Ay’,TITLE_PERSON,3
+BOTH MURDERERS,TITLE_PERSON,2
+Black Spirits,TITLE_PERSON,1
+Bull Jove,TITLE_PERSON,1
+Carduus benedictus,TITLE_PERSON,1
+Cavalery Cobweb,TITLE_PERSON,1
+Come Lammas,TITLE_PERSON,1
+Come Pentecost,TITLE_PERSON,1
+Count Comfect,TITLE_PERSON,1
+Disdaining Fortune,TITLE_PERSON,1
+Ditch-,TITLE_PERSON,1
+Don John,TITLE_PERSON,18
+Don Pedro,TITLE_PERSON,20
+Don Worm,TITLE_PERSON,1
+Dunsinane hill,TITLE_PERSON,1
+Enter Apothecary,TITLE_PERSON,1
+Enter Bottom,TITLE_PERSON,2
+Enter Chorus,TITLE_PERSON,1
+Enter Hecate,TITLE_PERSON,1
+Enter Lion,TITLE_PERSON,1
+Enter Prince,TITLE_PERSON,1
+Enter Servants,TITLE_PERSON,1
+Enter Snug,TITLE_PERSON,1
+Enter Watch,TITLE_PERSON,1
+Exeunt Clowns,TITLE_PERSON,1
+Exeunt Fairies,TITLE_PERSON,1
+Exeunt Ladies,TITLE_PERSON,1
+Exeunt Prince,TITLE_PERSON,1
+Exeunt Prologue,TITLE_PERSON,1
+Exeunt Wall,TITLE_PERSON,1
+Exit Boy,TITLE_PERSON,1
+Exit Captain,TITLE_PERSON,1
+Exit Doctor,TITLE_PERSON,1
+Exit Hecate,TITLE_PERSON,1
+Exit Lady,TITLE_PERSON,1
+Exit Moonshine,TITLE_PERSON,1
+Exit Page,TITLE_PERSON,1
+Exit Philostrate,TITLE_PERSON,2
+Exit Snout,TITLE_PERSON,1
+Fairy Queen,TITLE_PERSON,3
+Four nights,TITLE_PERSON,1
+Francis Flute,TITLE_PERSON,1
+Friar Francis,TITLE_PERSON,3
+Friar Lawrence,TITLE_PERSON,12
+George Seacoal,TITLE_PERSON,1
+Half sleep,TITLE_PERSON,1
+Holy Franciscan,TITLE_PERSON,1
+Holy Saint,TITLE_PERSON,1
+Hugh Oatcake,TITLE_PERSON,1
+Hugh Rebeck,TITLE_PERSON,1
+Hundred Merry,TITLE_PERSON,1
+I. DOGBERRY,TITLE_PERSON,1
+I. Enter,TITLE_PERSON,1
+I. LEONATO,TITLE_PERSON,1
+I. MOTH,TITLE_PERSON,1
+I. MUSTARDSEED,TITLE_PERSON,1
+I. NURSE,TITLE_PERSON,1
+I. ROMEO,TITLE_PERSON,1
+I. Well,TITLE_PERSON,1
+James Soundpost,TITLE_PERSON,1
+Jesu Maria,TITLE_PERSON,1
+LADY MACBETH,TITLE_PERSON,1
+Lammas Eve,TITLE_PERSON,1
+Mark Antony,TITLE_PERSON,1
+Master Cobweb,TITLE_PERSON,1
+Master Constable,TITLE_PERSON,6
+Master Mustardseed,TITLE_PERSON,1
+Master Peascod,TITLE_PERSON,1
+Master Signior,TITLE_PERSON,1
+Merciful heaven,TITLE_PERSON,1
+Mistress Squash,TITLE_PERSON,1
+Monsieur Love,TITLE_PERSON,1
+Monsieur Mustardseed,TITLE_PERSON,1
+Nick Bottom,TITLE_PERSON,2
+PROLOGUE Gentles,TITLE_PERSON,1
+Pale Hecate,TITLE_PERSON,1
+Presenteth Moonshine,TITLE_PERSON,1
+Prince wooss,TITLE_PERSON,1
+Queen Mab,TITLE_PERSON,1
+Retires ROMEO,TITLE_PERSON,1
+Robin Starveling,TITLE_PERSON,2
+Root of,TITLE_PERSON,1
+SECOND SERVANT,TITLE_PERSON,5
+SECOND WATCH,TITLE_PERSON,7
+SECOND WITCH,TITLE_PERSON,1
+Saint Francis,TITLE_PERSON,1
+Saint Valentine,TITLE_PERSON,1
+Scotch jig,TITLE_PERSON,2
+Sees Helen,TITLE_PERSON,1
+Signior Martino,TITLE_PERSON,1
+Signior Mountanto,TITLE_PERSON,1
+Signior Placentio,TITLE_PERSON,1
+Simon Catling,TITLE_PERSON,1
+Sisters Three,TITLE_PERSON,1
+Susan Grindstone,TITLE_PERSON,1
+Sweet Prince,TITLE_PERSON,2
+Ten thousand,TITLE_PERSON,1
+Than twenty,TITLE_PERSON,1
+Thou know’st,TITLE_PERSON,2
+Thou losest,TITLE_PERSON,1
+Thou mayst,TITLE_PERSON,1
+Thou wall,TITLE_PERSON,1
+Tom Snout,TITLE_PERSON,1
+Ursala Walk,TITLE_PERSON,1
+Waiting-,TITLE_PERSON,1
+Weird Sisters,TITLE_PERSON,1
+Young Abraham,TITLE_PERSON,1
+distill’d Than,TITLE_PERSON,1
+dost deserve,TITLE_PERSON,1
+doth live,TITLE_PERSON,1
+four Fairies,TITLE_PERSON,1
+half Count,TITLE_PERSON,1
+healths five,TITLE_PERSON,1
+six Maskers,TITLE_PERSON,1
+ten thousand,TITLE_PERSON,2
+thou art,TITLE_PERSON,1
+thou been,TITLE_PERSON,2
+thou beliest,TITLE_PERSON,1
+thou dissembler,TITLE_PERSON,1
+thou fall,TITLE_PERSON,1
+thou hadst,TITLE_PERSON,1
+thou hast,TITLE_PERSON,5
+thou holily,TITLE_PERSON,1
+thou kill’st,TITLE_PERSON,1
+thou livest,TITLE_PERSON,1
+thou serpent,TITLE_PERSON,1
+twenty years,TITLE_PERSON,1

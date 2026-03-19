@@ -5,10 +5,36 @@ import random
 import re
 from pathlib import Path
 from typing import Dict, List, Tuple
-
+import html
+import xml.etree.ElementTree as ET
 import pandas as pd
 import spacy
 from spacy.training.example import Example
+
+def load_shakespeare_test_text(data_dir="../../data/train"):
+    data_path = Path(data_dir)
+    texts = []
+
+    files = [
+        path for path in data_path.rglob("*.txt")
+        if "shakespeare" in path.name.lower()
+    ]
+
+    for path in files:
+        raw_text = path.read_text(encoding="utf-8", errors="ignore")
+        raw_text = html.unescape(raw_text)
+
+        try:
+            root = ET.fromstring(raw_text)
+            body = root.find("Body")
+            if body is not None:
+                body_text = " ".join(body.itertext())
+                body_text = re.sub(r"\s+", " ", body_text).strip()
+                texts.append(body_text)
+        except ET.ParseError:
+            continue
+
+    return "\n".join(texts)
 
 # --------------------------------------------------
 # Manual curated TRAIN_DATA only
@@ -73,6 +99,81 @@ TRAIN_DATA = [
     }),
     ("Third Witch vanished suddenly.", {
         "entities": [(0, 11, "ROLE")]
+    })
+("Macbeth met King Duncan at Inverness.", {
+        "entities": [(0, 7, "PERSON"), (12, 23, "TITLE_PERSON"), (27, 37, "GPE")]
+    }),
+    ("Banquo and Fleance rode toward Forres.", {
+        "entities": [(0, 6, "PERSON"), (11, 18, "PERSON"), (31, 37, "GPE")]
+    }),
+    ("Lady Macbeth plotted in Scotland.", {
+        "entities": [(0, 13, "PERSON"), (25, 33, "GPE")]
+    }),
+    ("Macduff opposed Macbeth in England.", {
+        "entities": [(0, 7, "PERSON"), (16, 23, "PERSON"), (27, 34, "GPE")]
+    }),
+    ("Duncan appointed Macbeth as Thane of Cawdor.", {
+        "entities": [(0, 6, "PERSON"), (17, 24, "PERSON"), (28, 43, "TITLE_PERSON")]
+    }),
+    ("Romeo met Mercutio in Verona.", {
+        "entities": [(0, 5, "PERSON"), (10, 19, "PERSON"), (23, 29, "GPE")]
+    }),
+    ("Juliet spoke to Nurse in Verona.", {
+        "entities": [(0, 6, "PERSON"), (16, 21, "ROLE"), (25, 31, "GPE")]
+    }),
+    ("Tybalt challenged Romeo in Verona.", {
+        "entities": [(0, 6, "PERSON"), (17, 22, "PERSON"), (26, 32, "GPE")]
+    }),
+    ("Paris visited Juliet at Capulet house.", {
+        "entities": [(0, 5, "PERSON"), (14, 20, "PERSON")]
+    }),
+    ("Friar Laurence helped Romeo escape.", {
+        "entities": [(0, 14, "TITLE_PERSON"), (22, 27, "PERSON")]
+    }),
+    ("Claudio loved Hero in Messina.", {
+        "entities": [(0, 7, "PERSON"), (14, 18, "PERSON"), (22, 29, "GPE")]
+    }),
+    ("Don Pedro spoke with Benedick.", {
+        "entities": [(0, 9, "TITLE_PERSON"), (21, 29, "PERSON")]
+    }),
+    ("Don John deceived Claudio in Messina.", {
+        "entities": [(0, 8, "TITLE_PERSON"), (18, 25, "PERSON"), (29, 36, "GPE")]
+    }),
+    ("Beatrice argued with Hero and Ursula.", {
+        "entities": [(0, 8, "PERSON"), (21, 25, "PERSON"), (30, 36, "PERSON")]
+    }),
+    ("Leonato welcomed guests to Messina.", {
+        "entities": [(0, 7, "PERSON"), (28, 35, "GPE")]
+    }),
+    ("Theseus ruled Athens with Hippolyta.", {
+        "entities": [(0, 7, "PERSON"), (14, 20, "GPE"), (26, 36, "PERSON")]
+    }),
+    ("Oberon and Titania argued in the forest.", {
+        "entities": [(0, 6, "PERSON"), (11, 18, "PERSON")]
+    }),
+    ("Puck served Oberon faithfully.", {
+        "entities": [(0, 4, "PERSON"), (12, 18, "PERSON")]
+    }),
+    ("Hermia loved Lysander in Athens.", {
+        "entities": [(0, 6, "PERSON"), (13, 21, "PERSON"), (25, 31, "GPE")]
+    }),
+    ("Demetrius pursued Helena in Athens.", {
+        "entities": [(0, 10, "PERSON"), (20, 26, "PERSON"), (30, 36, "GPE")]
+    }),
+    ("A Soldier guarded the castle.", {
+        "entities": [(2, 9, "ROLE")]
+    }),
+    ("The Porter opened the gate.", {
+        "entities": [(4, 10, "ROLE")]
+    }),
+    ("A Messenger brought news to Macbeth.", {
+        "entities": [(2, 11, "ROLE"), (31, 38, "PERSON")]
+    }),
+    ("An Officer followed King Duncan.", {
+        "entities": [(3, 10, "ROLE"), (19, 30, "TITLE_PERSON")]
+    }),
+    ("The Doctor treated Lady Macbeth.", {
+        "entities": [(4, 10, "ROLE"), (19, 32, "PERSON")]
     }),
 ]
 
