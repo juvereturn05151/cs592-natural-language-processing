@@ -12,6 +12,140 @@ import spacy
 from spacy.training.example import Example
 
 
+def split_text_into_sentences(text: str, model: str = "en_core_web_md") -> List[str]:
+    nlp = spacy.load(model, disable=["ner"])
+    doc = nlp(text)
+    sentences = []
+    for sent in doc.sents:
+        s = re.sub(r"\s+", " ", sent.text).strip()
+        if s:
+            sentences.append(s)
+    return sentences
+
+
+def find_all_non_overlapping_spans(text: str, substring: str):
+    matches = []
+    for m in re.finditer(re.escape(substring), text):
+        matches.append((m.start(), m.end()))
+    return matches
+
+
+def make_example_from_spans(text: str, spans: List[Tuple[int, int, str]]):
+    spans = sorted(spans, key=lambda x: (x[0], x[1]))
+    return (text, {"entities": spans})
+
+
+def sentence_has_stage_direction_noise(sentence: str) -> bool:
+    lowered = sentence.casefold()
+    noisy_patterns = [
+        "enter ",
+        "exit ",
+        "exeunt",
+        " flourish",
+        "music",
+        "within",
+        "aside",
+        " alarum",
+        "drum",
+        "trumpet",
+        "hautboys",
+        "sennet",
+    ]
+    return any(p in lowered for p in noisy_patterns)
+
+
+def mine_training_data_from_corpus(
+    corpus_text: str,
+    expected_entities: Dict[str, str],
+    max_positive: int = 200,
+    max_negative: int = 100,
+    min_sentence_len: int = 15,
+    max_sentence_len: int = 220,
+    base_model: str = "en_core_web_md",
+    seed: int = 42,
+):
+    """
+    Semi-automatic mining:
+    - Positive examples: sentences containing high-confidence exact matches from expected_entities
+    - Negative examples: sentences with no matched expected entities
+    """
+    random.seed(seed)
+
+    sentences = split_text_into_sentences(corpus_text, model=base_model)
+
+    # Sort longer entities first so "Lady Macbeth" is preferred over "Macbeth"
+    entity_items = sorted(
+        expected_entities.items(),
+        key=lambda kv: len(kv[0]),
+        reverse=True
+    )
+
+    positive_examples = []
+    negative_examples = []
+
+    for sentence in sentences:
+        sent = re.sub(r"\s+", " ", sentence).strip()
+
+        if len(sent) < min_sentence_len or len(sent) > max_sentence_len:
+            continue
+
+        spans = []
+        used_ranges = []
+
+        for entity_text, label in entity_items:
+            for start, end in find_all_non_overlapping_spans(sent, entity_text):
+                # word boundary safety
+                left_ok = start == 0 or not sent[start - 1].isalnum()
+                right_ok = end == len(sent) or not sent[end].isalnum()
+                if not (left_ok and right_ok):
+                    continue
+
+                overlap = False
+                for s, e, _ in used_ranges:
+                    if not (end <= s or start >= e):
+                        overlap = True
+                        break
+
+                if not overlap:
+                    spans.append((start, end, label))
+                    used_ranges.append((start, end, label))
+
+        spans = sorted(spans, key=lambda x: (x[0], x[1]))
+
+        if spans:
+            positive_examples.append(make_example_from_spans(sent, spans))
+        else:
+            # keep some clean negatives
+            if not sentence_has_stage_direction_noise(sent):
+                negative_examples.append(make_example_from_spans(sent, []))
+
+    # Deduplicate by text
+    def dedupe_examples(examples):
+        seen = set()
+        out = []
+        for text, ann in examples:
+            key = (text, tuple(ann["entities"]))
+            if key not in seen:
+                seen.add(key)
+                out.append((text, ann))
+        return out
+
+    positive_examples = dedupe_examples(positive_examples)
+    negative_examples = dedupe_examples(negative_examples)
+
+    random.shuffle(positive_examples)
+    random.shuffle(negative_examples)
+
+    positive_examples = positive_examples[:max_positive]
+    negative_examples = negative_examples[:max_negative]
+
+    return {
+        "positive_examples": positive_examples,
+        "negative_examples": negative_examples,
+        "all_examples": positive_examples + negative_examples,
+    }
+
+
 def load_shakespeare_test_text(data_dir="../../data/train"):
     data_path = Path(data_dir)
     texts = []
