@@ -95,11 +95,17 @@ def summarize(df):
         return
 
     pd.set_option("display.max_rows", None)
-    pd.set_option("display.max_columns", None)
-    pd.set_option("display.width", None)
 
     print("\n=== Label Distribution ===")
     print(df["label"].value_counts())
 
-    print("\n=== All Entities and Labels ===")
-    print(df[["entity", "label"]].to_string(index=False))
+    # Count occurrences
+    freq_df = (
+        df.groupby(["entity", "label"])
+        .size()
+        .reset_index(name="count")
+        .sort_values(by="count", ascending=False)
+    )
+
+    print("\n=== Entities with Frequency ===")
+    print(freq_df.to_string(index=False))
