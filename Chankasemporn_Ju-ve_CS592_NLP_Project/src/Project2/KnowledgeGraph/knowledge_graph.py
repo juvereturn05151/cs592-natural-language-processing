@@ -544,30 +544,21 @@ def populate_play(mg, play_file: Path, rules: dict, nlp,
         print(f"    {fn:20s} -[{rel}]-> {tn}")
     print(f"  Config relationships : {len(config_rels)}")
 
-    # ── SOURCE 3: Dependency parsing + fine-tuned REL entities ──────
-    print(f"\n  Source 3 — Dependency parsing + fine-tuned REL entities:")
+    # ── SOURCE 3: Dependency parsing ─────────────────────────────
+    print(f"\n  Source 3 — Dependency parsing:")
     root         = DataExtractor.load_play(play_file)[0]
     scene_tuples = DataExtractor.extract_scenes(root)
     scenes       = [text for _, _, _, text in scene_tuples]
     auto_rels    = extract_relationships(scenes, entity_groups, nlp)
-    rel_rels     = extract_from_finetuned_rels(play_file, entity_groups)
-
-    # Combine both, deduplicate
-    seen_auto = set()
-    combined  = []
-    for triple in auto_rels + rel_rels:
-        key = (triple[0], triple[2], triple[3])
-        if key not in seen_auto:
-            seen_auto.add(key)
-            combined.append(triple)
 
     auto_inserted = 0
-    for (fn, fl, rel, tn, tl) in combined:
+    for (fn, fl, rel, tn, tl) in auto_rels:
         create_node(mg, fl, fn)
         create_node(mg, tl, tn)
         create_relationship(mg, fn, fl, rel, tn, tl)
         rel_count += 1
         auto_inserted += 1
+        print(f"    [AUTO] {fn:20s} -[{rel}]-> {tn}")
         all_rel_records.append({
             "play":              play_title,
             "source":            fn,
