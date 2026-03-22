@@ -5,6 +5,7 @@ Copyright:    (c) 2025 DigiPen Institute of Technology. All rights reserved.
 """
 
 import spacy
+import re
 import csv
 from pathlib import Path
 from collections import defaultdict
@@ -12,26 +13,114 @@ from collections import defaultdict
 import src.Project2.Project2Globals as Globals
 import src.Project2.Data_Extraction.data_extractor as DataExtractor
 
+# ─────────────────────────────────────────────
+# ENTITY NORMALISATION
+# ─────────────────────────────────────────────
+
+# Archaic Shakespeare suffixes that indicate a verb/adjective, not an entity
+# e.g. "carv'd", "Dismay'd", "hors'd", "return'd", "might'st"
+ARCHAIC_SUFFIX_RE = re.compile(
+    r"'(d|st|t|est|eth|s|n|er|ing)\b", re.IGNORECASE
+)
+
+# Labels where we normalise to uppercase (character names)
+PERSON_LABELS = {"PERSON"}
+
+# Labels where we apply lemmatization (places, organisations)
+LEMMA_LABELS = {"GPE", "ORG", "LOC", "NORP"}
+
+def is_noise_entity(text: str, label: str) -> bool:
+    """
+    Returns True if the entity is likely noise and should be filtered out.
+    Catches:
+      - Archaic verb forms picked up as entities (carv'd, Dismay'd)
+      - Stage directions picked up as entities (Exit Captain, Alarum)
+      - Very short tokens that are unlikely to be real entities
+    """
+    # Filter archaic inflected verb forms
+    if ARCHAIC_SUFFIX_RE.search(text):
+        return True
+
+    # Filter stage directions commonly misidentified as PERSON
+    stage_directions = {
+        "alarum", "alarums", "exeunt", "exit", "enter",
+        "flourish", "hautboys", "sennet", "aside", "within"
+    }
+    if text.lower().strip() in stage_directions:
+        return True
+
+    # Filter entities that start with stage direction words
+    if re.match(r'^(Exit|Enter|Exeunt)\s', text, re.IGNORECASE):
+        return True
+
+    # Filter single characters and very short noise tokens
+    if len(text.strip()) < 2:
+        return True
+
+    return False
+
+def normalise_entity(text: str, label: str, nlp) -> str:
+    """
+    Normalise entity text:
+      - All labels → uppercase to eliminate casing duplicates
+        (Duncan/DUNCAN, one/One/ONE, first/First/FIRST)
+      - GPE/ORG/LOC → also lemmatize via spaCy to get root form
+      - Strip possessives e.g. "Hecate's" → "Hecate"
+    """
+    # Strip possessives first e.g. "Pale Hecate's" → "Pale Hecate"
+    text = re.sub(r"'s$", "", text).strip()
+
+    if label in LEMMA_LABELS:
+        doc = nlp(text)
+        tokens = [t for t in doc if not t.is_punct and not t.is_space]
+        if tokens:
+            text = " ".join(t.lemma_.capitalize() for t in tokens)
+
+    # Uppercase everything to eliminate all casing duplicates
+    return text.upper()
+
 def run_default_ner(scenes: list, nlp, play_title: str) -> tuple:
-    all_entities = []
+    """
+    Run spaCy NER on all scenes.
+    Returns deduplicated entity records — one row per unique
+    (entity_text, spacy_label) pair per play, not one row per occurrence.
+    """
+    # Use a set to track seen (normalised_text, label) pairs — prevents duplicates
+    seen        = set()
+    all_entities   = []
     entity_summary = defaultdict(set)
 
     for act_id, scene_id, location, text in scenes:
         doc = nlp(text)
         for ent in doc.ents:
+            raw_text = ent.text.strip()
+
+            # Step 1: filter out noise entities
+            if is_noise_entity(raw_text, ent.label_):
+                continue
+
+            # Step 2: normalise — uppercase everything, lemmatize GPE/ORG/LOC
+            normalised_text = normalise_entity(raw_text, ent.label_, nlp)
+
+            # Step 3: deduplicate — skip if we've already seen this entity+label
+            dedup_key = (normalised_text, ent.label_)
+            if dedup_key in seen:
+                continue
+            seen.add(dedup_key)
+
             record = {
-                "play": play_title,
-                "act": act_id,
-                "scene": scene_id,
-                "location": location,
-                "entity_text": ent.text.strip(),
-                "spacy_label": ent.label_,
+                "play":              play_title,
+                "act":               act_id,
+                "scene":             scene_id,
+                "location":          location,
+                "entity_text":       normalised_text,
+                "spacy_label":       ent.label_,
                 "label_description": spacy.explain(ent.label_) or ent.label_,
-                "start_char": ent.start_char,
-                "end_char": ent.end_char,
+                "start_char":        ent.start_char,
+                "end_char":          ent.end_char,
             }
             all_entities.append(record)
-            entity_summary[ent.label_].add(ent.text.strip())
+            entity_summary[ent.label_].add(normalised_text)
 
     return all_entities, entity_summary
 

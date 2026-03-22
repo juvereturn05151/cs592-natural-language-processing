@@ -1,1278 +1,251 @@
 play,act,scene,location,entity_text,spacy_label,label_description,start_char,end_char
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Hero,ORG,"Companies, agencies, institutions, etc.",15,19
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Beatrice,ORG,"Companies, agencies, institutions, etc.",21,29
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Don Pedro,PERSON,"People, including fictional",97,106
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Arragon,GPE,"Countries, cities, states",110,117
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,this night,TIME,Times smaller than a day,124,134
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Messina,GPE,"Countries, cities, states",138,145
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,three,CARDINAL,Numerals that do not fall under another type,194,199
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,HERO,ORG,"Companies, agencies, institutions, etc.",15,19
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,BEATRICE,ORG,"Companies, agencies, institutions, etc.",21,29
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,DON PEDRO,PERSON,"People, including fictional",97,106
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,ARRAGON,GPE,"Countries, cities, states",110,117
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,THIS NIGHT,TIME,Times smaller than a day,124,134
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,MESSINA,GPE,"Countries, cities, states",138,145
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,THREE,CARDINAL,Numerals that do not fall under another type,194,199
 MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,MESSENGER,PERSON,"People, including fictional",287,296
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Don Pedro,PERSON,"People, including fictional",433,442
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Florentine,PERSON,"People, including fictional",480,490
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Claudio,PERSON,"People, including fictional",498,505
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Don Pedro,PERSON,"People, including fictional",571,580
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Messina,GPE,"Countries, cities, states",807,814
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,MESSENGER,PERSON,"People, including fictional",845,854
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,MESSENGER,PERSON,"People, including fictional",1056,1065
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Mountanto,PERSON,"People, including fictional",1273,1282
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Benedick,PERSON,"People, including fictional",1476,1484
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Padua,GPE,"Countries, cities, states",1488,1493
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Messina,GPE,"Countries, cities, states",1595,1602
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Cupid,ORG,"Companies, agencies, institutions, etc.",1618,1623
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Cupid,ORG,"Companies, agencies, institutions, etc.",1698,1703
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Benedick,PERSON,"People, including fictional",1922,1930
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,MESSENGER,PERSON,"People, including fictional",1985,1994
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,holp,PERSON,"People, including fictional",2089,2093
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,MESSENGER,PERSON,"People, including fictional",2170,2179
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,MESSENGER,PERSON,"People, including fictional",2277,2286
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Benedick,PERSON,"People, including fictional",2558,2566
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,four,CARDINAL,Numerals that do not fall under another type,2698,2702
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,five,CARDINAL,Numerals that do not fall under another type,2710,2714
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,every month,DATE,Absolute or relative dates or periods,3010,3021
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,MESSENGER,PERSON,"People, including fictional",3043,3052
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,MESSENGER,PERSON,"People, including fictional",3188,3197
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,MESSENGER,PERSON,"People, including fictional",3413,3422
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Claudio,PERSON,"People, including fictional",3469,3476
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Claudio,PERSON,"People, including fictional",3628,3635
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Benedick,PERSON,"People, including fictional",3659,3667
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,a thousand pound,QUANTITY,"Measurements, as of weight or distance",3686,3702
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,MESSENGER,PERSON,"People, including fictional",3720,3729
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,January,DATE,Absolute or relative dates or periods,3863,3870
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Don Pedro,PERSON,"People, including fictional",3883,3892
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Don Pedro,PERSON,"People, including fictional",3914,3923
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Don John,PERSON,"People, including fictional",3925,3933
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Claudio,PERSON,"People, including fictional",3935,3942
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Benedick,PERSON,"People, including fictional",3944,3952
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Balthasar,PERSON,"People, including fictional",3954,3963
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,FLORENTINE,PERSON,"People, including fictional",480,490
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,CLAUDIO,PERSON,"People, including fictional",498,505
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,MOUNTANTO,PERSON,"People, including fictional",1273,1282
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,BENEDICK,PERSON,"People, including fictional",1476,1484
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,PADUA,GPE,"Countries, cities, states",1488,1493
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,CUPID,ORG,"Companies, agencies, institutions, etc.",1618,1623
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,HOLP,PERSON,"People, including fictional",2089,2093
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,FOUR,CARDINAL,Numerals that do not fall under another type,2698,2702
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,FIVE,CARDINAL,Numerals that do not fall under another type,2710,2714
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,EVERY MONTH,DATE,Absolute or relative dates or periods,3010,3021
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,A THOUSAND POUND,QUANTITY,"Measurements, as of weight or distance",3686,3702
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,JANUARY,DATE,Absolute or relative dates or periods,3863,3870
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,DON JOHN,PERSON,"People, including fictional",3925,3933
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,BALTHASAR,PERSON,"People, including fictional",3954,3963
 MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,PEDRO,PERSON,"People, including fictional",3980,3985
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Grace,PERSON,"People, including fictional",4173,4178
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,PEDRO,PERSON,"People, including fictional",4305,4310
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,BENEDICK,PERSON,"People, including fictional",4430,4438
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Benedick,PERSON,"People, including fictional",4501,4509
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,GRACE,PERSON,"People, including fictional",4173,4178
 MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,DON,PERSON,"People, including fictional",4542,4545
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,PEDRO,PERSON,"People, including fictional",4546,4551
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Benedick,PERSON,"People, including fictional",4571,4579
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,BENEDICK,PERSON,"People, including fictional",4716,4724
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Messina,GPE,"Countries, cities, states",4813,4820
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Benedick,PERSON,"People, including fictional",4904,4912
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,BENEDICK,PERSON,"People, including fictional",4932,4940
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Lady Disdain,PERSON,"People, including fictional",4956,4968
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Benedick,PERSON,"People, including fictional",5086,5094
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,BENEDICK,PERSON,"People, including fictional",5165,5173
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,BENEDICK,PERSON,"People, including fictional",5587,5595
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,BENEDICK,PERSON,"People, including fictional",5794,5802
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,BENEDICK,PERSON,"People, including fictional",5904,5912
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,DON,PERSON,"People, including fictional",6098,6101
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,PEDRO,PERSON,"People, including fictional",6102,6107
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Leonato,PERSON,"People, including fictional",6133,6140
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Claudio,PERSON,"People, including fictional",6150,6157
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Benedick,PERSON,"People, including fictional",6171,6179
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Leonato,PERSON,"People, including fictional",6196,6203
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,the least a month,DATE,Absolute or relative dates or periods,6259,6276
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Don John,PERSON,"People, including fictional",6456,6464
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,LADY DISDAIN,PERSON,"People, including fictional",4956,4968
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,LEONATO,PERSON,"People, including fictional",6133,6140
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,THE LEAST A MONTH,DATE,Absolute or relative dates or periods,6259,6276
 MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,JOHN,PERSON,"People, including fictional",6567,6571
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Grace,PERSON,"People, including fictional",6651,6656
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,PEDRO,PERSON,"People, including fictional",6670,6675
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Leonato,PERSON,"People, including fictional",6688,6695
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Benedick,PERSON,"People, including fictional",6733,6741
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Claudio,PERSON,"People, including fictional",6746,6753
 MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",6755,6762
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Benedick,PERSON,"People, including fictional",6764,6772
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,BENEDICK,PERSON,"People, including fictional",6823,6831
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,BENEDICK,PERSON,"People, including fictional",6912,6920
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",7085,7092
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,BENEDICK,PERSON,"People, including fictional",7135,7143
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,thou likest,PERSON,"People, including fictional",7482,7493
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,BENEDICK,PERSON,"People, including fictional",7499,7507
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,BENEDICK,PERSON,"People, including fictional",7597,7605
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Yea,PERSON,"People, including fictional",7607,7610
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Jack,PERSON,"People, including fictional",7703,7707
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Cupid,ORG,"Companies, agencies, institutions, etc.",7720,7725
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Vulcan,PRODUCT,"Objects, vehicles, foods, etc. (not services)",7753,7759
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",7837,7844
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,BENEDICK,PERSON,"People, including fictional",7906,7914
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,first,ORDINAL,"""first"", ""second"", etc.",8071,8076
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,May,DATE,Absolute or relative dates or periods,8080,8083
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,the last of December,DATE,Absolute or relative dates or periods,8089,8109
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Hero,ORG,"Companies, agencies, institutions, etc.",8245,8249
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,BENEDICK,PERSON,"People, including fictional",8268,8276
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,one,CARDINAL,Numerals that do not fall under another type,8326,8329
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Sundays,DATE,Absolute or relative dates or periods,8526,8533
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Don Pedro,PERSON,"People, including fictional",8544,8553
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Don Pedro,PERSON,"People, including fictional",8561,8570
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,PEDRO,PERSON,"People, including fictional",8600,8605
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Leonato,PERSON,"People, including fictional",8664,8671
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,BENEDICK,PERSON,"People, including fictional",8675,8683
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Grace,PERSON,"People, including fictional",8698,8703
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,DON,PERSON,"People, including fictional",8732,8735
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,PEDRO,PERSON,"People, including fictional",8736,8741
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,BENEDICK,PERSON,"People, including fictional",8776,8784
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Claudio,PERSON,"People, including fictional",8802,8809
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Grace,ORG,"Companies, agencies, institutions, etc.",8965,8970
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Mark,PERSON,"People, including fictional",8979,8983
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Hero,ORG,"Companies, agencies, institutions, etc.",9014,9018
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Leonato,ORG,"Companies, agencies, institutions, etc.",9020,9027
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",9046,9053
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,BENEDICK,PERSON,"People, including fictional",9092,9100
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",9204,9211
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,PEDRO,PERSON,"People, including fictional",9286,9291
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,DON,PERSON,"People, including fictional",9399,9402
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,PEDRO,PERSON,"People, including fictional",9403,9408
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",9443,9450
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,BENEDICK,PERSON,"People, including fictional",9489,9497
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,two,CARDINAL,Numerals that do not fall under another type,9509,9512
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,troths,ORG,"Companies, agencies, institutions, etc.",9524,9530
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",9555,9562
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,PEDRO,PERSON,"People, including fictional",9593,9598
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,BENEDICK,PERSON,"People, including fictional",9628,9636
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",9870,9877
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,BENEDICK,PERSON,"People, including fictional",9943,9951
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,DON,PERSON,"People, including fictional",10352,10355
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,PEDRO,PERSON,"People, including fictional",10356,10361
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,BENEDICK,PERSON,"People, including fictional",10413,10421
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Cupid,ORG,"Companies, agencies, institutions, etc.",10684,10689
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,PEDRO,PERSON,"People, including fictional",10695,10700
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,BENEDICK,PERSON,"People, including fictional",10784,10792
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Adam,PERSON,"People, including fictional",10918,10922
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,PEDRO,PERSON,"People, including fictional",10928,10933
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,BENEDICK,PERSON,"People, including fictional",11006,11014
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Benedick,PERSON,"People, including fictional",11062,11070
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Benedick,PERSON,"People, including fictional",11286,11294
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",11313,11320
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,DON,PERSON,"People, including fictional",11376,11379
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,PEDRO,PERSON,"People, including fictional",11380,11385
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Cupid,ORG,"Companies, agencies, institutions, etc.",11395,11400
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Venice,GPE,"Countries, cities, states",11434,11440
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,BENEDICK,PERSON,"People, including fictional",11476,11484
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,PEDRO,PERSON,"People, including fictional",11525,11530
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,the hours,TIME,Times smaller than a day,11562,11571
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Benedick,PERSON,"People, including fictional",11603,11611
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Leonato,ORG,"Companies, agencies, institutions, etc.",11623,11630
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,BENEDICK,PERSON,"People, including fictional",11739,11747
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",11827,11834
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,The sixth of July,DATE,Absolute or relative dates or periods,11899,11916
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Benedick,PERSON,"People, including fictional",11938,11946
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,BENEDICK,PERSON,"People, including fictional",11948,11956
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,PEDRO,PERSON,"People, including fictional",12241,12246
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",12374,12381
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,DON,PERSON,"People, including fictional",12414,12417
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,PEDRO,PERSON,"People, including fictional",12418,12423
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Hero,PERSON,"People, including fictional",12438,12442
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Dost,PERSON,"People, including fictional",12465,12469
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Claudio,PERSON,"People, including fictional",12487,12494
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,return'd,PERSON,"People, including fictional",12698,12706
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Hero,ORG,"Companies, agencies, institutions, etc.",12850,12854
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Hero,PERSON,"People, including fictional",13012,13016
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",13170,13177
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,PEDRO,PERSON,"People, including fictional",13351,13356
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,tonight,TIME,Times smaller than a day,13566,13573
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Hero,PERSON,"People, including fictional",13630,13634
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,Claudio,PERSON,"People, including fictional",13640,13647
-MUCH ADO ABOUT NOTHING,1,2,A room in Leonato's house.,Antonio,GPE,"Countries, cities, states",18,25
-MUCH ADO ABOUT NOTHING,1,2,A room in Leonato's house.,Claudio,PERSON,"People, including fictional",358,365
-MUCH ADO ABOUT NOTHING,1,2,A room in Leonato's house.,Claudio,PERSON,"People, including fictional",484,491
-MUCH ADO ABOUT NOTHING,1,2,A room in Leonato's house.,this night,TIME,Times smaller than a day,557,567
-MUCH ADO ABOUT NOTHING,1,2,A room in Leonato's house.,Cousins,PERSON,"People, including fictional",1071,1078
-MUCH ADO ABOUT NOTHING,1,3,Another room in Leonato's house.,Don John,PERSON,"People, including fictional",6,14
-MUCH ADO ABOUT NOTHING,1,3,Another room in Leonato's house.,Conrade,PERSON,"People, including fictional",19,26
-MUCH ADO ABOUT NOTHING,1,3,Another room in Leonato's house.,JOHN,PERSON,"People, including fictional",107,111
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,THOU LIKEST,PERSON,"People, including fictional",7482,7493
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,YEA,PERSON,"People, including fictional",7607,7610
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,JACK,PERSON,"People, including fictional",7703,7707
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,VULCAN,PRODUCT,"Objects, vehicles, foods, etc. (not services)",7753,7759
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,FIRST,ORDINAL,"""first"", ""second"", etc.",8071,8076
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,MAY,DATE,Absolute or relative dates or periods,8080,8083
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,THE LAST OF DECEMBER,DATE,Absolute or relative dates or periods,8089,8109
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,ONE,CARDINAL,Numerals that do not fall under another type,8326,8329
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,SUNDAYS,DATE,Absolute or relative dates or periods,8526,8533
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,GRACE,ORG,"Companies, agencies, institutions, etc.",8965,8970
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,MARK,PERSON,"People, including fictional",8979,8983
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,LEONATO,ORG,"Companies, agencies, institutions, etc.",9020,9027
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,TWO,CARDINAL,Numerals that do not fall under another type,9509,9512
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,TROTH,ORG,"Companies, agencies, institutions, etc.",9524,9530
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,ADAM,PERSON,"People, including fictional",10918,10922
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,VENICE,GPE,"Countries, cities, states",11434,11440
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,THE HOURS,TIME,Times smaller than a day,11562,11571
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,THE SIXTH OF JULY,DATE,Absolute or relative dates or periods,11899,11916
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,HERO,PERSON,"People, including fictional",12438,12442
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,DOST,PERSON,"People, including fictional",12465,12469
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,TONIGHT,TIME,Times smaller than a day,13566,13573
+MUCH ADO ABOUT NOTHING,1,2,A room in Leonato's house.,ANTONIO,GPE,"Countries, cities, states",18,25
+MUCH ADO ABOUT NOTHING,1,2,A room in Leonato's house.,COUSINS,PERSON,"People, including fictional",1071,1078
+MUCH ADO ABOUT NOTHING,1,3,Another room in Leonato's house.,CONRADE,PERSON,"People, including fictional",19,26
 MUCH ADO ABOUT NOTHING,1,3,Another room in Leonato's house.,DON,ORG,"Companies, agencies, institutions, etc.",235,238
-MUCH ADO ABOUT NOTHING,1,3,Another room in Leonato's house.,JOHN,PERSON,"People, including fictional",239,243
-MUCH ADO ABOUT NOTHING,1,3,Another room in Leonato's house.,JOHN,PERSON,"People, including fictional",366,370
-MUCH ADO ABOUT NOTHING,1,3,Another room in Leonato's house.,Saturn,PRODUCT,"Objects, vehicles, foods, etc. (not services)",434,440
-MUCH ADO ABOUT NOTHING,1,3,Another room in Leonato's house.,JOHN,PERSON,"People, including fictional",1112,1116
-MUCH ADO ABOUT NOTHING,1,3,Another room in Leonato's house.,JOHN,PERSON,"People, including fictional",1699,1703
-MUCH ADO ABOUT NOTHING,1,3,Another room in Leonato's house.,Leonato,ORG,"Companies, agencies, institutions, etc.",1894,1901
-MUCH ADO ABOUT NOTHING,1,3,Another room in Leonato's house.,DON,PERSON,"People, including fictional",1960,1963
-MUCH ADO ABOUT NOTHING,1,3,Another room in Leonato's house.,JOHN,PERSON,"People, including fictional",1964,1968
-MUCH ADO ABOUT NOTHING,1,3,Another room in Leonato's house.,JOHN,PERSON,"People, including fictional",2134,2138
-MUCH ADO ABOUT NOTHING,1,3,Another room in Leonato's house.,Claudio,PERSON,"People, including fictional",2164,2171
-MUCH ADO ABOUT NOTHING,1,3,Another room in Leonato's house.,JOHN,PERSON,"People, including fictional",2196,2200
-MUCH ADO ABOUT NOTHING,1,3,Another room in Leonato's house.,Hero,ORG,"Companies, agencies, institutions, etc.",2277,2281
-MUCH ADO ABOUT NOTHING,1,3,Another room in Leonato's house.,Leonato,GPE,"Countries, cities, states",2308,2315
-MUCH ADO ABOUT NOTHING,1,3,Another room in Leonato's house.,JOHN,PERSON,"People, including fictional",2321,2325
-MUCH ADO ABOUT NOTHING,1,3,Another room in Leonato's house.,March,DATE,Absolute or relative dates or periods,2342,2347
-MUCH ADO ABOUT NOTHING,1,3,Another room in Leonato's house.,Claudio,PERSON,"People, including fictional",2476,2483
-MUCH ADO ABOUT NOTHING,1,3,Another room in Leonato's house.,whipt,NORP,Nationalities or religious or political groups,2520,2525
-MUCH ADO ABOUT NOTHING,1,3,Another room in Leonato's house.,Claudio,PERSON,"People, including fictional",2666,2673
-MUCH ADO ABOUT NOTHING,1,3,Another room in Leonato's house.,DON,PERSON,"People, including fictional",2675,2678
-MUCH ADO ABOUT NOTHING,1,3,Another room in Leonato's house.,JOHN,PERSON,"People, including fictional",2679,2683
-MUCH ADO ABOUT NOTHING,1,3,Another room in Leonato's house.,DON,PERSON,"People, including fictional",2933,2936
-MUCH ADO ABOUT NOTHING,1,3,Another room in Leonato's house.,JOHN,PERSON,"People, including fictional",2937,2941
-MUCH ADO ABOUT NOTHING,1,3,Another room in Leonato's house.,Lordship,ORG,"Companies, agencies, institutions, etc.",3120,3128
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Antonio,GPE,"Countries, cities, states",15,22
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Hero,ORG,"Companies, agencies, institutions, etc.",24,28
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Beatrice,ORG,"Companies, agencies, institutions, etc.",30,38
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,John,PERSON,"People, including fictional",74,78
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,an hour,TIME,Times smaller than a day,204,211
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Benedick,PERSON,"People, including fictional",351,359
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,half,CARDINAL,Numerals that do not fall under another type,487,491
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Benedick,PERSON,"People, including fictional",500,508
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,John,PERSON,"People, including fictional",527,531
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,half,CARDINAL,Numerals that do not fall under another type,545,549
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,John,PERSON,"People, including fictional",556,560
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Benedick,PERSON,"People, including fictional",585,593
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,every morning,TIME,Times smaller than a day,1217,1230
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,evening,TIME,Times smaller than a day,1235,1242
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Devil,PERSON,"People, including fictional",1861,1866
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Beatrice,PERSON,"People, including fictional",1950,1958
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Saint Peter,PERSON,"People, including fictional",2048,2059
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,the day,DATE,Absolute or relative dates or periods,2144,2151
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,one day,DATE,Absolute or relative dates or periods,2498,2505
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Adam,PERSON,"People, including fictional",2751,2755
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Daughter,PERSON,"People, including fictional",2840,2848
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,first,ORDINAL,"""first"", ""second"", etc.",3231,3236
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Scotch,NORP,Nationalities or religious or political groups,3267,3273
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Repentance,ORG,"Companies, agencies, institutions, etc.",3392,3402
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Don Pedro,PERSON,"People, including fictional",3686,3695
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Claudio,PERSON,"People, including fictional",3697,3704
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Benedick,PERSON,"People, including fictional",3706,3714
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Balthasar,PERSON,"People, including fictional",3716,3725
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Don John,PERSON,"People, including fictional",3727,3735
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Borachio,GPE,"Countries, cities, states",3737,3745
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Margaret,PERSON,"People, including fictional",3747,3755
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Ursula,PERSON,"People, including fictional",3757,3763
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,PEDRO,PERSON,"People, including fictional",3788,3793
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Lady,PERSON,"People, including fictional",3795,3799
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,PEDRO,PERSON,"People, including fictional",3960,3965
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,HERO,ORG,"Companies, agencies, institutions, etc.",3992,3996
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,DON,PERSON,"People, including fictional",4027,4030
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,PEDRO,PERSON,"People, including fictional",4031,4036
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,PEDRO,PERSON,"People, including fictional",4153,4158
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Philemon,PERSON,"People, including fictional",4172,4180
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Jove,PERSON,"People, including fictional",4209,4213
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,PEDRO,PERSON,"People, including fictional",4267,4272
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,MARGARET,PERSON,"People, including fictional",4363,4371
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Antonio,PERSON,"People, including fictional",4797,4804
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,BENEDICK,PERSON,"People, including fictional",5302,5310
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,BENEDICK,PERSON,"People, including fictional",5385,5393
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Benedick,PERSON,"People, including fictional",5521,5529
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,BENEDICK,PERSON,"People, including fictional",5544,5552
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,BENEDICK,PERSON,"People, including fictional",5611,5619
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,BENEDICK,PERSON,"People, including fictional",5679,5687
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,BENEDICK,PERSON,"People, including fictional",6059,6067
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,two,CARDINAL,Numerals that do not fall under another type,6174,6177
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,BENEDICK,PERSON,"People, including fictional",6391,6399
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Don John,PERSON,"People, including fictional",6528,6536
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Borachio,GPE,"Countries, cities, states",6538,6546
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Claudio,PERSON,"People, including fictional",6551,6558
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,DON,PERSON,"People, including fictional",6560,6563
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,JOHN,PERSON,"People, including fictional",6564,6568
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Hero,ORG,"Companies, agencies, institutions, etc.",6600,6604
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,one,CARDINAL,Numerals that do not fall under another type,6694,6697
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Claudio,PERSON,"People, including fictional",6735,6742
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,JOHN,PERSON,"People, including fictional",6775,6779
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Benedick,PERSON,"People, including fictional",6801,6809
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",6811,6818
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,DON,PERSON,"People, including fictional",6847,6850
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,JOHN,PERSON,"People, including fictional",6851,6855
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Hero,ORG,"Companies, agencies, institutions, etc.",6927,6931
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",7043,7050
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,JOHN,PERSON,"People, including fictional",7083,7087
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,tonight,TIME,Times smaller than a day,7178,7185
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,DON,PERSON,"People, including fictional",7187,7190
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,JOHN,PERSON,"People, including fictional",7191,7195
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Don John,PERSON,"People, including fictional",7233,7241
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Borachio,GPE,"Countries, cities, states",7246,7254
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Benedick,PERSON,"People, including fictional",7290,7298
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Claudio,PERSON,"People, including fictional",7341,7348
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,the Prince wooss,GPE,"Countries, cities, states",7367,7383
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,hourly,TIME,Times smaller than a day,7679,7685
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Farewell,PERSON,"People, including fictional",7717,7725
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Hero,PRODUCT,"Objects, vehicles, foods, etc. (not services)",7738,7742
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Benedick,PERSON,"People, including fictional",7753,7761
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,BENEDICK,PERSON,"People, including fictional",7763,7771
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Claudio,PERSON,"People, including fictional",7779,7786
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",7788,7795
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Yea,PERSON,"People, including fictional",7797,7800
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,BENEDICK,PERSON,"People, including fictional",7812,7820
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",7849,7856
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Whither,PERSON,"People, including fictional",7858,7865
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,BENEDICK,PERSON,"People, including fictional",7867,7875
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Hero,ORG,"Companies, agencies, institutions, etc.",8118,8122
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",8124,8131
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,BENEDICK,PERSON,"People, including fictional",8156,8164
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",8289,8296
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,BENEDICK,PERSON,"People, including fictional",8320,8328
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",8431,8438
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,BENEDICK,PERSON,"People, including fictional",8481,8489
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Beatrice,PERSON,"People, including fictional",8562,8570
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Beatrice,ORG,"Companies, agencies, institutions, etc.",8785,8793
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Don Pedro,PERSON,"People, including fictional",8894,8903
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,DON,PERSON,"People, including fictional",8905,8908
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,PEDRO,PERSON,"People, including fictional",8909,8914
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,BENEDICK,PERSON,"People, including fictional",8966,8974
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Troth,PERSON,"People, including fictional",8976,8981
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Lady Fame,PERSON,"People, including fictional",9018,9027
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Grace,PERSON,"People, including fictional",9135,9140
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,PEDRO,PERSON,"People, including fictional",9339,9344
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,BENEDICK,PERSON,"People, including fictional",9379,9387
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,PEDRO,PERSON,"People, including fictional",9524,9529
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Wilt,PERSON,"People, including fictional",9531,9535
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,BENEDICK,PERSON,"People, including fictional",9608,9616
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,garland,PERSON,"People, including fictional",9675,9682
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,PEDRO,PERSON,"People, including fictional",9827,9832
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,BENEDICK,PERSON,"People, including fictional",9896,9904
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,PEDRO,PERSON,"People, including fictional",9978,9983
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,BENEDICK,PERSON,"People, including fictional",10098,10106
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,one,CARDINAL,Numerals that do not fall under another type,10173,10176
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Adam,PERSON,"People, including fictional",10745,10749
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Hercules,PERSON,"People, including fictional",10807,10815
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Claudio,PERSON,"People, including fictional",11222,11229
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Beatrice,ORG,"Companies, agencies, institutions, etc.",11231,11239
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Hero,ORG,"Companies, agencies, institutions, etc.",11241,11245
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Leonato,GPE,"Countries, cities, states",11250,11257
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,PEDRO,PERSON,"People, including fictional",11263,11268
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,BENEDICK,PERSON,"People, including fictional",11292,11300
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Grace,PERSON,"People, including fictional",11312,11317
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Antipodes,PERSON,"People, including fictional",11406,11415
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Asia,LOC,"Non-GPE locations, mountain ranges, bodies of water",11512,11516
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Prester,GPE,"Countries, cities, states",11542,11549
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,the Great Cham's,EVENT,"Named hurricanes, battles, wars, sports events, etc.",11584,11600
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,three,CARDINAL,Numerals that do not fall under another type,11662,11667
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,DON,PERSON,"People, including fictional",11734,11737
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,PEDRO,PERSON,"People, including fictional",11738,11743
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,BENEDICK,PERSON,"People, including fictional",11784,11792
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Benedick,PERSON,"People, including fictional",11934,11942
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Grace,PERSON,"People, including fictional",12120,12125
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,PEDRO,PERSON,"People, including fictional",12159,12164
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Claudio,PERSON,"People, including fictional",12331,12338
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,PEDRO,PERSON,"People, including fictional",12370,12375
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",12421,12428
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,DON,PERSON,"People, including fictional",12448,12451
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,PEDRO,PERSON,"People, including fictional",12452,12457
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,PEDRO,PERSON,"People, including fictional",12652,12657
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Claudio,PERSON,"People, including fictional",12771,12778
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Hero,ORG,"Companies, agencies, institutions, etc.",12815,12819
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,the day,DATE,Absolute or relative dates or periods,12892,12899
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Grace,PERSON,"People, including fictional",13006,13011
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",13102,13109
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Lady,PERSON,"People, including fictional",13202,13206
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,PEDRO,PERSON,"People, including fictional",13399,13404
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Yea,PERSON,"People, including fictional",13456,13459
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",13585,13592
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,DON,PERSON,"People, including fictional",13766,13769
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,PEDRO,PERSON,"People, including fictional",13770,13775
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Lady Beatrice,PERSON,"People, including fictional",13777,13790
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Grace,PERSON,"People, including fictional",13882,13887
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,PEDRO,PERSON,"People, including fictional",13984,13989
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,working days,DATE,Absolute or relative dates or periods,14070,14082
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Grace,PERSON,"People, including fictional",14089,14094
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,every day,DATE,Absolute or relative dates or periods,14117,14126
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Grace,PERSON,"People, including fictional",14148,14153
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,PEDRO,PERSON,"People, including fictional",14215,14220
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,a merry hour,TIME,Times smaller than a day,14324,14336
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Cousins,PERSON,"People, including fictional",14445,14452
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Niece,PERSON,"People, including fictional",14481,14486
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Grace,PERSON,"People, including fictional",14575,14580
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,PEDRO,PERSON,"People, including fictional",14601,14606
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,PEDRO,PERSON,"People, including fictional",14884,14889
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,PEDRO,PERSON,"People, including fictional",15003,15008
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Benedick,PERSON,"People, including fictional",15041,15049
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,DON,PERSON,"People, including fictional",15142,15145
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Claudio,PERSON,"People, including fictional",15159,15166
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",15199,15206
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Tomorrow,DATE,Absolute or relative dates or periods,15208,15216
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Time,ORG,"Companies, agencies, institutions, etc.",15227,15231
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Monday,DATE,Absolute or relative dates or periods,15297,15303
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,seven-night,TIME,Times smaller than a day,15340,15351
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,PEDRO,PERSON,"People, including fictional",15418,15423
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Claudio,PERSON,"People, including fictional",15495,15502
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,one,CARDINAL,Numerals that do not fall under another type,15571,15574
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Hercules,PERSON,"People, including fictional",15578,15586
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Benedick,PERSON,"People, including fictional",15624,15632
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,the Lady Beatrice,PERSON,"People, including fictional",15637,15654
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,three,CARDINAL,Numerals that do not fall under another type,15780,15785
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,ten nights',TIME,Times smaller than a day,15901,15912
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",15924,15931
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,DON,PERSON,"People, including fictional",15949,15952
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,PEDRO,PERSON,"People, including fictional",15953,15958
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Hero,ORG,"Companies, agencies, institutions, etc.",15980,15984
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,DON,PERSON,"People, including fictional",16067,16070
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,PEDRO,PERSON,"People, including fictional",16071,16076
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Benedick,PERSON,"People, including fictional",16082,16090
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Benedick,PERSON,"People, including fictional",16309,16317
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,two,CARDINAL,Numerals that do not fall under another type,16336,16339
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Benedick,PERSON,"People, including fictional",16367,16375
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Beatrice,PERSON,"People, including fictional",16461,16469
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,Cupid,ORG,"Companies, agencies, institutions, etc.",16490,16495
-MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,Don John,PERSON,"People, including fictional",6,14
-MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,Borachio,GPE,"Countries, cities, states",19,27
-MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,DON,ORG,"Companies, agencies, institutions, etc.",29,32
-MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,JOHN,PERSON,"People, including fictional",33,37
-MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,Claudio,PERSON,"People, including fictional",59,66
-MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,Leonato,GPE,"Countries, cities, states",95,102
-MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,Yea,PERSON,"People, including fictional",114,117
-MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,DON,ORG,"Companies, agencies, institutions, etc.",148,151
-MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,JOHN,PERSON,"People, including fictional",152,156
-MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,DON,PERSON,"People, including fictional",445,448
-MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,JOHN,PERSON,"People, including fictional",449,453
-MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,a year,DATE,Absolute or relative dates or periods,516,522
-MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,Margaret,PERSON,"People, including fictional",561,569
-MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,Hero,ORG,"Companies, agencies, institutions, etc.",598,602
-MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,DON,ORG,"Companies, agencies, institutions, etc.",604,607
-MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,JOHN,PERSON,"People, including fictional",608,612
-MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,JOHN,PERSON,"People, including fictional",743,747
-MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,"Claudio,—whose",GPE,"Countries, cities, states",972,986
-MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,Hero,ORG,"Companies, agencies, institutions, etc.",1062,1066
-MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,DON,ORG,"Companies, agencies, institutions, etc.",1068,1071
-MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,JOHN,PERSON,"People, including fictional",1072,1076
-MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,Claudio,PERSON,"People, including fictional",1163,1170
-MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,Hero,ORG,"Companies, agencies, institutions, etc.",1180,1184
-MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,Leonato,PERSON,"People, including fictional",1195,1202
-MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,JOHN,PERSON,"People, including fictional",1238,1242
-MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,a meet hour,TIME,Times smaller than a day,1320,1331
-MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,Don Pedro,PERSON,"People, including fictional",1340,1349
-MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,Claudio,PERSON,"People, including fictional",1364,1371
-MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,Hero,PERSON,"People, including fictional",1408,1412
-MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,Claudio,PERSON,"People, including fictional",1468,1475
-MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,Margaret Hero,PERSON,"People, including fictional",1817,1830
-MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,Margaret,PERSON,"People, including fictional",1837,1845
-MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,Claudio,PERSON,"People, including fictional",1854,1861
-MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,Hero,ORG,"Companies, agencies, institutions, etc.",1988,1992
-MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,Hero,ORG,"Companies, agencies, institutions, etc.",2055,2059
-MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,JOHN,PERSON,"People, including fictional",2155,2159
-MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,a thousand ducats,MONEY,"Monetary values, including unit",2275,2292
-MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,DON,PERSON,"People, including fictional",2374,2377
-MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,JOHN,PERSON,"People, including fictional",2378,2382
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,Benedick,PERSON,"People, including fictional",6,14
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,BENEDICK,PERSON,"People, including fictional",16,24
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,BENEDICK,PERSON,"People, including fictional",58,66
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,BENEDICK,PERSON,"People, including fictional",169,177
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,Exit Boy,PERSON,"People, including fictional",237,245
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,one,CARDINAL,Numerals that do not fall under another type,269,272
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,Claudio,PERSON,"People, including fictional",496,503
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,ten mile afoot,QUANTITY,"Measurements, as of weight or distance",669,683
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,ten nights,TIME,Times smaller than a day,726,736
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,One,CARDINAL,Numerals that do not fall under another type,1204,1207
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,one,CARDINAL,Numerals that do not fall under another type,1329,1332
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,one,CARDINAL,Numerals that do not fall under another type,1340,1343
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,Don Pedro,PERSON,"People, including fictional",1735,1744
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,Leonato,PERSON,"People, including fictional",1746,1753
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,Claudio,PERSON,"People, including fictional",1758,1765
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,Balthasar,PERSON,"People, including fictional",1779,1788
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,PEDRO,PERSON,"People, including fictional",1808,1813
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",1847,1854
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,Yea,PERSON,"People, including fictional",1856,1859
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,Benedick,PERSON,"People, including fictional",1965,1973
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,PEDRO,PERSON,"People, including fictional",2087,2092
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,Balthasar,PERSON,"People, including fictional",2100,2109
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,PEDRO,PERSON,"People, including fictional",2231,2236
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,PEDRO,PERSON,"People, including fictional",2534,2539
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,PEDRO,PERSON,"People, including fictional",2710,2715
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,Notes,ORG,"Companies, agencies, institutions, etc.",2762,2767
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,BENEDICK,PERSON,"People, including fictional",2806,2814
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,One foot,QUANTITY,"Measurements, as of weight or distance",3056,3064
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,one,CARDINAL,Numerals that do not fall under another type,3094,3097
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,summer first,DATE,Absolute or relative dates or periods,3338,3350
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,leavy,ORG,"Companies, agencies, institutions, etc.",3355,3360
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,DON,PERSON,"People, including fictional",3483,3486
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,PEDRO,PERSON,"People, including fictional",3487,3492
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,DON,PERSON,"People, including fictional",3559,3562
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,PEDRO,PERSON,"People, including fictional",3563,3568
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,thou singest,PERSON,"People, including fictional",3589,3601
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,BENEDICK,PERSON,"People, including fictional",3627,3635
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,PEDRO,PERSON,"People, including fictional",3859,3864
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,Yea,PERSON,"People, including fictional",3866,3869
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,Balthasar,PERSON,"People, including fictional",3894,3903
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,tomorrow night,TIME,Times smaller than a day,3951,3965
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,DON,PERSON,"People, including fictional",4054,4057
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,PEDRO,PERSON,"People, including fictional",4058,4063
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,Leonato,PERSON,"People, including fictional",4127,4134
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,today,DATE,Absolute or relative dates or periods,4163,4168
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,Beatrice,PERSON,"People, including fictional",4186,4194
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,Benedick,PERSON,"People, including fictional",4220,4228
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",4230,4237
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,Don Pedro Stalk,PERSON,"People, including fictional",4255,4270
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,Benedick,PERSON,"People, including fictional",4436,4444
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,BENEDICK,PERSON,"People, including fictional",4508,4516
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,PEDRO,PERSON,"People, including fictional",4724,4729
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",4763,4770
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,PEDRO,PERSON,"People, including fictional",4918,4923
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,Claudio,PERSON,"People, including fictional",5074,5081
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",5118,5125
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,PEDRO,PERSON,"People, including fictional",5148,5153
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,Benedick,PERSON,"People, including fictional",5342,5350
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,BENEDICK,PERSON,"People, including fictional",5352,5360
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",5494,5501
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,PEDRO,PERSON,"People, including fictional",5554,5559
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,Benedick,PERSON,"People, including fictional",5598,5606
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",5668,5675
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,twenty,CARDINAL,Numerals that do not fall under another type,5900,5906
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",6021,6028
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,Benedick,PERSON,"People, including fictional",6184,6192
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,Beatrice,PERSON,"People, including fictional",6197,6205
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",6225,6232
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,a thousand,CARDINAL,Numerals that do not fall under another type,6277,6287
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",6519,6526
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,Benedick,PERSON,"People, including fictional",6634,6642
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,PEDRO,PERSON,"People, including fictional",6860,6865
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,Benedick,PERSON,"People, including fictional",6885,6893
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",6949,6956
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,PEDRO,PERSON,"People, including fictional",7040,7045
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",7166,7173
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,PEDRO,PERSON,"People, including fictional",7206,7211
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,Benedick,PERSON,"People, including fictional",7241,7249
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,ten,CARDINAL,Numerals that do not fall under another type,7328,7331
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,DON,PERSON,"People, including fictional",7451,7454
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,PEDRO,PERSON,"People, including fictional",7455,7460
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,half,CARDINAL,Numerals that do not fall under another type,7558,7562
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,Benedick,PERSON,"People, including fictional",7588,7596
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,one,CARDINAL,Numerals that do not fall under another type,7857,7860
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,PEDRO,PERSON,"People, including fictional",7901,7906
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,"man,—as",NORP,Nationalities or religious or political groups,8005,8012
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",8055,8062
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,DON,PERSON,"People, including fictional",8089,8092
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,PEDRO,PERSON,"People, including fictional",8093,8098
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",8141,8148
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,PEDRO,PERSON,"People, including fictional",8192,8197
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",8250,8257
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,PEDRO,PERSON,"People, including fictional",8293,8298
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,Christian,NORP,Nationalities or religious or political groups,8461,8470
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,PEDRO,PERSON,"People, including fictional",8627,8632
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,Benedick,PERSON,"People, including fictional",8794,8802
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",8829,8836
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,first,ORDINAL,"""first"", ""second"", etc.",8962,8967
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,PEDRO,PERSON,"People, including fictional",8973,8978
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,Benedick,PERSON,"People, including fictional",9061,9069
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",9225,9232
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,PEDRO,PERSON,"People, including fictional",9315,9320
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,Don Pedro,PERSON,"People, including fictional",9633,9642
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,Claudio,PERSON,"People, including fictional",9644,9651
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,Leonato,PERSON,"People, including fictional",9656,9663
+MUCH ADO ABOUT NOTHING,1,3,Another room in Leonato's house.,SATURN,PRODUCT,"Objects, vehicles, foods, etc. (not services)",434,440
+MUCH ADO ABOUT NOTHING,1,3,Another room in Leonato's house.,LEONATO,GPE,"Countries, cities, states",2308,2315
+MUCH ADO ABOUT NOTHING,1,3,Another room in Leonato's house.,MARCH,DATE,Absolute or relative dates or periods,2342,2347
+MUCH ADO ABOUT NOTHING,1,3,Another room in Leonato's house.,WHIPT,NORP,Nationalities or religious or political groups,2520,2525
+MUCH ADO ABOUT NOTHING,1,3,Another room in Leonato's house.,LORDSHIP,ORG,"Companies, agencies, institutions, etc.",3120,3128
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,AN HOUR,TIME,Times smaller than a day,204,211
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,HALF,CARDINAL,Numerals that do not fall under another type,487,491
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,EVERY MORNING,TIME,Times smaller than a day,1217,1230
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,EVENING,TIME,Times smaller than a day,1235,1242
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,DEVIL,PERSON,"People, including fictional",1861,1866
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,BEATRICE,PERSON,"People, including fictional",1950,1958
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,SAINT PETER,PERSON,"People, including fictional",2048,2059
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,THE DAY,DATE,Absolute or relative dates or periods,2144,2151
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,ONE DAY,DATE,Absolute or relative dates or periods,2498,2505
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,DAUGHTER,PERSON,"People, including fictional",2840,2848
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,SCOTCH,NORP,Nationalities or religious or political groups,3267,3273
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,REPENTANCE,ORG,"Companies, agencies, institutions, etc.",3392,3402
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,BORACHIO,GPE,"Countries, cities, states",3737,3745
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,MARGARET,PERSON,"People, including fictional",3747,3755
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,URSULA,PERSON,"People, including fictional",3757,3763
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,LADY,PERSON,"People, including fictional",3795,3799
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,PHILEMON,PERSON,"People, including fictional",4172,4180
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,JOVE,PERSON,"People, including fictional",4209,4213
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,ANTONIO,PERSON,"People, including fictional",4797,4804
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,THE PRINCE WOOSS,GPE,"Countries, cities, states",7367,7383
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,HOURLY,TIME,Times smaller than a day,7679,7685
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,FAREWELL,PERSON,"People, including fictional",7717,7725
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,HERO,PRODUCT,"Objects, vehicles, foods, etc. (not services)",7738,7742
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,WHITHER,PERSON,"People, including fictional",7858,7865
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,TROTH,PERSON,"People, including fictional",8976,8981
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,LADY FAME,PERSON,"People, including fictional",9018,9027
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,WILT,PERSON,"People, including fictional",9531,9535
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,GARLAND,PERSON,"People, including fictional",9675,9682
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,HERCULES,PERSON,"People, including fictional",10807,10815
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,ANTIPODES,PERSON,"People, including fictional",11406,11415
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,ASIA,LOC,"Non-GPE locations, mountain ranges, bodies of water",11512,11516
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,PRESTER,GPE,"Countries, cities, states",11542,11549
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,LADY BEATRICE,PERSON,"People, including fictional",13777,13790
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,WORKING DAYS,DATE,Absolute or relative dates or periods,14070,14082
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,EVERY DAY,DATE,Absolute or relative dates or periods,14117,14126
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,A MERRY HOUR,TIME,Times smaller than a day,14324,14336
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,NIECE,PERSON,"People, including fictional",14481,14486
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,TOMORROW,DATE,Absolute or relative dates or periods,15208,15216
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,TIME,ORG,"Companies, agencies, institutions, etc.",15227,15231
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,MONDAY,DATE,Absolute or relative dates or periods,15297,15303
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,SEVEN-NIGHT,TIME,Times smaller than a day,15340,15351
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,THE LADY BEATRICE,PERSON,"People, including fictional",15637,15654
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,TEN NIGHTS',TIME,Times smaller than a day,15901,15912
+MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,A YEAR,DATE,Absolute or relative dates or periods,516,522
+MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,"CLAUDIO,—WHOSE",GPE,"Countries, cities, states",972,986
+MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,A MEET HOUR,TIME,Times smaller than a day,1320,1331
+MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,MARGARET HERO,PERSON,"People, including fictional",1817,1830
+MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,A THOUSAND DUCATS,MONEY,"Monetary values, including unit",2275,2292
+MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,TEN MILE AFOOT,QUANTITY,"Measurements, as of weight or distance",669,683
+MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,TEN NIGHTS,TIME,Times smaller than a day,726,736
+MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,NOTE,ORG,"Companies, agencies, institutions, etc.",2762,2767
+MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,ONE FOOT,QUANTITY,"Measurements, as of weight or distance",3056,3064
+MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,SUMMER FIRST,DATE,Absolute or relative dates or periods,3338,3350
+MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,LEAVY,ORG,"Companies, agencies, institutions, etc.",3355,3360
+MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,THOU SINGEST,PERSON,"People, including fictional",3589,3601
+MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,TOMORROW NIGHT,TIME,Times smaller than a day,3951,3965
+MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,TODAY,DATE,Absolute or relative dates or periods,4163,4168
+MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,DON PEDRO STALK,PERSON,"People, including fictional",4255,4270
+MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,TWENTY,CARDINAL,Numerals that do not fall under another type,5900,5906
+MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,A THOUSAND,CARDINAL,Numerals that do not fall under another type,6277,6287
+MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,TEN,CARDINAL,Numerals that do not fall under another type,7328,7331
+MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,"MAN,—AS",NORP,Nationalities or religious or political groups,8005,8012
+MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,CHRISTIAN,NORP,Nationalities or religious or political groups,8461,8470
 MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,BENEDICK,ORG,"Companies, agencies, institutions, etc.",9665,9673
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,Hero,ORG,"Companies, agencies, institutions, etc.",9789,9793
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,Beatrice,PERSON,"People, including fictional",10909,10917
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,this day,DATE,Absolute or relative dates or periods,10922,10930
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,BENEDICK,PERSON,"People, including fictional",11069,11077
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,Fair Beatrice,PERSON,"People, including fictional",11079,11092
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,BENEDICK,PERSON,"People, including fictional",11250,11258
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,Yea,PERSON,"People, including fictional",11309,11312
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,BENEDICK,PERSON,"People, including fictional",11440,11448
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,Margaret,PERSON,"People, including fictional",12,20
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,Ursula,PERSON,"People, including fictional",25,31
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,Good Margaret,PERSON,"People, including fictional",39,52
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,Beatrice Proposing,PERSON,"People, including fictional",111,129
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,Claudio,PERSON,"People, including fictional",150,157
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,Ursala Walk,PERSON,"People, including fictional",196,207
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,overheard'st,GPE,"Countries, cities, states",277,289
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,Bear,ORG,"Companies, agencies, institutions, etc.",569,573
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,MARGARET,PERSON,"People, including fictional",610,618
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,Ursula,PERSON,"People, including fictional",683,689
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,Beatrice,ORG,"Companies, agencies, institutions, etc.",696,704
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,Benedick,PERSON,"People, including fictional",780,788
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,Benedick,PERSON,"People, including fictional",901,909
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,Beatrice,PERSON,"People, including fictional",931,939
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,Cupid,ORG,"Companies, agencies, institutions, etc.",966,971
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,Beatrice,ORG,"Companies, agencies, institutions, etc.",1071,1079
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,Beatrice,PERSON,"People, including fictional",1300,1308
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,HERO,ORG,"Companies, agencies, institutions, etc.",1399,1403
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,Ursula,PERSON,"People, including fictional",1534,1540
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,Benedick,PERSON,"People, including fictional",1659,1667
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,Beatrice,PERSON,"People, including fictional",1674,1682
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,HERO,ORG,"Companies, agencies, institutions, etc.",1799,1803
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,Benedick,PERSON,"People, including fictional",1884,1892
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,Beatrice,PERSON,"People, including fictional",1947,1955
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,Beatrice,ORG,"Companies, agencies, institutions, etc.",2058,2066
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,Beatrice,PERSON,"People, including fictional",2235,2243
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,Misprising,PERSON,"People, including fictional",2291,2301
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,Nature,WORK_OF_ART,"Titles of books, songs, etc.",2810,2816
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,HERO,ORG,"Companies, agencies, institutions, etc.",3185,3189
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,Beatrice,ORG,"Companies, agencies, institutions, etc.",3239,3247
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,Benedick,PERSON,"People, including fictional",3427,3435
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,Consume,ORG,"Companies, agencies, institutions, etc.",3456,3463
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,Benedick,PERSON,"People, including fictional",3659,3667
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,One,CARDINAL,Numerals that do not fall under another type,3785,3788
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,empoison,PERSON,"People, including fictional",3828,3836
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,Benedick,PERSON,"People, including fictional",4044,4052
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,HERO,ORG,"Companies, agencies, institutions, etc.",4054,4058
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,Italy,GPE,"Countries, cities, states",4082,4087
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,Always,ORG,"Companies, agencies, institutions, etc.",4089,4095
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,Claudio,PERSON,"People, including fictional",4113,4120
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,Benedick,PERSON,"People, including fictional",4198,4206
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,Italy,GPE,"Countries, cities, states",4285,4290
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,HERO,ORG,"Companies, agencies, institutions, etc.",4418,4422
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,every day,DATE,Absolute or relative dates or periods,4429,4438
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,tomorrow,DATE,Absolute or relative dates or periods,4440,4448
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,tomorrow,DATE,Absolute or relative dates or periods,4545,4553
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,HERO,ORG,"Companies, agencies, institutions, etc.",4618,4622
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,Cupid,ORG,"Companies, agencies, institutions, etc.",4671,4676
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,Ursula,PERSON,"People, including fictional",4729,4735
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,Benedick,PERSON,"People, including fictional",4940,4948
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,dost deserve,PERSON,"People, including fictional",5127,5139
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,Don Pedro,PERSON,"People, including fictional",6,15
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,Claudio,PERSON,"People, including fictional",17,24
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,Benedick,PERSON,"People, including fictional",26,34
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,Leonato,GPE,"Countries, cities, states",39,46
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,PEDRO,PERSON,"People, including fictional",52,57
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,Arragon,GPE,"Countries, cities, states",128,135
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",137,144
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,DON,PERSON,"People, including fictional",203,206
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,PEDRO,PERSON,"People, including fictional",207,212
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,Benedick,PERSON,"People, including fictional",368,376
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,Cupid,ORG,"Companies, agencies, institutions, etc.",496,501
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,BENEDICK,PERSON,"People, including fictional",674,682
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",763,770
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,PEDRO,PERSON,"People, including fictional",798,803
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,BENEDICK,PERSON,"People, including fictional",921,929
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,PEDRO,PERSON,"People, including fictional",958,963
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,BENEDICK,PERSON,"People, including fictional",974,982
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,first,ORDINAL,"""first"", ""second"", etc.",1019,1024
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,PEDRO,PERSON,"People, including fictional",1054,1059
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,BENEDICK,PERSON,"People, including fictional",1134,1142
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",1198,1205
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,PEDRO,PERSON,"People, including fictional",1237,1242
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,Dutchman,NORP,Nationalities or religious or political groups,1351,1359
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,today,DATE,Absolute or relative dates or periods,1360,1365
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,Frenchman,NORP,Nationalities or religious or political groups,1369,1378
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,tomorrow,DATE,Absolute or relative dates or periods,1379,1387
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,two,CARDINAL,Numerals that do not fall under another type,1408,1411
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,German,NORP,Nationalities or religious or political groups,1436,1442
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,Spaniard,NORP,Nationalities or religious or political groups,1485,1493
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",1650,1657
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,PEDRO,PERSON,"People, including fictional",1788,1793
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",1834,1841
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",2107,2114
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,PEDRO,PERSON,"People, including fictional",2172,2177
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",2222,2229
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,PEDRO,PERSON,"People, including fictional",2274,2279
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,Yea,PERSON,"People, including fictional",2281,2284
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",2351,2358
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,PEDRO,PERSON,"People, including fictional",2459,2464
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",2541,2548
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,PEDRO,PERSON,"People, including fictional",2585,2590
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",2650,2657
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,DON,PERSON,"People, including fictional",2725,2728
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,PEDRO,PERSON,"People, including fictional",2729,2734
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,BENEDICK,PERSON,"People, including fictional",2779,2787
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,eight,CARDINAL,Numerals that do not fall under another type,2878,2883
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,nine,CARDINAL,Numerals that do not fall under another type,2887,2891
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,Benedick,PERSON,"People, including fictional",2967,2975
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,Leonato,PERSON,"People, including fictional",2980,2987
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,PEDRO,PERSON,"People, including fictional",2993,2998
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,Beatrice,ORG,"Companies, agencies, institutions, etc.",3037,3045
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",3047,3054
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,Margaret,PERSON,"People, including fictional",3079,3087
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,Beatrice,ORG,"Companies, agencies, institutions, etc.",3125,3133
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,two,CARDINAL,Numerals that do not fall under another type,3148,3151
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,Don John,PERSON,"People, including fictional",3206,3214
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,DON,PERSON,"People, including fictional",3216,3219
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,JOHN,PERSON,"People, including fictional",3220,3224
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,DON,PERSON,"People, including fictional",3261,3264
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,PEDRO,PERSON,"People, including fictional",3265,3270
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,DON,PERSON,"People, including fictional",3291,3294
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,JOHN,PERSON,"People, including fictional",3295,3299
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,PEDRO,PERSON,"People, including fictional",3353,3358
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,JOHN,PERSON,"People, including fictional",3376,3380
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,Claudio,PERSON,"People, including fictional",3410,3417
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,DON,PERSON,"People, including fictional",3468,3471
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,PEDRO,PERSON,"People, including fictional",3472,3477
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,JOHN,PERSON,"People, including fictional",3502,3506
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,Claudio,PERSON,"People, including fictional",3511,3518
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,tomorrow,DATE,Absolute or relative dates or periods,3554,3562
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,PEDRO,PERSON,"People, including fictional",3568,3573
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,JOHN,PERSON,"People, including fictional",3597,3601
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",3647,3654
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,JOHN,PERSON,"People, including fictional",3712,3716
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,holp,PERSON,"People, including fictional",3898,3902
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,DON,PERSON,"People, including fictional",3983,3986
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,PEDRO,PERSON,"People, including fictional",3987,3992
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,JOHN,PERSON,"People, including fictional",4022,4026
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,"shortened,—for",NORP,Nationalities or religious or political groups,4073,4087
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",4146,4153
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,JOHN,PERSON,"People, including fictional",4170,4174
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,Leonato,PERSON,"People, including fictional",4186,4193
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,Hero,ORG,"Companies, agencies, institutions, etc.",4196,4200
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,Hero,ORG,"Companies, agencies, institutions, etc.",4207,4211
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,Hero,WORK_OF_ART,"Titles of books, songs, etc.",4225,4229
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",4231,4238
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,JOHN,PERSON,"People, including fictional",4254,4258
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,tonight,TIME,Times smaller than a day,4440,4447
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,the night,TIME,Times smaller than a day,4496,4505
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,tomorrow,DATE,Absolute or relative dates or periods,4552,4560
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",4627,4634
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,May,DATE,Absolute or relative dates or periods,4636,4639
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,PEDRO,PERSON,"People, including fictional",4656,4661
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,JOHN,PERSON,"People, including fictional",4688,4692
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",4869,4876
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,tonight,TIME,Times smaller than a day,4896,4903
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,tomorrow,DATE,Absolute or relative dates or periods,4931,4939
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,DON,PERSON,"People, including fictional",5006,5009
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,PEDRO,PERSON,"People, including fictional",5010,5015
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,DON,PERSON,"People, including fictional",5096,5099
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,JOHN,PERSON,"People, including fictional",5100,5104
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,midnight,TIME,Times smaller than a day,5189,5197
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,PEDRO,PERSON,"People, including fictional",5234,5239
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",5266,5273
-MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,JOHN,PERSON,"People, including fictional",5311,5315
-MUCH ADO ABOUT NOTHING,3,3,A Street.,Enter Dogberry,ORG,"Companies, agencies, institutions, etc.",0,14
-MUCH ADO ABOUT NOTHING,3,3,A Street.,the Watch.,ORG,"Companies, agencies, institutions, etc.",32,42
-MUCH ADO ABOUT NOTHING,3,3,A Street.,Yea,PERSON,"People, including fictional",88,91
-MUCH ADO ABOUT NOTHING,3,3,A Street.,First,ORDINAL,"""first"", ""second"", etc.",369,374
+MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,THIS DAY,DATE,Absolute or relative dates or periods,10922,10930
+MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,FAIR BEATRICE,PERSON,"People, including fictional",11079,11092
+MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,GOOD MARGARET,PERSON,"People, including fictional",39,52
+MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,BEATRICE PROPOSING,PERSON,"People, including fictional",111,129
+MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,URSALA WALK,PERSON,"People, including fictional",196,207
+MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,BEAR,ORG,"Companies, agencies, institutions, etc.",569,573
+MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,MISPRISING,PERSON,"People, including fictional",2291,2301
+MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,NATURE,WORK_OF_ART,"Titles of books, songs, etc.",2810,2816
+MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,CONSUME,ORG,"Companies, agencies, institutions, etc.",3456,3463
+MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,EMPOISON,PERSON,"People, including fictional",3828,3836
+MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,ITALY,GPE,"Countries, cities, states",4082,4087
+MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,ALWAYS,ORG,"Companies, agencies, institutions, etc.",4089,4095
+MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,DOST DESERVE,PERSON,"People, including fictional",5127,5139
+MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,DUTCHMAN,NORP,Nationalities or religious or political groups,1351,1359
+MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,FRENCHMAN,NORP,Nationalities or religious or political groups,1369,1378
+MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,GERMAN,NORP,Nationalities or religious or political groups,1436,1442
+MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,SPANIARD,NORP,Nationalities or religious or political groups,1485,1493
+MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,EIGHT,CARDINAL,Numerals that do not fall under another type,2878,2883
+MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,NINE,CARDINAL,Numerals that do not fall under another type,2887,2891
+MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,"SHORTENED,—FOR",NORP,Nationalities or religious or political groups,4073,4087
+MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,HERO,WORK_OF_ART,"Titles of books, songs, etc.",4225,4229
+MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,THE NIGHT,TIME,Times smaller than a day,4496,4505
+MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,MIDNIGHT,TIME,Times smaller than a day,5189,5197
+MUCH ADO ABOUT NOTHING,3,3,A Street.,THE WATCH,ORG,"Companies, agencies, institutions, etc.",32,42
 MUCH ADO ABOUT NOTHING,3,3,A Street.,FIRST WATCH,ORG,"Companies, agencies, institutions, etc.",431,442
-MUCH ADO ABOUT NOTHING,3,3,A Street.,Hugh Oatcake,PERSON,"People, including fictional",444,456
-MUCH ADO ABOUT NOTHING,3,3,A Street.,George Seacoal,PERSON,"People, including fictional",466,480
-MUCH ADO ABOUT NOTHING,3,3,A Street.,Seacoal,GPE,"Countries, cities, states",544,551
-MUCH ADO ABOUT NOTHING,3,3,A Street.,Fortune,WORK_OF_ART,"Titles of books, songs, etc.",633,640
-MUCH ADO ABOUT NOTHING,3,3,A Street.,Nature,WORK_OF_ART,"Titles of books, songs, etc.",673,679
-MUCH ADO ABOUT NOTHING,3,3,A Street.,Master Constable,PERSON,"People, including fictional",707,723
-MUCH ADO ABOUT NOTHING,3,3,A Street.,baes,PERSON,"People, including fictional",3124,3128
-MUCH ADO ABOUT NOTHING,3,3,A Street.,Five shillings,MONEY,"Monetary values, including unit",3405,3419
-MUCH ADO ABOUT NOTHING,3,3,A Street.,two,CARDINAL,Numerals that do not fall under another type,3940,3943
-MUCH ADO ABOUT NOTHING,3,3,A Street.,One,CARDINAL,Numerals that do not fall under another type,3976,3979
-MUCH ADO ABOUT NOTHING,3,3,A Street.,Leonato,PERSON,"People, including fictional",4042,4049
-MUCH ADO ABOUT NOTHING,3,3,A Street.,tomorrow,DATE,Absolute or relative dates or periods,4086,4094
-MUCH ADO ABOUT NOTHING,3,3,A Street.,tonight,TIME,Times smaller than a day,4118,4125
-MUCH ADO ABOUT NOTHING,3,3,A Street.,Adieu,PERSON,"People, including fictional",4127,4132
-MUCH ADO ABOUT NOTHING,3,3,A Street.,Exeunt Dogberry and Verges,WORK_OF_ART,"Titles of books, songs, etc.",4162,4188
-MUCH ADO ABOUT NOTHING,3,3,A Street.,Conrade,PERSON,"People, including fictional",4209,4216
-MUCH ADO ABOUT NOTHING,3,3,A Street.,Conrade,PERSON,"People, including fictional",4234,4241
-MUCH ADO ABOUT NOTHING,3,3,A Street.,Conrade,PERSON,"People, including fictional",4283,4290
-MUCH ADO ABOUT NOTHING,3,3,A Street.,Don John a,PERSON,"People, including fictional",4713,4723
-MUCH ADO ABOUT NOTHING,3,3,A Street.,this seven years,DATE,Absolute or relative dates or periods,5407,5423
-MUCH ADO ABOUT NOTHING,3,3,A Street.,between fourteen,CARDINAL,Numerals that do not fall under another type,5684,5700
-MUCH ADO ABOUT NOTHING,3,3,A Street.,Pharaoh,GPE,"Countries, cities, states",5752,5759
-MUCH ADO ABOUT NOTHING,3,3,A Street.,Bel,PERSON,"People, including fictional",5813,5816
-MUCH ADO ABOUT NOTHING,3,3,A Street.,Hercules,PERSON,"People, including fictional",5878,5886
-MUCH ADO ABOUT NOTHING,3,3,A Street.,tonight,TIME,Times smaller than a day,6232,6239
-MUCH ADO ABOUT NOTHING,3,3,A Street.,Margaret,PERSON,"People, including fictional",6246,6254
-MUCH ADO ABOUT NOTHING,3,3,A Street.,Hero,PERSON,"People, including fictional",6265,6269
-MUCH ADO ABOUT NOTHING,3,3,A Street.,Hero,ORG,"Companies, agencies, institutions, etc.",6300,6304
-MUCH ADO ABOUT NOTHING,3,3,A Street.,thousand,CARDINAL,Numerals that do not fall under another type,6366,6374
-MUCH ADO ABOUT NOTHING,3,3,A Street.,"night,—I",ORG,"Companies, agencies, institutions, etc.",6386,6394
-MUCH ADO ABOUT NOTHING,3,3,A Street.,first,ORDINAL,"""first"", ""second"", etc.",6427,6432
-MUCH ADO ABOUT NOTHING,3,3,A Street.,Claudio,PERSON,"People, including fictional",6459,6466
-MUCH ADO ABOUT NOTHING,3,3,A Street.,Don John,PERSON,"People, including fictional",6529,6537
-MUCH ADO ABOUT NOTHING,3,3,A Street.,Margaret,PERSON,"People, including fictional",6617,6625
-MUCH ADO ABOUT NOTHING,3,3,A Street.,Two,CARDINAL,Numerals that do not fall under another type,6646,6649
-MUCH ADO ABOUT NOTHING,3,3,A Street.,Claudio,PERSON,"People, including fictional",6678,6685
-MUCH ADO ABOUT NOTHING,3,3,A Street.,Margaret,PERSON,"People, including fictional",6725,6733
-MUCH ADO ABOUT NOTHING,3,3,A Street.,first,ORDINAL,"""first"", ""second"", etc.",6766,6771
-MUCH ADO ABOUT NOTHING,3,3,A Street.,Don John,PERSON,"People, including fictional",6901,6909
-MUCH ADO ABOUT NOTHING,3,3,A Street.,Claudio,PERSON,"People, including fictional",6930,6937
-MUCH ADO ABOUT NOTHING,3,3,A Street.,next morning,TIME,Times smaller than a day,6993,7005
-MUCH ADO ABOUT NOTHING,3,3,A Street.,o'er night,PERSON,"People, including fictional",7090,7100
-MUCH ADO ABOUT NOTHING,3,3,A Street.,FIRST WATCH,ORG,"Companies, agencies, institutions, etc.",7145,7156
-MUCH ADO ABOUT NOTHING,3,3,A Street.,FIRST WATCH,ORG,"Companies, agencies, institutions, etc.",7351,7362
-MUCH ADO ABOUT NOTHING,3,3,A Street.,one,CARDINAL,Numerals that do not fall under another type,7368,7371
-MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,Margaret,PERSON,"People, including fictional",12,20
-MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,Ursula,PERSON,"People, including fictional",25,31
-MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,Good Ursula,PERSON,"People, including fictional",39,50
-MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,Beatrice,PERSON,"People, including fictional",67,75
-MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,HERO,ORG,"Companies, agencies, institutions, etc.",123,127
-MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,Troth,PERSON,"People, including fictional",184,189
-MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,Meg,PERSON,"People, including fictional",256,259
-MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,MARGARET,PERSON,"People, including fictional",426,434
-MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,Milan,GPE,"Countries, cities, states",580,585
-MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,MARGARET,PERSON,"People, including fictional",647,655
-MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,ten on't,DATE,Absolute or relative dates or periods,926,934
+MUCH ADO ABOUT NOTHING,3,3,A Street.,HUGH OATCAKE,PERSON,"People, including fictional",444,456
+MUCH ADO ABOUT NOTHING,3,3,A Street.,GEORGE SEACOAL,PERSON,"People, including fictional",466,480
+MUCH ADO ABOUT NOTHING,3,3,A Street.,SEACOAL,GPE,"Countries, cities, states",544,551
+MUCH ADO ABOUT NOTHING,3,3,A Street.,FORTUNE,WORK_OF_ART,"Titles of books, songs, etc.",633,640
+MUCH ADO ABOUT NOTHING,3,3,A Street.,MASTER CONSTABLE,PERSON,"People, including fictional",707,723
+MUCH ADO ABOUT NOTHING,3,3,A Street.,BAES,PERSON,"People, including fictional",3124,3128
+MUCH ADO ABOUT NOTHING,3,3,A Street.,FIVE SHILLINGS,MONEY,"Monetary values, including unit",3405,3419
+MUCH ADO ABOUT NOTHING,3,3,A Street.,ADIEU,PERSON,"People, including fictional",4127,4132
+MUCH ADO ABOUT NOTHING,3,3,A Street.,DON JOHN A,PERSON,"People, including fictional",4713,4723
+MUCH ADO ABOUT NOTHING,3,3,A Street.,THIS SEVEN YEARS,DATE,Absolute or relative dates or periods,5407,5423
+MUCH ADO ABOUT NOTHING,3,3,A Street.,BETWEEN FOURTEEN,CARDINAL,Numerals that do not fall under another type,5684,5700
+MUCH ADO ABOUT NOTHING,3,3,A Street.,PHARAOH,GPE,"Countries, cities, states",5752,5759
+MUCH ADO ABOUT NOTHING,3,3,A Street.,BEL,PERSON,"People, including fictional",5813,5816
+MUCH ADO ABOUT NOTHING,3,3,A Street.,THOUSAND,CARDINAL,Numerals that do not fall under another type,6366,6374
+MUCH ADO ABOUT NOTHING,3,3,A Street.,"NIGHT,—I",ORG,"Companies, agencies, institutions, etc.",6386,6394
+MUCH ADO ABOUT NOTHING,3,3,A Street.,NEXT MORNING,TIME,Times smaller than a day,6993,7005
+MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,GOOD URSULA,PERSON,"People, including fictional",39,50
+MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,MEG,PERSON,"People, including fictional",256,259
+MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,MILAN,GPE,"Countries, cities, states",580,585
 MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,MARGARET,GPE,"Countries, cities, states",1003,1011
-MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,HERO,ORG,"Companies, agencies, institutions, etc.",1060,1064
-MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,Beatrice,PERSON,"People, including fictional",1526,1534
-MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,morrow,DATE,Absolute or relative dates or periods,1584,1590
-MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,morrow,DATE,Absolute or relative dates or periods,1612,1618
-MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,Hero,ORG,"Companies, agencies, institutions, etc.",1626,1630
-MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,Light o',WORK_OF_ART,"Titles of books, songs, etc.",1754,1762
-MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,Ye,PERSON,"People, including fictional",1843,1845
-MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,almost five o'clock,TIME,Times smaller than a day,2039,2058
-MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,MARGARET,PERSON,"People, including fictional",2137,2145
+MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,MORROW,DATE,Absolute or relative dates or periods,1584,1590
+MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,LIGHT O',WORK_OF_ART,"Titles of books, songs, etc.",1754,1762
+MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,YE,PERSON,"People, including fictional",1843,1845
+MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,ALMOST FIVE O'CLOCK,TIME,Times smaller than a day,2039,2058
 MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,H. MARGARET,PERSON,"People, including fictional",2229,2240
-MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,Turk,NORP,Nationalities or religious or political groups,2270,2274
-MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,HERO,ORG,"Companies, agencies, institutions, etc.",2415,2419
-MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,Carduus,PRODUCT,"Objects, vehicles, foods, etc. (not services)",2875,2882
-MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,HERO,ORG,"Companies, agencies, institutions, etc.",2955,2959
-MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,Benedictus,PERSON,"People, including fictional",3011,3021
-MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,benedictus,PERSON,"People, including fictional",3027,3037
-MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,MARGARET,PERSON,"People, including fictional",3079,3087
-MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,Benedick,PERSON,"People, including fictional",3473,3481
-MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,Ursula,PERSON,"People, including fictional",3820,3826
-MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,Benedick,PERSON,"People, including fictional",3884,3892
-MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,Don John,PERSON,"People, including fictional",3894,3902
-MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,HERO,ORG,"Companies, agencies, institutions, etc.",3970,3974
-MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,Meg,ORG,"Companies, agencies, institutions, etc.",4009,4012
-MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,Ursula,PERSON,"People, including fictional",4019,4025
-MUCH ADO ABOUT NOTHING,3,5,Another Room in Leonato's House.,Goodman Verges,PERSON,"People, including fictional",359,373
+MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,TURK,NORP,Nationalities or religious or political groups,2270,2274
+MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,CARDUUS,PRODUCT,"Objects, vehicles, foods, etc. (not services)",2875,2882
+MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,BENEDICTUS,PERSON,"People, including fictional",3011,3021
+MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,MEG,ORG,"Companies, agencies, institutions, etc.",4009,4012
+MUCH ADO ABOUT NOTHING,3,5,Another Room in Leonato's House.,GOODMAN VERGES,PERSON,"People, including fictional",359,373
 MUCH ADO ABOUT NOTHING,3,5,Another Room in Leonato's House.,I. DOGBERRY,ORG,"Companies, agencies, institutions, etc.",652,663
-MUCH ADO ABOUT NOTHING,3,5,Another Room in Leonato's House.,Duke,ORG,"Companies, agencies, institutions, etc.",821,825
-MUCH ADO ABOUT NOTHING,3,5,Another Room in Leonato's House.,a thousand pound,QUANTITY,"Measurements, as of weight or distance",1025,1041
+MUCH ADO ABOUT NOTHING,3,5,Another Room in Leonato's House.,DUKE,ORG,"Companies, agencies, institutions, etc.",821,825
 MUCH ADO ABOUT NOTHING,3,5,Another Room in Leonato's House.,I. LEONATO,PERSON,"People, including fictional",1205,1215
-MUCH ADO ABOUT NOTHING,3,5,Another Room in Leonato's House.,tonight,TIME,Times smaller than a day,1287,1294
-MUCH ADO ABOUT NOTHING,3,5,Another Room in Leonato's House.,Messina,GPE,"Countries, cities, states",1380,1387
-MUCH ADO ABOUT NOTHING,3,5,Another Room in Leonato's House.,two,CARDINAL,Numerals that do not fall under another type,1593,1596
-MUCH ADO ABOUT NOTHING,3,5,Another Room in Leonato's House.,One,CARDINAL,Numerals that do not fall under another type,1909,1912
-MUCH ADO ABOUT NOTHING,3,5,Another Room in Leonato's House.,two,CARDINAL,Numerals that do not fall under another type,1965,1968
-MUCH ADO ABOUT NOTHING,3,5,Another Room in Leonato's House.,this morning,TIME,Times smaller than a day,2011,2023
-MUCH ADO ABOUT NOTHING,3,5,Another Room in Leonato's House.,MESSENGER,PERSON,"People, including fictional",2267,2276
-MUCH ADO ABOUT NOTHING,3,5,Another Room in Leonato's House.,Messenger,PERSON,"People, including fictional",2404,2413
-MUCH ADO ABOUT NOTHING,3,5,Another Room in Leonato's House.,Francis Seacoal,PERSON,"People, including fictional",2457,2472
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Don Pedro,PERSON,"People, including fictional",6,15
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Don John,PERSON,"People, including fictional",17,25
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Leonato,GPE,"Countries, cities, states",27,34
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Friar Francis,PERSON,"People, including fictional",36,49
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Claudio,PERSON,"People, including fictional",51,58
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Benedick,PERSON,"People, including fictional",60,68
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Hero,ORG,"Companies, agencies, institutions, etc.",70,74
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Beatrice,ORG,"Companies, agencies, institutions, etc.",76,84
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Friar Francis,PERSON,"People, including fictional",105,118
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",277,284
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Hero,ORG,"Companies, agencies, institutions, etc.",571,575
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",665,672
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,BENEDICK,PERSON,"People, including fictional",757,765
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",837,844
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Friar,PERSON,"People, including fictional",861,866
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",1016,1023
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,May,DATE,Absolute or relative dates or periods,1070,1073
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,PEDRO,PERSON,"People, including fictional",1120,1125
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Sweet Prince,PERSON,"People, including fictional",1174,1186
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Leonato,GPE,"Countries, cities, states",1228,1235
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",1751,1758
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",1952,1959
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Leonato,PERSON,"People, including fictional",2094,2101
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Dian,PERSON,"People, including fictional",2333,2337
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Venus,PRODUCT,"Objects, vehicles, foods, etc. (not services)",2439,2444
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,HERO,ORG,"Companies, agencies, institutions, etc.",2504,2508
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Sweet Prince,PERSON,"People, including fictional",2564,2576
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,PEDRO,PERSON,"People, including fictional",2601,2606
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,JOHN,PERSON,"People, including fictional",2770,2774
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,BENEDICK,PERSON,"People, including fictional",2825,2833
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Hero,PERSON,"People, including fictional",2980,2984
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",3062,3069
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,one,CARDINAL,Numerals that do not fall under another type,3087,3090
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",3332,3339
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,HERO,ORG,"Companies, agencies, institutions, etc.",3380,3384
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Hero,WORK_OF_ART,"Titles of books, songs, etc.",3396,3400
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",3449,3456
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Hero,ORG,"Companies, agencies, institutions, etc.",3505,3509
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,twelve,CARDINAL,Numerals that do not fall under another type,3592,3598
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,that hour,TIME,Times smaller than a day,3678,3687
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,DON,PERSON,"People, including fictional",3698,3701
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,PEDRO,PERSON,"People, including fictional",3702,3707
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Myself,PERSON,"People, including fictional",3789,3795
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,that hour last night,TIME,Times smaller than a day,3859,3879
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,thousand,CARDINAL,Numerals that do not fall under another type,4016,4024
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,DON,ORG,"Companies, agencies, institutions, etc.",4042,4045
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,JOHN,PERSON,"People, including fictional",4046,4050
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",4247,4254
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Hero,ORG,"Companies, agencies, institutions, etc.",4271,4275
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,half,CARDINAL,Numerals that do not fall under another type,4296,4300
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,JOHN,PERSON,"People, including fictional",4763,4767
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Don Pedro,PERSON,"People, including fictional",4851,4860
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Don John,PERSON,"People, including fictional",4862,4870
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Claudio,PERSON,"People, including fictional",4875,4882
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,BENEDICK,PERSON,"People, including fictional",4884,4892
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Benedick,PERSON,"People, including fictional",4983,4991
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Hero,PERSON,"People, including fictional",5138,5142
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Dost,PERSON,"People, including fictional",5180,5184
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Yea,PERSON,"People, including fictional",5206,5209
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Hero,ORG,"Companies, agencies, institutions, etc.",5384,5388
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Chid,PERSON,"People, including fictional",5604,5608
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Nature,WORK_OF_ART,"Titles of books, songs, etc.",5630,5636
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,one,CARDINAL,Numerals that do not fall under another type,5649,5652
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Took,ORG,"Companies, agencies, institutions, etc.",5759,5763
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,mir'd,GPE,"Countries, cities, states",5820,5825
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,BENEDICK,PERSON,"People, including fictional",6250,6258
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,BENEDICK,PERSON,"People, including fictional",6392,6400
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,last night,TIME,Times smaller than a day,6431,6441
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,last night,TIME,Times smaller than a day,6485,6495
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,this twelvemonth,DATE,Absolute or relative dates or periods,6504,6520
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,two,CARDINAL,Numerals that do not fall under another type,6654,6657
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Claudio,PERSON,"People, including fictional",6675,6682
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,A thousand,CARDINAL,Numerals that do not fall under another type,6931,6941
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,a thousand,CARDINAL,Numerals that do not fall under another type,6987,6997
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Trust,ORG,"Companies, agencies, institutions, etc.",7186,7191
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,accus'd,CARDINAL,Numerals that do not fall under another type,7692,7699
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,hours,TIME,Times smaller than a day,7915,7920
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,BENEDICK,PERSON,"People, including fictional",8098,8106
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Two,CARDINAL,Numerals that do not fall under another type,8108,8111
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,John,PERSON,"People, including fictional",8218,8222
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,villainies,GPE,"Countries, cities, states",8267,8277
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,accus'd,CARDINAL,Numerals that do not fall under another type,9388,9395
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Claudio,PERSON,"People, including fictional",9691,9698
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,BENEDICK,PERSON,"People, including fictional",10554,10562
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Leonato,PERSON,"People, including fictional",10572,10579
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Claudio,PERSON,"People, including fictional",10683,10690
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Hero,ORG,"Companies, agencies, institutions, etc.",11066,11070
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,BENEDICK,PERSON,"People, including fictional",11084,11092
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Lady Beatrice,PERSON,"People, including fictional",11094,11107
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Yea,PERSON,"People, including fictional",11149,11152
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,BENEDICK,PERSON,"People, including fictional",11186,11194
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,BENEDICK,PERSON,"People, including fictional",11266,11274
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,BENEDICK,PERSON,"People, including fictional",11398,11406
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,BENEDICK,PERSON,"People, including fictional",11497,11505
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,May,DATE,Absolute or relative dates or periods,11507,11510
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,BENEDICK,PERSON,"People, including fictional",11571,11579
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,BENEDICK,PERSON,"People, including fictional",11865,11873
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Beatrice,PERSON,"People, including fictional",11888,11896
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,BENEDICK,PERSON,"People, including fictional",11956,11964
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,BENEDICK,PERSON,"People, including fictional",12094,12102
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,BENEDICK,PERSON,"People, including fictional",12204,12212
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Beatrice,PERSON,"People, including fictional",12234,12242
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,a happy hour,TIME,Times smaller than a day,12276,12288
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,BENEDICK,PERSON,"People, including fictional",12326,12334
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,BENEDICK,PERSON,"People, including fictional",12442,12450
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Claudio,PERSON,"People, including fictional",12502,12509
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,BENEDICK,PERSON,"People, including fictional",12511,12519
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Farewell,PERSON,"People, including fictional",12583,12591
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,BENEDICK,PERSON,"People, including fictional",12593,12601
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Tarry,PERSON,"People, including fictional",12603,12608
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Beatrice,ORG,"Companies, agencies, institutions, etc.",12616,12624
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,BENEDICK,PERSON,"People, including fictional",12718,12726
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Beatrice,PERSON,"People, including fictional",12728,12736
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,BENEDICK,PERSON,"People, including fictional",12770,12778
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,first,ORDINAL,"""first"", ""second"", etc.",12797,12802
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,BENEDICK,PERSON,"People, including fictional",12877,12885
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Claudio,PERSON,"People, including fictional",12890,12897
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,BENEDICK,PERSON,"People, including fictional",13240,13248
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Beatrice,PERSON,"People, including fictional",13259,13267
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,BENEDICK,PERSON,"People, including fictional",13330,13338
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Beatrice,PERSON,"People, including fictional",13349,13357
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Sweet Hero,PERSON,"People, including fictional",13370,13380
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,BENEDICK,PERSON,"People, including fictional",13431,13439
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Count Comfect,ORG,"Companies, agencies, institutions, etc.",13518,13531
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,curtsies,ORG,"Companies, agencies, institutions, etc.",13673,13681
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Hercules,PERSON,"People, including fictional",13787,13795
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,BENEDICK,PERSON,"People, including fictional",13910,13918
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Tarry,PERSON,"People, including fictional",13920,13925
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Beatrice,ORG,"Companies, agencies, institutions, etc.",13932,13940
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,BENEDICK,PERSON,"People, including fictional",14034,14042
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Claudio,PERSON,"People, including fictional",14077,14084
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Hero,ORG,"Companies, agencies, institutions, etc.",14098,14102
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Yea,PERSON,"People, including fictional",14114,14117
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,BENEDICK,PERSON,"People, including fictional",14158,14166
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,Claudio,PERSON,"People, including fictional",14267,14274
-MUCH ADO ABOUT NOTHING,4,2,A Prison.,Enter Dogberry,ORG,"Companies, agencies, institutions, etc.",0,14
-MUCH ADO ABOUT NOTHING,4,2,A Prison.,Sexton,PERSON,"People, including fictional",28,34
-MUCH ADO ABOUT NOTHING,4,2,A Prison.,Conrade,PERSON,"People, including fictional",66,73
-MUCH ADO ABOUT NOTHING,4,2,A Prison.,Master Constable.,PERSON,"People, including fictional",403,420
-MUCH ADO ABOUT NOTHING,4,2,A Prison.,Conrade,PERSON,"People, including fictional",613,620
-MUCH ADO ABOUT NOTHING,4,2,A Prison.,Conrade,PERSON,"People, including fictional",660,667
-MUCH ADO ABOUT NOTHING,4,2,A Prison.,first,ORDINAL,"""first"", ""second"", etc.",787,792
-MUCH ADO ABOUT NOTHING,4,2,A Prison.,Constable,PERSON,"People, including fictional",1384,1393
-MUCH ADO ABOUT NOTHING,4,2,A Prison.,FIRST WATCH,ORG,"Companies, agencies, institutions, etc.",1615,1626
-MUCH ADO ABOUT NOTHING,4,2,A Prison.,Don John,PERSON,"People, including fictional",1653,1661
-MUCH ADO ABOUT NOTHING,4,2,A Prison.,Prince John,PERSON,"People, including fictional",1721,1732
-MUCH ADO ABOUT NOTHING,4,2,A Prison.,Prince,PERSON,"People, including fictional",1781,1787
-MUCH ADO ABOUT NOTHING,4,2,A Prison.,Constable,PERSON,"People, including fictional",1824,1833
-MUCH ADO ABOUT NOTHING,4,2,A Prison.,a thousand ducats,MONEY,"Monetary values, including unit",1991,2008
-MUCH ADO ABOUT NOTHING,4,2,A Prison.,Don John,PERSON,"People, including fictional",2012,2020
-MUCH ADO ABOUT NOTHING,4,2,A Prison.,Yea,PERSON,"People, including fictional",2115,2118
-MUCH ADO ABOUT NOTHING,4,2,A Prison.,FIRST,ORDINAL,"""first"", ""second"", etc.",2172,2177
-MUCH ADO ABOUT NOTHING,4,2,A Prison.,Claudio,PERSON,"People, including fictional",2200,2207
-MUCH ADO ABOUT NOTHING,4,2,A Prison.,Hero,PERSON,"People, including fictional",2246,2250
-MUCH ADO ABOUT NOTHING,4,2,A Prison.,Prince John,PERSON,"People, including fictional",2479,2490
-MUCH ADO ABOUT NOTHING,4,2,A Prison.,this morning,TIME,Times smaller than a day,2494,2506
-MUCH ADO ABOUT NOTHING,4,2,A Prison.,Master Constable,PERSON,"People, including fictional",2630,2646
-MUCH ADO ABOUT NOTHING,4,2,A Prison.,Leonato,PERSON,"People, including fictional",2687,2694
-MUCH ADO ABOUT NOTHING,4,2,A Prison.,God,PERSON,"People, including fictional",2859,2862
-MUCH ADO ABOUT NOTHING,4,2,A Prison.,Prince,PERSON,"People, including fictional",2917,2923
-MUCH ADO ABOUT NOTHING,4,2,A Prison.,Dost,PERSON,"People, including fictional",3038,3042
-MUCH ADO ABOUT NOTHING,4,2,A Prison.,Dost,PERSON,"People, including fictional",3070,3074
-MUCH ADO ABOUT NOTHING,4,2,A Prison.,Messina,GPE,"Countries, cities, states",3484,3491
-MUCH ADO ABOUT NOTHING,4,2,A Prison.,two,CARDINAL,Numerals that do not fall under another type,3614,3617
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Antonio,GPE,"Countries, cities, states",18,25
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,second,ORDINAL,"""first"", ""second"", etc.",106,112
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Charm,ORG,"Companies, agencies, institutions, etc.",1129,1134
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Hero,PERSON,"People, including fictional",1866,1870
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Claudio,PERSON,"People, including fictional",1897,1904
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Claudio,PERSON,"People, including fictional",2008,2015
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Don Pedro,PERSON,"People, including fictional",2031,2040
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Claudio,PERSON,"People, including fictional",2045,2052
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,DON,PERSON,"People, including fictional",2054,2057
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,PEDRO,PERSON,"People, including fictional",2058,2063
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",2085,2092
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Leonato,GPE,"Countries, cities, states",2180,2187
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,now?—well,PERSON,"People, including fictional",2266,2275
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",2422,2429
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,thou dissembler,PERSON,"People, including fictional",2483,2498
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",2563,2570
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,beshrew,PERSON,"People, including fictional",2579,2586
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Claudio,PERSON,"People, including fictional",2886,2893
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,many days,DATE,Absolute or relative dates or periods,3032,3041
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",3300,3307
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Thine,PERSON,"People, including fictional",3331,3336
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Claudio,PERSON,"People, including fictional",3338,3345
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,DON,PERSON,"People, including fictional",3361,3364
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,PEDRO,PERSON,"People, including fictional",3365,3370
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,May,DATE,Absolute or relative dates or periods,3518,3521
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",3555,3562
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,kill'st,PERSON,"People, including fictional",3669,3676
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,two,CARDINAL,Numerals that do not fall under another type,3732,3735
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,one,CARDINAL,Numerals that do not fall under another type,3794,3797
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Jacks,GPE,"Countries, cities, states",4204,4209
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Anthony,PERSON,"People, including fictional",4238,4245
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,half a dozen,CARDINAL,Numerals that do not fall under another type,4500,4512
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Anthony,PERSON,"People, including fictional",4619,4626
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,PEDRO,PERSON,"People, including fictional",4704,4709
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,DON,PERSON,"People, including fictional",4921,4924
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,PEDRO,PERSON,"People, including fictional",4925,4930
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Leonato,PERSON,"People, including fictional",5065,5072
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Antonio,GPE,"Countries, cities, states",5077,5084
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Benedick,PERSON,"People, including fictional",5092,5100
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,DON,PERSON,"People, including fictional",5102,5105
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,PEDRO,PERSON,"People, including fictional",5106,5111
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",5159,5166
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,BENEDICK,PERSON,"People, including fictional",5193,5201
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,DON,PERSON,"People, including fictional",5222,5225
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,PEDRO,PERSON,"People, including fictional",5226,5231
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",5294,5301
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,two,CARDINAL,Numerals that do not fall under another type,5331,5334
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,two,CARDINAL,Numerals that do not fall under another type,5358,5361
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,BENEDICK,PERSON,"People, including fictional",5504,5512
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",5583,5590
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Wilt,PERSON,"People, including fictional",5701,5705
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,BENEDICK,PERSON,"People, including fictional",5724,5732
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,PEDRO,PERSON,"People, including fictional",5777,5782
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Dost,PERSON,"People, including fictional",5784,5788
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",5820,5827
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,DON,PERSON,"People, including fictional",5960,5963
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,PEDRO,PERSON,"People, including fictional",5964,5969
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",6034,6041
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,BENEDICK,PERSON,"People, including fictional",6140,6148
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",6257,6264
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,PEDRO,PERSON,"People, including fictional",6331,6336
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",6407,6414
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,BENEDICK,PERSON,"People, including fictional",6459,6467
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",6503,6510
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,BENEDICK,PERSON,"People, including fictional",6543,6551
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Claudio,PERSON,"People, including fictional",6562,6569
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,PEDRO,PERSON,"People, including fictional",6874,6879
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",6905,6912
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,BENEDICK,PERSON,"People, including fictional",7082,7090
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,PEDRO,PERSON,"People, including fictional",7139,7144
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Beatrice,PERSON,"People, including fictional",7165,7173
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Monday night,TIME,Times smaller than a day,7587,7599
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Tuesday,DATE,Absolute or relative dates or periods,7622,7629
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,morning,TIME,Times smaller than a day,7630,7637
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,two,CARDINAL,Numerals that do not fall under another type,7672,7675
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Italy,GPE,"Countries, cities, states",7824,7829
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,PEDRO,PERSON,"People, including fictional",7900,7905
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Yea,PERSON,"People, including fictional",7907,7910
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",8047,8054
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,PEDRO,PERSON,"People, including fictional",8127,8132
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Benedick,PERSON,"People, including fictional",8196,8204
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",8213,8220
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Yea,PERSON,"People, including fictional",8222,8225
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Benedick,PERSON,"People, including fictional",8261,8269
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,BENEDICK,PERSON,"People, including fictional",8288,8296
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Messina,GPE,"Countries, cities, states",8582,8589
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",8766,8773
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Beatrice,ORG,"Companies, agencies, institutions, etc.",8840,8848
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,PEDRO,PERSON,"People, including fictional",8854,8859
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",8887,8894
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,PEDRO,PERSON,"People, including fictional",8916,8921
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",9011,9018
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,PEDRO,PERSON,"People, including fictional",9097,9102
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Enter Dogberry,WORK_OF_ART,"Titles of books, songs, etc.",9198,9212
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Conrade,PERSON,"People, including fictional",9242,9249
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,PEDRO,PERSON,"People, including fictional",9436,9441
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,two,CARDINAL,Numerals that do not fall under another type,9452,9455
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",9498,9505
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,DON,PERSON,"People, including fictional",9545,9548
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,sixth,ORDINAL,"""first"", ""second"", etc.",9725,9730
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,thirdly,ORDINAL,"""first"", ""second"", etc.",9768,9775
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,PEDRO,PERSON,"People, including fictional",9855,9860
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,First,ORDINAL,"""first"", ""second"", etc.",9862,9867
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,thirdly,ORDINAL,"""first"", ""second"", etc.",9901,9908
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,sixth,ORDINAL,"""first"", ""second"", etc.",9943,9948
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",10033,10040
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,one,CARDINAL,Numerals that do not fall under another type,10111,10114
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,PEDRO,PERSON,"People, including fictional",10140,10145
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Sweet Prince,PERSON,"People, including fictional",10306,10318
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Don John,PERSON,"People, including fictional",10577,10585
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Margaret,PERSON,"People, including fictional",10692,10700
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Hero,ORG,"Companies, agencies, institutions, etc.",10704,10708
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",11057,11064
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,PEDRO,PERSON,"People, including fictional",11112,11117
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,PEDRO,PERSON,"People, including fictional",11221,11226
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",11303,11310
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Sweet Hero,PERSON,"People, including fictional",11312,11322
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,first,ORDINAL,"""first"", ""second"", etc.",11388,11393
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Leonato,GPE,"Countries, cities, states",11675,11682
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Antonio,GPE,"Countries, cities, states",11684,11691
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Sexton,PERSON,"People, including fictional",11700,11706
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,thou beliest thyself,PERSON,"People, including fictional",12034,12054
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,third,ORDINAL,"""first"", ""second"", etc.",12095,12100
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",12269,12276
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,PEDRO,PERSON,"People, including fictional",12465,12470
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Messina,GPE,"Countries, cities, states",12705,12712
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,tonight,TIME,Times smaller than a day,12862,12869
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Tomorrow,DATE,Absolute or relative dates or periods,12871,12879
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,morning,TIME,Times smaller than a day,12880,12887
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",13153,13160
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Claudio,PERSON,"People, including fictional",13280,13287
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Tomorrow,DATE,Absolute or relative dates or periods,13298,13306
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Tonight,TIME,Times smaller than a day,13339,13346
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Margaret,PERSON,"People, including fictional",13414,13422
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,one,CARDINAL,Numerals that do not fall under another type,13876,13879
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Exeunt Dogberry and Verges,WORK_OF_ART,"Titles of books, songs, etc.",14735,14761
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,tomorrow,DATE,Absolute or relative dates or periods,14778,14786
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,morning,TIME,Times smaller than a day,14787,14794
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Farewell,PERSON,"People, including fictional",14822,14830
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,tomorrow,DATE,Absolute or relative dates or periods,14858,14866
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,DON,PERSON,"People, including fictional",14868,14871
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,PEDRO,PERSON,"People, including fictional",14872,14877
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",14897,14904
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Tonight,TIME,Times smaller than a day,14906,14913
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Hero,WORK_OF_ART,"Titles of books, songs, etc.",14930,14934
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Don Pedro,PERSON,"People, including fictional",14943,14952
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Claudio,PERSON,"People, including fictional",14957,14964
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,Margaret,PERSON,"People, including fictional",15033,15041
-MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,Benedick,PERSON,"People, including fictional",6,14
-MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,Margaret,PERSON,"People, including fictional",19,27
-MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,BENEDICK,PERSON,"People, including fictional",38,46
-MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,Margaret,PERSON,"People, including fictional",74,82
-MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,Beatrice,PERSON,"People, including fictional",140,148
-MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,BENEDICK,PERSON,"People, including fictional",216,224
-MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,Margaret,PERSON,"People, including fictional",246,254
-MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,thou deservest,PERSON,"People, including fictional",322,336
-MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,BENEDICK,PERSON,"People, including fictional",419,427
-MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,BENEDICK,PERSON,"People, including fictional",564,572
-MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,Margaret,PERSON,"People, including fictional",592,600
-MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,Beatrice,PERSON,"People, including fictional",654,662
-MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,BENEDICK,PERSON,"People, including fictional",749,757
-MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,Margaret,PERSON,"People, including fictional",776,784
-MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,MARGARET,PERSON,"People, including fictional",867,875
-MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,Beatrice,PERSON,"People, including fictional",895,903
-MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,BENEDICK,PERSON,"People, including fictional",935,943
-MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,Exit Margaret,PERSON,"People, including fictional",970,983
-MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,Leander,PERSON,"People, including fictional",1106,1113
-MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,Troilus,WORK_OF_ART,"Titles of books, songs, etc.",1132,1139
-MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,first,ORDINAL,"""first"", ""second"", etc.",1144,1149
-MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,quondam,GPE,"Countries, cities, states",1202,1209
-MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,Sweet Beatrice,PERSON,"People, including fictional",1665,1679
-MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,Yea,PERSON,"People, including fictional",1729,1732
-MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,BENEDICK,PERSON,"People, including fictional",1771,1779
-MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,Claudio,PERSON,"People, including fictional",1958,1965
-MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,BENEDICK,PERSON,"People, including fictional",1967,1975
-MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,BENEDICK,PERSON,"People, including fictional",2161,2169
-MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,Claudio,PERSON,"People, including fictional",2277,2284
-MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,first,ORDINAL,"""first"", ""second"", etc.",2452,2457
-MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,first,ORDINAL,"""first"", ""second"", etc.",2661,2666
-MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,BENEDICK,PERSON,"People, including fictional",2687,2695
-MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,BENEDICK,PERSON,"People, including fictional",2953,2961
-MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,twenty,CARDINAL,Numerals that do not fall under another type,3081,3087
-MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,BENEDICK,PERSON,"People, including fictional",3114,3122
-MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,Beatrice,ORG,"Companies, agencies, institutions, etc.",3149,3157
-MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,BENEDICK,PERSON,"People, including fictional",3381,3389
-MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,Don Worm,PERSON,"People, including fictional",3497,3505
-MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,"contrary,—to",ORG,"Companies, agencies, institutions, etc.",3549,3561
-MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,BENEDICK,PERSON,"People, including fictional",3754,3762
-MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,BENEDICK,PERSON,"People, including fictional",3804,3812
-MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,Yonder,PERSON,"People, including fictional",3959,3965
-MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,Claudio,PERSON,"People, including fictional",4055,4062
-MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,Don John,PERSON,"People, including fictional",4084,4092
-MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,BENEDICK,PERSON,"People, including fictional",4209,4217
-MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,thy uncle's,PERSON,"People, including fictional",4324,4335
-MUCH ADO ABOUT NOTHING,5,3,The Inside of a Church.,Don Pedro,PERSON,"People, including fictional",6,15
-MUCH ADO ABOUT NOTHING,5,3,The Inside of a Church.,Claudio,PERSON,"People, including fictional",17,24
-MUCH ADO ABOUT NOTHING,5,3,The Inside of a Church.,Attendants,PERSON,"People, including fictional",29,39
-MUCH ADO ABOUT NOTHING,5,3,The Inside of a Church.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",64,71
-MUCH ADO ABOUT NOTHING,5,3,The Inside of a Church.,Leonato,GPE,"Countries, cities, states",97,104
-MUCH ADO ABOUT NOTHING,5,3,The Inside of a Church.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",130,137
-MUCH ADO ABOUT NOTHING,5,3,The Inside of a Church.,Hero,PRODUCT,"Objects, vehicles, foods, etc. (not services)",213,217
-MUCH ADO ABOUT NOTHING,5,3,The Inside of a Church.,Praising,PERSON,"People, including fictional",399,407
-MUCH ADO ABOUT NOTHING,5,3,The Inside of a Church.,Graves,PERSON,"People, including fictional",681,687
-MUCH ADO ABOUT NOTHING,5,3,The Inside of a Church.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",756,763
-MUCH ADO ABOUT NOTHING,5,3,The Inside of a Church.,PEDRO,PERSON,"People, including fictional",829,834
-MUCH ADO ABOUT NOTHING,5,3,The Inside of a Church.,morrow,DATE,Absolute or relative dates or periods,841,847
-MUCH ADO ABOUT NOTHING,5,3,The Inside of a Church.,the gentle day,DATE,Absolute or relative dates or periods,914,928
-MUCH ADO ABOUT NOTHING,5,3,The Inside of a Church.,Phoebus,GPE,"Countries, cities, states",951,958
-MUCH ADO ABOUT NOTHING,5,3,The Inside of a Church.,East,LOC,"Non-GPE locations, mountain ranges, bodies of water",991,995
-MUCH ADO ABOUT NOTHING,5,3,The Inside of a Church.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",1064,1071
-MUCH ADO ABOUT NOTHING,5,3,The Inside of a Church.,morrow,DATE,Absolute or relative dates or periods,1078,1084
-MUCH ADO ABOUT NOTHING,5,3,The Inside of a Church.,PEDRO,PERSON,"People, including fictional",1121,1126
-MUCH ADO ABOUT NOTHING,5,3,The Inside of a Church.,Leonato,ORG,"Companies, agencies, institutions, etc.",1184,1191
-MUCH ADO ABOUT NOTHING,5,3,The Inside of a Church.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",1206,1213
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,Antonio,GPE,"Countries, cities, states",15,22
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,Benedick,PERSON,"People, including fictional",24,32
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,Beatrice,PERSON,"People, including fictional",34,42
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,Margaret,PERSON,"People, including fictional",44,52
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,Ursula,PERSON,"People, including fictional",54,60
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,Friar Francis,PERSON,"People, including fictional",62,75
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,Hero,WORK_OF_ART,"Titles of books, songs, etc.",80,84
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,Claudio,PERSON,"People, including fictional",161,168
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,accus'd,CARDINAL,Numerals that do not fall under another type,174,181
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,Margaret,PERSON,"People, including fictional",229,237
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,BENEDICK,PERSON,"People, including fictional",402,410
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,Claudio,PERSON,"People, including fictional",468,475
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,Withdraw,ORG,"Companies, agencies, institutions, etc.",549,557
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,Claudio,PERSON,"People, including fictional",648,655
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,this hour,TIME,Times smaller than a day,668,677
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,Claudio,PERSON,"People, including fictional",806,813
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,BENEDICK,PERSON,"People, including fictional",868,876
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,BENEDICK,PERSON,"People, including fictional",949,957
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,one,CARDINAL,Numerals that do not fall under another type,983,986
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,Leonato,PERSON,"People, including fictional",1004,1011
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,BENEDICK,PERSON,"People, including fictional",1141,1149
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,Claudio,PERSON,"People, including fictional",1251,1258
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,BENEDICK,PERSON,"People, including fictional",1298,1306
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,May,DATE,Absolute or relative dates or periods,1386,1389
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,this day,DATE,Absolute or relative dates or periods,1407,1415
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,Claudio,PERSON,"People, including fictional",1602,1609
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,Don Pedro,PERSON,"People, including fictional",1617,1626
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,Claudio,PERSON,"People, including fictional",1631,1638
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,PEDRO,PERSON,"People, including fictional",1661,1666
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,morrow,DATE,Absolute or relative dates or periods,1673,1679
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,morrow,DATE,Absolute or relative dates or periods,1717,1723
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,Prince,PERSON,"People, including fictional",1725,1731
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,morrow,DATE,Absolute or relative dates or periods,1738,1744
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,Claudio,PERSON,"People, including fictional",1746,1753
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,Today,DATE,Absolute or relative dates or periods,1798,1803
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",1841,1848
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,Ethiope,LOC,"Non-GPE locations, mountain ranges, bodies of water",1881,1888
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,Exit Antonio,GPE,"Countries, cities, states",1948,1960
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,PEDRO,PERSON,"People, including fictional",1966,1971
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,morrow,DATE,Absolute or relative dates or periods,1978,1984
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,Benedick,PERSON,"People, including fictional",1986,1994
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,February,DATE,Absolute or relative dates or periods,2041,2049
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",2099,2106
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,Europa,LOC,"Non-GPE locations, mountain ranges, bodies of water",2208,2214
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,Europa,LOC,"Non-GPE locations, mountain ranges, bodies of water",2246,2252
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,Jove,PERSON,"People, including fictional",2266,2270
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,BENEDICK,PERSON,"People, including fictional",2316,2324
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,Bull Jove,PERSON,"People, including fictional",2326,2335
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",2502,2509
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,Antonio,PERSON,"People, including fictional",2569,2576
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,Sweet,PERSON,"People, including fictional",2720,2725
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",3043,3050
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,One,CARDINAL,Numerals that do not fall under another type,3091,3094
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,DON,PERSON,"People, including fictional",3164,3167
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,PEDRO,PERSON,"People, including fictional",3168,3173
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,Hero,PRODUCT,"Objects, vehicles, foods, etc. (not services)",3186,3190
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,Hero,ORG,"Companies, agencies, institutions, etc.",3382,3386
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,BENEDICK,PERSON,"People, including fictional",3468,3476
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,Beatrice,PERSON,"People, including fictional",3509,3517
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,BENEDICK,PERSON,"People, including fictional",3582,3590
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,BENEDICK,PERSON,"People, including fictional",3652,3660
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,Claudio,PERSON,"People, including fictional",3703,3710
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,BENEDICK,PERSON,"People, including fictional",3785,3793
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,Troth,PERSON,"People, including fictional",3795,3800
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,Margaret,PERSON,"People, including fictional",3858,3866
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,Ursula,PERSON,"People, including fictional",3872,3878
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,BENEDICK,PERSON,"People, including fictional",3927,3935
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,BENEDICK,PERSON,"People, including fictional",4040,4048
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",4202,4209
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,Fashion'd,ORG,"Companies, agencies, institutions, etc.",4336,4345
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,Beatrice,ORG,"Companies, agencies, institutions, etc.",4349,4357
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,Benedick,PERSON,"People, including fictional",4465,4473
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,BENEDICK,PERSON,"People, including fictional",4475,4483
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,this good day,DATE,Absolute or relative dates or periods,4643,4656
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,BENEDICK,PERSON,"People, including fictional",4761,4769
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,DON,PERSON,"People, including fictional",4814,4817
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,PEDRO,PERSON,"People, including fictional",4818,4823
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,Benedick,PERSON,"People, including fictional",4840,4848
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,BENEDICK,PERSON,"People, including fictional",4867,4875
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,Prince,PERSON,"People, including fictional",4898,4904
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,Dost,PERSON,"People, including fictional",4965,4969
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,Claudio,PERSON,"People, including fictional",5339,5346
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,CLAUDIO,ORG,"Companies, agencies, institutions, etc.",5462,5469
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,Beatrice,ORG,"Companies, agencies, institutions, etc.",5513,5521
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,BENEDICK,PERSON,"People, including fictional",5701,5709
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,BENEDICK,PERSON,"People, including fictional",5874,5882
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,First,ORDINAL,"""first"", ""second"", etc.",5884,5889
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,Prince,PERSON,"People, including fictional",5926,5932
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,MESSENGER,PERSON,"People, including fictional",6058,6067
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,John,PERSON,"People, including fictional",6091,6095
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,Messina,GPE,"Countries, cities, states",6151,6158
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,BENEDICK,PERSON,"People, including fictional",6160,6168
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,tomorrow,DATE,Absolute or relative dates or periods,6192,6200
+MUCH ADO ABOUT NOTHING,3,5,Another Room in Leonato's House.,THIS MORNING,TIME,Times smaller than a day,2011,2023
+MUCH ADO ABOUT NOTHING,3,5,Another Room in Leonato's House.,FRANCIS SEACOAL,PERSON,"People, including fictional",2457,2472
+MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,FRIAR FRANCIS,PERSON,"People, including fictional",36,49
+MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,FRIAR,PERSON,"People, including fictional",861,866
+MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,SWEET PRINCE,PERSON,"People, including fictional",1174,1186
+MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,DIAN,PERSON,"People, including fictional",2333,2337
+MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,VENUS,PRODUCT,"Objects, vehicles, foods, etc. (not services)",2439,2444
+MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,TWELVE,CARDINAL,Numerals that do not fall under another type,3592,3598
+MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,THAT HOUR,TIME,Times smaller than a day,3678,3687
+MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,MYSELF,PERSON,"People, including fictional",3789,3795
+MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,THAT HOUR LAST NIGHT,TIME,Times smaller than a day,3859,3879
+MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,CHID,PERSON,"People, including fictional",5604,5608
+MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,TOOK,ORG,"Companies, agencies, institutions, etc.",5759,5763
+MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,LAST NIGHT,TIME,Times smaller than a day,6431,6441
+MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,THIS TWELVEMONTH,DATE,Absolute or relative dates or periods,6504,6520
+MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,TRUST,ORG,"Companies, agencies, institutions, etc.",7186,7191
+MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,HOURS,TIME,Times smaller than a day,7915,7920
+MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,VILLAINIE,GPE,"Countries, cities, states",8267,8277
+MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,A HAPPY HOUR,TIME,Times smaller than a day,12276,12288
+MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,TARRY,PERSON,"People, including fictional",12603,12608
+MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,SWEET HERO,PERSON,"People, including fictional",13370,13380
+MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,COUNT COMFECT,ORG,"Companies, agencies, institutions, etc.",13518,13531
+MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,CURTSY,ORG,"Companies, agencies, institutions, etc.",13673,13681
+MUCH ADO ABOUT NOTHING,4,2,A Prison.,SEXTON,PERSON,"People, including fictional",28,34
+MUCH ADO ABOUT NOTHING,4,2,A Prison.,MASTER CONSTABLE.,PERSON,"People, including fictional",403,420
+MUCH ADO ABOUT NOTHING,4,2,A Prison.,CONSTABLE,PERSON,"People, including fictional",1384,1393
+MUCH ADO ABOUT NOTHING,4,2,A Prison.,PRINCE JOHN,PERSON,"People, including fictional",1721,1732
+MUCH ADO ABOUT NOTHING,4,2,A Prison.,PRINCE,PERSON,"People, including fictional",1781,1787
+MUCH ADO ABOUT NOTHING,4,2,A Prison.,GOD,PERSON,"People, including fictional",2859,2862
+MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,SECOND,ORDINAL,"""first"", ""second"", etc.",106,112
+MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,CHARM,ORG,"Companies, agencies, institutions, etc.",1129,1134
+MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,NOW?—WELL,PERSON,"People, including fictional",2266,2275
+MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,THOU DISSEMBLER,PERSON,"People, including fictional",2483,2498
+MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,BESHREW,PERSON,"People, including fictional",2579,2586
+MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,MANY DAYS,DATE,Absolute or relative dates or periods,3032,3041
+MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,THINE,PERSON,"People, including fictional",3331,3336
+MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,JACK,GPE,"Countries, cities, states",4204,4209
+MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,ANTHONY,PERSON,"People, including fictional",4238,4245
+MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,HALF A DOZEN,CARDINAL,Numerals that do not fall under another type,4500,4512
+MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,MONDAY NIGHT,TIME,Times smaller than a day,7587,7599
+MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,TUESDAY,DATE,Absolute or relative dates or periods,7622,7629
+MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,MORNING,TIME,Times smaller than a day,7630,7637
+MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,SIXTH,ORDINAL,"""first"", ""second"", etc.",9725,9730
+MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,THIRDLY,ORDINAL,"""first"", ""second"", etc.",9768,9775
+MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,THOU BELIEST THYSELF,PERSON,"People, including fictional",12034,12054
+MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,THIRD,ORDINAL,"""first"", ""second"", etc.",12095,12100
+MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,THOU DESERVEST,PERSON,"People, including fictional",322,336
+MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,LEANDER,PERSON,"People, including fictional",1106,1113
+MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,TROILUS,WORK_OF_ART,"Titles of books, songs, etc.",1132,1139
+MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,QUONDAM,GPE,"Countries, cities, states",1202,1209
+MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,SWEET BEATRICE,PERSON,"People, including fictional",1665,1679
+MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,DON WORM,PERSON,"People, including fictional",3497,3505
+MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,"CONTRARY,—TO",ORG,"Companies, agencies, institutions, etc.",3549,3561
+MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,YONDER,PERSON,"People, including fictional",3959,3965
+MUCH ADO ABOUT NOTHING,5,3,The Inside of a Church.,ATTENDANTS,PERSON,"People, including fictional",29,39
+MUCH ADO ABOUT NOTHING,5,3,The Inside of a Church.,PRAISING,PERSON,"People, including fictional",399,407
+MUCH ADO ABOUT NOTHING,5,3,The Inside of a Church.,GRAVES,PERSON,"People, including fictional",681,687
+MUCH ADO ABOUT NOTHING,5,3,The Inside of a Church.,THE GENTLE DAY,DATE,Absolute or relative dates or periods,914,928
+MUCH ADO ABOUT NOTHING,5,3,The Inside of a Church.,PHOEBUS,GPE,"Countries, cities, states",951,958
+MUCH ADO ABOUT NOTHING,5,3,The Inside of a Church.,EAST,LOC,"Non-GPE locations, mountain ranges, bodies of water",991,995
+MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,WITHDRAW,ORG,"Companies, agencies, institutions, etc.",549,557
+MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,THIS HOUR,TIME,Times smaller than a day,668,677
+MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,ETHIOPE,LOC,"Non-GPE locations, mountain ranges, bodies of water",1881,1888
+MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,FEBRUARY,DATE,Absolute or relative dates or periods,2041,2049
+MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,EUROPA,LOC,"Non-GPE locations, mountain ranges, bodies of water",2208,2214
+MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,BULL JOVE,PERSON,"People, including fictional",2326,2335
+MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,SWEET,PERSON,"People, including fictional",2720,2725
+MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,THIS GOOD DAY,DATE,Absolute or relative dates or periods,4643,4656

@@ -1,940 +1,263 @@
 play,act,scene,location,entity_text,spacy_label,label_description,start_char,end_char
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Philostrate,PERSON,"People, including fictional",26,37
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,PHILOSTRATE,PERSON,"People, including fictional",26,37
 A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,THESEUS,ORG,"Companies, agencies, institutions, etc.",54,61
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Hippolyta,ORG,"Companies, agencies, institutions, etc.",73,82
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,four happy days,DATE,Absolute or relative dates or periods,117,132
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Long,PERSON,"People, including fictional",262,266
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Four days,DATE,Absolute or relative dates or periods,315,324
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,night,TIME,Times smaller than a day,358,363
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Four nights,TIME,Times smaller than a day,365,376
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,THESEUS,ORG,"Companies, agencies, institutions, etc.",514,521
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Philostrate,PERSON,"People, including fictional",527,538
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Athenian,NORP,Nationalities or religious or political groups,552,560
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Exit Philostrate,PERSON,"People, including fictional",700,716
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Egeus,PERSON,"People, including fictional",882,887
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Hermia,GPE,"Countries, cities, states",889,895
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Lysander,PERSON,"People, including fictional",897,905
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Demetrius,ORG,"Companies, agencies, institutions, etc.",910,919
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,HIPPOLYTA,ORG,"Companies, agencies, institutions, etc.",73,82
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,FOUR HAPPY DAYS,DATE,Absolute or relative dates or periods,117,132
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,LONG,PERSON,"People, including fictional",262,266
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,FOUR DAYS,DATE,Absolute or relative dates or periods,315,324
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,NIGHT,TIME,Times smaller than a day,358,363
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,FOUR NIGHTS,TIME,Times smaller than a day,365,376
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,ATHENIAN,NORP,Nationalities or religious or political groups,552,560
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,EGEUS,PERSON,"People, including fictional",882,887
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,HERMIA,GPE,"Countries, cities, states",889,895
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,LYSANDER,PERSON,"People, including fictional",897,905
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,DEMETRIUS,ORG,"Companies, agencies, institutions, etc.",910,919
 A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,THESEUS,PERSON,"People, including fictional",965,972
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Egeus,PERSON,"People, including fictional",987,992
 A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,EGEUS,ORG,"Companies, agencies, institutions, etc.",1021,1026
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Hermia,PERSON,"People, including fictional",1098,1104
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Demetrius,ORG,"Companies, agencies, institutions, etc.",1119,1128
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Lysander,PERSON,"People, including fictional",1197,1205
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Lysander,PERSON,"People, including fictional",1289,1297
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,gauds,ORG,"Companies, agencies, institutions, etc.",1536,1541
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Knacks,GPE,"Countries, cities, states",1553,1559
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,nosegays,ORG,"Companies, agencies, institutions, etc.",1570,1578
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,unharden'd,CARDINAL,Numerals that do not fall under another type,1628,1638
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Demetrius,PERSON,"People, including fictional",1853,1862
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Athens,GPE,"Countries, cities, states",1895,1901
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,THESEUS,PERSON,"People, including fictional",2053,2060
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Hermia,PERSON,"People, including fictional",2076,2082
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,advis'd,ORG,"Companies, agencies, institutions, etc.",2087,2094
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,One,CARDINAL,Numerals that do not fall under another type,2146,2149
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Demetrius,ORG,"Companies, agencies, institutions, etc.",2306,2315
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,HERMIA,PERSON,"People, including fictional",1098,1104
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,GAUD,ORG,"Companies, agencies, institutions, etc.",1536,1541
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,KNACKS,GPE,"Countries, cities, states",1553,1559
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,NOSEGAY,ORG,"Companies, agencies, institutions, etc.",1570,1578
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,DEMETRIUS,PERSON,"People, including fictional",1853,1862
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,ATHEN,GPE,"Countries, cities, states",1895,1901
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,ONE,CARDINAL,Numerals that do not fall under another type,2146,2149
 A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,HERMIA,ORG,"Companies, agencies, institutions, etc.",2339,2345
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Lysander,PERSON,"People, including fictional",2353,2361
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,THESEUS,PERSON,"People, including fictional",2525,2532
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Grace,PERSON,"People, including fictional",2606,2611
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Grace,PERSON,"People, including fictional",2766,2771
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Hermia,PERSON,"People, including fictional",2953,2959
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,THESEUS,ORG,"Companies, agencies, institutions, etc.",3630,3637
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,that day,DATE,Absolute or relative dates or periods,3764,3772
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Diana,PERSON,"People, including fictional",3880,3885
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,DEMETRIUS,ORG,"Companies, agencies, institutions, etc.",3940,3949
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Hermia,PERSON,"People, including fictional",3965,3971
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Lysander,PERSON,"People, including fictional",3978,3986
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,crazèd,GPE,"Countries, cities, states",3998,4004
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Demetrius,ORG,"Companies, agencies, institutions, etc.",4070,4079
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Hermia,PERSON,"People, including fictional",4093,4099
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Scornful Lysander,PERSON,"People, including fictional",4128,4145
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Demetrius,ORG,"Companies, agencies, institutions, etc.",4271,4280
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Demetrius,ORG,"Companies, agencies, institutions, etc.",4439,4448
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Hermia,GPE,"Countries, cities, states",4526,4532
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Demetrius,PERSON,"People, including fictional",4576,4585
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Nedar,PERSON,"People, including fictional",4628,4633
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Helena,ORG,"Companies, agencies, institutions, etc.",4646,4652
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,THESEUS,PERSON,"People, including fictional",4773,4780
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Demetrius,ORG,"Companies, agencies, institutions, etc.",4833,4842
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Demetrius,PERSON,"People, including fictional",4938,4947
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Egeus,PERSON,"People, including fictional",4965,4970
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Hermia,PERSON,"People, including fictional",5053,5059
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Athens,GPE,"Countries, cities, states",5145,5151
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Demetrius,PERSON,"People, including fictional",5282,5291
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Egeus,PERSON,"People, including fictional",5296,5301
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Lysander,PERSON,"People, including fictional",5493,5501
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Hermia,PERSON,"People, including fictional",5506,5512
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,HERMIA,ORG,"Companies, agencies, institutions, etc.",5877,5883
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,years,DATE,Absolute or relative dates or periods,5971,5976
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,HERMIA,ORG,"Companies, agencies, institutions, etc.",5978,5984
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,HERMIA,ORG,"Companies, agencies, institutions, etc.",6082,6088
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Swift,PERSON,"People, including fictional",6259,6264
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Hermia,PERSON,"People, including fictional",6808,6814
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Athens,GPE,"Countries, cities, states",6893,6899
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,seven,CARDINAL,Numerals that do not fall under another type,6920,6925
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Hermia,PERSON,"People, including fictional",6986,6992
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Athenian,NORP,Nationalities or religious or political groups,7040,7048
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,tomorrow night,TIME,Times smaller than a day,7126,7140
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Helena,ORG,"Companies, agencies, institutions, etc.",7218,7224
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,May,DATE,Absolute or relative dates or periods,7255,7258
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,HERMIA,ORG,"Companies, agencies, institutions, etc.",7289,7295
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Lysander,PERSON,"People, including fictional",7305,7313
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Cupid,ORG,"Companies, agencies, institutions, etc.",7334,7339
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Venus,ORG,"Companies, agencies, institutions, etc.",7418,7423
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Trojan,ORG,"Companies, agencies, institutions, etc.",7545,7551
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Tomorrow,DATE,Absolute or relative dates or periods,7697,7705
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Helena,ORG,"Companies, agencies, institutions, etc.",7782,7788
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Enter Helena,ORG,"Companies, agencies, institutions, etc.",7790,7802
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Helena,ORG,"Companies, agencies, institutions, etc.",7827,7833
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Whither,PERSON,"People, including fictional",7835,7842
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Demetrius,ORG,"Companies, agencies, institutions, etc.",7898,7907
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Hermia,GPE,"Countries, cities, states",8149,8155
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Demetrius,ORG,"Companies, agencies, institutions, etc.",8288,8297
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Demetrius,ORG,"Companies, agencies, institutions, etc.",8421,8430
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Helena,ORG,"Companies, agencies, institutions, etc.",8767,8773
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Lysander,PERSON,"People, including fictional",8906,8914
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Lysander,PERSON,"People, including fictional",8969,8977
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Athens,GPE,"Countries, cities, states",8990,8996
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Helen,PERSON,"People, including fictional",9110,9115
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Tomorrow night,TIME,Times smaller than a day,9150,9164
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Phoebe,PERSON,"People, including fictional",9171,9177
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Athens,GPE,"Countries, cities, states",9330,9336
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,devis'd,NORP,Nationalities or religious or political groups,9352,9359
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,HERMIA,ORG,"Companies, agencies, institutions, etc.",9370,9376
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Lysander,PERSON,"People, including fictional",9512,9520
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Athens,GPE,"Countries, cities, states",9560,9566
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Lysander,PERSON,"People, including fictional",9728,9736
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,morrow deep midnight,TIME,Times smaller than a day,9787,9807
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Hermia,GPE,"Countries, cities, states",9830,9836
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Exit Hermia,PERSON,"People, including fictional",9838,9849
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Demetrius,PERSON,"People, including fictional",9881,9890
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Exit Lysander,PERSON,"People, including fictional",9904,9917
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Athens,GPE,"Countries, cities, states",9974,9980
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Demetrius,PERSON,"People, including fictional",10028,10037
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Hermia,ORG,"Companies, agencies, institutions, etc.",10121,10127
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Love,WORK_OF_ART,"Titles of books, songs, etc.",10212,10216
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Cupid,ORG,"Companies, agencies, institutions, etc.",10325,10330
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Love,WORK_OF_ART,"Titles of books, songs, etc.",10571,10575
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Demetrius,PERSON,"People, including fictional",10609,10618
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Hermia,ORG,"Companies, agencies, institutions, etc.",10629,10635
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Hermia,GPE,"Countries, cities, states",10722,10728
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Hermia,PERSON,"People, including fictional",10810,10816
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,tomorrow,DATE,Absolute or relative dates or periods,10852,10860
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,Exit Helena,PERSON,"People, including fictional",11024,11035
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,Starveling,GPE,"Countries, cities, states",45,55
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,GRACE,PERSON,"People, including fictional",2606,2611
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,THAT DAY,DATE,Absolute or relative dates or periods,3764,3772
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,DIANA,PERSON,"People, including fictional",3880,3885
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,CRAZÈD,GPE,"Countries, cities, states",3998,4004
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,SCORNFUL LYSANDER,PERSON,"People, including fictional",4128,4145
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,NEDAR,PERSON,"People, including fictional",4628,4633
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,HELENA,ORG,"Companies, agencies, institutions, etc.",4646,4652
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,YEARS,DATE,Absolute or relative dates or periods,5971,5976
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,SWIFT,PERSON,"People, including fictional",6259,6264
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,SEVEN,CARDINAL,Numerals that do not fall under another type,6920,6925
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,TOMORROW NIGHT,TIME,Times smaller than a day,7126,7140
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,MAY,DATE,Absolute or relative dates or periods,7255,7258
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,CUPID,ORG,"Companies, agencies, institutions, etc.",7334,7339
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,VENUS,ORG,"Companies, agencies, institutions, etc.",7418,7423
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,TROJAN,ORG,"Companies, agencies, institutions, etc.",7545,7551
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,TOMORROW,DATE,Absolute or relative dates or periods,7697,7705
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,WHITHER,PERSON,"People, including fictional",7835,7842
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,HELEN,PERSON,"People, including fictional",9110,9115
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,PHOEBE,PERSON,"People, including fictional",9171,9177
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,MORROW DEEP MIDNIGHT,TIME,Times smaller than a day,9787,9807
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,LOVE,WORK_OF_ART,"Titles of books, songs, etc.",10212,10216
+A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,STARVELE,GPE,"Countries, cities, states",45,55
 A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,QUINCE,PERSON,"People, including fictional",57,63
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,QUINCE,PERSON,"People, including fictional",172,178
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,Athens,GPE,"Countries, cities, states",253,259
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,Duchess,PERSON,"People, including fictional",306,313
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,night,TIME,Times smaller than a day,337,342
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,First,ORDINAL,"""first"", ""second"", etc.",352,357
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,Peter Quince,PERSON,"People, including fictional",364,376
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,QUINCE,PERSON,"People, including fictional",466,472
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,Pyramus,ORG,"Companies, agencies, institutions, etc.",544,551
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,Peter Quince,PERSON,"People, including fictional",636,648
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,QUINCE,PERSON,"People, including fictional",716,722
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,Nick Bottom,PERSON,"People, including fictional",747,758
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,QUINCE,PERSON,"People, including fictional",825,831
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,Nick Bottom,PERSON,"People, including fictional",838,849
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,Pyramus,PERSON,"People, including fictional",868,875
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,Pyramus,PERSON,"People, including fictional",893,900
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,QUINCE,PERSON,"People, including fictional",923,929
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,Ercles,PERSON,"People, including fictional",1210,1216
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,Phibbus,ORG,"Companies, agencies, institutions, etc.",1353,1360
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,Ercles,PERSON,"People, including fictional",1482,1488
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,QUINCE,PERSON,"People, including fictional",1540,1546
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,Francis Flute,PERSON,"People, including fictional",1548,1561
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,Peter Quince,PERSON,"People, including fictional",1596,1608
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,QUINCE,PERSON,"People, including fictional",1610,1616
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,QUINCE,PERSON,"People, including fictional",1697,1703
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,Pyramus,PERSON,"People, including fictional",1725,1732
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,QUINCE,PERSON,"People, including fictional",1811,1817
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,"Thisne,",ORG,"Companies, agencies, institutions, etc.",2001,2008
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,Thisne!'—'Ah,PERSON,"People, including fictional",2009,2021
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,Pyramus,PERSON,"People, including fictional",2023,2030
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,QUINCE,PERSON,"People, including fictional",2080,2086
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,Pyramus,PERSON,"People, including fictional",2110,2117
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,QUINCE,PERSON,"People, including fictional",2166,2172
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,Robin Starveling,PERSON,"People, including fictional",2174,2190
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,STARVELING,ORG,"Companies, agencies, institutions, etc.",2204,2214
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,Peter Quince,PERSON,"People, including fictional",2222,2234
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,QUINCE,PERSON,"People, including fictional",2236,2242
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,Robin Starveling,PERSON,"People, including fictional",2244,2260
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,Tom Snout,PERSON,"People, including fictional",2293,2302
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,Peter Quince,PERSON,"People, including fictional",2328,2340
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,QUINCE,PERSON,"People, including fictional",2342,2348
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,Pyramus,PERSON,"People, including fictional",2355,2362
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,QUINCE,PERSON,"People, including fictional",2567,2573
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,QUINCE,PERSON,"People, including fictional",2809,2815
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,Duchess,LAW,Named documents made into laws.,2872,2879
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,QUINCE,PERSON,"People, including fictional",3261,3267
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,Pyramus,PERSON,"People, including fictional",3294,3301
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,Pyramus,ORG,"Companies, agencies, institutions, etc.",3307,3314
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,summer,DATE,Absolute or relative dates or periods,3372,3378
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,Pyramus,PERSON,"People, including fictional",3450,3457
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,QUINCE,PERSON,"People, including fictional",3532,3538
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,French,NORP,Nationalities or religious or political groups,3684,3690
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,QUINCE,PERSON,"People, including fictional",3732,3738
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,French,NORP,Nationalities or religious or political groups,3753,3759
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,tomorrow night,TIME,Times smaller than a day,3927,3941
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,a mile,QUANTITY,"Measurements, as of weight or distance",3975,3981
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,moonlight,TIME,Times smaller than a day,4003,4012
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,QUINCE,PERSON,"People, including fictional",4332,4338
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,one,CARDINAL,Numerals that do not fall under another type,17,20
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Puck,PERSON,"People, including fictional",31,35
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Whither,PERSON,"People, including fictional",71,78
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,hill,PERSON,"People, including fictional",102,106
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,bush,PERSON,"People, including fictional",128,132
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Swifter,PERSON,"People, including fictional",227,234
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,the Fairy Queen,WORK_OF_ART,"Titles of books, songs, etc.",271,286
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Farewell,PERSON,"People, including fictional",539,547
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Queen,PERSON,"People, including fictional",588,593
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,tonight,TIME,Times smaller than a day,669,676
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Queen,PERSON,"People, including fictional",692,697
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Oberon,PERSON,"People, including fictional",729,735
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Indian,NORP,Nationalities or religious or political groups,833,839
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Oberon,PERSON,"People, including fictional",895,901
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Knight,PERSON,"People, including fictional",923,929
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Robin Goodfellow,PERSON,"People, including fictional",1356,1372
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Hobgoblin,PERSON,"People, including fictional",1633,1642
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Puck,PERSON,"People, including fictional",1663,1667
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Oberon,PERSON,"People, including fictional",1812,1818
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,three-foot,QUANTITY,"Measurements, as of weight or distance",2137,2147
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,neeze,ORG,"Companies, agencies, institutions, etc.",2337,2342
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,A merrier hour,TIME,Times smaller than a day,2354,2368
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Oberon,PERSON,"People, including fictional",2421,2427
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Enter Oberon,PERSON,"People, including fictional",2482,2494
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,one,CARDINAL,Numerals that do not fall under another type,2498,2501
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Titania,PRODUCT,"Objects, vehicles, foods, etc. (not services)",2528,2535
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,OBERON,PERSON,"People, including fictional",2559,2565
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Ill,ORG,"Companies, agencies, institutions, etc.",2567,2570
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,moonlight,TIME,Times smaller than a day,2578,2587
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Titania,PRODUCT,"Objects, vehicles, foods, etc. (not services)",2595,2602
+A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,DUCHESS,PERSON,"People, including fictional",306,313
+A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,FIRST,ORDINAL,"""first"", ""second"", etc.",352,357
+A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,PETER QUINCE,PERSON,"People, including fictional",364,376
+A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,PYRAMUS,ORG,"Companies, agencies, institutions, etc.",544,551
+A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,NICK BOTTOM,PERSON,"People, including fictional",747,758
+A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,PYRAMUS,PERSON,"People, including fictional",868,875
+A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,ERCLES,PERSON,"People, including fictional",1210,1216
+A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,PHIBBUS,ORG,"Companies, agencies, institutions, etc.",1353,1360
+A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,FRANCIS FLUTE,PERSON,"People, including fictional",1548,1561
+A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,THISNE,ORG,"Companies, agencies, institutions, etc.",2001,2008
+A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,THISNE!'—'AH,PERSON,"People, including fictional",2009,2021
+A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,ROBIN STARVELING,PERSON,"People, including fictional",2174,2190
+A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,STARVELE,ORG,"Companies, agencies, institutions, etc.",2204,2214
+A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,TOM SNOUT,PERSON,"People, including fictional",2293,2302
+A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,DUCHESS,LAW,Named documents made into laws.,2872,2879
+A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,SUMMER,DATE,Absolute or relative dates or periods,3372,3378
+A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,FRENCH,NORP,Nationalities or religious or political groups,3684,3690
+A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,A MILE,QUANTITY,"Measurements, as of weight or distance",3975,3981
+A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,MOONLIGHT,TIME,Times smaller than a day,4003,4012
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,PUCK,PERSON,"People, including fictional",31,35
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,HILL,PERSON,"People, including fictional",102,106
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,BUSH,PERSON,"People, including fictional",128,132
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,SWIFTER,PERSON,"People, including fictional",227,234
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,THE FAIRY QUEEN,WORK_OF_ART,"Titles of books, songs, etc.",271,286
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,FAREWELL,PERSON,"People, including fictional",539,547
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,QUEEN,PERSON,"People, including fictional",588,593
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,TONIGHT,TIME,Times smaller than a day,669,676
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,OBERON,PERSON,"People, including fictional",729,735
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,INDIAN,NORP,Nationalities or religious or political groups,833,839
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,KNIGHT,PERSON,"People, including fictional",923,929
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,ROBIN GOODFELLOW,PERSON,"People, including fictional",1356,1372
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,HOBGOBLIN,PERSON,"People, including fictional",1633,1642
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,THREE-FOOT,QUANTITY,"Measurements, as of weight or distance",2137,2147
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,NEEZE,ORG,"Companies, agencies, institutions, etc.",2337,2342
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,A MERRIER HOUR,TIME,Times smaller than a day,2354,2368
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,TITANIA,PRODUCT,"Objects, vehicles, foods, etc. (not services)",2528,2535
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,ILL,ORG,"Companies, agencies, institutions, etc.",2567,2570
 A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,TITANIA,ORG,"Companies, agencies, institutions, etc.",2604,2611
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Oberon,PERSON,"People, including fictional",2627,2633
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,OBERON,PERSON,"People, including fictional",2693,2699
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Tarry,PERSON,"People, including fictional",2701,2706
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,TITANIA,ORG,"Companies, agencies, institutions, etc.",2740,2747
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,fairyland,GPE,"Countries, cities, states",2817,2826
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Corin,PERSON,"People, including fictional",2848,2853
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Phillida,GPE,"Countries, cities, states",2920,2928
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,India,GPE,"Countries, cities, states",2981,2986
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Amazon,ORG,"Companies, agencies, institutions, etc.",3021,3027
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,OBERON,PERSON,"People, including fictional",3153,3159
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Titania,ORG,"Companies, agencies, institutions, etc.",3193,3200
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,"Hippolyta, Knowing",ORG,"Companies, agencies, institutions, etc.",3227,3245
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Aegles,PERSON,"People, including fictional",3384,3390
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Ariadne,PERSON,"People, including fictional",3413,3420
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,the middle summer's spring,DATE,Absolute or relative dates or periods,3497,3523
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Met,ORG,"Companies, agencies, institutions, etc.",3525,3528
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,dale,GPE,"Countries, cities, states",3544,3548
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,rushy brook,PERSON,"People, including fictional",3592,3603
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,beachèd,GPE,"Countries, cities, states",3615,3622
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,thou hast disturb'd our,ORG,"Companies, agencies, institutions, etc.",3708,3731
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,nine,CARDINAL,Numerals that do not fall under another type,4188,4192
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Pale,ORG,"Companies, agencies, institutions, etc.",4442,4446
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Fall,DATE,Absolute or relative dates or periods,4595,4599
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Hiems,ORG,"Companies, agencies, institutions, etc.",4649,4654
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,The spring,DATE,Absolute or relative dates or periods,4739,4749
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,the summer,DATE,Absolute or relative dates or periods,4751,4761
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,angry winter,DATE,Absolute or relative dates or periods,4784,4796
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,OBERON,PERSON,"People, including fictional",5008,5014
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Titania,PRODUCT,"Objects, vehicles, foods, etc. (not services)",5066,5073
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Oberon,PERSON,"People, including fictional",5084,5090
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,TITANIA,ORG,"Companies, agencies, institutions, etc.",5148,5155
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Indian,NORP,Nationalities or religious or political groups,5278,5284
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,night,TIME,Times smaller than a day,5293,5298
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Neptune,ORG,"Companies, agencies, institutions, etc.",5360,5367
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,OBERON,PERSON,"People, including fictional",5862,5868
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,TITANIA,ORG,"Companies, agencies, institutions, etc.",5913,5920
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,OBERON,PERSON,"People, including fictional",6096,6102
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,TITANIA,ORG,"Companies, agencies, institutions, etc.",6146,6153
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Exit Titania,ORG,"Companies, agencies, institutions, etc.",6240,6252
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,OBERON,PERSON,"People, including fictional",6269,6275
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Puck,PERSON,"People, including fictional",6374,6378
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,OBERON,PERSON,"People, including fictional",6666,6672
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Cupid,ORG,"Companies, agencies, institutions, etc.",6764,6769
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,a hundred thousand,CARDINAL,Numerals that do not fall under another type,6909,6927
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Cupid,ORG,"Companies, agencies, institutions, etc.",6958,6963
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,the watery moon,LOC,"Non-GPE locations, mountain ranges, bodies of water",7010,7025
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Cupid,ORG,"Companies, agencies, institutions, etc.",7128,7133
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,forty minutes,TIME,Times smaller than a day,7565,7578
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Exit Puck,PERSON,"People, including fictional",7580,7589
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,OBERON,PERSON,"People, including fictional",7591,7597
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Titania,PRODUCT,"Objects, vehicles, foods, etc. (not services)",7634,7641
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Enter Demetrius,PERSON,"People, including fictional",8058,8073
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Helena,ORG,"Companies, agencies, institutions, etc.",8075,8081
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,DEMETRIUS,ORG,"Companies, agencies, institutions, etc.",8097,8106
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Lysander,PERSON,"People, including fictional",8159,8167
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Hermia,PERSON,"People, including fictional",8177,8183
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Hermia,GPE,"Countries, cities, states",8343,8349
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,DEMETRIUS,ORG,"Companies, agencies, institutions, etc.",8572,8581
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Demetrius,ORG,"Companies, agencies, institutions, etc.",8774,8783
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,DEMETRIUS,ORG,"Companies, agencies, institutions, etc.",9071,9080
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,DEMETRIUS,ORG,"Companies, agencies, institutions, etc.",9210,9219
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,the night,TIME,Times smaller than a day,9567,9576
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,DEMETRIUS,ORG,"Companies, agencies, institutions, etc.",9741,9750
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Apollo,ORG,"Companies, agencies, institutions, etc.",9939,9945
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Daphne,PERSON,"People, including fictional",9957,9963
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,DEMETRIUS,ORG,"Companies, agencies, institutions, etc.",10114,10123
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Exit Demetrius,PERSON,"People, including fictional",10459,10473
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Exit Helena,PERSON,"People, including fictional",10557,10568
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,OBERON,PERSON,"People, including fictional",10570,10576
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Enter Puck,PERSON,"People, including fictional",10677,10687
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,OBERON,PERSON,"People, including fictional",10759,10765
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Titania,PRODUCT,"Objects, vehicles, foods, etc. (not services)",10976,10983
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Athenian,NORP,Nationalities or religious or political groups,11288,11296
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,May,DATE,Absolute or relative dates or periods,11395,11398
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,Athenian,NORP,Nationalities or religious or political groups,11443,11451
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,first,ORDINAL,"""first"", ""second"", etc.",11588,11593
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,Enter Titania,ORG,"Companies, agencies, institutions, etc.",0,13
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,TITANIA,ORG,"Companies, agencies, institutions, etc.",30,37
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,third,ORDINAL,"""first"", ""second"", etc.",90,95
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,FIRST,ORDINAL,"""first"", ""second"", etc.",409,414
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,Newts,PERSON,"People, including fictional",492,497
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,Fairy Queen,WORK_OF_ART,"Titles of books, songs, etc.",545,556
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,Philomel,PERSON,"People, including fictional",566,574
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,Lulla,PERSON,"People, including fictional",616,621
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,lulla,PERSON,"People, including fictional",623,628
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,lulla,PERSON,"People, including fictional",639,644
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,lulla,PERSON,"People, including fictional",646,651
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,FIRST,ORDINAL,"""first"", ""second"", etc.",752,757
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,Worm,PERSON,"People, including fictional",871,875
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,TARRY,PERSON,"People, including fictional",2701,2706
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,FAIRYLAND,GPE,"Countries, cities, states",2817,2826
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,CORIN,PERSON,"People, including fictional",2848,2853
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,PHILLIDA,GPE,"Countries, cities, states",2920,2928
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,INDIA,GPE,"Countries, cities, states",2981,2986
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,AMAZON,ORG,"Companies, agencies, institutions, etc.",3021,3027
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,HIPPOLYTA KNOW,ORG,"Companies, agencies, institutions, etc.",3227,3245
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,AEGLES,PERSON,"People, including fictional",3384,3390
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,ARIADNE,PERSON,"People, including fictional",3413,3420
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,MET,ORG,"Companies, agencies, institutions, etc.",3525,3528
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,DALE,GPE,"Countries, cities, states",3544,3548
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,RUSHY BROOK,PERSON,"People, including fictional",3592,3603
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,BEACHÈD,GPE,"Countries, cities, states",3615,3622
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,NINE,CARDINAL,Numerals that do not fall under another type,4188,4192
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,PALE,ORG,"Companies, agencies, institutions, etc.",4442,4446
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,FALL,DATE,Absolute or relative dates or periods,4595,4599
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,HIEM,ORG,"Companies, agencies, institutions, etc.",4649,4654
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,THE SPRING,DATE,Absolute or relative dates or periods,4739,4749
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,THE SUMMER,DATE,Absolute or relative dates or periods,4751,4761
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,ANGRY WINTER,DATE,Absolute or relative dates or periods,4784,4796
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,NEPTUNE,ORG,"Companies, agencies, institutions, etc.",5360,5367
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,A HUNDRED THOUSAND,CARDINAL,Numerals that do not fall under another type,6909,6927
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,THE WATERY MOON,LOC,"Non-GPE locations, mountain ranges, bodies of water",7010,7025
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,FORTY MINUTES,TIME,Times smaller than a day,7565,7578
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,THE NIGHT,TIME,Times smaller than a day,9567,9576
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,APOLLO,ORG,"Companies, agencies, institutions, etc.",9939,9945
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,DAPHNE,PERSON,"People, including fictional",9957,9963
+A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,THIRD,ORDINAL,"""first"", ""second"", etc.",90,95
+A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,NEWTS,PERSON,"People, including fictional",492,497
+A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,FAIRY QUEEN,WORK_OF_ART,"Titles of books, songs, etc.",545,556
+A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,PHILOMEL,PERSON,"People, including fictional",566,574
+A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,LULLA,PERSON,"People, including fictional",616,621
+A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,WORM,PERSON,"People, including fictional",871,875
 A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,CHORUS,ORG,"Companies, agencies, institutions, etc.",901,907
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,Philomel,PERSON,"People, including fictional",909,917
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,One,CARDINAL,Numerals that do not fall under another type,979,982
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,Exeunt Fairies,WORK_OF_ART,"Titles of books, songs, etc.",1005,1019
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,Oberon,PERSON,"People, including fictional",1043,1049
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,OBERON,PERSON,"People, including fictional",1051,1057
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,Squeezes,ORG,"Companies, agencies, institutions, etc.",1096,1104
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,Titania,ORG,"Companies, agencies, institutions, etc.",1119,1126
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,Love,WORK_OF_ART,"Titles of books, songs, etc.",1168,1172
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,Pard,ORG,"Companies, agencies, institutions, etc.",1230,1234
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,Lysander,PERSON,"People, including fictional",1374,1382
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,Hermia,PERSON,"People, including fictional",1387,1393
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,Hermia,GPE,"Countries, cities, states",1513,1519
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,the day,DATE,Absolute or relative dates or periods,1572,1579
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,Lysander,PERSON,"People, including fictional",1599,1607
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,One,CARDINAL,Numerals that do not fall under another type,1679,1682
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,One,CARDINAL,Numerals that do not fall under another type,1723,1726
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,one,CARDINAL,Numerals that do not fall under another type,1734,1737
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,two,CARDINAL,Numerals that do not fall under another type,1743,1746
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,one,CARDINAL,Numerals that do not fall under another type,1759,1762
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,HERMIA,ORG,"Companies, agencies, institutions, etc.",1770,1776
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,Lysander,PERSON,"People, including fictional",1788,1796
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,Love,WORK_OF_ART,"Titles of books, songs, etc.",1913,1917
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,one,CARDINAL,Numerals that do not fall under another type,2011,2014
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,Two,CARDINAL,Numerals that do not fall under another type,2040,2043
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,bosoms interchainèd,PERSON,"People, including fictional",2044,2063
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,two,CARDINAL,Numerals that do not fall under another type,2086,2089
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,Hermia,PERSON,"People, including fictional",2170,2176
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,Lysander,PERSON,"People, including fictional",2200,2208
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,beshrew,PERSON,"People, including fictional",2241,2248
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,Lysander,PERSON,"People, including fictional",2297,2305
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,half,CARDINAL,Numerals that do not fall under another type,2706,2710
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,Puck,PERSON,"People, including fictional",2769,2773
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,Athenian,NORP,Nationalities or religious or political groups,2817,2825
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,Athens,GPE,"Countries, cities, states",2949,2955
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,Athenian,NORP,Nationalities or religious or political groups,3011,3019
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,Oberon,GPE,"Countries, cities, states",3335,3341
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,Helena,ORG,"Companies, agencies, institutions, etc.",3369,3375
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,Demetrius,ORG,"Companies, agencies, institutions, etc.",3427,3436
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,DEMETRIUS,ORG,"Companies, agencies, institutions, etc.",3438,3447
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,DEMETRIUS,ORG,"Companies, agencies, institutions, etc.",3548,3557
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,Exit Demetrius,PERSON,"People, including fictional",3596,3610
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,Hermia,ORG,"Companies, agencies, institutions, etc.",4097,4103
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,Lysander,PERSON,"People, including fictional",4136,4144
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,Lysander,PERSON,"People, including fictional",4203,4211
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,Demetrius,PERSON,"People, including fictional",4403,4412
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,Lysander,PERSON,"People, including fictional",4496,4504
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,Hermia,PERSON,"People, including fictional",4543,4549
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,Hermia,PERSON,"People, including fictional",4574,4580
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,The tedious minutes,TIME,Times smaller than a day,4662,4681
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,Hermia,PERSON,"People, including fictional",4709,4715
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,Reason,PERSON,"People, including fictional",4999,5005
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,Love,WORK_OF_ART,"Titles of books, songs, etc.",5082,5086
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,Demetrius,ORG,"Companies, agencies, institutions, etc.",5333,5342
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,one,CARDINAL,Numerals that do not fall under another type,5578,5581
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,refus'd,ORG,"Companies, agencies, institutions, etc.",5586,5593
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,Hermia,PERSON,"People, including fictional",5663,5669
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,Lysander,PERSON,"People, including fictional",5723,5731
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,Helen,PERSON,"People, including fictional",6032,6037
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,Lysander,PERSON,"People, including fictional",6094,6102
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,Lysander,PERSON,"People, including fictional",6212,6220
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,Lysander,PERSON,"People, including fictional",6331,6339
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,Lysander,PERSON,"People, including fictional",6356,6364
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,Enter Bottom,PERSON,"People, including fictional",41,53
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,Quince,PERSON,"People, including fictional",55,61
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,Snout,PERSON,"People, including fictional",63,68
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,Starveling,GPE,"Countries, cities, states",70,80
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,QUINCE,PERSON,"People, including fictional",122,128
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,Pat,PERSON,"People, including fictional",130,133
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,Peter Quince,PERSON,"People, including fictional",345,357
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,QUINCE,PERSON,"People, including fictional",359,365
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,Pyramus,ORG,"Companies, agencies, institutions, etc.",442,449
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,First,ORDINAL,"""first"", ""second"", etc.",485,490
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,Pyramus,ORG,"Companies, agencies, institutions, etc.",492,499
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,STARVELING,ORG,"Companies, agencies, institutions, etc.",621,631
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,Pyramus,PERSON,"People, including fictional",845,852
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,Pyramus,PERSON,"People, including fictional",927,934
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,Pyramus,PERSON,"People, including fictional",942,949
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,QUINCE,PERSON,"People, including fictional",1005,1011
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,eight and six,DATE,Absolute or relative dates or periods,1076,1089
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,two,CARDINAL,Numerals that do not fall under another type,1111,1114
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,eight and eight,DATE,Absolute or relative dates or periods,1142,1157
+A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,SQUEEZE,ORG,"Companies, agencies, institutions, etc.",1096,1104
+A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,PARD,ORG,"Companies, agencies, institutions, etc.",1230,1234
+A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,THE DAY,DATE,Absolute or relative dates or periods,1572,1579
+A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,TWO,CARDINAL,Numerals that do not fall under another type,1743,1746
+A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,BOSOMS INTERCHAINÈD,PERSON,"People, including fictional",2044,2063
+A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,BESHREW,PERSON,"People, including fictional",2241,2248
+A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,HALF,CARDINAL,Numerals that do not fall under another type,2706,2710
+A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,OBERON,GPE,"Countries, cities, states",3335,3341
+A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,THE TEDIOUS MINUTES,TIME,Times smaller than a day,4662,4681
+A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,REASON,PERSON,"People, including fictional",4999,5005
+A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,SNOUT,PERSON,"People, including fictional",63,68
+A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,PAT,PERSON,"People, including fictional",130,133
+A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,EIGHT AND SIX,DATE,Absolute or relative dates or periods,1076,1089
+A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,EIGHT AND EIGHT,DATE,Absolute or relative dates or periods,1142,1157
 A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,SNOUT,ORG,"Companies, agencies, institutions, etc.",1159,1164
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,STARVELING,ORG,"Companies, agencies, institutions, etc.",1208,1218
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,half,CARDINAL,Numerals that do not fall under another type,1572,1576
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,QUINCE,PERSON,"People, including fictional",2047,2053
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,two,CARDINAL,Numerals that do not fall under another type,2090,2093
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,Pyramus,PERSON,"People, including fictional",2169,2176
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,QUINCE,PERSON,"People, including fictional",2356,2362
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,that night,TIME,Times smaller than a day,2383,2393
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,QUINCE,PERSON,"People, including fictional",2531,2537
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,Moonshine,NORP,Nationalities or religious or political groups,2663,2672
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,Pyramus,PERSON,"People, including fictional",2749,2756
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,Bottom,PERSON,"People, including fictional",2874,2880
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,Pyramus,PERSON,"People, including fictional",3084,3091
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,QUINCE,PERSON,"People, including fictional",3112,3118
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,Pyramus,PERSON,"People, including fictional",3215,3222
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,Puck,PERSON,"People, including fictional",3336,3340
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,the Fairy Queen,FAC,"Buildings, airports, highways, bridges, etc.",3424,3439
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,QUINCE,PERSON,"People, including fictional",3520,3526
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,QUINCE,PERSON,"People, including fictional",3618,3624
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,Pyramus,PERSON,"People, including fictional",3829,3836
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,QUINCE,PERSON,"People, including fictional",3892,3898
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,Pyramus,PERSON,"People, including fictional",4030,4037
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,Jew,NORP,Nationalities or religious or political groups,4153,4156
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,Pyramus,PERSON,"People, including fictional",4226,4233
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,Ninny,PERSON,"People, including fictional",4238,4243
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,QUINCE,PERSON,"People, including fictional",4252,4258
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,Ninus,PERSON,"People, including fictional",4260,4265
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,Pyramus,PERSON,"People, including fictional",4331,4338
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,Puck,PERSON,"People, including fictional",4510,4514
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,Bottom,PERSON,"People, including fictional",4519,4525
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,QUINCE,PERSON,"People, including fictional",4598,4604
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,bush,PERSON,"People, including fictional",4769,4773
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,Exit Snout,PERSON,"People, including fictional",5210,5220
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,Quince,PERSON,"People, including fictional",5228,5234
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,QUINCE,PERSON,"People, including fictional",5236,5242
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,Bottom,PERSON,"People, including fictional",5256,5262
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,TITANIA,ORG,"Companies, agencies, institutions, etc.",5659,5666
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,doth mark,PERSON,"People, including fictional",5825,5834
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,TITANIA,ORG,"Companies, agencies, institutions, etc.",5983,5990
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,first,ORDINAL,"""first"", ""second"", etc.",6170,6175
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,TITANIA,ORG,"Companies, agencies, institutions, etc.",6469,6476
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,TITANIA,ORG,"Companies, agencies, institutions, etc.",6630,6637
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,Peaseblossom,PERSON,"People, including fictional",7067,7079
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,Moth,PERSON,"People, including fictional",7089,7093
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,four,CARDINAL,Numerals that do not fall under another type,7118,7122
+A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,THAT NIGHT,TIME,Times smaller than a day,2383,2393
+A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,MOONSHINE,NORP,Nationalities or religious or political groups,2663,2672
+A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,BOTTOM,PERSON,"People, including fictional",2874,2880
+A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,THE FAIRY QUEEN,FAC,"Buildings, airports, highways, bridges, etc.",3424,3439
+A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,JEW,NORP,Nationalities or religious or political groups,4153,4156
+A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,NINNY,PERSON,"People, including fictional",4238,4243
+A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,NINUS,PERSON,"People, including fictional",4260,4265
+A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,DOTH MARK,PERSON,"People, including fictional",5825,5834
+A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,PEASEBLOSSOM,PERSON,"People, including fictional",7067,7079
+A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,MOTH,PERSON,"People, including fictional",7089,7093
+A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,FOUR,CARDINAL,Numerals that do not fall under another type,7118,7122
 A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,PEASEBLOSSOM,ORG,"Companies, agencies, institutions, etc.",7132,7144
 A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,COBWEB,ORG,"Companies, agencies, institutions, etc.",7153,7159
 A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,I. MOTH,PERSON,"People, including fictional",7165,7172
 A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,I. MUSTARDSEED,PERSON,"People, including fictional",7178,7192
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,TITANIA,ORG,"Companies, agencies, institutions, etc.",7225,7232
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,PEASEBLOSSOM,ORG,"Companies, agencies, institutions, etc.",7710,7722
 A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,MOTH,GPE,"Countries, cities, states",7752,7756
 A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,MUSTARDSEED,ORG,"Companies, agencies, institutions, etc.",7764,7775
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,COBWEB,ORG,"Companies, agencies, institutions, etc.",7859,7865
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,PEASEBLOSSOM,ORG,"Companies, agencies, institutions, etc.",8021,8033
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,Peaseblossom,ORG,"Companies, agencies, institutions, etc.",8035,8047
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,Peascod,PERSON,"People, including fictional",8127,8134
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,Peaseblossom,PERSON,"People, including fictional",8161,8173
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,MUSTARDSEED,ORG,"Companies, agencies, institutions, etc.",8251,8262
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,TITANIA,ORG,"Companies, agencies, institutions, etc.",8542,8549
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Oberon,PERSON,"People, including fictional",6,12
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,OBERON,PERSON,"People, including fictional",14,20
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Titania,PRODUCT,"Objects, vehicles, foods, etc. (not services)",34,41
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Puck,PERSON,"People, including fictional",141,145
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Athenian,NORP,Nationalities or religious or political groups,432,440
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Pyramus,PERSON,"People, including fictional",577,584
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Forsook,PERSON,"People, including fictional",611,618
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,nole,PRODUCT,"Objects, vehicles, foods, etc. (not services)",701,705
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,o'er,PERSON,"People, including fictional",1032,1036
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Athens,GPE,"Countries, cities, states",1088,1094
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Pyramus,PERSON,"People, including fictional",1365,1372
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Titania,PRODUCT,"Objects, vehicles, foods, etc. (not services)",1432,1439
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,OBERON,PERSON,"People, including fictional",1477,1483
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Athenian,NORP,Nationalities or religious or political groups,1558,1566
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Athenian,NORP,Nationalities or religious or political groups,1673,1681
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Enter Demetrius,ORG,"Companies, agencies, institutions, etc.",1749,1764
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Hermia,GPE,"Countries, cities, states",1769,1775
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,OBERON,PERSON,"People, including fictional",1777,1783
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Athenian,NORP,Nationalities or religious or political groups,1815,1823
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,DEMETRIUS,ORG,"Companies, agencies, institutions, etc.",1872,1881
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,HERMIA,ORG,"Companies, agencies, institutions, etc.",1964,1970
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Lysander,PERSON,"People, including fictional",2085,2093
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,the day,DATE,Absolute or relative dates or periods,2201,2208
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Hermia,PERSON,"People, including fictional",2262,2268
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,May,DATE,Absolute or relative dates or periods,2340,2343
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Antipodes,PERSON,"People, including fictional",2418,2427
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,DEMETRIUS,ORG,"Companies, agencies, institutions, etc.",2515,2524
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Venus,PRODUCT,"Objects, vehicles, foods, etc. (not services)",2682,2687
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Lysander,PERSON,"People, including fictional",2740,2748
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Demetrius,ORG,"Companies, agencies, institutions, etc.",2772,2781
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,DEMETRIUS,ORG,"Companies, agencies, institutions, etc.",2806,2815
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Durst,PERSON,"People, including fictional",3057,3062
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,DEMETRIUS,ORG,"Companies, agencies, institutions, etc.",3279,3288
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Lysander,PERSON,"People, including fictional",3353,3361
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,DEMETRIUS,ORG,"Companies, agencies, institutions, etc.",3465,3474
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,OBERON,PERSON,"People, including fictional",3936,3942
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,one,CARDINAL,Numerals that do not fall under another type,4166,4169
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,A million,CARDINAL,Numerals that do not fall under another type,4189,4198
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,OBERON,PERSON,"People, including fictional",4231,4237
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Helena,ORG,"Companies, agencies, institutions, etc.",4284,4290
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Athens,GPE,"Countries, cities, states",4294,4300
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Swifter,PERSON,"People, including fictional",4529,4536
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Tartar,PRODUCT,"Objects, vehicles, foods, etc. (not services)",4557,4563
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,OBERON,PERSON,"People, including fictional",4577,4583
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Cupid,ORG,"Companies, agencies, institutions, etc.",4621,4626
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Venus,PRODUCT,"Objects, vehicles, foods, etc. (not services)",4727,4732
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Beg,PERSON,"People, including fictional",4778,4781
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Puck,PERSON,"People, including fictional",4807,4811
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Helena,ORG,"Companies, agencies, institutions, etc.",4846,4852
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,OBERON,PERSON,"People, including fictional",4995,5001
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Demetrius,PERSON,"People, including fictional",5047,5056
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,two,CARDINAL,Numerals that do not fall under another type,5083,5086
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Lysander,PERSON,"People, including fictional",5205,5213
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Helena,ORG,"Companies, agencies, institutions, etc.",5218,5224
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Hermia,PERSON,"People, including fictional",5611,5617
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,two,CARDINAL,Numerals that do not fall under another type,5727,5730
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Demetrius,PERSON,"People, including fictional",5896,5905
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,DEMETRIUS,ORG,"Companies, agencies, institutions, etc.",5939,5948
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Helen,PERSON,"People, including fictional",5960,5965
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,thine eyne,PERSON,"People, including fictional",6034,6044
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Crystal,LOC,"Non-GPE locations, mountain ranges, bodies of water",6046,6053
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Taurus,LOC,"Non-GPE locations, mountain ranges, bodies of water",6164,6170
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Fann'd,ORG,"Companies, agencies, institutions, etc.",6178,6184
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Hermia,PERSON,"People, including fictional",6760,6766
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Helena,ORG,"Companies, agencies, institutions, etc.",6797,6803
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Demetrius,PERSON,"People, including fictional",7032,7041
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Hermia,PERSON,"People, including fictional",7067,7073
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Hermia,PERSON,"People, including fictional",7149,7155
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Helena,ORG,"Companies, agencies, institutions, etc.",7200,7206
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,DEMETRIUS,ORG,"Companies, agencies, institutions, etc.",7315,7324
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Lysander,PERSON,"People, including fictional",7326,7334
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Hermia,PERSON,"People, including fictional",7345,7351
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Helen,PERSON,"People, including fictional",7466,7471
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,return'd,ORG,"Companies, agencies, institutions, etc.",7483,7491
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Helen,PERSON,"People, including fictional",7520,7525
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,DEMETRIUS,ORG,"Companies, agencies, institutions, etc.",7541,7550
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Disparage,PERSON,"People, including fictional",7552,7561
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Lest,PERSON,"People, including fictional",7596,7600
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Lysander,PERSON,"People, including fictional",7899,7907
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Lysander,PERSON,"People, including fictional",8091,8099
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Lysander,PERSON,"People, including fictional",8124,8132
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Fair Helena,ORG,"Companies, agencies, institutions, etc.",8170,8181
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,fiery oes,PERSON,"People, including fictional",8223,8232
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Lo,PERSON,"People, including fictional",8405,8407
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,three,CARDINAL,Numerals that do not fall under another type,8480,8485
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,two,CARDINAL,Numerals that do not fall under another type,8684,8687
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,the hours,TIME,Times smaller than a day,8720,8729
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Hermia,GPE,"Countries, cities, states",8877,8883
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,two,CARDINAL,Numerals that do not fall under another type,8890,8893
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,one,CARDINAL,Numerals that do not fall under another type,8946,8949
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,one,CARDINAL,Numerals that do not fall under another type,8966,8969
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,one,CARDINAL,Numerals that do not fall under another type,8990,8993
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,one,CARDINAL,Numerals that do not fall under another type,9020,9023
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,one,CARDINAL,Numerals that do not fall under another type,9038,9041
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Two,CARDINAL,Numerals that do not fall under another type,9208,9211
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,one,CARDINAL,Numerals that do not fall under another type,9238,9241
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,two,CARDINAL,Numerals that do not fall under another type,9257,9260
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,one,CARDINAL,Numerals that do not fall under another type,9281,9284
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Two,CARDINAL,Numerals that do not fall under another type,9292,9295
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,first,ORDINAL,"""first"", ""second"", etc.",9303,9308
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,one,CARDINAL,Numerals that do not fall under another type,9345,9348
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,one,CARDINAL,Numerals that do not fall under another type,9367,9370
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,amazèd,PERSON,"People, including fictional",9601,9607
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Lysander,PERSON,"People, including fictional",9704,9712
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Demetrius,PERSON,"People, including fictional",9796,9805
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Lysander,PERSON,"People, including fictional",9978,9986
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Wink,PERSON,"People, including fictional",10401,10405
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Helena,ORG,"Companies, agencies, institutions, etc.",10684,10690
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Helena,ORG,"Companies, agencies, institutions, etc.",10740,10746
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Sweet,PERSON,"People, including fictional",10777,10782
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,DEMETRIUS,ORG,"Companies, agencies, institutions, etc.",10805,10814
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Helen,PERSON,"People, including fictional",10964,10969
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,DEMETRIUS,ORG,"Companies, agencies, institutions, etc.",11090,11099
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,DEMETRIUS,ORG,"Companies, agencies, institutions, etc.",11194,11203
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Lysander,PERSON,"People, including fictional",11226,11234
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Ethiope,LOC,"Non-GPE locations, mountain ranges, bodies of water",11280,11287
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,DEMETRIUS,ORG,"Companies, agencies, institutions, etc.",11289,11298
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,HERMIA,ORG,"Companies, agencies, institutions, etc.",11517,11523
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Sweet,PERSON,"People, including fictional",11573,11578
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Tartar,PRODUCT,"Objects, vehicles, foods, etc. (not services)",11616,11622
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,loathèd,PERSON,"People, including fictional",11634,11641
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Demetrius,ORG,"Companies, agencies, institutions, etc.",11745,11754
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,DEMETRIUS,ORG,"Companies, agencies, institutions, etc.",11787,11796
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Lysander,PERSON,"People, including fictional",12119,12127
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,night,TIME,Times smaller than a day,12171,12176
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Helena,ORG,"Companies, agencies, institutions, etc.",12471,12477
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,cankerblossom,PERSON,"People, including fictional",12510,12523
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,shrewishness,GPE,"Countries, cities, states",13355,13367
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Good Hermia,PERSON,"People, including fictional",13553,13564
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Hermia,PERSON,"People, including fictional",13620,13626
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Demetrius,PERSON,"People, including fictional",13700,13709
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Athens,GPE,"Countries, cities, states",13927,13933
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,HERMIA,ORG,"Companies, agencies, institutions, etc.",14037,14043
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Lysander,PERSON,"People, including fictional",14160,14168
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Demetrius,ORG,"Companies, agencies, institutions, etc.",14183,14192
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Helena,ORG,"Companies, agencies, institutions, etc.",14244,14250
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,DEMETRIUS,ORG,"Companies, agencies, institutions, etc.",14663,14672
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Helena,ORG,"Companies, agencies, institutions, etc.",14765,14771
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Helena,GPE,"Countries, cities, states",14981,14987
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Lysander,PERSON,"People, including fictional",15054,15062
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Demetrius,ORG,"Companies, agencies, institutions, etc.",15067,15076
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Helena,ORG,"Companies, agencies, institutions, etc.",15374,15380
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,OBERON,PERSON,"People, including fictional",15382,15388
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Athenian,NORP,Nationalities or religious or political groups,15574,15582
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Athenian,NORP,Nationalities or religious or political groups,15669,15677
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,OBERON,PERSON,"People, including fictional",15764,15770
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Robin,PERSON,"People, including fictional",15834,15839
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,the night,TIME,Times smaller than a day,15850,15859
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Acheron,ORG,"Companies, agencies, institutions, etc.",15926,15933
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Lysander,PERSON,"People, including fictional",16019,16027
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Demetrius,PERSON,"People, including fictional",16065,16074
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Demetrius,ORG,"Companies, agencies, institutions, etc.",16125,16134
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Lysander,PERSON,"People, including fictional",16302,16310
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Athens,GPE,"Countries, cities, states",16543,16549
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Indian,NORP,Nationalities or religious or political groups,16694,16700
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,night,TIME,Times smaller than a day,16853,16858
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Aurora,ORG,"Companies, agencies, institutions, etc.",16919,16925
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Troop,ORG,"Companies, agencies, institutions, etc.",16990,16995
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,OBERON,PERSON,"People, including fictional",17260,17266
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,morning,TIME,Times smaller than a day,17315,17322
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Neptune,LOC,"Non-GPE locations, mountain ranges, bodies of water",17448,17455
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Turns,ORG,"Companies, agencies, institutions, etc.",17481,17486
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Exit Oberon,PERSON,"People, including fictional",17613,17624
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Goblin,PERSON,"People, including fictional",17719,17725
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Demetrius,PERSON,"People, including fictional",17814,17823
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Exit Lysander,PERSON,"People, including fictional",17975,17988
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Enter Demetrius,ORG,"Companies, agencies, institutions, etc.",18013,18028
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,DEMETRIUS,ORG,"Companies, agencies, institutions, etc.",18030,18039
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Lysander,PERSON,"People, including fictional",18041,18049
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,bush,PERSON,"People, including fictional",18121,18125
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,DEMETRIUS,ORG,"Companies, agencies, institutions, etc.",18378,18387
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,thy grey light,PERSON,"People, including fictional",18787,18801
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Demetrius,ORG,"Companies, agencies, institutions, etc.",18813,18822
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Puck,PERSON,"People, including fictional",18862,18866
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Demetrius,PERSON,"People, including fictional",18871,18880
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Ho,PERSON,"People, including fictional",18888,18890
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,ho,PERSON,"People, including fictional",18892,18894
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Coward,PERSON,"People, including fictional",18900,18906
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,DEMETRIUS,ORG,"Companies, agencies, institutions, etc.",18929,18938
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,DEMETRIUS,ORG,"Companies, agencies, institutions, etc.",19120,19129
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,mock'st,GPE,"Countries, cities, states",19147,19154
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,day,DATE,Absolute or relative dates or periods,19308,19311
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Enter Helena,ORG,"Companies, agencies, institutions, etc.",19365,19377
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,night,TIME,Times smaller than a day,19395,19400
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Shine,PERSON,"People, including fictional",19445,19450
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Athens,GPE,"Countries, cities, states",19496,19502
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,three,CARDINAL,Numerals that do not fall under another type,19666,19671
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,one,CARDINAL,Numerals that do not fall under another type,19678,19681
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Two,CARDINAL,Numerals that do not fall under another type,19688,19691
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,four,CARDINAL,Numerals that do not fall under another type,19715,19719
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Cupid,ORG,"Companies, agencies, institutions, etc.",19752,19757
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Lysander,PERSON,"People, including fictional",20046,20054
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Lysander,PERSON,"People, including fictional",20190,20198
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Jack,PERSON,"People, including fictional",20386,20390
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Jill,PERSON,"People, including fictional",20402,20406
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,Exit Puck,PERSON,"People, including fictional",20487,20496
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,"Lysander, Demetrius",ORG,"Companies, agencies, institutions, etc.",0,19
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Helena,ORG,"Companies, agencies, institutions, etc.",21,27
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Hermia,PERSON,"People, including fictional",32,38
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Enter Titania,ORG,"Companies, agencies, institutions, etc.",53,66
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Bottom,PERSON,"People, including fictional",71,77
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Peaseblossom,ORG,"Companies, agencies, institutions, etc.",79,91
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Cobweb,GPE,"Countries, cities, states",93,99
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Moth,PERSON,"People, including fictional",101,105
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Fairies,ORG,"Companies, agencies, institutions, etc.",129,136
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Oberon,PERSON,"People, including fictional",148,154
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,TITANIA,ORG,"Companies, agencies, institutions, etc.",171,178
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Peaseblossom,PERSON,"People, including fictional",366,378
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,PEASEBLOSSOM,ORG,"Companies, agencies, institutions, etc.",380,392
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Peaseblossom,ORG,"Companies, agencies, institutions, etc.",426,438
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,COBWEB,ORG,"Companies, agencies, institutions, etc.",465,471
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Monsieur Cobweb,PERSON,"People, including fictional",488,503
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,MUSTARDSEED,ORG,"Companies, agencies, institutions, etc.",867,878
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,MUSTARDSEED,ORG,"Companies, agencies, institutions, etc.",982,993
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Cavalery Cobweb,PERSON,"People, including fictional",1057,1072
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,TITANIA,ORG,"Companies, agencies, institutions, etc.",1243,1250
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,TITANIA,ORG,"Companies, agencies, institutions, etc.",1384,1391
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,TITANIA,ORG,"Companies, agencies, institutions, etc.",1598,1605
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,two,CARDINAL,Numerals that do not fall under another type,1734,1737
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,TITANIA,ORG,"Companies, agencies, institutions, etc.",1847,1854
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Enrings,ORG,"Companies, agencies, institutions, etc.",2018,2025
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,barky,PERSON,"People, including fictional",2030,2035
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Oberon,PERSON,"People, including fictional",2108,2114
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Puck,PERSON,"People, including fictional",2131,2135
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,OBERON,PERSON,"People, including fictional",2137,2143
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Robin,PERSON,"People, including fictional",2159,2164
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,fairyland,GPE,"Countries, cities, states",2830,2839
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Puck,PERSON,"People, including fictional",2928,2932
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Athenian,NORP,Nationalities or religious or political groups,2988,2996
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,May,DATE,Absolute or relative dates or periods,3039,3042
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Athens,GPE,"Countries, cities, states",3050,3056
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,night,TIME,Times smaller than a day,3102,3107
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,first,ORDINAL,"""first"", ""second"", etc.",3163,3168
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,the Fairy Queen,WORK_OF_ART,"Titles of books, songs, etc.",3184,3199
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Dian,PERSON,"People, including fictional",3290,3294
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,bud o'er Cupid's,PERSON,"People, including fictional",3297,3313
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Titania,PRODUCT,"Objects, vehicles, foods, etc. (not services)",3364,3371
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,TITANIA,ORG,"Companies, agencies, institutions, etc.",3399,3406
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Oberon,PERSON,"People, including fictional",3411,3417
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,OBERON,PERSON,"People, including fictional",3482,3488
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,TITANIA,ORG,"Companies, agencies, institutions, etc.",3512,3519
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,OBERON,PERSON,"People, including fictional",3595,3601
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Titania,ORG,"Companies, agencies, institutions, etc.",3646,3653
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,five,CARDINAL,Numerals that do not fall under another type,3720,3724
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,TITANIA,ORG,"Companies, agencies, institutions, etc.",3736,3743
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,OBERON,PERSON,"People, including fictional",3848,3854
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,tomorrow,DATE,Absolute or relative dates or periods,4008,4016
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,midnight,TIME,Times smaller than a day,4017,4025
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Dance in Duke,WORK_OF_ART,"Titles of books, songs, etc.",4035,4048
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Wedded,PERSON,"People, including fictional",4159,4165
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,the morning,TIME,Times smaller than a day,4242,4253
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,OBERON,PERSON,"People, including fictional",4260,4266
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,night,TIME,Times smaller than a day,4314,4319
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Swifter,PERSON,"People, including fictional",4360,4367
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,TITANIA,ORG,"Companies, agencies, institutions, etc.",4393,4400
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,this night,TIME,Times smaller than a day,4456,4466
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Hippolyta,ORG,"Companies, agencies, institutions, etc.",4575,4584
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,the day,DATE,Absolute or relative dates or periods,4721,4728
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Hercules,GPE,"Countries, cities, states",5011,5019
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Cadmus,PRODUCT,"Objects, vehicles, foods, etc. (not services)",5024,5030
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Crete,GPE,"Countries, cities, states",5055,5060
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Sparta,GPE,"Countries, cities, states",5096,5102
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,THESEUS,PERSON,"People, including fictional",5295,5302
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,flew'd,PERSON,"People, including fictional",5351,5357
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,the morning,TIME,Times smaller than a day,5421,5432
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Crook-knee'd,FAC,"Buildings, airports, highways, bridges, etc.",5438,5450
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,dewlap'd,NORP,Nationalities or religious or political groups,5455,5463
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Thessalian,NORP,Nationalities or religious or political groups,5469,5479
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Crete,GPE,"Countries, cities, states",5622,5627
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Sparta,GPE,"Countries, cities, states",5632,5638
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Thessaly,NORP,Nationalities or religious or political groups,5647,5655
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Lysander,PERSON,"People, including fictional",5770,5778
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Demetrius,ORG,"Companies, agencies, institutions, etc.",5785,5794
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Helena,ORG,"Companies, agencies, institutions, etc.",5804,5810
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Nedar,ORG,"Companies, agencies, institutions, etc.",5816,5821
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Helena,PERSON,"People, including fictional",5824,5830
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,THESEUS,PERSON,"People, including fictional",5871,5878
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,May,DATE,Absolute or relative dates or periods,5931,5934
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Egeus,PERSON,"People, including fictional",6009,6014
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,EGEUS,ORG,"Companies, agencies, institutions, etc.",6082,6087
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,THESEUS,PERSON,"People, including fictional",6105,6112
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Horns,PERSON,"People, including fictional",6163,6168
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Demetrius,PERSON,"People, including fictional",6188,6197
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Lysander,PERSON,"People, including fictional",6199,6207
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Hermia,PERSON,"People, including fictional",6209,6215
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Helena,ORG,"Companies, agencies, institutions, etc.",6220,6226
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,morrow,DATE,Absolute or relative dates or periods,6251,6257
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Saint Valentine,PERSON,"People, including fictional",6268,6283
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,THESEUS,PERSON,"People, including fictional",6396,6403
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,two,CARDINAL,Numerals that do not fall under another type,6442,6445
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Half,CARDINAL,Numerals that do not fall under another type,6626,6630
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,half,CARDINAL,Numerals that do not fall under another type,6638,6642
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Hermia,GPE,"Countries, cities, states",6797,6803
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Athens,GPE,"Countries, cities, states",6843,6849
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Athenian,NORP,Nationalities or religious or political groups,6894,6902
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,EGEUS,ORG,"Companies, agencies, institutions, etc.",6908,6913
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Demetrius,ORG,"Companies, agencies, institutions, etc.",7036,7045
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,DEMETRIUS,ORG,"Companies, agencies, institutions, etc.",7168,7177
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Helen,PERSON,"People, including fictional",7193,7198
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Fair Helena,ORG,"Companies, agencies, institutions, etc.",7304,7315
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Hermia,GPE,"Countries, cities, states",7420,7426
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Helena,ORG,"Companies, agencies, institutions, etc.",7630,7636
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Hermia,GPE,"Countries, cities, states",7681,7687
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,THESEUS,PERSON,"People, including fictional",7855,7862
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Egeus,PERSON,"People, including fictional",7944,7949
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,the morning,TIME,Times smaller than a day,8064,8075
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Athens,GPE,"Countries, cities, states",8156,8162
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Three,CARDINAL,Numerals that do not fall under another type,8164,8169
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Hippolyta,ORG,"Companies, agencies, institutions, etc.",8253,8262
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,DEMETRIUS,ORG,"Companies, agencies, institutions, etc.",8281,8290
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Demetrius,ORG,"Companies, agencies, institutions, etc.",8503,8512
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,DEMETRIUS,ORG,"Companies, agencies, institutions, etc.",8555,8564
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,DEMETRIUS,ORG,"Companies, agencies, institutions, etc.",8802,8811
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Pyramus,PERSON,"People, including fictional",8991,8998
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Peter Quince,PERSON,"People, including fictional",9011,9023
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,God,PERSON,"People, including fictional",9083,9086
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Peter Quince,PERSON,"People, including fictional",9618,9630
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,Bottom's Dream',WORK_OF_ART,"Titles of books, songs, etc.",9684,9699
-A MIDSUMMER NIGHT'S DREAM,4,2,Athens. A Room in Quince's House,Flute,WORK_OF_ART,"Titles of books, songs, etc.",14,19
-A MIDSUMMER NIGHT'S DREAM,4,2,Athens. A Room in Quince's House,Starveling,GPE,"Countries, cities, states",31,41
-A MIDSUMMER NIGHT'S DREAM,4,2,Athens. A Room in Quince's House,QUINCE,PERSON,"People, including fictional",43,49
-A MIDSUMMER NIGHT'S DREAM,4,2,Athens. A Room in Quince's House,Bottom,PERSON,"People, including fictional",68,74
-A MIDSUMMER NIGHT'S DREAM,4,2,Athens. A Room in Quince's House,STARVELING,ORG,"Companies, agencies, institutions, etc.",105,115
-A MIDSUMMER NIGHT'S DREAM,4,2,Athens. A Room in Quince's House,QUINCE,PERSON,"People, including fictional",250,256
-A MIDSUMMER NIGHT'S DREAM,4,2,Athens. A Room in Quince's House,Athens,GPE,"Countries, cities, states",304,310
-A MIDSUMMER NIGHT'S DREAM,4,2,Athens. A Room in Quince's House,Pyramus,PERSON,"People, including fictional",329,336
-A MIDSUMMER NIGHT'S DREAM,4,2,Athens. A Room in Quince's House,Athens,GPE,"Countries, cities, states",409,415
-A MIDSUMMER NIGHT'S DREAM,4,2,Athens. A Room in Quince's House,QUINCE,PERSON,"People, including fictional",417,423
-A MIDSUMMER NIGHT'S DREAM,4,2,Athens. A Room in Quince's House,Yea,PERSON,"People, including fictional",425,428
-A MIDSUMMER NIGHT'S DREAM,4,2,Athens. A Room in Quince's House,Enter Snug,ORG,"Companies, agencies, institutions, etc.",577,587
-A MIDSUMMER NIGHT'S DREAM,4,2,Athens. A Room in Quince's House,two,CARDINAL,Numerals that do not fall under another type,652,655
-A MIDSUMMER NIGHT'S DREAM,4,2,Athens. A Room in Quince's House,three,CARDINAL,Numerals that do not fall under another type,659,664
-A MIDSUMMER NIGHT'S DREAM,4,2,Athens. A Room in Quince's House,Pyramus,PERSON,"People, including fictional",931,938
-A MIDSUMMER NIGHT'S DREAM,4,2,Athens. A Room in Quince's House,Pyramus,PERSON,"People, including fictional",1001,1008
-A MIDSUMMER NIGHT'S DREAM,4,2,Athens. A Room in Quince's House,QUINCE,PERSON,"People, including fictional",1090,1096
-A MIDSUMMER NIGHT'S DREAM,4,2,Athens. A Room in Quince's House,Athenian,NORP,Nationalities or religious or political groups,1246,1254
-A MIDSUMMER NIGHT'S DREAM,4,2,Athens. A Room in Quince's House,QUINCE,PERSON,"People, including fictional",1306,1312
-A MIDSUMMER NIGHT'S DREAM,4,2,Athens. A Room in Quince's House,Bottom,PERSON,"People, including fictional",1333,1339
-A MIDSUMMER NIGHT'S DREAM,4,2,Athens. A Room in Quince's House,garlick,PERSON,"People, including fictional",1799,1806
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Hippolyta,ORG,"Companies, agencies, institutions, etc.",15,24
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Philostrate,PERSON,"People, including fictional",26,37
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Lords,ORG,"Companies, agencies, institutions, etc.",39,44
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,One,CARDINAL,Numerals that do not fall under another type,416,419
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Sees Helen's,PERSON,"People, including fictional",509,521
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Egypt,GPE,"Countries, cities, states",542,547
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,the night,TIME,Times smaller than a day,927,936
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,bush,PERSON,"People, including fictional",973,977
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,the night,TIME,Times smaller than a day,1027,1036
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,"Lysander, Demetrius",PERSON,"People, including fictional",1227,1246
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Hermia,GPE,"Countries, cities, states",1248,1254
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Helena,ORG,"Companies, agencies, institutions, etc.",1259,1265
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,THESEUS,PERSON,"People, including fictional",1466,1473
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,three hours,TIME,Times smaller than a day,1556,1567
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,a torturing hour,TIME,Times smaller than a day,1709,1725
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Philostrate,PERSON,"People, including fictional",1732,1743
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,PHILOSTRATE,PERSON,"People, including fictional",1745,1756
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,THESEUS,ORG,"Companies, agencies, institutions, etc.",1780,1787
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,this evening,TIME,Times smaller than a day,1823,1835
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,PHILOSTRATE,PERSON,"People, including fictional",1924,1935
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,first,ORDINAL,"""first"", ""second"", etc.",2024,2029
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,THESEUS,ORG,"Companies, agencies, institutions, etc.",2047,2054
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Centaurs,ORG,"Companies, agencies, institutions, etc.",2083,2091
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Athenian,NORP,Nationalities or religious or political groups,2110,2118
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Hercules,PERSON,"People, including fictional",2208,2216
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Thracian,NORP,Nationalities or religious or political groups,2265,2273
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Thebes,GPE,"Countries, cities, states",2350,2356
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,three,CARDINAL,Numerals that do not fall under another type,2392,2397
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Pyramus,PERSON,"People, including fictional",2576,2583
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,PHILOSTRATE,PERSON,"People, including fictional",2756,2767
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,ten,CARDINAL,Numerals that do not fall under another type,2800,2803
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,ten,CARDINAL,Numerals that do not fall under another type,2865,2868
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,one,CARDINAL,Numerals that do not fall under another type,2972,2975
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Pyramus,PERSON,"People, including fictional",3031,3038
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,PHILOSTRATE,PERSON,"People, including fictional",3235,3246
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Athens,GPE,"Countries, cities, states",3277,3283
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,THESEUS,PERSON,"People, including fictional",3424,3431
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,PHILOSTRATE,PERSON,"People, including fictional",3454,3465
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,THESEUS,ORG,"Companies, agencies, institutions, etc.",3678,3685
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Exit Philostrate,PERSON,"People, including fictional",3827,3843
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,THESEUS,PERSON,"People, including fictional",4045,4052
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Takes,PERSON,"People, including fictional",4192,4197
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Throttle,ORG,"Companies, agencies, institutions, etc.",4393,4401
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Love,WORK_OF_ART,"Titles of books, songs, etc.",4682,4686
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Philostrate,PERSON,"People, including fictional",4768,4779
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,PHILOSTRATE,PERSON,"People, including fictional",4781,4792
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Prologue,ORG,"Companies, agencies, institutions, etc.",4820,4828
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,THESEUS,ORG,"Companies, agencies, institutions, etc.",4843,4850
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Prologue,ORG,"Companies, agencies, institutions, etc.",4902,4910
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,THESEUS,PERSON,"People, including fictional",5355,5362
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,THESEUS,ORG,"Companies, agencies, institutions, etc.",5660,5667
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Moonshine and Lion,ORG,"Companies, agencies, institutions, etc.",5789,5807
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Pyramus,PERSON,"People, including fictional",5939,5946
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Wall,PERSON,"People, including fictional",6119,6123
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,bush,PERSON,"People, including fictional",6239,6243
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Presenteth Moonshine,PERSON,"People, including fictional",6254,6274
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Ninus,FAC,"Buildings, airports, highways, bridges, etc.",6355,6360
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Pyramus,PERSON,"People, including fictional",6614,6621
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Pyramus,ORG,"Companies, agencies, institutions, etc.",6978,6985
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Lion and Moonshine,ORG,"Companies, agencies, institutions, etc.",6995,7013
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,DEMETRIUS,ORG,"Companies, agencies, institutions, etc.",7058,7067
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,One,CARDINAL,Numerals that do not fall under another type,7089,7092
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,one,CARDINAL,Numerals that do not fall under another type,7175,7178
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,crannied,ORG,"Companies, agencies, institutions, etc.",7269,7277
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Pyramus,PERSON,"People, including fictional",7319,7326
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,THESEUS,PERSON,"People, including fictional",7562,7569
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,DEMETRIUS,ORG,"Companies, agencies, institutions, etc.",7619,7628
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,THESEUS,PERSON,"People, including fictional",7697,7704
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Pyramus,PERSON,"People, including fictional",7706,7713
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Jove,PERSON,"People, including fictional",8175,8179
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,THESEUS,PERSON,"People, including fictional",8331,8338
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Pyramus,PERSON,"People, including fictional",8681,8688
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,kiss'd,NORP,Nationalities or religious or political groups,8723,8729
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Limander,ORG,"Companies, agencies, institutions, etc.",8992,9000
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Helen,PERSON,"People, including fictional",9039,9044
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Procrus,PERSON,"People, including fictional",9095,9102
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Procrus,PERSON,"People, including fictional",9139,9146
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Wilt,PERSON,"People, including fictional",9276,9280
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Ninny,PERSON,"People, including fictional",9289,9294
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Tide,PRODUCT,"Objects, vehicles, foods, etc. (not services)",9332,9336
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Wall,PERSON,"People, including fictional",9397,9401
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Wall,PERSON,"People, including fictional",9448,9452
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Pyramus,PERSON,"People, including fictional",9480,9487
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,THESEUS,ORG,"Companies, agencies, institutions, etc.",9500,9507
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,two,CARDINAL,Numerals that do not fall under another type,9543,9546
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,DEMETRIUS,ORG,"Companies, agencies, institutions, etc.",9559,9568
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,THESEUS,PERSON,"People, including fictional",9697,9704
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,two,CARDINAL,Numerals that do not fall under another type,9969,9972
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Enter Lion,ORG,"Companies, agencies, institutions, etc.",10008,10018
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,May,DATE,Absolute or relative dates or periods,10137,10140
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,one,CARDINAL,Numerals that do not fall under another type,10247,10250
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,THESEUS,ORG,"Companies, agencies, institutions, etc.",10388,10395
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,DEMETRIUS,ORG,"Companies, agencies, institutions, etc.",10444,10453
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,THESEUS,PERSON,"People, including fictional",10557,10564
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,DEMETRIUS,ORG,"Companies, agencies, institutions, etc.",10604,10613
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,THESEUS,PERSON,"People, including fictional",10707,10714
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,the hornèd moon,PERSON,"People, including fictional",10904,10919
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,DEMETRIUS,ORG,"Companies, agencies, institutions, etc.",10929,10938
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,THESEUS,PERSON,"People, including fictional",10983,10990
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,the hornèd moon,PERSON,"People, including fictional",11095,11110
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,THESEUS,PERSON,"People, including fictional",11162,11169
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,DEMETRIUS,ORG,"Companies, agencies, institutions, etc.",11291,11300
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,THESEUS,PERSON,"People, including fictional",11439,11446
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Moon,PERSON,"People, including fictional",11595,11599
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,bush,PERSON,"People, including fictional",11710,11714
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,DEMETRIUS,ORG,"Companies, agencies, institutions, etc.",11751,11760
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Ninny,PERSON,"People, including fictional",11900,11905
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,DEMETRIUS,ORG,"Companies, agencies, institutions, etc.",11975,11984
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Moon,PERSON,"People, including fictional",12055,12059
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,THESEUS,ORG,"Companies, agencies, institutions, etc.",12145,12152
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Lion. DEMETRIUS,ORG,"Companies, agencies, institutions, etc.",12167,12182
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Pyramus,PERSON,"People, including fictional",12198,12205
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Sweet Moon,PERSON,"People, including fictional",12267,12277
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Moon,PERSON,"People, including fictional",12327,12331
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Quail,GPE,"Countries, cities, states",12686,12691
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,THESEUS,PERSON,"People, including fictional",12720,12727
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Beshrew,PERSON,"People, including fictional",12824,12831
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Pyramus,PERSON,"People, including fictional",13121,13128
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Moon,PERSON,"People, including fictional",13278,13282
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Exit Moonshine,PERSON,"People, including fictional",13336,13350
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,THESEUS,PERSON,"People, including fictional",13475,13482
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Moonshine,PERSON,"People, including fictional",13572,13581
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,THESEUS,PERSON,"People, including fictional",13636,13643
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Pyramus,PERSON,"People, including fictional",13799,13806
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,DEMETRIUS,ORG,"Companies, agencies, institutions, etc.",13834,13843
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Pyramus,ORG,"Companies, agencies, institutions, etc.",13881,13888
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,God,PERSON,"People, including fictional",13966,13969
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,DEMETRIUS,ORG,"Companies, agencies, institutions, etc.",14040,14049
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Pyramus,PERSON,"People, including fictional",14130,14137
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,gore,PERSON,"People, including fictional",14426,14430
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Adieu,PERSON,"People, including fictional",14597,14602
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,DEMETRIUS,ORG,"Companies, agencies, institutions, etc.",14679,14688
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Bergomask,PERSON,"People, including fictional",14831,14840
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,two,CARDINAL,Numerals that do not fall under another type,14855,14858
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,THESEUS,ORG,"Companies, agencies, institutions, etc.",14875,14882
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Pyramus,ORG,"Companies, agencies, institutions, etc.",15055,15062
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Bergomask,PERSON,"People, including fictional",15203,15212
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,midnight,TIME,Times smaller than a day,15282,15290
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,twelve,CARDINAL,Numerals that do not fall under another type,15301,15307
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,night,TIME,Times smaller than a day,15495,15500
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,nightly,TIME,Times smaller than a day,15563,15570
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Puck,PERSON,"People, including fictional",15609,15613
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Hecate,ORG,"Companies, agencies, institutions, etc.",16047,16053
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Oberon,PERSON,"People, including fictional",16257,16263
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Titania,ORG,"Companies, agencies, institutions, etc.",16268,16275
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,OBERON,PERSON,"People, including fictional",16294,16300
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,TITANIA,ORG,"Companies, agencies, institutions, etc.",16487,16494
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,First,ORDINAL,"""first"", ""second"", etc.",16496,16501
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,OBERON,PERSON,"People, including fictional",16644,16650
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,three,CARDINAL,Numerals that do not fall under another type,16856,16861
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Nature,WORK_OF_ART,"Titles of books, songs, etc.",16903,16909
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Trip,ORG,"Companies, agencies, institutions, etc.",17253,17257
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Titania,ORG,"Companies, agencies, institutions, etc.",17322,17329
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Puck,PERSON,"People, including fictional",17615,17619
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Else the Puck,WORK_OF_ART,"Titles of books, songs, etc.",17712,17725
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,Robin,PERSON,"People, including fictional",17810,17815
+A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,PEASCOD,PERSON,"People, including fictional",8127,8134
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,FORSOOK,PERSON,"People, including fictional",611,618
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,NOLE,PRODUCT,"Objects, vehicles, foods, etc. (not services)",701,705
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,ANTIPODES,PERSON,"People, including fictional",2418,2427
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,VENUS,PRODUCT,"Objects, vehicles, foods, etc. (not services)",2682,2687
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,DURST,PERSON,"People, including fictional",3057,3062
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,A MILLION,CARDINAL,Numerals that do not fall under another type,4189,4198
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,TARTAR,PRODUCT,"Objects, vehicles, foods, etc. (not services)",4557,4563
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,BEG,PERSON,"People, including fictional",4778,4781
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,THINE EYNE,PERSON,"People, including fictional",6034,6044
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,CRYSTAL,LOC,"Non-GPE locations, mountain ranges, bodies of water",6046,6053
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,TAURU,LOC,"Non-GPE locations, mountain ranges, bodies of water",6164,6170
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,DISPARAGE,PERSON,"People, including fictional",7552,7561
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,LEST,PERSON,"People, including fictional",7596,7600
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,FAIR HELENA,ORG,"Companies, agencies, institutions, etc.",8170,8181
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,FIERY OES,PERSON,"People, including fictional",8223,8232
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,LO,PERSON,"People, including fictional",8405,8407
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,THREE,CARDINAL,Numerals that do not fall under another type,8480,8485
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,THE HOURS,TIME,Times smaller than a day,8720,8729
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,AMAZÈD,PERSON,"People, including fictional",9601,9607
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,WINK,PERSON,"People, including fictional",10401,10405
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,SWEET,PERSON,"People, including fictional",10777,10782
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,ETHIOPE,LOC,"Non-GPE locations, mountain ranges, bodies of water",11280,11287
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,LOATHÈD,PERSON,"People, including fictional",11634,11641
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,CANKERBLOSSOM,PERSON,"People, including fictional",12510,12523
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,SHREWISHNESS,GPE,"Countries, cities, states",13355,13367
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,GOOD HERMIA,PERSON,"People, including fictional",13553,13564
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,HELENA,GPE,"Countries, cities, states",14981,14987
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,ROBIN,PERSON,"People, including fictional",15834,15839
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,ACHERON,ORG,"Companies, agencies, institutions, etc.",15926,15933
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,AURORA,ORG,"Companies, agencies, institutions, etc.",16919,16925
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,TROOP,ORG,"Companies, agencies, institutions, etc.",16990,16995
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,MORNING,TIME,Times smaller than a day,17315,17322
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,NEPTUNE,LOC,"Non-GPE locations, mountain ranges, bodies of water",17448,17455
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,TURN,ORG,"Companies, agencies, institutions, etc.",17481,17486
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,GOBLIN,PERSON,"People, including fictional",17719,17725
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,THY GREY LIGHT,PERSON,"People, including fictional",18787,18801
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,HO,PERSON,"People, including fictional",18888,18890
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,COWARD,PERSON,"People, including fictional",18900,18906
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,DAY,DATE,Absolute or relative dates or periods,19308,19311
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,SHINE,PERSON,"People, including fictional",19445,19450
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,JACK,PERSON,"People, including fictional",20386,20390
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,JILL,PERSON,"People, including fictional",20402,20406
+A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,LYSANDER DEMETRIUS,ORG,"Companies, agencies, institutions, etc.",0,19
+A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,COBWEB,GPE,"Countries, cities, states",93,99
+A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,FAIRY,ORG,"Companies, agencies, institutions, etc.",129,136
+A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,MONSIEUR COBWEB,PERSON,"People, including fictional",488,503
+A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,CAVALERY COBWEB,PERSON,"People, including fictional",1057,1072
+A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,ENRING,ORG,"Companies, agencies, institutions, etc.",2018,2025
+A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,BARKY,PERSON,"People, including fictional",2030,2035
+A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,DIAN,PERSON,"People, including fictional",3290,3294
+A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,FIVE,CARDINAL,Numerals that do not fall under another type,3720,3724
+A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,MIDNIGHT,TIME,Times smaller than a day,4017,4025
+A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,DANCE IN DUKE,WORK_OF_ART,"Titles of books, songs, etc.",4035,4048
+A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,WEDDED,PERSON,"People, including fictional",4159,4165
+A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,THE MORNING,TIME,Times smaller than a day,4242,4253
+A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,THIS NIGHT,TIME,Times smaller than a day,4456,4466
+A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,HERCULE,GPE,"Countries, cities, states",5011,5019
+A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,CADMUS,PRODUCT,"Objects, vehicles, foods, etc. (not services)",5024,5030
+A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,CRETE,GPE,"Countries, cities, states",5055,5060
+A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,SPARTA,GPE,"Countries, cities, states",5096,5102
+A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,THESSALIAN,NORP,Nationalities or religious or political groups,5469,5479
+A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,THESSALY,NORP,Nationalities or religious or political groups,5647,5655
+A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,NEDAR,ORG,"Companies, agencies, institutions, etc.",5816,5821
+A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,HELENA,PERSON,"People, including fictional",5824,5830
+A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,HORNS,PERSON,"People, including fictional",6163,6168
+A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,MORROW,DATE,Absolute or relative dates or periods,6251,6257
+A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,SAINT VALENTINE,PERSON,"People, including fictional",6268,6283
+A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,GOD,PERSON,"People, including fictional",9083,9086
+A MIDSUMMER NIGHT'S DREAM,4,2,Athens. A Room in Quince's House,FLUTE,WORK_OF_ART,"Titles of books, songs, etc.",14,19
+A MIDSUMMER NIGHT'S DREAM,4,2,Athens. A Room in Quince's House,YEA,PERSON,"People, including fictional",425,428
+A MIDSUMMER NIGHT'S DREAM,4,2,Athens. A Room in Quince's House,GARLICK,PERSON,"People, including fictional",1799,1806
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,LORD,ORG,"Companies, agencies, institutions, etc.",39,44
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,EGYPT,GPE,"Countries, cities, states",542,547
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,"LYSANDER, DEMETRIUS",PERSON,"People, including fictional",1227,1246
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,THREE HOURS,TIME,Times smaller than a day,1556,1567
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,A TORTURING HOUR,TIME,Times smaller than a day,1709,1725
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,THIS EVENING,TIME,Times smaller than a day,1823,1835
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,CENTAUR,ORG,"Companies, agencies, institutions, etc.",2083,2091
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,HERCULES,PERSON,"People, including fictional",2208,2216
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,THRACIAN,NORP,Nationalities or religious or political groups,2265,2273
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,THEBE,GPE,"Countries, cities, states",2350,2356
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,TEN,CARDINAL,Numerals that do not fall under another type,2800,2803
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,TAKES,PERSON,"People, including fictional",4192,4197
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,THROTTLE,ORG,"Companies, agencies, institutions, etc.",4393,4401
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,PROLOGUE,ORG,"Companies, agencies, institutions, etc.",4820,4828
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,MOONSHINE AND LION,ORG,"Companies, agencies, institutions, etc.",5789,5807
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,WALL,PERSON,"People, including fictional",6119,6123
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,PRESENTETH MOONSHINE,PERSON,"People, including fictional",6254,6274
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,NINUS,FAC,"Buildings, airports, highways, bridges, etc.",6355,6360
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,LION AND MOONSHINE,ORG,"Companies, agencies, institutions, etc.",6995,7013
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,CRANNIE,ORG,"Companies, agencies, institutions, etc.",7269,7277
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,JOVE,PERSON,"People, including fictional",8175,8179
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,LIMANDER,ORG,"Companies, agencies, institutions, etc.",8992,9000
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,PROCRUS,PERSON,"People, including fictional",9095,9102
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,WILT,PERSON,"People, including fictional",9276,9280
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,TIDE,PRODUCT,"Objects, vehicles, foods, etc. (not services)",9332,9336
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,THE HORNÈD MOON,PERSON,"People, including fictional",10904,10919
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,MOON,PERSON,"People, including fictional",11595,11599
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,LION DEMETRIUS,ORG,"Companies, agencies, institutions, etc.",12167,12182
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,SWEET MOON,PERSON,"People, including fictional",12267,12277
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,QUAIL,GPE,"Countries, cities, states",12686,12691
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,MOONSHINE,PERSON,"People, including fictional",13572,13581
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,GORE,PERSON,"People, including fictional",14426,14430
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,ADIEU,PERSON,"People, including fictional",14597,14602
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,BERGOMASK,PERSON,"People, including fictional",14831,14840
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,TWELVE,CARDINAL,Numerals that do not fall under another type,15301,15307
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,NIGHTLY,TIME,Times smaller than a day,15563,15570
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,HECATE,ORG,"Companies, agencies, institutions, etc.",16047,16053
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,NATURE,WORK_OF_ART,"Titles of books, songs, etc.",16903,16909
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,TRIP,ORG,"Companies, agencies, institutions, etc.",17253,17257
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,ELSE THE PUCK,WORK_OF_ART,"Titles of books, songs, etc.",17712,17725
