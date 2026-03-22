@@ -113,72 +113,96 @@ def build_training_data_from_cast(characters: list, cast_relationships: list, nl
 
     # ── Source 2: relationship sentences ──────────────────────────
     for rel in cast_relationships:
-        source   = rel["source"]    # e.g. "HERO"
-        rel_type = rel["rel_type"]  # e.g. "DAUGHTER_TO"
-        target   = rel["target"]    # e.g. "Leonato"
-        desc     = rel["description"]  # e.g. "Daughter to Leonato"
+        source = rel["source"]
+        target = rel["target"]
+        desc   = rel["description"]
 
-        # Build a natural sentence:
-        # "HERO is Daughter to Leonato."
-        sentence = f"{source} is {desc}."
-
-        # Find character span (PERSON)
-        source_start = 0
-        source_end   = len(source)
-
-        # Find the relationship word span (REL)
-        # The rel word is everything in desc before the preposition
-        # e.g. desc="Daughter to Leonato" → rel_word="Daughter"
+        # Find the relationship word before the preposition
+        # e.g. desc="Son to Banquo" → rel_word="Son"
         rel_word_match = re.match(
             r'^(?P<role>.+?)\s+(?:to|of|on|with|unto)\s+', desc, re.IGNORECASE
         )
-        rel_word     = rel_word_match.group("role").strip() if rel_word_match else None
-        is_start     = len(f"{source} is ")
-        rel_start    = is_start
-        rel_end      = is_start + len(rel_word) if rel_word else None
+        rel_word = rel_word_match.group("role").strip() if rel_word_match else None
 
-        # Find target span (PERSON)
-        target_start = sentence.lower().find(target.lower())
-        target_end   = target_start + len(target) if target_start != -1 else None
+        if not rel_word:
+            continue
 
-        entities = [(source_start, source_end, "PERSON")]
-        if rel_end:
-            entities.append((rel_start, rel_end, "REL"))
-        if target_end and target_start != -1:
-            entities.append((target_start, target_end, "PERSON"))
+        # Generate multiple sentence variations to give the model
+        # enough REL examples to learn the label
+        variations = [
+            f"{source} is {desc}.",                    # "FLEANCE is Son to Banquo."
+            f"{source} is the {desc}.",                # "FLEANCE is the Son to Banquo."
+            f"{target} has a {rel_word} named {source}.",  # "Banquo has a Son named FLEANCE."
+            f"{source}, {rel_word} of {target}.",      # "FLEANCE, Son of Banquo."
+        ]
 
-        entities = remove_overlaps(entities)
+        for sentence in variations:
+            entities = []
 
-        try:
-            doc     = nlp.make_doc(sentence)
-            example = Example.from_dict(doc, {"entities": entities})
-            examples.append(example)
-        except Exception:
-            skipped += 1
+            # Label source as PERSON
+            s_start = sentence.find(source)
+            if s_start != -1:
+                entities.append((s_start, s_start + len(source), "PERSON"))
+
+            # Label rel_word as REL
+            r_start = sentence.lower().find(rel_word.lower())
+            if r_start != -1:
+                entities.append((r_start, r_start + len(rel_word), "REL"))
+
+            # Label target as PERSON
+            t_start = sentence.lower().find(target.lower())
+            if t_start != -1:
+                entities.append((t_start, t_start + len(target), "PERSON"))
+
+            entities = remove_overlaps(entities)
+            if not entities:
+                continue
+
+            try:
+                doc     = nlp.make_doc(sentence)
+                example = Example.from_dict(doc, {"entities": entities})
+                examples.append(example)
+            except Exception:
+                skipped += 1
 
     return examples, skipped
 
 def fine_tune(nlp, all_examples: list, n_iter: int = 40):
-    print("\nLoading base model: en_core_web_md ...")
+    """
+    Fine-tune the NER model while preserving ALL original spaCy labels.
+
+    Key fixes:
+    1. Use nlp.select_pipes instead of disable_pipes so the original
+       NER label knowledge is preserved during training
+    2. Add custom labels BEFORE building examples so spaCy registers them
+    3. Use SGD with a low learning rate to minimise catastrophic forgetting
+    """
     ner = nlp.get_pipe("ner")
 
-    #add all custom labels including new REL label
+    # Add custom labels — these are NEW on top of existing ones
     for label in ["PERSON", "GPE", "LOCATION", "TITLE", "REL"]:
         ner.add_label(label)
 
+    print(f"\nRegistered NER labels: {sorted(ner.labels)}")
+
+    # Only disable non-NER pipes — do NOT reset the NER weights
     other_pipes = [p for p in nlp.pipe_names if p != "ner"]
 
     print(f"Fine-tuning on {len(all_examples):,} examples for {n_iter} iterations ...")
+
     with nlp.disable_pipes(*other_pipes):
+        # resume_training keeps existing weights — critical for preserving labels
         optimizer            = nlp.resume_training()
-        optimizer.learn_rate = 0.001
+        # Very low learning rate to minimise forgetting of original labels
+        optimizer.learn_rate = 0.0005
 
         for i in range(n_iter):
             random.shuffle(all_examples)
             losses  = {}
             batches = minibatch(all_examples, size=compounding(4.0, 32.0, 1.001))
             for batch in batches:
-                nlp.update(batch, drop=0.35, losses=losses)
+                # drop=0.2 (lower than before) — preserves more existing knowledge
+                nlp.update(batch, drop=0.2, losses=losses)
             if (i + 1) % 10 == 0:
                 print(f"  Iteration {i+1:3d}  NER loss: {losses.get('ner', 0):.4f}")
 
@@ -193,20 +217,30 @@ ENTITY_FIELDS = [
 def extract_and_save(nlp_ft, scenes: list, play_title: str, stem: str) -> list:
     records        = []
     entity_summary = defaultdict(set)
+    seen           = set()  # deduplication: (entity_text, label) per play
 
     for act_id, scene_id, location, text in scenes:
         doc = nlp_ft(text)
         for ent in doc.ents:
+            raw_text       = ent.text.strip()
+            # Uppercase to match normalisation done in default NER
+            normalised     = raw_text.upper()
+            dedup_key      = (normalised, ent.label_)
+
+            if dedup_key in seen:
+                continue
+            seen.add(dedup_key)
+
             records.append({
                 "play":              play_title,
                 "act":               act_id,
                 "scene":             scene_id,
                 "location":          location,
-                "entity_text":       ent.text.strip(),
+                "entity_text":       normalised,
                 "label":             ent.label_,
                 "label_description": spacy.explain(ent.label_) or ent.label_,
             })
-            entity_summary[ent.label_].add(ent.text.strip())
+            entity_summary[ent.label_].add(normalised)
 
     path = Globals.OUTPUT_DIR / f"02_{stem}_finetuned_ner.csv"
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -215,11 +249,66 @@ def extract_and_save(nlp_ft, scenes: list, play_title: str, stem: str) -> list:
         writer.writeheader()
         writer.writerows(records)
 
-    print(f"  [{play_title}]  {len(records):,} entities  → {path.name}")
+    print(f"  [{play_title}]  {len(records):,} unique entities  → {path.name}")
     for label, ents in sorted(entity_summary.items()):
         print(f"    {label:12s}: {len(ents)} unique")
 
     return records
+
+def balance_examples(all_examples: list) -> list:
+    """
+    Balance training data so no label dominates.
+
+    Strategy:
+    1. Count how many examples contain each label
+    2. Find the median count across all labels
+    3. Upsample minority labels (by repeating their examples) up to the median
+    4. Downsample majority labels (by random sampling) down to the median
+
+    This prevents PERSON (most common) from drowning out REL, TITLE, LOCATION.
+    """
+    from collections import defaultdict
+
+    # Group examples by which labels they contain
+    label_to_examples = defaultdict(list)
+    for ex in all_examples:
+        labels_in_ex = {ent[2] for ent in ex.reference.ents}
+        for label in labels_in_ex:
+            label_to_examples[label].append(ex)
+
+    print("\n  Label distribution before balancing:")
+    for label, exs in sorted(label_to_examples.items()):
+        print(f"    [{label:12s}] {len(exs):,} examples")
+
+    # Find target count — use the median to avoid extreme values
+    counts = sorted(len(v) for v in label_to_examples.values())
+    median = counts[len(counts) // 2]
+    # Set a minimum floor so rare labels get enough examples
+    target = max(median, 200)
+
+    print(f"\n  Target examples per label: {target}")
+
+    balanced = []
+    seen_ids = set()
+
+    for label, exs in label_to_examples.items():
+        if len(exs) >= target:
+            # Downsample — random sample down to target
+            sampled = random.sample(exs, target)
+        else:
+            # Upsample — repeat examples to reach target
+            repeats = (target // len(exs)) + 1
+            sampled = (exs * repeats)[:target]
+
+        for ex in sampled:
+            # Use id() to avoid adding the exact same object twice
+            if id(ex) not in seen_ids:
+                balanced.append(ex)
+                seen_ids.add(id(ex))
+
+    print(f"\n  Total after balancing: {len(balanced):,} examples")
+    return balanced
+
 
 def run(nlp_base, play_files: list, cast_relationships: list, n_iter: int = 40):
     all_examples = []
@@ -256,10 +345,14 @@ def run(nlp_base, play_files: list, cast_relationships: list, n_iter: int = 40):
         all_examples.extend(scene_examples)
         all_examples.extend(cast_examples)
 
-    print(f"\nTotal training examples: {len(all_examples):,}")
+    print(f"\nTotal training examples (before balancing): {len(all_examples):,}")
 
-    # Fine-tune
-    nlp_ft = fine_tune(nlp_base, all_examples, n_iter=n_iter)
+    # Balance the data so minority labels (REL, TITLE, LOCATION)
+    # are not overwhelmed by majority labels (PERSON)
+    balanced_examples = balance_examples(all_examples)
+
+    # Fine-tune on balanced data
+    nlp_ft = fine_tune(nlp_base, balanced_examples, n_iter=n_iter)
 
     # Save model
     Globals.MODEL_OUT.mkdir(parents=True, exist_ok=True)
