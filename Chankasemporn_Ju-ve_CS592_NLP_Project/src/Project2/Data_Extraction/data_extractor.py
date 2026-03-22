@@ -2,11 +2,6 @@
 File Name:    data_extractor.py
 Author(s):    Ju-ve Chankasemporn
 Copyright:    (c) 2025 DigiPen Institute of Technology. All rights reserved.
-
-Shared utilities for Assignment 2:
-  - Repo root discovery
-  - XML cleaning and parsing
-  - Scene and cast extraction (used by NER, fine-tuning, coreference)
 """
 
 import spacy

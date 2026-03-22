@@ -21,8 +21,8 @@ ALL_PRONOUNS     = MALE_PRONOUNS | FEMALE_PRONOUNS | NEUTRAL_PRONOUNS
 
 SPEAKER_RE = re.compile(r'([A-Z][A-Z\s]+)\.\s+')
 
+#split scene text into list of {speaker, text} dicts.
 def split_into_utterances(scene_text: str) -> list:
-    """Split scene text into list of {speaker, text} dicts."""
     parts      = SPEAKER_RE.split(scene_text)
     utterances = []
     i = 1
@@ -34,13 +34,9 @@ def split_into_utterances(scene_text: str) -> list:
         i += 2
     return utterances
 
-
+#sliding-window coreference resolver.
+#gender maps are loaded per-play from play_configs.py.
 class CoreferenceResolver:
-    """
-    Sliding-window coreference resolver.
-    Gender maps are loaded per-play from play_configs.py.
-    """
-
     def __init__(self, nlp, male_chars: set, female_chars: set,
                  window_size: int = WINDOW_SIZE):
         self.nlp          = nlp
@@ -161,9 +157,6 @@ def save_csv(records: list, path: Path):
         writer.writerows(records)
     print(f"  → Saved {len(records):,} records  :  {path.name}")
 
-# ─────────────────────────────────────────────
-# RUN  (called from Project2Runner)
-# ─────────────────────────────────────────────
 
 def run(nlp, play_files: list) -> list:
     all_coref_records = []

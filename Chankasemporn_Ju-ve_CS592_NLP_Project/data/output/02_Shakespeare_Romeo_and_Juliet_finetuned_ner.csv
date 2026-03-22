@@ -3,47 +3,44 @@ THE TRAGEDY OF ROMEO AND JULIET,0,0,Prologue,CHORUS,PERSON,"People, including fi
 THE TRAGEDY OF ROMEO AND JULIET,0,0,Prologue,VERONA,GPE,"Countries, cities, states"
 THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,SAMPSON,PERSON,"People, including fictional"
 THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,GREGORY,PERSON,"People, including fictional"
-THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,MONTAGUE,PERSON,"People, including fictional"
+THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,MONTAGUE,FAMILY,FAMILY
 THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,ABRAM,PERSON,"People, including fictional"
 THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,BALTHASAR,PERSON,"People, including fictional"
 THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,BENVOLIO,PERSON,"People, including fictional"
 THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,TYBALT,PERSON,"People, including fictional"
-THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,CAPULET,PERSON,"People, including fictional"
+THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,CAPULET,FAMILY,FAMILY
 THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,LADY CAPULET,PERSON,"People, including fictional"
 THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,LADY MONTAGUE,PERSON,"People, including fictional"
 THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,SERVANTS,PERSON,"People, including fictional"
 THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,ROMEO,PERSON,"People, including fictional"
 THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,THE WOOD,LOCATION,LOCATION
+THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,AURORA,GPE,"Countries, cities, states"
 THE TRAGEDY OF ROMEO AND JULIET,1,2,A Street.,PARIS,PERSON,"People, including fictional"
-THE TRAGEDY OF ROMEO AND JULIET,1,2,A Street.,SERVANT,REL,REL
-THE TRAGEDY OF ROMEO AND JULIET,1,2,A Street.,WIDOW,REL,REL
 THE TRAGEDY OF ROMEO AND JULIET,1,2,A Street.,MERCUTIO,PERSON,"People, including fictional"
 THE TRAGEDY OF ROMEO AND JULIET,1,3,Room in Capulet's House.,NURSE,TITLE,TITLE
 THE TRAGEDY OF ROMEO AND JULIET,1,3,Room in Capulet's House.,JULIET,PERSON,"People, including fictional"
 THE TRAGEDY OF ROMEO AND JULIET,1,3,Room in Capulet's House.,MANTUA,GPE,"Countries, cities, states"
+THE TRAGEDY OF ROMEO AND JULIET,1,4,A Street.,MASKERS,PERSON,"People, including fictional"
 THE TRAGEDY OF ROMEO AND JULIET,1,4,A Street.,CONSTABLE,TITLE,TITLE
-THE TRAGEDY OF ROMEO AND JULIET,1,4,A Street.,ATOMIES,TITLE,TITLE
-THE TRAGEDY OF ROMEO AND JULIET,1,5,A Hall in Capulet's House.,SUSAN GRINDSTONE,GPE,"Countries, cities, states"
-THE TRAGEDY OF ROMEO AND JULIET,1,5,A Hall in Capulet's House.,TIBERIO,GPE,"Countries, cities, states"
-THE TRAGEDY OF ROMEO AND JULIET,2,2,Capulet's Garden.,TH'EXCHANGE,REL,REL
+THE TRAGEDY OF ROMEO AND JULIET,1,4,A Street.,SLUTTISH,GPE,"Countries, cities, states"
+THE TRAGEDY OF ROMEO AND JULIET,1,5,A Hall in Capulet's House.,SUSAN GRINDSTONE,PERSON,PERSON
+THE TRAGEDY OF ROMEO AND JULIET,1,5,A Hall in Capulet's House.,HEIR,REL,REL
+THE TRAGEDY OF ROMEO AND JULIET,1,5,A Hall in Capulet's House.,TIBERIO,PERSON,PERSON
 THE TRAGEDY OF ROMEO AND JULIET,2,3,Friar Lawrence's Cell.,FRIAR LAWRENCE,PERSON,"People, including fictional"
+THE TRAGEDY OF ROMEO AND JULIET,2,3,Friar Lawrence's Cell.,TITAN,GPE,"Countries, cities, states"
 THE TRAGEDY OF ROMEO AND JULIET,2,4,A Street.,PETER,PERSON,"People, including fictional"
-THE TRAGEDY OF ROMEO AND JULIET,2,5,Capulet's Garden.,UNWIELDY,GPE,"Countries, cities, states"
+THE TRAGEDY OF ROMEO AND JULIET,2,4,A Street.,FRIAR,TITLE,TITLE
 THE TRAGEDY OF ROMEO AND JULIET,2,5,Capulet's Garden.,THE GATE,LOCATION,LOCATION
-THE TRAGEDY OF ROMEO AND JULIET,2,6,Friar Lawrence's Cell.,BRAGS OF HIS,TITLE,TITLE
 THE TRAGEDY OF ROMEO AND JULIET,3,1,A public Place.,ITALY,GPE,"Countries, cities, states"
-THE TRAGEDY OF ROMEO AND JULIET,3,1,A public Place.,TO FIELD,LOCATION,LOCATION
+THE TRAGEDY OF ROMEO AND JULIET,3,1,A public Place.,FIELD,GPE,"Countries, cities, states"
 THE TRAGEDY OF ROMEO AND JULIET,3,1,A public Place.,KING OF CATS,TITLE,TITLE
 THE TRAGEDY OF ROMEO AND JULIET,3,1,A public Place.,KINSMAN,REL,REL
-THE TRAGEDY OF ROMEO AND JULIET,3,3,Friar Lawrence's cell.,FRIAR,TITLE,TITLE
-THE TRAGEDY OF ROMEO AND JULIET,3,3,Friar Lawrence's cell.,KNOCK!—WHO,GPE,"Countries, cities, states"
-THE TRAGEDY OF ROMEO AND JULIET,3,5,"An open Gallery to Juliet's Chamber, overlooking the Garden.",NEED'ST,TITLE,TITLE
-THE TRAGEDY OF ROMEO AND JULIET,3,5,"An open Gallery to Juliet's Chamber, overlooking the Garden.",SAINT PETER'S CHURCH,GPE,"Countries, cities, states"
-THE TRAGEDY OF ROMEO AND JULIET,3,5,"An open Gallery to Juliet's Chamber, overlooking the Garden.",GRAZE,GPE,"Countries, cities, states"
-THE TRAGEDY OF ROMEO AND JULIET,4,1,Friar Lawrence's Cell.,WRONG'ST,TITLE,TITLE
+THE TRAGEDY OF ROMEO AND JULIET,3,5,"An open Gallery to Juliet's Chamber, overlooking the Garden.",WEEP'ST,GPE,"Countries, cities, states"
+THE TRAGEDY OF ROMEO AND JULIET,4,1,Friar Lawrence's Cell.,HAPPILY MET,REL,REL
+THE TRAGEDY OF ROMEO AND JULIET,4,1,Friar Lawrence's Cell.,WRONG'ST,GPE,"Countries, cities, states"
+THE TRAGEDY OF ROMEO AND JULIET,4,2,Hall in Capulet's House.,THE COUNTY,LOCATION,LOCATION
 THE TRAGEDY OF ROMEO AND JULIET,4,5,Juliet's Chamber; Juliet on the bed.,THE FIELD,LOCATION,LOCATION
-THE TRAGEDY OF ROMEO AND JULIET,5,1,Mantua. A Street.,CAPEL,GPE,"Countries, cities, states"
+THE TRAGEDY OF ROMEO AND JULIET,4,5,Juliet's Chamber; Juliet on the bed.,THE CUSTOM,LOCATION,LOCATION
 THE TRAGEDY OF ROMEO AND JULIET,5,2,Friar Lawrence's Cell.,FRIAR JOHN,PERSON,"People, including fictional"
-THE TRAGEDY OF ROMEO AND JULIET,5,3,A churchyard; in it a Monument belonging to the Capulets.,WHATE'ER,GPE,"Countries, cities, states"
+THE TRAGEDY OF ROMEO AND JULIET,5,3,A churchyard; in it a Monument belonging to the Capulets.,NOBLE,REL,REL
 THE TRAGEDY OF ROMEO AND JULIET,5,3,A churchyard; in it a Monument belonging to the Capulets.,THIS PALACE,LOCATION,LOCATION
-THE TRAGEDY OF ROMEO AND JULIET,5,3,A churchyard; in it a Monument belonging to the Capulets.,THE CHURCHYARD,LOCATION,LOCATION

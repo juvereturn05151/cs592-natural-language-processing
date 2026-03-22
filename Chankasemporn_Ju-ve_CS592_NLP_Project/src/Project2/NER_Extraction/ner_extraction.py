@@ -13,10 +13,6 @@ from collections import defaultdict
 import src.Project2.Project2Globals as Globals
 import src.Project2.Data_Extraction.data_extractor as DataExtractor
 
-# ─────────────────────────────────────────────
-# ENTITY NORMALISATION
-# ─────────────────────────────────────────────
-
 # Archaic Shakespeare suffixes that indicate a verb/adjective, not an entity
 # e.g. "carv'd", "Dismay'd", "hors'd", "return'd", "might'st"
 ARCHAIC_SUFFIX_RE = re.compile(
@@ -30,13 +26,6 @@ PERSON_LABELS = {"PERSON"}
 LEMMA_LABELS = {"GPE", "ORG", "LOC", "NORP"}
 
 def is_noise_entity(text: str, label: str) -> bool:
-    """
-    Returns True if the entity is likely noise and should be filtered out.
-    Catches:
-      - Archaic verb forms picked up as entities (carv'd, Dismay'd)
-      - Stage directions picked up as entities (Exit Captain, Alarum)
-      - Very short tokens that are unlikely to be real entities
-    """
     # Filter archaic inflected verb forms
     if ARCHAIC_SUFFIX_RE.search(text):
         return True
@@ -60,13 +49,6 @@ def is_noise_entity(text: str, label: str) -> bool:
     return False
 
 def normalise_entity(text: str, label: str, nlp) -> str:
-    """
-    Normalise entity text:
-      - All labels → uppercase to eliminate casing duplicates
-        (Duncan/DUNCAN, one/One/ONE, first/First/FIRST)
-      - GPE/ORG/LOC → also lemmatize via spaCy to get root form
-      - Strip possessives e.g. "Hecate's" → "Hecate"
-    """
     # Strip possessives first e.g. "Pale Hecate's" → "Pale Hecate"
     text = re.sub(r"'s$", "", text).strip()
 
@@ -80,11 +62,6 @@ def normalise_entity(text: str, label: str, nlp) -> str:
     return text.upper()
 
 def run_default_ner(scenes: list, nlp, play_title: str) -> tuple:
-    """
-    Run spaCy NER on all scenes.
-    Returns deduplicated entity records — one row per unique
-    (entity_text, spacy_label) pair per play, not one row per occurrence.
-    """
     # Use a set to track seen (normalised_text, label) pairs — prevents duplicates
     seen        = set()
     all_entities   = []

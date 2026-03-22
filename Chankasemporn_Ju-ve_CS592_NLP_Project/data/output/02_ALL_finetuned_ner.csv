@@ -1,11 +1,13 @@
 play,act,scene,location,entity_text,label,label_description
+MACBETH,1,1,An open Place.,SECOND,TITLE,TITLE
 MACBETH,1,1,An open Place.,THE HEATH,LOCATION,LOCATION
-MACBETH,1,1,An open Place.,THIRD,GPE,"Countries, cities, states"
 MACBETH,1,1,An open Place.,MACBETH,PERSON,"People, including fictional"
-MACBETH,1,2,A Camp near Forres.,DUNCAN,PERSON,"People, including fictional"
+MACBETH,1,1,An open Place.,HOVER,GPE,"Countries, cities, states"
 MACBETH,1,2,A Camp near Forres.,MALCOLM,PERSON,"People, including fictional"
 MACBETH,1,2,A Camp near Forres.,DONALBAIN,PERSON,"People, including fictional"
 MACBETH,1,2,A Camp near Forres.,LENNOX,PERSON,"People, including fictional"
+MACBETH,1,2,A Camp near Forres.,DUNCAN,PERSON,"People, including fictional"
+MACBETH,1,2,A Camp near Forres.,ISLES OF KERNS,TITLE,TITLE
 MACBETH,1,2,A Camp near Forres.,KING OF SCOTLAND,TITLE,TITLE
 MACBETH,1,2,A Camp near Forres.,BANQUO,PERSON,"People, including fictional"
 MACBETH,1,2,A Camp near Forres.,ROSS,PERSON,"People, including fictional"
@@ -16,54 +18,47 @@ MACBETH,1,2,A Camp near Forres.,NORWAY,GPE,"Countries, cities, states"
 MACBETH,1,2,A Camp near Forres.,THANE OF CAWDOR,TITLE,TITLE
 MACBETH,1,2,A Camp near Forres.,NORWAYS,GPE,"Countries, cities, states"
 MACBETH,1,2,A Camp near Forres.,SAINT COLME'S INCH,GPE,"Countries, cities, states"
-MACBETH,1,3,A heath.,AROINT,GPE,"Countries, cities, states"
 MACBETH,1,3,A heath.,ALEPPO,GPE,"Countries, cities, states"
 MACBETH,1,3,A heath.,THANE OF GLAMIS,TITLE,TITLE
-MACBETH,1,3,A heath.,FIRST,TITLE,TITLE
-MACBETH,1,3,A heath.,THANE LIVES YET,TITLE,TITLE
+MACBETH,1,3,A heath.,THANE,GPE,"Countries, cities, states"
 MACBETH,1,4,Forres. A Room in the Palace.,INVERNESS,GPE,"Countries, cities, states"
-MACBETH,1,4,Forres. A Room in the Palace.,A PEERLESS KINSMAN,REL,REL
 MACBETH,1,5,Inverness. A Room in Macbeth's Castle.,LADY MACBETH,PERSON,"People, including fictional"
-MACBETH,1,6,The same. Before the Castle.,SERVANTS,REL,REL
 MACBETH,1,6,The same. Before the Castle.,MACDUFF,PERSON,"People, including fictional"
 MACBETH,1,6,The same. Before the Castle.,THIS CASTLE,LOCATION,LOCATION
 MACBETH,2,1,Inverness. Court within the Castle.,FLEANCE,PERSON,"People, including fictional"
-MACBETH,2,1,Inverness. Court within the Castle.,SERVANT,REL,REL
-MACBETH,2,2,The same.,HARK!—WHO,TITLE,TITLE
+MACBETH,2,1,Inverness. Court within the Castle.,HECATE,PERSON,"People, including fictional"
+MACBETH,2,2,The same.,HARK!—WHO,GPE,"Countries, cities, states"
 MACBETH,2,3,The same.,THE GATE,LOCATION,LOCATION
+MACBETH,2,3,The same.,MY YOUNG REMEMBRANCE,REL,REL
 MACBETH,2,3,The same.,ENGLAND,GPE,"Countries, cities, states"
-MACBETH,2,4,The same. Without the Castle.,MAN,TITLE,TITLE
+MACBETH,3,1,Forres. A Room in the Palace.,QUEEN,REL,REL
 MACBETH,3,1,Forres. A Room in the Palace.,THE PALACE,LOCATION,LOCATION
-MACBETH,3,1,Forres. A Room in the Palace.,SERVANT,TITLE,TITLE
-MACBETH,3,1,Forres. A Room in the Palace.,SHOUGHS,GPE,"Countries, cities, states"
-MACBETH,3,1,Forres. A Room in the Palace.,MURDERER,TITLE,TITLE
+MACBETH,3,1,Forres. A Room in the Palace.,BANQUO STICK,GPE,"Countries, cities, states"
+MACBETH,3,2,The same. Another Room in the Palace.,UNSAFE,GPE,"Countries, cities, states"
 MACBETH,3,2,The same. Another Room in the Palace.,ROOKY WOOD,LOCATION,LOCATION
-MACBETH,3,5,The heath.,HECATE,PERSON,"People, including fictional"
-MACBETH,3,6,Forres. A Room in the Palace.,SON,REL,REL
 MACBETH,3,6,Forres. A Room in the Palace.,NORTHUMBERLAND,GPE,"Countries, cities, states"
 MACBETH,3,6,Forres. A Room in the Palace.,SIWARD,PERSON,"People, including fictional"
 MACBETH,3,6,Forres. A Room in the Palace.,THE COURT,LOCATION,LOCATION
-MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",THANE OF FIFE.—DISMISS,TITLE,TITLE
-MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",WHATE'ER,GPE,"Countries, cities, states"
-MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",BIRNAM,GPE,"Countries, cities, states"
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",FILLET,REL,REL
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",THANE OF FIFE,TITLE,TITLE
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",BIRNAM WOOD,GPE,"Countries, cities, states"
 MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",DUNSINANE,GPE,"Countries, cities, states"
-MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",SIGHT!—NOW,TITLE,TITLE
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",BIRNAM,GPE,"Countries, cities, states"
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",GONE?—LET,GPE,"Countries, cities, states"
 MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",THE CASTLE,LOCATION,LOCATION
 MACBETH,4,2,Fife. A Room in Macduff's Castle.,LADY MACDUFF,PERSON,"People, including fictional"
 MACBETH,4,3,England. Before the King's Palace.,SCOTLAND,GPE,"Countries, cities, states"
-MACBETH,5,1,Dunsinane. A Room in the Castle.,DOCTOR,REL,REL
-MACBETH,5,1,Dunsinane. A Room in the Castle.,WAITING-GENTLEWOMAN,REL,REL
+MACBETH,4,3,England. Before the King's Palace.,LIVE.—O,GPE,"Countries, cities, states"
+MACBETH,5,1,Dunsinane. A Room in the Castle.,DOCTOR,TITLE,TITLE
+MACBETH,5,1,Dunsinane. A Room in the Castle.,WAITING-GENTLEWOMAN.,REL,REL
 MACBETH,5,1,Dunsinane. A Room in the Castle.,THE FIELD,LOCATION,LOCATION
-MACBETH,5,1,Dunsinane. A Room in the Castle.,THANE OF FIFE,TITLE,TITLE
 MACBETH,5,2,The Country near Dunsinane.,MENTEITH,PERSON,"People, including fictional"
 MACBETH,5,2,The Country near Dunsinane.,CAITHNESS,PERSON,"People, including fictional"
+MACBETH,5,2,The Country near Dunsinane.,UNROUGH,GPE,"Countries, cities, states"
 MACBETH,5,3,Dunsinane. A Room in the Castle.,SEYTON,PERSON,"People, including fictional"
-MACBETH,5,3,Dunsinane. A Room in the Castle.,RAZE,GPE,"Countries, cities, states"
+MACBETH,5,5,Dunsinane. Within the castle.,OUR CASTLE,LOCATION,LOCATION
 MACBETH,5,5,Dunsinane. Within the castle.,A WOOD,LOCATION,LOCATION
-MACBETH,5,5,Dunsinane. Within the castle.,DUNSINANE.—ARM,GPE,"Countries, cities, states"
 MACBETH,5,7,The same. Another part of the Plain.,YOUNG SIWARD,PERSON,"People, including fictional"
-MACBETH,5,7,The same. Another part of the Plain.,LORD;—THE CASTLE,LOCATION,LOCATION
-MACBETH,5,8,The same. Another part of the field.,KNOLL'D,REL,REL
 A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,THESEUS,PERSON,"People, including fictional"
 A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,HIPPOLYTA,PERSON,"People, including fictional"
 A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,PHILOSTRATE,PERSON,"People, including fictional"
@@ -71,44 +66,50 @@ A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,EGEUS,PERS
 A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,HERMIA,PERSON,"People, including fictional"
 A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,LYSANDER,PERSON,"People, including fictional"
 A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,DEMETRIUS,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,KNACKS,TITLE,TITLE
 A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,ATHENS,GPE,"Countries, cities, states"
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,LYSANDER,REL,REL
 A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,HELENA,PERSON,"People, including fictional"
 A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,THE WOOD,LOCATION,LOCATION
 A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,QUINCE,PERSON,"People, including fictional"
+A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,SNUG,PERSON,"People, including fictional"
 A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,BOTTOM,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,PYRAMUS,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,STARVELING,PERSON,"People, including fictional"
+A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,FLUTE,PERSON,"People, including fictional"
 A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,SNOUT,PERSON,"People, including fictional"
+A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,STARVELING,PERSON,"People, including fictional"
+A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,PYRAMUS,PERSON,"People, including fictional"
+A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,PHIBBUS,GPE,"Countries, cities, states"
 A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,THE PALACE,LOCATION,LOCATION
 A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,PUCK,PERSON,"People, including fictional"
 A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,OBERON,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,KNIGHT,REL,REL
 A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,TITANIA,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,PHILLIDA,GPE,"Countries, cities, states"
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,PHILLIDA,PERSON,PERSON
 A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,INDIA,GPE,"Countries, cities, states"
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,PERIGENIA,GPE,"Countries, cities, states"
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,HIEMS,GPE,"Countries, cities, states"
 A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,THIS WOOD,LOCATION,LOCATION
 A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,THE FIELD,LOCATION,LOCATION
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,THE FOREST,LOCATION,LOCATION
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,STARVELING,TITLE,TITLE
+A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,QUEEN: CHORUS,TITLE,TITLE
+A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,QUEEN,REL,REL
 A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,PEASEBLOSSOM,PERSON,"People, including fictional"
 A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,COBWEB,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,MOTH,TITLE,TITLE
+A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,MOTH,PERSON,PERSON
 A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,MUSTARDSEED,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,MOTH,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,CAPTAIN,REL,REL
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,IN LOVE,REL,REL
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,FLOWER,REL,REL
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,CAPTAIN,TITLE,TITLE
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,QUICK,GPE,"Countries, cities, states"
 A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,ETHIOPE,GPE,"Countries, cities, states"
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,IN FIELD,LOCATION,LOCATION
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,DAMNÈD,GPE,"Countries, cities, states"
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,FIELD,GPE,"Countries, cities, states"
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,FAINTNESS,GPE,"Countries, cities, states"
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,CONSTRAINETH,TITLE,TITLE
+A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,THE ELM,LOCATION,LOCATION
 A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,A WOOD,LOCATION,LOCATION
 A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,CRETE,GPE,"Countries, cities, states"
 A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,SPARTA,GPE,"Countries, cities, states"
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,THESSALY,GPE,"Countries, cities, states"
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,THE TEMPLE,LOCATION,LOCATION
+A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,;,REL,REL
 A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,EGYPT,GPE,"Countries, cities, states"
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,THEBES,GPE,"Countries, cities, states"
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,QUAIL,GPE,"Countries, cities, states"
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,DANCE,REL,REL
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,THROTTLE,GPE,"Countries, cities, states"
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,NINUS,GPE,"Countries, cities, states"
 A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,THIS PALACE,LOCATION,LOCATION
 MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,LEONATO,PERSON,"People, including fictional"
 MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,HERO,PERSON,"People, including fictional"
@@ -121,83 +122,79 @@ MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,BENEDICK,PERSON,"People, incl
 MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,PADUA,GPE,"Countries, cities, states"
 MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,DON JOHN,PERSON,"People, including fictional"
 MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,BALTHASAR,PERSON,"People, including fictional"
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,DON,GPE,"Countries, cities, states"
 MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,VENICE,GPE,"Countries, cities, states"
 MUCH ADO ABOUT NOTHING,1,2,A room in Leonato's house.,ANTONIO,PERSON,"People, including fictional"
 MUCH ADO ABOUT NOTHING,1,3,Another room in Leonato's house.,CONRADE,PERSON,"People, including fictional"
 MUCH ADO ABOUT NOTHING,1,3,Another room in Leonato's house.,BORACHIO,PERSON,"People, including fictional"
+MUCH ADO ABOUT NOTHING,1,3,Another room in Leonato's house.,HEIR,REL,REL
 MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,THE GATE,LOCATION,LOCATION
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,SCOTCH,GPE,"Countries, cities, states"
 MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,THE CINQUEPACE,LOCATION,LOCATION
 MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,MARGARET,PERSON,"People, including fictional"
 MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,URSULA,PERSON,"People, including fictional"
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,JOVE,REL,REL
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,PRINCE,REL,REL
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,WOOSS,TITLE,TITLE
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,CHAM,TITLE,TITLE
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,A MERRY HOUR,REL,REL
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,CLAUDIO,GPE,"Countries, cities, states"
-MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,DAUGHTER,REL,REL
-MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,"CLAUDIO,—WHOSE",GPE,"Countries, cities, states"
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,JOVE,PERSON,PERSON
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,PRINCE,TITLE,TITLE
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,WHITHER,REL,REL
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,ASIA,GPE,"Countries, cities, states"
+MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,THE ORCHARD,LOCATION,LOCATION
+MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,URSALA,GPE,"Countries, cities, states"
 MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,THE WOODBINE,LOCATION,LOCATION
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,THE BOWER,LOCATION,LOCATION
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,THE ROCK,LOCATION,LOCATION
 MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,ITALY,GPE,"Countries, cities, states"
 MUCH ADO ABOUT NOTHING,3,3,A Street.,DOGBERRY,PERSON,"People, including fictional"
 MUCH ADO ABOUT NOTHING,3,3,A Street.,VERGES,PERSON,"People, including fictional"
 MUCH ADO ABOUT NOTHING,3,3,A Street.,CONSTABLE,TITLE,TITLE
+MUCH ADO ABOUT NOTHING,3,3,A Street.,SEACOAL,GPE,"Countries, cities, states"
+MUCH ADO ABOUT NOTHING,3,3,A Street.,VERGES,GPE,"Countries, cities, states"
 MUCH ADO ABOUT NOTHING,3,3,A Street.,NURSE,TITLE,TITLE
-MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,MILAN,GPE,"Countries, cities, states"
+MUCH ADO ABOUT NOTHING,3,3,A Street.,PHARAOH,GPE,"Countries, cities, states"
 MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,FRIAR FRANCIS,PERSON,"People, including fictional"
 MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,FRIAR,TITLE,TITLE
-MUCH ADO ABOUT NOTHING,4,2,A Prison.,CONRADE,REL,REL
+MUCH ADO ABOUT NOTHING,4,2,A Prison.,BORACHIO,GPE,"Countries, cities, states"
 MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,THE GARDEN,LOCATION,LOCATION
-MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,QUONDAM,GPE,"Countries, cities, states"
-MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,AUTHOR,REL,REL
+MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,HIR'D,GPE,"Countries, cities, states"
+MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,ETHIOPE,GPE,"Countries, cities, states"
 THE TRAGEDY OF ROMEO AND JULIET,0,0,Prologue,CHORUS,PERSON,"People, including fictional"
 THE TRAGEDY OF ROMEO AND JULIET,0,0,Prologue,VERONA,GPE,"Countries, cities, states"
 THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,SAMPSON,PERSON,"People, including fictional"
 THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,GREGORY,PERSON,"People, including fictional"
-THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,MONTAGUE,PERSON,"People, including fictional"
+THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,MONTAGUE,FAMILY,FAMILY
 THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,ABRAM,PERSON,"People, including fictional"
 THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,BALTHASAR,PERSON,"People, including fictional"
 THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,BENVOLIO,PERSON,"People, including fictional"
 THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,TYBALT,PERSON,"People, including fictional"
-THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,CAPULET,PERSON,"People, including fictional"
+THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,CAPULET,FAMILY,FAMILY
 THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,LADY CAPULET,PERSON,"People, including fictional"
 THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,LADY MONTAGUE,PERSON,"People, including fictional"
 THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,SERVANTS,PERSON,"People, including fictional"
 THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,ROMEO,PERSON,"People, including fictional"
 THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,THE WOOD,LOCATION,LOCATION
+THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,AURORA,GPE,"Countries, cities, states"
 THE TRAGEDY OF ROMEO AND JULIET,1,2,A Street.,PARIS,PERSON,"People, including fictional"
-THE TRAGEDY OF ROMEO AND JULIET,1,2,A Street.,SERVANT,REL,REL
-THE TRAGEDY OF ROMEO AND JULIET,1,2,A Street.,WIDOW,REL,REL
 THE TRAGEDY OF ROMEO AND JULIET,1,2,A Street.,MERCUTIO,PERSON,"People, including fictional"
 THE TRAGEDY OF ROMEO AND JULIET,1,3,Room in Capulet's House.,NURSE,TITLE,TITLE
 THE TRAGEDY OF ROMEO AND JULIET,1,3,Room in Capulet's House.,JULIET,PERSON,"People, including fictional"
 THE TRAGEDY OF ROMEO AND JULIET,1,3,Room in Capulet's House.,MANTUA,GPE,"Countries, cities, states"
+THE TRAGEDY OF ROMEO AND JULIET,1,4,A Street.,MASKERS,PERSON,"People, including fictional"
 THE TRAGEDY OF ROMEO AND JULIET,1,4,A Street.,CONSTABLE,TITLE,TITLE
-THE TRAGEDY OF ROMEO AND JULIET,1,4,A Street.,ATOMIES,TITLE,TITLE
-THE TRAGEDY OF ROMEO AND JULIET,1,5,A Hall in Capulet's House.,SUSAN GRINDSTONE,GPE,"Countries, cities, states"
-THE TRAGEDY OF ROMEO AND JULIET,1,5,A Hall in Capulet's House.,TIBERIO,GPE,"Countries, cities, states"
-THE TRAGEDY OF ROMEO AND JULIET,2,2,Capulet's Garden.,TH'EXCHANGE,REL,REL
+THE TRAGEDY OF ROMEO AND JULIET,1,4,A Street.,SLUTTISH,GPE,"Countries, cities, states"
+THE TRAGEDY OF ROMEO AND JULIET,1,5,A Hall in Capulet's House.,SUSAN GRINDSTONE,PERSON,PERSON
+THE TRAGEDY OF ROMEO AND JULIET,1,5,A Hall in Capulet's House.,HEIR,REL,REL
+THE TRAGEDY OF ROMEO AND JULIET,1,5,A Hall in Capulet's House.,TIBERIO,PERSON,PERSON
 THE TRAGEDY OF ROMEO AND JULIET,2,3,Friar Lawrence's Cell.,FRIAR LAWRENCE,PERSON,"People, including fictional"
+THE TRAGEDY OF ROMEO AND JULIET,2,3,Friar Lawrence's Cell.,TITAN,GPE,"Countries, cities, states"
 THE TRAGEDY OF ROMEO AND JULIET,2,4,A Street.,PETER,PERSON,"People, including fictional"
-THE TRAGEDY OF ROMEO AND JULIET,2,5,Capulet's Garden.,UNWIELDY,GPE,"Countries, cities, states"
+THE TRAGEDY OF ROMEO AND JULIET,2,4,A Street.,FRIAR,TITLE,TITLE
 THE TRAGEDY OF ROMEO AND JULIET,2,5,Capulet's Garden.,THE GATE,LOCATION,LOCATION
-THE TRAGEDY OF ROMEO AND JULIET,2,6,Friar Lawrence's Cell.,BRAGS OF HIS,TITLE,TITLE
 THE TRAGEDY OF ROMEO AND JULIET,3,1,A public Place.,ITALY,GPE,"Countries, cities, states"
-THE TRAGEDY OF ROMEO AND JULIET,3,1,A public Place.,TO FIELD,LOCATION,LOCATION
+THE TRAGEDY OF ROMEO AND JULIET,3,1,A public Place.,FIELD,GPE,"Countries, cities, states"
 THE TRAGEDY OF ROMEO AND JULIET,3,1,A public Place.,KING OF CATS,TITLE,TITLE
 THE TRAGEDY OF ROMEO AND JULIET,3,1,A public Place.,KINSMAN,REL,REL
-THE TRAGEDY OF ROMEO AND JULIET,3,3,Friar Lawrence's cell.,FRIAR,TITLE,TITLE
-THE TRAGEDY OF ROMEO AND JULIET,3,3,Friar Lawrence's cell.,KNOCK!—WHO,GPE,"Countries, cities, states"
-THE TRAGEDY OF ROMEO AND JULIET,3,5,"An open Gallery to Juliet's Chamber, overlooking the Garden.",NEED'ST,TITLE,TITLE
-THE TRAGEDY OF ROMEO AND JULIET,3,5,"An open Gallery to Juliet's Chamber, overlooking the Garden.",SAINT PETER'S CHURCH,GPE,"Countries, cities, states"
-THE TRAGEDY OF ROMEO AND JULIET,3,5,"An open Gallery to Juliet's Chamber, overlooking the Garden.",GRAZE,GPE,"Countries, cities, states"
-THE TRAGEDY OF ROMEO AND JULIET,4,1,Friar Lawrence's Cell.,WRONG'ST,TITLE,TITLE
+THE TRAGEDY OF ROMEO AND JULIET,3,5,"An open Gallery to Juliet's Chamber, overlooking the Garden.",WEEP'ST,GPE,"Countries, cities, states"
+THE TRAGEDY OF ROMEO AND JULIET,4,1,Friar Lawrence's Cell.,HAPPILY MET,REL,REL
+THE TRAGEDY OF ROMEO AND JULIET,4,1,Friar Lawrence's Cell.,WRONG'ST,GPE,"Countries, cities, states"
+THE TRAGEDY OF ROMEO AND JULIET,4,2,Hall in Capulet's House.,THE COUNTY,LOCATION,LOCATION
 THE TRAGEDY OF ROMEO AND JULIET,4,5,Juliet's Chamber; Juliet on the bed.,THE FIELD,LOCATION,LOCATION
-THE TRAGEDY OF ROMEO AND JULIET,5,1,Mantua. A Street.,CAPEL,GPE,"Countries, cities, states"
+THE TRAGEDY OF ROMEO AND JULIET,4,5,Juliet's Chamber; Juliet on the bed.,THE CUSTOM,LOCATION,LOCATION
 THE TRAGEDY OF ROMEO AND JULIET,5,2,Friar Lawrence's Cell.,FRIAR JOHN,PERSON,"People, including fictional"
-THE TRAGEDY OF ROMEO AND JULIET,5,3,A churchyard; in it a Monument belonging to the Capulets.,WHATE'ER,GPE,"Countries, cities, states"
+THE TRAGEDY OF ROMEO AND JULIET,5,3,A churchyard; in it a Monument belonging to the Capulets.,NOBLE,REL,REL
 THE TRAGEDY OF ROMEO AND JULIET,5,3,A churchyard; in it a Monument belonging to the Capulets.,THIS PALACE,LOCATION,LOCATION
-THE TRAGEDY OF ROMEO AND JULIET,5,3,A churchyard; in it a Monument belonging to the Capulets.,THE CHURCHYARD,LOCATION,LOCATION

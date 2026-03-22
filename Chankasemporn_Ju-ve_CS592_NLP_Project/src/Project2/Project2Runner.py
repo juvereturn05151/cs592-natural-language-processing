@@ -10,6 +10,7 @@ from pathlib import Path
 import src.Project2.Project2Globals as Globals
 import src.Project2.NER_Extraction.ner_extraction as NER_Extraction
 import src.Project2.Fine_Tuning.fine_tuning as FineTuning
+import src.Project2.Manual_Labeling.manual_labeling as ManualLabeling
 import src.Project2.Coreference.coreference as Coreference
 import src.Project2.KnowledgeGraph.knowledge_graph as KnowledgeGraph
 
@@ -20,8 +21,8 @@ class Project2Runner:
         print("Loading spaCy model: en_core_web_md")
         self.nlp = spacy.load("en_core_web_md")
 
-        self.nlp_ft    = None  # fine-tuned model (set after step 2)
-        self.cast_rels = []    # cast relationships (set after step 1)
+        self.nlp_ft    = None
+        self.cast_rels = []
 
     def _find_plays(self, train_dir: Path) -> list:
         files = sorted([
@@ -76,6 +77,13 @@ class Project2Runner:
         print(f"  COMPLETE")
         print(f"  Fine-tuned entity records : {len(all_ft_records):,}")
         print(f"  Model saved to            : {Globals.MODEL_OUT}")
+
+    # ── STEP 2.5: Manual Label Correction ────────────────────────
+    def run_manual_labeling(self):
+        self._print_header(2, "MANUAL LABEL CORRECTION")
+        ManualLabeling.run(play_files=self.play_files)
+        print(f"\n{'═' * 60}")
+        print(f"  COMPLETE — fine-tuned CSVs corrected")
 
     # ── STEP 3: Coreference Resolution ───────────────────────────
     def run_coreference(self):
@@ -136,5 +144,6 @@ class Project2Runner:
         """Run the full pipeline in order."""
         self.run_ner_extraction()
         self.run_fine_tuning(n_iter=n_iter)
+        self.run_manual_labeling()
         self.run_coreference()
         self.run_knowledge_graph()

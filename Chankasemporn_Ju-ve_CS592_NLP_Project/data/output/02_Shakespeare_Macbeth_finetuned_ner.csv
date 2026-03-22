@@ -1,11 +1,13 @@
 play,act,scene,location,entity_text,label,label_description
+MACBETH,1,1,An open Place.,SECOND,TITLE,TITLE
 MACBETH,1,1,An open Place.,THE HEATH,LOCATION,LOCATION
-MACBETH,1,1,An open Place.,THIRD,GPE,"Countries, cities, states"
 MACBETH,1,1,An open Place.,MACBETH,PERSON,"People, including fictional"
-MACBETH,1,2,A Camp near Forres.,DUNCAN,PERSON,"People, including fictional"
+MACBETH,1,1,An open Place.,HOVER,GPE,"Countries, cities, states"
 MACBETH,1,2,A Camp near Forres.,MALCOLM,PERSON,"People, including fictional"
 MACBETH,1,2,A Camp near Forres.,DONALBAIN,PERSON,"People, including fictional"
 MACBETH,1,2,A Camp near Forres.,LENNOX,PERSON,"People, including fictional"
+MACBETH,1,2,A Camp near Forres.,DUNCAN,PERSON,"People, including fictional"
+MACBETH,1,2,A Camp near Forres.,ISLES OF KERNS,TITLE,TITLE
 MACBETH,1,2,A Camp near Forres.,KING OF SCOTLAND,TITLE,TITLE
 MACBETH,1,2,A Camp near Forres.,BANQUO,PERSON,"People, including fictional"
 MACBETH,1,2,A Camp near Forres.,ROSS,PERSON,"People, including fictional"
@@ -16,51 +18,44 @@ MACBETH,1,2,A Camp near Forres.,NORWAY,GPE,"Countries, cities, states"
 MACBETH,1,2,A Camp near Forres.,THANE OF CAWDOR,TITLE,TITLE
 MACBETH,1,2,A Camp near Forres.,NORWAYS,GPE,"Countries, cities, states"
 MACBETH,1,2,A Camp near Forres.,SAINT COLME'S INCH,GPE,"Countries, cities, states"
-MACBETH,1,3,A heath.,AROINT,GPE,"Countries, cities, states"
 MACBETH,1,3,A heath.,ALEPPO,GPE,"Countries, cities, states"
 MACBETH,1,3,A heath.,THANE OF GLAMIS,TITLE,TITLE
-MACBETH,1,3,A heath.,FIRST,TITLE,TITLE
-MACBETH,1,3,A heath.,THANE LIVES YET,TITLE,TITLE
+MACBETH,1,3,A heath.,THANE,GPE,"Countries, cities, states"
 MACBETH,1,4,Forres. A Room in the Palace.,INVERNESS,GPE,"Countries, cities, states"
-MACBETH,1,4,Forres. A Room in the Palace.,A PEERLESS KINSMAN,REL,REL
 MACBETH,1,5,Inverness. A Room in Macbeth's Castle.,LADY MACBETH,PERSON,"People, including fictional"
-MACBETH,1,6,The same. Before the Castle.,SERVANTS,REL,REL
 MACBETH,1,6,The same. Before the Castle.,MACDUFF,PERSON,"People, including fictional"
 MACBETH,1,6,The same. Before the Castle.,THIS CASTLE,LOCATION,LOCATION
 MACBETH,2,1,Inverness. Court within the Castle.,FLEANCE,PERSON,"People, including fictional"
-MACBETH,2,1,Inverness. Court within the Castle.,SERVANT,REL,REL
-MACBETH,2,2,The same.,HARK!—WHO,TITLE,TITLE
+MACBETH,2,1,Inverness. Court within the Castle.,HECATE,PERSON,"People, including fictional"
+MACBETH,2,2,The same.,HARK!—WHO,GPE,"Countries, cities, states"
 MACBETH,2,3,The same.,THE GATE,LOCATION,LOCATION
+MACBETH,2,3,The same.,MY YOUNG REMEMBRANCE,REL,REL
 MACBETH,2,3,The same.,ENGLAND,GPE,"Countries, cities, states"
-MACBETH,2,4,The same. Without the Castle.,MAN,TITLE,TITLE
+MACBETH,3,1,Forres. A Room in the Palace.,QUEEN,REL,REL
 MACBETH,3,1,Forres. A Room in the Palace.,THE PALACE,LOCATION,LOCATION
-MACBETH,3,1,Forres. A Room in the Palace.,SERVANT,TITLE,TITLE
-MACBETH,3,1,Forres. A Room in the Palace.,SHOUGHS,GPE,"Countries, cities, states"
-MACBETH,3,1,Forres. A Room in the Palace.,MURDERER,TITLE,TITLE
+MACBETH,3,1,Forres. A Room in the Palace.,BANQUO STICK,GPE,"Countries, cities, states"
+MACBETH,3,2,The same. Another Room in the Palace.,UNSAFE,GPE,"Countries, cities, states"
 MACBETH,3,2,The same. Another Room in the Palace.,ROOKY WOOD,LOCATION,LOCATION
-MACBETH,3,5,The heath.,HECATE,PERSON,"People, including fictional"
-MACBETH,3,6,Forres. A Room in the Palace.,SON,REL,REL
 MACBETH,3,6,Forres. A Room in the Palace.,NORTHUMBERLAND,GPE,"Countries, cities, states"
 MACBETH,3,6,Forres. A Room in the Palace.,SIWARD,PERSON,"People, including fictional"
 MACBETH,3,6,Forres. A Room in the Palace.,THE COURT,LOCATION,LOCATION
-MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",THANE OF FIFE.—DISMISS,TITLE,TITLE
-MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",WHATE'ER,GPE,"Countries, cities, states"
-MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",BIRNAM,GPE,"Countries, cities, states"
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",FILLET,REL,REL
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",THANE OF FIFE,TITLE,TITLE
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",BIRNAM WOOD,GPE,"Countries, cities, states"
 MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",DUNSINANE,GPE,"Countries, cities, states"
-MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",SIGHT!—NOW,TITLE,TITLE
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",BIRNAM,GPE,"Countries, cities, states"
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",GONE?—LET,GPE,"Countries, cities, states"
 MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",THE CASTLE,LOCATION,LOCATION
 MACBETH,4,2,Fife. A Room in Macduff's Castle.,LADY MACDUFF,PERSON,"People, including fictional"
 MACBETH,4,3,England. Before the King's Palace.,SCOTLAND,GPE,"Countries, cities, states"
-MACBETH,5,1,Dunsinane. A Room in the Castle.,DOCTOR,REL,REL
-MACBETH,5,1,Dunsinane. A Room in the Castle.,WAITING-GENTLEWOMAN,REL,REL
+MACBETH,4,3,England. Before the King's Palace.,LIVE.—O,GPE,"Countries, cities, states"
+MACBETH,5,1,Dunsinane. A Room in the Castle.,DOCTOR,TITLE,TITLE
+MACBETH,5,1,Dunsinane. A Room in the Castle.,WAITING-GENTLEWOMAN.,REL,REL
 MACBETH,5,1,Dunsinane. A Room in the Castle.,THE FIELD,LOCATION,LOCATION
-MACBETH,5,1,Dunsinane. A Room in the Castle.,THANE OF FIFE,TITLE,TITLE
 MACBETH,5,2,The Country near Dunsinane.,MENTEITH,PERSON,"People, including fictional"
 MACBETH,5,2,The Country near Dunsinane.,CAITHNESS,PERSON,"People, including fictional"
+MACBETH,5,2,The Country near Dunsinane.,UNROUGH,GPE,"Countries, cities, states"
 MACBETH,5,3,Dunsinane. A Room in the Castle.,SEYTON,PERSON,"People, including fictional"
-MACBETH,5,3,Dunsinane. A Room in the Castle.,RAZE,GPE,"Countries, cities, states"
+MACBETH,5,5,Dunsinane. Within the castle.,OUR CASTLE,LOCATION,LOCATION
 MACBETH,5,5,Dunsinane. Within the castle.,A WOOD,LOCATION,LOCATION
-MACBETH,5,5,Dunsinane. Within the castle.,DUNSINANE.—ARM,GPE,"Countries, cities, states"
 MACBETH,5,7,The same. Another part of the Plain.,YOUNG SIWARD,PERSON,"People, including fictional"
-MACBETH,5,7,The same. Another part of the Plain.,LORD;—THE CASTLE,LOCATION,LOCATION
-MACBETH,5,8,The same. Another part of the field.,KNOLL'D,REL,REL

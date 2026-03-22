@@ -6,42 +6,48 @@ A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,EGEUS,PERS
 A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,HERMIA,PERSON,"People, including fictional"
 A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,LYSANDER,PERSON,"People, including fictional"
 A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,DEMETRIUS,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,KNACKS,TITLE,TITLE
 A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,ATHENS,GPE,"Countries, cities, states"
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,LYSANDER,REL,REL
 A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,HELENA,PERSON,"People, including fictional"
 A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,THE WOOD,LOCATION,LOCATION
 A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,QUINCE,PERSON,"People, including fictional"
+A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,SNUG,PERSON,"People, including fictional"
 A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,BOTTOM,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,PYRAMUS,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,STARVELING,PERSON,"People, including fictional"
+A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,FLUTE,PERSON,"People, including fictional"
 A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,SNOUT,PERSON,"People, including fictional"
+A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,STARVELING,PERSON,"People, including fictional"
+A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,PYRAMUS,PERSON,"People, including fictional"
+A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,PHIBBUS,GPE,"Countries, cities, states"
 A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,THE PALACE,LOCATION,LOCATION
 A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,PUCK,PERSON,"People, including fictional"
 A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,OBERON,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,KNIGHT,REL,REL
 A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,TITANIA,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,PHILLIDA,GPE,"Countries, cities, states"
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,PHILLIDA,PERSON,PERSON
 A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,INDIA,GPE,"Countries, cities, states"
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,PERIGENIA,GPE,"Countries, cities, states"
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,HIEMS,GPE,"Countries, cities, states"
 A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,THIS WOOD,LOCATION,LOCATION
 A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,THE FIELD,LOCATION,LOCATION
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,THE FOREST,LOCATION,LOCATION
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,STARVELING,TITLE,TITLE
+A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,QUEEN: CHORUS,TITLE,TITLE
+A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,QUEEN,REL,REL
 A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,PEASEBLOSSOM,PERSON,"People, including fictional"
 A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,COBWEB,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,MOTH,TITLE,TITLE
+A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,MOTH,PERSON,PERSON
 A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,MUSTARDSEED,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,MOTH,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,CAPTAIN,REL,REL
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,IN LOVE,REL,REL
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,FLOWER,REL,REL
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,CAPTAIN,TITLE,TITLE
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,QUICK,GPE,"Countries, cities, states"
 A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,ETHIOPE,GPE,"Countries, cities, states"
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,IN FIELD,LOCATION,LOCATION
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,DAMNÈD,GPE,"Countries, cities, states"
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,FIELD,GPE,"Countries, cities, states"
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,FAINTNESS,GPE,"Countries, cities, states"
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,CONSTRAINETH,TITLE,TITLE
+A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,THE ELM,LOCATION,LOCATION
 A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,A WOOD,LOCATION,LOCATION
 A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,CRETE,GPE,"Countries, cities, states"
 A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,SPARTA,GPE,"Countries, cities, states"
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,THESSALY,GPE,"Countries, cities, states"
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,THE TEMPLE,LOCATION,LOCATION
+A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,;,REL,REL
 A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,EGYPT,GPE,"Countries, cities, states"
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,THEBES,GPE,"Countries, cities, states"
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,QUAIL,GPE,"Countries, cities, states"
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,DANCE,REL,REL
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,THROTTLE,GPE,"Countries, cities, states"
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,NINUS,GPE,"Countries, cities, states"
 A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,THIS PALACE,LOCATION,LOCATION

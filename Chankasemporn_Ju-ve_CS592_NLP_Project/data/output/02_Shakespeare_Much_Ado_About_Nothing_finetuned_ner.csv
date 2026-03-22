@@ -10,35 +10,34 @@ MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,BENEDICK,PERSON,"People, incl
 MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,PADUA,GPE,"Countries, cities, states"
 MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,DON JOHN,PERSON,"People, including fictional"
 MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,BALTHASAR,PERSON,"People, including fictional"
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,DON,GPE,"Countries, cities, states"
 MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,VENICE,GPE,"Countries, cities, states"
 MUCH ADO ABOUT NOTHING,1,2,A room in Leonato's house.,ANTONIO,PERSON,"People, including fictional"
 MUCH ADO ABOUT NOTHING,1,3,Another room in Leonato's house.,CONRADE,PERSON,"People, including fictional"
 MUCH ADO ABOUT NOTHING,1,3,Another room in Leonato's house.,BORACHIO,PERSON,"People, including fictional"
+MUCH ADO ABOUT NOTHING,1,3,Another room in Leonato's house.,HEIR,REL,REL
 MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,THE GATE,LOCATION,LOCATION
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,SCOTCH,GPE,"Countries, cities, states"
 MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,THE CINQUEPACE,LOCATION,LOCATION
 MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,MARGARET,PERSON,"People, including fictional"
 MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,URSULA,PERSON,"People, including fictional"
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,JOVE,REL,REL
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,PRINCE,REL,REL
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,WOOSS,TITLE,TITLE
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,CHAM,TITLE,TITLE
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,A MERRY HOUR,REL,REL
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,CLAUDIO,GPE,"Countries, cities, states"
-MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,DAUGHTER,REL,REL
-MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,"CLAUDIO,—WHOSE",GPE,"Countries, cities, states"
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,JOVE,PERSON,PERSON
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,PRINCE,TITLE,TITLE
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,WHITHER,REL,REL
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,ASIA,GPE,"Countries, cities, states"
+MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,THE ORCHARD,LOCATION,LOCATION
+MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,URSALA,GPE,"Countries, cities, states"
 MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,THE WOODBINE,LOCATION,LOCATION
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,THE BOWER,LOCATION,LOCATION
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,THE ROCK,LOCATION,LOCATION
 MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,ITALY,GPE,"Countries, cities, states"
 MUCH ADO ABOUT NOTHING,3,3,A Street.,DOGBERRY,PERSON,"People, including fictional"
 MUCH ADO ABOUT NOTHING,3,3,A Street.,VERGES,PERSON,"People, including fictional"
 MUCH ADO ABOUT NOTHING,3,3,A Street.,CONSTABLE,TITLE,TITLE
+MUCH ADO ABOUT NOTHING,3,3,A Street.,SEACOAL,GPE,"Countries, cities, states"
+MUCH ADO ABOUT NOTHING,3,3,A Street.,VERGES,GPE,"Countries, cities, states"
 MUCH ADO ABOUT NOTHING,3,3,A Street.,NURSE,TITLE,TITLE
-MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,MILAN,GPE,"Countries, cities, states"
+MUCH ADO ABOUT NOTHING,3,3,A Street.,PHARAOH,GPE,"Countries, cities, states"
 MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,FRIAR FRANCIS,PERSON,"People, including fictional"
 MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,FRIAR,TITLE,TITLE
-MUCH ADO ABOUT NOTHING,4,2,A Prison.,CONRADE,REL,REL
+MUCH ADO ABOUT NOTHING,4,2,A Prison.,BORACHIO,GPE,"Countries, cities, states"
 MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,THE GARDEN,LOCATION,LOCATION
-MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,QUONDAM,GPE,"Countries, cities, states"
-MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,AUTHOR,REL,REL
+MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,HIR'D,GPE,"Countries, cities, states"
+MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,ETHIOPE,GPE,"Countries, cities, states"
