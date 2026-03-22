@@ -12,6 +12,7 @@ from collections import defaultdict
 
 import src.Project2.Project2Globals as Globals
 import src.Project2.Data_Extraction.data_extractor as DataExtractor
+from src.Project2.Play_Configs.play_configs import PLAY_CONFIGS
 
 # Archaic Shakespeare suffixes that indicate a verb/adjective, not an entity
 # e.g. "carv'd", "Dismay'd", "hors'd", "return'd", "might'st"
@@ -73,7 +74,7 @@ def normalise_entity(text: str, label: str, nlp) -> str:
     return text.upper()
 
 def run_default_ner(scenes: list, nlp, play_title: str) -> tuple:
-    # Use a set to track seen (normalised_text, label) pairs — prevents duplicates
+    # use a set to track seen (normalised_text, label) pairs — prevents duplicates
     seen        = set()
     all_entities   = []
     entity_summary = defaultdict(set)
@@ -87,7 +88,7 @@ def run_default_ner(scenes: list, nlp, play_title: str) -> tuple:
             if is_noise_entity(raw_text, ent.label_):
                 continue
 
-            # Step 2: normalise — uppercase everything, lemmatize GPE/ORG/LOC
+            # Step 2: normalise by uppercase everything, lemmatize GPE/ORG/LOC
             normalised_text = normalise_entity(raw_text, ent.label_, nlp)
 
             # Step 3: deduplicate — skip if we've already seen this entity+label
@@ -116,36 +117,93 @@ def run_default_ner(scenes: list, nlp, play_title: str) -> tuple:
 #label analysis
 #print label summary, flag mislabeled and missing characters.
 #returns list of (entity_text, wrong_label, correct_label).
-def analyse_labels(entity_summary: dict, official_characters: list, play_title: str) -> list:
-    # Support both old format (strings) and new format (dicts with "name" key)
+def analyse_labels(entity_summary: dict,official_characters: list,play_title: str,play_config: dict = None) -> list:
+    # --- build ground-truth character set ---
+    # Start from XML cast list as before
     char_names = [
         c["name"] if isinstance(c, dict) else c
         for c in official_characters
     ]
     char_set = {c.upper() for c in char_names}
 
+    # If config is present, extend with male + female character sets
+    # (catches characters spaCy never found AND weren't in the XML cast)
+    config_persons = set()
+    config_gpes    = set()
+    config_locs    = set()
+    if play_config:
+        config_persons = (
+            {c.upper() for c in play_config.get("male_characters",   set())} |
+            {c.upper() for c in play_config.get("female_characters",  set())}
+        )
+        config_gpes = {g.upper() for g in play_config.get("known_gpes",      set())}
+        config_locs = {l.upper() for l in play_config.get("known_locations",  set())}
+        char_set |= config_persons   # merge into the master character set
+
+    # --- label summary (unchanged) ---
     print(f"\n  Label summary:")
     for label, ents in sorted(entity_summary.items()):
         preview = sorted(ents)[:6]
         more = f"  (+{len(ents) - 6} more)" if len(ents) > 6 else ""
         print(f"    [{label:12s}] {len(ents):3d} unique  e.g. {preview}{more}")
 
+    # --- mislabeled detection ---
     print(f"\n  Mislabeled characters (found but wrong label):")
     mislabeled = []
+    seen_mislabel = set()   # avoid double-reporting same entity
+
     for label, ents in entity_summary.items():
-        if label != "PERSON":
-            for e in ents:
-                if e.upper() in char_set or any(c in e.upper() for c in char_set):
-                    print(f"    '{e}'  [{label}] -> should be PERSON")
-                    mislabeled.append((e, label, "PERSON"))
+        for e in ents:
+            e_up = e.upper()
+            key  = (e_up, label)
+            if key in seen_mislabel:
+                continue
+
+            # Case 1: config says it's a PERSON but spaCy gave it another label
+            if play_config and label != "PERSON" and e_up in config_persons:
+                print(f"    [CONFIG]  '{e}'  [{label}] -> PERSON")
+                mislabeled.append((e, label, "PERSON", "config"))
+                seen_mislabel.add(key)
+
+            # Case 2: config says it's a GPE but spaCy labelled it something else
+            elif play_config and label != "GPE" and e_up in config_gpes:
+                print(f"    [CONFIG]  '{e}'  [{label}] -> GPE")
+                mislabeled.append((e, label, "GPE", "config"))
+                seen_mislabel.add(key)
+
+            # Case 3: config says it's a LOC but spaCy labelled it something else
+            elif play_config and label != "LOC" and e_up in config_locs:
+                print(f"    [CONFIG]  '{e}'  [{label}] -> LOC")
+                mislabeled.append((e, label, "LOC", "config"))
+                seen_mislabel.add(key)
+
+            # Case 4: heuristic fallback (original behaviour — name in char_set)
+            elif label != "PERSON" and key not in seen_mislabel:
+                if e_up in char_set or any(c in e_up for c in char_set):
+                    print(f"    [HEURISTIC] '{e}'  [{label}] -> PERSON")
+                    mislabeled.append((e, label, "PERSON", "heuristic"))
+                    seen_mislabel.add(key)
+
     if not mislabeled:
         print("    (none detected)")
 
+    # --- missing character detection ---
     print(f"\n  Missing characters (in cast but not found by spaCy):")
     all_found = {e.upper() for ents in entity_summary.values() for e in ents}
-    missing = [c for c in char_names if c.upper() not in all_found]
+
+    # Combine XML cast names + config person names for a complete expected set
+    all_expected = list(char_names)
+    if play_config:
+        # Add config characters not already in the XML list
+        xml_upper = {n.upper() for n in char_names}
+        for c in config_persons:
+            if c not in xml_upper:
+                all_expected.append(c)
+
+    missing = [c for c in all_expected if c.upper() not in all_found]
     for c in missing:
-        print(f"    '{c}'")
+        source = "[CONFIG]" if c.upper() in config_persons else "[XML]"
+        print(f"    {source}  '{c}'")
     if not missing:
         print("    (none)")
 
@@ -189,7 +247,14 @@ def run(nlp, play_files):
         records, summary = run_default_ner(scenes, nlp, title)
         print(f"  Entities   : {len(records):,} found by default model")
 
-        mislabeled = analyse_labels(summary, characters, title)
+        play_config = PLAY_CONFIGS.get(play_file.name)
+        if play_config:
+            print(f"  Config     : found ({len(play_config.get('male_characters', []))} male / "
+                  f"{len(play_config.get('female_characters', []))} female characters)")
+        else:
+            print(f"  Config     : not found — falling back to heuristics only")
+
+        mislabeled = analyse_labels(summary, characters, title, play_config=play_config)
         all_mislabel.extend(mislabeled)
 
         save_csv(records, Globals.OUTPUT_DIR / f"01_{play_file.stem}_default_ner.csv")
