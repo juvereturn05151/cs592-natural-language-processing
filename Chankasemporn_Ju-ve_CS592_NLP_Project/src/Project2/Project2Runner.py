@@ -80,13 +80,16 @@ class Project2Runner:
     def run_coreference(self):
         self._print_header(3, "COREFERENCE RESOLUTION")
 
-        # Use fine-tuned model if available, fall back to base model
         if self.nlp_ft is not None:
-            print("  Using fine-tuned model for coreference resolution.")
+            print("  Using fine-tuned model (in memory).")
             nlp_coref = self.nlp_ft
+        elif Globals.MODEL_OUT.exists():
+            print(f"  Loading fine-tuned model from disk: {Globals.MODEL_OUT}")
+            import spacy as _spacy
+            nlp_coref = _spacy.load(str(Globals.MODEL_OUT))
         else:
-            print("  WARNING: Fine-tuned model not found.")
-            print("  Run run_fine_tuning() first for best results.")
+            print("  WARNING: No fine-tuned model found in memory or on disk.")
+            print(f"  Checked: {Globals.MODEL_OUT}")
             print("  Falling back to base en_core_web_md model.")
             nlp_coref = self.nlp
 

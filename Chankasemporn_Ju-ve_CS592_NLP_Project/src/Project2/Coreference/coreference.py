@@ -84,40 +84,73 @@ class CoreferenceResolver:
                     return name, "female"
         return candidates[0][0], candidates[0][1]
 
-    def resolve_scene(self, scene_text: str, act_id: str,
-                      scene_id: str, play_title: str) -> list:
+    def resolve_scene(self, scene_text: str, act_id: str, scene_id: str, play_title: str) -> list:
         records    = []
         utterances = split_into_utterances(scene_text)
 
         for utt in utterances:
             speaker  = utt["speaker"]
             sent_doc = self.nlp(utt["text"])
+            sentences = list(sent_doc.sents)
 
-            for sent in sent_doc.sents:
+            for i, sent in enumerate(sentences):
                 sent_nlp = self.nlp(sent.text)
                 self._update_window(sent_nlp, speaker=speaker)
 
-                for token in sent_nlp:
-                    if token.pos_ == "PRON" and token.text.lower() in ALL_PRONOUNS:
-                        if not self.recent_persons:
-                            continue
-                        resolved, gender_group = self._best_candidate(token.text.lower())
-                        records.append({
-                            "play":             play_title,
-                            "act":              act_id,
-                            "scene":            scene_id,
-                            "speaker":          speaker,
-                            "sentence":         sent.text.strip()[:120],
-                            "pronoun":          token.text,
-                            "resolved_to":      resolved,
-                            "gender_group":     gender_group,
-                            "window_size_used": min(self.window_size, len(self.recent_persons)),
-                        })
+                # Find pronouns in the current sentence
+                pronouns_found = [
+                    token for token in sent_nlp
+                    if token.pos_ == "PRON" and token.text.lower() in ALL_PRONOUNS
+                ]
+
+                if not pronouns_found or not self.recent_persons:
+                    continue
+
+                sentence_text = sent.text
+
+                for pronoun_token in pronouns_found:
+                    resolved, gender_group = self._best_candidate(
+                        pronoun_token.text.lower()
+                    )
+
+                    # Replace pronoun with resolved name in the sentence text
+                    resolved_text = re.sub(
+                        r'\b' + re.escape(pronoun_token.text) + r'\b',
+                        resolved,
+                        sentence_text,
+                        count=1,
+                        flags=re.IGNORECASE
+                    )
+
+                    print(
+                        f"[Resolved] '{sent.text.strip()}'\n"
+                        f"        -> '{resolved_text.strip()}'\n"
+                        f"           (pronoun '{pronoun_token.text}' -> '{resolved}')\n"
+                    )
+
+                    records.append({
+                        "play":              play_title,
+                        "act":               act_id,
+                        "scene":             scene_id,
+                        "speaker":           speaker,
+                        "original_sentence": sent.text.strip()[:120],
+                        "pronoun":           pronoun_token.text,
+                        "resolved_to":       resolved,
+                        "resolved_sentence": resolved_text.strip()[:120],
+                        "gender_group":      gender_group,
+                        "window_size_used":  min(self.window_size, len(self.recent_persons)),
+                    })
+
+                    # Update sentence_text so subsequent pronouns in same sentence
+                    # use the already-resolved version
+                    sentence_text = resolved_text
+
         return records
 
 COREF_FIELDS = [
-    "play", "act", "scene", "speaker", "sentence",
-    "pronoun", "resolved_to", "gender_group", "window_size_used"
+    "play", "act", "scene", "speaker",
+    "original_sentence", "pronoun", "resolved_to",
+    "resolved_sentence", "gender_group", "window_size_used"
 ]
 
 def save_csv(records: list, path: Path):
@@ -163,10 +196,6 @@ def run(nlp, play_files: list) -> list:
         print(f"  Title             : {title}")
         print(f"  Scenes            : {len(scenes)}")
         print(f"  Pronouns resolved : {len(play_records):,}")
-        print("  Sample resolutions:")
-        for r in play_records[:5]:
-            print(f"    Act {r['act']} Sc {r['scene']} | "
-                  f"{r['speaker']:20s} | '{r['pronoun']}' -> {r['resolved_to']}")
 
         save_csv(play_records, Globals.OUTPUT_DIR / f"03_{play_file.stem}_coreference.csv")
         all_coref_records.extend(play_records)
