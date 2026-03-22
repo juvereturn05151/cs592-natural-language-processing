@@ -9,6 +9,7 @@ import spacy
 import xml.etree.ElementTree as ET
 import re
 import csv
+from pathlib import Path
 from collections import defaultdict
 from src.Project2.NER_Extraction.data_extractor import find_repo_root
 
@@ -17,85 +18,102 @@ from src.Project2.NER_Extraction.data_extractor import find_repo_root
 # ─────────────────────────────────────────────
 
 REPO_ROOT, _ = find_repo_root()
-DATA_DIR   = REPO_ROOT / "data"
-FILE_PATH  = DATA_DIR / "train" / "Shakespeare_Macbeth.txt"
-OUTPUT_CSV = DATA_DIR / "output" / "01_default_ner_entities.csv"
+DATA_DIR = REPO_ROOT / "data"
+TRAIN_DIR = DATA_DIR / "train"
+OUTPUT_DIR = DATA_DIR / "output"
 
-def load_and_clean(path):
-    """Read the XML file and clean HTML entities for proper parsing."""
-    with open(path, "r", encoding="utf-8") as f:
-        raw = f.read()
-    # Replace common HTML entities
-    raw = raw.replace("&#8217;", "'")
-    raw = raw.replace("&#8216;", "'")
-    raw = raw.replace("&#8220;", '"')
-    raw = raw.replace("&#8221;", '"')
-    raw = raw.replace("&#8212;", "—")
-    raw = raw.replace("&#8211;", "–")
-    return raw
 
-def extract_dialogue(xml_content):
-    """
-    Parse the XML and return all dialogue text, grouped by scene.
-    Returns: list of dicts with keys: act, scene, location, text
-    """
-    tree = ET.fromstring(xml_content)
-    scenes = []
+# ─────────────────────────────────────────────
+# 1. XML PARSING HELPERS
+# ─────────────────────────────────────────────
 
-    for act_elem in tree.findall(".//Act"):
-        act_id = act_elem.attrib.get("id", "?")
-        for scene_elem in act_elem.findall(".//Scene"):
-            scene_id = scene_elem.attrib.get("id", "?")
-            location = scene_elem.attrib.get("location", "")
-            # Get all text within this scene
-            full_text = " ".join(scene_elem.itertext()).strip()
-            full_text = re.sub(r'\s+', ' ', full_text)
-            if full_text:
-                scenes.append({
-                    "act": act_id,
-                    "scene": scene_id,
-                    "location": location,
-                    "text": full_text
-                })
-    return scenes
+def clean_xml(raw: str) -> str:
+    """Replace common HTML entities so ET can parse cleanly."""
+    return (raw
+            .replace("&#8217;", "'").replace("&#8216;", "'")
+            .replace("&#8220;", '"').replace("&#8221;", '"')
+            .replace("&#8212;", "—").replace("&#8211;", "–"))
 
-def extract_cast(xml_content):
-    """Extract the official character list from the <Cast> section."""
-    tree = ET.fromstring(xml_content)
+
+def load_play(filepath: Path):
+    """Read and parse one play XML file. Returns (xml_root, cleaned_string)."""
+    raw = filepath.read_text(encoding="utf-8")
+    raw = clean_xml(raw)
+    root = ET.fromstring(raw)
+    return root, raw
+
+
+def get_title(root) -> str:
+    """Extract play title from <Title> tag."""
+    elem = root.find(".//Title")
+    return elem.text.strip() if elem is not None and elem.text else "Unknown"
+
+
+def extract_cast(root) -> list:
+    """Return cleaned character names from <Cast> section."""
     characters = []
-    for char in tree.findall(".//Character"):
-        raw_name = char.attrib.get("name", "")
-        # Take only the part before a comma (e.g. "MACBETH, General..." → "MACBETH")
-        name = raw_name.split(",")[0].strip()
-        if name:
+    for char in root.findall(".//Character"):
+        raw = char.attrib.get("name", "")
+        name = raw.split(",")[0].strip()
+        # Skip purely generic role descriptions
+        if name and not re.match(
+                r'^(A |An |The )(Soldier|Porter|Doctor|Man|Boy|Captain|Servant|'
+                r'Sexton|Officer|Apothecary|Messenger|Attendant|Musician)', name
+        ):
             characters.append(name)
     return characters
 
+
+def extract_scenes(root) -> list:
+    """
+    Return list of (act_id, scene_id, location, text) for every scene.
+    Handles Prologue-style acts (e.g. Romeo & Juliet Act 0) that contain
+    text directly inside <Act> with no <Scene> children.
+    """
+    scenes = []
+    for act in root.findall(".//Act"):
+        act_id = act.attrib.get("id", "?")
+        scene_elems = act.findall("Scene")
+
+        if scene_elems:
+            for scene in scene_elems:
+                scene_id = scene.attrib.get("id", "?")
+                location = scene.attrib.get("location", "")
+                text = re.sub(r'\s+', ' ', " ".join(scene.itertext()).strip())
+                if text:
+                    scenes.append((act_id, scene_id, location, text))
+        else:
+            # Prologue: text is directly inside <Act>
+            text = re.sub(r'\s+', ' ', " ".join(act.itertext()).strip())
+            if text:
+                scenes.append((act_id, "0", "Prologue", text))
+
+    return scenes
+
+
 # ─────────────────────────────────────────────
-# 2. RUN DEFAULT spaCy NER
+# 2. DEFAULT spaCy NER
 # ─────────────────────────────────────────────
 
-def run_default_ner(scenes):
+def run_default_ner(scenes: list, nlp, play_title: str) -> tuple:
     """
-    Run spaCy's en_core_web_md on all scene dialogue.
-    Returns a list of entity dicts.
+    Run en_core_web_md on all scenes of one play.
+    Returns (entity_records_list, entity_summary_dict).
     """
-    print("Loading spaCy model: en_core_web_md ...")
-    nlp = spacy.load("en_core_web_md")
-
     all_entities = []
     entity_summary = defaultdict(set)
 
-    for scene in scenes:
-        doc = nlp(scene["text"])
+    for act_id, scene_id, location, text in scenes:
+        doc = nlp(text)
         for ent in doc.ents:
             record = {
-                "act": scene["act"],
-                "scene": scene["scene"],
-                "location": scene["location"],
+                "play": play_title,
+                "act": act_id,
+                "scene": scene_id,
+                "location": location,
                 "entity_text": ent.text.strip(),
                 "spacy_label": ent.label_,
-                "label_description": spacy.explain(ent.label_),
+                "label_description": spacy.explain(ent.label_) or ent.label_,
                 "start_char": ent.start_char,
                 "end_char": ent.end_char,
             }
@@ -104,57 +122,61 @@ def run_default_ner(scenes):
 
     return all_entities, entity_summary
 
+
 # ─────────────────────────────────────────────
-# 3. IDENTIFY MISLABELED / MISSING ENTITIES
+# 3. LABEL ANALYSIS
 # ─────────────────────────────────────────────
 
-def analyse_labels(entity_summary, official_characters):
+def analyse_labels(entity_summary: dict, official_characters: list, play_title: str) -> list:
     """
-    Compare spaCy output against the official cast list.
-    Flags:
-      - Characters spaCy labeled as something other than PERSON
-      - Characters spaCy missed entirely
+    Print label summary, flag mislabeled and missing characters.
+    Returns list of (entity_text, wrong_label, correct_label).
     """
     char_set = {c.upper() for c in official_characters}
 
-    print("\n=== LABEL SUMMARY (default model) ===")
+    print(f"\n  Label summary:")
     for label, ents in sorted(entity_summary.items()):
-        print(f"\n[{label}] ({len(ents)} unique):")
-        for e in sorted(ents)[:15]:  # show up to 15 per label
-            print(f"   {e}")
-        if len(ents) > 15:
-            print(f"   ... and {len(ents)-15} more")
+        preview = sorted(ents)[:6]
+        more = f"  (+{len(ents) - 6} more)" if len(ents) > 6 else ""
+        print(f"    [{label:12s}] {len(ents):3d} unique  e.g. {preview}{more}")
 
-    # Check for characters mislabeled
-    print("\n=== MISLABELED CHARACTERS (found by spaCy but wrong label) ===")
+    print(f"\n  Mislabeled characters (found but wrong label):")
     mislabeled = []
     for label, ents in entity_summary.items():
         if label != "PERSON":
             for e in ents:
                 if e.upper() in char_set or any(c in e.upper() for c in char_set):
-                    print(f"  '{e}' labeled as [{label}] — should be PERSON")
+                    print(f"    '{e}'  [{label}] → should be PERSON")
                     mislabeled.append((e, label, "PERSON"))
+    if not mislabeled:
+        print("    (none detected)")
 
-    # Check for characters completely missed
-    print("\n=== MISSING CHARACTERS (in cast list but not found by spaCy) ===")
+    print(f"\n  Missing characters (in cast but not found by spaCy):")
     all_found = {e.upper() for ents in entity_summary.values() for e in ents}
-    for char in official_characters:
-        if char.upper() not in all_found:
-            print(f"  '{char}' — not found at all by spaCy")
+    missing = [c for c in official_characters if c.upper() not in all_found]
+    for c in missing:
+        print(f"    '{c}'")
+    if not missing:
+        print("    (none)")
 
     return mislabeled
 
+
 # ─────────────────────────────────────────────
-# 4. SAVE TO CSV
+# 4. CSV SAVE
 # ─────────────────────────────────────────────
 
-def save_csv(entities, path):
-    from pathlib import Path
-    Path(path).parent.mkdir(parents=True, exist_ok=True)
-    fieldnames = ["act", "scene", "location", "entity_text", "spacy_label",
-                  "label_description", "start_char", "end_char"]
+ENTITY_FIELDS = [
+    "play", "act", "scene", "location",
+    "entity_text", "spacy_label", "label_description",
+    "start_char", "end_char"
+]
+
+
+def save_csv(records: list, path: Path):
+    path.parent.mkdir(parents=True, exist_ok=True)
     with open(path, "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer = csv.DictWriter(f, fieldnames=ENTITY_FIELDS)
         writer.writeheader()
-        writer.writerows(entities)
-    print(f"\nSaved {len(entities)} entity records to: {path}")
+        writer.writerows(records)
+    print(f"  → Saved {len(records):,} records  :  {path.name}")

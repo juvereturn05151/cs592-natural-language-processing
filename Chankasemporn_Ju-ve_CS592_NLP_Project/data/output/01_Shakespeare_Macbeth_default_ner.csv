@@ -1,0 +1,751 @@
+play,act,scene,location,entity_text,spacy_label,label_description,start_char,end_char
+MACBETH,1,1,An open Place.,three,CARDINAL,Numerals that do not fall under another type,29,34
+MACBETH,1,1,An open Place.,FIRST,ORDINAL,"""first"", ""second"", etc.",44,49
+MACBETH,1,1,An open Place.,three,CARDINAL,Numerals that do not fall under another type,71,76
+MACBETH,1,1,An open Place.,FIRST,ORDINAL,"""first"", ""second"", etc.",244,249
+MACBETH,1,1,An open Place.,FIRST,ORDINAL,"""first"", ""second"", etc.",345,350
+MACBETH,1,1,An open Place.,Graymalkin,PERSON,"People, including fictional",366,376
+MACBETH,1,2,A Camp near Forres.,Alarum,PERSON,"People, including fictional",0,6
+MACBETH,1,2,A Camp near Forres.,Duncan,PERSON,"People, including fictional",26,32
+MACBETH,1,2,A Camp near Forres.,Malcolm,PERSON,"People, including fictional",34,41
+MACBETH,1,2,A Camp near Forres.,Donalbain,PERSON,"People, including fictional",43,52
+MACBETH,1,2,A Camp near Forres.,Lennox,PERSON,"People, including fictional",54,60
+MACBETH,1,2,A Camp near Forres.,Attendants,PERSON,"People, including fictional",67,77
+MACBETH,1,2,A Camp near Forres.,DUNCAN,PERSON,"People, including fictional",107,113
+MACBETH,1,2,A Camp near Forres.,MALCOLM,PERSON,"People, including fictional",213,220
+MACBETH,1,2,A Camp near Forres.,captivity.—Hail,GPE,"Countries, cities, states",297,312
+MACBETH,1,2,A Camp near Forres.,two,CARDINAL,Numerals that do not fall under another type,426,429
+MACBETH,1,2,A Camp near Forres.,the Western Isles,LOC,"Non-GPE locations, mountain ranges, bodies of water",610,627
+MACBETH,1,2,A Camp near Forres.,kerns,GPE,"Countries, cities, states",631,636
+MACBETH,1,2,A Camp near Forres.,Fortune,WORK_OF_ART,"Titles of books, songs, etc.",672,679
+MACBETH,1,2,A Camp near Forres.,Disdaining Fortune,PERSON,"People, including fictional",809,827
+MACBETH,1,2,A Camp near Forres.,Valour,ORG,"Companies, agencies, institutions, etc.",897,903
+MACBETH,1,2,A Camp near Forres.,carv'd,PRODUCT,"Objects, vehicles, foods, etc. (not services)",914,920
+MACBETH,1,2,A Camp near Forres.,DUNCAN,PERSON,"People, including fictional",1104,1110
+MACBETH,1,2,A Camp near Forres.,that spring,DATE,Absolute or relative dates or periods,1252,1263
+MACBETH,1,2,A Camp near Forres.,Mark,PERSON,"People, including fictional",1314,1318
+MACBETH,1,2,A Camp near Forres.,Scotland,GPE,"Countries, cities, states",1328,1336
+MACBETH,1,2,A Camp near Forres.,kerns,ORG,"Companies, agencies, institutions, etc.",1411,1416
+MACBETH,1,2,A Camp near Forres.,Norweyan,NORP,Nationalities or religious or political groups,1447,1455
+MACBETH,1,2,A Camp near Forres.,DUNCAN,PERSON,"People, including fictional",1549,1555
+MACBETH,1,2,A Camp near Forres.,Dismay'd,ORG,"Companies, agencies, institutions, etc.",1557,1565
+MACBETH,1,2,A Camp near Forres.,Macbeth and Banquo?,WORK_OF_ART,"Titles of books, songs, etc.",1589,1608
+MACBETH,1,2,A Camp near Forres.,DUNCAN,PERSON,"People, including fictional",1926,1932
+MACBETH,1,2,A Camp near Forres.,Exit Captain,PERSON,"People, including fictional",2028,2040
+MACBETH,1,2,A Camp near Forres.,Ross,PERSON,"People, including fictional",2058,2062
+MACBETH,1,2,A Camp near Forres.,Angus,PERSON,"People, including fictional",2067,2072
+MACBETH,1,2,A Camp near Forres.,MALCOLM,PERSON,"People, including fictional",2090,2097
+MACBETH,1,2,A Camp near Forres.,Thane,GPE,"Countries, cities, states",2110,2115
+MACBETH,1,2,A Camp near Forres.,Ross,PERSON,"People, including fictional",2119,2123
+MACBETH,1,2,A Camp near Forres.,ROSS,PERSON,"People, including fictional",2224,2228
+MACBETH,1,2,A Camp near Forres.,DUNCAN,PERSON,"People, including fictional",2249,2255
+MACBETH,1,2,A Camp near Forres.,ROSS,PERSON,"People, including fictional",2291,2295
+MACBETH,1,2,A Camp near Forres.,Fife,GPE,"Countries, cities, states",2302,2306
+MACBETH,1,2,A Camp near Forres.,Norweyan,NORP,Nationalities or religious or political groups,2330,2338
+MACBETH,1,2,A Camp near Forres.,Norway,GPE,"Countries, cities, states",2386,2392
+MACBETH,1,2,A Camp near Forres.,Bellona,PERSON,"People, including fictional",2521,2528
+MACBETH,1,2,A Camp near Forres.,Point,ORG,"Companies, agencies, institutions, etc.",2598,2603
+MACBETH,1,2,A Camp near Forres.,DUNCAN,PERSON,"People, including fictional",2716,2722
+MACBETH,1,2,A Camp near Forres.,ROSS,PERSON,"People, including fictional",2741,2745
+MACBETH,1,2,A Camp near Forres.,Sweno,PERSON,"People, including fictional",2756,2761
+MACBETH,1,2,A Camp near Forres.,Norways,GPE,"Countries, cities, states",2767,2774
+MACBETH,1,2,A Camp near Forres.,Saint Colme's,GPE,"Countries, cities, states",2864,2877
+MACBETH,1,2,A Camp near Forres.,Ten thousand dollars,MONEY,"Monetary values, including unit",2883,2903
+MACBETH,1,2,A Camp near Forres.,DUNCAN,PERSON,"People, including fictional",2924,2930
+MACBETH,1,2,A Camp near Forres.,Thane,GPE,"Countries, cities, states",2945,2950
+MACBETH,1,2,A Camp near Forres.,ROSS,PERSON,"People, including fictional",3068,3072
+MACBETH,1,2,A Camp near Forres.,DUNCAN,PERSON,"People, including fictional",3092,3098
+MACBETH,1,3,A heath.,three,CARDINAL,Numerals that do not fall under another type,19,24
+MACBETH,1,3,A heath.,FIRST,ORDINAL,"""first"", ""second"", etc.",34,39
+MACBETH,1,3,A heath.,FIRST,ORDINAL,"""first"", ""second"", etc.",139,144
+MACBETH,1,3,A heath.,Aleppo,NORP,Nationalities or religious or political groups,322,328
+MACBETH,1,3,A heath.,FIRST,ORDINAL,"""first"", ""second"", etc.",490,495
+MACBETH,1,3,A heath.,FIRST,ORDINAL,"""first"", ""second"", etc.",544,549
+MACBETH,1,3,A heath.,shipman,PERSON,"People, including fictional",655,662
+MACBETH,1,3,A heath.,sev'n-nights,DATE,Absolute or relative dates or periods,798,810
+MACBETH,1,3,A heath.,FIRST,ORDINAL,"""first"", ""second"", etc.",974,979
+MACBETH,1,3,A heath.,nine,CARDINAL,Numerals that do not fall under another type,1268,1272
+MACBETH,1,3,A heath.,Enter Macbeth and Banquo,WORK_OF_ART,"Titles of books, songs, etc.",1303,1327
+MACBETH,1,3,A heath.,FIRST,ORDINAL,"""first"", ""second"", etc.",1805,1810
+MACBETH,1,3,A heath.,Thane,GPE,"Countries, cities, states",1851,1856
+MACBETH,1,3,A heath.,Glamis,GPE,"Countries, cities, states",1860,1866
+MACBETH,1,3,A heath.,Thane,GPE,"Countries, cities, states",1915,1920
+MACBETH,1,3,A heath.,FIRST,ORDINAL,"""first"", ""second"", etc.",2470,2475
+MACBETH,1,3,A heath.,Macbeth and Banquo,WORK_OF_ART,"Titles of books, songs, etc.",2690,2708
+MACBETH,1,3,A heath.,FIRST,ORDINAL,"""first"", ""second"", etc.",2710,2715
+MACBETH,1,3,A heath.,Banquo,PERSON,"People, including fictional",2723,2729
+MACBETH,1,3,A heath.,Sinel,PERSON,"People, including fictional",2809,2814
+MACBETH,1,3,A heath.,Glamis,GPE,"Countries, cities, states",2844,2850
+MACBETH,1,3,A heath.,Whither,PERSON,"People, including fictional",3245,3252
+MACBETH,1,3,A heath.,Ross,PERSON,"People, including fictional",3670,3674
+MACBETH,1,3,A heath.,Angus,PERSON,"People, including fictional",3679,3684
+MACBETH,1,3,A heath.,ROSS,PERSON,"People, including fictional",3686,3690
+MACBETH,1,3,A heath.,Norweyan,NORP,Nationalities or religious or political groups,3981,3989
+MACBETH,1,3,A heath.,ANGUS,ORG,"Companies, agencies, institutions, etc.",4202,4207
+MACBETH,1,3,A heath.,ROSS,PERSON,"People, including fictional",4314,4318
+MACBETH,1,3,A heath.,Thane,PERSON,"People, including fictional",4393,4398
+MACBETH,1,3,A heath.,ANGUS,ORG,"Companies, agencies, institutions, etc.",4586,4591
+MACBETH,1,3,A heath.,Thane,GPE,"Countries, cities, states",4605,4610
+MACBETH,1,3,A heath.,Norway,GPE,"Countries, cities, states",4729,4735
+MACBETH,1,3,A heath.,Glamis,PERSON,"People, including fictional",4936,4942
+MACBETH,1,3,A heath.,Thane,GPE,"Countries, cities, states",4948,4953
+MACBETH,1,3,A heath.,Ross,PERSON,"People, including fictional",4992,4996
+MACBETH,1,3,A heath.,Angus,PERSON,"People, including fictional",5001,5006
+MACBETH,1,3,A heath.,Banquo,PERSON,"People, including fictional",5034,5040
+MACBETH,1,3,A heath.,Cousins,PERSON,"People, including fictional",5422,5429
+MACBETH,1,3,A heath.,Two,CARDINAL,Numerals that do not fall under another type,5467,5470
+MACBETH,1,3,A heath.,Thane,PERSON,"People, including fictional",5719,5724
+MACBETH,1,3,A heath.,Shakes,PERSON,"People, including fictional",5986,5992
+MACBETH,1,3,A heath.,Time,ORG,"Companies, agencies, institutions, etc.",6364,6368
+MACBETH,1,3,A heath.,the roughest day,DATE,Absolute or relative dates or periods,6395,6411
+MACBETH,1,3,A heath.,Worthy Macbeth,PERSON,"People, including fictional",6421,6435
+MACBETH,1,3,A heath.,enough.—Come,CARDINAL,Numerals that do not fall under another type,6820,6832
+MACBETH,1,4,Forres. A Room in the Palace.,Duncan,PERSON,"People, including fictional",16,22
+MACBETH,1,4,Forres. A Room in the Palace.,Malcolm,PERSON,"People, including fictional",24,31
+MACBETH,1,4,Forres. A Room in the Palace.,Donalbain,PERSON,"People, including fictional",33,42
+MACBETH,1,4,Forres. A Room in the Palace.,Lennox,PERSON,"People, including fictional",44,50
+MACBETH,1,4,Forres. A Room in the Palace.,DUNCAN,PERSON,"People, including fictional",67,73
+MACBETH,1,4,Forres. A Room in the Palace.,return'd,ORG,"Companies, agencies, institutions, etc.",136,144
+MACBETH,1,4,Forres. A Room in the Palace.,MALCOLM,PERSON,"People, including fictional",146,153
+MACBETH,1,4,Forres. A Room in the Palace.,DUNCAN,PERSON,"People, including fictional",535,541
+MACBETH,1,4,Forres. A Room in the Palace.,Ross,PERSON,"People, including fictional",680,684
+MACBETH,1,4,Forres. A Room in the Palace.,Angus,PERSON,"People, including fictional",689,694
+MACBETH,1,4,Forres. A Room in the Palace.,DUNCAN,PERSON,"People, including fictional",1290,1296
+MACBETH,1,4,Forres. A Room in the Palace.,Banquo,PERSON,"People, including fictional",1394,1400
+MACBETH,1,4,Forres. A Room in the Palace.,DUNCAN,PERSON,"People, including fictional",1569,1575
+MACBETH,1,4,Forres. A Room in the Palace.,Wanton,GPE,"Countries, cities, states",1596,1602
+MACBETH,1,4,Forres. A Room in the Palace.,Malcolm,PERSON,"People, including fictional",1772,1779
+MACBETH,1,4,Forres. A Room in the Palace.,Cumberland,LOC,"Non-GPE locations, mountain ranges, bodies of water",1818,1828
+MACBETH,1,4,Forres. A Room in the Palace.,Inverness,GPE,"Countries, cities, states",1963,1972
+MACBETH,1,4,Forres. A Room in the Palace.,us'd,ORG,"Companies, agencies, institutions, etc.",2044,2048
+MACBETH,1,4,Forres. A Room in the Palace.,DUNCAN,PERSON,"People, including fictional",2173,2179
+MACBETH,1,4,Forres. A Room in the Palace.,DUNCAN,PERSON,"People, including fictional",2488,2494
+MACBETH,1,4,Forres. A Room in the Palace.,Banquo,PERSON,"People, including fictional",2509,2515
+MACBETH,1,5,Inverness. A Room in Macbeth's Castle.,Lady Macbeth,PERSON,"People, including fictional",6,18
+MACBETH,1,5,Inverness. A Room in Macbeth's Castle.,the day,DATE,Absolute or relative dates or periods,68,75
+MACBETH,1,5,Inverness. A Room in Macbeth's Castle.,might'st,PERSON,"People, including fictional",604,612
+MACBETH,1,5,Inverness. A Room in Macbeth's Castle.,Glamis,PERSON,"People, including fictional",735,741
+MACBETH,1,5,Inverness. A Room in Macbeth's Castle.,thou holily,PERSON,"People, including fictional",1028,1039
+MACBETH,1,5,Inverness. A Room in Macbeth's Castle.,Glamis,PERSON,"People, including fictional",1115,1121
+MACBETH,1,5,Inverness. A Room in Macbeth's Castle.,tonight,TIME,Times smaller than a day,1542,1549
+MACBETH,1,5,Inverness. A Room in Macbeth's Castle.,MESSENGER,PERSON,"People, including fictional",1669,1678
+MACBETH,1,5,Inverness. A Room in Macbeth's Castle.,One,CARDINAL,Numerals that do not fall under another type,1728,1731
+MACBETH,1,5,Inverness. A Room in Macbeth's Castle.,Exit Messenger,PERSON,"People, including fictional",1901,1915
+MACBETH,1,5,Inverness. A Room in Macbeth's Castle.,Duncan,PERSON,"People, including fictional",1979,1985
+MACBETH,1,5,Inverness. A Room in Macbeth's Castle.,Th,ORG,"Companies, agencies, institutions, etc.",2290,2292
+MACBETH,1,5,Inverness. A Room in Macbeth's Castle.,Enter Macbeth,WORK_OF_ART,"Titles of books, songs, etc.",2638,2651
+MACBETH,1,5,Inverness. A Room in Macbeth's Castle.,Duncan,PERSON,"People, including fictional",2858,2864
+MACBETH,1,5,Inverness. A Room in Macbeth's Castle.,tonight,TIME,Times smaller than a day,2876,2883
+MACBETH,1,5,Inverness. A Room in Macbeth's Castle.,Tomorrow,DATE,Absolute or relative dates or periods,2929,2937
+MACBETH,1,5,Inverness. A Room in Macbeth's Castle.,May,PERSON,"People, including fictional",3049,3052
+MACBETH,1,5,Inverness. A Room in Macbeth's Castle.,night,TIME,Times smaller than a day,3287,3292
+MACBETH,1,5,Inverness. A Room in Macbeth's Castle.,masterdom,GPE,"Countries, cities, states",3406,3415
+MACBETH,1,6,The same. Before the Castle.,Hautboys,ORG,"Companies, agencies, institutions, etc.",0,8
+MACBETH,1,6,The same. Before the Castle.,Duncan,PERSON,"People, including fictional",47,53
+MACBETH,1,6,The same. Before the Castle.,Malcolm,PERSON,"People, including fictional",55,62
+MACBETH,1,6,The same. Before the Castle.,Donalbain,PERSON,"People, including fictional",64,73
+MACBETH,1,6,The same. Before the Castle.,Lennox,PERSON,"People, including fictional",83,89
+MACBETH,1,6,The same. Before the Castle.,Macduff,GPE,"Countries, cities, states",91,98
+MACBETH,1,6,The same. Before the Castle.,Ross,PERSON,"People, including fictional",100,104
+MACBETH,1,6,The same. Before the Castle.,Angus,PERSON,"People, including fictional",106,111
+MACBETH,1,6,The same. Before the Castle.,DUNCAN,PERSON,"People, including fictional",128,134
+MACBETH,1,6,The same. Before the Castle.,Nimbly,PERSON,"People, including fictional",178,184
+MACBETH,1,6,The same. Before the Castle.,summer,DATE,Absolute or relative dates or periods,261,267
+MACBETH,1,6,The same. Before the Castle.,Buttress,ORG,"Companies, agencies, institutions, etc.",401,409
+MACBETH,1,6,The same. Before the Castle.,Lady Macbeth,PERSON,"People, including fictional",571,583
+MACBETH,1,6,The same. Before the Castle.,DUNCAN,PERSON,"People, including fictional",585,591
+MACBETH,1,6,The same. Before the Castle.,DUNCAN,PERSON,"People, including fictional",1082,1088
+MACBETH,1,6,The same. Before the Castle.,holp,PERSON,"People, including fictional",1249,1253
+MACBETH,1,6,The same. Before the Castle.,tonight,TIME,Times smaller than a day,1323,1330
+MACBETH,1,6,The same. Before the Castle.,DUNCAN,PERSON,"People, including fictional",1494,1500
+MACBETH,1,7,The same. A Lobby in the Castle.,Hautboys,PERSON,"People, including fictional",0,8
+MACBETH,1,7,The same. A Lobby in the Castle.,Sewer,ORG,"Companies, agencies, institutions, etc.",46,51
+MACBETH,1,7,The same. A Lobby in the Castle.,First,ORDINAL,"""first"", ""second"", etc.",679,684
+MACBETH,1,7,The same. A Lobby in the Castle.,Strong,PERSON,"People, including fictional",723,729
+MACBETH,1,7,The same. A Lobby in the Castle.,Duncan,PERSON,"People, including fictional",860,866
+MACBETH,1,7,The same. A Lobby in the Castle.,Will,PERSON,"People, including fictional",958,962
+MACBETH,1,7,The same. A Lobby in the Castle.,cherubin,PERSON,"People, including fictional",1115,1123
+MACBETH,1,7,The same. A Lobby in the Castle.,hors'd,ORG,"Companies, agencies, institutions, etc.",1125,1131
+MACBETH,1,7,The same. A Lobby in the Castle.,wind.—I,ORG,"Companies, agencies, institutions, etc.",1240,1247
+MACBETH,1,7,The same. A Lobby in the Castle.,Golden,PERSON,"People, including fictional",1643,1649
+MACBETH,1,7,The same. A Lobby in the Castle.,Duncan,PERSON,"People, including fictional",2986,2992
+MACBETH,1,7,The same. A Lobby in the Castle.,day,DATE,Absolute or relative dates or periods,3033,3036
+MACBETH,1,7,The same. A Lobby in the Castle.,two,CARDINAL,Numerals that do not fall under another type,3077,3080
+MACBETH,1,7,The same. A Lobby in the Castle.,limbeck,PERSON,"People, including fictional",3218,3225
+MACBETH,1,7,The same. A Lobby in the Castle.,Th,ORG,"Companies, agencies, institutions, etc.",3331,3333
+MACBETH,1,7,The same. A Lobby in the Castle.,Duncan,PERSON,"People, including fictional",3345,3351
+MACBETH,1,7,The same. A Lobby in the Castle.,two,CARDINAL,Numerals that do not fall under another type,3605,3608
+MACBETH,1,7,The same. A Lobby in the Castle.,us'd,ORG,"Companies, agencies, institutions, etc.",3633,3637
+MACBETH,2,1,Inverness. Court within the Castle.,the night,TIME,Times smaller than a day,67,76
+MACBETH,2,1,Inverness. Court within the Castle.,FLEANCE,PERSON,"People, including fictional",83,90
+MACBETH,2,1,Inverness. Court within the Castle.,twelve,CARDINAL,Numerals that do not fall under another type,167,173
+MACBETH,2,1,Inverness. Court within the Castle.,FLEANCE,PERSON,"People, including fictional",175,182
+MACBETH,2,1,Inverness. Court within the Castle.,Enter Macbeth,WORK_OF_ART,"Titles of books, songs, etc.",471,484
+MACBETH,2,1,Inverness. Court within the Castle.,sword.—Who,PERSON,"People, including fictional",524,534
+MACBETH,2,1,Inverness. Court within the Castle.,last night,TIME,Times smaller than a day,938,948
+MACBETH,2,1,Inverness. Court within the Castle.,three,CARDINAL,Numerals that do not fall under another type,956,961
+MACBETH,2,1,Inverness. Court within the Castle.,an hour,TIME,Times smaller than a day,1068,1075
+MACBETH,2,1,Inverness. Court within the Castle.,eyes.—Now o'er,TIME,Times smaller than a day,2307,2321
+MACBETH,2,1,Inverness. Court within the Castle.,one,CARDINAL,Numerals that do not fall under another type,2326,2329
+MACBETH,2,1,Inverness. Court within the Castle.,half,CARDINAL,Numerals that do not fall under another type,2330,2334
+MACBETH,2,1,Inverness. Court within the Castle.,Nature,WORK_OF_ART,"Titles of books, songs, etc.",2341,2347
+MACBETH,2,1,Inverness. Court within the Castle.,Pale Hecate's,ORG,"Companies, agencies, institutions, etc.",2427,2440
+MACBETH,2,1,Inverness. Court within the Castle.,Alarum'd,ORG,"Companies, agencies, institutions, etc.",2473,2481
+MACBETH,2,1,Inverness. Court within the Castle.,Tarquin,PERSON,"People, including fictional",2567,2574
+MACBETH,2,1,Inverness. Court within the Castle.,Duncan,PERSON,"People, including fictional",2969,2975
+MACBETH,2,1,Inverness. Court within the Castle.,knell,PERSON,"People, including fictional",2989,2994
+MACBETH,2,2,The same.,second,ORDINAL,"""first"", ""second"", etc.",965,971
+MACBETH,2,2,The same.,Donalbain,PERSON,"People, including fictional",995,1004
+MACBETH,2,2,The same.,two,CARDINAL,Numerals that do not fall under another type,1329,1332
+MACBETH,2,2,The same.,Macbeth,PERSON,"People, including fictional",1838,1845
+MACBETH,2,2,The same.,day,DATE,Absolute or relative dates or periods,1953,1956
+MACBETH,2,2,The same.,second,ORDINAL,"""first"", ""second"", etc.",2020,2026
+MACBETH,2,2,The same.,Glamis,PERSON,"People, including fictional",2161,2167
+MACBETH,2,2,The same.,brainsickly,PERSON,"People, including fictional",2368,2379
+MACBETH,2,2,The same.,Neptune,LOC,"Non-GPE locations, mountain ranges, bodies of water",3085,3092
+MACBETH,2,2,The same.,Lady Macbeth,PERSON,"People, including fictional",3234,3246
+MACBETH,2,2,The same.,Wake Duncan,PERSON,"People, including fictional",3731,3742
+MACBETH,2,3,The same.,Belzebub,ORG,"Companies, agencies, institutions, etc.",197,205
+MACBETH,2,3,The same.,English,LANGUAGE,Any named language,660,667
+MACBETH,2,3,The same.,French,NORP,Nationalities or religious or political groups,710,716
+MACBETH,2,3,The same.,Macduff,PERSON,"People, including fictional",1079,1086
+MACBETH,2,3,The same.,Lennox,PERSON,"People, including fictional",1091,1097
+MACBETH,2,3,The same.,second,ORDINAL,"""first"", ""second"", etc.",1225,1231
+MACBETH,2,3,The same.,three,CARDINAL,Numerals that do not fall under another type,1277,1282
+MACBETH,2,3,The same.,three,CARDINAL,Numerals that do not fall under another type,1305,1310
+MACBETH,2,3,The same.,last night,TIME,Times smaller than a day,1839,1849
+MACBETH,2,3,The same.,thy master,PERSON,"People, including fictional",2055,2065
+MACBETH,2,3,The same.,morrow,DATE,Absolute or relative dates or periods,2148,2154
+MACBETH,2,3,The same.,morrow,DATE,Absolute or relative dates or periods,2181,2187
+MACBETH,2,3,The same.,Exit Macduff,PERSON,"People, including fictional",2570,2582
+MACBETH,2,3,The same.,today,DATE,Absolute or relative dates or periods,2612,2617
+MACBETH,2,3,The same.,Lamentings,PERSON,"People, including fictional",2752,2762
+MACBETH,2,3,The same.,Twas,TIME,Times smaller than a day,3025,3029
+MACBETH,2,3,The same.,Macduff,PERSON,"People, including fictional",3112,3119
+MACBETH,2,3,The same.,Gorgon,ORG,"Companies, agencies, institutions, etc.",3534,3540
+MACBETH,2,3,The same.,Exeunt Macbeth and,WORK_OF_ART,"Titles of books, songs, etc.",3595,3613
+MACBETH,2,3,The same.,Lennox,PERSON,"People, including fictional",3614,3620
+MACBETH,2,3,The same.,Banquo,PERSON,"People, including fictional",3679,3685
+MACBETH,2,3,The same.,Donalbain,PERSON,"People, including fictional",3690,3699
+MACBETH,2,3,The same.,Malcolm,PERSON,"People, including fictional",3701,3708
+MACBETH,2,3,The same.,Malcolm,PERSON,"People, including fictional",3832,3839
+MACBETH,2,3,The same.,Banquo,PERSON,"People, including fictional",3841,3847
+MACBETH,2,3,The same.,Alarum-bell,PERSON,"People, including fictional",3928,3939
+MACBETH,2,3,The same.,Lady Macbeth,PERSON,"People, including fictional",3953,3965
+MACBETH,2,3,The same.,Duff,PERSON,"People, including fictional",4353,4357
+MACBETH,2,3,The same.,Lennox,PERSON,"People, including fictional",4431,4437
+MACBETH,2,3,The same.,Ross,PERSON,"People, including fictional",4443,4447
+MACBETH,2,3,The same.,an hour,TIME,Times smaller than a day,4473,4480
+MACBETH,2,3,The same.,Malcolm,PERSON,"People, including fictional",4715,4722
+MACBETH,2,3,The same.,Donalbain,PERSON,"People, including fictional",4727,4736
+MACBETH,2,3,The same.,DONALBAIN,PERSON,"People, including fictional",4738,4747
+MACBETH,2,3,The same.,MALCOLM,PERSON,"People, including fictional",4935,4942
+MACBETH,2,3,The same.,Loyal,ORG,"Companies, agencies, institutions, etc.",5361,5366
+MACBETH,2,3,The same.,Duncan,PERSON,"People, including fictional",5471,5477
+MACBETH,2,3,The same.,Unmannerly,PERSON,"People, including fictional",5681,5691
+MACBETH,2,3,The same.,gore,PERSON,"People, including fictional",5706,5710
+MACBETH,2,3,The same.,MALCOLM,PERSON,"People, including fictional",5865,5872
+MACBETH,2,3,The same.,DONALBAIN,PERSON,"People, including fictional",5946,5955
+MACBETH,2,3,The same.,MALCOLM,PERSON,"People, including fictional",6089,6096
+MACBETH,2,3,The same.,— Lady Macbeth,PERSON,"People, including fictional",6170,6184
+MACBETH,2,3,The same.,Malcolm,PERSON,"People, including fictional",6630,6637
+MACBETH,2,3,The same.,Donalbain,PERSON,"People, including fictional",6642,6651
+MACBETH,2,3,The same.,MALCOLM,PERSON,"People, including fictional",6653,6660
+MACBETH,2,3,The same.,England,GPE,"Countries, cities, states",6786,6793
+MACBETH,2,3,The same.,DONALBAIN,PERSON,"People, including fictional",6795,6804
+MACBETH,2,3,The same.,Ireland,GPE,"Countries, cities, states",6809,6816
+MACBETH,2,3,The same.,I. Our,ORG,"Companies, agencies, institutions, etc.",6818,6824
+MACBETH,2,3,The same.,MALCOLM,PERSON,"People, including fictional",6958,6965
+MACBETH,2,4,The same. Without the Castle.,Threescore,PERSON,"People, including fictional",36,46
+MACBETH,2,4,The same. Without the Castle.,ten,CARDINAL,Numerals that do not fall under another type,51,54
+MACBETH,2,4,The same. Without the Castle.,Hours,TIME,Times smaller than a day,120,125
+MACBETH,2,4,The same. Without the Castle.,ROSS,PERSON,"People, including fictional",205,209
+MACBETH,2,4,The same. Without the Castle.,Thou,PERSON,"People, including fictional",228,232
+MACBETH,2,4,The same. Without the Castle.,night,TIME,Times smaller than a day,386,391
+MACBETH,2,4,The same. Without the Castle.,day,DATE,Absolute or relative dates or periods,415,418
+MACBETH,2,4,The same. Without the Castle.,Tuesday,DATE,Absolute or relative dates or periods,567,574
+MACBETH,2,4,The same. Without the Castle.,ROSS,PERSON,"People, including fictional",666,670
+MACBETH,2,4,The same. Without the Castle.,Duncan,PERSON,"People, including fictional",676,682
+MACBETH,2,4,The same. Without the Castle.,MAN,GPE,"Countries, cities, states",900,903
+MACBETH,2,4,The same. Without the Castle.,ROSS,PERSON,"People, including fictional",936,940
+MACBETH,2,4,The same. Without the Castle.,Macduff,ORG,"Companies, agencies, institutions, etc.",1026,1033
+MACBETH,2,4,The same. Without the Castle.,ROSS,PERSON,"People, including fictional",1107,1111
+MACBETH,2,4,The same. Without the Castle.,Macbeth,PERSON,"People, including fictional",1180,1187
+MACBETH,2,4,The same. Without the Castle.,ROSS,PERSON,"People, including fictional",1200,1204
+MACBETH,2,4,The same. Without the Castle.,the day,DATE,Absolute or relative dates or periods,1212,1219
+MACBETH,2,4,The same. Without the Castle.,Malcolm,PERSON,"People, including fictional",1280,1287
+MACBETH,2,4,The same. Without the Castle.,Donalbain,PERSON,"People, including fictional",1292,1301
+MACBETH,2,4,The same. Without the Castle.,two,CARDINAL,Numerals that do not fall under another type,1314,1317
+MACBETH,2,4,The same. Without the Castle.,ROSS,PERSON,"People, including fictional",1394,1398
+MACBETH,2,4,The same. Without the Castle.,Thine,NORP,Nationalities or religious or political groups,1462,1467
+MACBETH,2,4,The same. Without the Castle.,Scone,ORG,"Companies, agencies, institutions, etc.",1588,1593
+MACBETH,2,4,The same. Without the Castle.,ROSS,PERSON,"People, including fictional",1610,1614
+MACBETH,2,4,The same. Without the Castle.,Duncan,PERSON,"People, including fictional",1625,1631
+MACBETH,2,4,The same. Without the Castle.,Colmekill,ORG,"Companies, agencies, institutions, etc.",1660,1669
+MACBETH,2,4,The same. Without the Castle.,ROSS,PERSON,"People, including fictional",1743,1747
+MACBETH,2,4,The same. Without the Castle.,Scone,PERSON,"People, including fictional",1761,1766
+MACBETH,2,4,The same. Without the Castle.,Fife,NORP,Nationalities or religious or political groups,1797,1801
+MACBETH,2,4,The same. Without the Castle.,ROSS,PERSON,"People, including fictional",1803,1807
+MACBETH,2,4,The same. Without the Castle.,ROSS,PERSON,"People, including fictional",1933,1937
+MACBETH,2,4,The same. Without the Castle.,MAN,GPE,"Countries, cities, states",1961,1964
+MACBETH,2,4,The same. Without the Castle.,benison,PERSON,"People, including fictional",1972,1979
+MACBETH,3,1,Forres. A Room in the Palace.,King,PERSON,"People, including fictional",40,44
+MACBETH,3,1,Forres. A Room in the Palace.,Glamis,PERSON,"People, including fictional",54,60
+MACBETH,3,1,Forres. A Room in the Palace.,Macbeth,PERSON,"People, including fictional",302,309
+MACBETH,3,1,Forres. A Room in the Palace.,May,DATE,Absolute or relative dates or periods,373,376
+MACBETH,3,1,Forres. A Room in the Palace.,Sennet,PERSON,"People, including fictional",451,457
+MACBETH,3,1,Forres. A Room in the Palace.,Lady Macbeth,PERSON,"People, including fictional",490,502
+MACBETH,3,1,Forres. A Room in the Palace.,Lennox,PERSON,"People, including fictional",513,519
+MACBETH,3,1,Forres. A Room in the Palace.,Ross,PERSON,"People, including fictional",521,525
+MACBETH,3,1,Forres. A Room in the Palace.,Lords,ORG,"Companies, agencies, institutions, etc.",527,532
+MACBETH,3,1,Forres. A Room in the Palace.,Tonight,TIME,Times smaller than a day,699,706
+MACBETH,3,1,Forres. A Room in the Palace.,this afternoon,TIME,Times smaller than a day,901,915
+MACBETH,3,1,Forres. A Room in the Palace.,day,DATE,Absolute or relative dates or periods,1055,1058
+MACBETH,3,1,Forres. A Room in the Palace.,tomorrow,DATE,Absolute or relative dates or periods,1085,1093
+MACBETH,3,1,Forres. A Room in the Palace.,the night,TIME,Times smaller than a day,1244,1253
+MACBETH,3,1,Forres. A Room in the Palace.,a dark hour,TIME,Times smaller than a day,1259,1270
+MACBETH,3,1,Forres. A Room in the Palace.,England,GPE,"Countries, cities, states",1391,1398
+MACBETH,3,1,Forres. A Room in the Palace.,Ireland,GPE,"Countries, cities, states",1406,1413
+MACBETH,3,1,Forres. A Room in the Palace.,tomorrow,DATE,Absolute or relative dates or periods,1511,1519
+MACBETH,3,1,Forres. A Room in the Palace.,night,TIME,Times smaller than a day,1631,1636
+MACBETH,3,1,Forres. A Room in the Palace.,seven at night,TIME,Times smaller than a day,1871,1885
+MACBETH,3,1,Forres. A Room in the Palace.,Sirrah,PERSON,"People, including fictional",2031,2037
+MACBETH,3,1,Forres. A Room in the Palace.,the palace gate,FAC,"Buildings, airports, highways, bridges, etc.",2123,2138
+MACBETH,3,1,Forres. A Room in the Palace.,Exit Servant,PERSON,"People, including fictional",2171,2183
+MACBETH,3,1,Forres. A Room in the Palace.,Banquo Stick,FAC,"Buildings, airports, highways, bridges, etc.",2244,2256
+MACBETH,3,1,Forres. A Room in the Palace.,Reigns,ORG,"Companies, agencies, institutions, etc.",2292,2298
+MACBETH,3,1,Forres. A Room in the Palace.,Mark Antony's,PERSON,"People, including fictional",2548,2561
+MACBETH,3,1,Forres. A Room in the Palace.,Caesar,PERSON,"People, including fictional",2569,2575
+MACBETH,3,1,Forres. A Room in the Palace.,first,ORDINAL,"""first"", ""second"", etc.",2602,2607
+MACBETH,3,1,Forres. A Room in the Palace.,If't,ORG,"Companies, agencies, institutions, etc.",2888,2892
+MACBETH,3,1,Forres. A Room in the Palace.,Banquo,PERSON,"People, including fictional",2904,2910
+MACBETH,3,1,Forres. A Room in the Palace.,Duncan,PERSON,"People, including fictional",2963,2969
+MACBETH,3,1,Forres. A Room in the Palace.,Banquo,PERSON,"People, including fictional",3130,3136
+MACBETH,3,1,Forres. A Room in the Palace.,utterance!—Who,PERSON,"People, including fictional",3210,3224
+MACBETH,3,1,Forres. A Room in the Palace.,two,CARDINAL,Numerals that do not fall under another type,3254,3257
+MACBETH,3,1,Forres. A Room in the Palace.,Exit Servant,PERSON,"People, including fictional",3318,3330
+MACBETH,3,1,Forres. A Room in the Palace.,yesterday,DATE,Absolute or relative dates or periods,3343,3352
+MACBETH,3,1,Forres. A Room in the Palace.,FIRST,ORDINAL,"""first"", ""second"", etc.",3372,3377
+MACBETH,3,1,Forres. A Room in the Palace.,cross'd,PERSON,"People, including fictional",3709,3716
+MACBETH,3,1,Forres. A Room in the Palace.,half,CARDINAL,Numerals that do not fall under another type,3792,3796
+MACBETH,3,1,Forres. A Room in the Palace.,Banquo,PERSON,"People, including fictional",3842,3848
+MACBETH,3,1,Forres. A Room in the Palace.,FIRST,ORDINAL,"""first"", ""second"", etc.",3851,3856
+MACBETH,3,1,Forres. A Room in the Palace.,second,ORDINAL,"""first"", ""second"", etc.",3955,3961
+MACBETH,3,1,Forres. A Room in the Palace.,FIRST,ORDINAL,"""first"", ""second"", etc.",4195,4200
+MACBETH,3,1,Forres. A Room in the Palace.,Shoughs,GPE,"Countries, cities, states",4331,4338
+MACBETH,3,1,Forres. A Room in the Palace.,Distinguishes,PERSON,"People, including fictional",4419,4432
+MACBETH,3,1,Forres. A Room in the Palace.,incens'd,GPE,"Countries, cities, states",5045,5053
+MACBETH,3,1,Forres. A Room in the Palace.,FIRST,ORDINAL,"""first"", ""second"", etc.",5103,5108
+MACBETH,3,1,Forres. A Room in the Palace.,That every minute,TIME,Times smaller than a day,5380,5397
+MACBETH,3,1,Forres. A Room in the Palace.,SECOND,DATE,Absolute or relative dates or periods,5801,5807
+MACBETH,3,1,Forres. A Room in the Palace.,FIRST,ORDINAL,"""first"", ""second"", etc.",5866,5871
+MACBETH,3,1,Forres. A Room in the Palace.,this hour,TIME,Times smaller than a day,5948,5957
+MACBETH,3,1,Forres. A Room in the Palace.,tonight,TIME,Times smaller than a day,6095,6102
+MACBETH,3,1,Forres. A Room in the Palace.,BOTH MURDERERS,ORG,"Companies, agencies, institutions, etc.",6426,6440
+MACBETH,3,1,Forres. A Room in the Palace.,Exeunt Murderers,WORK_OF_ART,"Titles of books, songs, etc.",6520,6536
+MACBETH,3,1,Forres. A Room in the Palace.,Banquo,PERSON,"People, including fictional",6555,6561
+MACBETH,3,1,Forres. A Room in the Palace.,tonight,TIME,Times smaller than a day,6618,6625
+MACBETH,3,2,The same. Another Room in the Palace.,Banquo,PERSON,"People, including fictional",51,57
+MACBETH,3,2,The same. Another Room in the Palace.,tonight,TIME,Times smaller than a day,113,120
+MACBETH,3,2,The same. Another Room in the Palace.,nightly,TIME,Times smaller than a day,948,955
+MACBETH,3,2,The same. Another Room in the Palace.,Duncan,PERSON,"People, including fictional",1090,1096
+MACBETH,3,2,The same. Another Room in the Palace.,tonight,TIME,Times smaller than a day,1377,1384
+MACBETH,3,2,The same. Another Room in the Palace.,Banquo,PERSON,"People, including fictional",1467,1473
+MACBETH,3,2,The same. Another Room in the Palace.,Disguising,PERSON,"People, including fictional",1642,1652
+MACBETH,3,2,The same. Another Room in the Palace.,Banquo,PERSON,"People, including fictional",1774,1780
+MACBETH,3,2,The same. Another Room in the Palace.,Fleance,ORG,"Companies, agencies, institutions, etc.",1790,1797
+MACBETH,3,2,The same. Another Room in the Palace.,Hecate,ORG,"Companies, agencies, institutions, etc.",1991,1997
+MACBETH,3,2,The same. Another Room in the Palace.,night,TIME,Times smaller than a day,2063,2068
+MACBETH,3,2,The same. Another Room in the Palace.,chuck,PERSON,"People, including fictional",2210,2215
+MACBETH,3,2,The same. Another Room in the Palace.,rooky,PERSON,"People, including fictional",2455,2460
+MACBETH,3,2,The same. Another Room in the Palace.,night,TIME,Times smaller than a day,2520,2525
+MACBETH,3,3,"The same. A Park or Lawn, with a gate leading to the Palace.",FIRST,ORDINAL,"""first"", ""second"", etc.",23,28
+MACBETH,3,3,"The same. A Park or Lawn, with a gate leading to the Palace.",FIRST,ORDINAL,"""first"", ""second"", etc.",219,224
+MACBETH,3,3,"The same. A Park or Lawn, with a gate leading to the Palace.",FIRST,ORDINAL,"""first"", ""second"", etc.",596,601
+MACBETH,3,3,"The same. A Park or Lawn, with a gate leading to the Palace.",Almost a mile,QUANTITY,"Measurements, as of weight or distance",649,662
+MACBETH,3,3,"The same. A Park or Lawn, with a gate leading to the Palace.",SECOND,DATE,Absolute or relative dates or periods,789,795
+MACBETH,3,3,"The same. A Park or Lawn, with a gate leading to the Palace.",FIRST,ORDINAL,"""first"", ""second"", etc.",849,854
+MACBETH,3,3,"The same. A Park or Lawn, with a gate leading to the Palace.",tonight,TIME,Times smaller than a day,901,908
+MACBETH,3,3,"The same. A Park or Lawn, with a gate leading to the Palace.",FIRST,ORDINAL,"""first"", ""second"", etc.",910,915
+MACBETH,3,3,"The same. A Park or Lawn, with a gate leading to the Palace.",FIRST,ORDINAL,"""first"", ""second"", etc.",1114,1119
+MACBETH,3,3,"The same. A Park or Lawn, with a gate leading to the Palace.",SECOND,DATE,Absolute or relative dates or periods,1204,1210
+MACBETH,3,3,"The same. A Park or Lawn, with a gate leading to the Palace.",half,CARDINAL,Numerals that do not fall under another type,1239,1243
+MACBETH,3,3,"The same. A Park or Lawn, with a gate leading to the Palace.",FIRST,ORDINAL,"""first"", ""second"", etc.",1259,1264
+MACBETH,3,4,The same. A Room of state in the Palace.,Enter Macbeth,WORK_OF_ART,"Titles of books, songs, etc.",20,33
+MACBETH,3,4,The same. A Room of state in the Palace.,"Lady Macbeth,",PERSON,"People, including fictional",35,48
+MACBETH,3,4,The same. A Room of state in the Palace.,Ross,PERSON,"People, including fictional",49,53
+MACBETH,3,4,The same. A Room of state in the Palace.,Lennox,PERSON,"People, including fictional",55,61
+MACBETH,3,4,The same. A Room of state in the Palace.,Lords,ORG,"Companies, agencies, institutions, etc.",63,68
+MACBETH,3,4,The same. A Room of state in the Palace.,first,ORDINAL,"""first"", ""second"", etc.",134,139
+MACBETH,3,4,The same. A Room of state in the Palace.,Ourself,ORG,"Companies, agencies, institutions, etc.",209,216
+MACBETH,3,4,The same. A Room of state in the Palace.,MURDERER,ORG,"Companies, agencies, institutions, etc.",680,688
+MACBETH,3,4,The same. A Room of state in the Palace.,Banquo,PERSON,"People, including fictional",695,701
+MACBETH,3,4,The same. A Room of state in the Palace.,MURDERER,ORG,"Companies, agencies, institutions, etc.",778,786
+MACBETH,3,4,The same. A Room of state in the Palace.,MURDERER,ORG,"Companies, agencies, institutions, etc.",970,978
+MACBETH,3,4,The same. A Room of state in the Palace.,Fleance,PERSON,"People, including fictional",996,1003
+MACBETH,3,4,The same. A Room of state in the Palace.,Whole,PRODUCT,"Objects, vehicles, foods, etc. (not services)",1075,1080
+MACBETH,3,4,The same. A Room of state in the Palace.,Banquo,PERSON,"People, including fictional",1238,1244
+MACBETH,3,4,The same. A Room of state in the Palace.,twenty,CARDINAL,Numerals that do not fall under another type,1312,1318
+MACBETH,3,4,The same. A Room of state in the Palace.,tomorrow,DATE,Absolute or relative dates or periods,1538,1546
+MACBETH,3,4,The same. A Room of state in the Palace.,Exit Murderer,ORG,"Companies, agencies, institutions, etc.",1577,1590
+MACBETH,3,4,The same. A Room of state in the Palace.,Macbeth,PERSON,"People, including fictional",1878,1885
+MACBETH,3,4,The same. A Room of state in the Palace.,Sweet,PERSON,"People, including fictional",1904,1909
+MACBETH,3,4,The same. A Room of state in the Palace.,May't,PERSON,"People, including fictional",1991,1996
+MACBETH,3,4,The same. A Room of state in the Palace.,Banquo,PERSON,"People, including fictional",2107,2113
+MACBETH,3,4,The same. A Room of state in the Palace.,ROSS,PERSON,"People, including fictional",2190,2194
+MACBETH,3,4,The same. A Room of state in the Palace.,Lays,PERSON,"People, including fictional",2214,2218
+MACBETH,3,4,The same. A Room of state in the Palace.,Please't,NORP,Nationalities or religious or political groups,2243,2251
+MACBETH,3,4,The same. A Room of state in the Palace.,ROSS,PERSON,"People, including fictional",2586,2590
+MACBETH,3,4,The same. A Room of state in the Palace.,Duncan,PERSON,"People, including fictional",3120,3126
+MACBETH,3,4,The same. A Room of state in the Palace.,winter,DATE,Absolute or relative dates or periods,3220,3226
+MACBETH,3,4,The same. A Room of state in the Palace.,Authoris'd,ORG,"Companies, agencies, institutions, etc.",3235,3245
+MACBETH,3,4,The same. A Room of state in the Palace.,her grandam,PERSON,"People, including fictional",3249,3260
+MACBETH,3,4,The same. A Room of state in the Palace.,twenty,CARDINAL,Numerals that do not fall under another type,3988,3994
+MACBETH,3,4,The same. A Room of state in the Palace.,Banquo,PERSON,"People, including fictional",4447,4453
+MACBETH,3,4,The same. A Room of state in the Palace.,Thou,NORP,Nationalities or religious or political groups,4693,4697
+MACBETH,3,4,The same. A Room of state in the Palace.,Russian,NORP,Nationalities or religious or political groups,4945,4952
+MACBETH,3,4,The same. A Room of state in the Palace.,Hyrcan,NORP,Nationalities or religious or political groups,4988,4994
+MACBETH,3,4,The same. A Room of state in the Palace.,Unreal,ORG,"Companies, agencies, institutions, etc.",5212,5218
+MACBETH,3,4,The same. A Room of state in the Palace.,summer,DATE,Absolute or relative dates or periods,5460,5466
+MACBETH,3,4,The same. A Room of state in the Palace.,ROSS,PERSON,"People, including fictional",5681,5685
+MACBETH,3,4,The same. A Room of state in the Palace.,night,TIME,Times smaller than a day,5885,5890
+MACBETH,3,4,The same. A Room of state in the Palace.,Augurs,PERSON,"People, including fictional",6117,6123
+MACBETH,3,4,The same. A Room of state in the Palace.,secret'st,GPE,"Countries, cities, states",6213,6222
+MACBETH,3,4,The same. A Room of state in the Palace.,Macduff,PERSON,"People, including fictional",6346,6353
+MACBETH,3,4,The same. A Room of state in the Palace.,tomorrow,DATE,Absolute or relative dates or periods,6556,6564
+MACBETH,3,5,The heath.,three,CARDINAL,Numerals that do not fall under another type,19,24
+MACBETH,3,5,The heath.,Hecate,ORG,"Companies, agencies, institutions, etc.",41,47
+MACBETH,3,5,The heath.,FIRST,ORDINAL,"""first"", ""second"", etc.",49,54
+MACBETH,3,5,The heath.,Hecate,ORG,"Companies, agencies, institutions, etc.",76,82
+MACBETH,3,5,The heath.,beldams,PERSON,"People, including fictional",129,136
+MACBETH,3,5,The heath.,Saucy,PRODUCT,"Objects, vehicles, foods, etc. (not services)",149,154
+MACBETH,3,5,The heath.,overbold,PERSON,"People, including fictional",159,167
+MACBETH,3,5,The heath.,Acheron Meet,ORG,"Companies, agencies, institutions, etc.",591,603
+MACBETH,3,5,The heath.,this night,TIME,Times smaller than a day,757,767
+MACBETH,3,5,The heath.,FIRST,ORDINAL,"""first"", ""second"", etc.",1383,1388
+MACBETH,3,6,Forres. A Room in the Palace.,Thing,ORG,"Companies, agencies, institutions, etc.",128,133
+MACBETH,3,6,Forres. A Room in the Palace.,Duncan,PERSON,"People, including fictional",176,182
+MACBETH,3,6,Forres. A Room in the Palace.,Banquo,PERSON,"People, including fictional",249,255
+MACBETH,3,6,Forres. A Room in the Palace.,Malcolm,PERSON,"People, including fictional",425,432
+MACBETH,3,6,Forres. A Room in the Palace.,Donalbain,PERSON,"People, including fictional",441,450
+MACBETH,3,6,Forres. A Room in the Palace.,two,CARDINAL,Numerals that do not fall under another type,562,565
+MACBETH,3,6,Forres. A Room in the Palace.,Duncan,PERSON,"People, including fictional",820,826
+MACBETH,3,6,Forres. A Room in the Palace.,Macduff,PERSON,"People, including fictional",1053,1060
+MACBETH,3,6,Forres. A Room in the Palace.,Duncan,PERSON,"People, including fictional",1141,1147
+MACBETH,3,6,Forres. A Room in the Palace.,English,NORP,Nationalities or religious or political groups,1208,1215
+MACBETH,3,6,Forres. A Room in the Palace.,Edward,PERSON,"People, including fictional",1256,1262
+MACBETH,3,6,Forres. A Room in the Palace.,Takes,PERSON,"People, including fictional",1319,1324
+MACBETH,3,6,Forres. A Room in the Palace.,Macduff,PERSON,"People, including fictional",1356,1363
+MACBETH,3,6,Forres. A Room in the Palace.,Northumberland,GPE,"Countries, cities, states",1416,1430
+MACBETH,3,6,Forres. A Room in the Palace.,Siward,PERSON,"People, including fictional",1444,1450
+MACBETH,3,6,Forres. A Room in the Palace.,Macduff,PERSON,"People, including fictional",1801,1808
+MACBETH,3,6,Forres. A Room in the Palace.,England,GPE,"Countries, cities, states",2117,2124
+MACBETH,3,6,Forres. A Room in the Palace.,May,DATE,Absolute or relative dates or periods,2184,2187
+MACBETH,3,6,Forres. A Room in the Palace.,LORD,PERSON,"People, including fictional",2253,2257
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",three,CARDINAL,Numerals that do not fall under another type,19,24
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",FIRST,ORDINAL,"""first"", ""second"", etc.",34,39
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",FIRST,ORDINAL,"""first"", ""second"", etc.",185,190
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",Toad,PERSON,"People, including fictional",260,264
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",Days,DATE,Absolute or relative dates or periods,288,292
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",thirty-one,CARDINAL,Numerals that do not fall under another type,308,318
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",Lizard,ORG,"Companies, agencies, institutions, etc.",628,634
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",howlet,PERSON,"People, including fictional",646,652
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",Witch's,ORG,"Companies, agencies, institutions, etc.",847,854
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",Root of hemlock,ORG,"Companies, agencies, institutions, etc.",906,921
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",Jew,PERSON,"People, including fictional",963,966
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",Gall,PERSON,"People, including fictional",968,972
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",Sliver'd,ORG,"Companies, agencies, institutions, etc.",999,1007
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",Tartar,PERSON,"People, including fictional",1049,1055
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",Ditch-deliver'd,WORK_OF_ART,"Titles of books, songs, etc.",1095,1110
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",Black Spirits,WORK_OF_ART,"Titles of books, songs, etc.",1588,1601
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",Exit Hecate,ORG,"Companies, agencies, institutions, etc.",1609,1620
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",midnight,TIME,Times smaller than a day,1784,1792
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",FIRST,ORDINAL,"""first"", ""second"", etc.",2355,2360
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",FIRST,ORDINAL,"""first"", ""second"", etc.",2424,2429
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",FIRST,ORDINAL,"""first"", ""second"", etc.",2542,2547
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",nine,CARDINAL,Numerals that do not fall under another type,2596,2600
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",FIRST,ORDINAL,"""first"", ""second"", etc.",2822,2827
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",Beware Macduff,PERSON,"People, including fictional",2934,2948
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",Beware,ORG,"Companies, agencies, institutions, etc.",2950,2956
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",Fife.—Dismiss,NORP,Nationalities or religious or political groups,2970,2983
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",Whate'er,GPE,"Countries, cities, states",3015,3023
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",Thou,NORP,Nationalities or religious or political groups,3064,3068
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",one,CARDINAL,Numerals that do not fall under another type,3101,3104
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",FIRST,ORDINAL,"""first"", ""second"", etc.",3116,3121
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",first,ORDINAL,"""first"", ""second"", etc.",3192,3197
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",three,CARDINAL,Numerals that do not fall under another type,3301,3306
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",Macduff,PERSON,"People, including fictional",3477,3484
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",Great Birnam,ORG,"Companies, agencies, institutions, etc.",4037,4049
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",Descends,PERSON,"People, including fictional",4102,4110
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",Sweet bodements,PERSON,"People, including fictional",4210,4225
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",one,CARDINAL,Numerals that do not fall under another type,4421,4424
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",Banquo,PERSON,"People, including fictional",4477,4483
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",Hautboys,PERSON,"People, including fictional",4687,4695
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",FIRST,ORDINAL,"""first"", ""second"", etc.",4697,4702
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",eight,CARDINAL,Numerals that do not fall under another type,4837,4842
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",Banquo,PERSON,"People, including fictional",4916,4922
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",Banquo,PERSON,"People, including fictional",4975,4981
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",Thy crown,PERSON,"People, including fictional",4989,4998
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",first,ORDINAL,"""first"", ""second"", etc.",5078,5083
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",third,ORDINAL,"""first"", ""second"", etc.",5087,5092
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",eighth,ORDINAL,"""first"", ""second"", etc.",5283,5289
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",FIRST,ORDINAL,"""first"", ""second"", etc.",5533,5538
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",so:—but,ORG,"Companies, agencies, institutions, etc.",5567,5574
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",Stands Macbeth,ORG,"Companies, agencies, institutions, etc.",5579,5593
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",Witches,PERSON,"People, including fictional",5837,5844
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",Lennox,PERSON,"People, including fictional",5987,5993
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",Grace,PERSON,"People, including fictional",6015,6020
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",two,CARDINAL,Numerals that do not fall under another type,6299,6302
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",Macduff,PERSON,"People, including fictional",6342,6349
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",England,GPE,"Countries, cities, states",6361,6368
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",England,GPE,"Countries, cities, states",6387,6394
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",Macduff,GPE,"Countries, cities, states",6709,6716
+MACBETH,4,2,Fife. A Room in Macduff's Castle.,Macduff,PERSON,"People, including fictional",11,18
+MACBETH,4,2,Fife. A Room in Macduff's Castle.,Ross,PERSON,"People, including fictional",31,35
+MACBETH,4,2,Fife. A Room in Macduff's Castle.,ROSS,PERSON,"People, including fictional",95,99
+MACBETH,4,2,Fife. A Room in Macduff's Castle.,ROSS,PERSON,"People, including fictional",239,243
+MACBETH,4,2,Fife. A Room in Macduff's Castle.,ROSS,PERSON,"People, including fictional",691,695
+MACBETH,4,2,Fife. A Room in Macduff's Castle.,Blessing,PERSON,"People, including fictional",1224,1232
+MACBETH,4,2,Fife. A Room in Macduff's Castle.,ROSS,PERSON,"People, including fictional",1298,1302
+MACBETH,4,2,Fife. A Room in Macduff's Castle.,Sirrah,PERSON,"People, including fictional",1437,1443
+MACBETH,4,2,Fife. A Room in Macduff's Castle.,SON,ORG,"Companies, agencies, institutions, etc.",1713,1716
+MACBETH,4,2,Fife. A Room in Macduff's Castle.,twenty,CARDINAL,Numerals that do not fall under another type,1952,1958
+MACBETH,4,2,Fife. A Room in Macduff's Castle.,Whither,PERSON,"People, including fictional",3299,3306
+MACBETH,4,2,Fife. A Room in Macduff's Castle.,FIRST,ORDINAL,"""first"", ""second"", etc.",3589,3594
+MACBETH,4,2,Fife. A Room in Macduff's Castle.,FIRST,ORDINAL,"""first"", ""second"", etc.",3713,3718
+MACBETH,4,2,Fife. A Room in Macduff's Castle.,FIRST,ORDINAL,"""first"", ""second"", etc.",3787,3792
+MACBETH,4,2,Fife. A Room in Macduff's Castle.,Exit Lady Macduff,PERSON,"People, including fictional",3915,3932
+MACBETH,4,3,England. Before the King's Palace.,Malcolm,PERSON,"People, including fictional",6,13
+MACBETH,4,3,England. Before the King's Palace.,Macduff,PERSON,"People, including fictional",18,25
+MACBETH,4,3,England. Before the King's Palace.,MALCOLM,PERSON,"People, including fictional",27,34
+MACBETH,4,3,England. Before the King's Palace.,Scotland,GPE,"Countries, cities, states",338,346
+MACBETH,4,3,England. Before the King's Palace.,MALCOLM,PERSON,"People, including fictional",388,395
+MACBETH,4,3,England. Before the King's Palace.,wail,PERSON,"People, including fictional",418,422
+MACBETH,4,3,England. Before the King's Palace.,MALCOLM,PERSON,"People, including fictional",856,863
+MACBETH,4,3,England. Before the King's Palace.,Macbeth,PERSON,"People, including fictional",869,876
+MACBETH,4,3,England. Before the King's Palace.,MALCOLM,PERSON,"People, including fictional",1190,1197
+MACBETH,4,3,England. Before the King's Palace.,East,LOC,"Non-GPE locations, mountain ranges, bodies of water",1779,1783
+MACBETH,4,3,England. Before the King's Palace.,MALCOLM,PERSON,"People, including fictional",1793,1800
+MACBETH,4,3,England. Before the King's Palace.,England,GPE,"Countries, cities, states",2056,2063
+MACBETH,4,3,England. Before the King's Palace.,thousands,CARDINAL,Numerals that do not fall under another type,2088,2097
+MACBETH,4,3,England. Before the King's Palace.,MALCOLM,PERSON,"People, including fictional",2347,2354
+MACBETH,4,3,England. Before the King's Palace.,MALCOLM,PERSON,"People, including fictional",2685,2692
+MACBETH,4,3,England. Before the King's Palace.,MALCOLM,PERSON,"People, including fictional",3523,3530
+MACBETH,4,3,England. Before the King's Palace.,Quarrels,ORG,"Companies, agencies, institutions, etc.",3806,3814
+MACBETH,4,3,England. Before the King's Palace.,Scotland,GPE,"Countries, cities, states",4037,4045
+MACBETH,4,3,England. Before the King's Palace.,MALCOLM,PERSON,"People, including fictional",4150,4157
+MACBETH,4,3,England. Before the King's Palace.,Scotland,GPE,"Countries, cities, states",4560,4568
+MACBETH,4,3,England. Before the King's Palace.,Scotland,GPE,"Countries, cities, states",4570,4578
+MACBETH,4,3,England. Before the King's Palace.,MALCOLM,PERSON,"People, including fictional",4580,4587
+MACBETH,4,3,England. Before the King's Palace.,live.—O,ORG,"Companies, agencies, institutions, etc.",4686,4693
+MACBETH,4,3,England. Before the King's Palace.,accus'd,CARDINAL,Numerals that do not fall under another type,4873,4880
+MACBETH,4,3,England. Before the King's Palace.,Oft'ner,ORG,"Companies, agencies, institutions, etc.",4980,4987
+MACBETH,4,3,England. Before the King's Palace.,repeat'st,GPE,"Countries, cities, states",5080,5089
+MACBETH,4,3,England. Before the King's Palace.,Scotland.—O,ORG,"Companies, agencies, institutions, etc.",5125,5136
+MACBETH,4,3,England. Before the King's Palace.,MALCOLM,PERSON,"People, including fictional",5168,5175
+MACBETH,4,3,England. Before the King's Palace.,Macduff,PERSON,"People, including fictional",5177,5184
+MACBETH,4,3,England. Before the King's Palace.,Devilish Macbeth,PERSON,"People, including fictional",5323,5339
+MACBETH,4,3,England. Before the King's Palace.,first,ORDINAL,"""first"", ""second"", etc.",5856,5861
+MACBETH,4,3,England. Before the King's Palace.,Whither,PERSON,"People, including fictional",5959,5966
+MACBETH,4,3,England. Before the King's Palace.,Old Siward,PERSON,"People, including fictional",6002,6012
+MACBETH,4,3,England. Before the King's Palace.,ten thousand,CARDINAL,Numerals that do not fall under another type,6019,6031
+MACBETH,4,3,England. Before the King's Palace.,MALCOLM,PERSON,"People, including fictional",6273,6280
+MACBETH,4,3,England. Before the King's Palace.,MALCOLM,PERSON,"People, including fictional",6534,6541
+MACBETH,4,3,England. Before the King's Palace.,MALCOLM,PERSON,"People, including fictional",6615,6622
+MACBETH,4,3,England. Before the King's Palace.,England,GPE,"Countries, cities, states",6725,6732
+MACBETH,4,3,England. Before the King's Palace.,Enter Ross,PERSON,"People, including fictional",7194,7204
+MACBETH,4,3,England. Before the King's Palace.,MALCOLM,PERSON,"People, including fictional",7236,7243
+MACBETH,4,3,England. Before the King's Palace.,MALCOLM,PERSON,"People, including fictional",7332,7339
+MACBETH,4,3,England. Before the King's Palace.,ROSS,PERSON,"People, including fictional",7417,7421
+MACBETH,4,3,England. Before the King's Palace.,Scotland,GPE,"Countries, cities, states",7450,7458
+MACBETH,4,3,England. Before the King's Palace.,ROSS,PERSON,"People, including fictional",7473,7477
+MACBETH,4,3,England. Before the King's Palace.,knell,PERSON,"People, including fictional",7776,7781
+MACBETH,4,3,England. Before the King's Palace.,MALCOLM,PERSON,"People, including fictional",7950,7957
+MACBETH,4,3,England. Before the King's Palace.,ROSS,PERSON,"People, including fictional",7984,7988
+MACBETH,4,3,England. Before the King's Palace.,That of an hour's,TIME,Times smaller than a day,7990,8007
+MACBETH,4,3,England. Before the King's Palace.,Each minute,TIME,Times smaller than a day,8035,8046
+MACBETH,4,3,England. Before the King's Palace.,ROSS,PERSON,"People, including fictional",8091,8095
+MACBETH,4,3,England. Before the King's Palace.,ROSS,PERSON,"People, including fictional",8138,8142
+MACBETH,4,3,England. Before the King's Palace.,ROSS,PERSON,"People, including fictional",8207,8211
+MACBETH,4,3,England. Before the King's Palace.,ROSS,PERSON,"People, including fictional",8317,8321
+MACBETH,4,3,England. Before the King's Palace.,Scotland,GPE,"Countries, cities, states",8576,8584
+MACBETH,4,3,England. Before the King's Palace.,MALCOLM,PERSON,"People, including fictional",8661,8668
+MACBETH,4,3,England. Before the King's Palace.,England,GPE,"Countries, cities, states",8721,8728
+MACBETH,4,3,England. Before the King's Palace.,ten thousand,CARDINAL,Numerals that do not fall under another type,8758,8770
+MACBETH,4,3,England. Before the King's Palace.,Christendom,ORG,"Companies, agencies, institutions, etc.",8816,8827
+MACBETH,4,3,England. Before the King's Palace.,ROSS,PERSON,"People, including fictional",8839,8843
+MACBETH,4,3,England. Before the King's Palace.,ROSS,PERSON,"People, including fictional",9087,9091
+MACBETH,4,3,England. Before the King's Palace.,Pertains,PERSON,"People, including fictional",9163,9171
+MACBETH,4,3,England. Before the King's Palace.,ROSS,PERSON,"People, including fictional",9255,9259
+MACBETH,4,3,England. Before the King's Palace.,Humh,PERSON,"People, including fictional",9391,9395
+MACBETH,4,3,England. Before the King's Palace.,ROSS,PERSON,"People, including fictional",9412,9416
+MACBETH,4,3,England. Before the King's Palace.,MALCOLM,PERSON,"People, including fictional",9576,9583
+MACBETH,4,3,England. Before the King's Palace.,ROSS,PERSON,"People, including fictional",9778,9782
+MACBETH,4,3,England. Before the King's Palace.,ROSS,PERSON,"People, including fictional",9891,9895
+MACBETH,4,3,England. Before the King's Palace.,MALCOLM,PERSON,"People, including fictional",9910,9917
+MACBETH,4,3,England. Before the King's Palace.,one,CARDINAL,Numerals that do not fall under another type,10136,10139
+MACBETH,4,3,England. Before the King's Palace.,MALCOLM,PERSON,"People, including fictional",10152,10159
+MACBETH,4,3,England. Before the King's Palace.,Macduff,PERSON,"People, including fictional",10371,10378
+MACBETH,4,3,England. Before the King's Palace.,MALCOLM,PERSON,"People, including fictional",10524,10531
+MACBETH,4,3,England. Before the King's Palace.,braggart,PERSON,"People, including fictional",10685,10693
+MACBETH,4,3,England. Before the King's Palace.,Scotland,GPE,"Countries, cities, states",10800,10808
+MACBETH,4,3,England. Before the King's Palace.,MALCOLM,PERSON,"People, including fictional",10893,10900
+MACBETH,4,3,England. Before the King's Palace.,the day,DATE,Absolute or relative dates or periods,11143,11150
+MACBETH,5,1,Dunsinane. A Room in the Castle.,two nights,TIME,Times smaller than a day,67,77
+MACBETH,5,1,Dunsinane. A Room in the Castle.,GENTLEWOMAN,PERSON,"People, including fictional",167,178
+MACBETH,5,1,Dunsinane. A Room in the Castle.,GENTLEWOMAN,PERSON,"People, including fictional",674,685
+MACBETH,5,1,Dunsinane. A Room in the Castle.,GENTLEWOMAN,PERSON,"People, including fictional",787,798
+MACBETH,5,1,Dunsinane. A Room in the Castle.,Lady Macbeth,PERSON,"People, including fictional",873,885
+MACBETH,5,1,Dunsinane. A Room in the Castle.,GENTLEWOMAN,PERSON,"People, including fictional",1042,1053
+MACBETH,5,1,Dunsinane. A Room in the Castle.,GENTLEWOMAN,PERSON,"People, including fictional",1165,1176
+MACBETH,5,1,Dunsinane. A Room in the Castle.,GENTLEWOMAN,PERSON,"People, including fictional",1270,1281
+MACBETH,5,1,Dunsinane. A Room in the Castle.,this a quarter,DATE,Absolute or relative dates or periods,1381,1395
+MACBETH,5,1,Dunsinane. A Room in the Castle.,One,CARDINAL,Numerals that do not fall under another type,1593,1596
+MACBETH,5,1,Dunsinane. A Room in the Castle.,two,CARDINAL,Numerals that do not fall under another type,1598,1601
+MACBETH,5,1,Dunsinane. A Room in the Castle.,fie!,PERSON,"People, including fictional",1661,1665
+MACBETH,5,1,Dunsinane. A Room in the Castle.,GENTLEWOMAN,PERSON,"People, including fictional",2095,2106
+MACBETH,5,1,Dunsinane. A Room in the Castle.,Arabia,GPE,"Countries, cities, states",2266,2272
+MACBETH,5,1,Dunsinane. A Room in the Castle.,GENTLEWOMAN,PERSON,"People, including fictional",2379,2390
+MACBETH,5,1,Dunsinane. A Room in the Castle.,GENTLEWOMAN,PERSON,"People, including fictional",2495,2506
+MACBETH,5,1,Dunsinane. A Room in the Castle.,nightgown,TIME,Times smaller than a day,2709,2718
+MACBETH,5,1,Dunsinane. A Room in the Castle.,Banquo,PERSON,"People, including fictional",2760,2766
+MACBETH,5,1,Dunsinane. A Room in the Castle.,GENTLEWOMAN,PERSON,"People, including fictional",3020,3031
+MACBETH,5,1,Dunsinane. A Room in the Castle.,GENTLEWOMAN,PERSON,"People, including fictional",3444,3455
+MACBETH,5,2,The Country near Dunsinane.,"Menteith,",ORG,"Companies, agencies, institutions, etc.",29,38
+MACBETH,5,2,The Country near Dunsinane.,Caithness,ORG,"Companies, agencies, institutions, etc.",39,48
+MACBETH,5,2,The Country near Dunsinane.,"Angus,",ORG,"Companies, agencies, institutions, etc.",50,56
+MACBETH,5,2,The Country near Dunsinane.,Lennox,PERSON,"People, including fictional",57,63
+MACBETH,5,2,The Country near Dunsinane.,English,LANGUAGE,Any named language,92,99
+MACBETH,5,2,The Country near Dunsinane.,Malcolm,PERSON,"People, including fictional",125,132
+MACBETH,5,2,The Country near Dunsinane.,Siward,PERSON,"People, including fictional",144,150
+MACBETH,5,2,The Country near Dunsinane.,Macduff,ORG,"Companies, agencies, institutions, etc.",165,172
+MACBETH,5,2,The Country near Dunsinane.,ANGUS,ORG,"Companies, agencies, institutions, etc.",286,291
+MACBETH,5,2,The Country near Dunsinane.,CAITHNESS,PERSON,"People, including fictional",361,370
+MACBETH,5,2,The Country near Dunsinane.,Donalbain,PERSON,"People, including fictional",385,394
+MACBETH,5,2,The Country near Dunsinane.,Siward,PERSON,"People, including fictional",495,501
+MACBETH,5,2,The Country near Dunsinane.,unrough,NORP,Nationalities or religious or political groups,517,524
+MACBETH,5,2,The Country near Dunsinane.,first,ORDINAL,"""first"", ""second"", etc.",561,566
+MACBETH,5,2,The Country near Dunsinane.,CAITHNESS,PERSON,"People, including fictional",611,620
+MACBETH,5,2,The Country near Dunsinane.,ANGUS,ORG,"Companies, agencies, institutions, etc.",817,822
+MACBETH,5,2,The Country near Dunsinane.,CAITHNESS,PERSON,"People, including fictional",1218,1227
+MACBETH,5,2,The Country near Dunsinane.,Birnam,GPE,"Countries, cities, states",1500,1506
+MACBETH,5,3,Dunsinane. A Room in the Castle.,Till Birnam,PERSON,"People, including fictional",91,102
+MACBETH,5,3,Dunsinane. A Room in the Castle.,Malcolm,PERSON,"People, including fictional",169,176
+MACBETH,5,3,Dunsinane. A Room in the Castle.,English,LANGUAGE,Any named language,401,408
+MACBETH,5,3,Dunsinane. A Room in the Castle.,ten thousand,DATE,Absolute or relative dates or periods,630,642
+MACBETH,5,3,Dunsinane. A Room in the Castle.,English,LANGUAGE,Any named language,899,906
+MACBETH,5,3,Dunsinane. A Room in the Castle.,Exit Servant,PERSON,"People, including fictional",959,971
+MACBETH,5,3,Dunsinane. A Room in the Castle.,Seyton,PERSON,"People, including fictional",1015,1021
+MACBETH,5,3,Dunsinane. A Room in the Castle.,Seyton,PERSON,"People, including fictional",1396,1402
+MACBETH,5,3,Dunsinane. A Room in the Castle.,Seyton,PERSON,"People, including fictional",1411,1417
+MACBETH,5,3,Dunsinane. A Room in the Castle.,SEYTON,PERSON,"People, including fictional",1419,1425
+MACBETH,5,3,Dunsinane. A Room in the Castle.,SEYTON,PERSON,"People, including fictional",1483,1489
+MACBETH,5,3,Dunsinane. A Room in the Castle.,hack'd,ORG,"Companies, agencies, institutions, etc.",1589,1595
+MACBETH,5,3,Dunsinane. A Room in the Castle.,SEYTON,PERSON,"People, including fictional",1616,1622
+MACBETH,5,3,Dunsinane. A Room in the Castle.,diseas'd,NORP,Nationalities or religious or political groups,1966,1974
+MACBETH,5,3,Dunsinane. A Room in the Castle.,Raze,ORG,"Companies, agencies, institutions, etc.",2015,2019
+MACBETH,5,3,Dunsinane. A Room in the Castle.,Seyton,PERSON,"People, including fictional",2326,2332
+MACBETH,5,3,Dunsinane. A Room in the Castle.,despatch.—If,ORG,"Companies, agencies, institutions, etc.",2388,2400
+MACBETH,5,3,Dunsinane. A Room in the Castle.,senna,PERSON,"People, including fictional",2613,2618
+MACBETH,5,3,Dunsinane. A Room in the Castle.,English,LANGUAGE,Any named language,2662,2669
+MACBETH,5,3,Dunsinane. A Room in the Castle.,Hear'st,GPE,"Countries, cities, states",2677,2684
+MACBETH,5,3,Dunsinane. A Room in the Castle.,bane,GPE,"Countries, cities, states",2836,2840
+MACBETH,5,3,Dunsinane. A Room in the Castle.,Till Birnam,GPE,"Countries, cities, states",2842,2853
+MACBETH,5,4,Country near Dunsinane: a Wood in view.,Malcolm,PERSON,"People, including fictional",29,36
+MACBETH,5,4,Country near Dunsinane: a Wood in view.,Siward,PERSON,"People, including fictional",42,48
+MACBETH,5,4,Country near Dunsinane: a Wood in view.,Macduff,PERSON,"People, including fictional",62,69
+MACBETH,5,4,Country near Dunsinane: a Wood in view.,Menteith,GPE,"Countries, cities, states",71,79
+MACBETH,5,4,Country near Dunsinane: a Wood in view.,Caithness,ORG,"Companies, agencies, institutions, etc.",81,90
+MACBETH,5,4,Country near Dunsinane: a Wood in view.,"Angus,",ORG,"Companies, agencies, institutions, etc.",92,98
+MACBETH,5,4,Country near Dunsinane: a Wood in view.,Lennox,PERSON,"People, including fictional",99,105
+MACBETH,5,4,Country near Dunsinane: a Wood in view.,Ross,PERSON,"People, including fictional",107,111
+MACBETH,5,4,Country near Dunsinane: a Wood in view.,MALCOLM,PERSON,"People, including fictional",136,143
+MACBETH,5,4,Country near Dunsinane: a Wood in view.,Cousins,PERSON,"People, including fictional",145,152
+MACBETH,5,4,Country near Dunsinane: a Wood in view.,the days,DATE,Absolute or relative dates or periods,161,169
+MACBETH,5,4,Country near Dunsinane: a Wood in view.,SIWARD,ORG,"Companies, agencies, institutions, etc.",246,252
+MACBETH,5,4,Country near Dunsinane: a Wood in view.,MENTEITH,ORG,"Companies, agencies, institutions, etc.",283,291
+MACBETH,5,4,Country near Dunsinane: a Wood in view.,Birnam,GPE,"Countries, cities, states",305,311
+MACBETH,5,4,Country near Dunsinane: a Wood in view.,MALCOLM,PERSON,"People, including fictional",313,320
+MACBETH,5,4,Country near Dunsinane: a Wood in view.,discovery Err,PERSON,"People, including fictional",443,456
+MACBETH,5,4,Country near Dunsinane: a Wood in view.,SIWARD,ORG,"Companies, agencies, institutions, etc.",502,508
+MACBETH,5,4,Country near Dunsinane: a Wood in view.,Dunsinane,ORG,"Companies, agencies, institutions, etc.",568,577
+MACBETH,5,4,Country near Dunsinane: a Wood in view.,MALCOLM,PERSON,"People, including fictional",622,629
+MACBETH,5,4,Country near Dunsinane: a Wood in view.,Industrious,ORG,"Companies, agencies, institutions, etc.",884,895
+MACBETH,5,4,Country near Dunsinane: a Wood in view.,SIWARD,ORG,"Companies, agencies, institutions, etc.",909,915
+MACBETH,5,5,Dunsinane. Within the castle.,Seyton,PERSON,"People, including fictional",38,44
+MACBETH,5,5,Dunsinane. Within the castle.,SEYTON,PERSON,"People, including fictional",422,428
+MACBETH,5,5,Dunsinane. Within the castle.,supp'd,CARDINAL,Numerals that do not fall under another type,683,689
+MACBETH,5,5,Dunsinane. Within the castle.,Direness,PERSON,"People, including fictional",709,717
+MACBETH,5,5,Dunsinane. Within the castle.,Seyton,PERSON,"People, including fictional",785,791
+MACBETH,5,5,Dunsinane. Within the castle.,SEYTON,PERSON,"People, including fictional",817,823
+MACBETH,5,5,Dunsinane. Within the castle.,Queen,PERSON,"People, including fictional",829,834
+MACBETH,5,5,Dunsinane. Within the castle.,Tomorrow,DATE,Absolute or relative dates or periods,941,949
+MACBETH,5,5,Dunsinane. Within the castle.,tomorrow,DATE,Absolute or relative dates or periods,955,963
+MACBETH,5,5,Dunsinane. Within the castle.,tomorrow,DATE,Absolute or relative dates or periods,969,977
+MACBETH,5,5,Dunsinane. Within the castle.,Creeps,PERSON,"People, including fictional",979,985
+MACBETH,5,5,Dunsinane. Within the castle.,from day to day,DATE,Absolute or relative dates or periods,1005,1020
+MACBETH,5,5,Dunsinane. Within the castle.,MESSENGER,PERSON,"People, including fictional",1533,1542
+MACBETH,5,5,Dunsinane. Within the castle.,Birnam,GPE,"Countries, cities, states",1599,1605
+MACBETH,5,5,Dunsinane. Within the castle.,MESSENGER,PERSON,"People, including fictional",1678,1687
+MACBETH,5,5,Dunsinane. Within the castle.,three mile,QUANTITY,"Measurements, as of weight or distance",1743,1753
+MACBETH,5,5,Dunsinane. Within the castle.,Birnam,PERSON,"People, including fictional",2074,2080
+MACBETH,5,6,The same. A Plain before the Castle.,Malcolm,PERSON,"People, including fictional",30,37
+MACBETH,5,6,The same. A Plain before the Castle.,"Siward,",ORG,"Companies, agencies, institutions, etc.",43,50
+MACBETH,5,6,The same. A Plain before the Castle.,Macduff,PERSON,"People, including fictional",51,58
+MACBETH,5,6,The same. A Plain before the Castle.,Army,ORG,"Companies, agencies, institutions, etc.",69,73
+MACBETH,5,6,The same. A Plain before the Castle.,MALCOLM,PERSON,"People, including fictional",88,95
+MACBETH,5,6,The same. A Plain before the Castle.,first,ORDINAL,"""first"", ""second"", etc.",246,251
+MACBETH,5,6,The same. A Plain before the Castle.,Macduff,PERSON,"People, including fictional",267,274
+MACBETH,5,6,The same. A Plain before the Castle.,SIWARD,ORG,"Companies, agencies, institutions, etc.",349,355
+MACBETH,5,6,The same. A Plain before the Castle.,tonight,TIME,Times smaller than a day,407,414
+MACBETH,5,7,The same. Another part of the Plain.,Alarums,PERSON,"People, including fictional",0,7
+MACBETH,5,7,The same. Another part of the Plain.,course.—What,ORG,"Companies, agencies, institutions, etc.",109,121
+MACBETH,5,7,The same. Another part of the Plain.,one,CARDINAL,Numerals that do not fall under another type,162,165
+MACBETH,5,7,The same. Another part of the Plain.,Thou'lt,DATE,Absolute or relative dates or periods,250,257
+MACBETH,5,7,The same. Another part of the Plain.,Macbeth.,WORK_OF_ART,"Titles of books, songs, etc.",380,388
+MACBETH,5,7,The same. Another part of the Plain.,Siward,PERSON,"People, including fictional",619,625
+MACBETH,5,7,The same. Another part of the Plain.,Alarums,PERSON,"People, including fictional",765,772
+MACBETH,5,7,The same. Another part of the Plain.,Macduff,PERSON,"People, including fictional",780,787
+MACBETH,5,7,The same. Another part of the Plain.,kerns,GPE,"Countries, cities, states",971,976
+MACBETH,5,7,The same. Another part of the Plain.,Macbeth,PERSON,"People, including fictional",1034,1041
+MACBETH,5,7,The same. Another part of the Plain.,Alarums,PERSON,"People, including fictional",1247,1254
+MACBETH,5,7,The same. Another part of the Plain.,Malcolm,PERSON,"People, including fictional",1262,1269
+MACBETH,5,7,The same. Another part of the Plain.,SIWARD,ORG,"Companies, agencies, institutions, etc.",1286,1292
+MACBETH,5,7,The same. Another part of the Plain.,MALCOLM,PERSON,"People, including fictional",1487,1494
+MACBETH,5,7,The same. Another part of the Plain.,SIWARD,ORG,"Companies, agencies, institutions, etc.",1541,1547
+MACBETH,5,7,The same. Another part of the Plain.,Alarums,PERSON,"People, including fictional",1581,1588
+MACBETH,5,8,The same. Another part of the field.,Roman,NORP,Nationalities or religious or political groups,46,51
+MACBETH,5,8,The same. Another part of the field.,Macduff,PERSON,"People, including fictional",143,150
+MACBETH,5,8,The same. Another part of the field.,one,CARDINAL,Numerals that do not fall under another type,625,628
+MACBETH,5,8,The same. Another part of the field.,Macduff,PERSON,"People, including fictional",729,736
+MACBETH,5,8,The same. Another part of the field.,Painted,ORG,"Companies, agencies, institutions, etc.",1177,1184
+MACBETH,5,8,The same. Another part of the field.,Malcolm,PERSON,"People, including fictional",1303,1310
+MACBETH,5,8,The same. Another part of the field.,Birnam,PERSON,"People, including fictional",1368,1374
+MACBETH,5,8,The same. Another part of the field.,Macduff,PERSON,"People, including fictional",1519,1526
+MACBETH,5,8,The same. Another part of the field.,first,ORDINAL,"""first"", ""second"", etc.",1551,1556
+MACBETH,5,8,The same. Another part of the field.,Alarums,PERSON,"People, including fictional",1597,1604
+MACBETH,5,8,The same. Another part of the field.,Malcolm,PERSON,"People, including fictional",1655,1662
+MACBETH,5,8,The same. Another part of the field.,"Siward, Ross, Thanes and Soldiers",ORG,"Companies, agencies, institutions, etc.",1668,1701
+MACBETH,5,8,The same. Another part of the field.,MALCOLM,PERSON,"People, including fictional",1703,1710
+MACBETH,5,8,The same. Another part of the field.,SIWARD,ORG,"Companies, agencies, institutions, etc.",1759,1765
+MACBETH,5,8,The same. Another part of the field.,MALCOLM,PERSON,"People, including fictional",1852,1859
+MACBETH,5,8,The same. Another part of the field.,Macduff,PERSON,"People, including fictional",1861,1868
+MACBETH,5,8,The same. Another part of the field.,ROSS,PERSON,"People, including fictional",1901,1905
+MACBETH,5,8,The same. Another part of the field.,SIWARD,ORG,"Companies, agencies, institutions, etc.",2104,2110
+MACBETH,5,8,The same. Another part of the field.,ROSS,PERSON,"People, including fictional",2129,2133
+MACBETH,5,8,The same. Another part of the field.,SIWARD,ORG,"Companies, agencies, institutions, etc.",2247,2253
+MACBETH,5,8,The same. Another part of the field.,ROSS,PERSON,"People, including fictional",2280,2284
+MACBETH,5,8,The same. Another part of the field.,SIWARD,ORG,"Companies, agencies, institutions, etc.",2304,2310
+MACBETH,5,8,The same. Another part of the field.,knell,PERSON,"People, including fictional",2431,2436
+MACBETH,5,8,The same. Another part of the field.,knoll'd,PERSON,"People, including fictional",2440,2447
+MACBETH,5,8,The same. Another part of the field.,MALCOLM,PERSON,"People, including fictional",2449,2456
+MACBETH,5,8,The same. Another part of the field.,SIWARD,ORG,"Companies, agencies, institutions, etc.",2511,2517
+MACBETH,5,8,The same. Another part of the field.,compass'd,PERSON,"People, including fictional",2784,2793
+MACBETH,5,8,The same. Another part of the field.,thy kingdom's,GPE,"Countries, cities, states",2799,2812
+MACBETH,5,8,The same. Another part of the field.,Scotland,GPE,"Countries, cities, states",2915,2923
+MACBETH,5,8,The same. Another part of the field.,Scotland,GPE,"Countries, cities, states",2944,2952
+MACBETH,5,8,The same. Another part of the field.,MALCOLM,PERSON,"People, including fictional",2964,2971
+MACBETH,5,8,The same. Another part of the field.,first,ORDINAL,"""first"", ""second"", etc.",3133,3138
+MACBETH,5,8,The same. Another part of the field.,Scotland,GPE,"Countries, cities, states",3149,3157
+MACBETH,5,8,The same. Another part of the field.,Grace,PERSON,"People, including fictional",3547,3552
+MACBETH,5,8,The same. Another part of the field.,Scone,ORG,"Companies, agencies, institutions, etc.",3678,3683
