@@ -162,7 +162,7 @@ def fine_tune(nlp, all_examples: list, n_iter: int = 40):
     print("\nLoading base model: en_core_web_md ...")
     ner = nlp.get_pipe("ner")
 
-    # Add all custom labels including new REL label
+    #add all custom labels including new REL label
     for label in ["PERSON", "GPE", "LOCATION", "TITLE", "REL"]:
         ner.add_label(label)
 
@@ -189,8 +189,8 @@ ENTITY_FIELDS = [
     "entity_text", "label", "label_description"
 ]
 
+#run fine-tuned model on scenes and save per-play CSV
 def extract_and_save(nlp_ft, scenes: list, play_title: str, stem: str) -> list:
-    """Run fine-tuned model on scenes and save per-play CSV."""
     records        = []
     entity_summary = defaultdict(set)
 

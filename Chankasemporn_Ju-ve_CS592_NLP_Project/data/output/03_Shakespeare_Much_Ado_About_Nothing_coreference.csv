@@ -1,0 +1,1276 @@
+play,act,scene,speaker,sentence,pronoun,resolved_to,gender_group,window_size_used
+MUCH ADO ABOUT NOTHING,1,1,MESSENGER,He is very near by this: he was not three leagues off when I left him.,He,Don Pedro,male,3
+MUCH ADO ABOUT NOTHING,1,1,MESSENGER,He is very near by this: he was not three leagues off when I left him.,he,Don Pedro,male,3
+MUCH ADO ABOUT NOTHING,1,1,MESSENGER,He is very near by this: he was not three leagues off when I left him.,him,Don Pedro,male,3
+MUCH ADO ABOUT NOTHING,1,1,MESSENGER,"Much deserved on his part, and equally remembered by Don Pedro.",his,Don Pedro,male,7
+MUCH ADO ABOUT NOTHING,1,1,MESSENGER,"He hath borne himself beyond the promise of his age, doing in the figure of a lamb the feats of a lion: he hath indeed b",He,Don Pedro,male,7
+MUCH ADO ABOUT NOTHING,1,1,MESSENGER,"He hath borne himself beyond the promise of his age, doing in the figure of a lamb the feats of a lion: he hath indeed b",himself,Don Pedro,male,7
+MUCH ADO ABOUT NOTHING,1,1,MESSENGER,"He hath borne himself beyond the promise of his age, doing in the figure of a lamb the feats of a lion: he hath indeed b",his,Don Pedro,male,7
+MUCH ADO ABOUT NOTHING,1,1,MESSENGER,"He hath borne himself beyond the promise of his age, doing in the figure of a lamb the feats of a lion: he hath indeed b",he,Don Pedro,male,7
+MUCH ADO ABOUT NOTHING,1,1,LEONATO,He hath an uncle here in Messina will be very much glad of it.,He,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,1,1,LEONATO,He hath an uncle here in Messina will be very much glad of it.,it,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,1,1,MESSENGER,"I have already delivered him letters, and there appears much joy in him; even so much that joy could not show itself mod",him,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,1,1,MESSENGER,"I have already delivered him letters, and there appears much joy in him; even so much that joy could not show itself mod",him,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,1,1,LEONATO,Did he break out into tears?,he,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,1,1,LEONATO,There are no faces truer than those that are so washed; how much better is it to weep at joy than to joy at weeping!,it,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,1,1,LEONATO,"What is he that you ask for, niece?",he,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,1,1,MESSENGER,"he is returned, and as pleasant as ever he was.",he,Benedick,male,7
+MUCH ADO ABOUT NOTHING,1,1,MESSENGER,"he is returned, and as pleasant as ever he was.",he,Benedick,male,7
+MUCH ADO ABOUT NOTHING,1,1,BEATRICE,"He set up his bills here in Messina and challenged Cupid at the flight; and my uncle's fool, reading the challenge, subs",He,Benedick,male,7
+MUCH ADO ABOUT NOTHING,1,1,BEATRICE,"He set up his bills here in Messina and challenged Cupid at the flight; and my uncle's fool, reading the challenge, subs",his,Benedick,male,7
+MUCH ADO ABOUT NOTHING,1,1,BEATRICE,"He set up his bills here in Messina and challenged Cupid at the flight; and my uncle's fool, reading the challenge, subs",him,Benedick,male,7
+MUCH ADO ABOUT NOTHING,1,1,BEATRICE,"I pray you, how many hath he killed and eaten in these wars?",he,Benedick,male,7
+MUCH ADO ABOUT NOTHING,1,1,BEATRICE,But how many hath he killed?,he,Benedick,male,7
+MUCH ADO ABOUT NOTHING,1,1,BEATRICE,"for, indeed, I promised to eat all of his killing.",his,Benedick,male,7
+MUCH ADO ABOUT NOTHING,1,1,LEONATO,"Faith, niece, you tax Signior Benedick too much; but he'll be meet with you, I doubt it not.",he,Benedick,male,7
+MUCH ADO ABOUT NOTHING,1,1,LEONATO,"Faith, niece, you tax Signior Benedick too much; but he'll be meet with you, I doubt it not.",it,Benedick,male,7
+MUCH ADO ABOUT NOTHING,1,1,MESSENGER,"He hath done good service, lady, in these wars.",He,Benedick,male,7
+MUCH ADO ABOUT NOTHING,1,1,BEATRICE,"You had musty victual, and he hath holp to eat it; he is a very valiant trencher-man; he hath an excellent stomach.",he,Benedick,male,7
+MUCH ADO ABOUT NOTHING,1,1,BEATRICE,"You had musty victual, and he hath holp to eat it; he is a very valiant trencher-man; he hath an excellent stomach.",it,holp,neutral,7
+MUCH ADO ABOUT NOTHING,1,1,BEATRICE,"You had musty victual, and he hath holp to eat it; he is a very valiant trencher-man; he hath an excellent stomach.",he,Benedick,male,7
+MUCH ADO ABOUT NOTHING,1,1,BEATRICE,"You had musty victual, and he hath holp to eat it; he is a very valiant trencher-man; he hath an excellent stomach.",he,Benedick,male,7
+MUCH ADO ABOUT NOTHING,1,1,BEATRICE,And a good soldier to a lady; but what is he to a lord?,he,Benedick,male,7
+MUCH ADO ABOUT NOTHING,1,1,BEATRICE,"It is so indeed; he is no less than a stuffed man; but for the stuffing,—well, we are all mortal.",It,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,1,1,BEATRICE,"It is so indeed; he is no less than a stuffed man; but for the stuffing,—well, we are all mortal.",he,Benedick,male,7
+MUCH ADO ABOUT NOTHING,1,1,LEONATO,There is a kind of merry war betwixt Signior Benedick and her; they never meet,her,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,1,1,LEONATO,There is a kind of merry war betwixt Signior Benedick and her; they never meet,they,Benedick,male,7
+MUCH ADO ABOUT NOTHING,1,1,LEONATO,but there's a skirmish of wit between them.,them,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,1,1,BEATRICE,he gets nothing by that.,he,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,1,1,BEATRICE,"In our last conflict four of his five wits went halting off, and now is the whole man governed with one!",his,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,1,1,BEATRICE,"so that if he have wit enough to keep himself warm, let him bear it for a difference between himself and his horse; for ",he,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,1,1,BEATRICE,"so that if he have wit enough to keep himself warm, let him bear it for a difference between himself and his horse; for ",himself,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,1,1,BEATRICE,"so that if he have wit enough to keep himself warm, let him bear it for a difference between himself and his horse; for ",him,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,1,1,BEATRICE,"so that if he have wit enough to keep himself warm, let him bear it for a difference between himself and his horse; for ",it,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,1,1,BEATRICE,"so that if he have wit enough to keep himself warm, let him bear it for a difference between himself and his horse; for ",himself,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,1,1,BEATRICE,"so that if he have wit enough to keep himself warm, let him bear it for a difference between himself and his horse; for ",his,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,1,1,BEATRICE,"so that if he have wit enough to keep himself warm, let him bear it for a difference between himself and his horse; for ",it,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,1,1,BEATRICE,"so that if he have wit enough to keep himself warm, let him bear it for a difference between himself and his horse; for ",he,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,1,1,BEATRICE,Who is his companion now?,his,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,1,1,BEATRICE,He hath every month a new sworn brother.,He,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,1,1,BEATRICE,Very easily possible: he wears his faith but as the fashion of his hat; it ever changes with the next block.,he,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,1,1,BEATRICE,Very easily possible: he wears his faith but as the fashion of his hat; it ever changes with the next block.,his,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,1,1,BEATRICE,Very easily possible: he wears his faith but as the fashion of his hat; it ever changes with the next block.,his,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,1,1,BEATRICE,Very easily possible: he wears his faith but as the fashion of his hat; it ever changes with the next block.,it,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,1,1,BEATRICE,"No; and he were, I would burn my study.",he,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,1,1,BEATRICE,"But I pray you, who is his companion?",his,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,1,1,BEATRICE,Is there no young squarer now that will make a voyage with him to the devil?,him,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,1,1,MESSENGER,He is most in the company of the right noble Claudio.,He,Claudio,male,7
+MUCH ADO ABOUT NOTHING,1,1,BEATRICE,"O Lord, he will hang upon him like a disease: he is sooner caught than the pestilence, and the taker runs presently mad.",he,Claudio,male,7
+MUCH ADO ABOUT NOTHING,1,1,BEATRICE,"O Lord, he will hang upon him like a disease: he is sooner caught than the pestilence, and the taker runs presently mad.",him,Claudio,male,7
+MUCH ADO ABOUT NOTHING,1,1,BEATRICE,"O Lord, he will hang upon him like a disease: he is sooner caught than the pestilence, and the taker runs presently mad.",he,Claudio,male,7
+MUCH ADO ABOUT NOTHING,1,1,BEATRICE,"If he have caught the Benedick, it will cost him a thousand pound ere he be cured.",he,Benedick,male,7
+MUCH ADO ABOUT NOTHING,1,1,BEATRICE,"If he have caught the Benedick, it will cost him a thousand pound ere he be cured.",it,Benedick,male,7
+MUCH ADO ABOUT NOTHING,1,1,BEATRICE,"If he have caught the Benedick, it will cost him a thousand pound ere he be cured.",him,Benedick,male,7
+MUCH ADO ABOUT NOTHING,1,1,BEATRICE,"If he have caught the Benedick, it will cost him a thousand pound ere he be cured.",he,Benedick,male,7
+MUCH ADO ABOUT NOTHING,1,1,DON PEDRO,"Good Signior Leonato, you are come to meet your trouble: the fashion of the world is to avoid cost, and you encounter it",it,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,1,1,LEONATO,"Never came trouble to my house in the likeness of your Grace, for trouble being gone, comfort should remain; but when yo",his,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,1,1,LEONATO,Her mother hath many times told me so.,Her,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,1,1,BENEDICK,"Were you in doubt, sir, that you asked her?",her,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,1,1,DON PEDRO,"You have it full, Benedick: we may guess by this what you are, being a man.",it,Benedick,male,7
+MUCH ADO ABOUT NOTHING,1,1,DON PEDRO,Truly the lady fathers herself.,herself,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,1,1,BENEDICK,"If Signior Leonato be her father, she would not have his head on her shoulders for all Messina, as like him as she is.",her,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,1,1,BENEDICK,"If Signior Leonato be her father, she would not have his head on her shoulders for all Messina, as like him as she is.",she,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,1,1,BENEDICK,"If Signior Leonato be her father, she would not have his head on her shoulders for all Messina, as like him as she is.",his,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,1,1,BENEDICK,"If Signior Leonato be her father, she would not have his head on her shoulders for all Messina, as like him as she is.",her,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,1,1,BENEDICK,"If Signior Leonato be her father, she would not have his head on her shoulders for all Messina, as like him as she is.",him,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,1,1,BENEDICK,"If Signior Leonato be her father, she would not have his head on her shoulders for all Messina, as like him as she is.",she,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,1,1,BEATRICE,Is it possible Disdain should die while she hath such meet food to feed it as Signior Benedick?,it,Benedick,male,7
+MUCH ADO ABOUT NOTHING,1,1,BEATRICE,Is it possible Disdain should die while she hath such meet food to feed it as Signior Benedick?,she,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,1,1,BEATRICE,Is it possible Disdain should die while she hath such meet food to feed it as Signior Benedick?,it,Benedick,male,7
+MUCH ADO ABOUT NOTHING,1,1,BEATRICE,Courtesy itself must convert to disdain if you come in her presence.,her,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,1,1,BENEDICK,"But it is certain I am loved of all ladies, only you excepted; and I would I could find in my heart that I had not a har",it,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,1,1,BEATRICE,A dear happiness to women: they would else have been troubled with a pernicious suitor.,they,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,1,1,BEATRICE,I had rather hear my dog bark at a crow than a man swear he loves me.,he,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,1,1,BEATRICE,"Scratching could not make it worse, and 'twere such a face as yours were.",it,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,1,1,DON PEDRO,"I tell him we shall stay here at the least a month, and he heartly prays some occasion may detain us longer: I dare swea",him,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,1,1,DON PEDRO,"I tell him we shall stay here at the least a month, and he heartly prays some occasion may detain us longer: I dare swea",he,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,1,1,DON PEDRO,"I tell him we shall stay here at the least a month, and he heartly prays some occasion may detain us longer: I dare swea",he,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,1,1,DON PEDRO,"I tell him we shall stay here at the least a month, and he heartly prays some occasion may detain us longer: I dare swea",his,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,1,1,LEONATO,Please it your Grace lead on?,it,Grace,neutral,7
+MUCH ADO ABOUT NOTHING,1,1,BENEDICK,I noted her not; but I looked on her.,her,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,1,1,BENEDICK,I noted her not; but I looked on her.,her,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,1,1,CLAUDIO,Is she not a modest young lady?,she,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,1,1,BENEDICK,"Do you question me, as an honest man should do, for my simple true judgment; or would you have me speak after my custom,",their,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,1,1,BENEDICK,"Why, i' faith, methinks she's too low for a high praise, too brown for a fair praise, and too little for a great praise;",she,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,1,1,BENEDICK,"Why, i' faith, methinks she's too low for a high praise, too brown for a fair praise, and too little for a great praise;",her,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,1,1,BENEDICK,"Why, i' faith, methinks she's too low for a high praise, too brown for a fair praise, and too little for a great praise;",she,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,1,1,BENEDICK,"Why, i' faith, methinks she's too low for a high praise, too brown for a fair praise, and too little for a great praise;",she,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,1,1,BENEDICK,"Why, i' faith, methinks she's too low for a high praise, too brown for a fair praise, and too little for a great praise;",she,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,1,1,BENEDICK,"Why, i' faith, methinks she's too low for a high praise, too brown for a fair praise, and too little for a great praise;",she,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,1,1,BENEDICK,"Why, i' faith, methinks she's too low for a high praise, too brown for a fair praise, and too little for a great praise;",her,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,1,1,CLAUDIO,Thou thinkest I am in sport: I pray thee tell me truly how thou likest her.,her,thou likest,neutral,7
+MUCH ADO ABOUT NOTHING,1,1,BENEDICK,"Would you buy her, that you enquire after her?",her,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,1,1,BENEDICK,"Would you buy her, that you enquire after her?",her,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,1,1,BENEDICK,"Yea, and a case to put it into.",it,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,1,1,CLAUDIO,In mine eye she is the sweetest lady that ever I looked on.,she,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,1,1,BENEDICK,"I can see yet without spectacles and I see no such matter: there's her cousin and she were not possessed with a fury, ex",her,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,1,1,BENEDICK,"I can see yet without spectacles and I see no such matter: there's her cousin and she were not possessed with a fury, ex",she,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,1,1,BENEDICK,"I can see yet without spectacles and I see no such matter: there's her cousin and she were not possessed with a fury, ex",her,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,1,1,BENEDICK,but he will wear his cap with suspicion?,he,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,1,1,BENEDICK,but he will wear his cap with suspicion?,his,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,1,1,BENEDICK,"Go to, i' faith; and thou wilt needs thrust thy neck into a yoke, wear the print of it and sigh away Sundays.",it,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,1,1,BENEDICK,"You hear, Count Claudio: I can be secret as a dumb man; I would have you think so; but on my allegiance mark you this, o",he,Claudio,male,7
+MUCH ADO ABOUT NOTHING,1,1,BENEDICK,"Mark how short his answer is: with Hero, Leonato's short daughter.",his,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,1,1,CLAUDIO,"If this were so, so were it uttered.",it,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,1,1,BENEDICK,"Like the old tale, my lord: 'it is not so, nor 'twas not so; but indeed, God forbid it should be so.'",it,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,1,1,BENEDICK,"Like the old tale, my lord: 'it is not so, nor 'twas not so; but indeed, God forbid it should be so.'",it,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,1,1,CLAUDIO,"If my passion change not shortly, God forbid it should be otherwise.",it,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,1,1,DON PEDRO,"Amen, if you love her; for the lady is very well worthy.",her,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,1,1,CLAUDIO,"That I love her, I feel.",her,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,1,1,DON PEDRO,"That she is worthy, I know.",she,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,1,1,BENEDICK,"That I neither feel how she should be loved, nor know how she should be worthy, is the opinion that fire cannot melt out",she,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,1,1,BENEDICK,"That I neither feel how she should be loved, nor know how she should be worthy, is the opinion that fire cannot melt out",she,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,1,1,BENEDICK,"That I neither feel how she should be loved, nor know how she should be worthy, is the opinion that fire cannot melt out",it,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,1,1,CLAUDIO,And never could maintain his part but in the force of his will.,his,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,1,1,CLAUDIO,And never could maintain his part but in the force of his will.,his,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,1,1,BENEDICK,"That a woman conceived me, I thank her; that she brought me up, I likewise give her most humble thanks; but that I will ",her,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,1,1,BENEDICK,"That a woman conceived me, I thank her; that she brought me up, I likewise give her most humble thanks; but that I will ",she,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,1,1,BENEDICK,"That a woman conceived me, I thank her; that she brought me up, I likewise give her most humble thanks; but that I will ",her,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,1,1,BENEDICK,"Because I will not do them the wrong to mistrust any, I will do myself the right to trust none; and the fine is,—for the",them,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,1,1,BENEDICK,"If I do, hang me in a bottle like a cat and shoot at me; and he that hits me, let him be clapped on the shoulder and cal",he,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,1,1,BENEDICK,"If I do, hang me in a bottle like a cat and shoot at me; and he that hits me, let him be clapped on the shoulder and cal",him,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,1,1,BENEDICK,"The savage bull may; but if ever the sensible Benedick bear it, pluck off the bull's horns and set them in my forehead; ",it,Benedick,male,7
+MUCH ADO ABOUT NOTHING,1,1,BENEDICK,"The savage bull may; but if ever the sensible Benedick bear it, pluck off the bull's horns and set them in my forehead; ",them,Benedick,male,7
+MUCH ADO ABOUT NOTHING,1,1,BENEDICK,"The savage bull may; but if ever the sensible Benedick bear it, pluck off the bull's horns and set them in my forehead; ",they,Benedick,male,7
+MUCH ADO ABOUT NOTHING,1,1,BENEDICK,"The savage bull may; but if ever the sensible Benedick bear it, pluck off the bull's horns and set them in my forehead; ",them,Benedick,male,7
+MUCH ADO ABOUT NOTHING,1,1,DON PEDRO,"Nay, if Cupid have not spent all his quiver in Venice, thou wilt quake for this shortly.",his,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,1,1,DON PEDRO,"In the meantime, good Signior Benedick, repair to Leonato's: commend me to him and tell him I will not fail him at suppe",him,Benedick,male,7
+MUCH ADO ABOUT NOTHING,1,1,DON PEDRO,"In the meantime, good Signior Benedick, repair to Leonato's: commend me to him and tell him I will not fail him at suppe",him,Benedick,male,7
+MUCH ADO ABOUT NOTHING,1,1,DON PEDRO,"In the meantime, good Signior Benedick, repair to Leonato's: commend me to him and tell him I will not fail him at suppe",him,Benedick,male,7
+MUCH ADO ABOUT NOTHING,1,1,DON PEDRO,"In the meantime, good Signior Benedick, repair to Leonato's: commend me to him and tell him I will not fail him at suppe",he,Benedick,male,7
+MUCH ADO ABOUT NOTHING,1,1,CLAUDIO,"To the tuition of God: from my house, if I had it,—",it,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,1,1,DON PEDRO,"My love is thine to teach: teach it but how, And thou shalt see how apt it is to learn Any hard lesson that may do thee ",it,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,1,1,DON PEDRO,"My love is thine to teach: teach it but how, And thou shalt see how apt it is to learn Any hard lesson that may do thee ",it,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,1,1,DON PEDRO,No child but Hero; she's his only heir.,she,Hero,female,7
+MUCH ADO ABOUT NOTHING,1,1,DON PEDRO,No child but Hero; she's his only heir.,his,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,1,1,DON PEDRO,"Dost thou affect her, Claudio?",her,Hero,female,7
+MUCH ADO ABOUT NOTHING,1,1,CLAUDIO,"my lord, When you went onward on this ended action, I looked upon her with a soldier's eye, That lik'd, but had a roughe",her,Hero,female,7
+MUCH ADO ABOUT NOTHING,1,1,CLAUDIO,"my lord, When you went onward on this ended action, I looked upon her with a soldier's eye, That lik'd, but had a roughe",their,return'd,neutral,7
+MUCH ADO ABOUT NOTHING,1,1,CLAUDIO,"my lord, When you went onward on this ended action, I looked upon her with a soldier's eye, That lik'd, but had a roughe",their,return'd,neutral,7
+MUCH ADO ABOUT NOTHING,1,1,CLAUDIO,"my lord, When you went onward on this ended action, I looked upon her with a soldier's eye, That lik'd, but had a roughe",her,Hero,female,7
+MUCH ADO ABOUT NOTHING,1,1,DON PEDRO,"If thou dost love fair Hero, cherish it, And I will break with her, and with her father, And thou shalt have her.",it,Hero,female,7
+MUCH ADO ABOUT NOTHING,1,1,DON PEDRO,"If thou dost love fair Hero, cherish it, And I will break with her, and with her father, And thou shalt have her.",her,Hero,female,7
+MUCH ADO ABOUT NOTHING,1,1,DON PEDRO,"If thou dost love fair Hero, cherish it, And I will break with her, and with her father, And thou shalt have her.",her,Hero,female,7
+MUCH ADO ABOUT NOTHING,1,1,DON PEDRO,"If thou dost love fair Hero, cherish it, And I will break with her, and with her father, And thou shalt have her.",her,Hero,female,7
+MUCH ADO ABOUT NOTHING,1,1,CLAUDIO,"How sweetly you do minister to love, That know love's grief by his complexion!",his,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,1,1,CLAUDIO,"But lest my liking might too sudden seem, I would have salv'd it with a longer treatise.",it,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,1,1,DON PEDRO,"I know we shall have revelling tonight: I will assume thy part in some disguise, And tell fair Hero I am Claudio; And in",her,Hero,female,7
+MUCH ADO ABOUT NOTHING,1,1,DON PEDRO,"I know we shall have revelling tonight: I will assume thy part in some disguise, And tell fair Hero I am Claudio; And in",her,Hero,female,7
+MUCH ADO ABOUT NOTHING,1,1,DON PEDRO,"I know we shall have revelling tonight: I will assume thy part in some disguise, And tell fair Hero I am Claudio; And in",her,Hero,female,7
+MUCH ADO ABOUT NOTHING,1,1,DON PEDRO,"I know we shall have revelling tonight: I will assume thy part in some disguise, And tell fair Hero I am Claudio; And in",she,Hero,female,7
+MUCH ADO ABOUT NOTHING,1,1,DON PEDRO,In practice let us put it presently.,it,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,1,2,LEONATO,Hath he provided this music?,he,LEONATO,male,3
+MUCH ADO ABOUT NOTHING,1,2,ANTONIO,He is very busy about it.,He,ANTONIO,male,4
+MUCH ADO ABOUT NOTHING,1,2,ANTONIO,He is very busy about it.,it,ANTONIO,male,4
+MUCH ADO ABOUT NOTHING,1,2,LEONATO,Are they good?,they,LEONATO,male,6
+MUCH ADO ABOUT NOTHING,1,2,ANTONIO,As the event stamps them: but they have a good cover; they show well outward.,them,ANTONIO,male,7
+MUCH ADO ABOUT NOTHING,1,2,ANTONIO,As the event stamps them: but they have a good cover; they show well outward.,they,ANTONIO,male,7
+MUCH ADO ABOUT NOTHING,1,2,ANTONIO,As the event stamps them: but they have a good cover; they show well outward.,they,ANTONIO,male,7
+MUCH ADO ABOUT NOTHING,1,2,ANTONIO,"The Prince and Count Claudio, walking in a thick-pleached alley in my orchard, were thus much overheard by a man of mine",he,Claudio,male,7
+MUCH ADO ABOUT NOTHING,1,2,ANTONIO,"The Prince and Count Claudio, walking in a thick-pleached alley in my orchard, were thus much overheard by a man of mine",it,Claudio,male,7
+MUCH ADO ABOUT NOTHING,1,2,ANTONIO,"The Prince and Count Claudio, walking in a thick-pleached alley in my orchard, were thus much overheard by a man of mine",he,Claudio,male,7
+MUCH ADO ABOUT NOTHING,1,2,ANTONIO,"The Prince and Count Claudio, walking in a thick-pleached alley in my orchard, were thus much overheard by a man of mine",her,Claudio,male,7
+MUCH ADO ABOUT NOTHING,1,2,ANTONIO,"The Prince and Count Claudio, walking in a thick-pleached alley in my orchard, were thus much overheard by a man of mine",he,Claudio,male,7
+MUCH ADO ABOUT NOTHING,1,2,ANTONIO,"The Prince and Count Claudio, walking in a thick-pleached alley in my orchard, were thus much overheard by a man of mine",it,Claudio,male,7
+MUCH ADO ABOUT NOTHING,1,2,ANTONIO,A good sharp fellow: I will send for him; and question him yourself.,him,ANTONIO,male,7
+MUCH ADO ABOUT NOTHING,1,2,ANTONIO,A good sharp fellow: I will send for him; and question him yourself.,him,ANTONIO,male,7
+MUCH ADO ABOUT NOTHING,1,2,LEONATO,"No, no; we will hold it as a dream till it appear itself: but I will acquaint my daughter withal, that she may be the be",it,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,1,2,LEONATO,"No, no; we will hold it as a dream till it appear itself: but I will acquaint my daughter withal, that she may be the be",it,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,1,2,LEONATO,"No, no; we will hold it as a dream till it appear itself: but I will acquaint my daughter withal, that she may be the be",she,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,1,2,LEONATO,Go you and tell her of it.,her,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,1,2,LEONATO,Go you and tell her of it.,it,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,1,3,DON JOHN,"And when I have heard it, what blessings brings it?",it,DON JOHN,male,5
+MUCH ADO ABOUT NOTHING,1,3,DON JOHN,"And when I have heard it, what blessings brings it?",it,DON JOHN,male,5
+MUCH ADO ABOUT NOTHING,1,3,DON JOHN,"I cannot hide what I am: I must be sad when I have cause, and smile at no man's jests; eat when I have stomach, and wait",his,DON JOHN,male,7
+MUCH ADO ABOUT NOTHING,1,3,CONRADE,Yea; but you must not make the full show of this till you may do it without controlment.,it,CONRADE,male,7
+MUCH ADO ABOUT NOTHING,1,3,CONRADE,"You have of late stood out against your brother, and he hath ta'en you newly into his grace; where it is impossible you ",he,CONRADE,male,7
+MUCH ADO ABOUT NOTHING,1,3,CONRADE,"You have of late stood out against your brother, and he hath ta'en you newly into his grace; where it is impossible you ",his,CONRADE,male,7
+MUCH ADO ABOUT NOTHING,1,3,CONRADE,"You have of late stood out against your brother, and he hath ta'en you newly into his grace; where it is impossible you ",it,CONRADE,male,7
+MUCH ADO ABOUT NOTHING,1,3,CONRADE,"You have of late stood out against your brother, and he hath ta'en you newly into his grace; where it is impossible you ",it,CONRADE,male,7
+MUCH ADO ABOUT NOTHING,1,3,DON JOHN,I had rather be a canker in a hedge than a rose in his grace; and it better fits my blood to be disdained of all than to,his,DON JOHN,male,7
+MUCH ADO ABOUT NOTHING,1,3,DON JOHN,I had rather be a canker in a hedge than a rose in his grace; and it better fits my blood to be disdained of all than to,it,DON JOHN,male,7
+MUCH ADO ABOUT NOTHING,1,3,DON JOHN,I had rather be a canker in a hedge than a rose in his grace; and it better fits my blood to be disdained of all than to,it,DON JOHN,male,7
+MUCH ADO ABOUT NOTHING,1,3,DON JOHN,"I make all use of it, for I use it only.",it,DON JOHN,male,7
+MUCH ADO ABOUT NOTHING,1,3,DON JOHN,"I make all use of it, for I use it only.",it,DON JOHN,male,7
+MUCH ADO ABOUT NOTHING,1,3,DON JOHN,Will it serve for any model to build mischief on?,it,DON JOHN,male,7
+MUCH ADO ABOUT NOTHING,1,3,DON JOHN,What is he for a fool that betroths himself to unquietness?,he,DON JOHN,male,7
+MUCH ADO ABOUT NOTHING,1,3,DON JOHN,What is he for a fool that betroths himself to unquietness?,himself,DON JOHN,male,7
+MUCH ADO ABOUT NOTHING,1,3,BORACHIO,"Marry, it is your brother's right hand.",it,BORACHIO,male,7
+MUCH ADO ABOUT NOTHING,1,3,BORACHIO,Even he.,he,BORACHIO,male,7
+MUCH ADO ABOUT NOTHING,1,3,DON JOHN,which way looks he?,he,DON JOHN,male,7
+MUCH ADO ABOUT NOTHING,1,3,BORACHIO,"I whipt me behind the arras, and there heard it agreed upon that the Prince should woo Hero for himself, and having obta",it,Claudio,male,7
+MUCH ADO ABOUT NOTHING,1,3,BORACHIO,"I whipt me behind the arras, and there heard it agreed upon that the Prince should woo Hero for himself, and having obta",himself,Claudio,male,7
+MUCH ADO ABOUT NOTHING,1,3,BORACHIO,"I whipt me behind the arras, and there heard it agreed upon that the Prince should woo Hero for himself, and having obta",her,Claudio,male,7
+MUCH ADO ABOUT NOTHING,1,3,BORACHIO,"I whipt me behind the arras, and there heard it agreed upon that the Prince should woo Hero for himself, and having obta",her,Claudio,male,7
+MUCH ADO ABOUT NOTHING,1,3,DON JOHN,"That young start-up hath all the glory of my overthrow: if I can cross him any way, I bless myself every way.",him,DON JOHN,male,7
+MUCH ADO ABOUT NOTHING,1,3,DON JOHN,Let us to the great supper: their cheer is the greater that I am subdued.,their,DON JOHN,male,7
+MUCH ADO ABOUT NOTHING,2,1,ANTONIO,I saw him not.,him,ANTONIO,male,3
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,I never can see him,him,ANTONIO,male,5
+MUCH ADO ABOUT NOTHING,2,1,HERO,He is of a very melancholy disposition.,He,ANTONIO,male,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"He were an excellent man that were made just in the mid-way between him and Benedick: the one is too like an image, and ",He,Benedick,male,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"He were an excellent man that were made just in the mid-way between him and Benedick: the one is too like an image, and ",him,Benedick,male,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"With a good leg and a good foot, uncle, and money enough in his purse, such a man would win any woman in the world if a'",his,Benedick,male,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"With a good leg and a good foot, uncle, and money enough in his purse, such a man would win any woman in the world if a'",her,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,2,1,ANTONIO,"In faith, she's too curst.",she,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"Too curst is more than curst: I shall lessen God's sending that way; for it is said, 'God sends a curst cow short horns;",it,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"Too curst is more than curst: I shall lessen God's sending that way; for it is said, 'God sends a curst cow short horns;",he,ANTONIO,male,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"Just, if he send me no husband; for the which blessing I am at him upon my knees every morning and evening.",he,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"Just, if he send me no husband; for the which blessing I am at him upon my knees every morning and evening.",him,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,I could not endure a husband with a beard on his face: I had rather lie in the woollen.,his,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,What should I do with him?,him,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,dress him in my apparel and make him my waiting gentlewoman?,him,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,dress him in my apparel and make him my waiting gentlewoman?,him,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"He that hath a beard is more than a youth, and he that hath no beard is less than a man; and he that is more than a yout",He,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"He that hath a beard is more than a youth, and he that hath no beard is less than a man; and he that is more than a yout",he,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"He that hath a beard is more than a youth, and he that hath no beard is less than a man; and he that is more than a yout",he,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"He that hath a beard is more than a youth, and he that hath no beard is less than a man; and he that is more than a yout",he,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"He that hath a beard is more than a youth, and he that hath no beard is less than a man; and he that is more than a yout",him,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"He that hath a beard is more than a youth, and he that hath no beard is less than a man; and he that is more than a yout",his,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"No; but to the gate; and there will the Devil meet me, like an old cuckold, with horns on his head, and say, 'Get you to",his,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"So deliver I up my apes, and away to Saint Peter for the heavens: he shows me where the bachelors sit, and there live we",he,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"Yes, faith; it is my cousin's duty to make curtsy, and say, 'Father, as it please you:'— but yet for all that, cousin, l",it,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"Yes, faith; it is my cousin's duty to make curtsy, and say, 'Father, as it please you:'— but yet for all that, cousin, l",it,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"Yes, faith; it is my cousin's duty to make curtsy, and say, 'Father, as it please you:'— but yet for all that, cousin, l",him,ANTONIO,male,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"Yes, faith; it is my cousin's duty to make curtsy, and say, 'Father, as it please you:'— but yet for all that, cousin, l",it,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,Would it not grieve a woman to be over-mastered with a piece of valiant dust?,it,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,to make an account of her life to a clod of wayward marl?,her,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"Adam's sons are my brethren; and truly, I hold it a sin to match in my kindred.",it,Adam,neutral,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"The fault will be in the music, cousin, if you be not wooed in good time: if the Prince be too important, tell him there",him,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"For, hear me, Hero: wooing, wedding, and repenting is as a Scotch jig, a measure, and a cinquepace: the first suit is ho",his,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"For, hear me, Hero: wooing, wedding, and repenting is as a Scotch jig, a measure, and a cinquepace: the first suit is ho",he,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"For, hear me, Hero: wooing, wedding, and repenting is as a Scotch jig, a measure, and a cinquepace: the first suit is ho",his,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,2,1,DON PEDRO,Takes her aside.,her,HERO,female,7
+MUCH ADO ABOUT NOTHING,2,1,MARGARET,And God keep him out of my sight when the dance is done!,him,BALTHASAR,male,7
+MUCH ADO ABOUT NOTHING,2,1,ANTONIO,"To tell you true, I counterfeit him.",him,ANTONIO,male,7
+MUCH ADO ABOUT NOTHING,2,1,URSULA,"You could never do him so ill-well, unless you were the very man.",him,ANTONIO,male,7
+MUCH ADO ABOUT NOTHING,2,1,URSULA,"Here's his dry hand up and down: you are he, you are he.",his,ANTONIO,male,7
+MUCH ADO ABOUT NOTHING,2,1,URSULA,"Here's his dry hand up and down: you are he, you are he.",he,ANTONIO,male,7
+MUCH ADO ABOUT NOTHING,2,1,URSULA,"Here's his dry hand up and down: you are he, you are he.",he,ANTONIO,male,7
+MUCH ADO ABOUT NOTHING,2,1,URSULA,"Go to, mum, you are he: graces will appear, and there's an end.",he,ANTONIO,male,7
+MUCH ADO ABOUT NOTHING,2,1,BENEDICK,What's he?,he,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,I am sure you know him well enough.,him,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,Did he never make you laugh?,he,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,BENEDICK,"I pray you, what is he?",he,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"Why, he is the Prince's jester: a very dull fool; only his gift is in devising impossible slanders: none but libertines ",he,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"Why, he is the Prince's jester: a very dull fool; only his gift is in devising impossible slanders: none but libertines ",his,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"Why, he is the Prince's jester: a very dull fool; only his gift is in devising impossible slanders: none but libertines ",him,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"Why, he is the Prince's jester: a very dull fool; only his gift is in devising impossible slanders: none but libertines ",his,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"Why, he is the Prince's jester: a very dull fool; only his gift is in devising impossible slanders: none but libertines ",his,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"Why, he is the Prince's jester: a very dull fool; only his gift is in devising impossible slanders: none but libertines ",he,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"Why, he is the Prince's jester: a very dull fool; only his gift is in devising impossible slanders: none but libertines ",them,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"Why, he is the Prince's jester: a very dull fool; only his gift is in devising impossible slanders: none but libertines ",they,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"Why, he is the Prince's jester: a very dull fool; only his gift is in devising impossible slanders: none but libertines ",him,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"Why, he is the Prince's jester: a very dull fool; only his gift is in devising impossible slanders: none but libertines ",him,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,I am sure he is in the fleet: I would he had boarded me!,he,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,I am sure he is in the fleet: I would he had boarded me!,he,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,BENEDICK,"When I know the gentleman, I'll tell him what you say.",him,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"Do, do: he'll but break a comparison or two on me; which, peradventure not marked or not laughed at, strikes him into me",he,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"Do, do: he'll but break a comparison or two on me; which, peradventure not marked or not laughed at, strikes him into me",him,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"Nay, if they lead to any ill, I will leave them at the next turning.",they,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"Nay, if they lead to any ill, I will leave them at the next turning.",them,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,2,1,DON JOHN,"Sure my brother is amorous on Hero, and hath withdrawn her father to break with him about it.",her,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,2,1,DON JOHN,"Sure my brother is amorous on Hero, and hath withdrawn her father to break with him about it.",him,DON JOHN,male,7
+MUCH ADO ABOUT NOTHING,2,1,DON JOHN,"Sure my brother is amorous on Hero, and hath withdrawn her father to break with him about it.",it,DON JOHN,male,7
+MUCH ADO ABOUT NOTHING,2,1,DON JOHN,The ladies follow her and but one visor remains.,her,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,2,1,BORACHIO,And that is Claudio: I know him by his bearing.,him,Claudio,male,7
+MUCH ADO ABOUT NOTHING,2,1,BORACHIO,And that is Claudio: I know him by his bearing.,his,Claudio,male,7
+MUCH ADO ABOUT NOTHING,2,1,CLAUDIO,You know me well; I am he.,he,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,2,1,DON JOHN,"Signior, you are very near my brother in his love: he is enamoured on Hero; I pray you, dissuade him from her; she is no",his,DON JOHN,male,7
+MUCH ADO ABOUT NOTHING,2,1,DON JOHN,"Signior, you are very near my brother in his love: he is enamoured on Hero; I pray you, dissuade him from her; she is no",he,DON JOHN,male,7
+MUCH ADO ABOUT NOTHING,2,1,DON JOHN,"Signior, you are very near my brother in his love: he is enamoured on Hero; I pray you, dissuade him from her; she is no",him,DON JOHN,male,7
+MUCH ADO ABOUT NOTHING,2,1,DON JOHN,"Signior, you are very near my brother in his love: he is enamoured on Hero; I pray you, dissuade him from her; she is no",her,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,2,1,DON JOHN,"Signior, you are very near my brother in his love: he is enamoured on Hero; I pray you, dissuade him from her; she is no",she,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,2,1,DON JOHN,"Signior, you are very near my brother in his love: he is enamoured on Hero; I pray you, dissuade him from her; she is no",his,DON JOHN,male,7
+MUCH ADO ABOUT NOTHING,2,1,DON JOHN,"Signior, you are very near my brother in his love: he is enamoured on Hero; I pray you, dissuade him from her; she is no",it,DON JOHN,male,7
+MUCH ADO ABOUT NOTHING,2,1,CLAUDIO,he loves her?,he,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,2,1,CLAUDIO,he loves her?,her,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,2,1,DON JOHN,I heard him swear his affection.,him,DON JOHN,male,7
+MUCH ADO ABOUT NOTHING,2,1,DON JOHN,I heard him swear his affection.,his,DON JOHN,male,7
+MUCH ADO ABOUT NOTHING,2,1,BORACHIO,So did I too; and he swore he would marry her tonight.,he,BORACHIO,male,7
+MUCH ADO ABOUT NOTHING,2,1,BORACHIO,So did I too; and he swore he would marry her tonight.,he,BORACHIO,male,7
+MUCH ADO ABOUT NOTHING,2,1,BORACHIO,So did I too; and he swore he would marry her tonight.,her,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,2,1,CLAUDIO,Tis certain so; the Prince wooss for himself.,himself,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,2,1,CLAUDIO,Friendship is constant in all other things Save in the office and affairs of love: Therefore all hearts in love use thei,their,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,2,1,BENEDICK,"You must wear it one way, for the Prince hath got your Hero.",it,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,CLAUDIO,I wish him joy of her.,him,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,2,1,CLAUDIO,I wish him joy of her.,her,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,2,1,BENEDICK,"Why, that's spoken like an honest drovier: so they sell bullocks.",they,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,CLAUDIO,"If it will not be, I'll leave you.",it,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,2,1,BENEDICK,Now will he creep into sedges.,he,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,BENEDICK,it may be I go under that title because I am merry.,it,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,BENEDICK,"Yea, but so I am apt to do myself wrong; I am not so reputed: it is the base though bitter disposition of Beatrice that ",it,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,BENEDICK,"Yea, but so I am apt to do myself wrong; I am not so reputed: it is the base though bitter disposition of Beatrice that ",her,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,2,1,DON PEDRO,Did you see him?,him,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,1,BENEDICK,I found him here as melancholy as a lodge in a warren.,him,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,BENEDICK,"I told him, and I think I told him true, that your Grace had got the good will of this young lady; and I offered him my ",him,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,BENEDICK,"I told him, and I think I told him true, that your Grace had got the good will of this young lady; and I offered him my ",him,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,BENEDICK,"I told him, and I think I told him true, that your Grace had got the good will of this young lady; and I offered him my ",him,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,BENEDICK,"I told him, and I think I told him true, that your Grace had got the good will of this young lady; and I offered him my ",him,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,BENEDICK,"I told him, and I think I told him true, that your Grace had got the good will of this young lady; and I offered him my ",him,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,DON PEDRO,What's his fault?,his,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,1,BENEDICK,"The flat transgression of a school-boy, who, being overjoy'd with finding a bird's nest, shows it his companion, and he ",it,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,BENEDICK,"The flat transgression of a school-boy, who, being overjoy'd with finding a bird's nest, shows it his companion, and he ",his,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,BENEDICK,"The flat transgression of a school-boy, who, being overjoy'd with finding a bird's nest, shows it his companion, and he ",he,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,BENEDICK,"The flat transgression of a school-boy, who, being overjoy'd with finding a bird's nest, shows it his companion, and he ",it,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,BENEDICK,"Yet it had not been amiss the rod had been made, and the garland too; for the garland he might have worn himself, and th",it,garland,neutral,7
+MUCH ADO ABOUT NOTHING,2,1,BENEDICK,"Yet it had not been amiss the rod had been made, and the garland too; for the garland he might have worn himself, and th",he,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,BENEDICK,"Yet it had not been amiss the rod had been made, and the garland too; for the garland he might have worn himself, and th",himself,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,BENEDICK,"Yet it had not been amiss the rod had been made, and the garland too; for the garland he might have worn himself, and th",he,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,BENEDICK,"Yet it had not been amiss the rod had been made, and the garland too; for the garland he might have worn himself, and th",it,garland,neutral,7
+MUCH ADO ABOUT NOTHING,2,1,BENEDICK,"Yet it had not been amiss the rod had been made, and the garland too; for the garland he might have worn himself, and th",his,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,DON PEDRO,"I will but teach them to sing, and restore them to the owner.",them,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,1,DON PEDRO,"I will but teach them to sing, and restore them to the owner.",them,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,1,BENEDICK,"If their singing answer your saying, by my faith, you say honestly.",their,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,DON PEDRO,The Lady Beatrice hath a quarrel to you: the gentleman that danced with her told her she is much wronged by you.,her,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,1,DON PEDRO,The Lady Beatrice hath a quarrel to you: the gentleman that danced with her told her she is much wronged by you.,her,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,1,DON PEDRO,The Lady Beatrice hath a quarrel to you: the gentleman that danced with her told her she is much wronged by you.,she,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,1,BENEDICK,she misused me past the endurance of a block: an oak but with one green leaf on it would have answered her: my very viso,she,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,BENEDICK,she misused me past the endurance of a block: an oak but with one green leaf on it would have answered her: my very viso,it,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,BENEDICK,she misused me past the endurance of a block: an oak but with one green leaf on it would have answered her: my very viso,her,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,BENEDICK,she misused me past the endurance of a block: an oak but with one green leaf on it would have answered her: my very viso,her,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,BENEDICK,"She told me, not thinking I had been myself, that I was the Prince's jester, that I was duller than a great thaw; huddli",She,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,BENEDICK,"She speaks poniards, and every word stabs: if her breath were as terrible as her terminations, there were no living near",She,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,BENEDICK,"She speaks poniards, and every word stabs: if her breath were as terrible as her terminations, there were no living near",her,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,BENEDICK,"She speaks poniards, and every word stabs: if her breath were as terrible as her terminations, there were no living near",her,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,BENEDICK,"She speaks poniards, and every word stabs: if her breath were as terrible as her terminations, there were no living near",her,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,BENEDICK,"She speaks poniards, and every word stabs: if her breath were as terrible as her terminations, there were no living near",she,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,BENEDICK,"I would not marry her, though she were endowed with all that Adam had left him before he transgressed: she would have ma",her,Hercules,neutral,7
+MUCH ADO ABOUT NOTHING,2,1,BENEDICK,"I would not marry her, though she were endowed with all that Adam had left him before he transgressed: she would have ma",she,Hercules,neutral,7
+MUCH ADO ABOUT NOTHING,2,1,BENEDICK,"I would not marry her, though she were endowed with all that Adam had left him before he transgressed: she would have ma",him,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,BENEDICK,"I would not marry her, though she were endowed with all that Adam had left him before he transgressed: she would have ma",he,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,BENEDICK,"I would not marry her, though she were endowed with all that Adam had left him before he transgressed: she would have ma",she,Hercules,neutral,7
+MUCH ADO ABOUT NOTHING,2,1,BENEDICK,"I would not marry her, though she were endowed with all that Adam had left him before he transgressed: she would have ma",his,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,BENEDICK,"Come, talk not of her; you shall find her the infernal Ate in good apparel.",her,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,BENEDICK,"Come, talk not of her; you shall find her the infernal Ate in good apparel.",her,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,BENEDICK,"I would to God some scholar would conjure her, for certainly, while she is here, a man may live as quiet in hell as in a",her,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,BENEDICK,"I would to God some scholar would conjure her, for certainly, while she is here, a man may live as quiet in hell as in a",she,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,BENEDICK,"I would to God some scholar would conjure her, for certainly, while she is here, a man may live as quiet in hell as in a",they,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,BENEDICK,"I would to God some scholar would conjure her, for certainly, while she is here, a man may live as quiet in hell as in a",her,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,1,DON PEDRO,here she comes.,she,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"Indeed, my lord, he lent it me awhile; and I gave him use for it, a double heart for a single one: marry, once before he",he,Benedick,male,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"Indeed, my lord, he lent it me awhile; and I gave him use for it, a double heart for a single one: marry, once before he",it,Grace,neutral,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"Indeed, my lord, he lent it me awhile; and I gave him use for it, a double heart for a single one: marry, once before he",him,Benedick,male,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"Indeed, my lord, he lent it me awhile; and I gave him use for it, a double heart for a single one: marry, once before he",it,Grace,neutral,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"Indeed, my lord, he lent it me awhile; and I gave him use for it, a double heart for a single one: marry, once before he",he,Benedick,male,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"Indeed, my lord, he lent it me awhile; and I gave him use for it, a double heart for a single one: marry, once before he",it,Grace,neutral,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"Indeed, my lord, he lent it me awhile; and I gave him use for it, a double heart for a single one: marry, once before he",it,Grace,neutral,7
+MUCH ADO ABOUT NOTHING,2,1,DON PEDRO,"You have put him down, lady, you have put him down.",him,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,1,DON PEDRO,"You have put him down, lady, you have put him down.",him,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"So I would not he should do me, my lord, lest I should prove the mother of fools.",he,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,1,DON PEDRO,"I' faith, lady, I think your blazon to be true; though, I'll be sworn, if he be so, his conceit is false.",he,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,1,DON PEDRO,"I' faith, lady, I think your blazon to be true; though, I'll be sworn, if he be so, his conceit is false.",his,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,1,DON PEDRO,"Here, Claudio, I have wooed in thy name, and fair Hero is won; I have broke with her father, and, his good will obtained",her,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,2,1,DON PEDRO,"Here, Claudio, I have wooed in thy name, and fair Hero is won; I have broke with her father, and, his good will obtained",his,Claudio,male,7
+MUCH ADO ABOUT NOTHING,2,1,LEONATO,"Count, take of me my daughter, and with her my fortunes: his Grace hath made the match, and all grace say Amen to it!",her,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,2,1,LEONATO,"Count, take of me my daughter, and with her my fortunes: his Grace hath made the match, and all grace say Amen to it!",his,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,2,1,LEONATO,"Count, take of me my daughter, and with her my fortunes: his Grace hath made the match, and all grace say Amen to it!",it,Grace,neutral,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"Speak, cousin; or, if you cannot, stop his mouth with a kiss, and let not him speak neither.",his,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"Speak, cousin; or, if you cannot, stop his mouth with a kiss, and let not him speak neither.",him,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"Yea, my lord; I thank it, poor fool, it keeps on the windy side of care.",it,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"Yea, my lord; I thank it, poor fool, it keeps on the windy side of care.",it,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,My cousin tells him in his ear that he is in her heart.,him,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,My cousin tells him in his ear that he is in her heart.,his,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,My cousin tells him in his ear that he is in her heart.,he,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,My cousin tells him in his ear that he is in her heart.,her,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,2,1,CLAUDIO,"And so she doth, cousin.",she,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,2,1,BEATRICE,"Your father got excellent husbands, if a maid could come by them.",them,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,2,1,LEONATO,"There's little of the melancholy element in her, my lord: she is never sad but when she sleeps; and not ever sad then, f",her,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,2,1,LEONATO,"There's little of the melancholy element in her, my lord: she is never sad but when she sleeps; and not ever sad then, f",she,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,2,1,LEONATO,"There's little of the melancholy element in her, my lord: she is never sad but when she sleeps; and not ever sad then, f",she,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,2,1,LEONATO,"There's little of the melancholy element in her, my lord: she is never sad but when she sleeps; and not ever sad then, f",she,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,2,1,LEONATO,"There's little of the melancholy element in her, my lord: she is never sad but when she sleeps; and not ever sad then, f",herself,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,2,1,DON PEDRO,She cannot endure to hear tell of a husband.,She,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,2,1,LEONATO,by no means: she mocks all her wooers out of suit.,she,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,2,1,LEONATO,by no means: she mocks all her wooers out of suit.,her,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,2,1,DON PEDRO,She were an excellent wife for Benedick.,She,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,2,1,LEONATO,"my lord, if they were but a week married, they would talk themselves mad.",they,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,2,1,LEONATO,"my lord, if they were but a week married, they would talk themselves mad.",they,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,2,1,LEONATO,"my lord, if they were but a week married, they would talk themselves mad.",themselves,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,2,1,CLAUDIO,Time goes on crutches till love have all his rites.,his,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,2,1,DON PEDRO,"I would fain have it a match; and I doubt not but to fashion it, if you three will but minister such assistance as I sha",it,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,1,DON PEDRO,"I would fain have it a match; and I doubt not but to fashion it, if you three will but minister such assistance as I sha",it,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,1,LEONATO,"My lord, I am for you, though it cost me ten nights' watchings.",it,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,2,1,DON PEDRO,"Thus far can I praise him; he is of a noble strain, of approved valour, and confirmed honesty.",him,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,1,DON PEDRO,"Thus far can I praise him; he is of a noble strain, of approved valour, and confirmed honesty.",he,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,1,DON PEDRO,"I will teach you how to humour your cousin, that she shall fall in love with Benedick; and I, with your two helps, will ",she,HERO,female,7
+MUCH ADO ABOUT NOTHING,2,1,DON PEDRO,"I will teach you how to humour your cousin, that she shall fall in love with Benedick; and I, with your two helps, will ",his,Benedick,male,7
+MUCH ADO ABOUT NOTHING,2,1,DON PEDRO,"I will teach you how to humour your cousin, that she shall fall in love with Benedick; and I, with your two helps, will ",his,Benedick,male,7
+MUCH ADO ABOUT NOTHING,2,1,DON PEDRO,"I will teach you how to humour your cousin, that she shall fall in love with Benedick; and I, with your two helps, will ",he,Benedick,male,7
+MUCH ADO ABOUT NOTHING,2,1,DON PEDRO,"If we can do this, Cupid is no longer an archer: his glory shall be ours, for we are the only love-gods.",his,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,2,DON JOHN,It is so; the Count Claudio shall marry the daughter of Leonato.,It,Claudio,male,2
+MUCH ADO ABOUT NOTHING,2,2,BORACHIO,"Yea, my lord; but I can cross it.",it,BORACHIO,male,3
+MUCH ADO ABOUT NOTHING,2,2,DON JOHN,"Any bar, any cross, any impediment will be medicinable to me: I am sick in displeasure to him, and whatsoever comes athw",him,DON JOHN,male,4
+MUCH ADO ABOUT NOTHING,2,2,DON JOHN,"Any bar, any cross, any impediment will be medicinable to me: I am sick in displeasure to him, and whatsoever comes athw",his,DON JOHN,male,4
+MUCH ADO ABOUT NOTHING,2,2,BORACHIO,"I can, at any unseasonable instant of the night, appoint her to look out at her lady's chamber window.",her,Margaret,female,7
+MUCH ADO ABOUT NOTHING,2,2,BORACHIO,"I can, at any unseasonable instant of the night, appoint her to look out at her lady's chamber window.",her,Margaret,female,7
+MUCH ADO ABOUT NOTHING,2,2,BORACHIO,"Go you to the Prince your brother; spare not to tell him, that he hath wronged his honour in marrying the renowned Claud",him,BORACHIO,male,7
+MUCH ADO ABOUT NOTHING,2,2,BORACHIO,"Go you to the Prince your brother; spare not to tell him, that he hath wronged his honour in marrying the renowned Claud",he,BORACHIO,male,7
+MUCH ADO ABOUT NOTHING,2,2,BORACHIO,"Go you to the Prince your brother; spare not to tell him, that he hath wronged his honour in marrying the renowned Claud",his,BORACHIO,male,7
+MUCH ADO ABOUT NOTHING,2,2,DON JOHN,"Only to despite them, I will endeavour anything.",them,DON JOHN,male,7
+MUCH ADO ABOUT NOTHING,2,2,BORACHIO,Go then; find me a meet hour to draw Don Pedro and the Count Claudio alone: tell them that you know that Hero loves me; ,them,Claudio,male,7
+MUCH ADO ABOUT NOTHING,2,2,BORACHIO,Go then; find me a meet hour to draw Don Pedro and the Count Claudio alone: tell them that you know that Hero loves me; ,his,Claudio,male,7
+MUCH ADO ABOUT NOTHING,2,2,BORACHIO,"They will scarcely believe this without trial: offer them instances, which shall bear no less likelihood than to see me ",They,Claudio,male,7
+MUCH ADO ABOUT NOTHING,2,2,BORACHIO,"They will scarcely believe this without trial: offer them instances, which shall bear no less likelihood than to see me ",them,Claudio,male,7
+MUCH ADO ABOUT NOTHING,2,2,BORACHIO,"They will scarcely believe this without trial: offer them instances, which shall bear no less likelihood than to see me ",her,Margaret,female,7
+MUCH ADO ABOUT NOTHING,2,2,BORACHIO,"They will scarcely believe this without trial: offer them instances, which shall bear no less likelihood than to see me ",them,Claudio,male,7
+MUCH ADO ABOUT NOTHING,2,2,DON JOHN,"Grow this to what adverse issue it can, I will put it in practice.",it,DON JOHN,male,7
+MUCH ADO ABOUT NOTHING,2,2,DON JOHN,"Grow this to what adverse issue it can, I will put it in practice.",it,DON JOHN,male,7
+MUCH ADO ABOUT NOTHING,2,2,DON JOHN,I will presently go learn their day of marriage.,their,DON JOHN,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,In my chamber window lies a book; bring it hither to me in the orchard.,it,BENEDICK,male,4
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,"I do much wonder that one man, seeing how much another man is a fool when he dedicates his behaviours to love, will, aft",he,Claudio,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,"I do much wonder that one man, seeing how much another man is a fool when he dedicates his behaviours to love, will, aft",his,Claudio,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,"I do much wonder that one man, seeing how much another man is a fool when he dedicates his behaviours to love, will, aft",he,Claudio,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,"I do much wonder that one man, seeing how much another man is a fool when he dedicates his behaviours to love, will, aft",his,Claudio,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,"I have known, when there was no music with him but the drum and the fife; and now had he rather hear the tabor and the p",him,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,"I have known, when there was no music with him but the drum and the fife; and now had he rather hear the tabor and the p",he,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,"I have known, when there was no music with him but the drum and the fife; and now had he rather hear the tabor and the p",he,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,"I have known, when there was no music with him but the drum and the fife; and now had he rather hear the tabor and the p",he,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,"He was wont to speak plain and to the purpose, like an honest man and a soldier; and now is he turned orthography; his w",He,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,"He was wont to speak plain and to the purpose, like an honest man and a soldier; and now is he turned orthography; his w",he,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,"He was wont to speak plain and to the purpose, like an honest man and a soldier; and now is he turned orthography; his w",his,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,"I cannot tell; I think not: I will not be sworn but love may transform me to an oyster; but I'll take my oath on it, til",it,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,"I cannot tell; I think not: I will not be sworn but love may transform me to an oyster; but I'll take my oath on it, til",he,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,"I cannot tell; I think not: I will not be sworn but love may transform me to an oyster; but I'll take my oath on it, til",he,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,"Rich she shall be, that's certain; wise, or I'll none; virtuous, or I'll never cheapen her; fair, or I'll never look on ",she,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,"Rich she shall be, that's certain; wise, or I'll none; virtuous, or I'll never cheapen her; fair, or I'll never look on ",her,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,"Rich she shall be, that's certain; wise, or I'll none; virtuous, or I'll never cheapen her; fair, or I'll never look on ",her,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,"Rich she shall be, that's certain; wise, or I'll none; virtuous, or I'll never cheapen her; fair, or I'll never look on ",her,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,"Rich she shall be, that's certain; wise, or I'll none; virtuous, or I'll never cheapen her; fair, or I'll never look on ",it,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,See you where Benedick hath hid himself?,himself,Benedick,male,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,"It is the witness still of excellency, To put a strange face on his own perfection.",It,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,"It is the witness still of excellency, To put a strange face on his own perfection.",his,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,3,BALTHASAR,"Because you talk of wooing, I will sing; Since many a wooer doth commence his suit To her he thinks not worthy; yet he w",his,BALTHASAR,male,7
+MUCH ADO ABOUT NOTHING,2,3,BALTHASAR,"Because you talk of wooing, I will sing; Since many a wooer doth commence his suit To her he thinks not worthy; yet he w",her,BALTHASAR,male,7
+MUCH ADO ABOUT NOTHING,2,3,BALTHASAR,"Because you talk of wooing, I will sing; Since many a wooer doth commence his suit To her he thinks not worthy; yet he w",he,BALTHASAR,male,7
+MUCH ADO ABOUT NOTHING,2,3,BALTHASAR,"Because you talk of wooing, I will sing; Since many a wooer doth commence his suit To her he thinks not worthy; yet he w",he,BALTHASAR,male,7
+MUCH ADO ABOUT NOTHING,2,3,BALTHASAR,"Because you talk of wooing, I will sing; Since many a wooer doth commence his suit To her he thinks not worthy; yet he w",he,BALTHASAR,male,7
+MUCH ADO ABOUT NOTHING,2,3,BALTHASAR,"Because you talk of wooing, I will sing; Since many a wooer doth commence his suit To her he thinks not worthy; yet he w",he,BALTHASAR,male,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,"Nay, pray thee come; Or if thou wilt hold longer argument, Do it in notes.",it,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,"Why these are very crotchets that he speaks; Notes, notes, forsooth, and nothing!",he,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,now is his soul ravished!,his,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,Is it not strange that sheep's guts should hale souls out of men's bodies?,it,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,"Then sigh not so, but let them go, And be you blithe and bonny, Converting all your sounds of woe Into Hey nonny, nonny.",them,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,"Then sigh not so, but let them go, And be you blithe and bonny, Converting all your sounds of woe Into Hey nonny, nonny.",them,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,"Aside And he had been a dog that should have howled thus, they would have hanged him; and I pray God his bad voice bode ",he,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,"Aside And he had been a dog that should have howled thus, they would have hanged him; and I pray God his bad voice bode ",they,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,"Aside And he had been a dog that should have howled thus, they would have hanged him; and I pray God his bad voice bode ",him,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,"Aside And he had been a dog that should have howled thus, they would have hanged him; and I pray God his bad voice bode ",his,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,"I had as lief have heard the night-raven, come what plague could have come after it.",it,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,"I pray thee, get us some excellent music, for tomorrow night we would have it at the Lady Hero's chamber window.",it,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,"Come hither, Leonato: what was it you told me of today, that your niece Beatrice was in love with Signior Benedick?",it,Benedick,male,7
+MUCH ADO ABOUT NOTHING,2,3,LEONATO,"No, nor I neither; but most wonderful that she should so dote on Signior Benedick, whom she hath in all outward behaviou",she,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,2,3,LEONATO,"No, nor I neither; but most wonderful that she should so dote on Signior Benedick, whom she hath in all outward behaviou",she,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,2,3,LEONATO,"By my troth, my lord, I cannot tell what to think of it but that she loves him with an enraged affection: it is past the",it,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,2,3,LEONATO,"By my troth, my lord, I cannot tell what to think of it but that she loves him with an enraged affection: it is past the",she,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,2,3,LEONATO,"By my troth, my lord, I cannot tell what to think of it but that she loves him with an enraged affection: it is past the",him,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,2,3,LEONATO,"By my troth, my lord, I cannot tell what to think of it but that she loves him with an enraged affection: it is past the",it,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,Maybe she doth but counterfeit.,she,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,2,3,LEONATO,There was never counterfeit of passion came so near the life of passion as she discovers it.,she,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,2,3,LEONATO,There was never counterfeit of passion came so near the life of passion as she discovers it.,it,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,"Why, what effects of passion shows she?",she,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,2,3,LEONATO,She will sit you; To Claudio You heard my daughter tell you how.,She,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,2,3,CLAUDIO,"She did, indeed.",She,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,You amaze me: I would have thought her spirit had been invincible against all assaults of affection.,her,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,3,LEONATO,"I would have sworn it had, my lord; especially against Benedick.",it,Benedick,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,"Aside I should think this a gull, but that the white-bearded fellow speaks it: knavery cannot, sure, hide itself in such",it,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,3,CLAUDIO,Aside He hath ta'en the infection: hold it up.,He,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,2,3,CLAUDIO,Aside He hath ta'en the infection: hold it up.,it,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,Hath she made her affection known to Benedick?,she,Benedick,male,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,Hath she made her affection known to Benedick?,her,Benedick,male,7
+MUCH ADO ABOUT NOTHING,2,3,LEONATO,No; and swears she never will: that's her torment.,she,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,2,3,LEONATO,No; and swears she never will: that's her torment.,her,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,2,3,CLAUDIO,"'Tis true, indeed; so your daughter says: 'Shall I,' says she, 'that have so oft encountered him with scorn, write to hi",she,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,2,3,CLAUDIO,"'Tis true, indeed; so your daughter says: 'Shall I,' says she, 'that have so oft encountered him with scorn, write to hi",him,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,2,3,CLAUDIO,"'Tis true, indeed; so your daughter says: 'Shall I,' says she, 'that have so oft encountered him with scorn, write to hi",him,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,2,3,CLAUDIO,"'Tis true, indeed; so your daughter says: 'Shall I,' says she, 'that have so oft encountered him with scorn, write to hi",him,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,2,3,LEONATO,"This says she now when she is beginning to write to him; for she'll be up twenty times a night, and there will she sit i",she,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,2,3,LEONATO,"This says she now when she is beginning to write to him; for she'll be up twenty times a night, and there will she sit i",she,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,2,3,LEONATO,"This says she now when she is beginning to write to him; for she'll be up twenty times a night, and there will she sit i",him,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,2,3,LEONATO,"This says she now when she is beginning to write to him; for she'll be up twenty times a night, and there will she sit i",she,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,2,3,LEONATO,"This says she now when she is beginning to write to him; for she'll be up twenty times a night, and there will she sit i",she,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,2,3,LEONATO,"This says she now when she is beginning to write to him; for she'll be up twenty times a night, and there will she sit i",her,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,2,3,LEONATO,"This says she now when she is beginning to write to him; for she'll be up twenty times a night, and there will she sit i",she,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,2,3,LEONATO,"when she had writ it, and was reading it over, she found Benedick and Beatrice between the sheet?",she,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,2,3,LEONATO,"when she had writ it, and was reading it over, she found Benedick and Beatrice between the sheet?",it,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,2,3,LEONATO,"when she had writ it, and was reading it over, she found Benedick and Beatrice between the sheet?",it,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,2,3,LEONATO,"when she had writ it, and was reading it over, she found Benedick and Beatrice between the sheet?",she,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,2,3,LEONATO,"she tore the letter into a thousand halfpence; railed at herself, that she should be so immodest to write to one that sh",she,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,2,3,LEONATO,"she tore the letter into a thousand halfpence; railed at herself, that she should be so immodest to write to one that sh",herself,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,2,3,LEONATO,"she tore the letter into a thousand halfpence; railed at herself, that she should be so immodest to write to one that sh",she,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,2,3,LEONATO,"she tore the letter into a thousand halfpence; railed at herself, that she should be so immodest to write to one that sh",she,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,2,3,LEONATO,"she tore the letter into a thousand halfpence; railed at herself, that she should be so immodest to write to one that sh",her,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,2,3,LEONATO,"she tore the letter into a thousand halfpence; railed at herself, that she should be so immodest to write to one that sh",him,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,2,3,LEONATO,"she tore the letter into a thousand halfpence; railed at herself, that she should be so immodest to write to one that sh",she,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,2,3,LEONATO,"she tore the letter into a thousand halfpence; railed at herself, that she should be so immodest to write to one that sh",him,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,2,3,LEONATO,"she tore the letter into a thousand halfpence; railed at herself, that she should be so immodest to write to one that sh",he,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,2,3,LEONATO,"she tore the letter into a thousand halfpence; railed at herself, that she should be so immodest to write to one that sh",him,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,2,3,CLAUDIO,"Then down upon her knees she falls, weeps, sobs, beats her heart, tears her hair, prays, curses; 'O sweet Benedick!",her,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,2,3,CLAUDIO,"Then down upon her knees she falls, weeps, sobs, beats her heart, tears her hair, prays, curses; 'O sweet Benedick!",she,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,2,3,CLAUDIO,"Then down upon her knees she falls, weeps, sobs, beats her heart, tears her hair, prays, curses; 'O sweet Benedick!",her,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,2,3,CLAUDIO,"Then down upon her knees she falls, weeps, sobs, beats her heart, tears her hair, prays, curses; 'O sweet Benedick!",her,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,2,3,LEONATO,"She doth indeed; my daughter says so; and the ecstasy hath so much overborne her, that my daughter is sometimes afeard s",She,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,2,3,LEONATO,"She doth indeed; my daughter says so; and the ecstasy hath so much overborne her, that my daughter is sometimes afeard s",her,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,2,3,LEONATO,"She doth indeed; my daughter says so; and the ecstasy hath so much overborne her, that my daughter is sometimes afeard s",she,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,2,3,LEONATO,"She doth indeed; my daughter says so; and the ecstasy hath so much overborne her, that my daughter is sometimes afeard s",herself,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,2,3,LEONATO,It is very true.,It,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,"It were good that Benedick knew of it by some other, if she will not discover it.",It,Benedick,male,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,"It were good that Benedick knew of it by some other, if she will not discover it.",it,Benedick,male,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,"It were good that Benedick knew of it by some other, if she will not discover it.",she,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,"It were good that Benedick knew of it by some other, if she will not discover it.",it,Benedick,male,7
+MUCH ADO ABOUT NOTHING,2,3,CLAUDIO,he would make but a sport of it and torment the poor lady worse.,he,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,2,3,CLAUDIO,he would make but a sport of it and torment the poor lady worse.,it,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,"And he should, it were an alms to hang him.",he,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,"And he should, it were an alms to hang him.",it,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,"And he should, it were an alms to hang him.",him,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,"She's an excellent sweet lady, and, out of all suspicion, she is virtuous.",She,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,"She's an excellent sweet lady, and, out of all suspicion, she is virtuous.",she,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,2,3,CLAUDIO,And she is exceeding wise.,she,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,2,3,LEONATO,"I am sorry for her, as I have just cause, being her uncle and her guardian.",her,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,2,3,LEONATO,"I am sorry for her, as I have just cause, being her uncle and her guardian.",her,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,2,3,LEONATO,"I am sorry for her, as I have just cause, being her uncle and her guardian.",her,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,I would she had bestowed this dotage on me; I would have daffed all other respects and made her half myself.,she,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,I would she had bestowed this dotage on me; I would have daffed all other respects and made her half myself.,her,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,"I pray you, tell Benedick of it, and hear what he will say.",it,Benedick,male,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,"I pray you, tell Benedick of it, and hear what he will say.",he,Benedick,male,7
+MUCH ADO ABOUT NOTHING,2,3,LEONATO,"Were it good, think you?",it,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,2,3,CLAUDIO,"Hero thinks surely she will die; for she says she will die if he love her not, and she will die ere",she,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,2,3,CLAUDIO,"Hero thinks surely she will die; for she says she will die if he love her not, and she will die ere",she,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,2,3,CLAUDIO,"Hero thinks surely she will die; for she says she will die if he love her not, and she will die ere",she,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,2,3,CLAUDIO,"Hero thinks surely she will die; for she says she will die if he love her not, and she will die ere",he,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,2,3,CLAUDIO,"Hero thinks surely she will die; for she says she will die if he love her not, and she will die ere",her,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,2,3,CLAUDIO,"Hero thinks surely she will die; for she says she will die if he love her not, and she will die ere",she,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,2,3,CLAUDIO,"she make her love known, and she will die if he woo her, rather than she will bate one breath of her accustomed crossnes",she,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,2,3,CLAUDIO,"she make her love known, and she will die if he woo her, rather than she will bate one breath of her accustomed crossnes",her,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,2,3,CLAUDIO,"she make her love known, and she will die if he woo her, rather than she will bate one breath of her accustomed crossnes",she,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,2,3,CLAUDIO,"she make her love known, and she will die if he woo her, rather than she will bate one breath of her accustomed crossnes",he,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,2,3,CLAUDIO,"she make her love known, and she will die if he woo her, rather than she will bate one breath of her accustomed crossnes",her,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,2,3,CLAUDIO,"she make her love known, and she will die if he woo her, rather than she will bate one breath of her accustomed crossnes",she,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,2,3,CLAUDIO,"she make her love known, and she will die if he woo her, rather than she will bate one breath of her accustomed crossnes",her,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,"She doth well: if she should make tender of her love, 'tis very possible he'll scorn it; for the man,—as",She,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,"She doth well: if she should make tender of her love, 'tis very possible he'll scorn it; for the man,—as",she,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,"She doth well: if she should make tender of her love, 'tis very possible he'll scorn it; for the man,—as",her,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,"She doth well: if she should make tender of her love, 'tis very possible he'll scorn it; for the man,—as",he,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,"She doth well: if she should make tender of her love, 'tis very possible he'll scorn it; for the man,—as",it,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,3,CLAUDIO,He is a very proper man.,He,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,He hath indeed a good outward happiness.,He,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,He doth indeed show some sparks that are like wit.,He,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,3,CLAUDIO,And I take him to be valiant.,him,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,"As Hector, I assure you: and in the managing of quarrels you may say he is wise; for either he avoids them with great di",he,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,"As Hector, I assure you: and in the managing of quarrels you may say he is wise; for either he avoids them with great di",he,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,"As Hector, I assure you: and in the managing of quarrels you may say he is wise; for either he avoids them with great di",them,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,"As Hector, I assure you: and in the managing of quarrels you may say he is wise; for either he avoids them with great di",them,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,3,LEONATO,"If he do fear God, a' must necessarily keep peace: if he break the peace, he ought to enter into a quarrel with fear and",he,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,2,3,LEONATO,"If he do fear God, a' must necessarily keep peace: if he break the peace, he ought to enter into a quarrel with fear and",he,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,2,3,LEONATO,"If he do fear God, a' must necessarily keep peace: if he break the peace, he ought to enter into a quarrel with fear and",he,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,"And so will he do; for the man doth fear God, howsoever it seems not in him by some large jests he will make.",he,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,"And so will he do; for the man doth fear God, howsoever it seems not in him by some large jests he will make.",it,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,"And so will he do; for the man doth fear God, howsoever it seems not in him by some large jests he will make.",him,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,"And so will he do; for the man doth fear God, howsoever it seems not in him by some large jests he will make.",he,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,Shall we go seek Benedick and tell him of her love?,him,Benedick,male,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,Shall we go seek Benedick and tell him of her love?,her,Benedick,male,7
+MUCH ADO ABOUT NOTHING,2,3,CLAUDIO,"Never tell him, my lord: let her wear it out with good counsel.",him,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,2,3,CLAUDIO,"Never tell him, my lord: let her wear it out with good counsel.",her,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,2,3,CLAUDIO,"Never tell him, my lord: let her wear it out with good counsel.",it,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,2,3,LEONATO,"Nay, that's impossible: she may wear her heart out first.",she,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,2,3,LEONATO,"Nay, that's impossible: she may wear her heart out first.",her,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,"Well, we will hear further of it by your daughter: let it cool the while.",it,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,"Well, we will hear further of it by your daughter: let it cool the while.",it,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,"I love Benedick well, and I could wish he would modestly examine himself, to see how much he is unworthy so good a lady.",he,Benedick,male,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,"I love Benedick well, and I could wish he would modestly examine himself, to see how much he is unworthy so good a lady.",himself,Benedick,male,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,"I love Benedick well, and I could wish he would modestly examine himself, to see how much he is unworthy so good a lady.",he,Benedick,male,7
+MUCH ADO ABOUT NOTHING,2,3,CLAUDIO,"Aside If he do not dote on her upon this, I will never trust my expectation.",he,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,2,3,CLAUDIO,"Aside If he do not dote on her upon this, I will never trust my expectation.",her,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,Aside Let there be the same net spread for her; and that must your daughter and her gentlewoman carry.,her,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,Aside Let there be the same net spread for her; and that must your daughter and her gentlewoman carry.,her,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,"The sport will be, when they hold one an opinion of another's dotage, and no such matter: that's the scene that I would ",they,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,Let us send her to call him in to dinner.,her,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,3,DON PEDRO,Let us send her to call him in to dinner.,him,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,They have the truth of this from Hero.,They,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,They seem to pity the lady: it seems her affections have their full bent.,They,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,They seem to pity the lady: it seems her affections have their full bent.,it,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,They seem to pity the lady: it seems her affections have their full bent.,her,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,They seem to pity the lady: it seems her affections have their full bent.,their,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,"why, it must be requited.",it,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,"I hear how I am censured: they say I will bear myself proudly, if I perceive the love come from her; they say too that s",they,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,"I hear how I am censured: they say I will bear myself proudly, if I perceive the love come from her; they say too that s",her,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,"I hear how I am censured: they say I will bear myself proudly, if I perceive the love come from her; they say too that s",they,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,"I hear how I am censured: they say I will bear myself proudly, if I perceive the love come from her; they say too that s",she,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,"I did never think to marry: I must not seem proud: happy are they that hear their detractions, and can put them to mendi",they,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,"I did never think to marry: I must not seem proud: happy are they that hear their detractions, and can put them to mendi",their,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,"I did never think to marry: I must not seem proud: happy are they that hear their detractions, and can put them to mendi",them,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,"They say the lady is fair: 'tis a truth, I can bear them witness; and virtuous: 'tis so, I cannot reprove it; and wise, ",They,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,"They say the lady is fair: 'tis a truth, I can bear them witness; and virtuous: 'tis so, I cannot reprove it; and wise, ",them,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,"They say the lady is fair: 'tis a truth, I can bear them witness; and virtuous: 'tis so, I cannot reprove it; and wise, ",it,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,"They say the lady is fair: 'tis a truth, I can bear them witness; and virtuous: 'tis so, I cannot reprove it; and wise, ",it,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,"They say the lady is fair: 'tis a truth, I can bear them witness; and virtuous: 'tis so, I cannot reprove it; and wise, ",her,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,"They say the lady is fair: 'tis a truth, I can bear them witness; and virtuous: 'tis so, I cannot reprove it; and wise, ",her,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,"They say the lady is fair: 'tis a truth, I can bear them witness; and virtuous: 'tis so, I cannot reprove it; and wise, ",her,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,A man loves the meat in his youth that he cannot endure in his age.,his,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,A man loves the meat in his youth that he cannot endure in his age.,he,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,A man loves the meat in his youth that he cannot endure in his age.,his,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,Shall quips and sentences and these paper bullets of the brain awe a man from the career of his humour?,his,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,she's a fair lady: I do spy some marks of love in her.,she,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,she's a fair lady: I do spy some marks of love in her.,her,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,2,3,BEATRICE,"I took no more pains for those thanks than you take pains to thank me: if it had been painful, I would not have come.",it,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,"If I do not take pity of her, I am a villain; if I do not love her, I am a Jew.",her,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,"If I do not take pity of her, I am a villain; if I do not love her, I am a Jew.",her,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,2,3,BENEDICK,I will go get her picture.,her,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,3,1,HERO,"Good Margaret, run thee to the parlour; There shalt thou find my cousin Beatrice Proposing with the Prince and Claudio: ",her,Beatrice Proposing,female,5
+MUCH ADO ABOUT NOTHING,3,1,HERO,"Good Margaret, run thee to the parlour; There shalt thou find my cousin Beatrice Proposing with the Prince and Claudio: ",her,Beatrice Proposing,female,5
+MUCH ADO ABOUT NOTHING,3,1,HERO,"Good Margaret, run thee to the parlour; There shalt thou find my cousin Beatrice Proposing with the Prince and Claudio: ",her,Beatrice Proposing,female,5
+MUCH ADO ABOUT NOTHING,3,1,HERO,"Good Margaret, run thee to the parlour; There shalt thou find my cousin Beatrice Proposing with the Prince and Claudio: ",her,Beatrice Proposing,female,5
+MUCH ADO ABOUT NOTHING,3,1,HERO,"Good Margaret, run thee to the parlour; There shalt thou find my cousin Beatrice Proposing with the Prince and Claudio: ",their,Ursala Walk,neutral,5
+MUCH ADO ABOUT NOTHING,3,1,HERO,"Good Margaret, run thee to the parlour; There shalt thou find my cousin Beatrice Proposing with the Prince and Claudio: ",it,Ursala Walk,neutral,5
+MUCH ADO ABOUT NOTHING,3,1,HERO,"There will she hide her, To listen our propose.",she,HERO,female,6
+MUCH ADO ABOUT NOTHING,3,1,HERO,"There will she hide her, To listen our propose.",her,HERO,female,6
+MUCH ADO ABOUT NOTHING,3,1,HERO,This is thy office; Bear thee well in it and leave us alone.,it,HERO,female,7
+MUCH ADO ABOUT NOTHING,3,1,MARGARET,"I'll make her come, I warrant you, presently.",her,MARGARET,female,7
+MUCH ADO ABOUT NOTHING,3,1,HERO,"Now, Ursula, when Beatrice doth come, As we do trace this alley up and down, Our talk must only be of Benedick: When I d",him,Benedick,male,7
+MUCH ADO ABOUT NOTHING,3,1,HERO,"Now, Ursula, when Beatrice doth come, As we do trace this alley up and down, Our talk must only be of Benedick: When I d",it,Benedick,male,7
+MUCH ADO ABOUT NOTHING,3,1,HERO,"Now, Ursula, when Beatrice doth come, As we do trace this alley up and down, Our talk must only be of Benedick: When I d",him,Benedick,male,7
+MUCH ADO ABOUT NOTHING,3,1,URSULA,"The pleasant'st angling is to see the fish Cut with her golden oars the silver stream, And greedily devour the treachero",her,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,3,1,HERO,"Then go we near her, that her ear lose nothing Of the false sweet bait that we lay for it.",her,HERO,female,7
+MUCH ADO ABOUT NOTHING,3,1,HERO,"Then go we near her, that her ear lose nothing Of the false sweet bait that we lay for it.",her,HERO,female,7
+MUCH ADO ABOUT NOTHING,3,1,HERO,"Then go we near her, that her ear lose nothing Of the false sweet bait that we lay for it.",it,HERO,female,7
+MUCH ADO ABOUT NOTHING,3,1,HERO,They advance to the bower.,They,HERO,female,7
+MUCH ADO ABOUT NOTHING,3,1,HERO,"No, truly, Ursula, she is too disdainful; I know her spirits are as coy and wild As haggards of the rock.",she,Ursula,female,7
+MUCH ADO ABOUT NOTHING,3,1,HERO,"No, truly, Ursula, she is too disdainful; I know her spirits are as coy and wild As haggards of the rock.",her,Ursula,female,7
+MUCH ADO ABOUT NOTHING,3,1,URSULA,"And did they bid you tell her of it, madam?",they,URSULA,female,7
+MUCH ADO ABOUT NOTHING,3,1,URSULA,"And did they bid you tell her of it, madam?",her,URSULA,female,7
+MUCH ADO ABOUT NOTHING,3,1,URSULA,"And did they bid you tell her of it, madam?",it,URSULA,female,7
+MUCH ADO ABOUT NOTHING,3,1,HERO,"They did entreat me to acquaint her of it; But I persuaded them, if they lov'd Benedick, To wish him wrestle with affect",They,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,3,1,HERO,"They did entreat me to acquaint her of it; But I persuaded them, if they lov'd Benedick, To wish him wrestle with affect",her,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,3,1,HERO,"They did entreat me to acquaint her of it; But I persuaded them, if they lov'd Benedick, To wish him wrestle with affect",it,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,3,1,HERO,"They did entreat me to acquaint her of it; But I persuaded them, if they lov'd Benedick, To wish him wrestle with affect",them,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,3,1,HERO,"They did entreat me to acquaint her of it; But I persuaded them, if they lov'd Benedick, To wish him wrestle with affect",they,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,3,1,HERO,"They did entreat me to acquaint her of it; But I persuaded them, if they lov'd Benedick, To wish him wrestle with affect",him,Benedick,male,7
+MUCH ADO ABOUT NOTHING,3,1,HERO,"They did entreat me to acquaint her of it; But I persuaded them, if they lov'd Benedick, To wish him wrestle with affect",it,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,3,1,HERO,I know he doth deserve As much as may be yielded to a man; But Nature never fram'd a woman's heart Of prouder stuff than,he,Benedick,male,7
+MUCH ADO ABOUT NOTHING,3,1,HERO,I know he doth deserve As much as may be yielded to a man; But Nature never fram'd a woman's heart Of prouder stuff than,her,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,3,1,HERO,I know he doth deserve As much as may be yielded to a man; But Nature never fram'd a woman's heart Of prouder stuff than,they,Misprising,neutral,7
+MUCH ADO ABOUT NOTHING,3,1,HERO,I know he doth deserve As much as may be yielded to a man; But Nature never fram'd a woman's heart Of prouder stuff than,her,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,3,1,HERO,I know he doth deserve As much as may be yielded to a man; But Nature never fram'd a woman's heart Of prouder stuff than,her,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,3,1,HERO,"She cannot love, Nor take no shape nor project of affection, She is so self-endear'd.",She,HERO,female,7
+MUCH ADO ABOUT NOTHING,3,1,HERO,"She cannot love, Nor take no shape nor project of affection, She is so self-endear'd.",She,HERO,female,7
+MUCH ADO ABOUT NOTHING,3,1,URSULA,And therefore certainly it were not good,it,URSULA,female,7
+MUCH ADO ABOUT NOTHING,3,1,URSULA,"She knew his love, lest she make sport at it.",She,URSULA,female,7
+MUCH ADO ABOUT NOTHING,3,1,URSULA,"She knew his love, lest she make sport at it.",his,Benedick,male,7
+MUCH ADO ABOUT NOTHING,3,1,URSULA,"She knew his love, lest she make sport at it.",she,URSULA,female,7
+MUCH ADO ABOUT NOTHING,3,1,URSULA,"She knew his love, lest she make sport at it.",it,URSULA,female,7
+MUCH ADO ABOUT NOTHING,3,1,HERO,"I never yet saw man, How wise, how noble, young, how rarely featur'd, But she would spell him backward: if fair-fac'd, S",she,HERO,female,7
+MUCH ADO ABOUT NOTHING,3,1,HERO,"I never yet saw man, How wise, how noble, young, how rarely featur'd, But she would spell him backward: if fair-fac'd, S",him,Benedick,male,7
+MUCH ADO ABOUT NOTHING,3,1,HERO,"I never yet saw man, How wise, how noble, young, how rarely featur'd, But she would spell him backward: if fair-fac'd, S",She,HERO,female,7
+MUCH ADO ABOUT NOTHING,3,1,HERO,"I never yet saw man, How wise, how noble, young, how rarely featur'd, But she would spell him backward: if fair-fac'd, S",her,HERO,female,7
+MUCH ADO ABOUT NOTHING,3,1,HERO,"So turns she every man the wrong side out, And never gives to truth and virtue that Which simpleness and merit purchaset",she,HERO,female,7
+MUCH ADO ABOUT NOTHING,3,1,HERO,But who dare tell her so?,her,HERO,female,7
+MUCH ADO ABOUT NOTHING,3,1,HERO,"If I should speak, She would mock me into air:",She,HERO,female,7
+MUCH ADO ABOUT NOTHING,3,1,HERO,"she would laugh me Out of myself, press me to death with wit.",she,HERO,female,7
+MUCH ADO ABOUT NOTHING,3,1,HERO,"Therefore let Benedick, like cover'd fire, Consume away in sighs, waste inwardly: It were a better death than die with m",It,Benedick,male,7
+MUCH ADO ABOUT NOTHING,3,1,URSULA,Yet tell her of it: hear what she will say.,her,URSULA,female,7
+MUCH ADO ABOUT NOTHING,3,1,URSULA,Yet tell her of it: hear what she will say.,it,URSULA,female,7
+MUCH ADO ABOUT NOTHING,3,1,URSULA,Yet tell her of it: hear what she will say.,she,URSULA,female,7
+MUCH ADO ABOUT NOTHING,3,1,HERO,"No; rather I will go to Benedick, And counsel him to fight against his passion.",him,Benedick,male,7
+MUCH ADO ABOUT NOTHING,3,1,HERO,"No; rather I will go to Benedick, And counsel him to fight against his passion.",his,Benedick,male,7
+MUCH ADO ABOUT NOTHING,3,1,URSULA,"She cannot be so much without true judgment,— Having so swift and excellent a wit As she is priz'd to have,—as to refuse",She,URSULA,female,7
+MUCH ADO ABOUT NOTHING,3,1,URSULA,"She cannot be so much without true judgment,— Having so swift and excellent a wit As she is priz'd to have,—as to refuse",she,URSULA,female,7
+MUCH ADO ABOUT NOTHING,3,1,HERO,"He is the only man of Italy, Always excepted my dear Claudio.",He,Claudio,male,7
+MUCH ADO ABOUT NOTHING,3,1,HERO,"Indeed, he hath an excellent good name.",he,Benedick,male,7
+MUCH ADO ABOUT NOTHING,3,1,URSULA,"His excellence did earn it, ere he had it.",His,Benedick,male,7
+MUCH ADO ABOUT NOTHING,3,1,URSULA,"His excellence did earn it, ere he had it.",it,URSULA,female,7
+MUCH ADO ABOUT NOTHING,3,1,URSULA,"His excellence did earn it, ere he had it.",he,Benedick,male,7
+MUCH ADO ABOUT NOTHING,3,1,URSULA,"His excellence did earn it, ere he had it.",it,URSULA,female,7
+MUCH ADO ABOUT NOTHING,3,1,URSULA,"She's lim'd, I warrant you, We have caught her, madam.",She,URSULA,female,7
+MUCH ADO ABOUT NOTHING,3,1,URSULA,"She's lim'd, I warrant you, We have caught her, madam.",her,URSULA,female,7
+MUCH ADO ABOUT NOTHING,3,1,HERO,"If it prove so, then loving goes by haps: Some Cupid kills with arrows, some with traps.",it,HERO,female,7
+MUCH ADO ABOUT NOTHING,3,1,BEATRICE,"And, Benedick, love on; I will requite thee, Taming my wild heart to thy loving hand: If thou dost love, my kindness sha",it,dost deserve,neutral,7
+MUCH ADO ABOUT NOTHING,3,2,DON PEDRO,"Nay, that would be as great a soil in the new gloss of your marriage, as to show a child his new coat and forbid him to ",his,DON PEDRO,male,3
+MUCH ADO ABOUT NOTHING,3,2,DON PEDRO,"Nay, that would be as great a soil in the new gloss of your marriage, as to show a child his new coat and forbid him to ",him,DON PEDRO,male,3
+MUCH ADO ABOUT NOTHING,3,2,DON PEDRO,"Nay, that would be as great a soil in the new gloss of your marriage, as to show a child his new coat and forbid him to ",it,DON PEDRO,male,3
+MUCH ADO ABOUT NOTHING,3,2,DON PEDRO,"I will only be bold with Benedick for his company; for, from the crown of his head to the sole of his foot, he is all mi",his,Benedick,male,5
+MUCH ADO ABOUT NOTHING,3,2,DON PEDRO,"I will only be bold with Benedick for his company; for, from the crown of his head to the sole of his foot, he is all mi",his,Benedick,male,5
+MUCH ADO ABOUT NOTHING,3,2,DON PEDRO,"I will only be bold with Benedick for his company; for, from the crown of his head to the sole of his foot, he is all mi",his,Benedick,male,5
+MUCH ADO ABOUT NOTHING,3,2,DON PEDRO,"I will only be bold with Benedick for his company; for, from the crown of his head to the sole of his foot, he is all mi",he,Benedick,male,5
+MUCH ADO ABOUT NOTHING,3,2,DON PEDRO,"I will only be bold with Benedick for his company; for, from the crown of his head to the sole of his foot, he is all mi",he,Benedick,male,5
+MUCH ADO ABOUT NOTHING,3,2,DON PEDRO,"I will only be bold with Benedick for his company; for, from the crown of his head to the sole of his foot, he is all mi",him,Benedick,male,5
+MUCH ADO ABOUT NOTHING,3,2,DON PEDRO,"He hath a heart as sound as a bell, and his tongue is the clapper; for what his heart thinks, his tongue speaks.",He,DON PEDRO,male,6
+MUCH ADO ABOUT NOTHING,3,2,DON PEDRO,"He hath a heart as sound as a bell, and his tongue is the clapper; for what his heart thinks, his tongue speaks.",his,DON PEDRO,male,6
+MUCH ADO ABOUT NOTHING,3,2,DON PEDRO,"He hath a heart as sound as a bell, and his tongue is the clapper; for what his heart thinks, his tongue speaks.",his,DON PEDRO,male,6
+MUCH ADO ABOUT NOTHING,3,2,DON PEDRO,"He hath a heart as sound as a bell, and his tongue is the clapper; for what his heart thinks, his tongue speaks.",his,DON PEDRO,male,6
+MUCH ADO ABOUT NOTHING,3,2,CLAUDIO,I hope he be in love.,he,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,3,2,DON PEDRO,"Hang him, truant!",him,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,3,2,DON PEDRO,there's no true drop of blood in him to be truly touched with love.,him,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,3,2,DON PEDRO,"If he be sad, he wants money.",he,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,3,2,DON PEDRO,"If he be sad, he wants money.",he,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,3,2,DON PEDRO,Draw it.,it,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,3,2,BENEDICK,Hang it.,it,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,3,2,CLAUDIO,"You must hang it first, and draw it afterwards.",it,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,3,2,CLAUDIO,"You must hang it first, and draw it afterwards.",it,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,3,2,BENEDICK,"Well, everyone can master a grief but he that has it.",he,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,3,2,BENEDICK,"Well, everyone can master a grief but he that has it.",it,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,3,2,CLAUDIO,"Yet say I, he is in love.",he,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,3,2,DON PEDRO,"There is no appearance of fancy in him, unless it be a fancy that he hath to strange disguises; as to be a Dutchman toda",him,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,3,2,DON PEDRO,"There is no appearance of fancy in him, unless it be a fancy that he hath to strange disguises; as to be a Dutchman toda",it,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,3,2,DON PEDRO,"There is no appearance of fancy in him, unless it be a fancy that he hath to strange disguises; as to be a Dutchman toda",he,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,3,2,DON PEDRO,"Unless he have a fancy to this foolery, as it appears he hath, he is no fool for fancy, as you would have it appear he i",he,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,3,2,DON PEDRO,"Unless he have a fancy to this foolery, as it appears he hath, he is no fool for fancy, as you would have it appear he i",it,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,3,2,DON PEDRO,"Unless he have a fancy to this foolery, as it appears he hath, he is no fool for fancy, as you would have it appear he i",he,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,3,2,DON PEDRO,"Unless he have a fancy to this foolery, as it appears he hath, he is no fool for fancy, as you would have it appear he i",he,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,3,2,DON PEDRO,"Unless he have a fancy to this foolery, as it appears he hath, he is no fool for fancy, as you would have it appear he i",it,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,3,2,DON PEDRO,"Unless he have a fancy to this foolery, as it appears he hath, he is no fool for fancy, as you would have it appear he i",he,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,3,2,CLAUDIO,"If he be not in love with some woman, there is no believing old signs: a' brushes his hat a mornings; what should that b",he,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,3,2,CLAUDIO,"If he be not in love with some woman, there is no believing old signs: a' brushes his hat a mornings; what should that b",his,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,3,2,DON PEDRO,Hath any man seen him at the barber's?,him,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,3,2,CLAUDIO,"No, but the barber's man hath been seen with him; and the old ornament of his cheek hath already stuffed tennis balls.",him,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,3,2,CLAUDIO,"No, but the barber's man hath been seen with him; and the old ornament of his cheek hath already stuffed tennis balls.",his,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,3,2,LEONATO,"Indeed he looks younger than he did, by the loss of a beard.",he,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,3,2,LEONATO,"Indeed he looks younger than he did, by the loss of a beard.",he,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,3,2,DON PEDRO,"Nay, a' rubs himself with civet: can you smell him out by that?",himself,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,3,2,DON PEDRO,"Nay, a' rubs himself with civet: can you smell him out by that?",him,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,3,2,DON PEDRO,The greatest note of it is his melancholy.,it,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,3,2,DON PEDRO,The greatest note of it is his melancholy.,his,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,3,2,CLAUDIO,And when was he wont to wash his face?,he,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,3,2,CLAUDIO,And when was he wont to wash his face?,his,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,3,2,DON PEDRO,"Yea, or to paint himself?",himself,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,3,2,DON PEDRO,"for the which, I hear what they say of him.",they,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,3,2,DON PEDRO,"for the which, I hear what they say of him.",him,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,3,2,CLAUDIO,"Nay, but his jesting spirit; which is now crept into a lute-string, and now governed by stops.",his,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,3,2,DON PEDRO,"Indeed, that tells a heavy tale for him.",him,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,3,2,DON PEDRO,"Conclude, conclude he is in love.",he,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,3,2,CLAUDIO,"Nay, but I know who loves him.",him,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,3,2,DON PEDRO,"That would I know too: I warrant, one that knows him not.",him,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,3,2,CLAUDIO,"Yes, and his ill conditions; and in despite of all, dies for him.",his,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,3,2,CLAUDIO,"Yes, and his ill conditions; and in despite of all, dies for him.",him,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,3,2,DON PEDRO,She shall be buried with her face upwards.,She,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,3,2,DON PEDRO,She shall be buried with her face upwards.,her,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,3,2,DON PEDRO,"For my life, to break with him about Beatrice.",him,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,3,2,CLAUDIO,"Hero and Margaret have by this played their parts with Beatrice, and then the two bears will not bite one another when t",their,Margaret,female,7
+MUCH ADO ABOUT NOTHING,3,2,CLAUDIO,"Hero and Margaret have by this played their parts with Beatrice, and then the two bears will not bite one another when t",they,Margaret,female,7
+MUCH ADO ABOUT NOTHING,3,2,DON JOHN,"If it please you; yet Count Claudio may hear, for what I would speak of concerns him.",it,Claudio,male,7
+MUCH ADO ABOUT NOTHING,3,2,DON JOHN,"If it please you; yet Count Claudio may hear, for what I would speak of concerns him.",him,Claudio,male,7
+MUCH ADO ABOUT NOTHING,3,2,DON PEDRO,You know he does.,he,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,3,2,DON JOHN,"I know not that, when he knows what I know.",he,DON JOHN,male,7
+MUCH ADO ABOUT NOTHING,3,2,CLAUDIO,"If there be any impediment, I pray you discover it.",it,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,3,2,DON JOHN,"For my brother, I think he holds you well, and in dearness of heart hath holp to effect your ensuing marriage; surely su",he,DON JOHN,male,7
+MUCH ADO ABOUT NOTHING,3,2,DON JOHN,"I came hither to tell you; and circumstances shortened,—for she has been too long a talking of,—the lady is disloyal.",she,Margaret,female,7
+MUCH ADO ABOUT NOTHING,3,2,DON JOHN,"Even she: Leonato's Hero, your Hero, every man's Hero.",she,Leonato,male,7
+MUCH ADO ABOUT NOTHING,3,2,DON JOHN,"The word's too good to paint out her wickedness; I could say, she were worse: think you of a worse title, and I will fit",her,DON JOHN,male,7
+MUCH ADO ABOUT NOTHING,3,2,DON JOHN,"The word's too good to paint out her wickedness; I could say, she were worse: think you of a worse title, and I will fit",she,DON JOHN,male,7
+MUCH ADO ABOUT NOTHING,3,2,DON JOHN,"The word's too good to paint out her wickedness; I could say, she were worse: think you of a worse title, and I will fit",her,DON JOHN,male,7
+MUCH ADO ABOUT NOTHING,3,2,DON JOHN,"The word's too good to paint out her wickedness; I could say, she were worse: think you of a worse title, and I will fit",it,DON JOHN,male,7
+MUCH ADO ABOUT NOTHING,3,2,DON JOHN,"Wonder not till further warrant: go but with me tonight, you shall see her chamber window entered, even the night before",her,DON JOHN,male,7
+MUCH ADO ABOUT NOTHING,3,2,DON JOHN,"Wonder not till further warrant: go but with me tonight, you shall see her chamber window entered, even the night before",her,DON JOHN,male,7
+MUCH ADO ABOUT NOTHING,3,2,DON JOHN,"Wonder not till further warrant: go but with me tonight, you shall see her chamber window entered, even the night before",her,DON JOHN,male,7
+MUCH ADO ABOUT NOTHING,3,2,DON JOHN,"Wonder not till further warrant: go but with me tonight, you shall see her chamber window entered, even the night before",her,DON JOHN,male,7
+MUCH ADO ABOUT NOTHING,3,2,DON JOHN,"Wonder not till further warrant: go but with me tonight, you shall see her chamber window entered, even the night before",it,DON JOHN,male,7
+MUCH ADO ABOUT NOTHING,3,2,DON PEDRO,I will not think it.,it,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,3,2,CLAUDIO,"If I see anything tonight why I should not marry her tomorrow, in the congregation, where I should wed, there will I sha",her,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,3,2,CLAUDIO,"If I see anything tonight why I should not marry her tomorrow, in the congregation, where I should wed, there will I sha",her,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,3,2,DON PEDRO,"And, as I wooed for thee to obtain her, I will join with thee to disgrace her.",her,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,3,2,DON PEDRO,"And, as I wooed for thee to obtain her, I will join with thee to disgrace her.",her,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,3,2,DON JOHN,"I will disparage her no farther till you are my witnesses: bear it coldly but till midnight, and let the issue show itse",her,DON JOHN,male,7
+MUCH ADO ABOUT NOTHING,3,2,DON JOHN,"I will disparage her no farther till you are my witnesses: bear it coldly but till midnight, and let the issue show itse",it,DON JOHN,male,7
+MUCH ADO ABOUT NOTHING,3,3,VERGES,"Yea, or else it were pity",it,VERGES,male,2
+MUCH ADO ABOUT NOTHING,3,3,VERGES,"but they should suffer salvation, body and soul.",they,VERGES,male,3
+MUCH ADO ABOUT NOTHING,3,3,DOGBERRY,"Nay, that were a punishment too good for them, if they should have any allegiance in them, being chosen for the Prince's",them,DOGBERRY,male,4
+MUCH ADO ABOUT NOTHING,3,3,DOGBERRY,"Nay, that were a punishment too good for them, if they should have any allegiance in them, being chosen for the Prince's",they,DOGBERRY,male,4
+MUCH ADO ABOUT NOTHING,3,3,DOGBERRY,"Nay, that were a punishment too good for them, if they should have any allegiance in them, being chosen for the Prince's",them,DOGBERRY,male,4
+MUCH ADO ABOUT NOTHING,3,3,VERGES,"Well, give them their charge, neighbour Dogberry.",them,Dogberry,male,6
+MUCH ADO ABOUT NOTHING,3,3,VERGES,"Well, give them their charge, neighbour Dogberry.",their,Dogberry,male,6
+MUCH ADO ABOUT NOTHING,3,3,FIRST WATCH,"Hugh Oatcake, sir, or George Seacoal; for they can write and read.",they,George Seacoal,neutral,7
+MUCH ADO ABOUT NOTHING,3,3,DOGBERRY,You have: I knew it would be your answer.,it,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,3,3,DOGBERRY,"Well, for your favour, sir, why, give God thanks, and make no boast of it; and for your writing and reading, let that ap",it,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,3,3,DOGBERRY,"Why, then, take no note of him, but let him go; and presently call the rest of the watch together, and thank God you are",him,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,3,3,DOGBERRY,"Why, then, take no note of him, but let him go; and presently call the rest of the watch together, and thank God you are",him,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,3,3,VERGES,"If he will not stand when he is bidden, he is none of the Prince's subjects.",he,VERGES,male,7
+MUCH ADO ABOUT NOTHING,3,3,VERGES,"If he will not stand when he is bidden, he is none of the Prince's subjects.",he,VERGES,male,7
+MUCH ADO ABOUT NOTHING,3,3,VERGES,"If he will not stand when he is bidden, he is none of the Prince's subjects.",he,VERGES,male,7
+MUCH ADO ABOUT NOTHING,3,3,DOGBERRY,"True, and they are to meddle with none but the Prince's subjects.",they,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,3,3,DOGBERRY,"Well, you are to call at all the alehouses, and bid those that are drunk get them to bed.",them,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,3,3,SECOND WATCH,How if they will not?,they,SECOND WATCH,neutral,7
+MUCH ADO ABOUT NOTHING,3,3,DOGBERRY,"Why then, let them alone till they are sober: if they make you not then the better answer, you may say they are not the ",them,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,3,3,DOGBERRY,"Why then, let them alone till they are sober: if they make you not then the better answer, you may say they are not the ",they,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,3,3,DOGBERRY,"Why then, let them alone till they are sober: if they make you not then the better answer, you may say they are not the ",they,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,3,3,DOGBERRY,"Why then, let them alone till they are sober: if they make you not then the better answer, you may say they are not the ",they,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,3,3,DOGBERRY,"Why then, let them alone till they are sober: if they make you not then the better answer, you may say they are not the ",them,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,3,3,DOGBERRY,"If you meet a thief, you may suspect him, by virtue of your office, to be no true man; and, for such kind of men, the le",him,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,3,3,DOGBERRY,"If you meet a thief, you may suspect him, by virtue of your office, to be no true man; and, for such kind of men, the le",them,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,3,3,SECOND WATCH,"If we know him to be a thief, shall we not lay hands on him?",him,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,3,3,SECOND WATCH,"If we know him to be a thief, shall we not lay hands on him?",him,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,3,3,DOGBERRY,"Truly, by your office, you may; but I think they that touch pitch will be defiled.",they,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,3,3,DOGBERRY,"The most peaceable way for you, if you do take a thief, is to let him show himself what he is and steal out of your comp",him,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,3,3,DOGBERRY,"The most peaceable way for you, if you do take a thief, is to let him show himself what he is and steal out of your comp",himself,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,3,3,DOGBERRY,"The most peaceable way for you, if you do take a thief, is to let him show himself what he is and steal out of your comp",he,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,3,3,DOGBERRY,"Truly, I would not hang a dog by my will, much more a man who hath any honesty in him.",him,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,3,3,VERGES,"If you hear a child cry in the night, you must call to the nurse and bid her still it.",her,VERGES,male,7
+MUCH ADO ABOUT NOTHING,3,3,VERGES,"If you hear a child cry in the night, you must call to the nurse and bid her still it.",it,VERGES,male,7
+MUCH ADO ABOUT NOTHING,3,3,DOGBERRY,"Why then, depart in peace, and let the child wake her with crying; for the ewe that will not hear her lamb when it baes,",her,baes,neutral,7
+MUCH ADO ABOUT NOTHING,3,3,DOGBERRY,"Why then, depart in peace, and let the child wake her with crying; for the ewe that will not hear her lamb when it baes,",her,baes,neutral,7
+MUCH ADO ABOUT NOTHING,3,3,DOGBERRY,"Why then, depart in peace, and let the child wake her with crying; for the ewe that will not hear her lamb when it baes,",it,baes,neutral,7
+MUCH ADO ABOUT NOTHING,3,3,DOGBERRY,"Why then, depart in peace, and let the child wake her with crying; for the ewe that will not hear her lamb when it baes,",he,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,3,3,DOGBERRY,"You constable, are to present the Prince's own person: if you meet the Prince in the night, you may stay him.",him,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,3,3,DOGBERRY,"Five shillings to one on't, with any man that knows the statutes, he may stay him: marry, not without the Prince be will",he,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,3,3,DOGBERRY,"Five shillings to one on't, with any man that knows the statutes, he may stay him: marry, not without the Prince be will",him,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,3,3,DOGBERRY,"Five shillings to one on't, with any man that knows the statutes, he may stay him: marry, not without the Prince be will",it,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,3,3,DOGBERRY,"Five shillings to one on't, with any man that knows the statutes, he may stay him: marry, not without the Prince be will",his,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,3,3,VERGES,"By'r lady, I think it be so.",it,VERGES,male,7
+MUCH ADO ABOUT NOTHING,3,3,BORACHIO,"Stand thee close then under this penthouse, for it drizzles rain, and I will, like a true drunkard, utter all to thee.",it,BORACHIO,male,7
+MUCH ADO ABOUT NOTHING,3,3,CONRADE,Is it possible that any villainy should be so dear?,it,CONRADE,male,7
+MUCH ADO ABOUT NOTHING,3,3,BORACHIO,Thou shouldst rather ask if it were possible any villainy should be so rich; for when rich villains have need of poor on,it,BORACHIO,male,7
+MUCH ADO ABOUT NOTHING,3,3,BORACHIO,Thou shouldst rather ask if it were possible any villainy should be so rich; for when rich villains have need of poor on,they,BORACHIO,male,7
+MUCH ADO ABOUT NOTHING,3,3,CONRADE,I wonder at it.,it,CONRADE,male,7
+MUCH ADO ABOUT NOTHING,3,3,CONRADE,"Yes, it is apparel.",it,CONRADE,male,7
+MUCH ADO ABOUT NOTHING,3,3,WATCH,Aside I know that Deformed; a' has been a vile thief this seven years; a' goes up and down like a gentleman: I remember ,his,BORACHIO,male,7
+MUCH ADO ABOUT NOTHING,3,3,BORACHIO,how giddily he turns about all the hot bloods between fourteen and five-and-thirty?,he,BORACHIO,male,7
+MUCH ADO ABOUT NOTHING,3,3,BORACHIO,sometime fashioning them like Pharaoh's soldiers in the reechy painting; sometime like god Bel's priests in the old chur,them,Hercules,neutral,7
+MUCH ADO ABOUT NOTHING,3,3,BORACHIO,sometime fashioning them like Pharaoh's soldiers in the reechy painting; sometime like god Bel's priests in the old chur,his,BORACHIO,male,7
+MUCH ADO ABOUT NOTHING,3,3,BORACHIO,sometime fashioning them like Pharaoh's soldiers in the reechy painting; sometime like god Bel's priests in the old chur,his,BORACHIO,male,7
+MUCH ADO ABOUT NOTHING,3,3,BORACHIO,"Not so neither; but know, that I have tonight wooed Margaret, the Lady Hero's gentlewoman, by the name of Hero: she lean",she,Hero,female,7
+MUCH ADO ABOUT NOTHING,3,3,BORACHIO,"Not so neither; but know, that I have tonight wooed Margaret, the Lady Hero's gentlewoman, by the name of Hero: she lean",her,Hero,female,7
+MUCH ADO ABOUT NOTHING,3,3,CONRADE,And thought they Margaret was Hero?,they,Margaret,female,7
+MUCH ADO ABOUT NOTHING,3,3,BORACHIO,"Two of them did, the Prince and Claudio; but the devil my master, knew she was Margaret; and partly by his oaths, which ",them,o'er night,neutral,7
+MUCH ADO ABOUT NOTHING,3,3,BORACHIO,"Two of them did, the Prince and Claudio; but the devil my master, knew she was Margaret; and partly by his oaths, which ",she,Margaret,female,7
+MUCH ADO ABOUT NOTHING,3,3,BORACHIO,"Two of them did, the Prince and Claudio; but the devil my master, knew she was Margaret; and partly by his oaths, which ",his,Claudio,male,7
+MUCH ADO ABOUT NOTHING,3,3,BORACHIO,"Two of them did, the Prince and Claudio; but the devil my master, knew she was Margaret; and partly by his oaths, which ",them,o'er night,neutral,7
+MUCH ADO ABOUT NOTHING,3,3,BORACHIO,"Two of them did, the Prince and Claudio; but the devil my master, knew she was Margaret; and partly by his oaths, which ",them,o'er night,neutral,7
+MUCH ADO ABOUT NOTHING,3,3,BORACHIO,"Two of them did, the Prince and Claudio; but the devil my master, knew she was Margaret; and partly by his oaths, which ",he,Claudio,male,7
+MUCH ADO ABOUT NOTHING,3,3,BORACHIO,"Two of them did, the Prince and Claudio; but the devil my master, knew she was Margaret; and partly by his oaths, which ",her,Margaret,female,7
+MUCH ADO ABOUT NOTHING,3,3,BORACHIO,"Two of them did, the Prince and Claudio; but the devil my master, knew she was Margaret; and partly by his oaths, which ",he,Claudio,male,7
+MUCH ADO ABOUT NOTHING,3,3,BORACHIO,"Two of them did, the Prince and Claudio; but the devil my master, knew she was Margaret; and partly by his oaths, which ",her,Margaret,female,7
+MUCH ADO ABOUT NOTHING,3,3,BORACHIO,"Two of them did, the Prince and Claudio; but the devil my master, knew she was Margaret; and partly by his oaths, which ",he,Claudio,male,7
+MUCH ADO ABOUT NOTHING,3,3,BORACHIO,"Two of them did, the Prince and Claudio; but the devil my master, knew she was Margaret; and partly by his oaths, which ",her,Margaret,female,7
+MUCH ADO ABOUT NOTHING,3,3,FIRST WATCH,"And one Deformed is one of them: I know him, a' wears a lock.",them,FIRST WATCH,neutral,7
+MUCH ADO ABOUT NOTHING,3,3,FIRST WATCH,"And one Deformed is one of them: I know him, a' wears a lock.",him,Claudio,male,7
+MUCH ADO ABOUT NOTHING,3,4,HERO,"Good Ursula, wake my cousin Beatrice, and desire her to rise.",her,Beatrice,female,2
+MUCH ADO ABOUT NOTHING,3,4,HERO,And bid her come hither.,her,HERO,female,4
+MUCH ADO ABOUT NOTHING,3,4,MARGARET,I saw the Duchess of Milan's gown that they praise so.,they,MARGARET,female,7
+MUCH ADO ABOUT NOTHING,3,4,HERO,"that exceeds, they say.",they,HERO,female,7
+MUCH ADO ABOUT NOTHING,3,4,HERO,God give me joy to wear it!,it,HERO,female,7
+MUCH ADO ABOUT NOTHING,3,4,MARGARET,"None, I think, and it be the right husband and the right wife; otherwise 'tis light, and not heavy: ask my Lady Beatrice",it,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,3,4,MARGARET,"None, I think, and it be the right husband and the right wife; otherwise 'tis light, and not heavy: ask my Lady Beatrice",she,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,3,4,MARGARET,"Clap's into 'Light o' love'; that goes without a burden: do you sing it, and I'll dance it.",it,MARGARET,female,7
+MUCH ADO ABOUT NOTHING,3,4,MARGARET,"Clap's into 'Light o' love'; that goes without a burden: do you sing it, and I'll dance it.",it,MARGARET,female,7
+MUCH ADO ABOUT NOTHING,3,4,BEATRICE,"then, if your husband have stables enough, you'll see he shall lack no barnes.",he,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,3,4,BEATRICE,"For the letter that begins them all, H.",them,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,3,4,MARGARET,Nothing I; but God send everyone their heart's desire!,their,MARGARET,female,7
+MUCH ADO ABOUT NOTHING,3,4,HERO,These gloves the Count sent me; they are an excellent perfume.,they,HERO,female,7
+MUCH ADO ABOUT NOTHING,3,4,MARGARET,Ever since you left it.,it,MARGARET,female,7
+MUCH ADO ABOUT NOTHING,3,4,BEATRICE,"It is not seen enough, you should wear it in your cap.",It,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,3,4,BEATRICE,"It is not seen enough, you should wear it in your cap.",it,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,3,4,MARGARET,"Get you some of this distilled Carduus benedictus, and lay it to your heart: it is the only thing for a qualm.",it,MARGARET,female,7
+MUCH ADO ABOUT NOTHING,3,4,MARGARET,"Get you some of this distilled Carduus benedictus, and lay it to your heart: it is the only thing for a qualm.",it,MARGARET,female,7
+MUCH ADO ABOUT NOTHING,3,4,HERO,There thou prick'st her with a thistle.,her,HERO,female,7
+MUCH ADO ABOUT NOTHING,3,4,MARGARET,"Yet Benedick was such another, and now is he become a man: he swore he would never marry; and yet now, in despite of his",he,Benedick,male,7
+MUCH ADO ABOUT NOTHING,3,4,MARGARET,"Yet Benedick was such another, and now is he become a man: he swore he would never marry; and yet now, in despite of his",he,Benedick,male,7
+MUCH ADO ABOUT NOTHING,3,4,MARGARET,"Yet Benedick was such another, and now is he become a man: he swore he would never marry; and yet now, in despite of his",he,Benedick,male,7
+MUCH ADO ABOUT NOTHING,3,4,MARGARET,"Yet Benedick was such another, and now is he become a man: he swore he would never marry; and yet now, in despite of his",his,Benedick,male,7
+MUCH ADO ABOUT NOTHING,3,4,MARGARET,"Yet Benedick was such another, and now is he become a man: he swore he would never marry; and yet now, in despite of his",he,Benedick,male,7
+MUCH ADO ABOUT NOTHING,3,4,MARGARET,"Yet Benedick was such another, and now is he become a man: he swore he would never marry; and yet now, in despite of his",his,Benedick,male,7
+MUCH ADO ABOUT NOTHING,3,5,LEONATO,"Brief, I pray you; for you see it is a busy time with me.",it,LEONATO,male,3
+MUCH ADO ABOUT NOTHING,3,5,DOGBERRY,"Marry, this it is, sir.",it,DOGBERRY,male,4
+MUCH ADO ABOUT NOTHING,3,5,VERGES,"Yes, in truth it is, sir.",it,VERGES,male,5
+MUCH ADO ABOUT NOTHING,3,5,LEONATO,"What is it, my good friends?",it,LEONATO,male,6
+MUCH ADO ABOUT NOTHING,3,5,DOGBERRY,"Goodman Verges, sir, speaks a little off the matter: an old man, sir, and his wits are not so blunt as, God help, I woul",his,Goodman Verges,male,7
+MUCH ADO ABOUT NOTHING,3,5,DOGBERRY,"Goodman Verges, sir, speaks a little off the matter: an old man, sir, and his wits are not so blunt as, God help, I woul",they,Goodman Verges,male,7
+MUCH ADO ABOUT NOTHING,3,5,DOGBERRY,"Goodman Verges, sir, speaks a little off the matter: an old man, sir, and his wits are not so blunt as, God help, I woul",his,Goodman Verges,male,7
+MUCH ADO ABOUT NOTHING,3,5,DOGBERRY,"It pleases your worship to say so, but we are the poor Duke's officers; but truly, for mine own part, if I were as tedio",It,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,3,5,DOGBERRY,"It pleases your worship to say so, but we are the poor Duke's officers; but truly, for mine own part, if I were as tedio",it,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,3,5,DOGBERRY,"Yea, and 'twere a thousand pound more than 'tis; for I hear as good exclamation on your worship, as of any man in the ci",it,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,3,5,DOGBERRY,"A good old man, sir; he will be talking; as they say, 'when the age is in, the wit is out.'",he,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,3,5,DOGBERRY,"A good old man, sir; he will be talking; as they say, 'when the age is in, the wit is out.'",they,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,3,5,DOGBERRY,it is a world to see!,it,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,3,5,DOGBERRY,"An honest soul, i' faith, sir; by my troth he is, as ever broke bread; but God is to be worshipped: all men are not alik",he,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,3,5,LEONATO,"Indeed, neighbour, he comes too short of you.",he,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,3,5,DOGBERRY,"One word, sir: our watch, sir, have indeed comprehended two aspicious persons, and we would have them this morning exami",them,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,3,5,LEONATO,"Take their examination yourself, and bring it me: I am now in great haste, as may appear unto you.",their,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,3,5,LEONATO,"Take their examination yourself, and bring it me: I am now in great haste, as may appear unto you.",it,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,3,5,DOGBERRY,It shall be suffigance.,It,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,3,5,MESSENGER,"My lord, they stay for you to give your daughter to her husband.",they,MESSENGER,neutral,7
+MUCH ADO ABOUT NOTHING,3,5,MESSENGER,"My lord, they stay for you to give your daughter to her husband.",her,MESSENGER,neutral,7
+MUCH ADO ABOUT NOTHING,3,5,LEONATO,I'll wait upon them: I am ready.,them,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,3,5,DOGBERRY,"Go, good partner, go get you to Francis Seacoal; bid him bring his pen and inkhorn to the gaol: we are now to examinatio",him,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,3,5,DOGBERRY,"Go, good partner, go get you to Francis Seacoal; bid him bring his pen and inkhorn to the gaol: we are now to examinatio",his,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,3,5,VERGES,And we must do it wisely.,it,VERGES,male,7
+MUCH ADO ABOUT NOTHING,3,5,DOGBERRY,"We will spare for no wit, I warrant you; here's that shall drive some of them to a non-come: only get the learned writer",them,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,4,1,LEONATO,"Come, Friar Francis, be brief: only to the plain form of marriage, and you shall recount their particular duties afterwa",their,Friar Francis,male,2
+MUCH ADO ABOUT NOTHING,4,1,LEONATO,"To be married to her, friar; you come to marry her.",her,LEONATO,male,5
+MUCH ADO ABOUT NOTHING,4,1,LEONATO,"To be married to her, friar; you come to marry her.",her,LEONATO,male,5
+MUCH ADO ABOUT NOTHING,4,1,FRIAR,"If either of you know any inward impediment, why you should not be conjoined, I charge you, on your souls, to utter it.",it,FRIAR,neutral,7
+MUCH ADO ABOUT NOTHING,4,1,LEONATO,I dare make his answer; none.,his,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,4,1,CLAUDIO,"what men daily do, not knowing what they do!",they,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,4,1,BENEDICK,he!,he,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,4,1,LEONATO,"As freely, son, as God did give her me.",her,HERO,female,7
+MUCH ADO ABOUT NOTHING,4,1,DON PEDRO,"Nothing, unless you render her again.",her,HERO,female,7
+MUCH ADO ABOUT NOTHING,4,1,CLAUDIO,"There, Leonato, take her back again: Give not this rotten orange to your friend; She's but the sign and semblance of her",her,HERO,female,7
+MUCH ADO ABOUT NOTHING,4,1,CLAUDIO,"There, Leonato, take her back again: Give not this rotten orange to your friend; She's but the sign and semblance of her",She,HERO,female,7
+MUCH ADO ABOUT NOTHING,4,1,CLAUDIO,"There, Leonato, take her back again: Give not this rotten orange to your friend; She's but the sign and semblance of her",her,HERO,female,7
+MUCH ADO ABOUT NOTHING,4,1,CLAUDIO,how like a maid she blushes here.,she,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,4,1,CLAUDIO,"Would you not swear, All you that see her, that she were a maid, By these exterior shows?",her,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,4,1,CLAUDIO,"Would you not swear, All you that see her, that she were a maid, By these exterior shows?",she,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,4,1,CLAUDIO,"But she is none: She knows the heat of a luxurious bed; Her blush is guiltiness, not modesty.",she,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,4,1,CLAUDIO,"But she is none: She knows the heat of a luxurious bed; Her blush is guiltiness, not modesty.",She,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,4,1,CLAUDIO,"But she is none: She knows the heat of a luxurious bed; Her blush is guiltiness, not modesty.",Her,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,4,1,LEONATO,"Dear my lord, if you, in your own proof, Have vanquish'd the resistance of her youth, And made defeat of her virginity,—",her,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,4,1,LEONATO,"Dear my lord, if you, in your own proof, Have vanquish'd the resistance of her youth, And made defeat of her virginity,—",her,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,4,1,CLAUDIO,"I know what you would say: if I have known her, You will say she did embrace me as a husband, And so extenuate the foreh",her,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,4,1,CLAUDIO,"I know what you would say: if I have known her, You will say she did embrace me as a husband, And so extenuate the foreh",she,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,4,1,CLAUDIO,"No, Leonato, I never tempted her with word too large; But as a brother to his sister show'd Bashful sincerity and comely",her,Leonato,male,7
+MUCH ADO ABOUT NOTHING,4,1,CLAUDIO,"No, Leonato, I never tempted her with word too large; But as a brother to his sister show'd Bashful sincerity and comely",his,Leonato,male,7
+MUCH ADO ABOUT NOTHING,4,1,CLAUDIO,"I will write against it: You seem to me as Dian in her orb, As chaste as is the bud ere it be blown; But you are more in",it,Dian,neutral,7
+MUCH ADO ABOUT NOTHING,4,1,CLAUDIO,"I will write against it: You seem to me as Dian in her orb, As chaste as is the bud ere it be blown; But you are more in",her,HERO,female,7
+MUCH ADO ABOUT NOTHING,4,1,CLAUDIO,"I will write against it: You seem to me as Dian in her orb, As chaste as is the bud ere it be blown; But you are more in",it,Dian,neutral,7
+MUCH ADO ABOUT NOTHING,4,1,HERO,"Is my lord well, that he doth speak so wide?",he,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,4,1,DON JOHN,"Sir, they are spoken, and these things are true.",they,DON JOHN,male,7
+MUCH ADO ABOUT NOTHING,4,1,CLAUDIO,"Let me but move one question to your daughter, And by that fatherly and kindly power That you have in her, bid her answe",her,Hero,female,7
+MUCH ADO ABOUT NOTHING,4,1,CLAUDIO,"Let me but move one question to your daughter, And by that fatherly and kindly power That you have in her, bid her answe",her,Hero,female,7
+MUCH ADO ABOUT NOTHING,4,1,HERO,Is it not Hero?,it,HERO,female,7
+MUCH ADO ABOUT NOTHING,4,1,CLAUDIO,"What man was he talk'd with you yesternight Out at your window, betwixt twelve and one?",he,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,4,1,DON PEDRO,"Leonato, I am sorry you must hear: upon my honour, Myself, my brother, and this grieved Count, Did see her, hear her, at",her,HERO,female,7
+MUCH ADO ABOUT NOTHING,4,1,DON PEDRO,"Leonato, I am sorry you must hear: upon my honour, Myself, my brother, and this grieved Count, Did see her, hear her, at",her,HERO,female,7
+MUCH ADO ABOUT NOTHING,4,1,DON PEDRO,"Leonato, I am sorry you must hear: upon my honour, Myself, my brother, and this grieved Count, Did see her, hear her, at",her,HERO,female,7
+MUCH ADO ABOUT NOTHING,4,1,DON PEDRO,"Leonato, I am sorry you must hear: upon my honour, Myself, my brother, and this grieved Count, Did see her, hear her, at",they,Myself,neutral,7
+MUCH ADO ABOUT NOTHING,4,1,DON JOHN,"they are not to be nam'd, my lord, Not to be spoke of; There is not chastity enough in language Without offence to utter",they,DON JOHN,male,7
+MUCH ADO ABOUT NOTHING,4,1,DON JOHN,"they are not to be nam'd, my lord, Not to be spoke of; There is not chastity enough in language Without offence to utter",them,DON JOHN,male,7
+MUCH ADO ABOUT NOTHING,4,1,CLAUDIO,"For thee I'll lock up all the gates of love, And on my eyelids shall conjecture hang, To turn all beauty into thoughts o",it,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,4,1,DON JOHN,"These things, come thus to light, Smother her spirits up.",her,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,4,1,LEONATO,take not away thy heavy hand: Death is the fairest cover for her shame That may be wish'd for.,her,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,4,1,FRIAR,Yea; wherefore should she not?,she,Hero,female,7
+MUCH ADO ABOUT NOTHING,4,1,LEONATO,"Why, doth not every earthly thing Cry shame upon her?",her,Hero,female,7
+MUCH ADO ABOUT NOTHING,4,1,LEONATO,Could she here deny The story that is printed in her blood?,she,Hero,female,7
+MUCH ADO ABOUT NOTHING,4,1,LEONATO,Could she here deny The story that is printed in her blood?,her,Hero,female,7
+MUCH ADO ABOUT NOTHING,4,1,LEONATO,"Why had I not with charitable hand Took up a beggar's issue at my gates, Who smirched thus, and mir'd with infamy, I mig",it,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,4,1,LEONATO,"But mine, and mine I lov'd, and mine I prais'd, And mine that I was proud on, mine so much That I myself was to myself n",her,Hero,female,7
+MUCH ADO ABOUT NOTHING,4,1,LEONATO,"But mine, and mine I lov'd, and mine I prais'd, And mine that I was proud on, mine so much That I myself was to myself n",she,Hero,female,7
+MUCH ADO ABOUT NOTHING,4,1,LEONATO,"she is fallen Into a pit of ink, that the wide sea Hath drops too few to wash her clean again, And salt too little which",she,Hero,female,7
+MUCH ADO ABOUT NOTHING,4,1,LEONATO,"she is fallen Into a pit of ink, that the wide sea Hath drops too few to wash her clean again, And salt too little which",her,Hero,female,7
+MUCH ADO ABOUT NOTHING,4,1,LEONATO,"she is fallen Into a pit of ink, that the wide sea Hath drops too few to wash her clean again, And salt too little which",her,Hero,female,7
+MUCH ADO ABOUT NOTHING,4,1,BENEDICK,"Lady, were you her bedfellow last night?",her,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,4,1,BEATRICE,"No, truly, not; although, until last night, I have this twelvemonth been her bedfellow.",her,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,4,1,LEONATO,"and Claudio lie, Who lov'd her so, that, speaking of her foulness, Wash'd it with tears?",her,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,4,1,LEONATO,"and Claudio lie, Who lov'd her so, that, speaking of her foulness, Wash'd it with tears?",her,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,4,1,LEONATO,"and Claudio lie, Who lov'd her so, that, speaking of her foulness, Wash'd it with tears?",it,Claudio,male,7
+MUCH ADO ABOUT NOTHING,4,1,LEONATO,Hence from her!,her,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,4,1,LEONATO,let her die.,her,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,4,1,FRIAR,"For I have only been silent so long, And given way unto this course of fortune, By noting of the lady: I have mark'd A t",her,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,4,1,FRIAR,"For I have only been silent so long, And given way unto this course of fortune, By noting of the lady: I have mark'd A t",her,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,4,1,FRIAR,"For I have only been silent so long, And given way unto this course of fortune, By noting of the lady: I have mark'd A t",her,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,4,1,LEONATO,"Friar, it cannot be.",it,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,4,1,LEONATO,Thou seest that all the grace that she hath left Is that she will not add to her damnation A sin of perjury: she not den,she,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,4,1,LEONATO,Thou seest that all the grace that she hath left Is that she will not add to her damnation A sin of perjury: she not den,she,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,4,1,LEONATO,Thou seest that all the grace that she hath left Is that she will not add to her damnation A sin of perjury: she not den,her,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,4,1,LEONATO,Thou seest that all the grace that she hath left Is that she will not add to her damnation A sin of perjury: she not den,she,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,4,1,LEONATO,Thou seest that all the grace that she hath left Is that she will not add to her damnation A sin of perjury: she not den,it,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,4,1,FRIAR,"Lady, what man is he you are accus'd of?",he,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,4,1,HERO,"They know that do accuse me, I know none; If I know more of any man alive Than that which maiden modesty doth warrant, L",They,HERO,female,7
+MUCH ADO ABOUT NOTHING,4,1,BENEDICK,"Two of them have the very bent of honour; And if their wisdoms be misled in this, The practice of it lives in John the b",them,John,neutral,7
+MUCH ADO ABOUT NOTHING,4,1,BENEDICK,"Two of them have the very bent of honour; And if their wisdoms be misled in this, The practice of it lives in John the b",their,John,neutral,7
+MUCH ADO ABOUT NOTHING,4,1,BENEDICK,"Two of them have the very bent of honour; And if their wisdoms be misled in this, The practice of it lives in John the b",it,John,neutral,7
+MUCH ADO ABOUT NOTHING,4,1,LEONATO,"If they speak but truth of her, These hands shall tear her; if they wrong her honour, The proudest of them shall well he",they,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,4,1,LEONATO,"If they speak but truth of her, These hands shall tear her; if they wrong her honour, The proudest of them shall well he",her,HERO,female,7
+MUCH ADO ABOUT NOTHING,4,1,LEONATO,"If they speak but truth of her, These hands shall tear her; if they wrong her honour, The proudest of them shall well he",her,HERO,female,7
+MUCH ADO ABOUT NOTHING,4,1,LEONATO,"If they speak but truth of her, These hands shall tear her; if they wrong her honour, The proudest of them shall well he",they,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,4,1,LEONATO,"If they speak but truth of her, These hands shall tear her; if they wrong her honour, The proudest of them shall well he",her,HERO,female,7
+MUCH ADO ABOUT NOTHING,4,1,LEONATO,"If they speak but truth of her, These hands shall tear her; if they wrong her honour, The proudest of them shall well he",them,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,4,1,LEONATO,"If they speak but truth of her, These hands shall tear her; if they wrong her honour, The proudest of them shall well he",it,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,4,1,LEONATO,"Time hath not yet so dried this blood of mine, Nor age so eat up my invention, Nor fortune made such havoc of my means, ",they,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,4,1,LEONATO,"Time hath not yet so dried this blood of mine, Nor age so eat up my invention, Nor fortune made such havoc of my means, ",them,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,4,1,FRIAR,"Your daughter here the princes left for dead; Let her awhile be secretly kept in, And publish it that she is dead indeed",her,HERO,female,7
+MUCH ADO ABOUT NOTHING,4,1,FRIAR,"Your daughter here the princes left for dead; Let her awhile be secretly kept in, And publish it that she is dead indeed",it,FRIAR,neutral,7
+MUCH ADO ABOUT NOTHING,4,1,FRIAR,"Your daughter here the princes left for dead; Let her awhile be secretly kept in, And publish it that she is dead indeed",she,HERO,female,7
+MUCH ADO ABOUT NOTHING,4,1,FRIAR,"Marry, this well carried shall on her behalf Change slander to remorse; that is some good.",her,HERO,female,7
+MUCH ADO ABOUT NOTHING,4,1,FRIAR,"She dying, as it must be so maintain'd, Upon the instant that she was accus'd, Shall be lamented, pitied and excus'd Of ",She,HERO,female,7
+MUCH ADO ABOUT NOTHING,4,1,FRIAR,"She dying, as it must be so maintain'd, Upon the instant that she was accus'd, Shall be lamented, pitied and excus'd Of ",it,FRIAR,neutral,7
+MUCH ADO ABOUT NOTHING,4,1,FRIAR,"She dying, as it must be so maintain'd, Upon the instant that she was accus'd, Shall be lamented, pitied and excus'd Of ",she,HERO,female,7
+MUCH ADO ABOUT NOTHING,4,1,FRIAR,"She dying, as it must be so maintain'd, Upon the instant that she was accus'd, Shall be lamented, pitied and excus'd Of ",it,FRIAR,neutral,7
+MUCH ADO ABOUT NOTHING,4,1,FRIAR,"Whiles we enjoy it, but being lack'd and lost, Why, then we rack the value, then we find The virtue that possession woul",it,FRIAR,neutral,7
+MUCH ADO ABOUT NOTHING,4,1,FRIAR,"Whiles we enjoy it, but being lack'd and lost, Why, then we rack the value, then we find The virtue that possession woul",it,FRIAR,neutral,7
+MUCH ADO ABOUT NOTHING,4,1,FRIAR,"So will it fare with Claudio: When he shall hear she died upon his words, The idea of her life shall sweetly creep Into ",it,Claudio,male,7
+MUCH ADO ABOUT NOTHING,4,1,FRIAR,"So will it fare with Claudio: When he shall hear she died upon his words, The idea of her life shall sweetly creep Into ",he,Claudio,male,7
+MUCH ADO ABOUT NOTHING,4,1,FRIAR,"So will it fare with Claudio: When he shall hear she died upon his words, The idea of her life shall sweetly creep Into ",she,HERO,female,7
+MUCH ADO ABOUT NOTHING,4,1,FRIAR,"So will it fare with Claudio: When he shall hear she died upon his words, The idea of her life shall sweetly creep Into ",his,Claudio,male,7
+MUCH ADO ABOUT NOTHING,4,1,FRIAR,"So will it fare with Claudio: When he shall hear she died upon his words, The idea of her life shall sweetly creep Into ",her,HERO,female,7
+MUCH ADO ABOUT NOTHING,4,1,FRIAR,"So will it fare with Claudio: When he shall hear she died upon his words, The idea of her life shall sweetly creep Into ",his,Claudio,male,7
+MUCH ADO ABOUT NOTHING,4,1,FRIAR,"So will it fare with Claudio: When he shall hear she died upon his words, The idea of her life shall sweetly creep Into ",her,HERO,female,7
+MUCH ADO ABOUT NOTHING,4,1,FRIAR,"So will it fare with Claudio: When he shall hear she died upon his words, The idea of her life shall sweetly creep Into ",his,Claudio,male,7
+MUCH ADO ABOUT NOTHING,4,1,FRIAR,"So will it fare with Claudio: When he shall hear she died upon his words, The idea of her life shall sweetly creep Into ",she,HERO,female,7
+MUCH ADO ABOUT NOTHING,4,1,FRIAR,"So will it fare with Claudio: When he shall hear she died upon his words, The idea of her life shall sweetly creep Into ",he,Claudio,male,7
+MUCH ADO ABOUT NOTHING,4,1,FRIAR,"So will it fare with Claudio: When he shall hear she died upon his words, The idea of her life shall sweetly creep Into ",his,Claudio,male,7
+MUCH ADO ABOUT NOTHING,4,1,FRIAR,"So will it fare with Claudio: When he shall hear she died upon his words, The idea of her life shall sweetly creep Into ",he,Claudio,male,7
+MUCH ADO ABOUT NOTHING,4,1,FRIAR,"So will it fare with Claudio: When he shall hear she died upon his words, The idea of her life shall sweetly creep Into ",her,HERO,female,7
+MUCH ADO ABOUT NOTHING,4,1,FRIAR,"So will it fare with Claudio: When he shall hear she died upon his words, The idea of her life shall sweetly creep Into ",he,Claudio,male,7
+MUCH ADO ABOUT NOTHING,4,1,FRIAR,"So will it fare with Claudio: When he shall hear she died upon his words, The idea of her life shall sweetly creep Into ",his,Claudio,male,7
+MUCH ADO ABOUT NOTHING,4,1,FRIAR,"Let this be so, and doubt not but success Will fashion the event in better shape Than I can lay it down in likelihood.",it,FRIAR,neutral,7
+MUCH ADO ABOUT NOTHING,4,1,FRIAR,"But if all aim but this be levell'd false, The supposition of the lady's death Will quench the wonder of her infamy:",her,HERO,female,7
+MUCH ADO ABOUT NOTHING,4,1,FRIAR,"And if it sort not well, you may conceal her,— As best befits her wounded reputation,— In some reclusive and religious l",it,FRIAR,neutral,7
+MUCH ADO ABOUT NOTHING,4,1,FRIAR,"And if it sort not well, you may conceal her,— As best befits her wounded reputation,— In some reclusive and religious l",her,HERO,female,7
+MUCH ADO ABOUT NOTHING,4,1,FRIAR,"And if it sort not well, you may conceal her,— As best befits her wounded reputation,— In some reclusive and religious l",her,HERO,female,7
+MUCH ADO ABOUT NOTHING,4,1,FRIAR,'Tis well consented: presently away; For to strange sores strangely they strain the cure.,they,FRIAR,neutral,7
+MUCH ADO ABOUT NOTHING,4,1,BEATRICE,You have no reason; I do it freely.,it,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,4,1,BEATRICE,how much might the man deserve of me that would right her.,her,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,4,1,BENEDICK,May a man do it?,it,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,4,1,BEATRICE,"It is a man's office, but not yours.",It,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,4,1,BEATRICE,"It were as possible for me to say I loved nothing so well as you; but believe me not, and yet I lie not; I confess nothi",It,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,4,1,BEATRICE,"Do not swear by it, and eat it.",it,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,4,1,BEATRICE,"Do not swear by it, and eat it.",it,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,4,1,BENEDICK,I will swear by it that you love me; and I will make him eat it that says I love not you.,it,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,4,1,BENEDICK,I will swear by it that you love me; and I will make him eat it that says I love not you.,him,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,4,1,BENEDICK,I will swear by it that you love me; and I will make him eat it that says I love not you.,it,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,4,1,BENEDICK,With no sauce that can be devised to it.,it,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,4,1,BENEDICK,And do it with all thy heart.,it,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,4,1,BEATRICE,You kill me to deny it.,it,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,4,1,BEATRICE,"Is he not approved in the height a villain, that hath slandered, scorned, dishonoured my kinswoman?",he,Claudio,male,7
+MUCH ADO ABOUT NOTHING,4,1,BEATRICE,"What! bear her in hand until they come to take hands, and then, with public accusation, uncovered slander, unmitigated r",her,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,4,1,BEATRICE,"What! bear her in hand until they come to take hands, and then, with public accusation, uncovered slander, unmitigated r",they,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,4,1,BEATRICE,I would eat his heart in the market-place.,his,Claudio,male,7
+MUCH ADO ABOUT NOTHING,4,1,BEATRICE,"she is wronged, she is slandered, she is undone.",she,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,4,1,BEATRICE,"she is wronged, she is slandered, she is undone.",she,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,4,1,BEATRICE,"she is wronged, she is slandered, she is undone.",she,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,4,1,BEATRICE,"that I were a man for his sake, or that I had any friend would be a man for my sake!",his,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,4,1,BEATRICE,"But manhood is melted into curtsies, valour into compliment, and men are only turned into tongue, and trim ones too: he ",he,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,4,1,BEATRICE,"But manhood is melted into curtsies, valour into compliment, and men are only turned into tongue, and trim ones too: he ",it,Hercules,neutral,7
+MUCH ADO ABOUT NOTHING,4,1,BEATRICE,Use it for my love some other way than swearing by it.,it,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,4,1,BEATRICE,Use it for my love some other way than swearing by it.,it,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,4,1,BENEDICK,"I am engaged, I will challenge him.",him,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,4,1,BENEDICK,"Go, comfort your cousin: I must say she is dead; and so, farewell.",she,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,4,2,SEXTON,let them come before Master Constable.,them,Master Constable,neutral,7
+MUCH ADO ABOUT NOTHING,4,2,DOGBERRY,"Yea, marry, let them come before me.",them,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,4,2,DOGBERRY,Write down that they hope they serve God: and write God first; for God defend,they,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,4,2,DOGBERRY,Write down that they hope they serve God: and write God first; for God defend,they,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,4,2,DOGBERRY,"Masters, it is proved already that you are little better than false knaves, and it will go near to be thought so shortly",it,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,4,2,DOGBERRY,"Masters, it is proved already that you are little better than false knaves, and it will go near to be thought so shortly",it,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,4,2,DOGBERRY,"A marvellous witty fellow, I assure you; but I will go about with him.",him,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,4,2,DOGBERRY,"Come you hither, sirrah; a word in your ear: sir, I say to you, it is thought you are false knaves.",it,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,4,2,DOGBERRY,"Fore God, they are both in a tale.",they,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,4,2,DOGBERRY,"Have you writ down, that they are none?",they,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,4,2,SEXTON,"Master Constable, you go not the way to examine: you must call forth the watch that are their accusers.",their,Constable,neutral,7
+MUCH ADO ABOUT NOTHING,4,2,SEXTON,What heard you him say else?,him,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,4,2,SECOND WATCH,"Marry, that he had received a thousand ducats of Don John for accusing the Lady Hero wrongfully.",he,Don John,male,7
+MUCH ADO ABOUT NOTHING,4,2,VERGES,"Yea, by the mass, that it is.",it,VERGES,male,7
+MUCH ADO ABOUT NOTHING,4,2,FIRST WATCH,"And that Count Claudio did mean, upon his words, to disgrace Hero before the whole assembly, and not marry her.",his,Claudio,male,7
+MUCH ADO ABOUT NOTHING,4,2,FIRST WATCH,"And that Count Claudio did mean, upon his words, to disgrace Hero before the whole assembly, and not marry her.",her,Hero,female,7
+MUCH ADO ABOUT NOTHING,4,2,SEXTON,"Master Constable, let these men be bound, and brought to Leonato's: I will go before and show him their examination.",him,Leonato,male,7
+MUCH ADO ABOUT NOTHING,4,2,SEXTON,"Master Constable, let these men be bound, and brought to Leonato's: I will go before and show him their examination.",their,Leonato,male,7
+MUCH ADO ABOUT NOTHING,4,2,DOGBERRY,"Come, let them be opinioned.",them,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,4,2,VERGES,Let them be in the hands—,them,VERGES,male,7
+MUCH ADO ABOUT NOTHING,4,2,DOGBERRY,let him write down the Prince's officer coxcomb.,him,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,4,2,DOGBERRY,"Come, bind them.",them,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,4,2,DOGBERRY,O that he were here to write me down an ass!,he,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,4,2,DOGBERRY,"but, masters, remember that I am an ass; though it be not written down, yet forget not that I am an ass.",it,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,4,2,DOGBERRY,"I am a wise fellow; and, which is more, an officer; and, which is more, a householder; and, which is more, as pretty a p",him,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,4,2,DOGBERRY,Bring him away.,him,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,5,1,LEONATO,"But such a one whose wrongs do suit with mine: Bring me a father that so lov'd his child, Whose joy of her is overwhelm'",his,LEONATO,male,3
+MUCH ADO ABOUT NOTHING,5,1,LEONATO,"But such a one whose wrongs do suit with mine: Bring me a father that so lov'd his child, Whose joy of her is overwhelm'",her,LEONATO,male,3
+MUCH ADO ABOUT NOTHING,5,1,LEONATO,"But such a one whose wrongs do suit with mine: Bring me a father that so lov'd his child, Whose joy of her is overwhelm'",him,LEONATO,male,3
+MUCH ADO ABOUT NOTHING,5,1,LEONATO,"But such a one whose wrongs do suit with mine: Bring me a father that so lov'd his child, Whose joy of her is overwhelm'",his,LEONATO,male,3
+MUCH ADO ABOUT NOTHING,5,1,LEONATO,"But such a one whose wrongs do suit with mine: Bring me a father that so lov'd his child, Whose joy of her is overwhelm'",it,LEONATO,male,3
+MUCH ADO ABOUT NOTHING,5,1,LEONATO,"But such a one whose wrongs do suit with mine: Bring me a father that so lov'd his child, Whose joy of her is overwhelm'",his,LEONATO,male,3
+MUCH ADO ABOUT NOTHING,5,1,LEONATO,"But such a one whose wrongs do suit with mine: Bring me a father that so lov'd his child, Whose joy of her is overwhelm'",he,LEONATO,male,3
+MUCH ADO ABOUT NOTHING,5,1,LEONATO,"But such a one whose wrongs do suit with mine: Bring me a father that so lov'd his child, Whose joy of her is overwhelm'",him,LEONATO,male,3
+MUCH ADO ABOUT NOTHING,5,1,LEONATO,"But such a one whose wrongs do suit with mine: Bring me a father that so lov'd his child, Whose joy of her is overwhelm'",him,LEONATO,male,3
+MUCH ADO ABOUT NOTHING,5,1,LEONATO,"But there is no such man; for, brother, men Can counsel and speak comfort to that grief Which they themselves not feel; ",they,LEONATO,male,4
+MUCH ADO ABOUT NOTHING,5,1,LEONATO,"But there is no such man; for, brother, men Can counsel and speak comfort to that grief Which they themselves not feel; ",themselves,LEONATO,male,4
+MUCH ADO ABOUT NOTHING,5,1,LEONATO,"But there is no such man; for, brother, men Can counsel and speak comfort to that grief Which they themselves not feel; ",it,LEONATO,male,4
+MUCH ADO ABOUT NOTHING,5,1,LEONATO,"But there is no such man; for, brother, men Can counsel and speak comfort to that grief Which they themselves not feel; ",Their,LEONATO,male,4
+MUCH ADO ABOUT NOTHING,5,1,LEONATO,"No, no; 'tis all men's office to speak patience To those that wring under the load of sorrow, But no man's virtue nor su",he,LEONATO,male,5
+MUCH ADO ABOUT NOTHING,5,1,LEONATO,"No, no; 'tis all men's office to speak patience To those that wring under the load of sorrow, But no man's virtue nor su",himself,LEONATO,male,5
+MUCH ADO ABOUT NOTHING,5,1,LEONATO,"For there was never yet philosopher That could endure the toothache patiently, However they have writ the style of gods ",they,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,5,1,LEONATO,"My soul doth tell me Hero is belied; And that shall Claudio know; so shall the Prince, And all of them that thus dishono",them,Claudio,male,7
+MUCH ADO ABOUT NOTHING,5,1,LEONATO,"My soul doth tell me Hero is belied; And that shall Claudio know; so shall the Prince, And all of them that thus dishono",her,Hero,female,7
+MUCH ADO ABOUT NOTHING,5,1,ANTONIO,"If he could right himself with quarrelling, Some of us would lie low.",he,ANTONIO,male,7
+MUCH ADO ABOUT NOTHING,5,1,ANTONIO,"If he could right himself with quarrelling, Some of us would lie low.",himself,ANTONIO,male,7
+MUCH ADO ABOUT NOTHING,5,1,CLAUDIO,Who wrongs him?,him,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,5,1,CLAUDIO,"Marry, beshrew my hand, If it should give your age such cause of fear.",it,beshrew,neutral,7
+MUCH ADO ABOUT NOTHING,5,1,LEONATO,"I say thou hast belied mine innocent child: Thy slander hath gone through and through her heart, And she lies buried wit",her,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,5,1,LEONATO,"I say thou hast belied mine innocent child: Thy slander hath gone through and through her heart, And she lies buried wit",she,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,5,1,LEONATO,"I say thou hast belied mine innocent child: Thy slander hath gone through and through her heart, And she lies buried wit",her,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,5,1,LEONATO,"in a tomb where never scandal slept, Save this of hers, fram'd by thy villainy!",hers,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,5,1,LEONATO,"My lord, my lord, I'll prove it on his body, if he dare, Despite his nice fence and his active practice, His May of yout",it,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,5,1,LEONATO,"My lord, my lord, I'll prove it on his body, if he dare, Despite his nice fence and his active practice, His May of yout",his,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,5,1,LEONATO,"My lord, my lord, I'll prove it on his body, if he dare, Despite his nice fence and his active practice, His May of yout",he,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,5,1,LEONATO,"My lord, my lord, I'll prove it on his body, if he dare, Despite his nice fence and his active practice, His May of yout",his,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,5,1,LEONATO,"My lord, my lord, I'll prove it on his body, if he dare, Despite his nice fence and his active practice, His May of yout",his,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,5,1,LEONATO,"My lord, my lord, I'll prove it on his body, if he dare, Despite his nice fence and his active practice, His May of yout",His,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,5,1,ANTONIO,"He shall kill two of us, and men indeed:",He,ANTONIO,male,7
+MUCH ADO ABOUT NOTHING,5,1,ANTONIO,But that's no matter; let him kill one first: Win me and wear me; let him answer me.,him,ANTONIO,male,7
+MUCH ADO ABOUT NOTHING,5,1,ANTONIO,But that's no matter; let him kill one first: Win me and wear me; let him answer me.,him,ANTONIO,male,7
+MUCH ADO ABOUT NOTHING,5,1,ANTONIO,"God knows I lov'd my niece; And she is dead, slander'd to death by villains, That dare as well answer a man indeed As I ",she,ANTONIO,male,7
+MUCH ADO ABOUT NOTHING,5,1,ANTONIO,"I know them, yea, And what they weigh, even to the utmost scruple, Scambling, out-facing, fashion-monging boys, That lie",them,ANTONIO,male,7
+MUCH ADO ABOUT NOTHING,5,1,ANTONIO,"I know them, yea, And what they weigh, even to the utmost scruple, Scambling, out-facing, fashion-monging boys, That lie",they,ANTONIO,male,7
+MUCH ADO ABOUT NOTHING,5,1,ANTONIO,"I know them, yea, And what they weigh, even to the utmost scruple, Scambling, out-facing, fashion-monging boys, That lie",they,ANTONIO,male,7
+MUCH ADO ABOUT NOTHING,5,1,ANTONIO,"I know them, yea, And what they weigh, even to the utmost scruple, Scambling, out-facing, fashion-monging boys, That lie",their,ANTONIO,male,7
+MUCH ADO ABOUT NOTHING,5,1,ANTONIO,"I know them, yea, And what they weigh, even to the utmost scruple, Scambling, out-facing, fashion-monging boys, That lie",they,ANTONIO,male,7
+MUCH ADO ABOUT NOTHING,5,1,DON PEDRO,"My heart is sorry for your daughter's death; But, on my honour, she was charg'd with nothing But what was true and very ",she,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,5,1,ANTONIO,"And shall, or some of us will smart for it.",it,ANTONIO,male,7
+MUCH ADO ABOUT NOTHING,5,1,DON PEDRO,Leonato and his brother.,his,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,5,1,DON PEDRO,"Had we fought, I doubt we should have been too young for them.",them,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,5,1,CLAUDIO,"We have been up and down to seek thee; for we are high-proof melancholy, and would fain have it beaten away.",it,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,5,1,BENEDICK,It is in my scabbard; shall I draw it?,It,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,5,1,BENEDICK,It is in my scabbard; shall I draw it?,it,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,5,1,CLAUDIO,"Never any did so, though very many have been beside their wit.",their,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,5,1,DON PEDRO,"As I am an honest man, he looks pale.",he,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,5,1,BENEDICK,"Sir, I shall meet your wit in the career, and you charge it against me.",it,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,5,1,CLAUDIO,"Nay then, give him another staff: this last was broke cross.",him,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,5,1,DON PEDRO,"By this light, he changes more and more: I think he be angry indeed.",he,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,5,1,DON PEDRO,"By this light, he changes more and more: I think he be angry indeed.",he,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,5,1,CLAUDIO,"If he be, he knows how to turn his girdle.",he,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,5,1,CLAUDIO,"If he be, he knows how to turn his girdle.",he,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,5,1,CLAUDIO,"If he be, he knows how to turn his girdle.",his,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,5,1,BENEDICK,"You are a villain, I jest not: I will make it good how you dare, with what you dare, and when you dare.",it,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,5,1,BENEDICK,"You have killed a sweet lady, and her death shall fall heavy on you.",her,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,5,1,CLAUDIO,"I' faith, I thank him; he hath bid me to a calf's-head and a capon, the which if I do not carve most curiously, say my k",him,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,5,1,CLAUDIO,"I' faith, I thank him; he hath bid me to a calf's-head and a capon, the which if I do not carve most curiously, say my k",he,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,5,1,BENEDICK,"Sir, your wit ambles well; it goes easily.",it,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,5,1,DON PEDRO,"True,' says she, 'a fine little one.'",she,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,5,1,DON PEDRO,"'Right,' said she, 'a great gross one.'",she,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,5,1,DON PEDRO,"'Just,' said she, 'it hurts nobody.'",she,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,5,1,DON PEDRO,"'Just,' said she, 'it hurts nobody.'",it,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,5,1,DON PEDRO,"'Certain,' said she, 'a wise gentleman.'",she,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,5,1,DON PEDRO,"'Nay,' said I, 'he hath the tongues.'",he,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,5,1,DON PEDRO,"'That I believe' said she, 'for he swore a thing to me on Monday night, which he forswore on Tuesday morning: there's a ",she,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,5,1,DON PEDRO,"'That I believe' said she, 'for he swore a thing to me on Monday night, which he forswore on Tuesday morning: there's a ",he,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,5,1,DON PEDRO,"'That I believe' said she, 'for he swore a thing to me on Monday night, which he forswore on Tuesday morning: there's a ",he,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,5,1,DON PEDRO,"Thus did she, an hour together, trans-shape thy particular virtues; yet at last she concluded with a sigh, thou wast the",she,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,5,1,DON PEDRO,"Thus did she, an hour together, trans-shape thy particular virtues; yet at last she concluded with a sigh, thou wast the",she,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,5,1,CLAUDIO,For the which she wept heartily and said she cared not.,she,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,5,1,CLAUDIO,For the which she wept heartily and said she cared not.,she,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,5,1,DON PEDRO,"Yea, that she did; but yet, for all that, an if she did not hate him deadly, she would love him dearly.",she,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,5,1,DON PEDRO,"Yea, that she did; but yet, for all that, an if she did not hate him deadly, she would love him dearly.",she,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,5,1,DON PEDRO,"Yea, that she did; but yet, for all that, an if she did not hate him deadly, she would love him dearly.",him,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,5,1,DON PEDRO,"Yea, that she did; but yet, for all that, an if she did not hate him deadly, she would love him dearly.",she,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,5,1,DON PEDRO,"Yea, that she did; but yet, for all that, an if she did not hate him deadly, she would love him dearly.",him,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,5,1,CLAUDIO,"All, all; and moreover, God saw him when he was hid in the garden.",him,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,5,1,CLAUDIO,"All, all; and moreover, God saw him when he was hid in the garden.",he,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,5,1,BENEDICK,"I will leave you now to your gossip-like humour; you break jests as braggarts do their blades, which, God be thanked, hu",their,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,5,1,BENEDICK,"For my Lord Lack-beard there, he and I shall meet; and till then, peace be with him.",he,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,5,1,BENEDICK,"For my Lord Lack-beard there, he and I shall meet; and till then, peace be with him.",him,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,5,1,DON PEDRO,He is in earnest.,He,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,5,1,DON PEDRO,What a pretty thing man is when he goes in his doublet and hose and leaves off his wit!,he,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,5,1,DON PEDRO,What a pretty thing man is when he goes in his doublet and hose and leaves off his wit!,his,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,5,1,DON PEDRO,What a pretty thing man is when he goes in his doublet and hose and leaves off his wit!,his,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,5,1,CLAUDIO,He is then a giant to an ape; but then is an ape a doctor to such a man.,He,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,5,1,DON PEDRO,Did he not say my brother was fled?,he,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,5,1,DOGBERRY,"Come you, sir: if justice cannot tame you, she shall ne'er weigh more reasons in her balance.",she,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,5,1,DOGBERRY,"Come you, sir: if justice cannot tame you, she shall ne'er weigh more reasons in her balance.",her,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,5,1,CLAUDIO,"Hearken after their offence, my lord.",their,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,5,1,DOGBERRY,"Marry, sir, they have committed false report; moreover, they have spoken untruths; secondarily, they are slanders; sixth",they,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,5,1,DOGBERRY,"Marry, sir, they have committed false report; moreover, they have spoken untruths; secondarily, they are slanders; sixth",they,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,5,1,DOGBERRY,"Marry, sir, they have committed false report; moreover, they have spoken untruths; secondarily, they are slanders; sixth",they,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,5,1,DOGBERRY,"Marry, sir, they have committed false report; moreover, they have spoken untruths; secondarily, they are slanders; sixth",they,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,5,1,DOGBERRY,"Marry, sir, they have committed false report; moreover, they have spoken untruths; secondarily, they are slanders; sixth",they,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,5,1,DOGBERRY,"Marry, sir, they have committed false report; moreover, they have spoken untruths; secondarily, they are slanders; sixth",they,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,5,1,DON PEDRO,"First, I ask thee what they have done; thirdly, I ask thee what's their offence; sixth and lastly, why they are committe",they,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,5,1,DON PEDRO,"First, I ask thee what they have done; thirdly, I ask thee what's their offence; sixth and lastly, why they are committe",their,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,5,1,DON PEDRO,"First, I ask thee what they have done; thirdly, I ask thee what's their offence; sixth and lastly, why they are committe",they,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,5,1,DON PEDRO,"First, I ask thee what they have done; thirdly, I ask thee what's their offence; sixth and lastly, why they are committe",their,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,5,1,CLAUDIO,"Rightly reasoned, and in his own division; and, by my troth, there's one meaning well suited.",his,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,5,1,BORACHIO,"I have deceived even your very eyes: what your wisdoms could not discover, these shallow fools have brought to light; wh",her,Margaret,female,7
+MUCH ADO ABOUT NOTHING,5,1,BORACHIO,"I have deceived even your very eyes: what your wisdoms could not discover, these shallow fools have brought to light; wh",her,Margaret,female,7
+MUCH ADO ABOUT NOTHING,5,1,BORACHIO,My villainy they have upon record; which I had rather seal with my death than repeat over to my shame.,they,BORACHIO,male,7
+MUCH ADO ABOUT NOTHING,5,1,CLAUDIO,I have drunk poison whiles he utter'd it.,he,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,5,1,CLAUDIO,I have drunk poison whiles he utter'd it.,it,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,5,1,BORACHIO,Yea; and paid me richly for the practice of it.,it,BORACHIO,male,7
+MUCH ADO ABOUT NOTHING,5,1,DON PEDRO,He is compos'd and fram'd of treachery: And fled he is upon this villainy.,He,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,5,1,DON PEDRO,He is compos'd and fram'd of treachery: And fled he is upon this villainy.,he,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,5,1,CLAUDIO,now thy image doth appear In the rare semblance that I lov'd it first.,it,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,5,1,LEONATO,"Let me see his eyes, That, when I note another man like him, I may avoid him.",his,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,5,1,LEONATO,"Let me see his eyes, That, when I note another man like him, I may avoid him.",him,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,5,1,LEONATO,"Let me see his eyes, That, when I note another man like him, I may avoid him.",him,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,5,1,LEONATO,Which of these is he?,he,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,5,1,LEONATO,"No, not so, villain; thou beliest thyself: Here stand a pair of honourable men; A third is fled, that had a hand in it.",it,thou beliest thyself,neutral,7
+MUCH ADO ABOUT NOTHING,5,1,LEONATO,Record it with your high and worthy deeds.,it,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,5,1,LEONATO,"'Twas bravely done, if you bethink you of it.",it,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,5,1,DON PEDRO,"By my soul, nor I: And yet, to satisfy this good old man, I would bend under any heavy weight That he'll enjoin me to.",he,DON PEDRO,male,7
+MUCH ADO ABOUT NOTHING,5,1,LEONATO,"I cannot bid you bid my daughter live; That were impossible; but, I pray you both, Possess the people in Messina here Ho",she,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,5,1,LEONATO,"I cannot bid you bid my daughter live; That were impossible; but, I pray you both, Possess the people in Messina here Ho",her,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,5,1,LEONATO,"I cannot bid you bid my daughter live; That were impossible; but, I pray you both, Possess the people in Messina here Ho",her,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,5,1,LEONATO,"I cannot bid you bid my daughter live; That were impossible; but, I pray you both, Possess the people in Messina here Ho",it,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,5,1,LEONATO,"I cannot bid you bid my daughter live; That were impossible; but, I pray you both, Possess the people in Messina here Ho",her,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,5,1,LEONATO,"I cannot bid you bid my daughter live; That were impossible; but, I pray you both, Possess the people in Messina here Ho",it,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,5,1,LEONATO,"My brother hath a daughter, Almost the copy of my child that's dead, And she alone is heir to both of us: Give her the r",she,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,5,1,LEONATO,"My brother hath a daughter, Almost the copy of my child that's dead, And she alone is heir to both of us: Give her the r",her,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,5,1,LEONATO,"My brother hath a daughter, Almost the copy of my child that's dead, And she alone is heir to both of us: Give her the r",her,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,5,1,LEONATO,"This naughty man Shall face to face be brought to Margaret, Who, I believe, was pack'd in all this wrong, Hir'd to it by",it,Margaret,female,7
+MUCH ADO ABOUT NOTHING,5,1,BORACHIO,"No, by my soul she was not; Nor knew not what she did when she spoke to me; But always hath been just and virtuous In an",she,Margaret,female,7
+MUCH ADO ABOUT NOTHING,5,1,BORACHIO,"No, by my soul she was not; Nor knew not what she did when she spoke to me; But always hath been just and virtuous In an",she,Margaret,female,7
+MUCH ADO ABOUT NOTHING,5,1,BORACHIO,"No, by my soul she was not; Nor knew not what she did when she spoke to me; But always hath been just and virtuous In an",she,Margaret,female,7
+MUCH ADO ABOUT NOTHING,5,1,BORACHIO,"No, by my soul she was not; Nor knew not what she did when she spoke to me; But always hath been just and virtuous In an",her,Margaret,female,7
+MUCH ADO ABOUT NOTHING,5,1,DOGBERRY,"Moreover, sir,—which, indeed, is not under white and black,— this plaintiff here, the offender, did call me ass: I besee",it,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,5,1,DOGBERRY,"Moreover, sir,—which, indeed, is not under white and black,— this plaintiff here, the offender, did call me ass: I besee",his,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,5,1,DOGBERRY,"And also, the watch heard them talk of one Deformed: they say he wears a key in his ear and a lock hanging by it, and bo",them,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,5,1,DOGBERRY,"And also, the watch heard them talk of one Deformed: they say he wears a key in his ear and a lock hanging by it, and bo",they,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,5,1,DOGBERRY,"And also, the watch heard them talk of one Deformed: they say he wears a key in his ear and a lock hanging by it, and bo",he,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,5,1,DOGBERRY,"And also, the watch heard them talk of one Deformed: they say he wears a key in his ear and a lock hanging by it, and bo",his,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,5,1,DOGBERRY,"And also, the watch heard them talk of one Deformed: they say he wears a key in his ear and a lock hanging by it, and bo",it,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,5,1,DOGBERRY,"And also, the watch heard them talk of one Deformed: they say he wears a key in his ear and a lock hanging by it, and bo",he,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,5,1,DOGBERRY,"Pray you, examine him upon that point.",him,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,5,1,DOGBERRY,"I humbly give you leave to depart, and if a merry meeting may be wished, God prohibit it!",it,DOGBERRY,male,7
+MUCH ADO ABOUT NOTHING,5,1,LEONATO,"We'll talk with Margaret, How her acquaintance grew with this lewd fellow.",her,Margaret,female,7
+MUCH ADO ABOUT NOTHING,5,2,BENEDICK,"In so high a style, Margaret, that no man living shall come over it; for, in most comely truth, thou deservest it.",it,thou deservest,neutral,6
+MUCH ADO ABOUT NOTHING,5,2,BENEDICK,"In so high a style, Margaret, that no man living shall come over it; for, in most comely truth, thou deservest it.",it,thou deservest,neutral,6
+MUCH ADO ABOUT NOTHING,5,2,BENEDICK,Thy wit is as quick as the greyhound's mouth; it catches.,it,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,5,2,BENEDICK,"A most manly wit, Margaret; it will not hurt a woman: and so, I pray thee, call Beatrice.",it,Beatrice,female,7
+MUCH ADO ABOUT NOTHING,5,2,BENEDICK,"If you use them, Margaret, you must put in the pikes with a vice; and they are dangerous weapons for maids.",them,Margaret,female,7
+MUCH ADO ABOUT NOTHING,5,2,BENEDICK,"If you use them, Margaret, you must put in the pikes with a vice; and they are dangerous weapons for maids.",they,Margaret,female,7
+MUCH ADO ABOUT NOTHING,5,2,BENEDICK,"The god of love, That sits above, And knows me, and knows me, How pitiful I deserve,— I mean, in singing: but in loving,",they,Leander,neutral,7
+MUCH ADO ABOUT NOTHING,5,2,BENEDICK,"Marry, I cannot show it in rime; I have tried: I can find out no rime to 'lady' but 'baby', an innocent rime; for 'scorn",it,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,5,2,BENEDICK,"Thou hast frighted the word out of his right sense, so forcible is thy wit.",his,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,5,2,BENEDICK,"But I must tell thee plainly, Claudio undergoes my challenge, and either I must shortly hear from him, or I will subscri",him,Claudio,male,7
+MUCH ADO ABOUT NOTHING,5,2,BENEDICK,"But I must tell thee plainly, Claudio undergoes my challenge, and either I must shortly hear from him, or I will subscri",him,Claudio,male,7
+MUCH ADO ABOUT NOTHING,5,2,BEATRICE,For them all together; which maintained so politic a state of evil that they will not admit any good part to intermingle,them,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,5,2,BEATRICE,For them all together; which maintained so politic a state of evil that they will not admit any good part to intermingle,they,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,5,2,BEATRICE,For them all together; which maintained so politic a state of evil that they will not admit any good part to intermingle,them,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,5,2,BEATRICE,"If you spite it for my sake, I will spite it for yours; for I will never love that which my friend hates.",it,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,5,2,BEATRICE,"If you spite it for my sake, I will spite it for yours; for I will never love that which my friend hates.",it,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,5,2,BEATRICE,It appears not in this confession: there's not one wise man among twenty that will praise himself.,It,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,5,2,BEATRICE,It appears not in this confession: there's not one wise man among twenty that will praise himself.,himself,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,5,2,BENEDICK,"If a man do not erect in this age his own tomb ere he dies, he shall live no longer in monument than the bell rings and ",his,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,5,2,BENEDICK,"If a man do not erect in this age his own tomb ere he dies, he shall live no longer in monument than the bell rings and ",he,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,5,2,BENEDICK,"If a man do not erect in this age his own tomb ere he dies, he shall live no longer in monument than the bell rings and ",he,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,5,2,BENEDICK,"Question: why, an hour in clamour and a quarter in rheum: therefore is it most expedient for the wise,—if Don Worm, his ",it,Don Worm,neutral,7
+MUCH ADO ABOUT NOTHING,5,2,BENEDICK,"Question: why, an hour in clamour and a quarter in rheum: therefore is it most expedient for the wise,—if Don Worm, his ",his,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,5,2,BENEDICK,"Question: why, an hour in clamour and a quarter in rheum: therefore is it most expedient for the wise,—if Don Worm, his ",his,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,5,2,URSULA,"Yonder's old coil at home: it is proved, my Lady Hero hath been falsely accused, the Prince and Claudio mightily abused;",it,Don John,male,7
+MUCH ADO ABOUT NOTHING,5,3,A LORD,"It is, my lord.",It,A LORD,neutral,2
+MUCH ADO ABOUT NOTHING,5,3,CLAUDIO,"Done to death by slanderous tongues Was the Hero that here lies: Death, in guerdon of her wrongs, Gives her fame which n",her,CLAUDIO,male,5
+MUCH ADO ABOUT NOTHING,5,3,CLAUDIO,"Done to death by slanderous tongues Was the Hero that here lies: Death, in guerdon of her wrongs, Gives her fame which n",her,CLAUDIO,male,5
+MUCH ADO ABOUT NOTHING,5,3,CLAUDIO,"Hang thou there upon the tomb, Praising her when I am dumb.",her,Praising,neutral,7
+MUCH ADO ABOUT NOTHING,5,3,CLAUDIO,"Pardon, goddess of the night, Those that slew thy virgin knight; For the which, with songs of woe, Round about her tomb ",her,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,5,3,CLAUDIO,"Pardon, goddess of the night, Those that slew thy virgin knight; For the which, with songs of woe, Round about her tomb ",they,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,5,3,CLAUDIO,"Good morrow, masters: each his several way.",his,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,5,4,FRIAR,Did I not tell you she was innocent?,she,FRIAR,neutral,1
+MUCH ADO ABOUT NOTHING,5,4,LEONATO,"So are the Prince and Claudio, who accus'd her Upon the error that you heard debated:",her,Claudio,male,3
+MUCH ADO ABOUT NOTHING,5,4,LEONATO,"But Margaret was in some fault for this, Although against her will, as it appears In the true course of all the question",her,Margaret,female,5
+MUCH ADO ABOUT NOTHING,5,4,LEONATO,"But Margaret was in some fault for this, Although against her will, as it appears In the true course of all the question",it,Margaret,female,5
+MUCH ADO ABOUT NOTHING,5,4,BENEDICK,To call young Claudio to a reckoning for it.,it,Claudio,male,7
+MUCH ADO ABOUT NOTHING,5,4,LEONATO,"You know your office, brother; You must be father to your brother's daughter, And give her to young Claudio.",her,Margaret,female,7
+MUCH ADO ABOUT NOTHING,5,4,BENEDICK,"To bind me, or undo me; one of them.",them,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,5,4,BENEDICK,"Signior Leonato, truth it is, good signior, Your niece regards me with an eye of favour.",it,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,5,4,LEONATO,That eye my daughter lent her.,her,Margaret,female,7
+MUCH ADO ABOUT NOTHING,5,4,BENEDICK,And I do with an eye of love requite her.,her,Margaret,female,7
+MUCH ADO ABOUT NOTHING,5,4,CLAUDIO,"I'll hold my mind, were she an Ethiope.",she,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,5,4,LEONATO,"Call her forth, brother: here's the friar ready.",her,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,5,4,CLAUDIO,I think he thinks upon the savage bull.,he,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,5,4,CLAUDIO,"fear not, man, we'll tip thy horns with gold, And all Europa shall rejoice at thee, As once Europa did at lusty Jove, Wh",he,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,5,4,BENEDICK,"Bull Jove, sir, had an amiable low: And some such strange bull leap'd your father's cow, And got a calf in that same nob",his,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,5,4,ANTONIO,"This same is she, and I do give you her.",she,ANTONIO,male,7
+MUCH ADO ABOUT NOTHING,5,4,ANTONIO,"This same is she, and I do give you her.",her,ANTONIO,male,7
+MUCH ADO ABOUT NOTHING,5,4,CLAUDIO,"Why then, she's mine.",she,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,5,4,LEONATO,"No, that you shall not, till you take her hand Before this friar, and swear to marry her.",her,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,5,4,LEONATO,"No, that you shall not, till you take her hand Before this friar, and swear to marry her.",her,LEONATO,male,7
+MUCH ADO ABOUT NOTHING,5,4,LEONATO,"She died, my lord, but whiles her slander liv'd.",She,HERO,female,7
+MUCH ADO ABOUT NOTHING,5,4,LEONATO,"She died, my lord, but whiles her slander liv'd.",her,HERO,female,7
+MUCH ADO ABOUT NOTHING,5,4,BENEDICK,"Why, then, your uncle and the Prince and Claudio Have been deceived; for they swore you did.",they,Claudio,male,7
+MUCH ADO ABOUT NOTHING,5,4,BEATRICE,"Why, then my cousin, Margaret, and Ursula, Are much deceiv'd; for they did swear you did.",they,Ursula,female,7
+MUCH ADO ABOUT NOTHING,5,4,BENEDICK,They swore that you were almost sick for me.,They,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,5,4,BEATRICE,They swore that you were well-nigh dead for me.,They,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,5,4,CLAUDIO,And I'll be sworn upon 't that he loves her;,he,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,5,4,CLAUDIO,And I'll be sworn upon 't that he loves her;,her,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,5,4,CLAUDIO,"For here's a paper written in his hand, A halting sonnet of his own pure brain, Fashion'd to Beatrice.",his,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,5,4,CLAUDIO,"For here's a paper written in his hand, A halting sonnet of his own pure brain, Fashion'd to Beatrice.",his,CLAUDIO,male,7
+MUCH ADO ABOUT NOTHING,5,4,HERO,"And here's another, Writ in my cousin's hand, stolen from her pocket, Containing her affection unto Benedick.",her,HERO,female,7
+MUCH ADO ABOUT NOTHING,5,4,HERO,"And here's another, Writ in my cousin's hand, stolen from her pocket, Containing her affection unto Benedick.",her,HERO,female,7
+MUCH ADO ABOUT NOTHING,5,4,BENEDICK,Kisses her.,her,BEATRICE,female,7
+MUCH ADO ABOUT NOTHING,5,4,BENEDICK,"No; if man will be beaten with brains, a' shall wear nothing handsome about him.",him,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,5,4,BENEDICK,"In brief, since I do purpose to marry, I will think nothing to any purpose that the world can say against it; and theref",it,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,5,4,BENEDICK,"In brief, since I do purpose to marry, I will think nothing to any purpose that the world can say against it; and theref",it,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,5,4,BENEDICK,Think not on him till tomorrow: I'll devise thee brave punishments for him.,him,BENEDICK,male,7
+MUCH ADO ABOUT NOTHING,5,4,BENEDICK,Think not on him till tomorrow: I'll devise thee brave punishments for him.,him,BENEDICK,male,7
