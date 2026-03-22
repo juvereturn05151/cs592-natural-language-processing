@@ -10,7 +10,9 @@ import csv
 from pathlib import Path
 from collections import defaultdict
 
-# run DEFAULT spaCy NER
+import src.Project2.Project2Globals as Globals
+import src.Project2.Data_Extraction.data_extractor as DataExtractor
+
 def run_default_ner(scenes: list, nlp, play_title: str) -> tuple:
     all_entities = []
     entity_summary = defaultdict(set)
@@ -100,3 +102,46 @@ def save_cast_relationships_csv(relationships: list, path: Path):
         writer.writeheader()
         writer.writerows(relationships)
     print(f"  -> Saved {len(relationships):,} cast relationships  :  {path.name}")
+
+def run(nlp, play_files):
+    all_records = []
+    all_mislabel = []
+    all_cast_rels = []
+
+    for play_file in play_files:
+        print(f"\n{'─' * 60}")
+        print(f"  {play_file.name}")
+        print(f"{'─' * 60}")
+
+        root, _ = DataExtractor.load_play(play_file)
+        title = DataExtractor.get_title(root)
+        characters = DataExtractor.extract_cast(root)
+        scenes = DataExtractor.extract_scenes(root)
+
+        print(f"  Title      : {title}")
+        print(f"  Characters : {len(characters)}")
+        print(f"  Scenes     : {len(scenes)}")
+
+        records, summary = run_default_ner(scenes, nlp, title)
+        print(f"  Entities   : {len(records):,} found by default model")
+
+        mislabeled = analyse_labels(summary, characters, title)
+        all_mislabel.extend(mislabeled)
+
+        save_csv(records, Globals.OUTPUT_DIR / f"01_{play_file.stem}_default_ner.csv")
+        all_records.extend(records)
+
+        # Extract relationships from cast list descriptions
+        print(f"\n  Cast relationships found:")
+        cast_rels = DataExtractor.extract_cast_relationships(characters, title)
+        if not cast_rels:
+            print("    (none found)")
+        all_cast_rels.extend(cast_rels)
+
+    save_csv(all_records, Globals.OUTPUT_DIR / "01_ALL_default_ner.csv")
+    save_cast_relationships_csv(
+        all_cast_rels,
+        Globals.OUTPUT_DIR / "01_ALL_cast_relationships.csv"
+    )
+
+    return all_records, all_mislabel, all_cast_rels
