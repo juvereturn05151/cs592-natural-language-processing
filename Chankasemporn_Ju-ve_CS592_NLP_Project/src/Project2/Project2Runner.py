@@ -11,6 +11,7 @@ import src.Project2.Project2Globals as Globals
 import src.Project2.NER_Extraction.ner_extraction as NER_Extraction
 import src.Project2.Fine_Tuning.fine_tuning as FineTuning
 import src.Project2.Coreference.coreference as Coreference
+import src.Project2.KnowledgeGraph.knowledge_graph as KnowledgeGraph
 
 class Project2Runner:
     def __init__(self):
@@ -102,9 +103,38 @@ class Project2Runner:
         print(f"  COMPLETE")
         print(f"  Total pronoun resolutions : {len(all_coref_records):,}")
 
+    # ── STEP 4: Knowledge Graph ───────────────────────────────────
+    def run_knowledge_graph(self):
+        self._print_header(4, "KNOWLEDGE GRAPH")
+
+        print("  Loading kg_rules.json ...")
+        rules = KnowledgeGraph.load_rules(Globals.DATA_DIR / "kg_rules.json")
+
+        print("  Loading spaCy model for dependency parsing ...")
+        nlp_kg = self.nlp_ft if self.nlp_ft is not None else self.nlp
+
+        print("  Connecting to Memgraph ...")
+        mg = KnowledgeGraph.connect_memgraph()
+
+        if mg:
+            print("  Clearing existing graph data ...")
+            KnowledgeGraph.clear_old_data(mg)
+
+        KnowledgeGraph.run(
+            mg         = mg,
+            play_files = self.play_files,
+            rules      = rules,
+            nlp        = nlp_kg
+        )
+
+        print(f"\n{'═' * 60}")
+        print(f"  COMPLETE")
+        print(f"  Open Memgraph Lab at http://localhost:3000")
+
     # ── RUN ALL ───────────────────────────────────────────────────
     def run_all(self, n_iter: int = 40):
         """Run the full pipeline in order."""
         self.run_ner_extraction()
         self.run_fine_tuning(n_iter=n_iter)
         self.run_coreference()
+        self.run_knowledge_graph()

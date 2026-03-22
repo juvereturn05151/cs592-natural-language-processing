@@ -9,11 +9,15 @@ Reads kg_rules.json and the fine-tuned entity CSV to:
 
 import json
 import csv
+import spacy
 from pathlib import Path
 from collections import defaultdict
 import xml.etree.ElementTree as ET
 import re
-from src.Project2.Data_Extraction.data_extractor import find_repo_root
+
+import src.Project2.Project2Globals as Globals
+import src.Project2.Data_Extraction.data_extractor as DataExtractor
+from src.Project2.Play_Configs.play_configs import PLAY_CONFIGS
 
 try:
     from gqlalchemy import Memgraph
@@ -22,16 +26,6 @@ except ImportError:
     MEMGRAPH_AVAILABLE = False
     print("WARNING: gqlalchemy not installed. Run: pip install gqlalchemy")
     print("Running in DRY-RUN mode (queries will be printed, not executed).\n")
-
-# ─────────────────────────────────────────────
-# PATHS + CONFIG
-# ─────────────────────────────────────────────
-
-REPO_ROOT, _ = find_repo_root()
-DATA_DIR = REPO_ROOT / "data"
-TRAIN_DIR = DATA_DIR / "train"
-OUTPUT_DIR = DATA_DIR / "output"
-RULES_PATH = DATA_DIR / "kg_rules.json"
 
 MEMGRAPH_HOST = "127.0.0.1"
 MEMGRAPH_PORT = 7687
@@ -128,8 +122,23 @@ def create_node(mg, label: str, name: str):
             )
 
 
+def sanitise_rel_type(rel_type: str) -> str:
+    """
+    Cypher relationship types must be alphanumeric + underscores only.
+    - Strip anything after a comma (e.g. "A_YOUNG_NOBLEMAN,_KINSMAN" → "A_YOUNG_NOBLEMAN")
+    - Replace spaces and hyphens with underscores
+    - Remove all other non-alphanumeric characters
+    """
+    rel_type = rel_type.split(",")[0]                      # drop after comma
+    rel_type = re.sub(r'[\s\-]+', '_', rel_type)           # spaces/hyphens → _
+    rel_type = re.sub(r'[^A-Z0-9_]', '', rel_type.upper()) # keep only valid chars
+    rel_type = re.sub(r'_+', '_', rel_type).strip('_')     # collapse multiple _
+    return rel_type
+
+
 def create_relationship(mg, from_name: str, from_label: str,
                         rel_type: str, to_name: str, to_label: str):
+    rel_type = sanitise_rel_type(rel_type)
     execute(mg, f"""
         MATCH (a:{from_label} {{name: $from_name}})
         MATCH (b:{to_label}   {{name: $to_name}})
@@ -182,29 +191,76 @@ def load_play_scenes(play_file: Path) -> list:
                 scenes.append(text)
     return scenes
 
+def extract_from_finetuned_rels(play_file, entity_groups: dict) -> list:
+    """
+    Read REL-labeled entities from the fine-tuned NER CSV and match them
+    against PERSON entities in the same scene to infer new relationships.
+    """
+    from collections import defaultdict as _dd
+    csv_path = Globals.OUTPUT_DIR / f"02_{play_file.stem}_finetuned_ner.csv"
+    if not csv_path.exists():
+        return []
+
+    scene_entities = _dd(lambda: {"REL": [], "PERSON": []})
+    with open(csv_path, "r", encoding="utf-8") as f:
+        for row in csv.DictReader(f):
+            label = row["label"].strip()
+            name  = row["entity_text"].strip()
+            key   = (row["act"], row["scene"])
+            if label in ("REL", "PERSON") and name:
+                scene_entities[key][label].append(name)
+
+    REL_NOISE = {
+        "SERVANTS", "ATTENDANTS", "LORDS", "OFFICERS",
+        "SOLDIERS", "MURDERERS", "ALL", "OTHERS"
+    }
+    REL_WORD_MAP = {
+        "SON": "SON_OF", "DAUGHTER": "DAUGHTER_OF",
+        "BROTHER": "BROTHER_OF", "SISTER": "SISTER_OF",
+        "NEPHEW": "NEPHEW_OF", "NIECE": "NIECE_OF",
+        "FATHER": "FATHER_OF", "MOTHER": "MOTHER_OF",
+        "WIFE": "WIFE_OF", "HUSBAND": "HUSBAND_OF",
+        "SERVANT": "SERVANT_OF", "FOLLOWER": "FOLLOWER_OF",
+        "KINSMAN": "KINSMAN_OF", "FRIEND": "FRIEND_OF",
+        "ATTENDANT": "ATTENDS", "PAGE": "PAGE_OF",
+    }
+
+    triples      = []
+    seen         = set()
+    known_persons = {n.upper() for n in entity_groups.get("PERSON", set())}
+
+    for (act, scene), ents in scene_entities.items():
+        rel_entities    = ents["REL"]
+        person_entities = [p for p in ents["PERSON"] if p.upper() in known_persons]
+
+        for rel_word in rel_entities:
+            if rel_word.upper() in REL_NOISE:
+                continue
+            rel_type = REL_WORD_MAP.get(rel_word.upper())
+            if not rel_type or len(person_entities) < 2:
+                continue
+            subj = person_entities[0].upper()
+            obj  = person_entities[1].upper()
+            key  = (subj, rel_type, obj)
+            if key not in seen:
+                seen.add(key)
+                triples.append((subj, "PERSON", rel_type, obj, "PERSON"))
+
+    print(f"    REL entities from fine-tuned CSV: {len(triples)} relationships")
+    return triples
+
+
 def extract_relationships(scenes: list, entity_groups: dict, nlp) -> list:
     """
-    Two-method relationship extraction designed for Shakespeare's archaic language.
-
-    Method 1 — Dependency parsing (precise but misses a lot in archaic text)
-      Finds subject→verb→object triples using spaCy's dependency tree.
-
-    Method 2 — Co-occurrence window (broader, catches what the parser misses)
-      If two named entities appear in the same utterance AND a keyword verb
-      appears anywhere between them in the raw text, record the relationship.
-      This works well for Shakespeare because it doesn't rely on correct parsing.
-
-    Results from both methods are merged and deduplicated.
+    Relationship extraction using dependency parsing only.
+    Co-occurrence window removed — produced too many false positives.
+    KILLS, LOVES, MARRIED_TO removed from VERB_MAP — handled by play_configs.
     """
-
-    # Build lookup: entity name (lowercase) → (original_name, label)
     entity_lookup = {}
     for label, names in entity_groups.items():
         for name in names:
             entity_lookup[name.lower()] = (name, label)
 
-    # ── Filter out noise: stage directions and non-character words ──
-    # These get picked up by NER but are not real characters
     NOISE_WORDS = {
         "alarums", "alarum", "hautboys", "hautboy", "sennet", "flourish",
         "exeunt", "exit", "enter", "hence", "thence", "whence",
@@ -218,135 +274,38 @@ def extract_relationships(scenes: list, entity_groups: dict, nlp) -> list:
         if k not in NOISE_WORDS and len(k) > 2
     }
 
-    # Sorted longest-first so "LADY MACBETH" matches before "MACBETH"
-    sorted_entities = sorted(entity_lookup.keys(), key=len, reverse=True)
-
     VERB_MAP = {
-        # Killing — split into high-confidence and ambiguous
-        "kill":      "KILLS",   "slay":      "KILLS",
-        "murder":    "KILLS",   "slaughter": "KILLS",
-        "stab":      "KILLS",   "poison":    "KILLS",
-        "hang":      "KILLS",   "execute":   "KILLS",
-        # Ambiguous — only kept for dependency parsing (not co-occurrence)
-        "smite":     "KILLS",   "strike":    "KILLS",
-        "die":       "KILLS",   "fall":      "KILLS",
-        # Love / marriage
-        "love":      "LOVES",   "adore":     "LOVES",
-        "fancy":     "LOVES",   "woo":       "LOVES",
-        "marry":     "MARRIED_TO", "wed":    "MARRIED_TO",
-        "betroth":   "MARRIED_TO",
-        # Loyalty / service
-        "serve":     "SERVES",  "follow":    "FOLLOWS",
-        "obey":      "OBEYS",   "attend":    "SERVES",
-        "swear":     "LOYAL_TO","pledge":    "LOYAL_TO",
-        # Betrayal / deception
-        "betray":    "BETRAYS", "deceive":   "DECEIVES",
-        "trick":     "DECEIVES","lie":       "DECEIVES",
-        "conspire":  "CONSPIRES_WITH",
-        # Power
-        "rule":      "RULES",   "command":   "COMMANDS",
-        "govern":    "RULES",   "crown":     "RULES",
-        "banish":    "BANISHES","exile":     "BANISHES",
-        # Conflict
-        "fight":     "FIGHTS",  "oppose":    "FIGHTS",
-        "challenge": "FIGHTS",  "defeat":    "DEFEATS",
+        "serve":     "SERVES",   "follow":    "FOLLOWS",
+        "obey":      "OBEYS",    "attend":    "SERVES",
+        "swear":     "LOYAL_TO", "pledge":    "LOYAL_TO",
+        "betray":    "BETRAYS",  "deceive":   "DECEIVES",
+        "trick":     "DECEIVES", "conspire":  "CONSPIRES_WITH",
+        "command":   "COMMANDS", "banish":    "BANISHES",
+        "fight":     "FIGHTS",   "oppose":    "FIGHTS",
+        "challenge": "FIGHTS",   "defeat":    "DEFEATS",
         "flee":      "FLEES_FROM",
-        # Family
-        "bear":      "PARENT_OF", "beget":   "PARENT_OF",
-        # Social
-        "know":      "KNOWS",   "meet":      "MEETS",
-        "trust":     "TRUSTS",  "fear":      "FEARS",
-        "hate":      "HATES",   "help":      "HELPS",
-        "seek":      "SEEKS",   "warn":      "WARNS",
-        "curse":     "CURSES",  "send":      "SENDS",
-        "call":      "CALLS",   "speak":     "SPEAKS_TO",
-        "tell":      "SPEAKS_TO","bid":      "COMMANDS",
-        "greet":     "MEETS",   "thank":     "SPEAKS_TO",
-        "accuse":    "ACCUSES", "forgive":   "FORGIVES",
-        "protect":   "PROTECTS","rescue":    "PROTECTS",
-        "visit":     "MEETS",   "embrace":   "LOVES",
-        "suspect":   "SUSPECTS","question":  "SPEAKS_TO",
+        "know":      "KNOWS",    "meet":      "MEETS",
+        "trust":     "TRUSTS",   "fear":      "FEARS",
+        "hate":      "HATES",    "help":      "HELPS",
+        "seek":      "SEEKS",    "warn":      "WARNS",
+        "curse":     "CURSES",   "send":      "SENDS",
+        "accuse":    "ACCUSES",  "suspect":   "SUSPECTS",
+        "protect":   "PROTECTS", "forgive":   "FORGIVES",
+        "greet":     "MEETS",    "visit":     "MEETS",
     }
 
-    # Also build a raw keyword list for co-occurrence
-    # Maps any word form → relationship type
-    # NOTE: ambiguous verbs (fall, die, strike, smite) are intentionally
-    # excluded here — they cause too many false positives in co-occurrence
-    COOCCURRENCE_BLACKLIST = {"fall", "die", "strike", "smite"}
-    KEYWORD_MAP = {}
-    for verb, rel in VERB_MAP.items():
-        if verb not in COOCCURRENCE_BLACKLIST:
-            KEYWORD_MAP[verb] = rel
-    # Add archaic/inflected forms not caught by lemmatiser
-    KEYWORD_MAP.update({
-        "slain":     "KILLS",   "slew":       "KILLS",
-        "killed":    "KILLS",   "murdered":   "KILLS",
-        "stabbed":   "KILLS",   "loves":      "LOVES",
-        "loved":     "LOVES",   "married":    "MARRIED_TO",
-        "serves":    "SERVES",  "served":     "SERVES",
-        "betrayed":  "BETRAYS", "betrays":    "BETRAYS",
-        "deceived":  "DECEIVES","rules":      "RULES",
-        "ruled":     "RULES",   "fights":     "FIGHTS",
-        "fought":    "FIGHTS",  "fears":      "FEARS",
-        "feared":    "FEARS",   "hates":      "HATES",
-        "hated":     "HATES",   "trusts":     "TRUSTS",
-        "trusted":   "TRUSTS",  "banished":   "BANISHES",
-        "fled":      "FLEES_FROM","knows":    "KNOWS",
-        "knew":      "KNOWS",   "met":        "MEETS",
-        "sent":      "SENDS",   "warned":     "WARNS",
-        "cursed":    "CURSES",  "accused":    "ACCUSES",
-        "suspects":  "SUSPECTS","protected":  "PROTECTS",
-        "crowned":   "RULES",   "woos":       "LOVES",
-        "wooed":     "LOVES",   "conspired":  "CONSPIRES_WITH",
-        "slaughtered": "KILLS", "poisoned":   "KILLS",
-    })
-
-    seen    = set()
-    triples = []
-
-    # Rules: certain relationship types only make sense between specific label pairs
     RELATIONSHIP_CONSTRAINTS = {
-        "KILLS":        ("PERSON", "PERSON"),
-        "LOVES":        ("PERSON", "PERSON"),
-        "MARRIED_TO":   ("PERSON", "PERSON"),
-        "BETRAYS":      ("PERSON", "PERSON"),
-        "SERVES":       ("PERSON", "PERSON"),
-        "FOLLOWS":      ("PERSON", "PERSON"),
-        "OBEYS":        ("PERSON", "PERSON"),
-        "LOYAL_TO":     ("PERSON", "PERSON"),
-        "FEARS":        ("PERSON", "PERSON"),
-        "HATES":        ("PERSON", "PERSON"),
-        "TRUSTS":       ("PERSON", "PERSON"),
-        "FIGHTS":       ("PERSON", "PERSON"),
-        "DEFEATS":      ("PERSON", "PERSON"),
-        "CONSPIRES_WITH":("PERSON","PERSON"),
-        "DECEIVES":     ("PERSON", "PERSON"),
-        "ACCUSES":      ("PERSON", "PERSON"),
-        "SUSPECTS":     ("PERSON", "PERSON"),
-        "COMMANDS":     ("PERSON", "PERSON"),
-        "HELPS":        ("PERSON", "PERSON"),
-        "WARNS":        ("PERSON", "PERSON"),
-        "PROTECTS":     ("PERSON", "PERSON"),
-        "MEETS":        ("PERSON", "PERSON"),
-        "KNOWS":        ("PERSON", "PERSON"),
-        "SENDS":        ("PERSON", "PERSON"),
-        "CALLS":        ("PERSON", "PERSON"),
-        "SPEAKS_TO":    ("PERSON", "PERSON"),
-        "FORGIVES":     ("PERSON", "PERSON"),
-        "CURSES":       ("PERSON", "PERSON"),
-        "PARENT_OF":    ("PERSON", "PERSON"),
-        "RULES":        ("PERSON", "GPE"),
-        "BANISHES":     ("PERSON", "PERSON"),
-        "FLEES_FROM":   ("PERSON", "PERSON"),
-        "SEEKS":        ("PERSON", "PERSON"),
+        rel: ("PERSON", "PERSON") for rel in VERB_MAP.values()
     }
+
+    triples = []
+    seen    = set()
 
     def add_triple(subj_match, rel_type, obj_match):
         if not subj_match or not obj_match:
             return
         if subj_match[0] == obj_match[0]:
             return
-        # Enforce label constraints — e.g. KILLS must be PERSON → PERSON
         constraint = RELATIONSHIP_CONSTRAINTS.get(rel_type)
         if constraint:
             if subj_match[1] != constraint[0] or obj_match[1] != constraint[1]:
@@ -354,11 +313,8 @@ def extract_relationships(scenes: list, entity_groups: dict, nlp) -> list:
         key = (subj_match[0], rel_type, obj_match[0])
         if key not in seen:
             seen.add(key)
-            triples.append((
-                subj_match[0], subj_match[1],
-                rel_type,
-                obj_match[0],  obj_match[1],
-            ))
+            triples.append((subj_match[0], subj_match[1],
+                            rel_type, obj_match[0], obj_match[1]))
 
     def resolve_entity(token):
         chunk = " ".join(
@@ -375,11 +331,10 @@ def extract_relationships(scenes: list, entity_groups: dict, nlp) -> list:
                 return match
         return None
 
-    # ── Split scenes into individual utterances ──────────────────
     SPEAKER_RE = re.compile(r'([A-Z][A-Z\s]{2,})\.\s+')
 
     def get_utterances(scene_text):
-        parts      = SPEAKER_RE.split(scene_text)
+        parts = SPEAKER_RE.split(scene_text)
         utterances = []
         i = 1
         while i < len(parts) - 1:
@@ -391,12 +346,8 @@ def extract_relationships(scenes: list, entity_groups: dict, nlp) -> list:
         return utterances
 
     for scene_text in scenes:
-        utterances = get_utterances(scene_text)
-
-        for speaker, utt_text in utterances:
+        for speaker, utt_text in get_utterances(scene_text):
             doc = nlp(utt_text)
-
-            # ── METHOD 1: Dependency parsing ─────────────────────
             for sent in doc.sents:
                 sent_entities = []
                 for ent in sent.ents:
@@ -430,71 +381,83 @@ def extract_relationships(scenes: list, entity_groups: dict, nlp) -> list:
 
                     add_triple(subj_match, rel_type, obj_match)
 
-            # ── METHOD 2: Co-occurrence window ───────────────────
-            # Find all entity mentions in this utterance (in order)
-            utt_lower = utt_text.lower()
-            found_entities = []
-            for ent_name in sorted_entities:
-                start = 0
-                while True:
-                    idx = utt_lower.find(ent_name, start)
-                    if idx == -1:
-                        break
-                    found_entities.append((idx, entity_lookup[ent_name]))
-                    start = idx + len(ent_name)
-
-            # Sort by position in text
-            found_entities.sort(key=lambda x: x[0])
-
-            # Also add the speaker as the first entity if known
-            speaker_match = entity_lookup.get(speaker.lower())
-            if speaker_match:
-                found_entities.insert(0, (-1, speaker_match))
-
-            # For each pair of entities within 150 chars of each other,
-            # check if a keyword verb appears between them
-            for i in range(len(found_entities)):
-                for j in range(i + 1, len(found_entities)):
-                    pos_a, ent_a = found_entities[i]
-                    pos_b, ent_b = found_entities[j]
-
-                    # Only look within a 60-character window
-                    if pos_a >= 0 and pos_b - pos_a > 60:
-                        break
-
-                    # Get the text between the two entities
-                    if pos_a < 0:
-                        between = utt_lower[:pos_b]
-                    else:
-                        between = utt_lower[pos_a:pos_b]
-
-                    # Check if any keyword appears in the between-text
-                    for keyword, rel_type in KEYWORD_MAP.items():
-                        if keyword in between.split():
-                            add_triple(ent_a, rel_type, ent_b)
-                            break   # one relationship per pair per utterance
-
-    print(f"    Extracted {len(triples)} relationships "
-          f"({len([t for t in triples if t[2] in ['KILLS','LOVES','MARRIED_TO']])} "
-          f"high-confidence)")
+    print(f"    Dependency parsing: {len(triples)} relationships extracted")
     return triples
+
+
+# ─────────────────────────────────────────────
+# SAVE RELATIONSHIPS CSV
+# ─────────────────────────────────────────────
+
+REL_FIELDS = [
+    "play", "from_node", "from_label",
+    "rel_type", "to_node", "to_label", "extraction_source"
+]
+
+def save_relationships_csv(records: list, path: Path):
+    """Save relationship records to CSV for debugging."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    rows = []
+    for r in records:
+        rows.append({
+            "play":              r.get("play", ""),
+            "from_node":         r.get("source", ""),
+            "from_label":        r.get("source_label", ""),
+            "rel_type":          r.get("rel_type", ""),
+            "to_node":           r.get("target", ""),
+            "to_label":          r.get("target_label", ""),
+            "extraction_source": r.get("extraction_source", ""),
+        })
+    with open(path, "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=REL_FIELDS)
+        writer.writeheader()
+        writer.writerows(rows)
+    print(f"  → Saved {len(rows):,} relationships : {path.name}")
+
+# ─────────────────────────────────────────────
+# LOAD CAST RELATIONSHIPS CSV
+# ─────────────────────────────────────────────
+
+def load_cast_relationships(path: Path) -> list:
+    """
+    Load 01_ALL_cast_relationships.csv.
+    Returns list of dicts: {play, source, rel_type, target, description}
+    """
+    if not path.exists():
+        print(f"  WARNING: Cast relationships CSV not found: {path}")
+        return []
+    with open(path, "r", encoding="utf-8") as f:
+        return list(csv.DictReader(f))
 
 # ─────────────────────────────────────────────
 # 5. PER-PLAY POPULATION
 # ─────────────────────────────────────────────
 
-def populate_play(mg, play_file: Path, rules: dict, nlp):
+def populate_play(mg, play_file: Path, rules: dict, nlp,
+                  cast_relationships: list):
     """
-    For one play:
-      1. Create a PLAY node
-      2. Create all entity nodes from the fine-tuned CSV
-      3. Link all PERSON nodes to the PLAY via APPEARS_IN
-      4. Auto-extract relationships via dependency parsing
+    Build the knowledge graph for one play using three relationship sources
+    in priority order:
+
+    Source 1 — Cast relationships CSV (01_ALL_cast_relationships.csv)
+      Automatically extracted from the cast list descriptions.
+      e.g. FLEANCE -[SON_TO]-> Banquo
+      Most accurate — comes directly from Shakespeare's own cast list.
+
+    Source 2 — play_configs.py relationships
+      Hand-curated edges covering kills, marriages, loyalty, titles etc.
+      e.g. MACBETH -[KILLS]-> DUNCAN
+      High accuracy — manually verified against the play.
+
+    Source 3 — Auto-extracted from dialogue text
+      Dependency parsing + co-occurrence window on scene text.
+      Broadest coverage but noisiest — used as a fallback to catch
+      relationships not covered by sources 1 and 2.
     """
     node_labels = set(rules["nodes"].keys())
 
     # Load entities from fine-tuned CSV
-    csv_path      = OUTPUT_DIR / f"02_{play_file.stem}_finetuned_ner.csv"
+    csv_path      = Globals.OUTPUT_DIR / f"02_{play_file.stem}_finetuned_ner.csv"
     entity_groups = load_entities_csv(csv_path)
 
     # Get play title
@@ -507,38 +470,127 @@ def populate_play(mg, play_file: Path, rules: dict, nlp):
 
     print(f"\n  Play: {play_title}")
 
-    # Create PLAY node
+    # ── Create PLAY node ──────────────────────────────────────────
     create_play_node(mg, play_title)
 
-    # Create entity nodes
+    # ── Create entity nodes from fine-tuned CSV ───────────────────
     node_count = 0
     for label in node_labels:
         for name in sorted(entity_groups.get(label, set())):
             create_node(mg, label, name)
             node_count += 1
-    print(f"  Nodes created/merged : {node_count}")
+    print(f"  Nodes created        : {node_count}")
 
-    # Link PERSON nodes → PLAY
+    # ── Link PERSON nodes → PLAY via APPEARS_IN ───────────────────
     all_persons = entity_groups.get("PERSON", set())
     for person in sorted(all_persons):
         link_character_to_play(mg, person, play_title)
     print(f"  APPEARS_IN edges     : {len(all_persons)}")
 
-    # Auto-extract and insert relationships
-    scenes        = load_play_scenes(play_file)
-    relationships = extract_relationships(scenes, entity_groups, nlp)
+    rel_count = 0
+    all_rel_records = []  # collect all relationships for CSV export
 
-    for (fn, fl, rel, tn, tl) in relationships:
+    # ── SOURCE 1: Cast relationships CSV ─────────────────────────
+    play_cast_rels = [
+        r for r in cast_relationships
+        if r["play"].strip().upper() == play_title.upper()
+    ]
+    print(f"\n  Source 1 — Cast list relationships:")
+    for r in play_cast_rels:
+        source   = r["source"].strip().upper()
+        target   = r["target"].strip()
+        rel_type = r["rel_type"].strip()
+
+        target_upper = target.upper()
+        target_label = "PERSON" if target_upper in {
+            n.upper() for n in entity_groups.get("PERSON", set())
+        } else "GPE"
+
+        create_node(mg, "PERSON", source)
+        create_node(mg, target_label, target)
+        create_relationship(mg, source, "PERSON", rel_type, target, target_label)
+        rel_count += 1
+        all_rel_records.append({
+            "play":              play_title,
+            "source":            source,
+            "source_label":      "PERSON",
+            "rel_type":          rel_type,
+            "target":            target,
+            "target_label":      target_label,
+            "extraction_source": "cast_list",
+        })
+        print(f"    {source:20s} -[{rel_type}]-> {target}")
+
+    print(f"  Cast relationships   : {len(play_cast_rels)}")
+
+    # ── SOURCE 2: play_configs.py hand-curated relationships ──────
+    config = PLAY_CONFIGS.get(play_file.name, {})
+    config_rels = config.get("relationships", [])
+    print(f"\n  Source 2 — play_configs relationships:")
+    for (fn, fl, rel, tn, tl) in config_rels:
         create_node(mg, fl, fn)
         create_node(mg, tl, tn)
         create_relationship(mg, fn, fl, rel, tn, tl)
-    print(f"  Auto-extracted rels  : {len(relationships)}")
+        rel_count += 1
+        all_rel_records.append({
+            "play":              play_title,
+            "source":            fn,
+            "source_label":      fl,
+            "rel_type":          rel,
+            "target":            tn,
+            "target_label":      tl,
+            "extraction_source": "play_configs",
+        })
+        print(f"    {fn:20s} -[{rel}]-> {tn}")
+    print(f"  Config relationships : {len(config_rels)}")
 
-    return node_count, len(relationships)
+    # ── SOURCE 3: Dependency parsing + fine-tuned REL entities ──────
+    print(f"\n  Source 3 — Dependency parsing + fine-tuned REL entities:")
+    root         = DataExtractor.load_play(play_file)[0]
+    scene_tuples = DataExtractor.extract_scenes(root)
+    scenes       = [text for _, _, _, text in scene_tuples]
+    auto_rels    = extract_relationships(scenes, entity_groups, nlp)
+    rel_rels     = extract_from_finetuned_rels(play_file, entity_groups)
+
+    # Combine both, deduplicate
+    seen_auto = set()
+    combined  = []
+    for triple in auto_rels + rel_rels:
+        key = (triple[0], triple[2], triple[3])
+        if key not in seen_auto:
+            seen_auto.add(key)
+            combined.append(triple)
+
+    auto_inserted = 0
+    for (fn, fl, rel, tn, tl) in combined:
+        create_node(mg, fl, fn)
+        create_node(mg, tl, tn)
+        create_relationship(mg, fn, fl, rel, tn, tl)
+        rel_count += 1
+        auto_inserted += 1
+        all_rel_records.append({
+            "play":              play_title,
+            "source":            fn,
+            "source_label":      fl,
+            "rel_type":          rel,
+            "target":            tn,
+            "target_label":      tl,
+            "extraction_source": "auto_extracted",
+        })
+    print(f"  Auto-extracted rels  : {auto_inserted} inserted")
+
+    # ── Save per-play relationships CSV ───────────────────────────
+    save_relationships_csv(
+        all_rel_records,
+        Globals.OUTPUT_DIR / f"04_{play_file.stem}_relationships.csv"
+    )
+
+    print(f"\n  Total relationships  : {rel_count}")
+    return node_count, rel_count, all_rel_records
 
 
 # ─────────────────────────────────────────────
-# 5. MEMGRAPH CONNECTION
+# 6. MEMGRAPH CONNECTION
 # ─────────────────────────────────────────────
 
 def connect_memgraph():
@@ -553,6 +605,46 @@ def connect_memgraph():
         print(f"Could not connect to Memgraph ({e})")
         print("Running in DRY-RUN mode.\n")
         return None
+
 # ─────────────────────────────────────────────
-# MAIN — loops over all Shakespeare plays
+# RUN  (called from Project2Runner)
 # ─────────────────────────────────────────────
+
+def run(mg, play_files: list, rules: dict, nlp):
+    """
+    Full knowledge graph population pipeline.
+
+    Loads cast relationships CSV once, then processes each play using
+    all three relationship sources in priority order.
+    """
+    cast_rel_path      = Globals.OUTPUT_DIR / "01_ALL_cast_relationships.csv"
+    cast_relationships = load_cast_relationships(cast_rel_path)
+    print(f"  Loaded {len(cast_relationships)} cast relationships from CSV")
+
+    total_nodes    = 0
+    total_rels     = 0
+    all_records    = []
+
+    for play_file in play_files:
+        print(f"\n{'='*60}")
+        print(f"  Processing: {play_file.name}")
+        print(f"{'='*60}")
+
+        nodes, rels, records = populate_play(
+            mg, play_file, rules, nlp, cast_relationships
+        )
+        total_nodes += nodes
+        total_rels  += rels
+        all_records.extend(records)
+
+    # Save combined CSV across all plays
+    save_relationships_csv(
+        all_records,
+        Globals.OUTPUT_DIR / "04_ALL_relationships.csv"
+    )
+
+    print(f"\n{'='*60}")
+    print(f"  COMPLETE")
+    print(f"  Total nodes : {total_nodes}")
+    print(f"  Total rels  : {total_rels}")
+    print(f"\n  Open Memgraph Lab at http://localhost:3000")
