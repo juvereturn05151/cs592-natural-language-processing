@@ -24,7 +24,6 @@ def _relabel_rename(label, text):
 
 
 CORRECTIONS = {
-
     # MACBETH
     "MACBETH": {
         ("AROINT",       "GPE"):      _remove(),

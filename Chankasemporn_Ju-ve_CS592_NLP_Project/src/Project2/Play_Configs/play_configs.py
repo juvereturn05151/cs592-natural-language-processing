@@ -2,21 +2,10 @@
 File Name:    play_configs.py
 Author(s):    Ju-ve Chankasemporn
 Copyright:    (c) 2025 DigiPen Institute of Technology. All rights reserved.
-
-Per-play configuration for NER fine-tuning and knowledge graph construction.
-Each entry defines:
-  - known_gpes      : real geographic places → GPE label
-  - known_locations : fictional/descriptive places → LOCATION label
-  - known_titles    : ranks and titles → TITLE label
-  - male_characters : for he/him pronoun resolution
-  - female_characters: for she/her pronoun resolution
-  - relationships   : hand-coded edges for the knowledge graph
-                      format: (from_name, from_label, rel_type, to_name, to_label)
 """
 
 PLAY_CONFIGS = {
 
-    # ──────────────────────────────────────────────────────────────
     "Shakespeare_Macbeth.txt": {
         "known_gpes": {
             "Scotland", "England", "Forres", "Inverness", "Fife",
@@ -78,7 +67,6 @@ PLAY_CONFIGS = {
         ]
     },
 
-    # ──────────────────────────────────────────────────────────────
     "Shakespeare_Romeo_and_Juliet.txt": {
         "known_gpes": {
             "Verona", "Mantua", "Italy", "Rome"
@@ -125,7 +113,6 @@ PLAY_CONFIGS = {
         ]
     },
 
-    # ──────────────────────────────────────────────────────────────
     "Shakespeare_Midsummer_Nights_Dream.txt": {
         "known_gpes": {
             "Athens", "Greece"
@@ -168,7 +155,6 @@ PLAY_CONFIGS = {
         ]
     },
 
-    # ──────────────────────────────────────────────────────────────
     "Shakespeare_Much_Ado_About_Nothing.txt": {
         "known_gpes": {
             "Messina", "Arragon", "Florence", "Padua", "Italy"

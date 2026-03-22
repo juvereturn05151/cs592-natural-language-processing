@@ -25,16 +25,27 @@ PERSON_LABELS = {"PERSON"}
 # Labels where we apply lemmatization (places, organisations)
 LEMMA_LABELS = {"GPE", "ORG", "LOC", "NORP"}
 
+#save into a csv
+ENTITY_FIELDS = [
+    "play", "act", "scene", "location",
+    "entity_text", "spacy_label", "label_description",
+    "start_char", "end_char"
+]
+
+REL_FIELDS = [
+    "play", "source", "rel_type", "target", "description"
+]
+
+stage_directions = {
+    "alarum", "alarums", "exeunt", "exit", "enter",
+    "flourish", "hautboys", "sennet", "aside", "within"
+}
+
 def is_noise_entity(text: str, label: str) -> bool:
     # Filter archaic inflected verb forms
     if ARCHAIC_SUFFIX_RE.search(text):
         return True
 
-    # Filter stage directions commonly misidentified as PERSON
-    stage_directions = {
-        "alarum", "alarums", "exeunt", "exit", "enter",
-        "flourish", "hautboys", "sennet", "aside", "within"
-    }
     if text.lower().strip() in stage_directions:
         return True
 
@@ -102,7 +113,7 @@ def run_default_ner(scenes: list, nlp, play_title: str) -> tuple:
     return all_entities, entity_summary
 
 
-# label analysis
+#label analysis
 #print label summary, flag mislabeled and missing characters.
 #returns list of (entity_text, wrong_label, correct_label).
 def analyse_labels(entity_summary: dict, official_characters: list, play_title: str) -> list:
@@ -139,18 +150,6 @@ def analyse_labels(entity_summary: dict, official_characters: list, play_title: 
         print("    (none)")
 
     return mislabeled
-
-
-#save into a csv
-ENTITY_FIELDS = [
-    "play", "act", "scene", "location",
-    "entity_text", "spacy_label", "label_description",
-    "start_char", "end_char"
-]
-
-REL_FIELDS = [
-    "play", "source", "rel_type", "target", "description"
-]
 
 def save_csv(records: list, path: Path):
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -196,7 +195,6 @@ def run(nlp, play_files):
         save_csv(records, Globals.OUTPUT_DIR / f"01_{play_file.stem}_default_ner.csv")
         all_records.extend(records)
 
-        # Extract relationships from cast list descriptions
         print(f"\n  Cast relationships found:")
         cast_rels = DataExtractor.extract_cast_relationships(characters, title)
         if not cast_rels:

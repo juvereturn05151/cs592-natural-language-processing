@@ -21,6 +21,12 @@ ALL_PRONOUNS     = MALE_PRONOUNS | FEMALE_PRONOUNS | NEUTRAL_PRONOUNS
 
 SPEAKER_RE = re.compile(r'([A-Z][A-Z\s]+)\.\s+')
 
+COREF_FIELDS = [
+    "play", "act", "scene", "speaker",
+    "original_sentence", "pronoun", "resolved_to",
+    "resolved_sentence", "gender_group", "window_size_used"
+]
+
 #split scene text into list of {speaker, text} dicts.
 def split_into_utterances(scene_text: str) -> list:
     parts      = SPEAKER_RE.split(scene_text)
@@ -143,11 +149,6 @@ class CoreferenceResolver:
 
         return records
 
-COREF_FIELDS = [
-    "play", "act", "scene", "speaker",
-    "original_sentence", "pronoun", "resolved_to",
-    "resolved_sentence", "gender_group", "window_size_used"
-]
 
 def save_csv(records: list, path: Path):
     path.parent.mkdir(parents=True, exist_ok=True)

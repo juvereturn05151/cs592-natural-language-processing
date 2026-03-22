@@ -4,7 +4,6 @@ Author(s):    Ju-ve Chankasemporn
 Copyright:    (c) 2025 DigiPen Institute of Technology. All rights reserved.
 """
 
-
 import json
 import csv
 import re
@@ -14,6 +13,26 @@ from collections import defaultdict
 import src.Project2.Project2Globals as Globals
 import src.Project2.Data_Extraction.data_extractor as DataExtractor
 from src.Project2.Play_Configs.play_configs import PLAY_CONFIGS
+
+KNOWN_FAMILIES = {"Montague", "Capulet", "Macbeth"}
+REL_FIELDS = [
+    "play", "from_node", "from_label",
+    "rel_type", "to_node", "to_label", "extraction_source"
+]
+
+verb_map = {
+    "serve": "SERVES", "follow": "FOLLOWS", "obey": "OBEYS",
+    "attend": "SERVES", "swear": "LOYAL_TO", "pledge": "LOYAL_TO",
+    "betray": "BETRAYS", "deceive": "DECEIVES", "trick": "DECEIVES",
+    "conspire": "CONSPIRES_WITH", "command": "COMMANDS", "banish": "BANISHES",
+    "fight": "FIGHTS", "oppose": "FIGHTS", "challenge": "FIGHTS",
+    "defeat": "DEFEATS", "flee": "FLEES_FROM", "know": "KNOWS",
+    "meet": "MEETS", "trust": "TRUSTS", "fear": "FEARS", "hate": "HATES",
+    "help": "HELPS", "seek": "SEEKS", "warn": "WARNS", "curse": "CURSES",
+    "send": "SENDS", "accuse": "ACCUSES", "suspect": "SUSPECTS",
+    "protect": "PROTECTS", "forgive": "FORGIVES", "greet": "MEETS",
+    "visit": "MEETS",
+}
 
 try:
     from gqlalchemy import Memgraph
@@ -26,11 +45,6 @@ except ImportError:
 MEMGRAPH_HOST = "127.0.0.1"
 MEMGRAPH_PORT = 7687
 
-KNOWN_FAMILIES = {"Montague", "Capulet", "Macbeth"}
-REL_FIELDS = [
-    "play", "from_node", "from_label",
-    "rel_type", "to_node", "to_label", "extraction_source"
-]
 
 
 def execute(mg, query: str, params):
@@ -231,19 +245,6 @@ def extract_relationships(scenes: list, entity_groups: dict, nlp) -> list:
         for name in names
     }
 
-    verb_map = {
-        "serve": "SERVES", "follow": "FOLLOWS", "obey": "OBEYS",
-        "attend": "SERVES", "swear": "LOYAL_TO", "pledge": "LOYAL_TO",
-        "betray": "BETRAYS", "deceive": "DECEIVES", "trick": "DECEIVES",
-        "conspire": "CONSPIRES_WITH", "command": "COMMANDS", "banish": "BANISHES",
-        "fight": "FIGHTS", "oppose": "FIGHTS", "challenge": "FIGHTS",
-        "defeat": "DEFEATS", "flee": "FLEES_FROM", "know": "KNOWS",
-        "meet": "MEETS", "trust": "TRUSTS", "fear": "FEARS", "hate": "HATES",
-        "help": "HELPS", "seek": "SEEKS", "warn": "WARNS", "curse": "CURSES",
-        "send": "SENDS", "accuse": "ACCUSES", "suspect": "SUSPECTS",
-        "protect": "PROTECTS", "forgive": "FORGIVES", "greet": "MEETS",
-        "visit": "MEETS",
-    }
 
     triples, seen = [], set()
     speaker_re = re.compile(r"([A-Z][A-Z\s]{2,})\.\s+")
