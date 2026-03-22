@@ -22,4 +22,4 @@ REPO_ROOT, _ = find_repo_root()
 DATA_DIR = REPO_ROOT / "data"
 TRAIN_DIR = DATA_DIR / "train"
 OUTPUT_DIR = DATA_DIR / "output"
-
+MODEL_OUT = REPO_ROOT / "models" / "shakespeare_ner"

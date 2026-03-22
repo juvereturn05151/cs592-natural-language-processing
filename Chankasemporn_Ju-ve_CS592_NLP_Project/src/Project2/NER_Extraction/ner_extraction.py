@@ -1,8 +1,7 @@
 """
-CS 374 – Assignment 2
-Notebook 1: Default NER Extraction using spaCy en_core_web_md
-Runs Named-Entity Recognition on Shakespeare's Macbeth using the
-default spaCy medium model and outputs a CSV of all found entities.
+File Name:    ner_extraction.py
+Author(s):    Ju-ve Chankasemporn
+Copyright:    (c) 2025 DigiPen Institute of Technology. All rights reserved.
 """
 
 import spacy

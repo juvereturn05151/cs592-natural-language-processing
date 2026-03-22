@@ -7,21 +7,20 @@ Copyright:    (c) 2025 DigiPen Institute of Technology. All rights reserved.
 import spacy
 from pathlib import Path
 
-import Project2Globals as Globals
+import src.Project2.Project2Globals as Globals
 import src.Project2.NER_Extraction.ner_extraction as NER_Extraction
+import src.Project2.Fine_Tuning.fine_tuning as FineTuning
 
 class Project2Runner:
-    def __init__(self, n_iter: int = 40):
-        self.n_iter = n_iter #n_iter = iterations for fine-tuning
-
+    def __init__(self):
         print("Find all Shakespeare play files")
         self.play_files = self._find_plays(Globals.TRAIN_DIR)
         print("Loading spaCy model: en_core_web_md")
         self.nlp = spacy.load("en_core_web_md")
 
-        self.nlp_ft = None  #fine-tuned model (set after step 2)
+        self.nlp_ft      = None   # fine-tuned model (set after step 2)
+        self.cast_rels   = []     # cast relationships (set after step 1)
 
-    # Local
     def _find_plays(self, train_dir: Path) -> list:
         files = sorted([
             p for p in train_dir.rglob("*.txt")
@@ -39,18 +38,40 @@ class Project2Runner:
         print(f"  STEP {step}: {title}")
         print(f"{'═' * 60}")
 
-    #step 1 NER Extraction
+    # ── STEP 1: NER Extraction ────────────────────────────────────
     def run_ner_extraction(self):
         self._print_header(1, "NER EXTRACTION")
 
-        all_records = []
-        all_mislabel = []
-        all_cast_rels = []
+        all_records, all_mislabel, all_cast_rels = NER_Extraction.run(
+            nlp=self.nlp,
+            play_files=self.play_files
+        )
 
-        all_records, all_mislabel,all_cast_rels = NER_Extraction.run(nlp=self.nlp, play_files=self.play_files)
+        # Store cast_rels on self so Step 2 can use them
+        self.cast_rels = all_cast_rels
 
         print(f"\n{'═' * 60}")
         print(f"  COMPLETE")
         print(f"  Total entity records : {len(all_records):,}")
         print(f"  Total mislabelings   : {len(all_mislabel)}")
-        print(f"  Total cast_rels   : {len(all_cast_rels)}")
+        print(f"  Total cast relations : {len(all_cast_rels)}")
+
+    # ── STEP 2: Fine-Tuning ───────────────────────────────────────
+    def run_fine_tuning(self, n_iter: int = 40):
+        self._print_header(2, "FINE-TUNING")
+
+        if not self.cast_rels:
+            print("  WARNING: No cast relationships found.")
+            print("  Run run_ner_extraction() first, or cast list had no parseable descriptions.")
+
+        self.nlp_ft, all_ft_records = FineTuning.run(
+            nlp_base          = self.nlp,
+            play_files        = self.play_files,
+            cast_relationships = self.cast_rels,
+            n_iter            = n_iter
+        )
+
+        print(f"\n{'═' * 60}")
+        print(f"  COMPLETE")
+        print(f"  Fine-tuned entity records : {len(all_ft_records):,}")
+        print(f"  Model saved to            : {Globals.MODEL_OUT}")
