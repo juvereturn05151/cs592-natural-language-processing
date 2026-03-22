@@ -8,13 +8,11 @@ Goes beyond the 1-sentence-back model:
   - Outputs a CSV showing every pronoun and its resolved antecedent
 """
 
-import spacy
 import xml.etree.ElementTree as ET
 import re
 import csv
 from pathlib import Path
-from src.Project2.NER_Extraction.data_extractor import find_repo_root
-from src.Project2.Play_Configs.play_configs import PLAY_CONFIGS
+from src.Project2.Data_Extraction.data_extractor import find_repo_root
 
 # ─────────────────────────────────────────────
 # CONFIG

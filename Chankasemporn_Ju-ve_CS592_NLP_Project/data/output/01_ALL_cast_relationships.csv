@@ -1,0 +1,48 @@
+play,source,rel_type,target,description
+MACBETH,DUNCAN,KING_OF,Scotland,King of Scotland
+MACBETH,MACDUFF,NOBLEMAN_OF,Scotland,Nobleman of Scotland
+MACBETH,LENNOX,NOBLEMAN_OF,Scotland,Nobleman of Scotland
+MACBETH,ROSS,NOBLEMAN_OF,Scotland,Nobleman of Scotland
+MACBETH,MENTEITH,NOBLEMAN_OF,Scotland,Nobleman of Scotland
+MACBETH,ANGUS,NOBLEMAN_OF,Scotland,Nobleman of Scotland
+MACBETH,CAITHNESS,NOBLEMAN_OF,Scotland,Nobleman of Scotland
+MACBETH,FLEANCE,SON_TO,Banquo,Son to Banquo
+MACBETH,SIWARD,EARL_OF,Northumberland,"Earl of Northumberland, General of the English Forces"
+MACBETH,SEYTON,AN_OFFICER_ATTENDING_ON,Macbeth,an Officer attending on Macbeth
+MACBETH,BOY,SON_TO,Macduff,Son to Macduff
+A MIDSUMMER NIGHT'S DREAM,THESEUS,DUKE_OF,Athens,Duke of Athens
+A MIDSUMMER NIGHT'S DREAM,HIPPOLYTA,QUEEN_OF,the Amazons,"Queen of the Amazons, bethrothed to Theseus"
+A MIDSUMMER NIGHT'S DREAM,EGEUS,FATHER_TO,Hermia,Father to Hermia
+A MIDSUMMER NIGHT'S DREAM,HERMIA,DAUGHTER_TO,Egeus,"daughter to Egeus, in love with Lysander"
+A MIDSUMMER NIGHT'S DREAM,HELENA,IN_LOVE_WITH,Demetrius,in love with Demetrius
+A MIDSUMMER NIGHT'S DREAM,LYSANDER,IN_LOVE_WITH,Hermia,in love with Hermia
+A MIDSUMMER NIGHT'S DREAM,DEMETRIUS,IN_LOVE_WITH,Hermia,in love with Hermia
+A MIDSUMMER NIGHT'S DREAM,PHILOSTRATE,MASTER_OF,the Revels to Theseus,Master of the Revels to Theseus
+A MIDSUMMER NIGHT'S DREAM,OBERON,KING_OF,the Fairies,King of the Fairies
+A MIDSUMMER NIGHT'S DREAM,TITANIA,QUEEN_OF,the Fairies,Queen of the Fairies
+MUCH ADO ABOUT NOTHING,DON PEDRO,PRINCE_OF,Arragon,Prince of Arragon
+MUCH ADO ABOUT NOTHING,CLAUDIO,A_YOUNG_LORD_OF,Florence,a young Lord of Florence
+MUCH ADO ABOUT NOTHING,BENEDICK,A_YOUNG_LORD_OF,Padua,a young Lord of Padua
+MUCH ADO ABOUT NOTHING,LEONATO,GOVERNOR_OF,Messina,Governor of Messina
+MUCH ADO ABOUT NOTHING,BALTHASAR,SERVANT_TO,Don Pedro,Servant to Don Pedro
+MUCH ADO ABOUT NOTHING,BORACHIO,FOLLOWER_OF,Don John,follower of Don John
+MUCH ADO ABOUT NOTHING,CONRADE,FOLLOWER_OF,Don John,follower of Don John
+MUCH ADO ABOUT NOTHING,HERO,DAUGHTER_TO,Leonato,Daughter to Leonato
+MUCH ADO ABOUT NOTHING,BEATRICE,NIECE_TO,Leonato,Niece to Leonato
+MUCH ADO ABOUT NOTHING,MARGARET,WAITING_GENTLEWOMAN_ATTENDING_ON,Hero,Waiting gentlewoman attending on Hero
+MUCH ADO ABOUT NOTHING,URSULA,WAITING_GENTLEWOMAN_ATTENDING_ON,Hero,Waiting gentlewoman attending on Hero
+THE TRAGEDY OF ROMEO AND JULIET,ESCALUS,PRINCE_OF,Verona,Prince of Verona
+THE TRAGEDY OF ROMEO AND JULIET,MERCUTIO,KINSMAN_TO,the Prince,"kinsman to the Prince, and friend to Romeo"
+THE TRAGEDY OF ROMEO AND JULIET,PARIS,"A_YOUNG_NOBLEMAN,_KINSMAN_TO",the Prince,"a young Nobleman, kinsman to the Prince"
+THE TRAGEDY OF ROMEO AND JULIET,MONTAGUE,HEAD_OF,a Veronese family at feud with the Capulets,head of a Veronese family at feud with the Capulets
+THE TRAGEDY OF ROMEO AND JULIET,LADY MONTAGUE,WIFE_TO,Montague,wife to Montague
+THE TRAGEDY OF ROMEO AND JULIET,ROMEO,SON_TO,Montague,son to Montague
+THE TRAGEDY OF ROMEO AND JULIET,BENVOLIO,NEPHEW_TO,Montague,"nephew to Montague, and friend to Romeo"
+THE TRAGEDY OF ROMEO AND JULIET,ABRAM,SERVANT_TO,Montague,servant to Montague
+THE TRAGEDY OF ROMEO AND JULIET,BALTHASAR,SERVANT_TO,Romeo,servant to Romeo
+THE TRAGEDY OF ROMEO AND JULIET,CAPULET,HEAD_OF,a Veronese family at feud with the Montagues,head of a Veronese family at feud with the Montagues
+THE TRAGEDY OF ROMEO AND JULIET,LADY CAPULET,WIFE_TO,Capulet,wife to Capulet
+THE TRAGEDY OF ROMEO AND JULIET,JULIET,DAUGHTER_TO,Capulet,daughter to Capulet
+THE TRAGEDY OF ROMEO AND JULIET,TYBALT,NEPHEW_TO,Lady Capulet,nephew to Lady Capulet
+THE TRAGEDY OF ROMEO AND JULIET,SAMPSON,SERVANT_TO,Capulet,servant to Capulet
+THE TRAGEDY OF ROMEO AND JULIET,GREGORY,SERVANT_TO,Capulet,servant to Capulet

@@ -14,8 +14,8 @@ import random
 import csv
 from collections import defaultdict
 from pathlib import Path
-from src.Project2.NER_Extraction.data_extractor import find_repo_root
-from src.Project2.Play_Configs.play_configs import PLAY_CONFIGS
+from src.Project2.Data_Extraction.data_extractor import find_repo_root
+
 # ─────────────────────────────────────────────
 # CONFIG
 # ─────────────────────────────────────────────
