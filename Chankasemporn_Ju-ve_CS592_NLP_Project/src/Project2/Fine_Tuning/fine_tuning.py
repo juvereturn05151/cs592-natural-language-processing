@@ -191,19 +191,22 @@ def fine_tune(nlp, all_examples: list, n_iter: int = 40):
     print(f"Fine-tuning on {len(all_examples):,} examples for {n_iter} iterations ...")
 
     with nlp.disable_pipes(*other_pipes):
-        # resume_training keeps existing weights — critical for preserving labels
         optimizer            = nlp.resume_training()
-        # Very low learning rate to minimise forgetting of original labels
-        optimizer.learn_rate = 0.0005
+        optimizer.learn_rate = 0.001  # start higher for faster initial learning
 
         for i in range(n_iter):
             random.shuffle(all_examples)
             losses  = {}
             batches = minibatch(all_examples, size=compounding(4.0, 32.0, 1.001))
             for batch in batches:
-                # drop=0.2 (lower than before) — preserves more existing knowledge
                 nlp.update(batch, drop=0.2, losses=losses)
-            if (i + 1) % 10 == 0:
+
+            # Decay learning rate every 20 iterations
+            # 0.001 → 0.0005 → 0.00025 — slows down as model converges
+            if (i + 1) % 20 == 0:
+                optimizer.learn_rate *= 0.5
+                print(f"  Iteration {i+1:3d}  NER loss: {losses.get('ner', 0):.4f}  lr → {optimizer.learn_rate:.6f}")
+            elif (i + 1) % 10 == 0:
                 print(f"  Iteration {i+1:3d}  NER loss: {losses.get('ner', 0):.4f}")
 
     return nlp
@@ -214,21 +217,37 @@ ENTITY_FIELDS = [
 ]
 
 #run fine-tuned model on scenes and save per-play CSV
-def extract_and_save(nlp_ft, scenes: list, play_title: str, stem: str) -> list:
+def extract_and_save(nlp_ft, scenes: list, play_title: str,
+                     stem: str, characters: list) -> list:
+    """
+    Run fine-tuned model on all scenes and save deduplicated entities.
+    Enforces a character whitelist for PERSON — if an entity labeled
+    PERSON is not in the official cast list, it is filtered out.
+    """
+    # Build whitelist of known character names (uppercase for comparison)
+    char_whitelist = {
+        (c["name"] if isinstance(c, dict) else c).upper()
+        for c in characters
+    }
+
     records        = []
     entity_summary = defaultdict(set)
-    seen           = set()  # deduplication: (entity_text, label) per play
+    seen           = set()
 
     for act_id, scene_id, location, text in scenes:
         doc = nlp_ft(text)
         for ent in doc.ents:
-            raw_text       = ent.text.strip()
-            # Uppercase to match normalisation done in default NER
-            normalised     = raw_text.upper()
-            dedup_key      = (normalised, ent.label_)
+            raw_text   = ent.text.strip()
+            normalised = raw_text.upper()
+            dedup_key  = (normalised, ent.label_)
 
             if dedup_key in seen:
                 continue
+
+            # Filter PERSON entities not in the official cast list
+            if ent.label_ == "PERSON" and normalised not in char_whitelist:
+                continue
+
             seen.add(dedup_key)
 
             records.append({
@@ -272,7 +291,7 @@ def balance_examples(all_examples: list) -> list:
     # Group examples by which labels they contain
     label_to_examples = defaultdict(list)
     for ex in all_examples:
-        labels_in_ex = {ent[2] for ent in ex.reference.ents}
+        labels_in_ex = {ent.label_ for ent in ex.reference.ents}
         for label in labels_in_ex:
             label_to_examples[label].append(ex)
 
@@ -363,7 +382,7 @@ def run(nlp_base, play_files: list, cast_relationships: list, n_iter: int = 40):
     print("\n=== Extracting entities with fine-tuned model ===")
     all_ft_records = []
     for play_file, title, characters, scenes in play_data:
-        records = extract_and_save(nlp_ft, scenes, title, play_file.stem)
+        records = extract_and_save(nlp_ft, scenes, title, play_file.stem, characters)
         all_ft_records.extend(records)
 
     # Save combined CSV
