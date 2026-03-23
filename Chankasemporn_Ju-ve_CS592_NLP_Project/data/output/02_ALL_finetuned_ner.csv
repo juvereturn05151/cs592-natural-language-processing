@@ -1,200 +1,341 @@
 play,act,scene,location,entity_text,label,label_description
-MACBETH,1,1,An open Place.,SECOND,TITLE,TITLE
-MACBETH,1,1,An open Place.,THE HEATH,LOCATION,LOCATION
-MACBETH,1,1,An open Place.,MACBETH,PERSON,"People, including fictional"
-MACBETH,1,1,An open Place.,HOVER,GPE,"Countries, cities, states"
-MACBETH,1,2,A Camp near Forres.,MALCOLM,PERSON,"People, including fictional"
-MACBETH,1,2,A Camp near Forres.,DONALBAIN,PERSON,"People, including fictional"
-MACBETH,1,2,A Camp near Forres.,LENNOX,PERSON,"People, including fictional"
-MACBETH,1,2,A Camp near Forres.,DUNCAN,PERSON,"People, including fictional"
-MACBETH,1,2,A Camp near Forres.,ISLES OF KERNS,TITLE,TITLE
-MACBETH,1,2,A Camp near Forres.,KING OF SCOTLAND,TITLE,TITLE
-MACBETH,1,2,A Camp near Forres.,BANQUO,PERSON,"People, including fictional"
-MACBETH,1,2,A Camp near Forres.,ROSS,PERSON,"People, including fictional"
-MACBETH,1,2,A Camp near Forres.,ANGUS,PERSON,"People, including fictional"
-MACBETH,1,2,A Camp near Forres.,THANE OF ROSS,TITLE,TITLE
+MACBETH,1,1,An open Place.,THREE,CARDINAL,Numerals that do not fall under another type
+MACBETH,1,1,An open Place.,FIRST,ORDINAL,"""first"", ""second"", etc."
+MACBETH,1,1,An open Place.,SECOND,ORDINAL,"""first"", ""second"", etc."
+MACBETH,1,1,An open Place.,THIRD,ORDINAL,"""first"", ""second"", etc."
+MACBETH,1,1,An open Place.,SECOND,DATE,Absolute or relative dates or periods
+MACBETH,1,2,A Camp near Forres.,TWO,CARDINAL,Numerals that do not fall under another type
+MACBETH,1,2,A Camp near Forres.,THE WESTERN ISLES,LOC,"Non-GPE locations, mountain ranges, bodies of water"
+MACBETH,1,2,A Camp near Forres.,NORWEYAN,NORP,Nationalities or religious or political groups
 MACBETH,1,2,A Camp near Forres.,FIFE,GPE,"Countries, cities, states"
-MACBETH,1,2,A Camp near Forres.,NORWAY,GPE,"Countries, cities, states"
-MACBETH,1,2,A Camp near Forres.,THANE OF CAWDOR,TITLE,TITLE
-MACBETH,1,2,A Camp near Forres.,NORWAYS,GPE,"Countries, cities, states"
-MACBETH,1,2,A Camp near Forres.,SAINT COLME'S INCH,GPE,"Countries, cities, states"
+MACBETH,1,2,A Camp near Forres.,NORWEGIAN,NORP,NORP
+MACBETH,1,2,A Camp near Forres.,TEN THOUSAND DOLLARS,MONEY,"Monetary values, including unit"
 MACBETH,1,3,A heath.,ALEPPO,GPE,"Countries, cities, states"
-MACBETH,1,3,A heath.,THANE OF GLAMIS,TITLE,TITLE
-MACBETH,1,3,A heath.,THANE,GPE,"Countries, cities, states"
-MACBETH,1,4,Forres. A Room in the Palace.,INVERNESS,GPE,"Countries, cities, states"
-MACBETH,1,5,Inverness. A Room in Macbeth's Castle.,LADY MACBETH,PERSON,"People, including fictional"
-MACBETH,1,6,The same. Before the Castle.,MACDUFF,PERSON,"People, including fictional"
-MACBETH,1,6,The same. Before the Castle.,THIS CASTLE,LOCATION,LOCATION
-MACBETH,2,1,Inverness. Court within the Castle.,FLEANCE,PERSON,"People, including fictional"
-MACBETH,2,1,Inverness. Court within the Castle.,HECATE,PERSON,"People, including fictional"
-MACBETH,2,2,The same.,HARK!—WHO,GPE,"Countries, cities, states"
-MACBETH,2,3,The same.,THE GATE,LOCATION,LOCATION
-MACBETH,2,3,The same.,MY YOUNG REMEMBRANCE,REL,REL
+MACBETH,1,3,A heath.,NINE,CARDINAL,Numerals that do not fall under another type
+MACBETH,1,3,A heath.,BANQUO,PERSON,PERSON
+MACBETH,1,3,A heath.,GLAMIS,TITLE,TITLE
+MACBETH,1,5,Inverness. A Room in Macbeth's Castle.,TONIGHT,TIME,Times smaller than a day
+MACBETH,1,5,Inverness. A Room in Macbeth's Castle.,ONE,CARDINAL,Numerals that do not fall under another type
+MACBETH,1,5,Inverness. A Room in Macbeth's Castle.,TOMORROW,DATE,Absolute or relative dates or periods
+MACBETH,1,5,Inverness. A Room in Macbeth's Castle.,MORROW,DATE,Absolute or relative dates or periods
+MACBETH,1,6,The same. Before the Castle.,SUMMER,DATE,Absolute or relative dates or periods
+MACBETH,2,1,Inverness. Court within the Castle.,TWELVE,CARDINAL,Numerals that do not fall under another type
+MACBETH,2,2,The same.,LADY MACBETH,PERSON,"People, including fictional"
+MACBETH,2,3,The same.,FRENCH,NORP,Nationalities or religious or political groups
+MACBETH,2,3,The same.,MACDUFF,PERSON,"People, including fictional"
 MACBETH,2,3,The same.,ENGLAND,GPE,"Countries, cities, states"
-MACBETH,3,1,Forres. A Room in the Palace.,QUEEN,REL,REL
-MACBETH,3,1,Forres. A Room in the Palace.,THE PALACE,LOCATION,LOCATION
-MACBETH,3,1,Forres. A Room in the Palace.,BANQUO STICK,GPE,"Countries, cities, states"
-MACBETH,3,2,The same. Another Room in the Palace.,UNSAFE,GPE,"Countries, cities, states"
-MACBETH,3,2,The same. Another Room in the Palace.,ROOKY WOOD,LOCATION,LOCATION
+MACBETH,2,3,The same.,DONALBAIN,PERSON,"People, including fictional"
+MACBETH,2,3,The same.,IRELAND,GPE,"Countries, cities, states"
+MACBETH,2,4,The same. Without the Castle.,HOURS,TIME,Times smaller than a day
+MACBETH,2,4,The same. Without the Castle.,THE DAY,DATE,Absolute or relative dates or periods
+MACBETH,2,4,The same. Without the Castle.,SCONE,GPE,GPE
+MACBETH,3,1,Forres. A Room in the Palace.,THIS DAY,DATE,Absolute or relative dates or periods
+MACBETH,3,1,Forres. A Room in the Palace.,THE PALACE GATE,LOCATION,LOCATION
+MACBETH,3,1,Forres. A Room in the Palace.,SON,REL,REL
+MACBETH,3,1,Forres. A Room in the Palace.,THIS HOUR,TIME,Times smaller than a day
+MACBETH,3,2,The same. Another Room in the Palace.,SERVANT,TITLE,TITLE
+MACBETH,3,2,The same. Another Room in the Palace.,A FEW,DATE,Absolute or relative dates or periods
+MACBETH,3,3,"The same. A Park or Lawn, with a gate leading to the Palace.",THIRD,DATE,Absolute or relative dates or periods
+MACBETH,3,3,"The same. A Park or Lawn, with a gate leading to the Palace.",ALMOST A MILE,QUANTITY,"Measurements, as of weight or distance"
+MACBETH,3,3,"The same. A Park or Lawn, with a gate leading to the Palace.",HALF,CARDINAL,Numerals that do not fall under another type
+MACBETH,3,4,The same. A Room of state in the Palace.,TWENTY,CARDINAL,Numerals that do not fall under another type
+MACBETH,3,4,The same. A Room of state in the Palace.,NIGHT,TIME,Times smaller than a day
+MACBETH,3,5,The heath.,ACHERON,LOC,LOC
+MACBETH,3,5,The heath.,THIS NIGHT,TIME,Times smaller than a day
 MACBETH,3,6,Forres. A Room in the Palace.,NORTHUMBERLAND,GPE,"Countries, cities, states"
-MACBETH,3,6,Forres. A Room in the Palace.,SIWARD,PERSON,"People, including fictional"
-MACBETH,3,6,Forres. A Room in the Palace.,THE COURT,LOCATION,LOCATION
-MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",FILLET,REL,REL
-MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",THANE OF FIFE,TITLE,TITLE
-MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",BIRNAM WOOD,GPE,"Countries, cities, states"
-MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",DUNSINANE,GPE,"Countries, cities, states"
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",DAYS,DATE,Absolute or relative dates or periods
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",MIDNIGHT,TIME,Times smaller than a day
 MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",BIRNAM,GPE,"Countries, cities, states"
-MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",GONE?—LET,GPE,"Countries, cities, states"
-MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",THE CASTLE,LOCATION,LOCATION
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",DUNSINANE,GPE,"Countries, cities, states"
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",EIGHT,CARDINAL,Numerals that do not fall under another type
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",EIGHTH,ORDINAL,"""first"", ""second"", etc."
+MACBETH,4,1,"A dark Cave. In the middle, a Cauldron Boiling.",MACBETH,PERSON,"People, including fictional"
 MACBETH,4,2,Fife. A Room in Macduff's Castle.,LADY MACDUFF,PERSON,"People, including fictional"
-MACBETH,4,3,England. Before the King's Palace.,SCOTLAND,GPE,"Countries, cities, states"
-MACBETH,4,3,England. Before the King's Palace.,LIVE.—O,GPE,"Countries, cities, states"
-MACBETH,5,1,Dunsinane. A Room in the Castle.,DOCTOR,TITLE,TITLE
-MACBETH,5,1,Dunsinane. A Room in the Castle.,WAITING-GENTLEWOMAN.,REL,REL
-MACBETH,5,1,Dunsinane. A Room in the Castle.,THE FIELD,LOCATION,LOCATION
+MACBETH,4,2,Fife. A Room in Macduff's Castle.,ROSS,PERSON,"People, including fictional"
+MACBETH,4,3,England. Before the King's Palace.,EAST,LOC,"Non-GPE locations, mountain ranges, bodies of water"
+MACBETH,4,3,England. Before the King's Palace.,WIFE,REL,REL
+MACBETH,5,1,Dunsinane. A Room in the Castle.,TWO NIGHTS,TIME,Times smaller than a day
+MACBETH,5,1,Dunsinane. A Room in the Castle.,ARABIA,GPE,"Countries, cities, states"
 MACBETH,5,2,The Country near Dunsinane.,MENTEITH,PERSON,"People, including fictional"
-MACBETH,5,2,The Country near Dunsinane.,CAITHNESS,PERSON,"People, including fictional"
-MACBETH,5,2,The Country near Dunsinane.,UNROUGH,GPE,"Countries, cities, states"
-MACBETH,5,3,Dunsinane. A Room in the Castle.,SEYTON,PERSON,"People, including fictional"
-MACBETH,5,5,Dunsinane. Within the castle.,OUR CASTLE,LOCATION,LOCATION
-MACBETH,5,5,Dunsinane. Within the castle.,A WOOD,LOCATION,LOCATION
-MACBETH,5,7,The same. Another part of the Plain.,YOUNG SIWARD,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,THESEUS,PERSON,"People, including fictional"
+MACBETH,5,3,Dunsinane. A Room in the Castle.,TEN THOUSAND,DATE,Absolute or relative dates or periods
+MACBETH,5,3,Dunsinane. A Room in the Castle.,SEYTON,PERSON,PERSON
+MACBETH,5,5,Dunsinane. Within the castle.,A NIGHT,TIME,Times smaller than a day
+MACBETH,5,5,Dunsinane. Within the castle.,DAY,DATE,Absolute or relative dates or periods
+MACBETH,5,5,Dunsinane. Within the castle.,THREE MILE,QUANTITY,"Measurements, as of weight or distance"
+MACBETH,5,7,The same. Another part of the Plain.,THE CASTLE,FAC,"Buildings, airports, highways, bridges, etc."
+MACBETH,5,8,The same. Another part of the field.,ROMAN,NORP,Nationalities or religious or political groups
+MACBETH,5,8,The same. Another part of the field.,A DAY,DATE,Absolute or relative dates or periods
+MACBETH,5,8,The same. Another part of the field.,MALCOLM,PERSON,"People, including fictional"
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,FOUR HAPPY DAYS,DATE,Absolute or relative dates or periods
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,OLD MOON,TIME,Times smaller than a day
 A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,HIPPOLYTA,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,PHILOSTRATE,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,EGEUS,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,HERMIA,PERSON,"People, including fictional"
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,ATHENIAN,NORP,Nationalities or religious or political groups
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,THESEUS,PERSON,"People, including fictional"
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,MAY,DATE,Absolute or relative dates or periods
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,ONE,CARDINAL,Numerals that do not fall under another type
 A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,LYSANDER,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,DEMETRIUS,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,ATHENS,GPE,"Countries, cities, states"
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,YEARS,DATE,Absolute or relative dates or periods
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,SEVEN,CARDINAL,Numerals that do not fall under another type
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,TOMORROW NIGHT,TIME,Times smaller than a day
 A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,HELENA,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,THE WOOD,LOCATION,LOCATION
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,QUINCE,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,SNUG,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,BOTTOM,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,FLUTE,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,SNOUT,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,STARVELING,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,PYRAMUS,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,PHIBBUS,GPE,"Countries, cities, states"
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,THE PALACE,LOCATION,LOCATION
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,PUCK,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,OBERON,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,TITANIA,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,PHILLIDA,PERSON,PERSON
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,INDIA,GPE,"Countries, cities, states"
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,PERIGENIA,GPE,"Countries, cities, states"
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,HIEMS,GPE,"Countries, cities, states"
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,THIS WOOD,LOCATION,LOCATION
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,THE FIELD,LOCATION,LOCATION
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,QUEEN: CHORUS,TITLE,TITLE
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,QUEEN,REL,REL
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,PEASEBLOSSOM,PERSON,"People, including fictional"
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,MIDNIGHT,TIME,Times smaller than a day
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,HERMIA,PERSON,"People, including fictional"
+A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,DUCHESS,TITLE,TITLE
+A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,FIRST,ORDINAL,"""first"", ""second"", etc."
+A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,FRENCH,NORP,Nationalities or religious or political groups
+A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,A MILE,QUANTITY,"Measurements, as of weight or distance"
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,PUCK,PERSON,PERSON
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,INDIAN,NORP,Nationalities or religious or political groups
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,THREE-FOOT,QUANTITY,"Measurements, as of weight or distance"
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,FAIRYLAND,GPE,"Countries, cities, states"
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,AMAZON,NORP,NORP
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,THE SEASONS,DATE,Absolute or relative dates or periods
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,THE SUMMER,DATE,Absolute or relative dates or periods
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,A HUNDRED THOUSAND,CARDINAL,Numerals that do not fall under another type
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,THE NIGHT,TIME,Times smaller than a day
+A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,THIRD,ORDINAL,"""first"", ""second"", etc."
+A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,FAIRY QUEEN,PERSON,PERSON
+A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,SECOND,DATE,Absolute or relative dates or periods
+A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,THE DAY,DATE,Absolute or relative dates or periods
+A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,TWO,CARDINAL,Numerals that do not fall under another type
+A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,HALF,CARDINAL,Numerals that do not fall under another type
+A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,DEMETRIUS,PERSON,"People, including fictional"
+A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,BOTTOM,PERSON,PERSON
+A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,SNOUT,PERSON,PERSON
+A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,EIGHT,CARDINAL,Numerals that do not fall under another type
+A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,A LION,QUANTITY,"Measurements, as of weight or distance"
+A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,MOONLIGHT,TIME,Times smaller than a day
+A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,THE FAIRY QUEEN,PERSON,PERSON
+A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,JEW,NORP,Nationalities or religious or political groups
+A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,NINUS,PERSON,PERSON
+A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,FOUR,CARDINAL,Numerals that do not fall under another type
 A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,COBWEB,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,MOTH,PERSON,PERSON
 A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,MUSTARDSEED,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,IN LOVE,REL,REL
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,FLOWER,REL,REL
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,CAPTAIN,TITLE,TITLE
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,QUICK,GPE,"Countries, cities, states"
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,ETHIOPE,GPE,"Countries, cities, states"
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,DAMNÈD,GPE,"Countries, cities, states"
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,FIELD,GPE,"Countries, cities, states"
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,FAINTNESS,GPE,"Countries, cities, states"
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,CONSTRAINETH,TITLE,TITLE
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,THE ELM,LOCATION,LOCATION
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,A WOOD,LOCATION,LOCATION
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,CRETE,GPE,"Countries, cities, states"
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,SPARTA,GPE,"Countries, cities, states"
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,;,REL,REL
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,DAY,DATE,Absolute or relative dates or periods
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,A MILLION,CARDINAL,Numerals that do not fall under another type
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,LIGHT,TIME,Times smaller than a day
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,THREE,CARDINAL,Numerals that do not fall under another type
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,THE HOURS,TIME,Times smaller than a day
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,TEDIOUS NIGHT,TIME,Times smaller than a day
+A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,THIS NIGHT,TIME,Times smaller than a day
+A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,TITANIA,PERSON,"People, including fictional"
+A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,FIVE,CARDINAL,Numerals that do not fall under another type
+A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,MORNING,TIME,Times smaller than a day
+A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,THE MORNING,TIME,Times smaller than a day
+A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,THESSALIAN,NORP,Nationalities or religious or political groups
+A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,NEDAR,PERSON,PERSON
+A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,MORROW,DATE,Absolute or relative dates or periods
+A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,EGEUS,PERSON,"People, including fictional"
+A MIDSUMMER NIGHT'S DREAM,4,2,Athens. A Room in Quince's House,A DAY,DATE,Absolute or relative dates or periods
+A MIDSUMMER NIGHT'S DREAM,4,2,Athens. A Room in Quince's House,HAPPY HOUR,TIME,Times smaller than a day
 A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,EGYPT,GPE,"Countries, cities, states"
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,THROTTLE,GPE,"Countries, cities, states"
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,NINUS,GPE,"Countries, cities, states"
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,THIS PALACE,LOCATION,LOCATION
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,THREE HOURS,TIME,Times smaller than a day
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,THIS EVENING,TIME,Times smaller than a day
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,THRACIAN,NORP,Nationalities or religious or political groups
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,TEN,CARDINAL,Numerals that do not fall under another type
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,THISBE,PERSON,PERSON
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,TWELVE,CARDINAL,Numerals that do not fall under another type
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,NIGHT,TIME,Times smaller than a day
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,THIS NIGHT,TIME,Times smaller than a day
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,MESSINA,GPE,"Countries, cities, states"
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,THREE,CARDINAL,Numerals that do not fall under another type
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,DON PEDRO,PERSON,"People, including fictional"
 MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,LEONATO,PERSON,"People, including fictional"
 MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,HERO,PERSON,"People, including fictional"
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,BEATRICE,PERSON,"People, including fictional"
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,DON PEDRO,PERSON,"People, including fictional"
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,ARRAGON,GPE,"Countries, cities, states"
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,MESSINA,GPE,"Countries, cities, states"
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,CLAUDIO,PERSON,"People, including fictional"
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,BENEDICK,PERSON,"People, including fictional"
 MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,PADUA,GPE,"Countries, cities, states"
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,EVERY MONTH A NEW,DATE,Absolute or relative dates or periods
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,BEATRICE,PERSON,"People, including fictional"
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,CLAUDIO,PERSON,PERSON
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,A THOUSAND POUND,QUANTITY,"Measurements, as of weight or distance"
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,JANUARY,DATE,Absolute or relative dates or periods
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,BALTHASAR,PERSON,PERSON
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,BENEDICK,PERSON,"People, including fictional"
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,MAY,DATE,Absolute or relative dates or periods
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,THE LEAST A MONTH,DATE,Absolute or relative dates or periods
 MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,DON JOHN,PERSON,"People, including fictional"
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,BALTHASAR,PERSON,"People, including fictional"
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,DON,GPE,"Countries, cities, states"
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,VENICE,GPE,"Countries, cities, states"
-MUCH ADO ABOUT NOTHING,1,2,A room in Leonato's house.,ANTONIO,PERSON,"People, including fictional"
-MUCH ADO ABOUT NOTHING,1,3,Another room in Leonato's house.,CONRADE,PERSON,"People, including fictional"
-MUCH ADO ABOUT NOTHING,1,3,Another room in Leonato's house.,BORACHIO,PERSON,"People, including fictional"
-MUCH ADO ABOUT NOTHING,1,3,Another room in Leonato's house.,HEIR,REL,REL
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,THE GATE,LOCATION,LOCATION
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,THE CINQUEPACE,LOCATION,LOCATION
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,MARGARET,PERSON,"People, including fictional"
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,URSULA,PERSON,"People, including fictional"
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,JOVE,PERSON,PERSON
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,PRINCE,TITLE,TITLE
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,WHITHER,REL,REL
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,ASIA,GPE,"Countries, cities, states"
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,THE ORCHARD,LOCATION,LOCATION
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,URSALA,GPE,"Countries, cities, states"
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,THE WOODBINE,LOCATION,LOCATION
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,FIRST,ORDINAL,"""first"", ""second"", etc."
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,WIFE,REL,REL
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,ONE,CARDINAL,Numerals that do not fall under another type
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,SUNDAYS,DATE,Absolute or relative dates or periods
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,TWO,CARDINAL,Numerals that do not fall under another type
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,VENICE,LOC,LOC
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,THE HOURS,TIME,Times smaller than a day
+MUCH ADO ABOUT NOTHING,1,3,Another room in Leonato's house.,YEAR,DATE,Absolute or relative dates or periods
+MUCH ADO ABOUT NOTHING,1,3,Another room in Leonato's house.,BORACHIO,PERSON,PERSON
+MUCH ADO ABOUT NOTHING,1,3,Another room in Leonato's house.,MARCH,DATE,Absolute or relative dates or periods
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,THE ONE,DATE,Absolute or relative dates or periods
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,HALF,CARDINAL,Numerals that do not fall under another type
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,ONE DAY,DATE,Absolute or relative dates or periods
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,SCOTCH,NORP,Nationalities or religious or political groups
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,HUNDRED,CARDINAL,Numerals that do not fall under another type
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,HOURLY,TIME,Times smaller than a day
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,ASIA,GPE,GPE
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,"THE DAY OF MARRIAGE,",DATE,Absolute or relative dates or periods
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,EVERY DAY,DATE,Absolute or relative dates or periods
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,A MERRY HOUR,TIME,Times smaller than a day
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,TOMORROW,DATE,Absolute or relative dates or periods
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,TEN,CARDINAL,Numerals that do not fall under another type
+MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,A YEAR,DATE,Absolute or relative dates or periods
+MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,A THOUSAND DUCATS,MONEY,"Monetary values, including unit"
+MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,EVENING,TIME,Times smaller than a day
+MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,ONE FOOT,QUANTITY,"Measurements, as of weight or distance"
+MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,TOMORROW NIGHT,TIME,Times smaller than a day
+MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,TWENTY,CARDINAL,Numerals that do not fall under another type
+MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,CHRISTIAN,NORP,Nationalities or religious or political groups
+MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,JEW,NORP,Nationalities or religious or political groups
+MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,URSULA,PERSON,PERSON
 MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,ITALY,GPE,"Countries, cities, states"
-MUCH ADO ABOUT NOTHING,3,3,A Street.,DOGBERRY,PERSON,"People, including fictional"
-MUCH ADO ABOUT NOTHING,3,3,A Street.,VERGES,PERSON,"People, including fictional"
+MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,NINE,CARDINAL,Numerals that do not fall under another type
+MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,TONIGHT,TIME,Times smaller than a day
+MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,MIDNIGHT,TIME,Times smaller than a day
 MUCH ADO ABOUT NOTHING,3,3,A Street.,CONSTABLE,TITLE,TITLE
-MUCH ADO ABOUT NOTHING,3,3,A Street.,SEACOAL,GPE,"Countries, cities, states"
-MUCH ADO ABOUT NOTHING,3,3,A Street.,VERGES,GPE,"Countries, cities, states"
-MUCH ADO ABOUT NOTHING,3,3,A Street.,NURSE,TITLE,TITLE
-MUCH ADO ABOUT NOTHING,3,3,A Street.,PHARAOH,GPE,"Countries, cities, states"
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,FRIAR FRANCIS,PERSON,"People, including fictional"
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,FRIAR,TITLE,TITLE
-MUCH ADO ABOUT NOTHING,4,2,A Prison.,BORACHIO,GPE,"Countries, cities, states"
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,THE GARDEN,LOCATION,LOCATION
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,HIR'D,GPE,"Countries, cities, states"
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,ETHIOPE,GPE,"Countries, cities, states"
-THE TRAGEDY OF ROMEO AND JULIET,0,0,Prologue,CHORUS,PERSON,"People, including fictional"
-THE TRAGEDY OF ROMEO AND JULIET,0,0,Prologue,VERONA,GPE,"Countries, cities, states"
-THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,SAMPSON,PERSON,"People, including fictional"
+MUCH ADO ABOUT NOTHING,3,3,A Street.,SECOND,DATE,Absolute or relative dates or periods
+MUCH ADO ABOUT NOTHING,3,3,A Street.,FIVE SHILLINGS,MONEY,"Monetary values, including unit"
+MUCH ADO ABOUT NOTHING,3,3,A Street.,THOUSAND,CARDINAL,Numerals that do not fall under another type
+MUCH ADO ABOUT NOTHING,3,3,A Street.,BETWEEN FOURTEEN,CARDINAL,Numerals that do not fall under another type
+MUCH ADO ABOUT NOTHING,3,3,A Street.,NEXT MORNING,TIME,Times smaller than a day
+MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,MARGARET,PERSON,"People, including fictional"
+MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,MILAN,LOC,LOC
+MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,NIGHT,TIME,Times smaller than a day
+MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,MORROW,DATE,Absolute or relative dates or periods
+MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,ALMOST FIVE O'CLOCK,TIME,Times smaller than a day
+MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,TURK,NORP,Nationalities or religious or political groups
+MUCH ADO ABOUT NOTHING,3,5,Another Room in Leonato's House.,THOUSAND POUND,QUANTITY,"Measurements, as of weight or distance"
+MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,COUNT,TITLE,TITLE
+MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,TWELVE,CARDINAL,Numerals that do not fall under another type
+MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,THAT HOUR,TIME,Times smaller than a day
+MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,LAST NIGHT,TIME,Times smaller than a day
+MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,HOURS,TIME,Times smaller than a day
+MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,A HAPPY HOUR,TIME,Times smaller than a day
+MUCH ADO ABOUT NOTHING,4,2,A Prison.,THIS MORNING,TIME,Times smaller than a day
+MUCH ADO ABOUT NOTHING,4,2,A Prison.,YEARS,DATE,Absolute or relative dates or periods
+MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,SECOND,ORDINAL,"""first"", ""second"", etc."
+MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,DAY,DATE,Absolute or relative dates or periods
+MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,MANY DAYS,DATE,Absolute or relative dates or periods
+MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,HALF A DOZEN,CARDINAL,Numerals that do not fall under another type
+MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,MORNING,TIME,Times smaller than a day
+MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,SIXTH,ORDINAL,"""first"", ""second"", etc."
+MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,THIRDLY,ORDINAL,"""first"", ""second"", etc."
+MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,THIRD,ORDINAL,"""first"", ""second"", etc."
+MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,TWAS,TIME,Times smaller than a day
+MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,TOMORROW MORNING,TIME,Times smaller than a day
+MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,TROILUS,PERSON,PERSON
+MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,AN HOUR,TIME,Times smaller than a day
+MUCH ADO ABOUT NOTHING,5,3,The Inside of a Church.,THE GENTLE DAY,DATE,Absolute or relative dates or periods
+MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,THIS HOUR,TIME,Times smaller than a day
+MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,EUROPA,GPE,GPE
+THE TRAGEDY OF ROMEO AND JULIET,0,0,Prologue,TWO,CARDINAL,Numerals that do not fall under another type
 THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,GREGORY,PERSON,"People, including fictional"
-THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,MONTAGUE,FAMILY,FAMILY
-THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,ABRAM,PERSON,"People, including fictional"
-THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,BALTHASAR,PERSON,"People, including fictional"
-THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,BENVOLIO,PERSON,"People, including fictional"
-THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,TYBALT,PERSON,"People, including fictional"
+THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,MONTAGUE,PERSON,"People, including fictional"
+THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,ONE,CARDINAL,Numerals that do not fall under another type
+THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,SAMPSON,PERSON,"People, including fictional"
+THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,ABRAM,PERSON,PERSON
+THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,FOUR,CARDINAL,Numerals that do not fall under another type
+THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,FIRST,ORDINAL,"""first"", ""second"", etc."
 THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,CAPULET,FAMILY,FAMILY
-THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,LADY CAPULET,PERSON,"People, including fictional"
 THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,LADY MONTAGUE,PERSON,"People, including fictional"
-THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,SERVANTS,PERSON,"People, including fictional"
+THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,BENVOLIO,PERSON,"People, including fictional"
+THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,AN HOUR,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,MORROW,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,NINE,CARDINAL,Numerals that do not fall under another type
 THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,ROMEO,PERSON,"People, including fictional"
-THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,THE WOOD,LOCATION,LOCATION
-THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,AURORA,GPE,"Countries, cities, states"
+THE TRAGEDY OF ROMEO AND JULIET,1,2,A Street.,MAY,DATE,Absolute or relative dates or periods
 THE TRAGEDY OF ROMEO AND JULIET,1,2,A Street.,PARIS,PERSON,"People, including fictional"
-THE TRAGEDY OF ROMEO AND JULIET,1,2,A Street.,MERCUTIO,PERSON,"People, including fictional"
-THE TRAGEDY OF ROMEO AND JULIET,1,3,Room in Capulet's House.,NURSE,TITLE,TITLE
+THE TRAGEDY OF ROMEO AND JULIET,1,2,A Street.,VALENTIO,PERSON,PERSON
+THE TRAGEDY OF ROMEO AND JULIET,1,3,Room in Capulet's House.,TWELVE YEAR OLD,DATE,Absolute or relative dates or periods
 THE TRAGEDY OF ROMEO AND JULIET,1,3,Room in Capulet's House.,JULIET,PERSON,"People, including fictional"
+THE TRAGEDY OF ROMEO AND JULIET,1,3,Room in Capulet's House.,LADY CAPULET,PERSON,"People, including fictional"
+THE TRAGEDY OF ROMEO AND JULIET,1,3,Room in Capulet's House.,FOURTEEN,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,1,3,Room in Capulet's House.,A FORTNIGHT,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,1,3,Room in Capulet's House.,CHRISTIAN,NORP,Nationalities or religious or political groups
+THE TRAGEDY OF ROMEO AND JULIET,1,3,Room in Capulet's House.,THE DAYS OF THE YEAR,DATE,Absolute or relative dates or periods
 THE TRAGEDY OF ROMEO AND JULIET,1,3,Room in Capulet's House.,MANTUA,GPE,"Countries, cities, states"
+THE TRAGEDY OF ROMEO AND JULIET,1,3,Room in Capulet's House.,ELEVEN YEARS,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,1,3,Room in Capulet's House.,A THOUSAND YEARS,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,1,3,Room in Capulet's House.,THESE YEARS,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,1,3,Room in Capulet's House.,NIGHT,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,1,4,A Street.,SIX,CARDINAL,Numerals that do not fall under another type
 THE TRAGEDY OF ROMEO AND JULIET,1,4,A Street.,MASKERS,PERSON,"People, including fictional"
-THE TRAGEDY OF ROMEO AND JULIET,1,4,A Street.,CONSTABLE,TITLE,TITLE
-THE TRAGEDY OF ROMEO AND JULIET,1,4,A Street.,SLUTTISH,GPE,"Countries, cities, states"
-THE TRAGEDY OF ROMEO AND JULIET,1,5,A Hall in Capulet's House.,SUSAN GRINDSTONE,PERSON,PERSON
-THE TRAGEDY OF ROMEO AND JULIET,1,5,A Hall in Capulet's House.,HEIR,REL,REL
+THE TRAGEDY OF ROMEO AND JULIET,1,4,A Street.,MERCUTIO,PERSON,"People, including fictional"
+THE TRAGEDY OF ROMEO AND JULIET,1,4,A Street.,FIVE,CARDINAL,Numerals that do not fall under another type
+THE TRAGEDY OF ROMEO AND JULIET,1,4,A Street.,TONIGHT,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,1,5,A Hall in Capulet's House.,SECOND,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,1,5,A Hall in Capulet's House.,THE DAY THAT,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,1,5,A Hall in Capulet's House.,LIGHT,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,1,5,A Hall in Capulet's House.,THIRTY YEARS,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,1,5,A Hall in Capulet's House.,SOME FIVE AND TWENTY YEARS,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,1,5,A Hall in Capulet's House.,THIRTY.,MONEY,"Monetary values, including unit"
+THE TRAGEDY OF ROMEO AND JULIET,1,5,A Hall in Capulet's House.,TWO YEARS AGO,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,1,5,A Hall in Capulet's House.,THIS NIGHT,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,1,5,A Hall in Capulet's House.,TYBALT,PERSON,"People, including fictional"
 THE TRAGEDY OF ROMEO AND JULIET,1,5,A Hall in Capulet's House.,TIBERIO,PERSON,PERSON
+THE TRAGEDY OF ROMEO AND JULIET,2,2,Capulet's Garden.,TWO OF THE,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,2,2,Capulet's Garden.,HUNDRED,CARDINAL,Numerals that do not fall under another type
+THE TRAGEDY OF ROMEO AND JULIET,2,2,Capulet's Garden.,ORCHARD,LOCATION,LOCATION
+THE TRAGEDY OF ROMEO AND JULIET,2,2,Capulet's Garden.,TOMORROW,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,2,2,Capulet's Garden.,THOUSAND,CARDINAL,Numerals that do not fall under another type
+THE TRAGEDY OF ROMEO AND JULIET,2,2,Capulet's Garden.,TWENTY YEARS,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,2,2,Capulet's Garden.,ALMOST MORNING,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,2,3,Friar Lawrence's Cell.,DAY,DATE,Absolute or relative dates or periods
 THE TRAGEDY OF ROMEO AND JULIET,2,3,Friar Lawrence's Cell.,FRIAR LAWRENCE,PERSON,"People, including fictional"
-THE TRAGEDY OF ROMEO AND JULIET,2,3,Friar Lawrence's Cell.,TITAN,GPE,"Countries, cities, states"
-THE TRAGEDY OF ROMEO AND JULIET,2,4,A Street.,PETER,PERSON,"People, including fictional"
-THE TRAGEDY OF ROMEO AND JULIET,2,4,A Street.,FRIAR,TITLE,TITLE
-THE TRAGEDY OF ROMEO AND JULIET,2,5,Capulet's Garden.,THE GATE,LOCATION,LOCATION
+THE TRAGEDY OF ROMEO AND JULIET,2,4,A Street.,THIRD,ORDINAL,"""first"", ""second"", etc."
+THE TRAGEDY OF ROMEO AND JULIET,2,4,A Street.,SECOND,ORDINAL,"""first"", ""second"", etc."
+THE TRAGEDY OF ROMEO AND JULIET,2,4,A Street.,FRENCH,NORP,Nationalities or religious or political groups
+THE TRAGEDY OF ROMEO AND JULIET,2,4,A Street.,LAST NIGHT,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,2,4,A Street.,NOON,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,2,4,A Street.,LENT,EVENT,"Named hurricanes, battles, wars, sports events, etc."
+THE TRAGEDY OF ROMEO AND JULIET,2,4,A Street.,A MONTH,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,2,4,A Street.,TWENTY,CARDINAL,Numerals that do not fall under another type
+THE TRAGEDY OF ROMEO AND JULIET,2,4,A Street.,THIS HOUR,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,2,5,Capulet's Garden.,HALF AN HOUR,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,2,5,Capulet's Garden.,TEN,CARDINAL,Numerals that do not fall under another type
+THE TRAGEDY OF ROMEO AND JULIET,2,5,Capulet's Garden.,THE HIGHMOST HILL,LOCATION,LOCATION
+THE TRAGEDY OF ROMEO AND JULIET,2,5,Capulet's Garden.,A FOOT,QUANTITY,"Measurements, as of weight or distance"
+THE TRAGEDY OF ROMEO AND JULIET,2,6,Friar Lawrence's Cell.,THAT AFTER-HOURS,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,2,6,Friar Lawrence's Cell.,HALF,CARDINAL,Numerals that do not fall under another type
 THE TRAGEDY OF ROMEO AND JULIET,3,1,A public Place.,ITALY,GPE,"Countries, cities, states"
-THE TRAGEDY OF ROMEO AND JULIET,3,1,A public Place.,FIELD,GPE,"Countries, cities, states"
-THE TRAGEDY OF ROMEO AND JULIET,3,1,A public Place.,KING OF CATS,TITLE,TITLE
+THE TRAGEDY OF ROMEO AND JULIET,3,1,A public Place.,EASTER,EVENT,"Named hurricanes, battles, wars, sports events, etc."
+THE TRAGEDY OF ROMEO AND JULIET,3,1,A public Place.,EIGHT,CARDINAL,Numerals that do not fall under another type
+THE TRAGEDY OF ROMEO AND JULIET,3,1,A public Place.,PAGE,PERSON,PERSON
+THE TRAGEDY OF ROMEO AND JULIET,3,1,A public Place.,THIS DAY,DATE,Absolute or relative dates or periods
 THE TRAGEDY OF ROMEO AND JULIET,3,1,A public Place.,KINSMAN,REL,REL
-THE TRAGEDY OF ROMEO AND JULIET,3,5,"An open Gallery to Juliet's Chamber, overlooking the Garden.",WEEP'ST,GPE,"Countries, cities, states"
-THE TRAGEDY OF ROMEO AND JULIET,4,1,Friar Lawrence's Cell.,HAPPILY MET,REL,REL
-THE TRAGEDY OF ROMEO AND JULIET,4,1,Friar Lawrence's Cell.,WRONG'ST,GPE,"Countries, cities, states"
-THE TRAGEDY OF ROMEO AND JULIET,4,2,Hall in Capulet's House.,THE COUNTY,LOCATION,LOCATION
-THE TRAGEDY OF ROMEO AND JULIET,4,5,Juliet's Chamber; Juliet on the bed.,THE FIELD,LOCATION,LOCATION
-THE TRAGEDY OF ROMEO AND JULIET,4,5,Juliet's Chamber; Juliet on the bed.,THE CUSTOM,LOCATION,LOCATION
+THE TRAGEDY OF ROMEO AND JULIET,3,1,A public Place.,SOME TWENTY OF THEM,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,3,2,A Room in Capulet's House.,THE NIGHT,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,3,2,A Room in Capulet's House.,TEN THOUSAND,CARDINAL,Numerals that do not fall under another type
+THE TRAGEDY OF ROMEO AND JULIET,3,3,Friar Lawrence's cell.,HOUR,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,3,3,Friar Lawrence's cell.,NURSE,TITLE,TITLE
+THE TRAGEDY OF ROMEO AND JULIET,3,3,Friar Lawrence's cell.,FRIAR,TITLE,TITLE
+THE TRAGEDY OF ROMEO AND JULIET,3,3,Friar Lawrence's cell.,THREE,CARDINAL,Numerals that do not fall under another type
+THE TRAGEDY OF ROMEO AND JULIET,3,3,Friar Lawrence's cell.,TWENTY HUNDRED THOUSAND,CARDINAL,Numerals that do not fall under another type
+THE TRAGEDY OF ROMEO AND JULIET,3,4,A Room in Capulet's House.,DAUGHTER,REL,REL
+THE TRAGEDY OF ROMEO AND JULIET,3,4,A Room in Capulet's House.,THURSDAY,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,3,4,A Room in Capulet's House.,SOME HALF A DOZEN FRIENDS,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,3,5,"An open Gallery to Juliet's Chamber, overlooking the Garden.",THE DAY,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,3,5,"An open Gallery to Juliet's Chamber, overlooking the Garden.",EVERY DAY,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,3,5,"An open Gallery to Juliet's Chamber, overlooking the Garden.",MANY DAYS,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,3,5,"An open Gallery to Juliet's Chamber, overlooking the Garden.",YEARS,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,3,5,"An open Gallery to Juliet's Chamber, overlooking the Garden.",IN HAPPY TIME,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,3,5,"An open Gallery to Juliet's Chamber, overlooking the Garden.",MORN,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,3,5,"An open Gallery to Juliet's Chamber, overlooking the Garden.",THE SUNSET,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,3,5,"An open Gallery to Juliet's Chamber, overlooking the Garden.",COUNTY,TITLE,TITLE
+THE TRAGEDY OF ROMEO AND JULIET,4,1,Friar Lawrence's Cell.,EVENING,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,4,1,Friar Lawrence's Cell.,TOMORROW NIGHT,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,4,1,Friar Lawrence's Cell.,THE DAY OF LIFE,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,4,1,Friar Lawrence's Cell.,THE MORNING,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,4,2,Hall in Capulet's House.,MORNING,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,4,2,Hall in Capulet's House.,NIGHT,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,4,3,Juliet's Chamber.,TOMORROW MORNING,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,4,3,Juliet's Chamber.,THIS MANY HUNDRED YEARS,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,4,3,Juliet's Chamber.,SOME HOURS,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,4,4,Hall in Capulet's House.,THREE O'CLOCK,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,4,5,Juliet's Chamber; Juliet on the bed.,THE NEXT NIGHT,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,4,5,Juliet's Chamber; Juliet on the bed.,SON,REL,REL
+THE TRAGEDY OF ROMEO AND JULIET,4,5,Juliet's Chamber; Juliet on the bed.,THIS MORNING,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,4,5,Juliet's Chamber; Juliet on the bed.,A DAY,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,5,1,Mantua. A Street.,BALTHASAR,PERSON,"People, including fictional"
+THE TRAGEDY OF ROMEO AND JULIET,5,1,Mantua. A Street.,FORTY DUCATS,MONEY,"Monetary values, including unit"
 THE TRAGEDY OF ROMEO AND JULIET,5,2,Friar Lawrence's Cell.,FRIAR JOHN,PERSON,"People, including fictional"
-THE TRAGEDY OF ROMEO AND JULIET,5,3,A churchyard; in it a Monument belonging to the Capulets.,NOBLE,REL,REL
-THE TRAGEDY OF ROMEO AND JULIET,5,3,A churchyard; in it a Monument belonging to the Capulets.,THIS PALACE,LOCATION,LOCATION
+THE TRAGEDY OF ROMEO AND JULIET,5,2,Friar Lawrence's Cell.,THIS THREE HOURS,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,5,3,A churchyard; in it a Monument belonging to the Capulets.,EARLY IN THE MORNING,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,5,3,A churchyard; in it a Monument belonging to the Capulets.,THIS TWO DAYS,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,5,3,A churchyard; in it a Monument belonging to the Capulets.,SOME HOUR,TIME,Times smaller than a day

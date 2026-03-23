@@ -159,25 +159,21 @@ def analyse_labels(entity_summary: dict,official_characters: list,play_title: st
             if key in seen_mislabel:
                 continue
 
-            # Case 1: config says it's a PERSON but spaCy gave it another label
             if play_config and label != "PERSON" and e_up in config_persons:
                 print(f"    [CONFIG]  '{e}'  [{label}] -> PERSON")
                 mislabeled.append((e, label, "PERSON", "config"))
                 seen_mislabel.add(key)
 
-            # Case 2: config says it's a GPE but spaCy labelled it something else
             elif play_config and label != "GPE" and e_up in config_gpes:
                 print(f"    [CONFIG]  '{e}'  [{label}] -> GPE")
                 mislabeled.append((e, label, "GPE", "config"))
                 seen_mislabel.add(key)
 
-            # Case 3: config says it's a LOC but spaCy labelled it something else
             elif play_config and label != "LOC" and e_up in config_locs:
                 print(f"    [CONFIG]  '{e}'  [{label}] -> LOC")
                 mislabeled.append((e, label, "LOC", "config"))
                 seen_mislabel.add(key)
 
-            # Case 4: heuristic fallback (original behaviour — name in char_set)
             elif label != "PERSON" and key not in seen_mislabel:
                 if e_up in char_set or any(c in e_up for c in char_set):
                     print(f"    [HEURISTIC] '{e}'  [{label}] -> PERSON")

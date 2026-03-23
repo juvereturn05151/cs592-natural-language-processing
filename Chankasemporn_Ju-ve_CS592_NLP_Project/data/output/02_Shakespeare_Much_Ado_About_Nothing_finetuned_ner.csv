@@ -1,43 +1,89 @@
 play,act,scene,location,entity_text,label,label_description
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,THIS NIGHT,TIME,Times smaller than a day
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,MESSINA,GPE,"Countries, cities, states"
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,THREE,CARDINAL,Numerals that do not fall under another type
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,DON PEDRO,PERSON,"People, including fictional"
 MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,LEONATO,PERSON,"People, including fictional"
 MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,HERO,PERSON,"People, including fictional"
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,BEATRICE,PERSON,"People, including fictional"
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,DON PEDRO,PERSON,"People, including fictional"
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,ARRAGON,GPE,"Countries, cities, states"
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,MESSINA,GPE,"Countries, cities, states"
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,CLAUDIO,PERSON,"People, including fictional"
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,BENEDICK,PERSON,"People, including fictional"
 MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,PADUA,GPE,"Countries, cities, states"
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,EVERY MONTH A NEW,DATE,Absolute or relative dates or periods
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,BEATRICE,PERSON,"People, including fictional"
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,CLAUDIO,PERSON,PERSON
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,A THOUSAND POUND,QUANTITY,"Measurements, as of weight or distance"
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,JANUARY,DATE,Absolute or relative dates or periods
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,BALTHASAR,PERSON,PERSON
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,BENEDICK,PERSON,"People, including fictional"
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,MAY,DATE,Absolute or relative dates or periods
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,THE LEAST A MONTH,DATE,Absolute or relative dates or periods
 MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,DON JOHN,PERSON,"People, including fictional"
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,BALTHASAR,PERSON,"People, including fictional"
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,DON,GPE,"Countries, cities, states"
-MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,VENICE,GPE,"Countries, cities, states"
-MUCH ADO ABOUT NOTHING,1,2,A room in Leonato's house.,ANTONIO,PERSON,"People, including fictional"
-MUCH ADO ABOUT NOTHING,1,3,Another room in Leonato's house.,CONRADE,PERSON,"People, including fictional"
-MUCH ADO ABOUT NOTHING,1,3,Another room in Leonato's house.,BORACHIO,PERSON,"People, including fictional"
-MUCH ADO ABOUT NOTHING,1,3,Another room in Leonato's house.,HEIR,REL,REL
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,THE GATE,LOCATION,LOCATION
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,THE CINQUEPACE,LOCATION,LOCATION
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,MARGARET,PERSON,"People, including fictional"
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,URSULA,PERSON,"People, including fictional"
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,JOVE,PERSON,PERSON
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,PRINCE,TITLE,TITLE
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,WHITHER,REL,REL
-MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,ASIA,GPE,"Countries, cities, states"
-MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,THE ORCHARD,LOCATION,LOCATION
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,URSALA,GPE,"Countries, cities, states"
-MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,THE WOODBINE,LOCATION,LOCATION
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,FIRST,ORDINAL,"""first"", ""second"", etc."
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,WIFE,REL,REL
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,ONE,CARDINAL,Numerals that do not fall under another type
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,SUNDAYS,DATE,Absolute or relative dates or periods
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,TWO,CARDINAL,Numerals that do not fall under another type
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,VENICE,LOC,LOC
+MUCH ADO ABOUT NOTHING,1,1,Before Leonato's House.,THE HOURS,TIME,Times smaller than a day
+MUCH ADO ABOUT NOTHING,1,3,Another room in Leonato's house.,YEAR,DATE,Absolute or relative dates or periods
+MUCH ADO ABOUT NOTHING,1,3,Another room in Leonato's house.,BORACHIO,PERSON,PERSON
+MUCH ADO ABOUT NOTHING,1,3,Another room in Leonato's house.,MARCH,DATE,Absolute or relative dates or periods
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,THE ONE,DATE,Absolute or relative dates or periods
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,HALF,CARDINAL,Numerals that do not fall under another type
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,ONE DAY,DATE,Absolute or relative dates or periods
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,SCOTCH,NORP,Nationalities or religious or political groups
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,HUNDRED,CARDINAL,Numerals that do not fall under another type
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,HOURLY,TIME,Times smaller than a day
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,ASIA,GPE,GPE
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,"THE DAY OF MARRIAGE,",DATE,Absolute or relative dates or periods
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,EVERY DAY,DATE,Absolute or relative dates or periods
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,A MERRY HOUR,TIME,Times smaller than a day
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,TOMORROW,DATE,Absolute or relative dates or periods
+MUCH ADO ABOUT NOTHING,2,1,A hall in Leonato's house.,TEN,CARDINAL,Numerals that do not fall under another type
+MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,A YEAR,DATE,Absolute or relative dates or periods
+MUCH ADO ABOUT NOTHING,2,2,Another room in Leonato's house.,A THOUSAND DUCATS,MONEY,"Monetary values, including unit"
+MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,EVENING,TIME,Times smaller than a day
+MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,ONE FOOT,QUANTITY,"Measurements, as of weight or distance"
+MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,TOMORROW NIGHT,TIME,Times smaller than a day
+MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,TWENTY,CARDINAL,Numerals that do not fall under another type
+MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,CHRISTIAN,NORP,Nationalities or religious or political groups
+MUCH ADO ABOUT NOTHING,2,3,Leonato's Garden.,JEW,NORP,Nationalities or religious or political groups
+MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,URSULA,PERSON,PERSON
 MUCH ADO ABOUT NOTHING,3,1,Leonato's Garden.,ITALY,GPE,"Countries, cities, states"
-MUCH ADO ABOUT NOTHING,3,3,A Street.,DOGBERRY,PERSON,"People, including fictional"
-MUCH ADO ABOUT NOTHING,3,3,A Street.,VERGES,PERSON,"People, including fictional"
+MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,NINE,CARDINAL,Numerals that do not fall under another type
+MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,TONIGHT,TIME,Times smaller than a day
+MUCH ADO ABOUT NOTHING,3,2,A Room in Leonato's House.,MIDNIGHT,TIME,Times smaller than a day
 MUCH ADO ABOUT NOTHING,3,3,A Street.,CONSTABLE,TITLE,TITLE
-MUCH ADO ABOUT NOTHING,3,3,A Street.,SEACOAL,GPE,"Countries, cities, states"
-MUCH ADO ABOUT NOTHING,3,3,A Street.,VERGES,GPE,"Countries, cities, states"
-MUCH ADO ABOUT NOTHING,3,3,A Street.,NURSE,TITLE,TITLE
-MUCH ADO ABOUT NOTHING,3,3,A Street.,PHARAOH,GPE,"Countries, cities, states"
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,FRIAR FRANCIS,PERSON,"People, including fictional"
-MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,FRIAR,TITLE,TITLE
-MUCH ADO ABOUT NOTHING,4,2,A Prison.,BORACHIO,GPE,"Countries, cities, states"
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,THE GARDEN,LOCATION,LOCATION
-MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,HIR'D,GPE,"Countries, cities, states"
-MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,ETHIOPE,GPE,"Countries, cities, states"
+MUCH ADO ABOUT NOTHING,3,3,A Street.,SECOND,DATE,Absolute or relative dates or periods
+MUCH ADO ABOUT NOTHING,3,3,A Street.,FIVE SHILLINGS,MONEY,"Monetary values, including unit"
+MUCH ADO ABOUT NOTHING,3,3,A Street.,THOUSAND,CARDINAL,Numerals that do not fall under another type
+MUCH ADO ABOUT NOTHING,3,3,A Street.,BETWEEN FOURTEEN,CARDINAL,Numerals that do not fall under another type
+MUCH ADO ABOUT NOTHING,3,3,A Street.,NEXT MORNING,TIME,Times smaller than a day
+MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,MARGARET,PERSON,"People, including fictional"
+MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,MILAN,LOC,LOC
+MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,NIGHT,TIME,Times smaller than a day
+MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,MORROW,DATE,Absolute or relative dates or periods
+MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,ALMOST FIVE O'CLOCK,TIME,Times smaller than a day
+MUCH ADO ABOUT NOTHING,3,4,A Room in Leonato's House.,TURK,NORP,Nationalities or religious or political groups
+MUCH ADO ABOUT NOTHING,3,5,Another Room in Leonato's House.,THOUSAND POUND,QUANTITY,"Measurements, as of weight or distance"
+MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,COUNT,TITLE,TITLE
+MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,TWELVE,CARDINAL,Numerals that do not fall under another type
+MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,THAT HOUR,TIME,Times smaller than a day
+MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,LAST NIGHT,TIME,Times smaller than a day
+MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,HOURS,TIME,Times smaller than a day
+MUCH ADO ABOUT NOTHING,4,1,The Inside of a Church.,A HAPPY HOUR,TIME,Times smaller than a day
+MUCH ADO ABOUT NOTHING,4,2,A Prison.,THIS MORNING,TIME,Times smaller than a day
+MUCH ADO ABOUT NOTHING,4,2,A Prison.,YEARS,DATE,Absolute or relative dates or periods
+MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,SECOND,ORDINAL,"""first"", ""second"", etc."
+MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,DAY,DATE,Absolute or relative dates or periods
+MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,MANY DAYS,DATE,Absolute or relative dates or periods
+MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,HALF A DOZEN,CARDINAL,Numerals that do not fall under another type
+MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,MORNING,TIME,Times smaller than a day
+MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,SIXTH,ORDINAL,"""first"", ""second"", etc."
+MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,THIRDLY,ORDINAL,"""first"", ""second"", etc."
+MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,THIRD,ORDINAL,"""first"", ""second"", etc."
+MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,TWAS,TIME,Times smaller than a day
+MUCH ADO ABOUT NOTHING,5,1,Before Leonato's House.,TOMORROW MORNING,TIME,Times smaller than a day
+MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,TROILUS,PERSON,PERSON
+MUCH ADO ABOUT NOTHING,5,2,Leonato's Garden.,AN HOUR,TIME,Times smaller than a day
+MUCH ADO ABOUT NOTHING,5,3,The Inside of a Church.,THE GENTLE DAY,DATE,Absolute or relative dates or periods
+MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,THIS HOUR,TIME,Times smaller than a day
+MUCH ADO ABOUT NOTHING,5,4,A Room in Leonato's House.,EUROPA,GPE,GPE

@@ -1,46 +1,116 @@
 play,act,scene,location,entity_text,label,label_description
-THE TRAGEDY OF ROMEO AND JULIET,0,0,Prologue,CHORUS,PERSON,"People, including fictional"
-THE TRAGEDY OF ROMEO AND JULIET,0,0,Prologue,VERONA,GPE,"Countries, cities, states"
-THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,SAMPSON,PERSON,"People, including fictional"
+THE TRAGEDY OF ROMEO AND JULIET,0,0,Prologue,TWO,CARDINAL,Numerals that do not fall under another type
 THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,GREGORY,PERSON,"People, including fictional"
-THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,MONTAGUE,FAMILY,FAMILY
-THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,ABRAM,PERSON,"People, including fictional"
-THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,BALTHASAR,PERSON,"People, including fictional"
-THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,BENVOLIO,PERSON,"People, including fictional"
-THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,TYBALT,PERSON,"People, including fictional"
+THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,MONTAGUE,PERSON,"People, including fictional"
+THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,ONE,CARDINAL,Numerals that do not fall under another type
+THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,SAMPSON,PERSON,"People, including fictional"
+THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,ABRAM,PERSON,PERSON
+THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,FOUR,CARDINAL,Numerals that do not fall under another type
+THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,FIRST,ORDINAL,"""first"", ""second"", etc."
 THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,CAPULET,FAMILY,FAMILY
-THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,LADY CAPULET,PERSON,"People, including fictional"
 THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,LADY MONTAGUE,PERSON,"People, including fictional"
-THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,SERVANTS,PERSON,"People, including fictional"
+THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,BENVOLIO,PERSON,"People, including fictional"
+THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,AN HOUR,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,MORROW,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,NINE,CARDINAL,Numerals that do not fall under another type
 THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,ROMEO,PERSON,"People, including fictional"
-THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,THE WOOD,LOCATION,LOCATION
-THE TRAGEDY OF ROMEO AND JULIET,1,1,A public place.,AURORA,GPE,"Countries, cities, states"
+THE TRAGEDY OF ROMEO AND JULIET,1,2,A Street.,MAY,DATE,Absolute or relative dates or periods
 THE TRAGEDY OF ROMEO AND JULIET,1,2,A Street.,PARIS,PERSON,"People, including fictional"
-THE TRAGEDY OF ROMEO AND JULIET,1,2,A Street.,MERCUTIO,PERSON,"People, including fictional"
-THE TRAGEDY OF ROMEO AND JULIET,1,3,Room in Capulet's House.,NURSE,TITLE,TITLE
+THE TRAGEDY OF ROMEO AND JULIET,1,2,A Street.,VALENTIO,PERSON,PERSON
+THE TRAGEDY OF ROMEO AND JULIET,1,3,Room in Capulet's House.,TWELVE YEAR OLD,DATE,Absolute or relative dates or periods
 THE TRAGEDY OF ROMEO AND JULIET,1,3,Room in Capulet's House.,JULIET,PERSON,"People, including fictional"
+THE TRAGEDY OF ROMEO AND JULIET,1,3,Room in Capulet's House.,LADY CAPULET,PERSON,"People, including fictional"
+THE TRAGEDY OF ROMEO AND JULIET,1,3,Room in Capulet's House.,FOURTEEN,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,1,3,Room in Capulet's House.,A FORTNIGHT,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,1,3,Room in Capulet's House.,CHRISTIAN,NORP,Nationalities or religious or political groups
+THE TRAGEDY OF ROMEO AND JULIET,1,3,Room in Capulet's House.,THE DAYS OF THE YEAR,DATE,Absolute or relative dates or periods
 THE TRAGEDY OF ROMEO AND JULIET,1,3,Room in Capulet's House.,MANTUA,GPE,"Countries, cities, states"
+THE TRAGEDY OF ROMEO AND JULIET,1,3,Room in Capulet's House.,ELEVEN YEARS,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,1,3,Room in Capulet's House.,A THOUSAND YEARS,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,1,3,Room in Capulet's House.,THESE YEARS,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,1,3,Room in Capulet's House.,NIGHT,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,1,4,A Street.,SIX,CARDINAL,Numerals that do not fall under another type
 THE TRAGEDY OF ROMEO AND JULIET,1,4,A Street.,MASKERS,PERSON,"People, including fictional"
-THE TRAGEDY OF ROMEO AND JULIET,1,4,A Street.,CONSTABLE,TITLE,TITLE
-THE TRAGEDY OF ROMEO AND JULIET,1,4,A Street.,SLUTTISH,GPE,"Countries, cities, states"
-THE TRAGEDY OF ROMEO AND JULIET,1,5,A Hall in Capulet's House.,SUSAN GRINDSTONE,PERSON,PERSON
-THE TRAGEDY OF ROMEO AND JULIET,1,5,A Hall in Capulet's House.,HEIR,REL,REL
+THE TRAGEDY OF ROMEO AND JULIET,1,4,A Street.,MERCUTIO,PERSON,"People, including fictional"
+THE TRAGEDY OF ROMEO AND JULIET,1,4,A Street.,FIVE,CARDINAL,Numerals that do not fall under another type
+THE TRAGEDY OF ROMEO AND JULIET,1,4,A Street.,TONIGHT,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,1,5,A Hall in Capulet's House.,SECOND,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,1,5,A Hall in Capulet's House.,THE DAY THAT,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,1,5,A Hall in Capulet's House.,LIGHT,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,1,5,A Hall in Capulet's House.,THIRTY YEARS,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,1,5,A Hall in Capulet's House.,SOME FIVE AND TWENTY YEARS,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,1,5,A Hall in Capulet's House.,THIRTY.,MONEY,"Monetary values, including unit"
+THE TRAGEDY OF ROMEO AND JULIET,1,5,A Hall in Capulet's House.,TWO YEARS AGO,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,1,5,A Hall in Capulet's House.,THIS NIGHT,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,1,5,A Hall in Capulet's House.,TYBALT,PERSON,"People, including fictional"
 THE TRAGEDY OF ROMEO AND JULIET,1,5,A Hall in Capulet's House.,TIBERIO,PERSON,PERSON
+THE TRAGEDY OF ROMEO AND JULIET,2,2,Capulet's Garden.,TWO OF THE,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,2,2,Capulet's Garden.,HUNDRED,CARDINAL,Numerals that do not fall under another type
+THE TRAGEDY OF ROMEO AND JULIET,2,2,Capulet's Garden.,ORCHARD,LOCATION,LOCATION
+THE TRAGEDY OF ROMEO AND JULIET,2,2,Capulet's Garden.,TOMORROW,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,2,2,Capulet's Garden.,THOUSAND,CARDINAL,Numerals that do not fall under another type
+THE TRAGEDY OF ROMEO AND JULIET,2,2,Capulet's Garden.,TWENTY YEARS,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,2,2,Capulet's Garden.,ALMOST MORNING,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,2,3,Friar Lawrence's Cell.,DAY,DATE,Absolute or relative dates or periods
 THE TRAGEDY OF ROMEO AND JULIET,2,3,Friar Lawrence's Cell.,FRIAR LAWRENCE,PERSON,"People, including fictional"
-THE TRAGEDY OF ROMEO AND JULIET,2,3,Friar Lawrence's Cell.,TITAN,GPE,"Countries, cities, states"
-THE TRAGEDY OF ROMEO AND JULIET,2,4,A Street.,PETER,PERSON,"People, including fictional"
-THE TRAGEDY OF ROMEO AND JULIET,2,4,A Street.,FRIAR,TITLE,TITLE
-THE TRAGEDY OF ROMEO AND JULIET,2,5,Capulet's Garden.,THE GATE,LOCATION,LOCATION
+THE TRAGEDY OF ROMEO AND JULIET,2,4,A Street.,THIRD,ORDINAL,"""first"", ""second"", etc."
+THE TRAGEDY OF ROMEO AND JULIET,2,4,A Street.,SECOND,ORDINAL,"""first"", ""second"", etc."
+THE TRAGEDY OF ROMEO AND JULIET,2,4,A Street.,FRENCH,NORP,Nationalities or religious or political groups
+THE TRAGEDY OF ROMEO AND JULIET,2,4,A Street.,LAST NIGHT,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,2,4,A Street.,NOON,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,2,4,A Street.,LENT,EVENT,"Named hurricanes, battles, wars, sports events, etc."
+THE TRAGEDY OF ROMEO AND JULIET,2,4,A Street.,A MONTH,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,2,4,A Street.,TWENTY,CARDINAL,Numerals that do not fall under another type
+THE TRAGEDY OF ROMEO AND JULIET,2,4,A Street.,THIS HOUR,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,2,5,Capulet's Garden.,HALF AN HOUR,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,2,5,Capulet's Garden.,TEN,CARDINAL,Numerals that do not fall under another type
+THE TRAGEDY OF ROMEO AND JULIET,2,5,Capulet's Garden.,THE HIGHMOST HILL,LOCATION,LOCATION
+THE TRAGEDY OF ROMEO AND JULIET,2,5,Capulet's Garden.,A FOOT,QUANTITY,"Measurements, as of weight or distance"
+THE TRAGEDY OF ROMEO AND JULIET,2,6,Friar Lawrence's Cell.,THAT AFTER-HOURS,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,2,6,Friar Lawrence's Cell.,HALF,CARDINAL,Numerals that do not fall under another type
 THE TRAGEDY OF ROMEO AND JULIET,3,1,A public Place.,ITALY,GPE,"Countries, cities, states"
-THE TRAGEDY OF ROMEO AND JULIET,3,1,A public Place.,FIELD,GPE,"Countries, cities, states"
-THE TRAGEDY OF ROMEO AND JULIET,3,1,A public Place.,KING OF CATS,TITLE,TITLE
+THE TRAGEDY OF ROMEO AND JULIET,3,1,A public Place.,EASTER,EVENT,"Named hurricanes, battles, wars, sports events, etc."
+THE TRAGEDY OF ROMEO AND JULIET,3,1,A public Place.,EIGHT,CARDINAL,Numerals that do not fall under another type
+THE TRAGEDY OF ROMEO AND JULIET,3,1,A public Place.,PAGE,PERSON,PERSON
+THE TRAGEDY OF ROMEO AND JULIET,3,1,A public Place.,THIS DAY,DATE,Absolute or relative dates or periods
 THE TRAGEDY OF ROMEO AND JULIET,3,1,A public Place.,KINSMAN,REL,REL
-THE TRAGEDY OF ROMEO AND JULIET,3,5,"An open Gallery to Juliet's Chamber, overlooking the Garden.",WEEP'ST,GPE,"Countries, cities, states"
-THE TRAGEDY OF ROMEO AND JULIET,4,1,Friar Lawrence's Cell.,HAPPILY MET,REL,REL
-THE TRAGEDY OF ROMEO AND JULIET,4,1,Friar Lawrence's Cell.,WRONG'ST,GPE,"Countries, cities, states"
-THE TRAGEDY OF ROMEO AND JULIET,4,2,Hall in Capulet's House.,THE COUNTY,LOCATION,LOCATION
-THE TRAGEDY OF ROMEO AND JULIET,4,5,Juliet's Chamber; Juliet on the bed.,THE FIELD,LOCATION,LOCATION
-THE TRAGEDY OF ROMEO AND JULIET,4,5,Juliet's Chamber; Juliet on the bed.,THE CUSTOM,LOCATION,LOCATION
+THE TRAGEDY OF ROMEO AND JULIET,3,1,A public Place.,SOME TWENTY OF THEM,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,3,2,A Room in Capulet's House.,THE NIGHT,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,3,2,A Room in Capulet's House.,TEN THOUSAND,CARDINAL,Numerals that do not fall under another type
+THE TRAGEDY OF ROMEO AND JULIET,3,3,Friar Lawrence's cell.,HOUR,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,3,3,Friar Lawrence's cell.,NURSE,TITLE,TITLE
+THE TRAGEDY OF ROMEO AND JULIET,3,3,Friar Lawrence's cell.,FRIAR,TITLE,TITLE
+THE TRAGEDY OF ROMEO AND JULIET,3,3,Friar Lawrence's cell.,THREE,CARDINAL,Numerals that do not fall under another type
+THE TRAGEDY OF ROMEO AND JULIET,3,3,Friar Lawrence's cell.,TWENTY HUNDRED THOUSAND,CARDINAL,Numerals that do not fall under another type
+THE TRAGEDY OF ROMEO AND JULIET,3,4,A Room in Capulet's House.,DAUGHTER,REL,REL
+THE TRAGEDY OF ROMEO AND JULIET,3,4,A Room in Capulet's House.,THURSDAY,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,3,4,A Room in Capulet's House.,SOME HALF A DOZEN FRIENDS,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,3,5,"An open Gallery to Juliet's Chamber, overlooking the Garden.",THE DAY,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,3,5,"An open Gallery to Juliet's Chamber, overlooking the Garden.",EVERY DAY,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,3,5,"An open Gallery to Juliet's Chamber, overlooking the Garden.",MANY DAYS,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,3,5,"An open Gallery to Juliet's Chamber, overlooking the Garden.",YEARS,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,3,5,"An open Gallery to Juliet's Chamber, overlooking the Garden.",IN HAPPY TIME,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,3,5,"An open Gallery to Juliet's Chamber, overlooking the Garden.",MORN,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,3,5,"An open Gallery to Juliet's Chamber, overlooking the Garden.",THE SUNSET,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,3,5,"An open Gallery to Juliet's Chamber, overlooking the Garden.",COUNTY,TITLE,TITLE
+THE TRAGEDY OF ROMEO AND JULIET,4,1,Friar Lawrence's Cell.,EVENING,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,4,1,Friar Lawrence's Cell.,TOMORROW NIGHT,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,4,1,Friar Lawrence's Cell.,THE DAY OF LIFE,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,4,1,Friar Lawrence's Cell.,THE MORNING,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,4,2,Hall in Capulet's House.,MORNING,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,4,2,Hall in Capulet's House.,NIGHT,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,4,3,Juliet's Chamber.,TOMORROW MORNING,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,4,3,Juliet's Chamber.,THIS MANY HUNDRED YEARS,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,4,3,Juliet's Chamber.,SOME HOURS,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,4,4,Hall in Capulet's House.,THREE O'CLOCK,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,4,5,Juliet's Chamber; Juliet on the bed.,THE NEXT NIGHT,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,4,5,Juliet's Chamber; Juliet on the bed.,SON,REL,REL
+THE TRAGEDY OF ROMEO AND JULIET,4,5,Juliet's Chamber; Juliet on the bed.,THIS MORNING,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,4,5,Juliet's Chamber; Juliet on the bed.,A DAY,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,5,1,Mantua. A Street.,BALTHASAR,PERSON,"People, including fictional"
+THE TRAGEDY OF ROMEO AND JULIET,5,1,Mantua. A Street.,FORTY DUCATS,MONEY,"Monetary values, including unit"
 THE TRAGEDY OF ROMEO AND JULIET,5,2,Friar Lawrence's Cell.,FRIAR JOHN,PERSON,"People, including fictional"
-THE TRAGEDY OF ROMEO AND JULIET,5,3,A churchyard; in it a Monument belonging to the Capulets.,NOBLE,REL,REL
-THE TRAGEDY OF ROMEO AND JULIET,5,3,A churchyard; in it a Monument belonging to the Capulets.,THIS PALACE,LOCATION,LOCATION
+THE TRAGEDY OF ROMEO AND JULIET,5,2,Friar Lawrence's Cell.,THIS THREE HOURS,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,5,3,A churchyard; in it a Monument belonging to the Capulets.,EARLY IN THE MORNING,TIME,Times smaller than a day
+THE TRAGEDY OF ROMEO AND JULIET,5,3,A churchyard; in it a Monument belonging to the Capulets.,THIS TWO DAYS,DATE,Absolute or relative dates or periods
+THE TRAGEDY OF ROMEO AND JULIET,5,3,A churchyard; in it a Monument belonging to the Capulets.,SOME HOUR,TIME,Times smaller than a day

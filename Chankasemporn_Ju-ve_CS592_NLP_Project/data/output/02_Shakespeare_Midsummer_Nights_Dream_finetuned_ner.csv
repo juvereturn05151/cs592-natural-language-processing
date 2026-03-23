@@ -1,53 +1,71 @@
 play,act,scene,location,entity_text,label,label_description
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,THESEUS,PERSON,"People, including fictional"
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,FOUR HAPPY DAYS,DATE,Absolute or relative dates or periods
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,OLD MOON,TIME,Times smaller than a day
 A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,HIPPOLYTA,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,PHILOSTRATE,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,EGEUS,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,HERMIA,PERSON,"People, including fictional"
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,ATHENIAN,NORP,Nationalities or religious or political groups
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,THESEUS,PERSON,"People, including fictional"
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,MAY,DATE,Absolute or relative dates or periods
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,ONE,CARDINAL,Numerals that do not fall under another type
 A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,LYSANDER,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,DEMETRIUS,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,ATHENS,GPE,"Countries, cities, states"
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,YEARS,DATE,Absolute or relative dates or periods
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,SEVEN,CARDINAL,Numerals that do not fall under another type
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,TOMORROW NIGHT,TIME,Times smaller than a day
 A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,HELENA,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,THE WOOD,LOCATION,LOCATION
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,QUINCE,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,SNUG,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,BOTTOM,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,FLUTE,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,SNOUT,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,STARVELING,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,PYRAMUS,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,PHIBBUS,GPE,"Countries, cities, states"
-A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,THE PALACE,LOCATION,LOCATION
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,PUCK,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,OBERON,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,TITANIA,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,PHILLIDA,PERSON,PERSON
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,INDIA,GPE,"Countries, cities, states"
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,PERIGENIA,GPE,"Countries, cities, states"
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,HIEMS,GPE,"Countries, cities, states"
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,THIS WOOD,LOCATION,LOCATION
-A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,THE FIELD,LOCATION,LOCATION
-A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,QUEEN: CHORUS,TITLE,TITLE
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,QUEEN,REL,REL
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,PEASEBLOSSOM,PERSON,"People, including fictional"
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,MIDNIGHT,TIME,Times smaller than a day
+A MIDSUMMER NIGHT'S DREAM,1,1,Athens. A room in the Palace of Theseus,HERMIA,PERSON,"People, including fictional"
+A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,DUCHESS,TITLE,TITLE
+A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,FIRST,ORDINAL,"""first"", ""second"", etc."
+A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,FRENCH,NORP,Nationalities or religious or political groups
+A MIDSUMMER NIGHT'S DREAM,1,2,The Same. A Room in a Cottage,A MILE,QUANTITY,"Measurements, as of weight or distance"
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,PUCK,PERSON,PERSON
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,INDIAN,NORP,Nationalities or religious or political groups
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,THREE-FOOT,QUANTITY,"Measurements, as of weight or distance"
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,FAIRYLAND,GPE,"Countries, cities, states"
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,AMAZON,NORP,NORP
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,THE SEASONS,DATE,Absolute or relative dates or periods
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,THE SUMMER,DATE,Absolute or relative dates or periods
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,A HUNDRED THOUSAND,CARDINAL,Numerals that do not fall under another type
+A MIDSUMMER NIGHT'S DREAM,2,1,A wood near Athens,THE NIGHT,TIME,Times smaller than a day
+A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,THIRD,ORDINAL,"""first"", ""second"", etc."
+A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,FAIRY QUEEN,PERSON,PERSON
+A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,SECOND,DATE,Absolute or relative dates or periods
+A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,THE DAY,DATE,Absolute or relative dates or periods
+A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,TWO,CARDINAL,Numerals that do not fall under another type
+A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,HALF,CARDINAL,Numerals that do not fall under another type
+A MIDSUMMER NIGHT'S DREAM,2,2,Another part of the wood,DEMETRIUS,PERSON,"People, including fictional"
+A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,BOTTOM,PERSON,PERSON
+A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,SNOUT,PERSON,PERSON
+A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,EIGHT,CARDINAL,Numerals that do not fall under another type
+A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,A LION,QUANTITY,"Measurements, as of weight or distance"
+A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,MOONLIGHT,TIME,Times smaller than a day
+A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,THE FAIRY QUEEN,PERSON,PERSON
+A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,JEW,NORP,Nationalities or religious or political groups
+A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,NINUS,PERSON,PERSON
+A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,FOUR,CARDINAL,Numerals that do not fall under another type
 A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,COBWEB,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,MOTH,PERSON,PERSON
 A MIDSUMMER NIGHT'S DREAM,3,1,The Wood.,MUSTARDSEED,PERSON,"People, including fictional"
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,IN LOVE,REL,REL
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,FLOWER,REL,REL
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,CAPTAIN,TITLE,TITLE
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,QUICK,GPE,"Countries, cities, states"
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,ETHIOPE,GPE,"Countries, cities, states"
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,DAMNÈD,GPE,"Countries, cities, states"
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,FIELD,GPE,"Countries, cities, states"
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,FAINTNESS,GPE,"Countries, cities, states"
-A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,CONSTRAINETH,TITLE,TITLE
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,THE ELM,LOCATION,LOCATION
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,A WOOD,LOCATION,LOCATION
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,CRETE,GPE,"Countries, cities, states"
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,SPARTA,GPE,"Countries, cities, states"
-A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,;,REL,REL
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,DAY,DATE,Absolute or relative dates or periods
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,A MILLION,CARDINAL,Numerals that do not fall under another type
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,LIGHT,TIME,Times smaller than a day
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,THREE,CARDINAL,Numerals that do not fall under another type
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,THE HOURS,TIME,Times smaller than a day
+A MIDSUMMER NIGHT'S DREAM,3,2,Another part of the wood,TEDIOUS NIGHT,TIME,Times smaller than a day
+A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,THIS NIGHT,TIME,Times smaller than a day
+A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,TITANIA,PERSON,"People, including fictional"
+A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,FIVE,CARDINAL,Numerals that do not fall under another type
+A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,MORNING,TIME,Times smaller than a day
+A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,THE MORNING,TIME,Times smaller than a day
+A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,THESSALIAN,NORP,Nationalities or religious or political groups
+A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,NEDAR,PERSON,PERSON
+A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,MORROW,DATE,Absolute or relative dates or periods
+A MIDSUMMER NIGHT'S DREAM,4,1,The Wood,EGEUS,PERSON,"People, including fictional"
+A MIDSUMMER NIGHT'S DREAM,4,2,Athens. A Room in Quince's House,A DAY,DATE,Absolute or relative dates or periods
+A MIDSUMMER NIGHT'S DREAM,4,2,Athens. A Room in Quince's House,HAPPY HOUR,TIME,Times smaller than a day
 A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,EGYPT,GPE,"Countries, cities, states"
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,THROTTLE,GPE,"Countries, cities, states"
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,NINUS,GPE,"Countries, cities, states"
-A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,THIS PALACE,LOCATION,LOCATION
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,THREE HOURS,TIME,Times smaller than a day
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,THIS EVENING,TIME,Times smaller than a day
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,THRACIAN,NORP,Nationalities or religious or political groups
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,TEN,CARDINAL,Numerals that do not fall under another type
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,THISBE,PERSON,PERSON
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,TWELVE,CARDINAL,Numerals that do not fall under another type
+A MIDSUMMER NIGHT'S DREAM,5,1,Athens. An Apartment in the Palace of Theseus,NIGHT,TIME,Times smaller than a day
