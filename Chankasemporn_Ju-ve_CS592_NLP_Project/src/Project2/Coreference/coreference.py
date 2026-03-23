@@ -17,13 +17,13 @@ MALE_PRONOUNS    = {"he", "him", "himself"}
 FEMALE_PRONOUNS  = {"she", "her", "hers", "herself"}
 ALL_PRONOUNS     = MALE_PRONOUNS | FEMALE_PRONOUNS
 
-SPEAKER_RE = re.compile(r'([A-Z][A-Z\s]+)\.\s+')
-
 COREF_FIELDS = [
     "play", "act", "scene", "speaker",
     "original_sentence", "pronoun", "resolved_to",
     "resolved_sentence", "gender_group", "resolution_source"
 ]
+
+SPEAKER_RE = re.compile(r'([A-Z][A-Z\s]+)\.\s+')
 
 #split scene text into list of {speaker, text} dicts.
 def split_into_utterances(scene_text: str) -> list:
@@ -39,16 +39,7 @@ def split_into_utterances(scene_text: str) -> list:
     return utterances
 
 
-# Relationship-aware coreference resolver.
-#
-# Resolution priority per pronoun:
-#   1. Last gender-matching PERSON named in the SAME utterance
-#   2. Gender-matching character reachable via the speaker's relationship edges
-#      (from play_configs relationships) — biased toward characters named in
-#      the previous utterance
-#   3. Last gender-matching PERSON named in the PREVIOUS utterance,
-#      confirmed by relationship graph gender
-#   4. Skip — no record written
+#relationship-aware coreference resolver.
 class CoreferenceResolver:
     def __init__(self, nlp, male_chars: set, female_chars: set,
                  relationships: list):
@@ -56,8 +47,8 @@ class CoreferenceResolver:
         self.male_chars   = {c.upper() for c in male_chars}
         self.female_chars = {c.upper() for c in female_chars}
 
-        # Build adjacency: speaker_upper → list of (target, rel_type)
-        # Only PERSON→PERSON edges are useful for pronoun resolution
+        # Build adjacency: speaker_upper -> list of (target, rel_type)
+        # Only PERSON->PERSON edges are useful for pronoun resolution
         self.rel_targets: dict = defaultdict(list)
         for rel in relationships:
             src, src_type, rel_type, tgt, tgt_type = rel
@@ -73,7 +64,7 @@ class CoreferenceResolver:
             return "male"
         if any(f in uname for f in self.female_chars):
             return "female"
-        return "neutral"
+        return "none"
 
     def _gender_matches(self, name: str, pronoun_lower: str) -> bool:
         g = self._gender_of(name)
@@ -81,10 +72,10 @@ class CoreferenceResolver:
             return g == "male"
         if pronoun_lower in FEMALE_PRONOUNS:
             return g == "female"
-        return True  # neutral pronouns match anyone
+        return False
 
+    #return list of unique PERSON entity names in appearance order.
     def _persons_in_doc(self, doc) -> list:
-        """Return list of unique PERSON entity names in appearance order."""
         seen = set()
         result = []
         for ent in doc.ents:
@@ -95,25 +86,19 @@ class CoreferenceResolver:
                     result.append(name)
         return result
 
+    #return last gender-matching name from a list, or None.
     def _pick_from_list(self, names: list, pronoun_lower: str):
-        """Return last gender-matching name from a list, or None."""
         for name in reversed(names):
             if self._gender_matches(name, pronoun_lower):
                 return name
         return None
 
-    def _resolve_via_relationships(self, speaker: str, pronoun_lower: str,
-                                    prev_names: list):
-        """
-        Priority 2: walk the speaker's relationship edges to find a
-        gender-matching character.  Prefer candidates that also appeared
-        in the previous utterance (more contextually salient).
-        """
+    def _resolve_via_relationships(self, speaker: str, pronoun_lower: str, prev_names: list):
         candidates = self.rel_targets.get(speaker.upper(), [])
         if not candidates:
             return None
 
-        # Prefer candidates that were also in the previous utterance
+        #prefer candidates that were also in the previous utterance
         prev_set = {n.upper() for n in prev_names}
         prioritised = [c for c in candidates if c in prev_set] + \
                       [c for c in candidates if c not in prev_set]
@@ -156,13 +141,13 @@ class CoreferenceResolver:
                     resolved = None
                     source   = None
 
-                    # Priority 1: named PERSON in this utterance
+                    #priority 1: named PERSON in this utterance
                     candidate = self._pick_from_list(utt_names, pron)
                     if candidate:
                         resolved = candidate
                         source   = "intra-utterance"
 
-                    # Priority 2: relationship graph from speaker
+                    #priority 2: relationship graph from speaker
                     if resolved is None:
                         candidate = self._resolve_via_relationships(
                             speaker, pron, prev_utt_names
@@ -171,8 +156,7 @@ class CoreferenceResolver:
                             resolved = candidate
                             source   = "relationship-graph"
 
-                    # Priority 3: named PERSON in previous utterance,
-                    # confirmed by relationship graph gender
+                    #priority 3: named PERSON in previous utterance,
                     if resolved is None:
                         candidate = self._pick_from_list(prev_utt_names, pron)
                         if candidate and self._gender_matches(candidate, pron):
@@ -180,7 +164,7 @@ class CoreferenceResolver:
                             source   = "prev-utterance"
 
                     if resolved is None:
-                        continue  # cannot resolve — skip
+                        continue
 
                     resolved_text = re.sub(
                         r'\b' + re.escape(pronoun_token.text) + r'\b',

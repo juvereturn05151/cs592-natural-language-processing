@@ -73,7 +73,7 @@ def connect_memgraph():
 
 
 def clear_old_data(mg):
-    execute(mg, "MATCH (n) DETACH DELETE n")
+    execute(mg, "MATCH (n) DETACH DELETE n", {})
 
 
 def create_node(mg, label: str, name: str):
