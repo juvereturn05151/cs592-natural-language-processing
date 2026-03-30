@@ -1,76 +1,76 @@
 {
-    "nodes": {
-        "PERSON": {
-            "description": "Named characters from Macbeth",
-            "color": "#4A90D9",
-            "examples": ["MACBETH", "DUNCAN", "LADY MACBETH", "BANQUO", "MACDUFF"]
-        },
-        "GPE": {
-            "description": "Real geographic places (countries, cities, regions)",
-            "color": "#27AE60",
-            "examples": ["Scotland", "England", "Forres", "Inverness", "Fife"]
-        },
-        "LOCATION": {
-            "description": "Fictional or descriptive scene locations",
-            "color": "#8E44AD",
-            "examples": ["the Castle", "the heath", "the Palace", "A dark Cave"]
-        },
-        "TITLE": {
-            "description": "Ranks and titles held by characters",
-            "color": "#E67E22",
-            "examples": ["Thane of Glamis", "Thane of Cawdor", "King of Scotland"]
-        }
-    },
-    "relationships": {
-        "KILLS": {
-            "from": "PERSON",
-            "to": "PERSON",
-            "description": "Character kills another character"
-        },
-        "KILLS_OFFSTAGE": {
-            "from": "PERSON",
-            "to": "PERSON",
-            "description": "Character orders or causes the death of another"
-        },
-        "MARRIED_TO": {
-            "from": "PERSON",
-            "to": "PERSON",
-            "description": "Marriage relationship"
-        },
-        "LOYAL_TO": {
-            "from": "PERSON",
-            "to": "PERSON",
-            "description": "Allegiance or loyalty relationship"
-        },
-        "BETRAYS": {
-            "from": "PERSON",
-            "to": "PERSON",
-            "description": "Character betrays another"
-        },
-        "SON_OF": {
-            "from": "PERSON",
-            "to": "PERSON",
-            "description": "Parent-child relationship"
-        },
-        "APPEARS_IN": {
-            "from": "PERSON",
-            "to": "LOCATION",
-            "description": "Character appears at a location or scene"
-        },
-        "RULES": {
-            "from": "PERSON",
-            "to": "GPE",
-            "description": "Character rules or governs a place"
-        },
-        "LOCATED_IN": {
-            "from": "LOCATION",
-            "to": "GPE",
-            "description": "Scene location is within a geographic place"
-        },
-        "HOLDS_TITLE": {
-            "from": "PERSON",
-            "to": "TITLE",
-            "description": "Character holds a given title or rank"
-        }
-    }
+	"nodes": {
+		"PERSON": {
+			"description": "Named characters from Macbeth",
+			"color": "#4A90D9",
+			"examples": [ "MACBETH", "DUNCAN", "LADY MACBETH", "BANQUO", "MACDUFF" ]
+		},
+		"GPE": {
+			"description": "Real geographic places (countries, cities, regions)",
+			"color": "#27AE60",
+			"examples": [ "Scotland", "England", "Forres", "Inverness", "Fife" ]
+		},
+		"LOCATION": {
+			"description": "Fictional or descriptive scene locations",
+			"color": "#8E44AD",
+			"examples": [ "the Castle", "the heath", "the Palace", "A dark Cave" ]
+		},
+		"TITLE": {
+			"description": "Ranks and titles held by characters",
+			"color": "#E67E22",
+			"examples": [ "Thane of Glamis", "Thane of Cawdor", "King of Scotland" ]
+		}
+	},
+	"relationships": {
+		"KILLS": {
+			"from": "PERSON",
+			"to": "PERSON",
+			"description": "Character kills another character"
+		},
+		"KILLS_OFFSTAGE": {
+			"from": "PERSON",
+			"to": "PERSON",
+			"description": "Character orders or causes the death of another"
+		},
+		"MARRIED_TO": {
+			"from": "PERSON",
+			"to": "PERSON",
+			"description": "Marriage relationship"
+		},
+		"LOYAL_TO": {
+			"from": "PERSON",
+			"to": "PERSON",
+			"description": "Allegiance or loyalty relationship"
+		},
+		"BETRAYS": {
+			"from": "PERSON",
+			"to": "PERSON",
+			"description": "Character betrays another"
+		},
+		"SON_OF": {
+			"from": "PERSON",
+			"to": "PERSON",
+			"description": "Parent-child relationship"
+		},
+		"APPEARS_IN": {
+			"from": "PERSON",
+			"to": "LOCATION",
+			"description": "Character appears at a location or scene"
+		},
+		"RULES": {
+			"from": "PERSON",
+			"to": "GPE",
+			"description": "Character rules or governs a place"
+		},
+		"LOCATED_IN": {
+			"from": "LOCATION",
+			"to": "GPE",
+			"description": "Scene location is within a geographic place"
+		},
+		"HOLDS_TITLE": {
+			"from": "PERSON",
+			"to": "TITLE",
+			"description": "Character holds a given title or rank"
+		}
+	}
 }

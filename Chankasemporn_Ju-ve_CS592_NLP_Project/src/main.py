@@ -4,11 +4,11 @@ Author(s):    Ju-ve Chankasemporn
 Copyright:    (c) 2025 DigiPen Institute of Technology. All rights reserved.
 """
 
-from src.Project1.Project1Runner import run_project1
-
+import src.Project2.Project2Runner as Runner
 
 def main():
-    run_project1()
+    runner = Runner.Project2Runner()
+    runner.run_all()
 
 
 if __name__ == "__main__":
